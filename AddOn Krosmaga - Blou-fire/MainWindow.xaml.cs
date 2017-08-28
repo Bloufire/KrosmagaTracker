@@ -86,7 +86,7 @@ namespace AddOn_Krosmaga___Blou_fire
             {
                 if (rule.Name.IndexOf("KrosmagaAddOn: " + System.IO.Path.GetFileName(Assembly.GetEntryAssembly().Location)) != -1)
                 {
-                    _exist = true;
+                    fwPolicy2.Rules.Remove(rule.Name);
                     break;
                 }
             }
