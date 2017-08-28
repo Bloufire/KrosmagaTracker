@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{30822A3C-7D56-4701-87BF-13CC5151E16C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AddOn_Krosmaga___Blou_fire</RootNamespace>
+    <AssemblyName>AddOn Krosmaga - Blou-fire</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Builders\EventsManager\CardMovedEvent.cs" />
+    <Compile Include="Builders\EventsManager\CardPlayedEvent.cs" />
+    <Compile Include="Builders\EventsManager\NewAOEEvent.cs" />
+    <Compile Include="Builders\GameEvents.Builder.cs" />
+    <Compile Include="Builders\GameFinished.Builder.cs" />
+    <Compile Include="Builders\GameStarted.Builder.cs" />
+    <Compile Include="Builders\PlayerAccountLoaded.Builder.cs" />
+    <Compile Include="Builders\StartOfTurn.Builder.cs" />
+    <Compile Include="Data\CellCoord.Builder.cs" />
+    <Compile Include="Data\ClientPreferences.Builder.cs" />
+    <Compile Include="Data\Custom.Builder.cs" />
+    <Compile Include="Data\CustomByGod.Builder.cs" />
+    <Compile Include="Data\CustomisationSlot.Builder.cs" />
+    <Compile Include="Data\DeckInfo.Builder.cs" />
+    <Compile Include="Data\GameEvent.Builder.cs" />
+    <Compile Include="Data\Location.Builder.cs" />
+    <Compile Include="Data\Player.Builder.cs" />
+    <Compile Include="Data\PlayerProfile.Builder.cs" />
+    <Compile Include="Data\PlayerRankInfo.Builder.cs" />
+    <Compile Include="Data\SelectedDeckByGod.Builder.cs" />
+    <Compile Include="Data\Uuid.Builder.cs" />
+    <Compile Include="Data\ValueModification.Builder.cs" />
+    <Compile Include="Enums\CardLocation.cs" />
+    <Compile Include="Enums\EventType.cs" />
+    <Compile Include="Enums\GameType.cs" />
+    <Compile Include="Enums\God.cs" />
+    <Compile Include="Enums\LocationType.cs" />
+    <Compile Include="Enums\MovementType.cs" />
+    <Compile Include="Enums\Reason.cs" />
+    <Compile Include="Enums\Result.cs" />
+    <Compile Include="Enums\ResultHandlerType.cs" />
+    <Compile Include="Enums\TriggerableCapacityType.cs" />
+    <Compile Include="KrosmagaReader.cs" />
+    <Compile Include="ProducerConsumer\Consumer.cs" />
+    <Compile Include="ProducerConsumer\Producer.cs" />
+    <Compile Include="ProducerConsumer\SyncEvents.cs" />
+    <Compile Include="UIElements\Converters.cs" />
+    <Compile Include="UIElements\DeckUI.Helper.cs" />
+    <Compile Include="UIPlayerDatas.cs" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JsonCardsParser\JsonCardsParser.csproj">
+      <Project>{f1a8a519-e3cc-4e74-9fe5-9e0ad8b843fa}</Project>
+      <Name>JsonCardsParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SniffingLibs\SniffingLibs.csproj">
+      <Project>{f28a1fdd-6e33-4625-b754-d731c765898d}</Project>
+      <Name>SniffingLibs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLiteConnector\SQLiteConnector.csproj">
+      <Project>{e168781c-e15c-450e-a6f5-e04584597293}</Project>
+      <Name>SQLiteConnector</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\fleau.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\skull.png" />
+    <Resource Include="Images\trophy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="NetFwTypeLib">
+      <Guid>{58FBCF7C-E7A9-467C-80B3-FC65E8FCCA08}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Gods\Cra.png" />
+    <Resource Include="Images\Gods\Eca.png" />
+    <Resource Include="Images\Gods\Eni.png" />
+    <Resource Include="Images\Gods\Enu.png" />
+    <Resource Include="Images\Gods\Iop.png" />
+    <Resource Include="Images\Gods\Sacri.png" />
+    <Resource Include="Images\Gods\Sadi.png" />
+    <Resource Include="Images\Gods\Sram.png" />
+    <Resource Include="Images\Gods\Xel.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
