@@ -58,7 +58,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
         public int WinsForThisGroup
         {
-            get => _winsForThisGroup;
+            get { return _winsForThisGroup; }
 
             set
             {
@@ -69,7 +69,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
         public int LosesForThisGroup
         {
-            get => _losesForThisGroup;
+            get { return _losesForThisGroup; }
 
             set
             {
@@ -80,7 +80,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
         public string BestMU
         {
-            get => _bestMU;
+            get { return _bestMU; }
 
             set
             {
@@ -91,7 +91,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
         public string WorstMU
         {
-            get => _worstMU;
+            get { return _worstMU; }
 
             set
             {
@@ -102,7 +102,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
         public int NbToursMoy
         {
-            get => _nbToursMoy;
+            get { return _nbToursMoy; }
 
             set
             {
@@ -110,6 +110,7 @@ namespace AddOn_Krosmaga___Blou_fire
                 NotifyPropertyChanged("NbToursMoy");
             }
         }
+
         #endregion
 
         private List<UIElements.Match> _matchsList;
@@ -184,7 +185,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
         public int CurrentTurn
         {
-            get => _currentTurn;
+            get { return _currentTurn; }
 
             set
             {
@@ -195,7 +196,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
         public int CurrentAP
         {
-            get => _currentAP;
+            get { return _currentAP; }
 
             set
             {
@@ -207,7 +208,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
         public int MaxAP
         {
-            get => _maxAP;
+            get { return _maxAP; }
 
             set
             {
@@ -219,7 +220,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
         public string OpponentPseudo
         {
-            get => _opponentPseudo ?? "Pseudo == Null";
+            get { return _opponentPseudo ?? "Pseudo == Null"; }
 
             set
             {
@@ -231,7 +232,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
         public int OpponentVictories
         {
-            get => _opponentVictories;
+            get { return _opponentVictories; }
 
             set
             {
@@ -243,7 +244,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
         public int OpponentDefeats
         {
-            get => _opponentDefeats;
+            get { return _opponentDefeats; }
 
             set
             {
@@ -255,7 +256,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
         public string OwnPseudo
         {
-            get => _ownPseudo ?? "OwnPseudo == null";
+            get { return _ownPseudo ?? "OwnPseudo == null"; }
 
             set
             {
@@ -267,7 +268,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
         public int OwnVictories
         {
-            get => _ownVictories;
+            get { return _ownVictories; }
 
             set
             {
@@ -279,7 +280,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
         public int OwnDefeats
         {
-            get => _ownDefeats;
+            get { return _ownDefeats; }
 
             set
             {
@@ -291,7 +292,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
         public int OwnLevel
         {
-            get => _ownLevel;
+            get { return _ownLevel; }
 
             set
             {
@@ -303,7 +304,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
         public int OpponentLevel
         {
-            get => _opponentLevel;
+            get { return _opponentLevel; }
 
             set
             {
@@ -314,7 +315,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
         public int MyIndex
         {
-            get => _myIndex;
+            get { return _myIndex; }
 
             set
             {
@@ -326,7 +327,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
         public GameType GameType
         {
-            get => _gameType;
+            get { return _gameType; }
 
             set
             {
@@ -337,7 +338,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
         public bool HasIndex
         {
-            get => _hasIndex;
+            get { return _hasIndex; }
 
             set
             {
@@ -348,7 +349,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
         public List<JsonCardsParser.Card> OpponentPlayedCards
         {
-            get => _opponentPlayedCards;
+            get { return _opponentPlayedCards; }
 
             set
             {
@@ -359,7 +360,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
         public int OpponentFleaux
         {
-            get => _opponentFleaux;
+            get { return _opponentFleaux; }
 
             set
             {
@@ -370,7 +371,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
         public Queue<int> ActualFleauxIds
         {
-            get => _actualFleauxIds;
+            get { return _actualFleauxIds; }
 
             set
             {
@@ -395,21 +396,21 @@ namespace AddOn_Krosmaga___Blou_fire
 
         public string OwnClasse
         {
-            get => _ownClasse ?? "OwnClasse == Null";
+            get { return _ownClasse ?? "OwnClasse == Null"; }
 
-            set => _ownClasse = value;
+            set { _ownClasse = value; }
         }
 
         public string OpponentClasse
         {
-            get => _opponentClasse ?? "OpponentClasse == Null";
+            get { return _opponentClasse ?? "OpponentClasse == Null"; }
 
-            set => _opponentClasse = value;
+            set { _opponentClasse = value; }
         }
 
         public List<UIElements.Match> MatchsList
         {
-            get => _matchsList;
+            get { return _matchsList; }
 
             set
             {
@@ -420,7 +421,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
         public int OwnCardsInHand
         {
-            get => _ownCardsInHand;
+            get { return _ownCardsInHand; }
 
             set
             {
@@ -431,7 +432,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
         public int OpponentCardsInHand
         {
-            get => _opponentCardsInHand;
+            get { return _opponentCardsInHand; }
 
             set
             {
@@ -442,7 +443,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
         public List<UIElements.Match> MatchsWithFilters
         {
-            get => _matchsWithFilters;
+            get { return _matchsWithFilters; }
 
             set
             {
@@ -453,7 +454,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
         public string OwnClasseFilter
         {
-            get => _OwnClasseFilter ?? "OwnClasseFilter == Null";
+            get { return _OwnClasseFilter ?? "OwnClasseFilter == Null"; }
 
             set
             {
@@ -465,7 +466,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
         public string OpponentClasseFilter
         {
-            get => _OpponentClasseFilter ?? "OwnClasseFilter == Null";
+            get { return _OpponentClasseFilter ?? "OwnClasseFilter == Null"; }
 
             set
             {
@@ -477,7 +478,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
         public string OpponentNameFilter
         {
-            get => _OpponentNameFilter;
+            get { return _OpponentNameFilter; }
 
             set
             {
