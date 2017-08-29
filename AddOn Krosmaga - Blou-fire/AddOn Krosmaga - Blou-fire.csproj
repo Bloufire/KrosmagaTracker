@@ -103,7 +103,9 @@
     <Compile Include="ProducerConsumer\Producer.cs" />
     <Compile Include="ProducerConsumer\SyncEvents.cs" />
     <Compile Include="UIElements\Converters.cs" />
+    <Compile Include="UIElements\Deck.cs" />
     <Compile Include="UIElements\DeckUI.Helper.cs" />
+    <Compile Include="UIElements\Match.cs" />
     <Compile Include="UIPlayerDatas.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -196,6 +198,12 @@
     <Resource Include="Images\Gods\Sadi.png" />
     <Resource Include="Images\Gods\Sram.png" />
     <Resource Include="Images\Gods\Xel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\hand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\handred.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
