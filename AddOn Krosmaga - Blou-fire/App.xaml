@@ -63,12 +63,12 @@
         <!--region Label Style s-->
         
         <Style TargetType="Label" x:Key="Label_default_bold">
-            <Setter Property="Foreground" Value="{StaticResource TextGrayBrush}"/>
+            <Setter Property="Foreground" Value="{StaticResource BackgroundWhite}"/>
               <Setter Property="FontSize" Value="{StaticResource FontNormal}" />
             <Setter Property="FontWeight" Value="Bold"></Setter>
         </Style>
         <Style TargetType="Label" x:Key="Label_default">
-            <Setter Property="Foreground" Value="{StaticResource TextGrayBrush}"/>
+            <Setter Property="Foreground" Value="{StaticResource BackgroundWhite}"/>
             <Setter Property="FontSize" Value="{StaticResource FontNormal}" />
             <Setter Property="FontWeight" Value="Normal"></Setter>
         </Style>

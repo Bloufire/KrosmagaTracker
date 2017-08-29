@@ -23,6 +23,7 @@ using System.Reflection;
 using SQLiteConnector;
 using AddOn_Krosmaga___Blou_fire.ProducerConsumer;
 using System.Collections;
+using MahApps.Metro.Controls;
 
 namespace AddOn_Krosmaga___Blou_fire
 {
