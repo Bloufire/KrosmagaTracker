@@ -2,8 +2,78 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:AddOn_Krosmaga___Blou_fire"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
+        <!--Region Brush -->
+        <Brush x:Key="BlueBrush">#1E5BC6</Brush>
+        <Brush x:Key="BlueLightBrush">#00B7BF</Brush>
+        <Brush x:Key="RedEngagementBrush">#F15145</Brush>
+        <Brush x:Key="GreyBrush">#E5E5E5</Brush>
+        <Brush x:Key="OrangeBrush">#F07930</Brush>
+        <Brush x:Key="YellowBrush">#F4B400</Brush>
+        <Brush x:Key="GreenBrush">#24b84c</Brush>
+        <Brush x:Key="BackgroundBlue">#1E2456</Brush>
+        <Brush x:Key="BackgroundLightBlue">#313972</Brush>
+        <Brush x:Key="BackgroundDarkBlue">#FF1E2456</Brush>
+        <Brush x:Key="BackgroundGray">#DEDEDE</Brush>
+        <Brush x:Key="BackgroundWhite">#FFFFFF</Brush>
+        <Brush x:Key="BackgroundRed">#D63F34</Brush>
+        <Brush x:Key="BackgroundGreen">#65B33E</Brush>
+        <Brush x:Key="BackgroundDarkGreen">#497C2C</Brush>
+        <Brush x:Key="TextGrayBrush">#999999</Brush>
+        <Brush x:Key="TextDarkGrayBrush">#666666</Brush>
+        <Brush x:Key="TextBueBrush">#1E2456</Brush>
+        <Brush x:Key="BackgroundCarouselItem">#999999</Brush>
+        <Brush x:Key="BackgroundDarkCarouselItem">#808080</Brush>
+        <Brush x:Key="SmpPreco">#FF488DC8</Brush>
+        <Brush x:Key="SmpMag">#FF43B77A</Brush>
+        <Brush x:Key="SmpPromo">#FFEB212E</Brush>
+        <Brush x:Key="BackgroundSaisieStack">#FFEEEEEE</Brush>
+        <Brush x:Key="PageBackgroundBrush">#DEDEDE</Brush>
+        <Brush x:Key="BlocBackgroundBrush">#CCCCCC</Brush>
+        <Brush x:Key="DefaultItemBrush">#EFEFEF</Brush>
+        <Brush x:Key="HightlightItemBrush">#FFFFFF</Brush>
+        <Brush x:Key="MenuBackgroundBrush">White</Brush>
+        <Brush x:Key="MenuTextBrush">Black</Brush>
+        <Brush x:Key="LabelErrorBrush">#FF0000</Brush>
+        <Brush x:Key="SemiTransparentGray">#AAAAAAAA</Brush>
+        <Brush x:Key="Accent">#65B33E</Brush>
+        <Brush x:Key="AccentDark">#497C2C</Brush>
+        <Brush x:Key="SepBrush">#CCCCCC</Brush>
+        <Brush x:Key="WaitingScanBrush">#E6D63F34</Brush>
+
+
+        <!-- EndRegionBrush -->
+
+        <!--region Font Size-->
+
+        <system:Double x:Key="FontBig">25</system:Double>
+        <system:Double x:Key="FontNormal">16</system:Double>
+        <system:Double x:Key="FontSmall">14</system:Double>
+        <system:Double x:Key="FontVerySmall">12</system:Double>
+        <system:Double x:Key="Font17">17</system:Double>
+        <system:Double x:Key="Font16">16</system:Double>
+        <system:Double x:Key="ButtonWidth">180</system:Double>
+
+        <!--endregion End Font Size-->
+
+
+        <!--region Label Style s-->
+        
+        <Style TargetType="Label" x:Key="Label_default_bold">
+            <Setter Property="Foreground" Value="{StaticResource BackgroundWhite}"/>
+              <Setter Property="FontSize" Value="{StaticResource FontNormal}" />
+            <Setter Property="FontWeight" Value="Bold"></Setter>
+        </Style>
+        <Style TargetType="Label" x:Key="Label_default">
+            <Setter Property="Foreground" Value="{StaticResource BackgroundWhite}"/>
+            <Setter Property="FontSize" Value="{StaticResource FontNormal}" />
+            <Setter Property="FontWeight" Value="Normal"></Setter>
+        </Style>
+
+
+        <!--region Font Size-->
     </Application.Resources>
 </Application>
