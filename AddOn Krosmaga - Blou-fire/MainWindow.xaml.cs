@@ -45,12 +45,17 @@ namespace AddOn_Krosmaga___Blou_fire
         Queue<byte[]> queue = new Queue<byte[]>();
         SyncEvents syncEvents = new SyncEvents();
 
+        List<string> Classes = new List<string>() { "Tous", "Cra", "Ecaflip", "Eniripsa", "Enutrof", "Iop", "Sacrieur", "Sadida", "Sram", "Xelor" };
+
         public MainWindow()
         {
             InitializeComponent();
             UIDatas = (UIPlayerDatas)this.DataContext;
             cards = new CardCollection();
             cards.Collection = new JsonCard().ChargerCartes();
+
+            OwnClasses.ItemsSource = Classes;
+            OpponentClasses.ItemsSource = Classes;
 
             messageToBeCompleted = false;
 
@@ -319,6 +324,26 @@ namespace AddOn_Krosmaga___Blou_fire
                     }
                     UIDatas.NotifyPropertyChanged("Deck");
                 }
+                if((cardMoved.CardLocationTo == Enums.CardLocation.OwnHand && cardMoved.ConcernedFighter != UIDatas.MyIndex) ||
+                    (cardMoved.CardLocationTo == Enums.CardLocation.OpponentHand && cardMoved.ConcernedFighter == UIDatas.MyIndex))
+                {
+                    UIDatas.OpponentCardsInHand += 1;
+                }
+                if ((cardMoved.CardLocationTo == Enums.CardLocation.OwnHand && cardMoved.ConcernedFighter == UIDatas.MyIndex) ||
+                    (cardMoved.CardLocationTo == Enums.CardLocation.OpponentHand && cardMoved.ConcernedFighter != UIDatas.MyIndex))
+                {
+                    UIDatas.OwnCardsInHand += 1;
+                }
+                if ((cardMoved.CardLocationFrom == Enums.CardLocation.OwnHand && cardMoved.ConcernedFighter != UIDatas.MyIndex) ||
+                    (cardMoved.CardLocationFrom == Enums.CardLocation.OpponentHand && cardMoved.ConcernedFighter == UIDatas.MyIndex))
+                {
+                    UIDatas.OpponentCardsInHand -= 1;
+                }
+                if ((cardMoved.CardLocationFrom == Enums.CardLocation.OwnHand && cardMoved.ConcernedFighter == UIDatas.MyIndex) ||
+                    (cardMoved.CardLocationFrom == Enums.CardLocation.OpponentHand && cardMoved.ConcernedFighter != UIDatas.MyIndex))
+                {
+                    UIDatas.OwnCardsInHand -= 1;
+                }
             }
             else if(value.EventType == Enums.EventType.CARD_TO_BE_PLAYED)
             {
@@ -402,12 +427,26 @@ namespace AddOn_Krosmaga___Blou_fire
 
             UIDatas.CurrentTurn = 0;
             UIDatas.OpponentFleaux = 0;
+
+            UIDatas.OpponentCardsInHand = 0;
+            UIDatas.OwnCardsInHand = 0;
         }
 
         private void UIActionGameEventStarted(Builders.GameStarted value)
         {
             UIDatas.MyIndex = value.MyIndex;
             UIDatas.HasIndex = true;
+
+            if (value.MyIndex == 0)
+            {
+                UIDatas.OwnCardsInHand = 3;
+                UIDatas.OpponentCardsInHand = 4;
+            }
+            else
+            {
+                UIDatas.OwnCardsInHand = 4;
+                UIDatas.OpponentCardsInHand = 3;
+            }
 
             toggleStatsDeckButton.Dispatcher.Invoke(new HideGrid(this.UpdateGrid), new object[] { false });
 
@@ -621,7 +660,27 @@ namespace AddOn_Krosmaga___Blou_fire
 
         private void toggleStatsDeckButton_Checked(object sender, RoutedEventArgs e)
         {
-            UIDatas.MatchsList = Connector.GetMatches();
+            UIDatas.MatchsList.Clear();
+            UIDatas.MatchsWithFilters.Clear();
+            var matches = Connector.GetMatches();
+            foreach(var item in matches)
+            {
+                var match = new UIElements.Match(item);
+                foreach(var item2 in item.Deck.CardsList)
+                {
+                    var card = cards.getCardById(item2.RealCardId);
+                    UIElements.DeckUI deckUI = match.Deck.CardsList.FirstOrDefault(x => x.Card == card);
+                    if (deckUI != null)
+                        deckUI.CardCount++;
+                    else
+                    {
+                        deckUI = new UIElements.DeckUI(card, 1);
+                        match.Deck.CardsList.Add(deckUI);
+                    }
+                }
+                UIDatas.MatchsList.Add(match);
+                UIDatas.MatchsWithFilters.Add(match);
+            }
         }
 
         private void toggleStatsDeckButton_Unchecked(object sender, RoutedEventArgs e)
@@ -671,15 +730,15 @@ namespace AddOn_Krosmaga___Blou_fire
                     item.Name,
                     new List<double>()
                     {
-                        vIop * 100 / (vIop + (dIop == 0 ? 1 : dIop)),
-                        vEca * 100 / (vEca + (dEca == 0 ? 1 : dEca)),
-                        vCra * 100 / (vCra + (dCra == 0 ? 1 : dCra)),
-                        vEni * 100 / (vEni + (dEni == 0 ? 1 : dEni)),
-                        vSacri * 100 / (vSacri + (dSacri == 0 ? 1 : dSacri)),
-                        vSadi * 100 / (vSadi + (dSadi == 0 ? 1 : dSadi)),
-                        vSram * 100 / (vSram + (dSram == 0 ? 1 : dSram)),
-                        vXel * 100 / (vXel + (dXel == 0 ? 1 : dXel)),
-                        vEnu * 100 / (vEnu + (dEnu == 0 ? 1 : dEnu))
+                        vIop * 100 / ((vIop + dIop) == 0 ? 1 : (vIop + dIop)),
+                        vEca * 100 / ((vEca + dEca) == 0 ? 1 : (vEca + dEca)),
+                        vCra * 100 / ((vCra + dCra) == 0 ? 1 : (vCra + dCra)),
+                        vEni * 100 / ((vEni + dEni) == 0 ? 1 : (vEni + dEni)),
+                        vSacri * 100 / ((vSacri + dSacri) == 0 ? 1 : (vSacri + dSacri)),
+                        vSadi * 100 / ((vSadi + dSadi) == 0 ? 1 : (vSadi + dSadi)),
+                        vSram * 100 / ((vSram + dSram) == 0 ? 1 : (vSram + dSram)),
+                        vXel * 100 / ((vXel + dXel) == 0 ? 1 : (vXel + dXel)),
+                        vEnu * 100 / ((vEnu + dEnu) == 0 ? 1 : (vEnu + dEnu))
                     });
                 UIDatas.AddItemToToursParClasse(
                     item.Name,

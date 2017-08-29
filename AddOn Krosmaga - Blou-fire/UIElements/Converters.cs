@@ -27,6 +27,24 @@ namespace AddOn_Krosmaga___Blou_fire.UIElements
         }
     }
 
+    public class IntToMatchResultStringConverter : IValueConverter
+    {
+        public object Convert(object value, Type targetType,
+            object parameter, CultureInfo culture)
+        {
+            if ((int)value == 0)
+                return "DEFAITE";
+            else
+                return "VICTOIRE";
+        }
+
+        public object ConvertBack(object value, Type targetType,
+            object parameter, CultureInfo culture)
+        {
+            return null;
+        }
+    }
+
     public class InverseBooleanConverter : IValueConverter
     {
         public object Convert(object value, Type targetType,

@@ -32,6 +32,9 @@ namespace AddOn_Krosmaga___Blou_fire
         private string _opponentClasse;
         private string _ownClasse;
 
+        private int _ownCardsInHand;
+        private int _opponentCardsInHand;
+
         private List<JsonCardsParser.Card> _opponentPlayedCards;
         private int _opponentFleaux;
 
@@ -123,7 +126,12 @@ namespace AddOn_Krosmaga___Blou_fire
         }
         #endregion
 
-        private List<SQLiteConnector.Match> _matchsList;
+        private List<UIElements.Match> _matchsList;
+        private List<UIElements.Match> _matchsWithFilters;
+
+        private string _OwnClasseFilter;
+        private string _OpponentClasseFilter;
+        private string _OpponentNameFilter;
 
         public UIPlayerDatas()
         {
@@ -131,7 +139,8 @@ namespace AddOn_Krosmaga___Blou_fire
             ActualFleauxIds = new Queue<int>();
             Deck = new List<DeckUI>();
 
-            MatchsList = new List<Match>();
+            MatchsList = new List<UIElements.Match>();
+            MatchsWithFilters = new List<UIElements.Match>();
 
             WinrateParClasse = new SeriesCollection();
             ToursParClasse = new SeriesCollection();
@@ -475,7 +484,7 @@ namespace AddOn_Krosmaga___Blou_fire
             }
         }
 
-        public List<Match> MatchsList
+        public List<UIElements.Match> MatchsList
         {
             get
             {
@@ -487,6 +496,103 @@ namespace AddOn_Krosmaga___Blou_fire
                 _matchsList = value;
                 NotifyPropertyChanged("MatchsList");
             }
+        }
+
+        public int OwnCardsInHand
+        {
+            get
+            {
+                return _ownCardsInHand;
+            }
+
+            set
+            {
+                _ownCardsInHand = value;
+                NotifyPropertyChanged("OwnCardsInHand");
+            }
+        }
+
+        public int OpponentCardsInHand
+        {
+            get
+            {
+                return _opponentCardsInHand;
+            }
+
+            set
+            {
+                _opponentCardsInHand = value;
+                NotifyPropertyChanged("OpponentCardsInHand");
+            }
+        }
+
+        public List<UIElements.Match> MatchsWithFilters
+        {
+            get
+            {
+                return _matchsWithFilters;
+            }
+
+            set
+            {
+                _matchsWithFilters = value;
+                NotifyPropertyChanged("MatchsWithFilters");
+            }
+        }
+
+        public string OwnClasseFilter
+        {
+            get
+            {
+                return _OwnClasseFilter;
+            }
+
+            set
+            {
+                _OwnClasseFilter = value;
+                UpdateMatchsWithFilterList();
+                NotifyPropertyChanged("OwnClasseFilter");
+            }
+        }
+
+        public string OpponentClasseFilter
+        {
+            get
+            {
+                return _OpponentClasseFilter;
+            }
+
+            set
+            {
+                _OpponentClasseFilter = value;
+                UpdateMatchsWithFilterList();
+                NotifyPropertyChanged("OpponentClasseFilter");
+            }
+        }
+
+        public string OpponentNameFilter
+        {
+            get
+            {
+                return _OpponentNameFilter;
+            }
+
+            set
+            {
+                _OpponentNameFilter = value;
+                UpdateMatchsWithFilterList();
+                NotifyPropertyChanged("OpponentNameFilter");
+            }
+        }
+
+        private void UpdateMatchsWithFilterList()
+        {
+            MatchsWithFilters.Clear();
+            MatchsWithFilters = MatchsList.Where(x => 
+            (OwnClasseFilter == "Tous" || OwnClasseFilter == null ? true : x.PlayerClasse == OwnClasseFilter) && 
+            (OpponentClasseFilter == "Tous" || OpponentClasseFilter == null ? true : x.Deck.OpponentClasse == OpponentClasseFilter) &&
+            (String.IsNullOrEmpty(OpponentNameFilter) ? true : x.OpponentName.ToLower().Contains(OpponentNameFilter.ToLower()))).ToList();
+            NotifyPropertyChanged("MatchsWithFilters");
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
