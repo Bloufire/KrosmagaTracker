@@ -185,107 +185,118 @@ namespace AddOn_Krosmaga___Blou_fire
 
         private void Krosmaga(int ID, byte[] data)
         {
-            //bool passTest = false;
-            Stream f = new MemoryStream(data);
-            b = new BinaryReader(f);
-
-            /*b.ReadBytes(2);
-
-            var d = b.ReadBytes(2);
-            string txt = "";
-            foreach (var item in d)
+            try
             {
-                txt += item.ToString("X");
-            }
-            int sizeofmessage = int.Parse(txt, System.Globalization.NumberStyles.HexNumber);
+                //bool passTest = false;
+                Stream f = new MemoryStream(data);
+                b = new BinaryReader(f);
 
-            if (messageToBeCompleted && sizeofmessage > 41)
-            {
-                if(expectedSizeToComplete > (actualSizeToComplete + sizeofmessage - 40))
+                /*b.ReadBytes(2);
+
+                var d = b.ReadBytes(2);
+                string txt = "";
+                foreach (var item in d)
                 {
-                    messageToBeCompleted = true;
-                    Buffer.BlockCopy(data, 40, bytesToComplete, actualSizeToComplete, sizeofmessage-40);
-                    actualSizeToComplete += (sizeofmessage - 40);
-                    return;
+                    txt += item.ToString("X");
                 }
-                else
+                int sizeofmessage = int.Parse(txt, System.Globalization.NumberStyles.HexNumber);
+
+                if (messageToBeCompleted && sizeofmessage > 41)
                 {
-                    Buffer.BlockCopy(data, 40, bytesToComplete, actualSizeToComplete, sizeofmessage - 40);
+                    if(expectedSizeToComplete > (actualSizeToComplete + sizeofmessage - 40))
+                    {
+                        messageToBeCompleted = true;
+                        Buffer.BlockCopy(data, 40, bytesToComplete, actualSizeToComplete, sizeofmessage-40);
+                        actualSizeToComplete += (sizeofmessage - 40);
+                        return;
+                    }
+                    else
+                    {
+                        Buffer.BlockCopy(data, 40, bytesToComplete, actualSizeToComplete, sizeofmessage - 40);
 
-                    messageToBeCompleted = false;
-                    expectedSizeToComplete = 0;
-                    actualSizeToComplete = 0;
+                        messageToBeCompleted = false;
+                        expectedSizeToComplete = 0;
+                        actualSizeToComplete = 0;
 
-                    f = new MemoryStream(bytesToComplete);
-                    b = new BinaryReader(f);
-                    passTest = true;
-                }
-            }*/
-
-            if (b.BaseStream.Length >= 41)
-                b.BaseStream.Position = 40;
-
-            b.ReadBytes(3);
-            while (b.BaseStream.Position < b.BaseStream.Length && b.ReadByte() != 0)
-            {
-                b.ReadBytes(3);
-                string messageId = ConcatHeader();
-                b.ReadByte();
-                uint size = ReadRawVarint32();
-                byte[] send;
-                /*if(!passTest && size > sizeofmessage)
-                {
-                    messageToBeCompleted = true;
-                    bytesToComplete = new byte[4096];
-                    expectedSizeToComplete = (int)size + (int)b.BaseStream.Position;
-                    Buffer.BlockCopy(data, 0, bytesToComplete, actualSizeToComplete, sizeofmessage);
-                    actualSizeToComplete += sizeofmessage;
-                    return;
+                        f = new MemoryStream(bytesToComplete);
+                        b = new BinaryReader(f);
+                        passTest = true;
+                    }
                 }*/
 
-                switch (messageId)
-                {
-                    //case "104BE831BFC1F6EB11C8B453B7F257C499": // LeaderboardPersonnalEntryEvent
-                    case "A743D4E99C61572311D93D8A99B0D00AB9": // StartOfTurnEvent
-                        Builders.StartOfTurn startofturn = new Builders.StartOfTurn();
-                        send = b.ReadBytes((int)size);
-                        startofturn.Decode(send);
-                        UIActionStartOfTurn(startofturn);
-                        break;
-                    case "89438706FC2AE2CD11B3891BE848AD7887": // GameStartedEvent
-                        Builders.GameStarted gamestarted = new Builders.GameStarted();
-                        send = b.ReadBytes((int)size);
-                        gamestarted.Decode(send);
-                        UIActionGameEventStarted(gamestarted);
-                        break;
-                    case "1B4FF61A6FBC09E611F2CBA7E5FB5391BA": // GameFinishedEvent
-                        Builders.GameFinished gamefinished = new Builders.GameFinished();
-                        send = b.ReadBytes((int)size);
-                        gamefinished.Decode(send);
-                        UIActionGameFinishedEvent(gamefinished);
-                        break;
-                    case "98400741B1CB5A4A110FC4D2D51E2D4CA9": // GameEventsEvent
-                        Builders.GameEvents gameevents = new Builders.GameEvents();
-                        send = b.ReadBytes((int)size);
-                        gameevents.Decode(send);
-                        UIActionGameEventsEvent(gameevents);
-                        break;
-                    case "24454BD9B42E0A231174846DD1A86A7ABB": // PlayerAccountLoadedEvent
-                        Builders.PlayerAccountLoaded playerAccountLoaded = new Builders.PlayerAccountLoaded();
-                        send = b.ReadBytes((int)size);
-                        playerAccountLoaded.Decode(send);
-                        break;
-                    /*case "F64A6D942BA9B2A01139131B120F0A6494":
-                        test = true;
-                        break;*/
-                    default:
-                        if (b.BaseStream.Position + size > b.BaseStream.Length)
-                            size = (uint)b.BaseStream.Length - (uint)b.BaseStream.Position - 5;
-                        if(size != 0)
-                            b.ReadBytes((int)size); 
-                        break;
-                }
+                if (b.BaseStream.Length >= 41)
+                    b.BaseStream.Position = 40;
+
                 b.ReadBytes(3);
+                while (b.BaseStream.Position < b.BaseStream.Length && b.ReadByte() != 0)
+                {
+                    b.ReadBytes(3);
+                    string messageId = ConcatHeader();
+                    b.ReadByte();
+                    uint size = ReadRawVarint32();
+
+                    byte[] send;
+                    /*if(!passTest && size > sizeofmessage)
+                    {
+                        messageToBeCompleted = true;
+                        bytesToComplete = new byte[4096];
+                        expectedSizeToComplete = (int)size + (int)b.BaseStream.Position;
+                        Buffer.BlockCopy(data, 0, bytesToComplete, actualSizeToComplete, sizeofmessage);
+                        actualSizeToComplete += sizeofmessage;
+                        return;
+                    }*/
+
+                    switch (messageId)
+                    {
+                        //case "104BE831BFC1F6EB11C8B453B7F257C499": // LeaderboardPersonnalEntryEvent
+                        case "A743D4E99C61572311D93D8A99B0D00AB9": // StartOfTurnEvent
+                            Builders.StartOfTurn startofturn = new Builders.StartOfTurn();
+                            send = b.ReadBytes((int)size);
+                            startofturn.Decode(send);
+                            UIActionStartOfTurn(startofturn);
+                            break;
+                        case "89438706FC2AE2CD11B3891BE848AD7887": // GameStartedEvent
+                            Builders.GameStarted gamestarted = new Builders.GameStarted();
+                            send = b.ReadBytes((int)size);
+                            gamestarted.Decode(send);
+                            UIActionGameEventStarted(gamestarted);
+                            break;
+                        case "1B4FF61A6FBC09E611F2CBA7E5FB5391BA": // GameFinishedEvent
+                            Builders.GameFinished gamefinished = new Builders.GameFinished();
+                            send = b.ReadBytes((int)size);
+                            gamefinished.Decode(send);
+                            UIActionGameFinishedEvent(gamefinished);
+                            break;
+                        case "98400741B1CB5A4A110FC4D2D51E2D4CA9": // GameEventsEvent
+                            Builders.GameEvents gameevents = new Builders.GameEvents();
+                            send = b.ReadBytes((int)size);
+                            gameevents.Decode(send);
+                            UIActionGameEventsEvent(gameevents);
+                            break;
+                        case "24454BD9B42E0A231174846DD1A86A7ABB": // PlayerAccountLoadedEvent
+                            Builders.PlayerAccountLoaded playerAccountLoaded = new Builders.PlayerAccountLoaded();
+                            send = b.ReadBytes((int)size);
+                            playerAccountLoaded.Decode(send);
+                            break;
+                        /*case "F64A6D942BA9B2A01139131B120F0A6494":
+                            test = true;
+                            break;*/
+                        default:
+                            if (b.BaseStream.Position + size > b.BaseStream.Length)
+                                size = (uint)b.BaseStream.Length - (uint)b.BaseStream.Position - 5;
+                            if (size != 0)
+                                b.BaseStream.Position = b.BaseStream.Position + size;
+                            break;
+                    }
+                    b.ReadBytes(3);
+                }
+            }
+            catch(Exception e)
+            {
+                using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"log.txt", true))
+                {
+                    file.WriteLine("ERROR - " + e);
+                }
             }
         }
 
@@ -681,6 +692,10 @@ namespace AddOn_Krosmaga___Blou_fire
                 UIDatas.MatchsList.Add(match);
                 UIDatas.MatchsWithFilters.Add(match);
             }
+
+            UIDatas.OwnClasseFilter = "Tous";
+            UIDatas.OpponentClasseFilter = "Tous";
+            UIDatas.OpponentNameFilter = String.Empty;
         }
 
         private void toggleStatsDeckButton_Unchecked(object sender, RoutedEventArgs e)

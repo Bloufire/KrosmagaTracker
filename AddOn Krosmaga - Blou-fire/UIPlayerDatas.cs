@@ -530,7 +530,7 @@ namespace AddOn_Krosmaga___Blou_fire
         {
             get
             {
-                return _matchsWithFilters;
+                return _matchsWithFilters.OrderByDescending(x => x.Date).ToList();
             }
 
             set
