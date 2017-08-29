@@ -228,7 +228,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
             }
         }
-
+    
         public int OpponentVictories
         {
             get => _opponentVictories;
