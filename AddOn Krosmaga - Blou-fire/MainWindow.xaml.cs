@@ -25,6 +25,9 @@ using AddOn_Krosmaga___Blou_fire.ProducerConsumer;
 using System.Collections;
 using MahApps.Metro.Controls;
 
+using System.Collections.Concurrent;
+
+
 namespace AddOn_Krosmaga___Blou_fire
 {
     /// <summary>
@@ -46,7 +49,11 @@ namespace AddOn_Krosmaga___Blou_fire
         Queue<byte[]> queue = new Queue<byte[]>();
         SyncEvents syncEvents = new SyncEvents();
 
+        BlockingCollection<byte[]> workQueue = new BlockingCollection<byte[]>(new ConcurrentQueue<byte[]>());
+
         List<string> Classes = new List<string>() { "Tous", "Cra", "Ecaflip", "Eniripsa", "Enutrof", "Iop", "Sacrieur", "Sadida", "Sram", "Xelor" };
+
+        System.IO.StreamWriter fileLog = new System.IO.StreamWriter(@"log.txt", true);
 
         public MainWindow()
         {
@@ -62,19 +69,33 @@ namespace AddOn_Krosmaga___Blou_fire
 
             FirewallValidation();
 
-            Producer producer = new Producer(queue, syncEvents);
+            /*Producer producer = new Producer(queue, syncEvents);
             Thread producerThread = new Thread(producer.ThreadRun);
-            producerThread.Start();
+            producerThread.Start();*/
 
-            var consumer = Task.Factory.StartNew(() =>
+            Producer producer = new Producer(workQueue);
+
+            /*var consumer = Task.Run(() =>
             {
                 while (WaitHandle.WaitAny(syncEvents.EventArray) != 1)
                 {
+                    fileLog.WriteLine("Item in queue");
                     byte[] data;
                     lock (((ICollection)queue).SyncRoot)
                     {
                         data = queue.Dequeue();
                     }
+                    Krosmaga(0, data);
+                    fileLog.WriteLine("WaitAny Item in queue");
+                }
+                fileLog.WriteLine("SORTIE");
+            });*/
+
+            var consumer = Task.Run(() =>
+            {
+                while (true)
+                {
+                    byte[] data = workQueue.Take();
                     Krosmaga(0, data);
                 }
             });
@@ -227,10 +248,14 @@ namespace AddOn_Krosmaga___Blou_fire
 
                 if (b.BaseStream.Length >= 41)
                     b.BaseStream.Position = 40;
+                else
+                    return;
 
                 b.ReadBytes(3);
                 while (b.BaseStream.Position < b.BaseStream.Length && b.ReadByte() != 0)
                 {
+                    fileLog.WriteLine("Reading...");
+
                     b.ReadBytes(3);
                     string messageId = ConcatHeader();
                     b.ReadByte();
@@ -290,6 +315,8 @@ namespace AddOn_Krosmaga___Blou_fire
                             break;
                     }
                     b.ReadBytes(3);
+
+                    fileLog.WriteLine("Header : " + messageId + " - " + size);
                 }
             }
             catch(Exception e)
@@ -297,6 +324,8 @@ namespace AddOn_Krosmaga___Blou_fire
                 using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"log.txt", true))
                 {
                     file.WriteLine("ERROR - " + e);
+                    foreach(var item in data)
+                        file.Write(item);
                 }
             }
         }

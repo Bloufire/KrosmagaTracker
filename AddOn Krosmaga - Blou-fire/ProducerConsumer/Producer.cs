@@ -1,6 +1,7 @@
 ﻿using SniffingLibs;
 using System;
 using System.Collections;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -18,10 +19,18 @@ namespace AddOn_Krosmaga___Blou_fire.ProducerConsumer
         private Queue<byte[]> _queue;
         private SyncEvents _syncEvents;
 
+        private BlockingCollection<byte[]> bQueue;
+
         public Producer(Queue<byte[]> q, SyncEvents e)
         {
             _queue = q;
             _syncEvents = e;
+        }
+
+        public Producer(BlockingCollection<byte[]> value)
+        {
+            bQueue = value;
+            ThreadRun();
         }
 
         // Producer.ThreadRun
@@ -85,11 +94,12 @@ namespace AddOn_Krosmaga___Blou_fire.ProducerConsumer
                     TCPHeader tcpHeader = new TCPHeader(ipHeader.Data, ipHeader.MessageLength); //Length of the data field
                     if (tcpHeader.SourcePort == "4988")
                     {
-                        lock (((ICollection)_queue).SyncRoot)
+                        /*lock (((ICollection)_queue).SyncRoot)
                         {
                             _queue.Enqueue(byteData);
                             _syncEvents.NewItemEvent.Set();
-                        }
+                        }*/
+                        bQueue.Add(byteData);
                     }
                     break;
 
