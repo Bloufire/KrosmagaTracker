@@ -6,6 +6,8 @@
         xmlns:local="clr-namespace:AddOn_Krosmaga___Blou_fire"
         xmlns:conv="clr-namespace:AddOn_Krosmaga___Blou_fire.UIElements"
         xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        xmlns:tz="http://schemas.abtsoftware.co.uk/transitionz"
+
         mc:Ignorable="d"
         Title="AddOn Krosmaga - Blou-fire" Width="850"
         Topmost="True"
@@ -24,7 +26,7 @@
         <conv:IntToMatchResultStringConverter x:Key="IntToMatchResultStringConverter" />
     </Window.Resources>
     <StackPanel Orientation="Vertical" Background="Transparent">
-        <Grid HorizontalAlignment="Left" Background="Black" Width="300" Height="100">
+        <Grid HorizontalAlignment="Left" Background="#66000000" Width="300" Height="100">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
                 <RowDefinition Height="2*" />
@@ -41,8 +43,8 @@
                     <ColumnDefinition Width="4*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Label Content="{Binding OpponentPseudo, UpdateSourceTrigger=PropertyChanged}" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontWeight="Bold"/>
-                <Label Content="{Binding OpponentLevel, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontWeight="Bold"/>
+                <Label Content="{Binding OpponentPseudo, UpdateSourceTrigger=PropertyChanged}" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource Label_default}" FontWeight="Bold"/>
+                <Label Content="{Binding OpponentLevel, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource Label_default}" FontWeight="Bold"/>
             </Grid>
             <Grid Grid.Row="2" Grid.Column="1">
                 <Grid.ColumnDefinitions>
@@ -70,13 +72,13 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <Image Source="/Images/trophy.png" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center"/>
-                <Label Content="{Binding OpponentVictories, UpdateSourceTrigger=PropertyChanged}" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontWeight="Bold"/>
+                <Label Content="{Binding OpponentVictories, UpdateSourceTrigger=PropertyChanged}" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource Label_default}"/>
                 <Image Source="/Images/skull.png" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center"/>
-                <Label Content="{Binding OpponentDefeats, UpdateSourceTrigger=PropertyChanged}" Grid.Row="0" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontWeight="Bold"/>
-                <Label Content="Turn :" Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontWeight="Bold"/>
-                <Label Content="{Binding CurrentTurn, UpdateSourceTrigger=PropertyChanged}" Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontWeight="Bold"/>
+                <Label Content="{Binding OpponentDefeats, UpdateSourceTrigger=PropertyChanged}" Grid.Row="0" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource Label_default_bold}" />
+                <Label Content="Turn :" Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource Label_default}" FontWeight="Bold"/>
+                <Label Content="{Binding CurrentTurn, UpdateSourceTrigger=PropertyChanged}" Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource Label_default}"/>
                 <Image Source="/Images/fleau.png" Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center"/>
-                <Label Content="{Binding OpponentFleaux, UpdateSourceTrigger=PropertyChanged}" Grid.Column="3" Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontWeight="Bold"/>
+                <Label Content="{Binding OpponentFleaux, UpdateSourceTrigger=PropertyChanged}" Grid.Column="3" Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource Label_default_bold}"/>
             </Grid>
             <Grid Grid.Row="2" Grid.Column="2">
                 <ToggleButton Name="toggleDeckButton" Margin="8" Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}">
@@ -103,7 +105,11 @@
                 </ListView.ItemTemplate>
             </ListView>
         </Grid>
-        <Grid Name="statsGrid" Height="400" Background="Black" MaxWidth="850" Visibility="{Binding ElementName=toggleStatsDeckButton, Path=IsChecked, Converter={StaticResource BoolToVisConverter}}">
+        <Grid Name="statsGrid" Height="400" Background="#33000000" MaxWidth="850"   
+              Visibility="Collapsed"
+              tz:Transitionz.Opacity="{tz:OpacityParams From=0, To=1, Duration=200, TransitionOn=Visibility}"
+              tz:Transitionz.Translate="{tz:TranslateParams From='10,0', To='0,0', Duration=200, TransitionOn=Visibility}"
+              tz:Transitionz.Visibility="{Binding ElementName=toggleStatsDeckButton, Path=IsChecked, Converter={StaticResource BoolToVisConverter}}">
             <TabControl Background="Black" TabStripPlacement="Right">
                 <TabControl.Resources>
                     <Style TargetType="TabItem">
