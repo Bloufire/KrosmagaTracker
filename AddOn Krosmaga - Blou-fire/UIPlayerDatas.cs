@@ -10,6 +10,7 @@ using AddOn_Krosmaga___Blou_fire.UIElements;
 using LiveCharts;
 using LiveCharts.Wpf;
 using SQLiteConnector;
+using System.Collections.ObjectModel;
 
 namespace AddOn_Krosmaga___Blou_fire
 {
@@ -40,8 +41,17 @@ namespace AddOn_Krosmaga___Blou_fire
         private int _opponentFleaux;
 
         private List<DeckUI> _deck;
+        private List<DeckUI> _cardsInHand;
+        private List<DeckUI> _deckInfinites;
+        private List<DeckUI> _deckKrosmiques;
+
+        private ObservableCollection<DeckUI> _cardsInHandUI;
+        private ObservableCollection<DeckUI> _cardsInfinites;
+        private ObservableCollection<DeckUI> _cardsKrosmiques;
 
         private Queue<int> _actualFleauxIds;
+
+        private List<int> _cardAlreadyPlayed;
 
         #region ChartElements
         public SeriesCollection WinrateParClasse { get; set; }
@@ -125,6 +135,10 @@ namespace AddOn_Krosmaga___Blou_fire
             _opponentPlayedCards = new List<JsonCardsParser.Card>();
             ActualFleauxIds = new Queue<int>();
             Deck = new List<DeckUI>();
+            CardAlreadyPlayed = new List<int>();
+            CardsInHand = new List<DeckUI>();
+            DeckKrosmiques = new List<DeckUI>();
+            DeckInfinites = new List<DeckUI>();
 
             MatchsList = new List<UIElements.Match>();
             MatchsWithFilters = new List<UIElements.Match>();
@@ -181,6 +195,21 @@ namespace AddOn_Krosmaga___Blou_fire
         public void ClearDeck()
         {
             _deck.Clear();
+        }
+
+        public void AddCardToCardInHand(DeckUI card)
+        {
+            _cardsInHand.Add(card);
+        }
+
+        public void RemoveCardFromCardInHand(DeckUI card)
+        {
+            _cardsInHand.Remove(card);
+        }
+
+        public void ClearCardInHand(DeckUI card)
+        {
+            _cardsInHand.Clear();
         }
 
         public int CurrentTurn
@@ -394,6 +423,48 @@ namespace AddOn_Krosmaga___Blou_fire
             }
         }
 
+        public List<DeckUI> CardsInHand
+        {
+            get
+            {
+                return _cardsInHand;
+            }
+
+            set
+            {
+                _cardsInHand = value;
+                NotifyPropertyChanged("CardsInHand");
+            }
+        }
+
+        public List<DeckUI> DeckInfinites
+        {
+            get
+            {
+                return _deck.Where(x => x.Card.Rarity == 4).ToList();
+            }
+
+            set
+            {
+                _deckInfinites = value;
+                NotifyPropertyChanged("DeckInfinites");
+            }
+        }
+
+        public List<DeckUI> DeckKrosmiques
+        {
+            get
+            {
+                return _deck.Where(x => x.Card.Rarity == 3).ToList();
+            }
+
+            set
+            {
+                _deckKrosmiques = value;
+                NotifyPropertyChanged("DeckKrosmiques");
+            }
+        }
+
         public string OwnClasse
         {
             get { return _ownClasse ?? "OwnClasse == Null"; }
@@ -488,6 +559,61 @@ namespace AddOn_Krosmaga___Blou_fire
                 _OpponentNameFilter = value;
                 UpdateMatchsWithFilterList();
                 NotifyPropertyChanged("OpponentNameFilter");
+            }
+        }
+
+        public List<int> CardAlreadyPlayed
+        {
+            get
+            {
+                return _cardAlreadyPlayed;
+            }
+
+            set
+            {
+                _cardAlreadyPlayed = value;
+            }
+        }
+
+        public ObservableCollection<DeckUI> CardsInHandUI
+        {
+            get
+            {
+                return new ObservableCollection<DeckUI>(CardsInHand);
+            }
+
+            set
+            {
+                _cardsInHandUI = value;
+                NotifyPropertyChanged("CardsInHandUI");
+            }
+        }
+
+        public ObservableCollection<DeckUI> CardsInfinites
+        {
+            get
+            {
+                return new ObservableCollection<DeckUI>(DeckInfinites);
+            }
+
+            set
+            {
+                _cardsInfinites = value;
+                NotifyPropertyChanged("CardsInfinites");
+            }
+        }
+
+        public ObservableCollection<DeckUI> CardsKrosmiques
+        {
+            get
+            {
+                return new ObservableCollection<DeckUI>(DeckKrosmiques);
+            }
+
+            set
+            {
+                _cardsKrosmiques = value;
+                NotifyPropertyChanged("CardsKrosmiques");
             }
         }
 

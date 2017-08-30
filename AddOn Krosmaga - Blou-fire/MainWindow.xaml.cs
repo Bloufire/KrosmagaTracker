@@ -46,6 +46,8 @@ namespace AddOn_Krosmaga___Blou_fire
         private byte[] bytesToComplete;
         private int actualSizeToComplete;
 
+        private byte[] lastMessage = new byte[1];
+
         Queue<byte[]> queue = new Queue<byte[]>();
         SyncEvents syncEvents = new SyncEvents();
 
@@ -69,27 +71,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
             FirewallValidation();
 
-            /*Producer producer = new Producer(queue, syncEvents);
-            Thread producerThread = new Thread(producer.ThreadRun);
-            producerThread.Start();*/
-
             Producer producer = new Producer(workQueue);
-
-            /*var consumer = Task.Run(() =>
-            {
-                while (WaitHandle.WaitAny(syncEvents.EventArray) != 1)
-                {
-                    fileLog.WriteLine("Item in queue");
-                    byte[] data;
-                    lock (((ICollection)queue).SyncRoot)
-                    {
-                        data = queue.Dequeue();
-                    }
-                    Krosmaga(0, data);
-                    fileLog.WriteLine("WaitAny Item in queue");
-                }
-                fileLog.WriteLine("SORTIE");
-            });*/
 
             var consumer = Task.Run(() =>
             {
@@ -132,83 +114,14 @@ namespace AddOn_Krosmaga___Blou_fire
             }
         }
 
-        private void LaunchSniffer()
-        {
-            string ipadd = "";
-            IPHostEntry HosyEntry = Dns.GetHostEntry((Dns.GetHostName()));
-            if (HosyEntry.AddressList.Length > 0)
-            {
-                foreach (IPAddress ip in HosyEntry.AddressList)
-                {
-                    if (ip.AddressFamily == AddressFamily.InterNetwork)
-                        ipadd = ip.ToString();
-                }
-            }
-
-            mainSocket = new Socket(AddressFamily.InterNetwork,
-                SocketType.Raw, ProtocolType.IP);
-
-            mainSocket.Bind(new IPEndPoint(IPAddress.Parse(ipadd), 4988));
-
-            mainSocket.SetSocketOption(SocketOptionLevel.IP,
-                                       SocketOptionName.HeaderIncluded,
-                                       true);
-
-            byte[] byTrue = new byte[4] { 1, 0, 0, 0 };
-            byte[] byOut = new byte[4] { 0, 0, 0, 0 };
-
-            mainSocket.IOControl(IOControlCode.ReceiveAll, BitConverter.GetBytes(1), null);
-
-            mainSocket.BeginReceive(byteData, 0, byteData.Length, SocketFlags.None,
-                new AsyncCallback(OnReceive), null);
-        }
-
-        private void OnReceive(IAsyncResult ar)
-        {
-            try
-            {
-                int nReceived = mainSocket.EndReceive(ar);
-
-                //Analyze the bytes received...
-
-                ParseData(byteData, nReceived);
-
-                byteData = new byte[4096];
-                mainSocket.BeginReceive(byteData, 0, byteData.Length, SocketFlags.None, new AsyncCallback(OnReceive), null);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-        }
-
-        private void ParseData(byte[] byteData, int nReceived)
-        {
-            IPHeader ipHeader = new IPHeader(byteData, nReceived);
-
-            switch (ipHeader.ProtocolType)
-            {
-                case Protocol.TCP:
-                    TCPHeader tcpHeader = new TCPHeader(ipHeader.Data, ipHeader.MessageLength); //Length of the data field
-                    if (tcpHeader.SourcePort == "4988")
-                    {
-                        Thread thread = new Thread(() => Krosmaga(0, byteData));
-                        thread.Start();
-                    }
-                    break;
-
-                case Protocol.UDP:
-                    break;
-
-                case Protocol.Unknown:
-                    break;
-            }
-        }
-
         private void Krosmaga(int ID, byte[] data)
         {
             try
             {
+                if (data.Length > 40 && lastMessage.SequenceEqual(data.Skip(40)))
+                    return;
+                lastMessage = data.Skip(40).ToArray();
+
                 //bool passTest = false;
                 Stream f = new MemoryStream(data);
                 b = new BinaryReader(f);
@@ -355,15 +268,36 @@ namespace AddOn_Krosmaga___Blou_fire
                 {
                     UIDatas.OpponentPlayedCards.Add(cards.getCardById((int)cardMoved.TradingCard));
                     JsonCardsParser.Card card = cards.getCardById((int)cardMoved.TradingCard);
-                    UIElements.DeckUI deckUI = UIDatas.Deck.FirstOrDefault(x => x.Card == card);
-                    if (deckUI != null)
-                        deckUI.CardCount++;
+                    UIElements.DeckUI deckUI;
+                    if (!UIDatas.CardAlreadyPlayed.Any(x => x == cardMoved.Card))
+                    {
+                        UIDatas.CardAlreadyPlayed.Add(cardMoved.Card);
+                        deckUI = UIDatas.Deck.FirstOrDefault(x => x.Card == card);
+                        if (deckUI != null)
+                            deckUI.CardCount++;
+                        else
+                        {
+                            deckUI = new UIElements.DeckUI(card, 1);
+                            UIDatas.AddCardToDeck(deckUI);
+                        }
+                        UIDatas.NotifyPropertyChanged("Deck");
+                    }
                     else
                     {
-                        deckUI = new UIElements.DeckUI(card, 1);
-                        UIDatas.AddCardToDeck(deckUI);
+                        deckUI = UIDatas.CardsInHand.FirstOrDefault(x => x.Card == card);
+                        if (deckUI != null)
+                        {
+                            if(deckUI.CardCount > 1)
+                            {
+                                deckUI.CardCount--;
+                            }
+                            else
+                            {
+                                UIDatas.RemoveCardFromCardInHand(deckUI);
+                            }
+                            UIDatas.NotifyPropertyChanged("CardsInHandUI");
+                        }
                     }
-                    UIDatas.NotifyPropertyChanged("Deck");
                 }
                 if((cardMoved.CardLocationTo == Enums.CardLocation.OwnHand && cardMoved.ConcernedFighter != UIDatas.MyIndex) ||
                     (cardMoved.CardLocationTo == Enums.CardLocation.OpponentHand && cardMoved.ConcernedFighter == UIDatas.MyIndex))
@@ -384,6 +318,22 @@ namespace AddOn_Krosmaga___Blou_fire
                     (cardMoved.CardLocationFrom == Enums.CardLocation.OpponentHand && cardMoved.ConcernedFighter != UIDatas.MyIndex))
                 {
                     UIDatas.OwnCardsInHand -= 1;
+                }
+                if((cardMoved.CardLocationFrom == Enums.CardLocation.Playground && cardMoved.CardLocationTo == Enums.CardLocation.OwnHand && cardMoved.ConcernedFighter != UIDatas.MyIndex) || // Remonte dans son camp
+                    (cardMoved.CardLocationFrom == Enums.CardLocation.Playground && cardMoved.CardLocationTo == Enums.CardLocation.OpponentHand && cardMoved.ConcernedFighter != UIDatas.MyIndex) || // Remonte le camp adverse
+                    (cardMoved.CardLocationFrom == Enums.CardLocation.OpponentGraveyard && cardMoved.CardLocationTo == Enums.CardLocation.OwnHand && cardMoved.ConcernedFighter != UIDatas.MyIndex) || // Récupère dans la défausse joueur
+                    (cardMoved.CardLocationFrom == Enums.CardLocation.OwnGraveyard && cardMoved.CardLocationTo == Enums.CardLocation.OwnHand && cardMoved.ConcernedFighter != UIDatas.MyIndex)) // Récupère dans sa défausse
+                {
+                    JsonCardsParser.Card card = cards.getCardById((int)cardMoved.TradingCard);
+                    UIElements.DeckUI deckUI = UIDatas.CardsInHand.FirstOrDefault(x => x.Card == card);
+                    if (deckUI != null)
+                        deckUI.CardCount++;
+                    else
+                    {
+                        deckUI = new UIElements.DeckUI(card, 1);
+                        UIDatas.AddCardToCardInHand(deckUI);
+                    }
+                    UIDatas.NotifyPropertyChanged("CardsInHandUI");
                 }
             }
             else if(value.EventType == Enums.EventType.CARD_TO_BE_PLAYED)
@@ -431,6 +381,11 @@ namespace AddOn_Krosmaga___Blou_fire
                     UIDatas.ActualFleauxIds.Enqueue(newAOE.ConcernedFightObject);
             }
 
+            UIDatas.DeckInfinites = UIDatas.Deck.Where(x => x.Card.Rarity == 4).ToList();
+            UIDatas.DeckKrosmiques = UIDatas.Deck.Where(x => x.Card.Rarity == 3).ToList();
+            UIDatas.NotifyPropertyChanged("CardsInfinites");
+            UIDatas.NotifyPropertyChanged("CardsKrosmiques");
+
             foreach (var item in value.TriggeredEvents)
             {
                 IterateEvents(item);
@@ -458,7 +413,9 @@ namespace AddOn_Krosmaga___Blou_fire
             toggleDeckButton.Dispatcher.Invoke(new HideGrid1(this.UpdateGrid1), new object[] { false });
 
             UIDatas.OpponentPlayedCards.Clear();
+            UIDatas.CardAlreadyPlayed.Clear();
             UIDatas.ClearDeck();
+            UIDatas.CardsInHand.Clear();
             UIDatas.NotifyPropertyChanged("Deck");
 
             UIDatas.OpponentPseudo = UIDatas.OwnPseudo;
@@ -687,16 +644,6 @@ namespace AddOn_Krosmaga___Blou_fire
         {
             if (e.ChangedButton == MouseButton.Left)
                 this.DragMove();
-        }
-
-        private void OpponentCardsPlayed_Click(object sender, RoutedEventArgs e)
-        {
-            string text = "Les cartes jouées par l'adversaire sont : ";
-            foreach(var item in UIDatas.OpponentPlayedCards)
-            {
-                text += Environment.NewLine + item.Name;
-            }
-            MessageBox.Show(text);
         }
 
         private void toggleStatsDeckButton_Checked(object sender, RoutedEventArgs e)

@@ -7,7 +7,7 @@ using JsonCardsParser;
 
 namespace AddOn_Krosmaga___Blou_fire.UIElements
 {
-    class DeckUI
+    public class DeckUI
     {
         private JsonCardsParser.Card _card;
         private int _cardCount;
