@@ -117,6 +117,9 @@
     <Compile Include="Enums\ResultHandlerType.cs" />
     <Compile Include="Enums\TriggerableCapacityType.cs" />
     <Compile Include="KrosmagaReader.cs" />
+    <Compile Include="Pages\StatsWindow.xaml.cs">
+      <DependentUpon>StatsWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ProducerConsumer\Consumer.cs" />
     <Compile Include="ProducerConsumer\Producer.cs" />
     <Compile Include="ProducerConsumer\SyncEvents.cs" />
@@ -137,6 +140,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\StatsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -222,6 +229,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\handred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controls\" />
+    <Folder Include="Mapper\" />
+    <Folder Include="Models\" />
+    <Folder Include="PageModels\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.105.2\build\net451\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.105.2\build\net451\System.Data.SQLite.Core.targets')" />

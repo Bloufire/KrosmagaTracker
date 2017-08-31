@@ -23,6 +23,7 @@ using System.Reflection;
 using SQLiteConnector;
 using AddOn_Krosmaga___Blou_fire.ProducerConsumer;
 using System.Collections;
+using AddOn_Krosmaga___Blou_fire.Pages;
 using MahApps.Metro.Controls;
 
 namespace AddOn_Krosmaga___Blou_fire
@@ -661,6 +662,9 @@ namespace AddOn_Krosmaga___Blou_fire
 
         private void toggleStatsDeckButton_Checked(object sender, RoutedEventArgs e)
         {
+            var win2 = new StatsWindow(UIDatas);
+            win2.Show();
+
             UIDatas.MatchsList.Clear();
             UIDatas.MatchsWithFilters.Clear();
             var matches = Connector.GetMatches();

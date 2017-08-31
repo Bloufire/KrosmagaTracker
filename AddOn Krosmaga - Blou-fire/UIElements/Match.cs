@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AddOn_Krosmaga___Blou_fire.UIElements
 {
-    class Match : INotifyPropertyChanged
+    public class Match : INotifyPropertyChanged
     {
         private int _idMatch;
         private string _opponentName;

@@ -13,8 +13,7 @@ using SQLiteConnector;
 
 namespace AddOn_Krosmaga___Blou_fire
 {
-    
-    class UIPlayerDatas : INotifyPropertyChanged
+    public class UIPlayerDatas : INotifyPropertyChanged
     {
         private bool _hasIndex;
         private int _myIndex;

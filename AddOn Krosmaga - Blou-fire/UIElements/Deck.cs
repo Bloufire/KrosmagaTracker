@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AddOn_Krosmaga___Blou_fire.UIElements
 {
-    class Deck
+    public class Deck
     {
         private int _idDeck;
         private string _opponentClasse;
