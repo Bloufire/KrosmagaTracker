@@ -15,7 +15,7 @@
       BorderThickness="0" 
       GlowBrush="Black"
       ResizeMode="CanResizeWithGrip"
-      Height="603" Width="1100"
+      Height="800" Width="1100"
       MinHeight="584" MinWidth="1100"
       WindowTransitionsEnabled="False"
       WindowStartupLocation="CenterScreen"
@@ -57,23 +57,41 @@
             </Button>
         </controls:WindowCommands>
     </controls:MetroWindow.RightWindowCommands>
-    <DockPanel Dock="Left" >
+    <DockPanel >
         <GroupBox Header="Filtres" DockPanel.Dock="Left" Width="180" MinWidth="180">
             <tracker:TrackerStats></tracker:TrackerStats>
         </GroupBox>
-        <GroupBox Header="Stats">
-            <metroChart:PieChart ChartSubTitle=""  
-                            ChartTitle="Victoire Par Classe" Background="Transparent">
-                <metroChart:PieChart.Series >
-                    <metroChart:ChartSeries DisplayMember="Name"
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"  />
+                <ColumnDefinition Width="*" />
+
+            </Grid.ColumnDefinitions>
+            <GroupBox Grid.Column="0" Header="Stats" HorizontalAlignment="Stretch">
+                <metroChart:ClusteredColumnChart ChartSubTitle=""  
+                            ChartTitle="Victoire Par Classe" Background="Transparent" >
+                    <metroChart:ClusteredColumnChart.Series >
+                        <metroChart:ChartSeries DisplayMember="Name"
                                        ItemsSource="{Binding ClasseWins}"
                                        ValueMember="Count" 
                                        SeriesTitle="Classes"
                                             />
-                </metroChart:PieChart.Series>
-            </metroChart:PieChart>
-
-        </GroupBox>
+                    </metroChart:ClusteredColumnChart.Series>
+                </metroChart:ClusteredColumnChart>
+            </GroupBox>
+            <GroupBox  Grid.Column="1"  Header="Autres" >
+                <metroChart:PieChart ChartSubTitle=""  
+                             ChartTitle="Lose Par Classe" Background="Transparent" >
+                    <metroChart:PieChart.Series >
+                        <metroChart:ChartSeries DisplayMember="Name"
+                                        ItemsSource="{Binding ClasseWins}"
+                                        ValueMember="Count" 
+                                        SeriesTitle="test"
+                />
+                    </metroChart:PieChart.Series>
+                </metroChart:PieChart>
+            </GroupBox>
+        </Grid>
     </DockPanel>
 </controls:MetroWindow>
 
