@@ -40,6 +40,9 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="De.TorstenMandelkow.MetroChart, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d5b8d1bbc99c4a2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\ModernUICharts.1.0.0\lib\De.TorstenMandelkow.MetroChart.dll</HintPath>
+    </Reference>
     <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
       <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
       <Private>True</Private>
@@ -83,6 +86,12 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="WPFLocalizeExtension, Version=2.3.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WpfLocalizeExtension.2.3.2\lib\net35\WPFLocalizeExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="XAMLMarkupExtensions, Version=1.2.1.3, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\XAMLMarkupExtensions.1.2.1.3\lib\net40\XAMLMarkupExtensions.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -112,15 +121,24 @@
     <Compile Include="Data\Uuid.Builder.cs" />
     <Compile Include="Data\ValueModification.Builder.cs" />
     <Compile Include="Enums\CardLocation.cs" />
+    <Compile Include="Enums\ClassEnum.cs" />
     <Compile Include="Enums\EventType.cs" />
     <Compile Include="Enums\GameType.cs" />
     <Compile Include="Enums\God.cs" />
+    <Compile Include="Enums\Language.cs" />
     <Compile Include="Enums\LocationType.cs" />
+    <Compile Include="Enums\LocDescriptionAttribute.cs" />
     <Compile Include="Enums\MovementType.cs" />
     <Compile Include="Enums\Reason.cs" />
     <Compile Include="Enums\Result.cs" />
     <Compile Include="Enums\ResultHandlerType.cs" />
+    <Compile Include="Enums\SaisonsEnum.cs" />
     <Compile Include="Enums\TriggerableCapacityType.cs" />
+    <Compile Include="FlyoutControls\Tracker\PageModel\TrackerStatsPageModel.cs" />
+    <Compile Include="FlyoutControls\Tracker\TrackerStats.xaml.cs">
+      <DependentUpon>TrackerStats.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Enums\EnumDescriptionConverter.cs" />
     <Compile Include="Helpers\Helper.cs" />
     <Compile Include="Helpers\ObservableObject.cs" />
     <Compile Include="Helpers\RelayCommand.cs" />
@@ -144,6 +162,11 @@
     <Compile Include="UIElements\DeckUI.Helper.cs" />
     <Compile Include="UIElements\Match.cs" />
     <Compile Include="UIPlayerDatas.cs" />
+    <Compile Include="Utility\LocUtil.cs" />
+    <Page Include="FlyoutControls\Tracker\TrackerStats.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -252,6 +275,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controls\" />
+    <Folder Include="FlyoutControls\Overlay\" />
     <Folder Include="Mapper\" />
     <Folder Include="Models\" />
   </ItemGroup>
