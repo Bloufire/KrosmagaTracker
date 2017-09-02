@@ -53,6 +53,19 @@ namespace JsonCardsParser
                     UIName = Texts.NameFR;
                     break;
             }
-    }
+
+            if(Name.Substring(Name.Length-1) == "1")
+            {
+                UIName += " 1";
+            }
+            else if (Name.Substring(Name.Length - 1) == "2")
+            {
+                UIName += " 2";
+            }
+            else if (Name.Substring(Name.Length - 1) == "3")
+            {
+                UIName += " 3";
+            }
+        }
     }
 }

@@ -26,6 +26,9 @@ using System.Collections;
 using AddOn_Krosmaga___Blou_fire.Pages;
 using MahApps.Metro.Controls;
 
+using System.Collections.Concurrent;
+
+
 namespace AddOn_Krosmaga___Blou_fire
 {
     /// <summary>
@@ -44,10 +47,16 @@ namespace AddOn_Krosmaga___Blou_fire
         private byte[] bytesToComplete;
         private int actualSizeToComplete;
 
+        private byte[] lastMessage = new byte[1];
+
         Queue<byte[]> queue = new Queue<byte[]>();
         SyncEvents syncEvents = new SyncEvents();
 
+        BlockingCollection<byte[]> workQueue = new BlockingCollection<byte[]>(new ConcurrentQueue<byte[]>());
+
         List<string> Classes = new List<string>() { "Tous", "Cra", "Ecaflip", "Eniripsa", "Enutrof", "Iop", "Sacrieur", "Sadida", "Sram", "Xelor" };
+
+        System.IO.StreamWriter fileLog = new System.IO.StreamWriter(@"log.txt", true);
 
         public MainWindow()
         {
@@ -63,19 +72,13 @@ namespace AddOn_Krosmaga___Blou_fire
 
             FirewallValidation();
 
-            Producer producer = new Producer(queue, syncEvents);
-            Thread producerThread = new Thread(producer.ThreadRun);
-            producerThread.Start();
+            Producer producer = new Producer(workQueue);
 
-            var consumer = Task.Factory.StartNew(() =>
+            var consumer = Task.Run(() =>
             {
-                while (WaitHandle.WaitAny(syncEvents.EventArray) != 1)
+                while (true)
                 {
-                    byte[] data;
-                    lock (((ICollection)queue).SyncRoot)
-                    {
-                        data = queue.Dequeue();
-                    }
+                    byte[] data = workQueue.Take();
                     Krosmaga(0, data);
                 }
             });
@@ -112,182 +115,132 @@ namespace AddOn_Krosmaga___Blou_fire
             }
         }
 
-        private void LaunchSniffer()
-        {
-            string ipadd = "";
-            IPHostEntry HosyEntry = Dns.GetHostEntry((Dns.GetHostName()));
-            if (HosyEntry.AddressList.Length > 0)
-            {
-                foreach (IPAddress ip in HosyEntry.AddressList)
-                {
-                    if (ip.AddressFamily == AddressFamily.InterNetwork)
-                        ipadd = ip.ToString();
-                }
-            }
-
-            mainSocket = new Socket(AddressFamily.InterNetwork,
-                SocketType.Raw, ProtocolType.IP);
-
-            mainSocket.Bind(new IPEndPoint(IPAddress.Parse(ipadd), 4988));
-
-            mainSocket.SetSocketOption(SocketOptionLevel.IP,
-                                       SocketOptionName.HeaderIncluded,
-                                       true);
-
-            byte[] byTrue = new byte[4] { 1, 0, 0, 0 };
-            byte[] byOut = new byte[4] { 0, 0, 0, 0 };
-
-            mainSocket.IOControl(IOControlCode.ReceiveAll, BitConverter.GetBytes(1), null);
-
-            mainSocket.BeginReceive(byteData, 0, byteData.Length, SocketFlags.None,
-                new AsyncCallback(OnReceive), null);
-        }
-
-        private void OnReceive(IAsyncResult ar)
+        private void Krosmaga(int ID, byte[] data)
         {
             try
             {
-                int nReceived = mainSocket.EndReceive(ar);
+                if (data.Length > 40 && lastMessage.SequenceEqual(data.Skip(40)))
+                    return;
+                lastMessage = data.Skip(40).ToArray();
 
-                //Analyze the bytes received...
+                //bool passTest = false;
+                Stream f = new MemoryStream(data);
+                b = new BinaryReader(f);
 
-                ParseData(byteData, nReceived);
+                /*b.ReadBytes(2);
 
-                byteData = new byte[4096];
-                mainSocket.BeginReceive(byteData, 0, byteData.Length, SocketFlags.None, new AsyncCallback(OnReceive), null);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-        }
+                var d = b.ReadBytes(2);
+                string txt = "";
+                foreach (var item in d)
+                {
+                    txt += item.ToString("X");
+                }
+                int sizeofmessage = int.Parse(txt, System.Globalization.NumberStyles.HexNumber);
 
-        private void ParseData(byte[] byteData, int nReceived)
-        {
-            IPHeader ipHeader = new IPHeader(byteData, nReceived);
-
-            switch (ipHeader.ProtocolType)
-            {
-                case Protocol.TCP:
-                    TCPHeader tcpHeader = new TCPHeader(ipHeader.Data, ipHeader.MessageLength); //Length of the data field
-                    if (tcpHeader.SourcePort == "4988")
+                if (messageToBeCompleted && sizeofmessage > 41)
+                {
+                    if(expectedSizeToComplete > (actualSizeToComplete + sizeofmessage - 40))
                     {
-                        Thread thread = new Thread(() => Krosmaga(0, byteData));
-                        thread.Start();
+                        messageToBeCompleted = true;
+                        Buffer.BlockCopy(data, 40, bytesToComplete, actualSizeToComplete, sizeofmessage-40);
+                        actualSizeToComplete += (sizeofmessage - 40);
+                        return;
                     }
-                    break;
+                    else
+                    {
+                        Buffer.BlockCopy(data, 40, bytesToComplete, actualSizeToComplete, sizeofmessage - 40);
 
-                case Protocol.UDP:
-                    break;
+                        messageToBeCompleted = false;
+                        expectedSizeToComplete = 0;
+                        actualSizeToComplete = 0;
 
-                case Protocol.Unknown:
-                    break;
-            }
-        }
-
-        private void Krosmaga(int ID, byte[] data)
-        {
-            //bool passTest = false;
-            Stream f = new MemoryStream(data);
-            b = new BinaryReader(f);
-
-            /*b.ReadBytes(2);
-
-            var d = b.ReadBytes(2);
-            string txt = "";
-            foreach (var item in d)
-            {
-                txt += item.ToString("X");
-            }
-            int sizeofmessage = int.Parse(txt, System.Globalization.NumberStyles.HexNumber);
-
-            if (messageToBeCompleted && sizeofmessage > 41)
-            {
-                if(expectedSizeToComplete > (actualSizeToComplete + sizeofmessage - 40))
-                {
-                    messageToBeCompleted = true;
-                    Buffer.BlockCopy(data, 40, bytesToComplete, actualSizeToComplete, sizeofmessage-40);
-                    actualSizeToComplete += (sizeofmessage - 40);
-                    return;
-                }
-                else
-                {
-                    Buffer.BlockCopy(data, 40, bytesToComplete, actualSizeToComplete, sizeofmessage - 40);
-
-                    messageToBeCompleted = false;
-                    expectedSizeToComplete = 0;
-                    actualSizeToComplete = 0;
-
-                    f = new MemoryStream(bytesToComplete);
-                    b = new BinaryReader(f);
-                    passTest = true;
-                }
-            }*/
-
-            if (b.BaseStream.Length >= 41)
-                b.BaseStream.Position = 40;
-
-            b.ReadBytes(3);
-            while (b.BaseStream.Position < b.BaseStream.Length && b.ReadByte() != 0)
-            {
-                b.ReadBytes(3);
-                string messageId = ConcatHeader();
-                b.ReadByte();
-                uint size = ReadRawVarint32();
-                byte[] send;
-                /*if(!passTest && size > sizeofmessage)
-                {
-                    messageToBeCompleted = true;
-                    bytesToComplete = new byte[4096];
-                    expectedSizeToComplete = (int)size + (int)b.BaseStream.Position;
-                    Buffer.BlockCopy(data, 0, bytesToComplete, actualSizeToComplete, sizeofmessage);
-                    actualSizeToComplete += sizeofmessage;
-                    return;
+                        f = new MemoryStream(bytesToComplete);
+                        b = new BinaryReader(f);
+                        passTest = true;
+                    }
                 }*/
 
-                switch (messageId)
-                {
-                    //case "104BE831BFC1F6EB11C8B453B7F257C499": // LeaderboardPersonnalEntryEvent
-                    case "A743D4E99C61572311D93D8A99B0D00AB9": // StartOfTurnEvent
-                        Builders.StartOfTurn startofturn = new Builders.StartOfTurn();
-                        send = b.ReadBytes((int)size);
-                        startofturn.Decode(send);
-                        UIActionStartOfTurn(startofturn);
-                        break;
-                    case "89438706FC2AE2CD11B3891BE848AD7887": // GameStartedEvent
-                        Builders.GameStarted gamestarted = new Builders.GameStarted();
-                        send = b.ReadBytes((int)size);
-                        gamestarted.Decode(send);
-                        UIActionGameEventStarted(gamestarted);
-                        break;
-                    case "1B4FF61A6FBC09E611F2CBA7E5FB5391BA": // GameFinishedEvent
-                        Builders.GameFinished gamefinished = new Builders.GameFinished();
-                        send = b.ReadBytes((int)size);
-                        gamefinished.Decode(send);
-                        UIActionGameFinishedEvent(gamefinished);
-                        break;
-                    case "98400741B1CB5A4A110FC4D2D51E2D4CA9": // GameEventsEvent
-                        Builders.GameEvents gameevents = new Builders.GameEvents();
-                        send = b.ReadBytes((int)size);
-                        gameevents.Decode(send);
-                        UIActionGameEventsEvent(gameevents);
-                        break;
-                    case "24454BD9B42E0A231174846DD1A86A7ABB": // PlayerAccountLoadedEvent
-                        Builders.PlayerAccountLoaded playerAccountLoaded = new Builders.PlayerAccountLoaded();
-                        send = b.ReadBytes((int)size);
-                        playerAccountLoaded.Decode(send);
-                        break;
-                    /*case "F64A6D942BA9B2A01139131B120F0A6494":
-                        test = true;
-                        break;*/
-                    default:
-                        if (b.BaseStream.Position + size > b.BaseStream.Length)
-                            size = (uint)b.BaseStream.Length - (uint)b.BaseStream.Position - 5;
-                        if(size != 0)
-                            b.ReadBytes((int)size); 
-                        break;
-                }
+                if (b.BaseStream.Length >= 41)
+                    b.BaseStream.Position = 40;
+                else
+                    return;
+
                 b.ReadBytes(3);
+                while (b.BaseStream.Position < b.BaseStream.Length && b.ReadByte() != 0)
+                {
+                    fileLog.WriteLine("Reading...");
+
+                    b.ReadBytes(3);
+                    string messageId = ConcatHeader();
+                    b.ReadByte();
+                    uint size = ReadRawVarint32();
+
+                    byte[] send;
+                    /*if(!passTest && size > sizeofmessage)
+                    {
+                        messageToBeCompleted = true;
+                        bytesToComplete = new byte[4096];
+                        expectedSizeToComplete = (int)size + (int)b.BaseStream.Position;
+                        Buffer.BlockCopy(data, 0, bytesToComplete, actualSizeToComplete, sizeofmessage);
+                        actualSizeToComplete += sizeofmessage;
+                        return;
+                    }*/
+
+                    switch (messageId)
+                    {
+                        //case "104BE831BFC1F6EB11C8B453B7F257C499": // LeaderboardPersonnalEntryEvent
+                        case "A743D4E99C61572311D93D8A99B0D00AB9": // StartOfTurnEvent
+                            Builders.StartOfTurn startofturn = new Builders.StartOfTurn();
+                            send = b.ReadBytes((int)size);
+                            startofturn.Decode(send);
+                            UIActionStartOfTurn(startofturn);
+                            break;
+                        case "89438706FC2AE2CD11B3891BE848AD7887": // GameStartedEvent
+                            Builders.GameStarted gamestarted = new Builders.GameStarted();
+                            send = b.ReadBytes((int)size);
+                            gamestarted.Decode(send);
+                            UIActionGameEventStarted(gamestarted);
+                            break;
+                        case "1B4FF61A6FBC09E611F2CBA7E5FB5391BA": // GameFinishedEvent
+                            Builders.GameFinished gamefinished = new Builders.GameFinished();
+                            send = b.ReadBytes((int)size);
+                            gamefinished.Decode(send);
+                            UIActionGameFinishedEvent(gamefinished);
+                            break;
+                        case "98400741B1CB5A4A110FC4D2D51E2D4CA9": // GameEventsEvent
+                            Builders.GameEvents gameevents = new Builders.GameEvents();
+                            send = b.ReadBytes((int)size);
+                            gameevents.Decode(send);
+                            UIActionGameEventsEvent(gameevents);
+                            break;
+                        case "24454BD9B42E0A231174846DD1A86A7ABB": // PlayerAccountLoadedEvent
+                            Builders.PlayerAccountLoaded playerAccountLoaded = new Builders.PlayerAccountLoaded();
+                            send = b.ReadBytes((int)size);
+                            playerAccountLoaded.Decode(send);
+                            break;
+                        /*case "F64A6D942BA9B2A01139131B120F0A6494":
+                            test = true;
+                            break;*/
+                        default:
+                            if (b.BaseStream.Position + size > b.BaseStream.Length)
+                                size = (uint)b.BaseStream.Length - (uint)b.BaseStream.Position - 5;
+                            if (size != 0)
+                                b.BaseStream.Position = b.BaseStream.Position + size;
+                            break;
+                    }
+                    b.ReadBytes(3);
+
+                    fileLog.WriteLine("Header : " + messageId + " - " + size);
+                }
+            }
+            catch(Exception e)
+            {
+                using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"log.txt", true))
+                {
+                    file.WriteLine("ERROR - " + e);
+                    foreach(var item in data)
+                        file.Write(item);
+                }
             }
         }
 
@@ -316,15 +269,36 @@ namespace AddOn_Krosmaga___Blou_fire
                 {
                     UIDatas.OpponentPlayedCards.Add(cards.getCardById((int)cardMoved.TradingCard));
                     JsonCardsParser.Card card = cards.getCardById((int)cardMoved.TradingCard);
-                    UIElements.DeckUI deckUI = UIDatas.Deck.FirstOrDefault(x => x.Card == card);
-                    if (deckUI != null)
-                        deckUI.CardCount++;
+                    UIElements.DeckUI deckUI;
+                    if (!UIDatas.CardAlreadyPlayed.Any(x => x == cardMoved.Card))
+                    {
+                        UIDatas.CardAlreadyPlayed.Add(cardMoved.Card);
+                        deckUI = UIDatas.Deck.FirstOrDefault(x => x.Card == card);
+                        if (deckUI != null)
+                            deckUI.CardCount++;
+                        else
+                        {
+                            deckUI = new UIElements.DeckUI(card, 1);
+                            UIDatas.AddCardToDeck(deckUI);
+                        }
+                        UIDatas.NotifyPropertyChanged("Deck");
+                    }
                     else
                     {
-                        deckUI = new UIElements.DeckUI(card, 1);
-                        UIDatas.AddCardToDeck(deckUI);
+                        deckUI = UIDatas.CardsInHand.FirstOrDefault(x => x.Card == card);
+                        if (deckUI != null)
+                        {
+                            if(deckUI.CardCount > 1)
+                            {
+                                deckUI.CardCount--;
+                            }
+                            else
+                            {
+                                UIDatas.RemoveCardFromCardInHand(deckUI);
+                            }
+                            UIDatas.NotifyPropertyChanged("CardsInHandUI");
+                        }
                     }
-                    UIDatas.NotifyPropertyChanged("Deck");
                 }
                 if((cardMoved.CardLocationTo == Enums.CardLocation.OwnHand && cardMoved.ConcernedFighter != UIDatas.MyIndex) ||
                     (cardMoved.CardLocationTo == Enums.CardLocation.OpponentHand && cardMoved.ConcernedFighter == UIDatas.MyIndex))
@@ -345,6 +319,22 @@ namespace AddOn_Krosmaga___Blou_fire
                     (cardMoved.CardLocationFrom == Enums.CardLocation.OpponentHand && cardMoved.ConcernedFighter != UIDatas.MyIndex))
                 {
                     UIDatas.OwnCardsInHand -= 1;
+                }
+                if((cardMoved.CardLocationFrom == Enums.CardLocation.Playground && cardMoved.CardLocationTo == Enums.CardLocation.OwnHand && cardMoved.ConcernedFighter != UIDatas.MyIndex) || // Remonte dans son camp
+                    (cardMoved.CardLocationFrom == Enums.CardLocation.Playground && cardMoved.CardLocationTo == Enums.CardLocation.OpponentHand && cardMoved.ConcernedFighter != UIDatas.MyIndex) || // Remonte le camp adverse
+                    (cardMoved.CardLocationFrom == Enums.CardLocation.OpponentGraveyard && cardMoved.CardLocationTo == Enums.CardLocation.OwnHand && cardMoved.ConcernedFighter != UIDatas.MyIndex) || // Récupère dans la défausse joueur
+                    (cardMoved.CardLocationFrom == Enums.CardLocation.OwnGraveyard && cardMoved.CardLocationTo == Enums.CardLocation.OwnHand && cardMoved.ConcernedFighter != UIDatas.MyIndex)) // Récupère dans sa défausse
+                {
+                    JsonCardsParser.Card card = cards.getCardById((int)cardMoved.TradingCard);
+                    UIElements.DeckUI deckUI = UIDatas.CardsInHand.FirstOrDefault(x => x.Card == card);
+                    if (deckUI != null)
+                        deckUI.CardCount++;
+                    else
+                    {
+                        deckUI = new UIElements.DeckUI(card, 1);
+                        UIDatas.AddCardToCardInHand(deckUI);
+                    }
+                    UIDatas.NotifyPropertyChanged("CardsInHandUI");
                 }
             }
             else if(value.EventType == Enums.EventType.CARD_TO_BE_PLAYED)
@@ -392,6 +382,11 @@ namespace AddOn_Krosmaga___Blou_fire
                     UIDatas.ActualFleauxIds.Enqueue(newAOE.ConcernedFightObject);
             }
 
+            UIDatas.DeckInfinites = UIDatas.Deck.Where(x => x.Card.Rarity == 4).ToList();
+            UIDatas.DeckKrosmiques = UIDatas.Deck.Where(x => x.Card.Rarity == 3).ToList();
+            UIDatas.NotifyPropertyChanged("CardsInfinites");
+            UIDatas.NotifyPropertyChanged("CardsKrosmiques");
+
             foreach (var item in value.TriggeredEvents)
             {
                 IterateEvents(item);
@@ -419,7 +414,9 @@ namespace AddOn_Krosmaga___Blou_fire
             toggleDeckButton.Dispatcher.Invoke(new HideGrid1(this.UpdateGrid1), new object[] { false });
 
             UIDatas.OpponentPlayedCards.Clear();
+            UIDatas.CardAlreadyPlayed.Clear();
             UIDatas.ClearDeck();
+            UIDatas.CardsInHand.Clear();
             UIDatas.NotifyPropertyChanged("Deck");
 
             UIDatas.OpponentPseudo = UIDatas.OwnPseudo;
@@ -650,42 +647,33 @@ namespace AddOn_Krosmaga___Blou_fire
                 this.DragMove();
         }
 
-        private void OpponentCardsPlayed_Click(object sender, RoutedEventArgs e)
-        {
-            string text = "Les cartes jouées par l'adversaire sont : ";
-            foreach(var item in UIDatas.OpponentPlayedCards)
-            {
-                text += Environment.NewLine + item.Name;
-            }
-            MessageBox.Show(text);
-        }
-
         private void toggleStatsDeckButton_Checked(object sender, RoutedEventArgs e)
         {
-            var win2 = new MainPage();
-            win2.Show();
+            UIDatas.MatchsList.Clear();
+            UIDatas.MatchsWithFilters.Clear();
+            var matches = Connector.GetMatches();
+            foreach(var item in matches)
+            {
+                var match = new UIElements.Match(item);
+                foreach(var item2 in item.Deck.CardsList)
+                {
+                    var card = cards.getCardById(item2.RealCardId);
+                    UIElements.DeckUI deckUI = match.Deck.CardsList.FirstOrDefault(x => x.Card == card);
+                    if (deckUI != null)
+                        deckUI.CardCount++;
+                    else
+                    {
+                        deckUI = new UIElements.DeckUI(card, 1);
+                        match.Deck.CardsList.Add(deckUI);
+                    }
+                }
+                UIDatas.MatchsList.Add(match);
+                UIDatas.MatchsWithFilters.Add(match);
+            }
 
-            //UIDatas.MatchsList.Clear();
-            //UIDatas.MatchsWithFilters.Clear();
-            //var matches = Connector.GetMatches();
-            //foreach(var item in matches)
-            //{
-            //    var match = new UIElements.Match(item);
-            //    foreach(var item2 in item.Deck.CardsList)
-            //    {
-            //        var card = cards.getCardById(item2.RealCardId);
-            //        UIElements.DeckUI deckUI = match.Deck.CardsList.FirstOrDefault(x => x.Card == card);
-            //        if (deckUI != null)
-            //            deckUI.CardCount++;
-            //        else
-            //        {
-            //            deckUI = new UIElements.DeckUI(card, 1);
-            //            match.Deck.CardsList.Add(deckUI);
-            //        }
-            //    }
-            //    UIDatas.MatchsList.Add(match);
-            //    UIDatas.MatchsWithFilters.Add(match);
-            //}
+            UIDatas.OwnClasseFilter = "Tous";
+            UIDatas.OpponentClasseFilter = "Tous";
+            UIDatas.OpponentNameFilter = String.Empty;
         }
 
         private void toggleStatsDeckButton_Unchecked(object sender, RoutedEventArgs e)

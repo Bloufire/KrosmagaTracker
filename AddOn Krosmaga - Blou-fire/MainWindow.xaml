@@ -89,21 +89,102 @@
                 </ToggleButton>
             </Grid>
         </Grid>
-        <Grid MaxHeight="400" MaxWidth="250" HorizontalAlignment="Left" Visibility="{Binding ElementName=toggleDeckButton, Path=IsChecked, Converter={StaticResource BoolToVisConverter}}">
-            <ListView HorizontalAlignment="Left" Background="Black" ItemsSource="{Binding Deck, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*" />
-                                <ColumnDefinition Width="25" />
-                            </Grid.ColumnDefinitions>
-                            <Label Grid.Column="0" Foreground="White" Content="{Binding Card.UIName}" HorizontalAlignment="Left"/>
-                            <Label Grid.Column="1" Foreground="White" FontWeight="Bold" Content="{Binding CardCount, Converter={StaticResource IntToCardCountStringConverter}}" HorizontalAlignment="Right"/>
-                        </Grid>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+        <Grid Height="400" Width="300" HorizontalAlignment="Left" Visibility="{Binding ElementName=toggleDeckButton, Path=IsChecked, Converter={StaticResource BoolToVisConverter}}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Foreground="White" Background="#66000000" Width="150" Content="Cartes jouées" HorizontalAlignment="Left"/>
+                <ListView  Grid.Row="1" Width="150" Background="Black" ItemsSource="{Binding Deck}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="25" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Foreground="White" Content="{Binding Card.UIName}" HorizontalAlignment="Left"/>
+                                <Label Grid.Column="1" Foreground="White" FontWeight="Bold" Content="{Binding CardCount, Converter={StaticResource IntToCardCountStringConverter}}" HorizontalAlignment="Right"/>
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" Foreground="White" Background="#66000000" Width="150" Content="Cartes connues en main" HorizontalAlignment="Left"/>
+                    <ListView Width="150" Grid.Row="1" Background="Black" ItemsSource="{Binding CardsInHandUI}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="25" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Column="0" Foreground="White" Content="{Binding Card.UIName}" HorizontalAlignment="Left"/>
+                                    <Label Grid.Column="1" Foreground="White" FontWeight="Bold" Content="{Binding CardCount, Converter={StaticResource IntToCardCountStringConverter}}" HorizontalAlignment="Right"/>
+                                </Grid>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" Foreground="White" Background="#66000000" Width="150" Content="Infinites" HorizontalAlignment="Left"/>
+                    <ListView Width="150" Grid.Row="1" Background="Black" ItemsSource="{Binding CardsInfinites}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="25" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Column="0" Foreground="White" Content="{Binding Card.UIName}" HorizontalAlignment="Left"/>
+                                    <Label Grid.Column="1" Foreground="White" FontWeight="Bold" Content="{Binding CardCount, Converter={StaticResource IntToCardCountStringConverter}}" HorizontalAlignment="Right"/>
+                                </Grid>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" Foreground="White" Background="#66000000" Content="Krosmiques" HorizontalAlignment="Left" Width="150"/>
+                    <ListView Width="150" Grid.Row="1" Background="Black" ItemsSource="{Binding CardsKrosmiques}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="25" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Column="0" Foreground="White" Content="{Binding Card.UIName}" HorizontalAlignment="Left"/>
+                                    <Label Grid.Column="1" Foreground="White" FontWeight="Bold" Content="{Binding CardCount, Converter={StaticResource IntToCardCountStringConverter}}" HorizontalAlignment="Right"/>
+                                </Grid>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Grid>
+            </Grid>
         </Grid>
         <Grid Name="statsGrid" Height="400" Background="#33000000" MaxWidth="850"   
               Visibility="Collapsed"
