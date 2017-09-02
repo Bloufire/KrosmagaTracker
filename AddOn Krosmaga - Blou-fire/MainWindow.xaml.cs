@@ -662,30 +662,30 @@ namespace AddOn_Krosmaga___Blou_fire
 
         private void toggleStatsDeckButton_Checked(object sender, RoutedEventArgs e)
         {
-            var win2 = new StatsWindow(UIDatas);
+            var win2 = new MainPage();
             win2.Show();
 
-            UIDatas.MatchsList.Clear();
-            UIDatas.MatchsWithFilters.Clear();
-            var matches = Connector.GetMatches();
-            foreach(var item in matches)
-            {
-                var match = new UIElements.Match(item);
-                foreach(var item2 in item.Deck.CardsList)
-                {
-                    var card = cards.getCardById(item2.RealCardId);
-                    UIElements.DeckUI deckUI = match.Deck.CardsList.FirstOrDefault(x => x.Card == card);
-                    if (deckUI != null)
-                        deckUI.CardCount++;
-                    else
-                    {
-                        deckUI = new UIElements.DeckUI(card, 1);
-                        match.Deck.CardsList.Add(deckUI);
-                    }
-                }
-                UIDatas.MatchsList.Add(match);
-                UIDatas.MatchsWithFilters.Add(match);
-            }
+            //UIDatas.MatchsList.Clear();
+            //UIDatas.MatchsWithFilters.Clear();
+            //var matches = Connector.GetMatches();
+            //foreach(var item in matches)
+            //{
+            //    var match = new UIElements.Match(item);
+            //    foreach(var item2 in item.Deck.CardsList)
+            //    {
+            //        var card = cards.getCardById(item2.RealCardId);
+            //        UIElements.DeckUI deckUI = match.Deck.CardsList.FirstOrDefault(x => x.Card == card);
+            //        if (deckUI != null)
+            //            deckUI.CardCount++;
+            //        else
+            //        {
+            //            deckUI = new UIElements.DeckUI(card, 1);
+            //            match.Deck.CardsList.Add(deckUI);
+            //        }
+            //    }
+            //    UIDatas.MatchsList.Add(match);
+            //    UIDatas.MatchsWithFilters.Add(match);
+            //}
         }
 
         private void toggleStatsDeckButton_Unchecked(object sender, RoutedEventArgs e)

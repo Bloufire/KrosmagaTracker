@@ -43,8 +43,8 @@
                     <ColumnDefinition Width="4*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Label Content="{Binding OpponentPseudo, UpdateSourceTrigger=PropertyChanged}" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource Label_default}" />
-                <Label Content="{Binding OpponentLevel, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource Label_default}" />
+                <Label Content="{Binding OpponentPseudo, UpdateSourceTrigger=PropertyChanged}" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                <Label Content="{Binding OpponentLevel, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" />
             </Grid>
             <Grid Grid.Row="2" Grid.Column="1">
                 <Grid.ColumnDefinitions>
