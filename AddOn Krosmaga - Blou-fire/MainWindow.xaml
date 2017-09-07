@@ -66,19 +66,20 @@
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="25*"/>
+                    <ColumnDefinition Width="7*"/>
+                    <ColumnDefinition Width="18*"/>
+                    <ColumnDefinition Width="25*"/>
+                    <ColumnDefinition Width="25*"/>
                 </Grid.ColumnDefinitions>
-                <Image Source="/Images/trophy.png" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center"/>
-                <Label Content="{Binding OpponentVictories, UpdateSourceTrigger=PropertyChanged}" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource Label_default}"/>
-                <Image Source="/Images/skull.png" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center"/>
-                <Label Content="{Binding OpponentDefeats, UpdateSourceTrigger=PropertyChanged}" Grid.Row="0" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource Label_default}" />
-                <Label Content="Turn :" Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource Label_default}" FontWeight="Bold"/>
-                <Label Content="{Binding CurrentTurn, UpdateSourceTrigger=PropertyChanged}" Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource Label_default}"/>
-                <Image Source="/Images/fleau.png" Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center"/>
-                <Label Content="{Binding OpponentFleaux, UpdateSourceTrigger=PropertyChanged}" Grid.Column="3" Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource Label_default_bold}"/>
+                <Image Source="/Images/trophy.png" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" Margin="10,0,10.6,27.8" Grid.RowSpan="2"/>
+                <Label Content="{Binding OpponentVictories, UpdateSourceTrigger=PropertyChanged}" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left"  Grid.ColumnSpan="2" Margin="0.4,2,0,1.8"/>
+                <Image Source="/Images/skull.png" Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center" Margin="10,0,10.6,27.8" Grid.RowSpan="2"/>
+                <Label Content="{Binding OpponentDefeats, UpdateSourceTrigger=PropertyChanged}" Grid.Row="0" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Left"  Margin="0.4,2,0,1.8" />
+                <Label Content="Turn :" Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left"  FontWeight="Bold" Margin="0,14.2,0,13.8"/>
+                <Label Content="{Binding CurrentTurn, UpdateSourceTrigger=PropertyChanged}" Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left"  Margin="0.4,14.2,0,13.8"/>
+                <Image Source="/Images/fleau.png" Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" Margin="25,0.2,24.6,-0.2"/>
+                <Label Content="{Binding OpponentFleaux, UpdateSourceTrigger=PropertyChanged}" Grid.Column="4" Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left"  Margin="0.4,14.2,0,13.8"/>
             </Grid>
             <Grid Grid.Row="2" Grid.Column="2">
                 <ToggleButton Name="toggleDeckButton" Margin="8" Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}">

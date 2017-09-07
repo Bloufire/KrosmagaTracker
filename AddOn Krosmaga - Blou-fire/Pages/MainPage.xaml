@@ -15,7 +15,7 @@
       BorderThickness="0" 
       GlowBrush="Black"
       ResizeMode="CanResizeWithGrip"
-      Height="800" Width="1100"
+      Height="600" Width="800"
       MinHeight="584" MinWidth="1100"
       WindowTransitionsEnabled="False"
       WindowStartupLocation="CenterScreen"
@@ -57,6 +57,13 @@
             </Button>
         </controls:WindowCommands>
     </controls:MetroWindow.RightWindowCommands>
+    <controls:MetroWindow.Flyouts >
+        <controls:FlyoutsControl >
+            <controls:Flyout Header="FlyoutLeft" Position="Left" Width="auto" IsOpen="{Binding IsLeftFlyOpen}">
+                <tracker:TrackerStats></tracker:TrackerStats>
+            </controls:Flyout>
+        </controls:FlyoutsControl>
+    </controls:MetroWindow.Flyouts >
     <DockPanel >
         <GroupBox Header="Filtres" DockPanel.Dock="Left" Width="180" MinWidth="180">
             <tracker:TrackerStats></tracker:TrackerStats>
@@ -65,9 +72,14 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"  />
                 <ColumnDefinition Width="*" />
-
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <GroupBox Grid.Column="0" Header="Stats" HorizontalAlignment="Stretch">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <GroupBox Grid.Column="0" Grid.RowSpan="2" Header="Stats" HorizontalAlignment="Stretch">
                 <metroChart:ClusteredColumnChart ChartSubTitle=""  
                             ChartTitle="Victoire Par Classe" Background="Transparent" >
                     <metroChart:ClusteredColumnChart.Series >
@@ -79,7 +91,7 @@
                     </metroChart:ClusteredColumnChart.Series>
                 </metroChart:ClusteredColumnChart>
             </GroupBox>
-            <GroupBox  Grid.Column="1"  Header="Autres" >
+            <GroupBox  Grid.Column="1" Grid.Row="0" Grid.RowSpan="2"  Header="Autres" >
                 <metroChart:PieChart ChartSubTitle=""  
                              ChartTitle="Lose Par Classe" Background="Transparent" >
                     <metroChart:PieChart.Series >
@@ -90,6 +102,15 @@
                 />
                     </metroChart:PieChart.Series>
                 </metroChart:PieChart>
+            </GroupBox>
+            <GroupBox Grid.Row="0" Grid.Column="2" Header="Sample">
+                <StackPanel>
+                    <Button Command="{Binding OpenLeftFlyoutCmd}">Open Left Side</Button>
+                </StackPanel>
+
+            </GroupBox>
+            <GroupBox Grid.Column="0" Grid.Row="2"  Header="Profile Data">
+               <tracker:ProfileDataPage/>
             </GroupBox>
         </Grid>
     </DockPanel>

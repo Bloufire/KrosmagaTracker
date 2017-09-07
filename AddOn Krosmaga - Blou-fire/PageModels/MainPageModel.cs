@@ -1,7 +1,18 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.Concurrent;
+using System.Collections.ObjectModel;
+using System.Diagnostics;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Input;
+using AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel;
 using AddOn_Krosmaga___Blou_fire.Helpers;
 using AddOn_Krosmaga___Blou_fire.Pages;
+using AddOn_Krosmaga___Blou_fire.ProducerConsumer;
+using AddOn_Krosmaga___Blou_fire.Services;
+using JsonCardsParser;
 using MahApps.Metro.Controls;
 
 namespace AddOn_Krosmaga___Blou_fire.PageModels
@@ -37,6 +48,8 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 
 	public class MainPageModel : ObservableObject
 	{
+
+		private readonly TrackerCoreSrv _trackerSrv;
 		public MainPageModel()
 		{
 			BtnDiscord_OnClick = new RelayCommand(BtnDiscordOnClick);
@@ -44,8 +57,7 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 			ChargerContactCommand = new RelayCommand(ChargeContact);
 			BtnSettings_OnClick = new RelayCommand(BtnSettingsOnClick);
 
-
-
+			#region Sample Datas
 			_classeWins.Add(new ClassWin() { Name = Enums.ClassEnum.Cra.ToString(), Count = 1340 });
 			_classeWins.Add(new ClassWin() { Name = Enums.ClassEnum.Eniripsa.ToString(), Count = 1220 });
 			_classeWins.Add(new ClassWin() { Name = Enums.ClassEnum.Sacrieur.ToString(), Count = 309 });
@@ -53,7 +65,22 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 			_classeWins.Add(new ClassWin() { Name = Enums.ClassEnum.Xelor.ToString(), Count = 195 });
 			_classeWins.Add(new ClassWin() { Name = Enums.ClassEnum.Sacrieur.ToString(), Count = 174 });
 			_classeWins.Add(new ClassWin() { Name = Enums.ClassEnum.Ecaflip.ToString(), Count = 158 });
+			#endregion
+			App myApplication = ((App)Application.Current);
+			_trackerSrv = myApplication.TrackerCoreService;
+			_trackerSrv.PropertyChanged += _trackerSrv_PropertyChanged;
 		}
+
+		private void _trackerSrv_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+		{
+			UpdateScreen();
+		}
+
+		private void UpdateScreen()
+		{
+			
+		}
+
 
 		private readonly ObservableCollection<ClassWin> _classeWins = new ObservableCollection<ClassWin>();
 		public ObservableCollection<ClassWin> ClasseWins
@@ -66,6 +93,8 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 		public string FullName => _firstName + " " + _lastName;
 
 		#region Properties
+
+		
 
 		private string _firstName = "default first";
 		private string _lastName = "default last";
@@ -135,9 +164,31 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 		public ICommand BtnDiscord_OnClick { get; }
 		private void BtnDiscordOnClick()
 		{
-			Helper.TryOpenUrl("https://discord.gg/UR2TQEp");
+			Helpers.Helpers.TryOpenUrl("https://discord.gg/UR2TQEp");
+		}
+
+		#region OpenLeftFlyoutCmd
+
+		public ICommand OpenLeftFlyoutCmd => new RelayCommand(OpenLeftFlyoutCmdAction);
+
+		private bool _isLeftFlyOpen;
+		public bool IsLeftFlyOpen
+		{
+			get => this._isLeftFlyOpen;
+			set
+			{
+				this._isLeftFlyOpen = value;
+				OnPropertyChanged("IsLeftFlyOpen");
+			}
+		}
+		private void OpenLeftFlyoutCmdAction()
+		{
+			IsLeftFlyOpen = !_isLeftFlyOpen;
 		}
 
 		#endregion
+
+		#endregion
+
 	}
 }
