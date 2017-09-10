@@ -48,6 +48,8 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 			}
 		}
 		#endregion
+
+		#region OwnLosesNb
 		private int _ownLosesNb;
 		public int OwnLosesNb
 		{
@@ -64,15 +66,116 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 				OnPropertyChanged("OwnLosesNb");
 			}
 		}
+		#endregion
 
+		#region OwnLevel
+		private int _ownLevel;
+
+		public int OwnLevel
+		{
+			get { return _ownLevel; }
+			set
+			{
+				_ownLevel = value;
+				OnPropertyChanged("OwnLevel");
+			}
+		}
+		#endregion
+
+		#region OwnClasse
+		private string _ownClasse;
+
+		public string OwnClasse
+		{
+			get { return _ownClasse; }
+			set
+			{
+				_ownClasse = value;
+				OnPropertyChanged("OwnClasse");
+			}
+		}
+		#endregion
+
+
+		#region VsPseudo
+		private string _vsPseudo;
+
+		public string VsPseudo
+		{
+			get { return _vsPseudo; }
+			set
+			{
+				_vsPseudo = value;
+				OnPropertyChanged("VsPseudo");
+			}
+		}
+
+		#endregion
+
+
+		#region VsWinsNb
+		private int _vsWinsNb;
+
+		public int VsWinsNb
+		{
+			get { return _vsWinsNb; }
+			set
+			{
+				_vsWinsNb = value;
+				OnPropertyChanged("VsWinsNb");
+			}
+		}
+
+		#endregion
+
+		#region VsLosesNb
+		private int _vsLosesNb;
+
+		public int VsLosesNb
+		{
+			get { return _vsLosesNb; }
+			set
+			{
+				_vsLosesNb = value;
+				OnPropertyChanged("VsLosesNb");
+			}
+		}
+
+		#endregion
+
+		#region OpponentLevel
+		private int _opponentLevel;
+
+		public int OpponentLevel
+		{
+			get { return _opponentLevel; }
+			set
+			{
+				_opponentLevel = value;
+				OnPropertyChanged("OpponentLevel");
+			}
+		}
+
+		#endregion
+
+		#region OpponentClasse
+		private string _opponentClasse;
+
+		public string OpponentClasse
+		{
+			get { return _opponentClasse; }
+			set
+			{
+				_opponentClasse = value;
+				OnPropertyChanged("OpponentClasse");
+			}
+		}
+
+		#endregion
 
 		#endregion
 
 		#region VS Profile Data
-
-		public string VsPseudo { get; set; }
-		public int VsWinsNb { get; set; }
-		public int VsLosesNb { get; set; }
 
 		#endregion
 

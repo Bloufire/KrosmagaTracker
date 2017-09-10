@@ -79,7 +79,7 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <GroupBox Grid.Column="0" Grid.RowSpan="2" Header="Stats" HorizontalAlignment="Stretch">
+            <!--<GroupBox Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2" Header="Stats" HorizontalAlignment="Stretch">
                 <metroChart:ClusteredColumnChart ChartSubTitle=""  
                             ChartTitle="Victoire Par Classe" Background="Transparent" >
                     <metroChart:ClusteredColumnChart.Series >
@@ -90,8 +90,11 @@
                                             />
                     </metroChart:ClusteredColumnChart.Series>
                 </metroChart:ClusteredColumnChart>
+            </GroupBox>-->
+            <GroupBox Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2" Header="Histo" HorizontalAlignment="Stretch">
+                <tracker:MatchesHistoPage></tracker:MatchesHistoPage>
             </GroupBox>
-            <GroupBox  Grid.Column="1" Grid.Row="0" Grid.RowSpan="2"  Header="Autres" >
+            <!--<GroupBox  Grid.Column="1" Grid.Row="0" Grid.RowSpan="2"  Header="Autres" >
                 <metroChart:PieChart ChartSubTitle=""  
                              ChartTitle="Lose Par Classe" Background="Transparent" >
                     <metroChart:PieChart.Series >
@@ -102,7 +105,7 @@
                 />
                     </metroChart:PieChart.Series>
                 </metroChart:PieChart>
-            </GroupBox>
+            </GroupBox>-->
             <GroupBox Grid.Row="0" Grid.Column="2" Header="Sample">
                 <StackPanel>
                     <Button Command="{Binding OpenLeftFlyoutCmd}">Open Left Side</Button>
