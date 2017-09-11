@@ -80,34 +80,43 @@ namespace AddOn_Krosmaga___Blou_fire.ProducerConsumer
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                byteData = new byte[4096];
+                ThreadRun();
             }
         }
 
         private void ParseData(byte[] byteData, int nReceived)
         {
-            IPHeader ipHeader = new IPHeader(byteData, nReceived);
-
-            switch (ipHeader.ProtocolType)
+            try
             {
-                case Protocol.TCP:
-                    TCPHeader tcpHeader = new TCPHeader(ipHeader.Data, ipHeader.MessageLength); //Length of the data field
-                    if (tcpHeader.SourcePort == "4988")
-                    {
-                        /*lock (((ICollection)_queue).SyncRoot)
+                IPHeader ipHeader = new IPHeader(byteData, nReceived);
+
+                switch (ipHeader.ProtocolType)
+                {
+                    case Protocol.TCP:
+                        TCPHeader tcpHeader = new TCPHeader(ipHeader.Data, ipHeader.MessageLength); //Length of the data field
+                        if (tcpHeader.SourcePort == "4988")
                         {
-                            _queue.Enqueue(byteData);
-                            _syncEvents.NewItemEvent.Set();
-                        }*/
-                        bQueue.Add(byteData);
-                    }
-                    break;
+                            /*lock (((ICollection)_queue).SyncRoot)
+                            {
+                                _queue.Enqueue(byteData);
+                                _syncEvents.NewItemEvent.Set();
+                            }*/
+                            bQueue.Add(byteData);
+                        }
+                        break;
 
-                case Protocol.UDP:
-                    break;
+                    case Protocol.UDP:
+                        break;
 
-                case Protocol.Unknown:
-                    break;
+                    case Protocol.Unknown:
+                        break;
+                }
+            }
+            catch(Exception e)
+            {
+                byteData = new byte[4096];
+                ThreadRun();
             }
         }
     }

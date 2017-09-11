@@ -24,6 +24,7 @@ namespace JsonCardsParser
                     string json = r.ReadToEnd();
                     Card card = JsonConvert.DeserializeObject<Card>(json);
                     card.SetUIName("FR");
+                    card.SetImagePath("FR");
                     returnedList.Add(card);
                 }
             }

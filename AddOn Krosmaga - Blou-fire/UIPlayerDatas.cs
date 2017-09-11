@@ -51,7 +51,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
         private Queue<int> _actualFleauxIds;
 
-        private List<int> _cardAlreadyPlayed;
+        private List<DeckUI> _cardAlreadyPlayed;
 
         #region ChartElements
         public SeriesCollection WinrateParClasse { get; set; }
@@ -135,7 +135,7 @@ namespace AddOn_Krosmaga___Blou_fire
             _opponentPlayedCards = new List<JsonCardsParser.Card>();
             ActualFleauxIds = new Queue<int>();
             Deck = new List<DeckUI>();
-            CardAlreadyPlayed = new List<int>();
+            CardAlreadyPlayed = new List<DeckUI>();
             CardsInHand = new List<DeckUI>();
             DeckKrosmiques = new List<DeckUI>();
             DeckInfinites = new List<DeckUI>();
@@ -249,7 +249,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
         public string OpponentPseudo
         {
-            get { return _opponentPseudo ?? "Pseudo == Null"; }
+            get { return _opponentPseudo ?? "Pseudo"; }
 
             set
             {
@@ -285,7 +285,7 @@ namespace AddOn_Krosmaga___Blou_fire
 
         public string OwnPseudo
         {
-            get { return _ownPseudo ?? "OwnPseudo == null"; }
+            get { return _ownPseudo ?? "Pseudo"; }
 
             set
             {
@@ -413,7 +413,7 @@ namespace AddOn_Krosmaga___Blou_fire
         {
             get
             {
-                return _deck.OrderBy(x => x.Card.CostAP).ToList();
+                return _deck.OrderByDescending(x => x.Card.GodType).ThenBy(x => x.Card.CostAP).ToList();
             }
 
             set
@@ -562,7 +562,7 @@ namespace AddOn_Krosmaga___Blou_fire
             }
         }
 
-        public List<int> CardAlreadyPlayed
+        public List<DeckUI> CardAlreadyPlayed
         {
             get
             {
