@@ -40,7 +40,7 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>icon_LMV_icon.ico</ApplicationIcon>
+    <ApplicationIcon>icone_bureau_blou.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
@@ -226,7 +226,7 @@
     <Resource Include="Images\handred.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="icon_LMV_icon.ico" />
+    <Resource Include="icone_bureau_blou.ico" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\CardImages\abragland.png" />

@@ -88,7 +88,9 @@ namespace AddOn_Krosmaga___Blou_fire.UIElements
         {
             JsonCardsParser.Card val = (JsonCardsParser.Card)value;
             if (val.Rarity == 4)
-                return "#6D58C2"; // INFINITE
+                return "#A5D3E7"; // INFINITE
+            else if (val.Rarity == 3)
+                return "#6840BD"; // KROSMIQUE
             else
             {
                 switch (val.GodType)
