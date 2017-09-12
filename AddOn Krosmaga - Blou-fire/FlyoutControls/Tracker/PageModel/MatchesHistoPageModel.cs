@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,45 +15,28 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 {
 	public class MatchesHistoPageModel : ObservableObject
 	{
-		private GameResult _result;
-		private List<UIElements.Match> _filteredGames;
-		private TrackerCoreSrv _trackerSrv;
-
-
-
-
+	    private List<UIElements.Match> _filteredGames;
+		
 		#region CTOR
-		public MatchesHistoPageModel()
+		public MatchesHistoPageModel():base()
 		{
-			App myApplication = ((App)Application.Current);
-			_trackerSrv = myApplication.TrackerCoreService;
-			_trackerSrv.TrackerModel.PropertyChanged += _trackerSrv_PropertyChanged;
+			TrackerSrv.TrackerModel.PropertyChanged += _trackerSrv_PropertyChanged;
+			TrackerSrv.UpdateMatchsWithFilterList();
 			UpdateScreen();
 		}
 
-		private void _trackerSrv_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
-		{
-			UpdateScreen();
-		}
+		
 
 		private void UpdateScreen()
 		{
-			FilteredGames = _trackerSrv.TrackerModel.FilteredGames;
+			FilteredGames = TrackerSrv.TrackerModel.FilteredGames;
 		}
 
 		#endregion
 
 		#region Properties
 
-		public GameResult Result
-		{
-			get { return _result; }
-			set
-			{
-				_result = value;
-				OnPropertyChanged(nameof(Result));
-			}
-		}
+	
 
 		public List<UIElements.Match> FilteredGames
 		{
@@ -66,26 +50,11 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 			{
 				_filteredGames = value;
 				OnPropertyChanged("FilteredGames");
+				
 			}
 		}
 
-
-		[XmlIgnore]
-		public SolidColorBrush ResultTextColor
-		{
-			get
-			{
-				var c = Colors.Black;
-				if (Result == GameResult.Win)
-					c = Colors.Green;
-				else if (Result == GameResult.Loss)
-					c = Colors.Red;
-				return new SolidColorBrush(c);
-			}
-		}
-
-
-
+		
 		#endregion
 
 		#region Commands
@@ -93,5 +62,10 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 
 
 		#endregion
+
+		public void _trackerSrv_PropertyChanged(object sender, PropertyChangedEventArgs e)
+		{
+			UpdateScreen();
+		}
 	}
 }

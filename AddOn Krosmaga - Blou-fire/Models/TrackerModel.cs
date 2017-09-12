@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AddOn_Krosmaga___Blou_fire.Enums;
 using AddOn_Krosmaga___Blou_fire.UIElements;
 
 namespace AddOn_Krosmaga___Blou_fire.Models
@@ -28,7 +29,7 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 				_ownPseudo = value;
 				OnPropertyChanged("OwnPseudo");
 			}
-		} 
+		}
 		#endregion
 
 		#region OwnWinsNb
@@ -97,6 +98,9 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 		}
 		#endregion
 
+		#endregion
+
+		#region Vs Profile Data
 
 		#region VsPseudo
 		private string _vsPseudo;
@@ -176,9 +180,12 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 
 		#endregion
 
+
 		#region HistoMatches
 
 		private List<Match> _filteredGames;
+
+
 		public List<Match> FilteredGames
 		{
 			get
@@ -190,6 +197,62 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 			{
 				_filteredGames = value;
 				OnPropertyChanged("FilteredGames");
+			}
+		}
+
+		private GameType _gameType;
+		public GameType GameType
+		{
+			get { return _gameType; }
+			set
+			{
+				_gameType = value;
+				OnPropertyChanged("GameType");
+			}
+		}
+
+
+		private int _myIndex;
+		/// <summary>
+		/// MyIndex c'est un chiffre qui indique quel joueur tu es
+		/// Joueur 0 : commence en premier
+		///	Joueur 1 : commence en 2
+		/// </summary>
+		public int MyIndex
+		{
+			get { return _myIndex; }
+			set
+			{
+				_myIndex = value;
+				OnPropertyChanged("MyIndex");
+			}
+		}
+
+		#endregion
+
+		#region CardsInHands
+		private int _ownCardsInHand;
+		private int _opponentCardsInHand;
+	
+
+
+		public int OwnCardsInHand
+		{
+			get { return _ownCardsInHand; }
+			set
+			{
+				_ownCardsInHand = value;
+				OnPropertyChanged("OwnCardsInHand");
+			}
+		}
+
+		public int OpponentCardsInHand
+		{
+			get { return _opponentCardsInHand; }
+			set
+			{
+				_opponentCardsInHand = value;
+				OnPropertyChanged("OpponentCardsInHand");
 			}
 		}
 

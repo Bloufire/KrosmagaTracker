@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AddOn_Krosmaga___Blou_fire.Enums;
 
 namespace AddOn_Krosmaga___Blou_fire.UIElements
 {
@@ -15,7 +16,7 @@ namespace AddOn_Krosmaga___Blou_fire.UIElements
         private int _resultatMatch;
         private int _nbToursMatch;
         private Deck _deck;
-        private int _matchType;
+        private GameType _matchType;
         private DateTime date;
 		private string _OpponentImage;
         private string _ownImage;
@@ -32,7 +33,7 @@ namespace AddOn_Krosmaga___Blou_fire.UIElements
             ResultatMatch = value.ResultatMatch;
             NbToursMatch = value.NbToursMatch;
             Deck = new Deck(value.Deck);
-            MatchType = value.MatchType;
+            MatchType = (GameType)value.MatchType;
             Date = value.Date;
 	        OppenentClassName = value.Deck.OpponentClasse;
 	        PlayerClassName = value.PlayerClasse;
@@ -198,7 +199,7 @@ namespace AddOn_Krosmaga___Blou_fire.UIElements
             }
         }
 
-        public int MatchType
+        public GameType MatchType
         {
             get
             {

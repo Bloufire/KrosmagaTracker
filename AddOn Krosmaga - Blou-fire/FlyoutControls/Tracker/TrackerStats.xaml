@@ -7,10 +7,11 @@
              xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
              xmlns:enums="clr-namespace:AddOn_Krosmaga___Blou_fire.Enums"
              xmlns:pageModel="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel"
+             xmlns:converter="clr-namespace:AddOn_Krosmaga___Blou_fire.Converter"
              mc:Ignorable="d" 
              d:DesignHeight="700" d:DesignWidth="300">
     <UserControl.Resources>
-        <enums:EnumDescriptionConverter x:Key="EnumDescriptionConverter" />
+        <converter:EnumDescriptionConverter x:Key="EnumDescriptionConverter" />
     </UserControl.Resources>
     <UserControl.DataContext>
         <pageModel:TrackerStatsPageModel />

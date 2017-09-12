@@ -109,6 +109,8 @@
     <Compile Include="Builders\GameStarted.Builder.cs" />
     <Compile Include="Builders\PlayerAccountLoaded.Builder.cs" />
     <Compile Include="Builders\StartOfTurn.Builder.cs" />
+    <Compile Include="Converter\GameResultToBrushConverter.cs" />
+    <Compile Include="Converter\GameResultToStringConverter.cs" />
     <Compile Include="Data\CellCoord.Builder.cs" />
     <Compile Include="Data\ClientPreferences.Builder.cs" />
     <Compile Include="Data\Custom.Builder.cs" />
@@ -149,7 +151,7 @@
     <Compile Include="FlyoutControls\Tracker\TrackerStats.xaml.cs">
       <DependentUpon>TrackerStats.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Enums\EnumDescriptionConverter.cs" />
+    <Compile Include="Converter\EnumDescriptionConverter.cs" />
     <Compile Include="Helpers\Helpers.cs" />
     <Compile Include="Helpers\ObservableObject.cs" />
     <Compile Include="Helpers\RelayCommand.cs" />
@@ -169,7 +171,6 @@
     <Compile Include="ProducerConsumer\Producer.cs" />
     <Compile Include="ProducerConsumer\SyncEvents.cs" />
     <Compile Include="Properties\Annotations.cs" />
-    <Compile Include="Services\Interfaces\ITrackerCore.cs" />
     <Compile Include="Services\TrackerCoreSrv.cs" />
     <Compile Include="UIElements\Converters.cs" />
     <Compile Include="UIElements\Deck.cs" />
@@ -297,6 +298,7 @@
   <ItemGroup>
     <Folder Include="Controls\" />
     <Folder Include="FlyoutControls\Overlay\" />
+    <Folder Include="Services\Interfaces\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\DiscordIcon.png" />

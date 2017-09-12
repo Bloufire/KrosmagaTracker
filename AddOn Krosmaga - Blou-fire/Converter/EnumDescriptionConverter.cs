@@ -3,8 +3,9 @@ using System.ComponentModel;
 using System.Globalization;
 using System.Windows;
 using System.Windows.Data;
+using AddOn_Krosmaga___Blou_fire.Enums;
 
-namespace AddOn_Krosmaga___Blou_fire.Enums
+namespace AddOn_Krosmaga___Blou_fire.Converter
 {
 	public class EnumDescriptionConverter : IValueConverter
 	{
@@ -16,7 +17,7 @@ namespace AddOn_Krosmaga___Blou_fire.Enums
 			{
 				return GetDescription((Enum)value);
 			}
-			catch (Exception)
+			catch (Exception e)
 			{
 				return DependencyProperty.UnsetValue;
 			}

@@ -7,18 +7,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using AddOn_Krosmaga___Blou_fire.Builders;
+using AddOn_Krosmaga___Blou_fire.Enums;
 using AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel;
 using AddOn_Krosmaga___Blou_fire.Helpers;
 using AddOn_Krosmaga___Blou_fire.Models;
 using AddOn_Krosmaga___Blou_fire.ProducerConsumer;
-using AddOn_Krosmaga___Blou_fire.Services.Interfaces;
 using JsonCardsParser;
 using SQLiteConnector;
 using Match = AddOn_Krosmaga___Blou_fire.UIElements.Match;
 
 namespace AddOn_Krosmaga___Blou_fire.Services
 {
-    public class TrackerCoreSrv : ObservableObject,ITrackerCore
+    public class TrackerCoreSrv : ObservableObject
 	{ 
 		#region Properties
 
@@ -149,47 +149,60 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 		    }
 	    }
 
-		private void UIActionGameFinishedEvent(GameFinished value)
-		{
-
-			Connector.SaveMatchResult(TrackerModel.OpponentClasse, new List<int>(), TrackerModel.VsPseudo,
-				TrackerModel.OwnClasse, value.WinnerPlayer, 0, 0, DateTime.Now);
-			UpdateMatchsWithFilterList();
-			
-
-		}
-
+		
 		private void UIActionGameEventStarted(GameStarted value)
 	    {
-		    var MyIndex = value.MyIndex;
-
-		    Data.Player player = value.PlayersList.FirstOrDefault(x => x.Index == MyIndex);
-
+			//On initialise le "Own" positionnement.
+		    TrackerModel.MyIndex = value.MyIndex;
+			//On charge les données du player selon mon index
+		    Data.Player player = value.PlayersList.FirstOrDefault(x => x.Index == TrackerModel.MyIndex);
+			//On met à jour les données du model
 			if (player != null)
 			{
-				TrackerModel.OwnPseudo = player.Profile.Nickname == null ? "" : player.Profile.Nickname;
+				TrackerModel.OwnPseudo = player.Profile.Nickname ?? "";
 				TrackerModel.OwnWinsNb = player.Profile.VictoryCount;
 				TrackerModel.OwnLosesNb = player.Profile.DefeatCount;
 				TrackerModel.OwnLevel = player.Profile.Level;
 				TrackerModel.OwnClasse = ((Enums.God)Enum.Parse(typeof(Enums.God), player.GodId.ToString())).ToString();
 			}
-
-			player = value.PlayersList.FirstOrDefault(x => x.Index != MyIndex);
+			//On refait de 
+			player = value.PlayersList.FirstOrDefault(x => x.Index != TrackerModel.MyIndex);
 
 			if (player != null)
 			{
-				TrackerModel.VsPseudo = player.Profile.Nickname == null ? "" : player.Profile.Nickname;
+				TrackerModel.VsPseudo = player.Profile.Nickname ?? "";
 				TrackerModel.VsWinsNb = player.Profile.VictoryCount;
 				TrackerModel.VsLosesNb = player.Profile.DefeatCount;
 				TrackerModel.OpponentLevel = player.Profile.Level;
 				TrackerModel.OpponentClasse = ((Enums.God)Enum.Parse(typeof(Enums.God), player.GodId.ToString())).ToString();
 			}
 
-			//UIDatas.GameType = value.GameType;
+		    if (value.MyIndex == 0)
+		    {
+			    TrackerModel.OwnCardsInHand = 3;
+			    TrackerModel.OpponentCardsInHand = 4;
+		    }
+		    else
+		    {
+			    TrackerModel.OwnCardsInHand = 4;
+			    TrackerModel.OpponentCardsInHand = 3;
+		    }
+
+			TrackerModel.GameType = value.GameType;
+		}
+		private void UIActionGameFinishedEvent(GameFinished value)
+		{
+
+			Connector.SaveMatchResult(TrackerModel.OpponentClasse, new List<int>(), TrackerModel.VsPseudo,
+				TrackerModel.OwnClasse, value.WinnerPlayer == TrackerModel.MyIndex ? 1 : 0, 0,(int)TrackerModel.GameType, DateTime.Now);
+			UpdateMatchsWithFilterList();
+
+
 		}
 
 
-		private void UpdateMatchsWithFilterList()
+		//Permet le rafraichissement de la page d'historique
+		public void UpdateMatchsWithFilterList()
 		{
 			TrackerModel.FilteredGames = new List<Match>();
 			var tempList = new List<Match>();

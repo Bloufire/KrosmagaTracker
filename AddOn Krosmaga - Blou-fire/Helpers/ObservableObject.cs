@@ -5,17 +5,29 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using AddOn_Krosmaga___Blou_fire.Services;
 
 namespace AddOn_Krosmaga___Blou_fire.Helpers
 {
     public abstract class ObservableObject : INotifyPropertyChanged
     {
-        #region INotifyPropertyChanged Members
+	    protected TrackerCoreSrv TrackerSrv;
 
-        /// <summary>
-        /// Raised when a property on this object has a new value.
-        /// </summary>
-        public event PropertyChangedEventHandler PropertyChanged;
+	    protected ObservableObject()
+	    {
+		    App myApplication = ((App)Application.Current);
+			TrackerSrv = myApplication.TrackerCoreService;
+		}
+
+	
+
+		#region INotifyPropertyChanged Members
+
+		/// <summary>
+		/// Raised when a property on this object has a new value.
+		/// </summary>
+		public event PropertyChangedEventHandler PropertyChanged;
 
         /// <summary>
         /// Raises this object's PropertyChanged event.
@@ -67,6 +79,10 @@ namespace AddOn_Krosmaga___Blou_fire.Helpers
         protected virtual bool ThrowOnInvalidPropertyName { get; private set; }
 
         #endregion // Debugging Aides
+
+
+
+
 
     }
 }

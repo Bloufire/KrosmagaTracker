@@ -6,11 +6,17 @@
              xmlns:local="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker"
              xmlns:pageModel="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel"
              xmlns:lex="http://wpflocalizeextension.codeplex.com"
+             xmlns:converter="clr-namespace:AddOn_Krosmaga___Blou_fire.Converter"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <UserControl.DataContext>
         <pageModel:MatchesHistoPageModel />
     </UserControl.DataContext>
+    <UserControl.Resources>
+        <converter:GameResultToBrushConverter x:Key="GameResultToBrushConverter"/>
+        <converter:GameResultToStringConverter x:Key="GameResultToStringConverter"/>
+        <converter:EnumDescriptionConverter x:Key="EnumDescriptionConverter"/>
+    </UserControl.Resources>
     <DataGrid Name="DataGridGames" ItemsSource="{Binding FilteredGames}" 
               AutoGenerateColumns="False" CanUserAddRows="False" 
               CanUserDeleteRows="False" CanUserResizeRows="False" 
@@ -37,15 +43,22 @@
                     </Style>
                 </DataGridTextColumn.ElementStyle>
             </DataGridTextColumn>
-            <DataGridTextColumn Header="Result" Binding="{Binding ResultatMatch}">
+            <DataGridTextColumn Header="Result" Binding="{Binding ResultatMatch ,Converter={StaticResource GameResultToStringConverter}}">
                 <DataGridTextColumn.ElementStyle>
                     <Style TargetType="TextBlock">
                         <Setter Property="HorizontalAlignment" Value="Center" />
-                        <Setter Property="Foreground" Value="{Binding ResultTextColor}"/>
+                        <Setter Property="Foreground" Value="{Binding ResultatMatch ,Converter={StaticResource GameResultToBrushConverter}}"/>
                     </Style>
                 </DataGridTextColumn.ElementStyle>
             </DataGridTextColumn>
             <DataGridTextColumn Header="Tours" Binding="{Binding NbToursMatch}">
+                <DataGridTextColumn.ElementStyle>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="HorizontalAlignment" Value="Center" />
+                    </Style>
+                </DataGridTextColumn.ElementStyle>
+            </DataGridTextColumn>
+            <DataGridTextColumn Header="Mode" Binding="{Binding MatchType,Converter={StaticResource EnumDescriptionConverter}}">
                 <DataGridTextColumn.ElementStyle>
                     <Style TargetType="TextBlock">
                         <Setter Property="HorizontalAlignment" Value="Center" />

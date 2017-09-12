@@ -49,7 +49,6 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 	public class MainPageModel : ObservableObject
 	{
 
-		private readonly TrackerCoreSrv _trackerSrv;
 		public MainPageModel()
 		{
 			BtnDiscord_OnClick = new RelayCommand(BtnDiscordOnClick);
@@ -66,19 +65,19 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 			_classeWins.Add(new ClassWin() { Name = Enums.ClassEnum.Sacrieur.ToString(), Count = 174 });
 			_classeWins.Add(new ClassWin() { Name = Enums.ClassEnum.Ecaflip.ToString(), Count = 158 });
 			#endregion
-			App myApplication = ((App)Application.Current);
-			_trackerSrv = myApplication.TrackerCoreService;
-			_trackerSrv.PropertyChanged += _trackerSrv_PropertyChanged;
+			
+
 		}
 
 		private void _trackerSrv_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
 		{
+			TrackerSrv.TrackerModel.PropertyChanged += _trackerSrv_PropertyChanged; ;
 			UpdateScreen();
 		}
 
 		private void UpdateScreen()
 		{
-			
+			TrackerSrv.UpdateMatchsWithFilterList();
 		}
 
 
