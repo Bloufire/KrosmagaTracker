@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AddOn_Krosmaga___Blou_fire.UIElements;
 
 namespace AddOn_Krosmaga___Blou_fire.Models
 {
@@ -175,7 +176,22 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 
 		#endregion
 
-		#region VS Profile Data
+		#region HistoMatches
+
+		private List<Match> _filteredGames;
+		public List<Match> FilteredGames
+		{
+			get
+			{
+				if (_filteredGames != null) return _filteredGames;
+				return new List<Match>();
+			}
+			set
+			{
+				_filteredGames = value;
+				OnPropertyChanged("FilteredGames");
+			}
+		}
 
 		#endregion
 

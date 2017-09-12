@@ -37,7 +37,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 
 		private void UpdateScreen()
 		{
-			_filteredGames = _trackerSrv.FilteredGames;
+			FilteredGames = _trackerSrv.TrackerModel.FilteredGames;
 		}
 
 		#endregion

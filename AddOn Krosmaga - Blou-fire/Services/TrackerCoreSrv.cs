@@ -29,19 +29,7 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 		public CardCollection CardsCollection { get; set; }
 	    public TrackerModel TrackerModel { get; set; } //Model qui sera à découper par page. Peut contenir toutes les données actuellement.
 
-		public List<Match> FilteredGames
-		{
-			get
-			{
-				if (_filteredGames != null) return _filteredGames;
-				return new List<Match>();
-			}
-			set
-			{
-				_filteredGames = value;
-				OnPropertyChanged(nameof(FilteredGames));
-			}
-		}
+	
 
 		#endregion
 
@@ -56,11 +44,10 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 		    CardsCollection = new CardCollection { Collection = new JsonCard().ChargerCartes() };
 		    Helpers.Helpers.FirewallValidation();
 		    Producer producer = new Producer(_workQueue);
-		    UpdateMatchsWithFilterList();
 
 			StartService();
-
-	    }
+		    UpdateMatchsWithFilterList();
+		}
 
 	    public void StartService()
 	    {
@@ -204,14 +191,14 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 
 		private void UpdateMatchsWithFilterList()
 		{
-			FilteredGames = new List<Match>();
-			FilteredGames.Clear();
+			TrackerModel.FilteredGames = new List<Match>();
+			var tempList = new List<Match>();
 			var sqlMatches = Connector.GetMatches();
 			foreach (var item in sqlMatches)
 			{
-				FilteredGames.Add(new UIElements.Match(item));
+				TrackerModel.FilteredGames.Add(new UIElements.Match(item));
 			}
-			OnPropertyChanged(nameof(FilteredGames));
+			TrackerModel.FilteredGames = TrackerModel.FilteredGames;
 		}
 
 	
