@@ -13,6 +13,30 @@ namespace SQLiteConnector
     {
         static SQLiteConnection _maConnexion;
 
+        public static void CreateDatabase()
+        {
+            if (!File.Exists("krosmagaAddOn.db"))
+            {
+                SQLiteConnection.CreateFile("krosmagaAddOn.db");
+                using (_maConnexion = new SQLiteConnection("Data Source = krosmagaAddOn.db; Version = 3;"))
+                {
+                    _maConnexion.Open();
+                    string sql = "CREATE TABLE " + '"' + "Match" + '"' + " ( `idMatch` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, `opponentName` TEXT NOT NULL, `playerClasse` TEXT NOT NULL, `resultatMatch` INTEGER NOT NULL, `nbToursMatch` INTEGER NOT NULL, `Fk_deckId` INTEGER NOT NULL, `matchType` INTEGER NOT NULL, `date` TEXT, FOREIGN KEY(`Fk_deckId`) REFERENCES `Deck`(`idDeck`) )";
+                    SQLiteCommand command = new SQLiteCommand(sql, _maConnexion);
+                    command.ExecuteNonQuery();
+
+                    sql = "CREATE TABLE " + '"' + "Deck" + '"' + " ( `idDeck` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, `opponentClasse` TEXT NOT NULL )";
+                    command = new SQLiteCommand(sql, _maConnexion);
+                    command.ExecuteNonQuery();
+
+                    sql = "CREATE TABLE " + '"' + "Card" + '"' + " ( `idCard` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, `realCardId` INTEGER NOT NULL, `Fk_deckId` INTEGER NOT NULL, FOREIGN KEY(`Fk_deckId`) REFERENCES `Deck`(`idDeck`) )";
+                    command = new SQLiteCommand(sql, _maConnexion);
+                    command.ExecuteNonQuery();
+                    _maConnexion.Close();
+                }
+            }
+        }
+
         private static bool Open()
         {
             if (File.Exists("krosmagaAddOn.db"))

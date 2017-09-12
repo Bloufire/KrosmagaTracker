@@ -27,8 +27,14 @@ namespace JsonCardsParser
         public Texts Texts { get; set; }
 
         public string UIName { get; set; }
+        public string ImagePath { get; set; }
 
         public Card() { }
+
+        public void SetImagePath(string lang)
+        {
+            ImagePath = "/Images/CardImages/" + Name + ".png";
+        }
 
         public void SetUIName(string lang)
         {
