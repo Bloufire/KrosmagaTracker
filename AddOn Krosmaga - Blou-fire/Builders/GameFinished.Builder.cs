@@ -31,7 +31,8 @@ namespace AddOn_Krosmaga___Blou_fire.Builders
             }
         }
 
-        public int WinnerPlayer
+		
+		public int WinnerPlayer
         {
             get
             {

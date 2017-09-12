@@ -5,12 +5,16 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using AddOn_Krosmaga___Blou_fire.Builders;
 using AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel;
 using AddOn_Krosmaga___Blou_fire.Helpers;
 using AddOn_Krosmaga___Blou_fire.Models;
 using AddOn_Krosmaga___Blou_fire.ProducerConsumer;
 using AddOn_Krosmaga___Blou_fire.Services.Interfaces;
 using JsonCardsParser;
+using SQLiteConnector;
+using Match = AddOn_Krosmaga___Blou_fire.UIElements.Match;
 
 namespace AddOn_Krosmaga___Blou_fire.Services
 {
@@ -21,11 +25,25 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 	    BlockingCollection<byte[]> _workQueue = new BlockingCollection<byte[]>(new ConcurrentQueue<byte[]>());
 	    private BinaryReader _binaryReader;
 	    private byte[] _lastMessage = new byte[1];
+		private List<Match> _filteredGames;
 		public CardCollection CardsCollection { get; set; }
-	    public TrackerModel TrackerModel { get; set; }//Model qui sera à découper par page. Peut contenir toutes les données actuellement.
-	   
-		
-	    #endregion
+	    public TrackerModel TrackerModel { get; set; } //Model qui sera à découper par page. Peut contenir toutes les données actuellement.
+
+		public List<Match> FilteredGames
+		{
+			get
+			{
+				if (_filteredGames != null) return _filteredGames;
+				return new List<Match>();
+			}
+			set
+			{
+				_filteredGames = value;
+				OnPropertyChanged(nameof(FilteredGames));
+			}
+		}
+
+		#endregion
 
 		protected override void OnPropertyChanged(string propertyName)
 		{
@@ -38,8 +56,9 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 		    CardsCollection = new CardCollection { Collection = new JsonCard().ChargerCartes() };
 		    Helpers.Helpers.FirewallValidation();
 		    Producer producer = new Producer(_workQueue);
+		    UpdateMatchsWithFilterList();
 
-		    StartService();
+			StartService();
 
 	    }
 
@@ -104,7 +123,7 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 						    Builders.GameFinished gamefinished = new Builders.GameFinished();
 						    send = _binaryReader.ReadBytes((int)size);
 						    gamefinished.Decode(send);
-						    //UIActionGameFinishedEvent(gamefinished);
+						    UIActionGameFinishedEvent(gamefinished);
 						    break;
 					    case "98400741B1CB5A4A110FC4D2D51E2D4CA9": // GameEventsEvent
 						    Builders.GameEvents gameevents = new Builders.GameEvents();
@@ -142,7 +161,18 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 			    }
 		    }
 	    }
-	    private void UIActionGameEventStarted(Builders.GameStarted value)
+
+		private void UIActionGameFinishedEvent(GameFinished value)
+		{
+
+			Connector.SaveMatchResult(TrackerModel.OpponentClasse, new List<int>(), TrackerModel.VsPseudo,
+				TrackerModel.OwnClasse, value.WinnerPlayer, 0, 0, DateTime.Now);
+			UpdateMatchsWithFilterList();
+			
+
+		}
+
+		private void UIActionGameEventStarted(GameStarted value)
 	    {
 		    var MyIndex = value.MyIndex;
 
@@ -153,8 +183,8 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 				TrackerModel.OwnPseudo = player.Profile.Nickname == null ? "" : player.Profile.Nickname;
 				TrackerModel.OwnWinsNb = player.Profile.VictoryCount;
 				TrackerModel.OwnLosesNb = player.Profile.DefeatCount;
-				//UIDatas.OwnLevel = player.Profile.Level;
-				//TrackerModel.OwnClasse = ((Enums.God)Enum.Parse(typeof(Enums.God), player.GodId.ToString())).ToString();
+				TrackerModel.OwnLevel = player.Profile.Level;
+				TrackerModel.OwnClasse = ((Enums.God)Enum.Parse(typeof(Enums.God), player.GodId.ToString())).ToString();
 			}
 
 			player = value.PlayersList.FirstOrDefault(x => x.Index != MyIndex);
@@ -164,12 +194,27 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 				TrackerModel.VsPseudo = player.Profile.Nickname == null ? "" : player.Profile.Nickname;
 				TrackerModel.VsWinsNb = player.Profile.VictoryCount;
 				TrackerModel.VsLosesNb = player.Profile.DefeatCount;
-				//TrackerModel.OpponentLevel = player.Profile.Level;
-				//TrackerModel.OpponentClasse = ((Enums.God)Enum.Parse(typeof(Enums.God), player.GodId.ToString())).ToString();
+				TrackerModel.OpponentLevel = player.Profile.Level;
+				TrackerModel.OpponentClasse = ((Enums.God)Enum.Parse(typeof(Enums.God), player.GodId.ToString())).ToString();
 			}
 
 			//UIDatas.GameType = value.GameType;
 		}
+
+
+		private void UpdateMatchsWithFilterList()
+		{
+			FilteredGames = new List<Match>();
+			FilteredGames.Clear();
+			var sqlMatches = Connector.GetMatches();
+			foreach (var item in sqlMatches)
+			{
+				FilteredGames.Add(new UIElements.Match(item));
+			}
+			OnPropertyChanged(nameof(FilteredGames));
+		}
+
+	
 
 		#endregion
 

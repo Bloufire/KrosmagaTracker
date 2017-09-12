@@ -1,0 +1,61 @@
+﻿<UserControl x:Class="AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.MatchesHistoPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker"
+             xmlns:pageModel="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel"
+             xmlns:lex="http://wpflocalizeextension.codeplex.com"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.DataContext>
+        <pageModel:MatchesHistoPageModel />
+    </UserControl.DataContext>
+    <DataGrid Name="DataGridGames" ItemsSource="{Binding FilteredGames}" 
+              AutoGenerateColumns="False" CanUserAddRows="False" 
+              CanUserDeleteRows="False" CanUserResizeRows="False" 
+              IsReadOnly="True" CanUserResizeColumns="True">
+        <DataGrid.Columns>
+            <DataGridTemplateColumn Header="Class" SortMemberPath="PlayerHero">
+                <DataGridTemplateColumn.CellTemplate>
+                    <DataTemplate>
+                        <Image Source="{Binding OwnImage}" Width="30" Height="30" RenderOptions.BitmapScalingMode="Fant" ToolTip="{Binding PlayerClassName}" />
+                    </DataTemplate>
+                </DataGridTemplateColumn.CellTemplate>
+            </DataGridTemplateColumn>
+            <DataGridTemplateColumn Header="VS" SortMemberPath="PlayerHero">
+                <DataGridTemplateColumn.CellTemplate>
+                    <DataTemplate>
+                        <Image Source="{Binding OpponentImage}" Width="30" Height="30" RenderOptions.BitmapScalingMode="Fant" ToolTip="{Binding OppenentClassName}" />
+                    </DataTemplate>
+                </DataGridTemplateColumn.CellTemplate>
+            </DataGridTemplateColumn>
+            <DataGridTextColumn Header="Name" Binding="{Binding OpponentName}">
+                <DataGridTextColumn.ElementStyle>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="HorizontalAlignment" Value="Center" />
+                    </Style>
+                </DataGridTextColumn.ElementStyle>
+            </DataGridTextColumn>
+            <DataGridTextColumn Header="Result" Binding="{Binding ResultatMatch}">
+                <DataGridTextColumn.ElementStyle>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="HorizontalAlignment" Value="Center" />
+                        <Setter Property="Foreground" Value="{Binding ResultTextColor}"/>
+                    </Style>
+                </DataGridTextColumn.ElementStyle>
+            </DataGridTextColumn>
+            <DataGridTextColumn Header="Tours" Binding="{Binding NbToursMatch}">
+                <DataGridTextColumn.ElementStyle>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="HorizontalAlignment" Value="Center" />
+                    </Style>
+                </DataGridTextColumn.ElementStyle>
+            </DataGridTextColumn>
+        </DataGrid.Columns>
+
+
+
+    </DataGrid>
+
+</UserControl>

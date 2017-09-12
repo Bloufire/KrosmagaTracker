@@ -17,13 +17,14 @@ namespace AddOn_Krosmaga___Blou_fire.UIElements
         private Deck _deck;
         private int _matchType;
         private DateTime date;
-
-        private string _OpponentImage;
+		private string _OpponentImage;
         private string _ownImage;
 
         private bool _extended;
+	    private string _oppenentClassName;
+	    private string _playerClassName;
 
-        public Match(SQLiteConnector.Match value)
+	    public Match(SQLiteConnector.Match value)
         {
             IdMatch = value.IdMatch;
             OpponentName = value.OpponentName;
@@ -33,8 +34,9 @@ namespace AddOn_Krosmaga___Blou_fire.UIElements
             Deck = new Deck(value.Deck);
             MatchType = value.MatchType;
             Date = value.Date;
-
-            SetImages();
+	        OppenentClassName = value.Deck.OpponentClasse;
+	        PlayerClassName = value.PlayerClasse;
+			SetImages();
             Extended = false;
         }
 
@@ -106,7 +108,19 @@ namespace AddOn_Krosmaga___Blou_fire.UIElements
             OwnImage = value;
         }
 
-        public int IdMatch
+	    public string OppenentClassName
+	    {
+		    get { return _oppenentClassName; }
+		    set { _oppenentClassName = value; }
+	    }
+
+	    public string PlayerClassName
+	    {
+		    get { return _playerClassName; }
+		    set { _playerClassName = value; }
+	    }
+
+	    public int IdMatch
         {
             get
             {

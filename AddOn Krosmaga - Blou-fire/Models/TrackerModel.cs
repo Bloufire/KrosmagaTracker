@@ -68,67 +68,121 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 		}
 		#endregion
 
+		#region OwnLevel
+		private int _ownLevel;
 
+		public int OwnLevel
+		{
+			get { return _ownLevel; }
+			set
+			{
+				_ownLevel = value;
+				OnPropertyChanged("OwnLevel");
+			}
+		}
 		#endregion
 
-		#region Vs Profile Data
+		#region OwnClasse
+		private string _ownClasse;
+
+		public string OwnClasse
+		{
+			get { return _ownClasse; }
+			set
+			{
+				_ownClasse = value;
+				OnPropertyChanged("OwnClasse");
+			}
+		}
+		#endregion
+
 
 		#region VsPseudo
 		private string _vsPseudo;
+
 		public string VsPseudo
 		{
-			get => _vsPseudo;
-
+			get { return _vsPseudo; }
 			set
 			{
-				if (_vsPseudo == value) _vsPseudo = "default first";
 				_vsPseudo = value;
 				OnPropertyChanged("VsPseudo");
 			}
 		}
+
 		#endregion
+
 
 		#region VsWinsNb
 		private int _vsWinsNb;
+
 		public int VsWinsNb
 		{
-			get => _vsWinsNb;
-
+			get { return _vsWinsNb; }
 			set
 			{
-				if (_vsWinsNb == null)
-				{
-					_vsWinsNb = -1;
-				}
-
 				_vsWinsNb = value;
 				OnPropertyChanged("VsWinsNb");
 			}
 		}
+
 		#endregion
 
 		#region VsLosesNb
 		private int _vsLosesNb;
+
 		public int VsLosesNb
 		{
-			get => _vsLosesNb;
-
+			get { return _vsLosesNb; }
 			set
 			{
-				if (_vsLosesNb == null)
-				{
-					_vsLosesNb = -1;
-				}
-
 				_vsLosesNb = value;
 				OnPropertyChanged("VsLosesNb");
 			}
 		}
-		#endregion
-
 
 		#endregion
 
+		#region OpponentLevel
+		private int _opponentLevel;
+
+		public int OpponentLevel
+		{
+			get { return _opponentLevel; }
+			set
+			{
+				_opponentLevel = value;
+				OnPropertyChanged("OpponentLevel");
+			}
+		}
+
+		#endregion
+
+		#region OpponentClasse
+		private string _opponentClasse;
+
+		public string OpponentClasse
+		{
+			get { return _opponentClasse; }
+			set
+			{
+				_opponentClasse = value;
+				OnPropertyChanged("OpponentClasse");
+			}
+		}
+
+		#endregion
+
+		#endregion
+
+		#region VS Profile Data
+
+		#endregion
+
+		protected override void OnPropertyChanged(string propertyName)
+		{
+			base.OnPropertyChanged(propertyName);
+		}
 
 	}
 }
