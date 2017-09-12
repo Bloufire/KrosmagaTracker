@@ -48,6 +48,8 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 			}
 		}
 		#endregion
+
+		#region OwnLosesNb
 		private int _ownLosesNb;
 		public int OwnLosesNb
 		{
@@ -64,22 +66,69 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 				OnPropertyChanged("OwnLosesNb");
 			}
 		}
+		#endregion
 
 
 		#endregion
 
-		#region VS Profile Data
+		#region Vs Profile Data
 
-		public string VsPseudo { get; set; }
-		public int VsWinsNb { get; set; }
-		public int VsLosesNb { get; set; }
-
-		#endregion
-
-		protected override void OnPropertyChanged(string propertyName)
+		#region VsPseudo
+		private string _vsPseudo;
+		public string VsPseudo
 		{
-			base.OnPropertyChanged(propertyName);
+			get => _vsPseudo;
+
+			set
+			{
+				if (_vsPseudo == value) _vsPseudo = "default first";
+				_vsPseudo = value;
+				OnPropertyChanged("VsPseudo");
+			}
 		}
+		#endregion
+
+		#region VsWinsNb
+		private int _vsWinsNb;
+		public int VsWinsNb
+		{
+			get => _vsWinsNb;
+
+			set
+			{
+				if (_vsWinsNb == null)
+				{
+					_vsWinsNb = -1;
+				}
+
+				_vsWinsNb = value;
+				OnPropertyChanged("VsWinsNb");
+			}
+		}
+		#endregion
+
+		#region VsLosesNb
+		private int _vsLosesNb;
+		public int VsLosesNb
+		{
+			get => _vsLosesNb;
+
+			set
+			{
+				if (_vsLosesNb == null)
+				{
+					_vsLosesNb = -1;
+				}
+
+				_vsLosesNb = value;
+				OnPropertyChanged("VsLosesNb");
+			}
+		}
+		#endregion
+
+
+		#endregion
+
 
 	}
 }

@@ -150,6 +150,7 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 
 			if (player != null)
 			{
+				TrackerModel.OwnPseudo = player.Profile.Nickname == null ? "" : player.Profile.Nickname;
 				TrackerModel.OwnWinsNb = player.Profile.VictoryCount;
 				TrackerModel.OwnLosesNb = player.Profile.DefeatCount;
 				//UIDatas.OwnLevel = player.Profile.Level;
