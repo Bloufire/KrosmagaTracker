@@ -1,25 +1,24 @@
 ﻿<controls:MetroWindow x:Class="AddOn_Krosmaga___Blou_fire.Pages.MainPage"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:AddOn_Krosmaga___Blou_fire.Pages"
-      xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
-      xmlns:pageModels="clr-namespace:AddOn_Krosmaga___Blou_fire.PageModels"
-      xmlns:materialIcons="clr-namespace:MaterialIcons;assembly=MaterialIcons"
-      xmlns:tracker="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker"
-      xmlns:metroChart="clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart"
-      mc:Ignorable="d" 
-      Title="Krosmaga Tracker"
-      Icon="/Images/card.png"
-      BorderThickness="0" 
-      GlowBrush="Black"
-      ResizeMode="CanResizeWithGrip"
-      Height="600" Width="800"
-      MinHeight="584" MinWidth="1100"
-      WindowTransitionsEnabled="False"
-      WindowStartupLocation="CenterScreen"
-      >
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                      xmlns:local="clr-namespace:AddOn_Krosmaga___Blou_fire.Pages"
+                      xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+                      xmlns:pageModels="clr-namespace:AddOn_Krosmaga___Blou_fire.PageModels"
+                      xmlns:materialIcons="clr-namespace:MaterialIcons;assembly=MaterialIcons"
+                      xmlns:tracker="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker"
+                      xmlns:metroChart="clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart"
+                      mc:Ignorable="d"
+                      Title="Krosmaga Tracker"
+                      Icon="/Images/card.png"
+                      BorderThickness="0"
+                      GlowBrush="Black"
+                      ResizeMode="CanResizeWithGrip"
+                      Height="600" Width="800"
+                      MinHeight="584" MinWidth="1100"
+                      WindowTransitionsEnabled="False"
+                      WindowStartupLocation="CenterScreen">
 
     <Window.DataContext>
         <pageModels:MainPageModel />
@@ -33,7 +32,7 @@
                         <Rectangle.Fill>
                             <VisualBrush>
                                 <VisualBrush.Visual>
-                                    <materialIcons:MaterialIcon  Icon="ic_settings"/>
+                                    <materialIcons:MaterialIcon Icon="ic_settings" />
                                 </VisualBrush.Visual>
                             </VisualBrush>
                         </Rectangle.Fill>
@@ -47,7 +46,7 @@
                         <Rectangle.Fill>
                             <VisualBrush>
                                 <VisualBrush.Visual>
-                                    <Image Source="../Images/DiscordIcon.png"></Image>
+                                    <Image Source="../Images/DiscordIcon.png" />
                                 </VisualBrush.Visual>
                             </VisualBrush>
                         </Rectangle.Fill>
@@ -63,21 +62,21 @@
                <tracker:SettingsPage></tracker:SettingsPage>
             </controls:Flyout>
         </controls:FlyoutsControl>
-    </controls:MetroWindow.Flyouts >
-    <DockPanel >
+    </controls:MetroWindow.Flyouts>
+    <DockPanel>
         <GroupBox Header="Filtres" DockPanel.Dock="Left" Width="180" MinWidth="180">
-            <tracker:TrackerStats></tracker:TrackerStats>
+            <tracker:TrackerStats />
         </GroupBox>
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"  />
+                <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <!--<GroupBox Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2" Header="Stats" HorizontalAlignment="Stretch">
                 <metroChart:ClusteredColumnChart ChartSubTitle=""  
@@ -92,7 +91,7 @@
                 </metroChart:ClusteredColumnChart>
             </GroupBox>-->
             <GroupBox Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2" Header="Histo" HorizontalAlignment="Stretch">
-                <tracker:MatchesHistoPage></tracker:MatchesHistoPage>
+                <tracker:MatchesHistoPage />
             </GroupBox>
             <!--<GroupBox  Grid.Column="1" Grid.Row="0" Grid.RowSpan="2"  Header="Autres" >
                 <metroChart:PieChart ChartSubTitle=""  
@@ -112,10 +111,9 @@
                 </StackPanel>
 
             </GroupBox>
-            <GroupBox Grid.Column="0" Grid.Row="2"  Header="Profile Data">
-               <tracker:ProfileDataPage/>
+            <GroupBox Grid.Column="0" Grid.Row="2" Header="Profile Data">
+                <tracker:ProfileDataPage />
             </GroupBox>
         </Grid>
     </DockPanel>
 </controls:MetroWindow>
-

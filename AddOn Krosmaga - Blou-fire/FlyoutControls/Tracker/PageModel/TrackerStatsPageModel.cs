@@ -26,6 +26,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 		public Array ComboSaisonValues { get; set; }
 		public Array ComboClasseValues { get; set; }
 		public Array ComboOppClasseValues { get; set; }
+
 		#endregion
 
 		#region Commands
@@ -35,6 +36,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 		public ICommand ComboBoxSaisonOnSelectionChanged => new RelayCommand(ComboBoxSaison_OnSelectionChangedAction);
 
 		private string _selectedItemSaison;
+
 		public string SelectedItemSaison
 		{
 			get => this._selectedItemSaison;
@@ -44,6 +46,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 				OnPropertyChanged("SelectedItemSaison");
 			}
 		}
+
 		private void ComboBoxSaison_OnSelectionChangedAction()
 		{
 			if (_selectedItemSaison != null)
@@ -53,11 +56,13 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 		}
 
 		#endregion
+
 		#region OppClasseSelection
 
 		public ICommand ComboBoxOppClasseOnSelectionChanged => new RelayCommand(ComboBoxOppClasse_OnSelectionChangedAction);
 
 		private string _selectedItemOppClasse;
+
 		public string SelectedItemOppClasse
 		{
 			get => this._selectedItemOppClasse;
@@ -67,6 +72,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 				OnPropertyChanged("SelectedItemOppClasse");
 			}
 		}
+
 		private void ComboBoxOppClasse_OnSelectionChangedAction()
 		{
 			if (_selectedItemOppClasse != null)
@@ -76,11 +82,13 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 		}
 
 		#endregion
+
 		#region ClasseSelection
 
 		public ICommand ComboBoxClasseOnSelectionChanged => new RelayCommand(ComboBoxClasse_OnSelectionChangedAction);
 
 		private string _selectedItemClasse;
+
 		public string SelectedItemClasse
 		{
 			get => this._selectedItemClasse;
@@ -90,6 +98,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 				OnPropertyChanged("SelectedItemClasse");
 			}
 		}
+
 		private void ComboBoxClasse_OnSelectionChangedAction()
 		{
 			if (_selectedItemClasse != null)

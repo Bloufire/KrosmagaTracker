@@ -14,11 +14,12 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 	/// </summary>
 	public class TrackerModel : ObservableObject
 	{
-
 		#region Own Profile Data
 
 		#region OwnPseudo
+
 		private string _ownPseudo;
+
 		public string OwnPseudo
 		{
 			get => _ownPseudo;
@@ -30,10 +31,13 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 				OnPropertyChanged("OwnPseudo");
 			}
 		}
+
 		#endregion
 
 		#region OwnWinsNb
+
 		private int _ownWinsNb;
+
 		public int OwnWinsNb
 		{
 			get => _ownWinsNb;
@@ -49,10 +53,13 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 				OnPropertyChanged("OwnWinsNb");
 			}
 		}
+
 		#endregion
 
 		#region OwnLosesNb
+
 		private int _ownLosesNb;
+
 		public int OwnLosesNb
 		{
 			get => _ownLosesNb;
@@ -68,9 +75,11 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 				OnPropertyChanged("OwnLosesNb");
 			}
 		}
+
 		#endregion
 
 		#region OwnLevel
+
 		private int _ownLevel;
 
 		public int OwnLevel
@@ -82,9 +91,11 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 				OnPropertyChanged("OwnLevel");
 			}
 		}
+
 		#endregion
 
 		#region OwnClasse
+
 		private string _ownClasse;
 
 		public string OwnClasse
@@ -96,6 +107,7 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 				OnPropertyChanged("OwnClasse");
 			}
 		}
+
 		#endregion
 
 		#endregion
@@ -103,6 +115,7 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 		#region Vs Profile Data
 
 		#region VsPseudo
+
 		private string _vsPseudo;
 
 		public string VsPseudo
@@ -119,6 +132,7 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 
 
 		#region VsWinsNb
+
 		private int _vsWinsNb;
 
 		public int VsWinsNb
@@ -134,6 +148,7 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 		#endregion
 
 		#region VsLosesNb
+
 		private int _vsLosesNb;
 
 		public int VsLosesNb
@@ -149,6 +164,7 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 		#endregion
 
 		#region OpponentLevel
+
 		private int _opponentLevel;
 
 		public int OpponentLevel
@@ -164,6 +180,7 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 		#endregion
 
 		#region OpponentClasse
+
 		private string _opponentClasse;
 
 		public string OpponentClasse
@@ -201,6 +218,7 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 		}
 
 		private GameType _gameType;
+
 		public GameType GameType
 		{
 			get { return _gameType; }
@@ -213,6 +231,7 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 
 
 		private int _myIndex;
+
 		/// <summary>
 		/// MyIndex c'est un chiffre qui indique quel joueur tu es
 		/// Joueur 0 : commence en premier
@@ -231,9 +250,10 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 		#endregion
 
 		#region CardsInHands
+
 		private int _ownCardsInHand;
 		private int _opponentCardsInHand;
-	
+		private int _currentTurn;
 
 
 		public int OwnCardsInHand
@@ -256,12 +276,21 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 			}
 		}
 
+		public int CurrentTurn
+		{
+			get { return _currentTurn; }
+			set
+			{
+				_currentTurn = value;
+				OnPropertyChanged("CurrentTurn");
+			}
+		}
+
 		#endregion
 
 		protected override void OnPropertyChanged(string propertyName)
 		{
 			base.OnPropertyChanged(propertyName);
 		}
-
 	}
 }

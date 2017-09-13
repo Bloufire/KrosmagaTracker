@@ -8,26 +8,26 @@ using System.Threading.Tasks;
 
 namespace AddOn_Krosmaga___Blou_fire.Helpers
 {
-    public class ViewModelBase : INotifyPropertyChanged
-    {
-        public event PropertyChangedEventHandler PropertyChanged;
+	public class ViewModelBase : INotifyPropertyChanged
+	{
+		public event PropertyChangedEventHandler PropertyChanged;
 
-        public void RaisePropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
+		public void RaisePropertyChanged(string propertyName)
+		{
+			PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+		}
 
-        public void OnPropertyChanged<T>(Expression<Func<T>> action)
-        {
-            var propertyName = GetPropertyName(action);
-            RaisePropertyChanged(propertyName);
-        }
+		public void OnPropertyChanged<T>(Expression<Func<T>> action)
+		{
+			var propertyName = GetPropertyName(action);
+			RaisePropertyChanged(propertyName);
+		}
 
-        public static string GetPropertyName<T>(Expression<Func<T>> action)
-        {
-            var expression = (MemberExpression)action.Body;
-            var propertyName = expression.Member.Name;
-            return propertyName;
-        }
-    }
+		public static string GetPropertyName<T>(Expression<Func<T>> action)
+		{
+			var expression = (MemberExpression) action.Body;
+			var propertyName = expression.Member.Name;
+			return propertyName;
+		}
+	}
 }

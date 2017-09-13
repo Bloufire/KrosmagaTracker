@@ -20,7 +20,6 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 {
 	public class ClassWin : ObservableObject
 	{
-
 		private string _name = string.Empty;
 		private int _count = 0;
 
@@ -42,14 +41,12 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 				_count = value;
 				OnPropertyChanged("Name");
 			}
-
 		}
 	}
 
 
 	public class MainPageModel : ObservableObject
 	{
-
 		public MainPageModel()
 		{
 			BtnDiscord_OnClick = new RelayCommand(BtnDiscordOnClick);
@@ -58,21 +55,22 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 			BtnSettings_OnClick = new RelayCommand(BtnSettingsOnClick);
 
 			#region Sample Datas
-			_classeWins.Add(new ClassWin() { Name = Enums.ClassEnum.Cra.ToString(), Count = 1340 });
-			_classeWins.Add(new ClassWin() { Name = Enums.ClassEnum.Eniripsa.ToString(), Count = 1220 });
-			_classeWins.Add(new ClassWin() { Name = Enums.ClassEnum.Sacrieur.ToString(), Count = 309 });
-			_classeWins.Add(new ClassWin() { Name = Enums.ClassEnum.Sram.ToString(), Count = 240 });
-			_classeWins.Add(new ClassWin() { Name = Enums.ClassEnum.Xelor.ToString(), Count = 195 });
-			_classeWins.Add(new ClassWin() { Name = Enums.ClassEnum.Sacrieur.ToString(), Count = 174 });
-			_classeWins.Add(new ClassWin() { Name = Enums.ClassEnum.Ecaflip.ToString(), Count = 158 });
-			#endregion
-			
 
+			_classeWins.Add(new ClassWin() {Name = Enums.ClassEnum.Cra.ToString(), Count = 1340});
+			_classeWins.Add(new ClassWin() {Name = Enums.ClassEnum.Eniripsa.ToString(), Count = 1220});
+			_classeWins.Add(new ClassWin() {Name = Enums.ClassEnum.Sacrieur.ToString(), Count = 309});
+			_classeWins.Add(new ClassWin() {Name = Enums.ClassEnum.Sram.ToString(), Count = 240});
+			_classeWins.Add(new ClassWin() {Name = Enums.ClassEnum.Xelor.ToString(), Count = 195});
+			_classeWins.Add(new ClassWin() {Name = Enums.ClassEnum.Sacrieur.ToString(), Count = 174});
+			_classeWins.Add(new ClassWin() {Name = Enums.ClassEnum.Ecaflip.ToString(), Count = 158});
+
+			#endregion
 		}
 
 		private void _trackerSrv_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
 		{
-			TrackerSrv.TrackerModel.PropertyChanged += _trackerSrv_PropertyChanged; ;
+			TrackerSrv.TrackerModel.PropertyChanged += _trackerSrv_PropertyChanged;
+			;
 			UpdateScreen();
 		}
 
@@ -83,6 +81,7 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 
 
 		private readonly ObservableCollection<ClassWin> _classeWins = new ObservableCollection<ClassWin>();
+
 		public ObservableCollection<ClassWin> ClasseWins
 		{
 			get { return _classeWins; }
@@ -93,8 +92,6 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 		public string FullName => _firstName + " " + _lastName;
 
 		#region Properties
-
-		
 
 		private string _firstName = "default first";
 		private string _lastName = "default last";
@@ -107,7 +104,8 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 			{
 				if (_firstName == value) _firstName = "default first";
 				_firstName = value;
-				OnPropertyChanged("FirstName"); OnPropertyChanged("FullName");
+				OnPropertyChanged("FirstName");
+				OnPropertyChanged("FullName");
 			}
 		}
 
@@ -119,7 +117,8 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 			{
 				if (_lastName == value) _lastName = "default last";
 				_lastName = value;
-				OnPropertyChanged("LastName"); OnPropertyChanged("FullName");
+				OnPropertyChanged("LastName");
+				OnPropertyChanged("FullName");
 			}
 		}
 
@@ -146,8 +145,10 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 		#endregion
 
 		#region Commands
+
 		private MetroWindow settingsWindow;
-			public ICommand BtnSettings_OnClick { get; }
+		public ICommand BtnSettings_OnClick { get; }
+
 		private void BtnSettingsOnClick()
 		{
 			if (settingsWindow != null)
@@ -162,6 +163,7 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 		}
 
 		public ICommand BtnDiscord_OnClick { get; }
+
 		private void BtnDiscordOnClick()
 		{
 			Helpers.Helpers.TryOpenUrl("https://discord.gg/UR2TQEp");
@@ -172,6 +174,7 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 		public ICommand OpenLeftFlyoutCmd => new RelayCommand(OpenLeftFlyoutCmdAction);
 
 		private bool _isLeftFlyOpen;
+
 		public bool IsLeftFlyOpen
 		{
 			get => this._isLeftFlyOpen;
@@ -181,6 +184,7 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 				OnPropertyChanged("IsLeftFlyOpen");
 			}
 		}
+
 		private void OpenLeftFlyoutCmdAction()
 		{
 			IsLeftFlyOpen = !_isLeftFlyOpen;
@@ -189,6 +193,5 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 		#endregion
 
 		#endregion
-
 	}
 }

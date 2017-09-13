@@ -11,12 +11,11 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 {
 	public class ProfileDataPageModel : ObservableObject
 	{
-
 		#region constructor
 
 		public ProfileDataPageModel()
 		{
-			App myApplication = ((App)Application.Current);
+			App myApplication = ((App) Application.Current);
 			_trackerSrv = myApplication.TrackerCoreService;
 			_trackerSrv.TrackerModel.PropertyChanged += _trackerSrv_PropertyChanged;
 			UpdateScreen();
@@ -30,7 +29,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 		private void UpdateScreen()
 		{
 			MyPseudo = _trackerSrv.TrackerModel.OwnPseudo;
-			MyWinsNb= _trackerSrv.TrackerModel.OwnWinsNb;
+			MyWinsNb = _trackerSrv.TrackerModel.OwnWinsNb;
 			MyLosesNb = _trackerSrv.TrackerModel.OwnLosesNb;
 		}
 
@@ -40,7 +39,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 
 		private string _myPseudo;
 		private TrackerCoreSrv _trackerSrv;
-	
+
 		public string MyPseudo
 		{
 			get { return _myPseudo ?? "Pseudo == Null"; }
@@ -49,13 +48,15 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 			{
 				_myPseudo = value;
 				OnPropertyChanged("MyPseudo");
-
 			}
 		}
-	
+
 		#endregion
+
 		#region OwnWinsNb
+
 		private int _ownWinsNb;
+
 		public int MyWinsNb
 		{
 			get => _ownWinsNb;
@@ -66,8 +67,11 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 				OnPropertyChanged("MyWinsNb");
 			}
 		}
+
 		#endregion
+
 		private int _ownLosesNb;
+
 		public int MyLosesNb
 		{
 			get => _ownLosesNb;
@@ -80,8 +84,6 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 		}
 
 		#region Commands
-
-
 
 		#endregion
 	}

@@ -15,7 +15,7 @@ namespace AddOn_Krosmaga___Blou_fire.Converter
 				return DependencyProperty.UnsetValue;
 			try
 			{
-				return GetDescription((Enum)value);
+				return GetDescription((Enum) value);
 			}
 			catch (Exception e)
 			{
@@ -23,7 +23,8 @@ namespace AddOn_Krosmaga___Blou_fire.Converter
 			}
 		}
 
-		public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) => Enum.ToObject(targetType, value);
+		public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) =>
+			Enum.ToObject(targetType, value);
 
 		public static string GetDescription(Enum en)
 		{
@@ -33,10 +34,10 @@ namespace AddOn_Krosmaga___Blou_fire.Converter
 			{
 				var locAttr = memInfo[0].GetCustomAttributes(typeof(LocDescriptionAttribute), false);
 				if (locAttr.Length > 0)
-					return ((LocDescriptionAttribute)locAttr[0]).LocDescription;
+					return ((LocDescriptionAttribute) locAttr[0]).LocDescription;
 				var attrs = memInfo[0].GetCustomAttributes(typeof(DescriptionAttribute), false);
 				if (attrs.Length > 0)
-					return ((DescriptionAttribute)attrs[0]).Description;
+					return ((DescriptionAttribute) attrs[0]).Description;
 			}
 			return en.ToString();
 		}
