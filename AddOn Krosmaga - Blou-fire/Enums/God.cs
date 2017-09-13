@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace AddOn_Krosmaga___Blou_fire.Enums
 {
-    public enum God
-    {
-        None,
-        Iop,
-        Cra,
-        Eniripsa,
-        Ecaflip,
-        Enutrof,
-        Sram,
-        Xelor,
-        Sacrieur,
-        Sadida = 10,
-        Rushu = 17
-    }
+	public enum God
+	{
+		None,
+		Iop,
+		Cra,
+		Eniripsa,
+		Ecaflip,
+		Enutrof,
+		Sram,
+		Xelor,
+		Sacrieur,
+		Sadida = 10,
+		Rushu = 17
+	}
 }

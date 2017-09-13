@@ -7,41 +7,29 @@ using JsonCardsParser;
 
 namespace AddOn_Krosmaga___Blou_fire.UIElements
 {
-    public class DeckUI
-    {
-        private JsonCardsParser.Card _card;
-        private int _cardCount;
+	public class DeckUI
+	{
+		private JsonCardsParser.Card _card;
+		private int _cardCount;
 
-        public DeckUI(Card card, int count)
-        {
-            Card = card;
-            CardCount = count;
-        }
+		public DeckUI(Card card, int count)
+		{
+			Card = card;
+			CardCount = count;
+		}
 
-        public Card Card
-        {
-            get
-            {
-                return _card;
-            }
+		public Card Card
+		{
+			get { return _card; }
 
-            set
-            {
-                _card = value;
-            }
-        }
+			set { _card = value; }
+		}
 
-        public int CardCount
-        {
-            get
-            {
-                return _cardCount;
-            }
+		public int CardCount
+		{
+			get { return _cardCount; }
 
-            set
-            {
-                _cardCount = value;
-            }
-        }
-    }
+			set { _cardCount = value; }
+		}
+	}
 }

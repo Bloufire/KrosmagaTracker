@@ -15,17 +15,17 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 {
 	public class MatchesHistoPageModel : ObservableObject
 	{
-	    private List<UIElements.Match> _filteredGames;
-		
+		private List<UIElements.Match> _filteredGames;
+
 		#region CTOR
-		public MatchesHistoPageModel():base()
+
+		public MatchesHistoPageModel() : base()
 		{
 			TrackerSrv.TrackerModel.PropertyChanged += _trackerSrv_PropertyChanged;
 			TrackerSrv.UpdateMatchsWithFilterList();
 			UpdateScreen();
 		}
 
-		
 
 		private void UpdateScreen()
 		{
@@ -36,30 +36,20 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 
 		#region Properties
 
-	
-
 		public List<UIElements.Match> FilteredGames
 		{
-			get
-			{
-
-				return _filteredGames?.OrderByDescending(x => x.Date).ToList();
-			}
+			get { return _filteredGames?.OrderByDescending(x => x.Date).ToList(); }
 
 			set
 			{
 				_filteredGames = value;
 				OnPropertyChanged("FilteredGames");
-				
 			}
 		}
 
-		
 		#endregion
 
 		#region Commands
-
-
 
 		#endregion
 

@@ -16,17 +16,17 @@ using MahApps.Metro.Controls;
 
 namespace AddOn_Krosmaga___Blou_fire.Pages
 {
-    /// <inheritdoc>
-    ///     <cref></cref>
-    /// </inheritdoc>
-    /// <summary>
-    /// Logique d'interaction pour MainPage.xaml
-    /// </summary>
-    public partial class MainPage
-    {
-        public MainPage()
-        {
-            InitializeComponent();
-        }
-    }
+	/// <inheritdoc>
+	///     <cref></cref>
+	/// </inheritdoc>
+	/// <summary>
+	/// Logique d'interaction pour MainPage.xaml
+	/// </summary>
+	public partial class MainPage
+	{
+		public MainPage()
+		{
+			InitializeComponent();
+		}
+	}
 }

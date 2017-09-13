@@ -15,14 +15,14 @@ using System.Windows.Shapes;
 
 namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker
 {
-    /// <summary>
-    /// Logique d'interaction pour ProfileDataPage.xaml
-    /// </summary>
-    public partial class ProfileDataPage : UserControl
-    {
-        public ProfileDataPage()
-        {
-            InitializeComponent();
-        }
-    }
+	/// <summary>
+	/// Logique d'interaction pour ProfileDataPage.xaml
+	/// </summary>
+	public partial class ProfileDataPage : UserControl
+	{
+		public ProfileDataPage()
+		{
+			InitializeComponent();
+		}
+	}
 }

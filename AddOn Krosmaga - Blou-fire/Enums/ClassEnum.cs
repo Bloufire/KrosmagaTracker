@@ -6,38 +6,26 @@ using System.Threading.Tasks;
 
 namespace AddOn_Krosmaga___Blou_fire.Enums
 {
-   
 	public enum ClassEnum
 	{
-		[LocDescription("None")]
-		None,
+		[LocDescription("None")] None,
 
-		[LocDescription("Iop")]
-		Iop,
+		[LocDescription("Iop")] Iop,
 
-		[LocDescription("Cra")]
-		Cra,
+		[LocDescription("Cra")] Cra,
 
-		[LocDescription("Eniripsa")]
-		Eniripsa,
+		[LocDescription("Eniripsa")] Eniripsa,
 
-		[LocDescription("Ecaflip")]
-		Ecaflip,
+		[LocDescription("Ecaflip")] Ecaflip,
 
-		[LocDescription("Enutrof")]
-		Enutrof,
+		[LocDescription("Enutrof")] Enutrof,
 
-		[LocDescription("Sram")]
-		Sram,
+		[LocDescription("Sram")] Sram,
 
-		[LocDescription("Xelor")]
-		Xelor,
+		[LocDescription("Xelor")] Xelor,
 
-		[LocDescription("Sacrieur")]
-		Sacrieur,
+		[LocDescription("Sacrieur")] Sacrieur,
 
-		[LocDescription("Sadida")]
-		Sadida
-		
+		[LocDescription("Sadida")] Sadida
 	}
 }

@@ -18,7 +18,7 @@ namespace AddOn_Krosmaga___Blou_fire.Pages
 	/// <summary>
 	/// Logique d'interaction pour SettingsPage.xaml
 	/// </summary>
-	public partial class SettingsPage 
+	public partial class SettingsPage
 	{
 		public SettingsPage()
 		{

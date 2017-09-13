@@ -7,209 +7,149 @@ using AddOn_Krosmaga___Blou_fire.Enums;
 
 namespace AddOn_Krosmaga___Blou_fire.Data
 {
-    class ClientPreferences
-    {
-        private KrosmagaReader reader;
+	class ClientPreferences
+	{
+		private KrosmagaReader reader;
 
-        private bool _hasLastSelectedDeckId;
-        private Data.Uuid _lastSelectedDeckId;
-        private bool _hasLastDungeonDeckId;
-        private Data.Uuid _lastDungeonDeckId;
-        private bool _hasLastGameType;
-        private Enums.GameType LastGameType;
-        private List<Data.CustomByGod> _customByGodList;
-        private int _customsByGodCount;
-        private List<Data.SelectedDeckByGod> _selectedDecksByGodId;
-        private int _selectedDecksByGodIdCount;
-        
-        public ClientPreferences()
-        {
-            CustomByGodList = new List<CustomByGod>();
-            SelectedDecksByGodId = new List<SelectedDeckByGod>();
-        }
+		private bool _hasLastSelectedDeckId;
+		private Data.Uuid _lastSelectedDeckId;
+		private bool _hasLastDungeonDeckId;
+		private Data.Uuid _lastDungeonDeckId;
+		private bool _hasLastGameType;
+		private Enums.GameType LastGameType;
+		private List<Data.CustomByGod> _customByGodList;
+		private int _customsByGodCount;
+		private List<Data.SelectedDeckByGod> _selectedDecksByGodId;
+		private int _selectedDecksByGodIdCount;
 
-        public bool HasLastSelectedDeckId
-        {
-            get
-            {
-                return _hasLastSelectedDeckId;
-            }
+		public ClientPreferences()
+		{
+			CustomByGodList = new List<CustomByGod>();
+			SelectedDecksByGodId = new List<SelectedDeckByGod>();
+		}
 
-            set
-            {
-                _hasLastSelectedDeckId = value;
-            }
-        }
+		public bool HasLastSelectedDeckId
+		{
+			get { return _hasLastSelectedDeckId; }
 
-        internal Uuid LastSelectedDeckId
-        {
-            get
-            {
-                return _lastSelectedDeckId;
-            }
+			set { _hasLastSelectedDeckId = value; }
+		}
 
-            set
-            {
-                _lastSelectedDeckId = value;
-            }
-        }
+		internal Uuid LastSelectedDeckId
+		{
+			get { return _lastSelectedDeckId; }
 
-        public bool HasLastDungeonDeckId
-        {
-            get
-            {
-                return _hasLastDungeonDeckId;
-            }
+			set { _lastSelectedDeckId = value; }
+		}
 
-            set
-            {
-                _hasLastDungeonDeckId = value;
-            }
-        }
+		public bool HasLastDungeonDeckId
+		{
+			get { return _hasLastDungeonDeckId; }
 
-        public bool HasLastGameType
-        {
-            get
-            {
-                return _hasLastGameType;
-            }
+			set { _hasLastDungeonDeckId = value; }
+		}
 
-            set
-            {
-                _hasLastGameType = value;
-            }
-        }
+		public bool HasLastGameType
+		{
+			get { return _hasLastGameType; }
 
-        internal Uuid LastDungeonDeckId
-        {
-            get
-            {
-                return _lastDungeonDeckId;
-            }
+			set { _hasLastGameType = value; }
+		}
 
-            set
-            {
-                _lastDungeonDeckId = value;
-            }
-        }
+		internal Uuid LastDungeonDeckId
+		{
+			get { return _lastDungeonDeckId; }
 
-        public GameType LastGameType1
-        {
-            get
-            {
-                return LastGameType;
-            }
+			set { _lastDungeonDeckId = value; }
+		}
 
-            set
-            {
-                LastGameType = value;
-            }
-        }
+		public GameType LastGameType1
+		{
+			get { return LastGameType; }
 
-        internal List<CustomByGod> CustomByGodList
-        {
-            get
-            {
-                return _customByGodList;
-            }
+			set { LastGameType = value; }
+		}
 
-            set
-            {
-                _customByGodList = value;
-            }
-        }
+		internal List<CustomByGod> CustomByGodList
+		{
+			get { return _customByGodList; }
 
-        public int CustomsByGodCount
-        {
-            get
-            {
-                return _customsByGodCount;
-            }
+			set { _customByGodList = value; }
+		}
 
-            set
-            {
-                _customsByGodCount = value;
-            }
-        }
+		public int CustomsByGodCount
+		{
+			get { return _customsByGodCount; }
 
-        internal List<SelectedDeckByGod> SelectedDecksByGodId
-        {
-            get
-            {
-                return _selectedDecksByGodId;
-            }
+			set { _customsByGodCount = value; }
+		}
 
-            set
-            {
-                _selectedDecksByGodId = value;
-            }
-        }
+		internal List<SelectedDeckByGod> SelectedDecksByGodId
+		{
+			get { return _selectedDecksByGodId; }
 
-        public int SelectedDecksByGodIdCount
-        {
-            get
-            {
-                return _selectedDecksByGodIdCount;
-            }
+			set { _selectedDecksByGodId = value; }
+		}
 
-            set
-            {
-                _selectedDecksByGodIdCount = value;
-            }
-        }
+		public int SelectedDecksByGodIdCount
+		{
+			get { return _selectedDecksByGodIdCount; }
 
-        public void Decode(byte[] array)
-        {
-            reader = new KrosmagaReader();
-            reader.SetData(array);
-            int tag;
+			set { _selectedDecksByGodIdCount = value; }
+		}
 
-            while (reader.B.BaseStream.Position < reader.B.BaseStream.Length && (tag = reader.ReadTag()) != 0)
-            {
-                if(tag <= 26)
-                {
-                    if(tag == 10)
-                    {
-                        Data.Uuid value = new Data.Uuid();
-                        int size = (int)reader.ReadRawVarint32();
-                        value.Decode(reader.ReadMessage(size));
-                        LastSelectedDeckId = value;
-                        continue;
-                    }
-                    if(tag == 26)
-                    {
-                        Data.Uuid value = new Data.Uuid();
-                        int size = (int)reader.ReadRawVarint32();
-                        value.Decode(reader.ReadMessage(size));
-                        LastDungeonDeckId = value;
-                        continue;
-                    }
-                }
-                else if(tag != 32)
-                {
-                    if(tag == 42)
-                    {
-                        Data.CustomByGod value = new Data.CustomByGod();
-                        int size = (int)reader.ReadRawVarint32();
-                        value.Decode(reader.ReadMessage(size));
-                        CustomByGodList.Add(value);
-                        continue;
-                    }
-                    if(tag == 50)
-                    {
-                        Data.SelectedDeckByGod value = new Data.SelectedDeckByGod();
-                        int size = (int)reader.ReadRawVarint32();
-                        value.Decode(reader.ReadMessage(size));
-                        SelectedDecksByGodId.Add(value);
-                        continue;
-                    }
-                }
-                else
-                {
-                    LastGameType1 = (Enums.GameType)Enum.Parse(typeof(Enums.GameType), reader.ReadRawVarint32().ToString());
-                    continue;
-                }
-            }
-        }
-    }
+		public void Decode(byte[] array)
+		{
+			reader = new KrosmagaReader();
+			reader.SetData(array);
+			int tag;
+
+			while (reader.B.BaseStream.Position < reader.B.BaseStream.Length && (tag = reader.ReadTag()) != 0)
+			{
+				if (tag <= 26)
+				{
+					if (tag == 10)
+					{
+						Data.Uuid value = new Data.Uuid();
+						int size = (int) reader.ReadRawVarint32();
+						value.Decode(reader.ReadMessage(size));
+						LastSelectedDeckId = value;
+						continue;
+					}
+					if (tag == 26)
+					{
+						Data.Uuid value = new Data.Uuid();
+						int size = (int) reader.ReadRawVarint32();
+						value.Decode(reader.ReadMessage(size));
+						LastDungeonDeckId = value;
+						continue;
+					}
+				}
+				else if (tag != 32)
+				{
+					if (tag == 42)
+					{
+						Data.CustomByGod value = new Data.CustomByGod();
+						int size = (int) reader.ReadRawVarint32();
+						value.Decode(reader.ReadMessage(size));
+						CustomByGodList.Add(value);
+						continue;
+					}
+					if (tag == 50)
+					{
+						Data.SelectedDeckByGod value = new Data.SelectedDeckByGod();
+						int size = (int) reader.ReadRawVarint32();
+						value.Decode(reader.ReadMessage(size));
+						SelectedDecksByGodId.Add(value);
+						continue;
+					}
+				}
+				else
+				{
+					LastGameType1 = (Enums.GameType) Enum.Parse(typeof(Enums.GameType), reader.ReadRawVarint32().ToString());
+					continue;
+				}
+			}
+		}
+	}
 }

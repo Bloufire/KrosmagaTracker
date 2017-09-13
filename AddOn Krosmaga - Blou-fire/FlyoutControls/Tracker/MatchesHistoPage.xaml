@@ -1,38 +1,40 @@
 ﻿<UserControl x:Class="AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.MatchesHistoPage"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker"
              xmlns:pageModel="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel"
              xmlns:lex="http://wpflocalizeextension.codeplex.com"
              xmlns:converter="clr-namespace:AddOn_Krosmaga___Blou_fire.Converter"
-             mc:Ignorable="d" 
+             mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300">
     <UserControl.DataContext>
         <pageModel:MatchesHistoPageModel />
     </UserControl.DataContext>
     <UserControl.Resources>
-        <converter:GameResultToBrushConverter x:Key="GameResultToBrushConverter"/>
-        <converter:GameResultToStringConverter x:Key="GameResultToStringConverter"/>
-        <converter:EnumDescriptionConverter x:Key="EnumDescriptionConverter"/>
+        <converter:GameResultToBrushConverter x:Key="GameResultToBrushConverter" />
+        <converter:GameResultToStringConverter x:Key="GameResultToStringConverter" />
+        <converter:EnumDescriptionConverter x:Key="EnumDescriptionConverter" />
     </UserControl.Resources>
-    <DataGrid Name="DataGridGames" ItemsSource="{Binding FilteredGames}" 
-              AutoGenerateColumns="False" CanUserAddRows="False" 
-              CanUserDeleteRows="False" CanUserResizeRows="False" 
+    <DataGrid Name="DataGridGames" ItemsSource="{Binding FilteredGames}"
+              AutoGenerateColumns="False" CanUserAddRows="False"
+              CanUserDeleteRows="False" CanUserResizeRows="False"
               IsReadOnly="True" CanUserResizeColumns="True">
         <DataGrid.Columns>
             <DataGridTemplateColumn Header="Class" SortMemberPath="PlayerHero">
                 <DataGridTemplateColumn.CellTemplate>
                     <DataTemplate>
-                        <Image Source="{Binding OwnImage}" Width="30" Height="30" RenderOptions.BitmapScalingMode="Fant" ToolTip="{Binding PlayerClassName}" />
+                        <Image Source="{Binding OwnImage}" Width="30" Height="30"
+                               RenderOptions.BitmapScalingMode="Fant" ToolTip="{Binding PlayerClassName}" />
                     </DataTemplate>
                 </DataGridTemplateColumn.CellTemplate>
             </DataGridTemplateColumn>
             <DataGridTemplateColumn Header="VS" SortMemberPath="PlayerHero">
                 <DataGridTemplateColumn.CellTemplate>
                     <DataTemplate>
-                        <Image Source="{Binding OpponentImage}" Width="30" Height="30" RenderOptions.BitmapScalingMode="Fant" ToolTip="{Binding OppenentClassName}" />
+                        <Image Source="{Binding OpponentImage}" Width="30" Height="30"
+                               RenderOptions.BitmapScalingMode="Fant" ToolTip="{Binding OppenentClassName}" />
                     </DataTemplate>
                 </DataGridTemplateColumn.CellTemplate>
             </DataGridTemplateColumn>
@@ -43,11 +45,13 @@
                     </Style>
                 </DataGridTextColumn.ElementStyle>
             </DataGridTextColumn>
-            <DataGridTextColumn Header="Result" Binding="{Binding ResultatMatch ,Converter={StaticResource GameResultToStringConverter}}">
+            <DataGridTextColumn Header="Result"
+                                Binding="{Binding ResultatMatch ,Converter={StaticResource GameResultToStringConverter}}">
                 <DataGridTextColumn.ElementStyle>
                     <Style TargetType="TextBlock">
                         <Setter Property="HorizontalAlignment" Value="Center" />
-                        <Setter Property="Foreground" Value="{Binding ResultatMatch ,Converter={StaticResource GameResultToBrushConverter}}"/>
+                        <Setter Property="Foreground"
+                                Value="{Binding ResultatMatch ,Converter={StaticResource GameResultToBrushConverter}}" />
                     </Style>
                 </DataGridTextColumn.ElementStyle>
             </DataGridTextColumn>
@@ -58,7 +62,8 @@
                     </Style>
                 </DataGridTextColumn.ElementStyle>
             </DataGridTextColumn>
-            <DataGridTextColumn Header="Mode" Binding="{Binding MatchType,Converter={StaticResource EnumDescriptionConverter}}">
+            <DataGridTextColumn Header="Mode"
+                                Binding="{Binding MatchType,Converter={StaticResource EnumDescriptionConverter}}">
                 <DataGridTextColumn.ElementStyle>
                     <Style TargetType="TextBlock">
                         <Setter Property="HorizontalAlignment" Value="Center" />
@@ -66,7 +71,6 @@
                 </DataGridTextColumn.ElementStyle>
             </DataGridTextColumn>
         </DataGrid.Columns>
-
 
 
     </DataGrid>

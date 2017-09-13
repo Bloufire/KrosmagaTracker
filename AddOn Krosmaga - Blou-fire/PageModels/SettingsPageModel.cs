@@ -33,6 +33,7 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 		public ICommand AccentSelectionChanged { get; }
 
 		private Accent _selectedItemAccent;
+
 		public Accent SelectedItemAccent
 		{
 			get => this._selectedItemAccent;
@@ -42,6 +43,7 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 				OnPropertyChanged("SelectedItemAccent");
 			}
 		}
+
 		private void AccentSelectionChangedAction()
 		{
 			if (_selectedItemAccent != null)
@@ -68,17 +70,18 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 				this._darkAndLightThemeBool = value;
 				OnPropertyChanged("DarkAndLightThemeBool");
 			}
-
 		}
 
 		private void ThemeSelectionChangedAction()
 		{
-				var theme = ThemeManager.DetectAppStyle(Application.Current);
-				ThemeManager.ChangeAppStyle(Application.Current, theme.Item2, _darkAndLightThemeBool == true ? ThemeManager.GetAppTheme("basedark") : ThemeManager.GetAppTheme("baselight"));
-				Application.Current.MainWindow.Activate();
+			var theme = ThemeManager.DetectAppStyle(Application.Current);
+			ThemeManager.ChangeAppStyle(Application.Current, theme.Item2,
+				_darkAndLightThemeBool == true ? ThemeManager.GetAppTheme("basedark") : ThemeManager.GetAppTheme("baselight"));
+			Application.Current.MainWindow.Activate();
 		}
 
 		#endregion
+
 		#endregion
 	}
 }

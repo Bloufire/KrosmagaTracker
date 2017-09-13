@@ -7,57 +7,39 @@ using System.Threading.Tasks;
 
 namespace AddOn_Krosmaga___Blou_fire.UIElements
 {
-    public class Deck
-    {
-        private int _idDeck;
-        private string _opponentClasse;
-        private List<DeckUI> _cardsList;
+	public class Deck
+	{
+		private int _idDeck;
+		private string _opponentClasse;
+		private List<DeckUI> _cardsList;
 
-        public Deck(SQLiteConnector.Deck value)
-        {
-            CardsList = new List<DeckUI>();
+		public Deck(SQLiteConnector.Deck value)
+		{
+			CardsList = new List<DeckUI>();
 
-            IdDeck = value.IdDeck;
-            OpponentClasse = value.OpponentClasse;
-        }
+			IdDeck = value.IdDeck;
+			OpponentClasse = value.OpponentClasse;
+		}
 
-        public int IdDeck
-        {
-            get
-            {
-                return _idDeck;
-            }
+		public int IdDeck
+		{
+			get { return _idDeck; }
 
-            set
-            {
-                _idDeck = value;
-            }
-        }
+			set { _idDeck = value; }
+		}
 
-        public string OpponentClasse
-        {
-            get
-            {
-                return _opponentClasse;
-            }
+		public string OpponentClasse
+		{
+			get { return _opponentClasse; }
 
-            set
-            {
-                _opponentClasse = value;
-            }
-        }
+			set { _opponentClasse = value; }
+		}
 
-        public List<DeckUI> CardsList
-        {
-            get
-            {
-                return _cardsList;
-            }
+		public List<DeckUI> CardsList
+		{
+			get { return _cardsList; }
 
-            set
-            {
-                _cardsList = value;
-            }
-        }
-    }
+			set { _cardsList = value; }
+		}
+	}
 }

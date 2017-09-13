@@ -13,23 +13,22 @@
         Topmost="True"
         AllowsTransparency="True"
         Background="Transparent"
-        WindowStyle="None" 
-        
+        WindowStyle="None"
+
         MouseDown="Window_MouseDown"
         KeyDown="Window_KeyDown"
-        
-        ResizeMode="NoResize"
-        >
+
+        ResizeMode="NoResize">
     <Window.DataContext>
-        <local:UIPlayerDatas/>
+        <local:UIPlayerDatas />
     </Window.DataContext>
     <Window.Resources>
-        <BooleanToVisibilityConverter x:Key="BoolToVisConverter"/>
-        <conv:InverseBooleanConverter x:Key="InvertBoolToVis"/>
+        <BooleanToVisibilityConverter x:Key="BoolToVisConverter" />
+        <conv:InverseBooleanConverter x:Key="InvertBoolToVis" />
         <conv:IntToCardCountStringConverter x:Key="IntToCardCountStringConverter" />
         <conv:IntToMatchResultStringConverter x:Key="IntToMatchResultStringConverter" />
-        <conv:BooleanToColor x:Key="BoolToColor"/>
-        <conv:GodClassToColor x:Key="GodToColor"/>
+        <conv:BooleanToColor x:Key="BoolToColor" />
+        <conv:GodClassToColor x:Key="GodToColor" />
     </Window.Resources>
     <StackPanel Orientation="Vertical" Background="Transparent">
         <Grid HorizontalAlignment="Left" Background="#66000000" Width="300" Height="100">
@@ -39,32 +38,45 @@
                 <RowDefinition Height="4*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="4*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="4*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <Button Grid.Row="0" Grid.Column="2" Background="Red" Name="closeApp" Click="closeApp_Click" Width="15" Height="15" MaxHeight="15" MaxWidth="15" HorizontalAlignment="Right"/>
+            <Button Grid.Row="0" Grid.Column="2" Background="Red" Name="closeApp" Click="closeApp_Click" Width="15"
+                    Height="15" MaxHeight="15" MaxWidth="15" HorizontalAlignment="Right" />
             <Grid Grid.Row="1" Grid.Column="0">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="4*"/>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="4*" />
+                    <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Label Content="{Binding OpponentPseudo, UpdateSourceTrigger=PropertyChanged}" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" />
-                <Label Content="{Binding OpponentLevel, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                <Label Content="{Binding OpponentPseudo, UpdateSourceTrigger=PropertyChanged}" Grid.Column="0"
+                       VerticalAlignment="Center" HorizontalAlignment="Left" />
+                <Label Content="{Binding OpponentLevel, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1"
+                       VerticalAlignment="Center" HorizontalAlignment="Left" />
             </Grid>
             <Grid Grid.Row="2" Grid.Column="1">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
-                <Image Source="/Images/handred.png" Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center"/>
-                <Label Content="{Binding OpponentCardsInHand, UpdateSourceTrigger=PropertyChanged}" Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontWeight="Bold"/>
-                <Image Source="/Images/hand.png" Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center"/>
-                <Label Content="{Binding OwnCardsInHand, UpdateSourceTrigger=PropertyChanged}" Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontWeight="Bold"/>
+                <Image Source="/Images/handred.png"
+                       Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}" Grid.Row="0"
+                       Grid.Column="0" HorizontalAlignment="Center" />
+                <Label Content="{Binding OpponentCardsInHand, UpdateSourceTrigger=PropertyChanged}"
+                       Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}" Grid.Row="0"
+                       Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White"
+                       FontWeight="Bold" />
+                <Image Source="/Images/hand.png"
+                       Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}" Grid.Row="1"
+                       Grid.Column="0" HorizontalAlignment="Center" />
+                <Label Content="{Binding OwnCardsInHand, UpdateSourceTrigger=PropertyChanged}"
+                       Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}" Grid.Row="1"
+                       Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White"
+                       FontWeight="Bold" />
             </Grid>
             <Grid Grid.Row="2" Grid.Column="0">
                 <Grid.RowDefinitions>
@@ -72,54 +84,73 @@
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="25*"/>
-                    <ColumnDefinition Width="7*"/>
-                    <ColumnDefinition Width="18*"/>
-                    <ColumnDefinition Width="25*"/>
-                    <ColumnDefinition Width="25*"/>
+                    <ColumnDefinition Width="25*" />
+                    <ColumnDefinition Width="7*" />
+                    <ColumnDefinition Width="18*" />
+                    <ColumnDefinition Width="25*" />
+                    <ColumnDefinition Width="25*" />
                 </Grid.ColumnDefinitions>
-                <Image Source="/Images/trophy.png" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" Margin="10,0,10.6,27.8" Grid.RowSpan="2"/>
-                <Label Content="{Binding OpponentVictories, UpdateSourceTrigger=PropertyChanged}" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left"  Grid.ColumnSpan="2" Margin="0.4,2,0,1.8"/>
-                <Image Source="/Images/skull.png" Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center" Margin="10,0,10.6,27.8" Grid.RowSpan="2"/>
-                <Label Content="{Binding OpponentDefeats, UpdateSourceTrigger=PropertyChanged}" Grid.Row="0" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Left"  Margin="0.4,2,0,1.8" />
-                <Label Content="Turn :" Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left"  FontWeight="Bold" Margin="0,14.2,0,13.8"/>
-                <Label Content="{Binding CurrentTurn, UpdateSourceTrigger=PropertyChanged}" Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left"  Margin="0.4,14.2,0,13.8"/>
-                <Image Source="/Images/fleau.png" Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" Margin="25,0.2,24.6,-0.2"/>
-                <Label Content="{Binding OpponentFleaux, UpdateSourceTrigger=PropertyChanged}" Grid.Column="4" Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left"  Margin="0.4,14.2,0,13.8"/>
+                <Image Source="/Images/trophy.png" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center"
+                       Margin="10,0,10.6,27.8" Grid.RowSpan="2" />
+                <Label Content="{Binding OpponentVictories, UpdateSourceTrigger=PropertyChanged}" Grid.Row="0"
+                       Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.ColumnSpan="2"
+                       Margin="0.4,2,0,1.8" />
+                <Image Source="/Images/skull.png" Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center"
+                       Margin="10,0,10.6,27.8" Grid.RowSpan="2" />
+                <Label Content="{Binding OpponentDefeats, UpdateSourceTrigger=PropertyChanged}" Grid.Row="0"
+                       Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0.4,2,0,1.8" />
+                <Label Content="Turn :" Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}"
+                       Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left"
+                       FontWeight="Bold" Margin="0,14.2,0,13.8" />
+                <Label Content="{Binding CurrentTurn, UpdateSourceTrigger=PropertyChanged}"
+                       Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}" Grid.Column="1"
+                       Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0.4,14.2,0,13.8" />
+                <Image Source="/Images/fleau.png"
+                       Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}" Grid.Row="1"
+                       Grid.Column="3" HorizontalAlignment="Center" Margin="25,0.2,24.6,-0.2" />
+                <Label Content="{Binding OpponentFleaux, UpdateSourceTrigger=PropertyChanged}" Grid.Column="4"
+                       Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}" Grid.Row="1"
+                       VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0.4,14.2,0,13.8" />
             </Grid>
             <Grid Grid.Row="2" Grid.Column="2">
-                <ToggleButton Name="toggleDeckButton" Margin="8" Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}">
+                <ToggleButton Name="toggleDeckButton" Margin="8"
+                              Visibility="{Binding HasIndex, Converter={StaticResource BoolToVisConverter}}">
                     <Image Source="/Images/card.png" />
                 </ToggleButton>
-                <ToggleButton Name="toggleStatsDeckButton" Checked="toggleStatsDeckButton_Checked" Unchecked="toggleStatsDeckButton_Unchecked" Margin="8" Visibility="{Binding HasIndex, Converter={StaticResource InvertBoolToVis}}">
+                <ToggleButton Name="toggleStatsDeckButton" Checked="toggleStatsDeckButton_Checked"
+                              Unchecked="toggleStatsDeckButton_Unchecked" Margin="8"
+                              Visibility="{Binding HasIndex, Converter={StaticResource InvertBoolToVis}}">
                     <Image Source="/Images/chart.png" />
                 </ToggleButton>
             </Grid>
         </Grid>
-        <Grid Height="400" Width="300" HorizontalAlignment="Left" Visibility="{Binding ElementName=toggleDeckButton, Path=IsChecked, Converter={StaticResource BoolToVisConverter}}">
+        <Grid Height="400" Width="300" HorizontalAlignment="Left"
+              Visibility="{Binding ElementName=toggleDeckButton, Path=IsChecked, Converter={StaticResource BoolToVisConverter}}">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="0">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="25"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="25"/>
-                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="25" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="25" />
+                    <RowDefinition Height="2*" />
                 </Grid.RowDefinitions>
-                <Label Grid.Row="0" Foreground="White" Background="black" Width="150" Content="Cartes connues en main" HorizontalAlignment="Left"/>
+                <Label Grid.Row="0" Foreground="White" Background="black" Width="150" Content="Cartes connues en main"
+                       HorizontalAlignment="Left" />
                 <ListView Width="150" Grid.Row="1" Background="#66000000" ItemsSource="{Binding CardsInHandUI}"
                           ScrollViewer.HorizontalScrollBarVisibility="Hidden"
                           ScrollViewer.VerticalScrollBarVisibility="Hidden">
                     <ListView.ItemContainerStyle>
                         <Style TargetType="ListViewItem">
-                            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
                         </Style>
                     </ListView.ItemContainerStyle>
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <Grid Height="25" Opacity="0.8" Background="{Binding Card, Converter={StaticResource GodToColor}}">
+                            <Grid Height="25" Opacity="0.8"
+                                  Background="{Binding Card, Converter={StaticResource GodToColor}}">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="46" />
                                     <ColumnDefinition Width="*" MaxWidth="70" />
@@ -127,32 +158,37 @@
                                 </Grid.ColumnDefinitions>
                                 <Grid.ToolTip>
                                     <ToolTip Background="Transparent" BorderBrush="Transparent">
-                                        <Image Width="204" Height="256" Source="{Binding Card.ImagePath}"/>
+                                        <Image Width="204" Height="256" Source="{Binding Card.ImagePath}" />
                                     </ToolTip>
                                 </Grid.ToolTip>
                                 <Image Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center">
                                     <Image.Source>
-                                        <CroppedBitmap Source="{Binding Card.ImagePath}" SourceRect="48, 68, 124, 58"/>
+                                        <CroppedBitmap Source="{Binding Card.ImagePath}" SourceRect="48, 68, 124, 58" />
                                     </Image.Source>
                                 </Image>
-                                <Label Grid.Column="1" Foreground="White" Content="{Binding Card.UIName}" VerticalAlignment="Center" HorizontalAlignment="Left"/>
-                                <Label Grid.Column="2" Foreground="White" FontWeight="Bold" Content="{Binding CardCount, Converter={StaticResource IntToCardCountStringConverter}}" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                <Label Grid.Column="1" Foreground="White" Content="{Binding Card.UIName}"
+                                       VerticalAlignment="Center" HorizontalAlignment="Left" />
+                                <Label Grid.Column="2" Foreground="White" FontWeight="Bold"
+                                       Content="{Binding CardCount, Converter={StaticResource IntToCardCountStringConverter}}"
+                                       VerticalAlignment="Center" HorizontalAlignment="Right" />
                             </Grid>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-                <Label Grid.Row="2" Foreground="White" Background="black" Width="150" Content="Cartes jouées" HorizontalAlignment="Left"/>
-                <ListView Grid.Row="3" Width="150" Background="#66000000" ItemsSource="{Binding Deck}" 
+                <Label Grid.Row="2" Foreground="White" Background="black" Width="150" Content="Cartes jouées"
+                       HorizontalAlignment="Left" />
+                <ListView Grid.Row="3" Width="150" Background="#66000000" ItemsSource="{Binding Deck}"
                           ScrollViewer.HorizontalScrollBarVisibility="Hidden"
                           ScrollViewer.VerticalScrollBarVisibility="Hidden">
                     <ListView.ItemContainerStyle>
                         <Style TargetType="ListViewItem">
-                            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
                         </Style>
                     </ListView.ItemContainerStyle>
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <Grid Height="25" Opacity="0.8" Background="{Binding Card, Converter={StaticResource GodToColor}}">
+                            <Grid Height="25" Opacity="0.8"
+                                  Background="{Binding Card, Converter={StaticResource GodToColor}}">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="46" />
                                     <ColumnDefinition Width="*" MaxWidth="70" />
@@ -160,16 +196,19 @@
                                 </Grid.ColumnDefinitions>
                                 <Grid.ToolTip>
                                     <ToolTip Background="Transparent" BorderBrush="Transparent">
-                                        <Image Width="204" Height="256" Source="{Binding Card.ImagePath}"/>
+                                        <Image Width="204" Height="256" Source="{Binding Card.ImagePath}" />
                                     </ToolTip>
                                 </Grid.ToolTip>
                                 <Image Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center">
                                     <Image.Source>
-                                        <CroppedBitmap Source="{Binding Card.ImagePath}" SourceRect="48, 68, 124, 58"/>
+                                        <CroppedBitmap Source="{Binding Card.ImagePath}" SourceRect="48, 68, 124, 58" />
                                     </Image.Source>
                                 </Image>
-                                <Label Grid.Column="1" Foreground="White" Content="{Binding Card.UIName}" VerticalAlignment="Center" HorizontalAlignment="Left"/>
-                                <Label Grid.Column="2" Foreground="White" FontWeight="Bold" Content="{Binding CardCount, Converter={StaticResource IntToCardCountStringConverter}}" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                <Label Grid.Column="1" Foreground="White" Content="{Binding Card.UIName}"
+                                       VerticalAlignment="Center" HorizontalAlignment="Left" />
+                                <Label Grid.Column="2" Foreground="White" FontWeight="Bold"
+                                       Content="{Binding CardCount, Converter={StaticResource IntToCardCountStringConverter}}"
+                                       VerticalAlignment="Center" HorizontalAlignment="Right" />
                             </Grid>
                         </DataTemplate>
                     </ListView.ItemTemplate>
@@ -177,26 +216,28 @@
             </Grid>
             <Grid Grid.Column="1">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                 <Grid Grid.Row="0">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="25"/>
-                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="25" />
+                        <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
-                    <Label Grid.Row="0" Foreground="White" Background="black" Width="150" Content="Infinites" HorizontalAlignment="Left"/>
+                    <Label Grid.Row="0" Foreground="White" Background="black" Width="150" Content="Infinites"
+                           HorizontalAlignment="Left" />
                     <ListView Width="150" Grid.Row="1" Background="#66000000" ItemsSource="{Binding CardsInfinites}"
-                                ScrollViewer.HorizontalScrollBarVisibility="Hidden"
-                                ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                              ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                              ScrollViewer.VerticalScrollBarVisibility="Hidden">
                         <ListView.ItemContainerStyle>
                             <Style TargetType="ListViewItem">
-                                <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch" />
                             </Style>
                         </ListView.ItemContainerStyle>
                         <ListView.ItemTemplate>
                             <DataTemplate>
-                                <Grid Height="25" Opacity="0.8" Background="{Binding Card, Converter={StaticResource GodToColor}}">
+                                <Grid Height="25" Opacity="0.8"
+                                      Background="{Binding Card, Converter={StaticResource GodToColor}}">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="46" />
                                         <ColumnDefinition Width="*" MaxWidth="70" />
@@ -204,16 +245,20 @@
                                     </Grid.ColumnDefinitions>
                                     <Grid.ToolTip>
                                         <ToolTip Background="Transparent" BorderBrush="Transparent">
-                                            <Image Width="204" Height="256" Source="{Binding Card.ImagePath}"/>
+                                            <Image Width="204" Height="256" Source="{Binding Card.ImagePath}" />
                                         </ToolTip>
                                     </Grid.ToolTip>
                                     <Image Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center">
                                         <Image.Source>
-                                            <CroppedBitmap Source="{Binding Card.ImagePath}" SourceRect="48, 68, 124, 58"/>
+                                            <CroppedBitmap Source="{Binding Card.ImagePath}"
+                                                           SourceRect="48, 68, 124, 58" />
                                         </Image.Source>
                                     </Image>
-                                    <Label Grid.Column="1" Foreground="White" Content="{Binding Card.UIName}" VerticalAlignment="Center" HorizontalAlignment="Left"/>
-                                    <Label Grid.Column="2" Foreground="White" FontWeight="Bold" Content="{Binding CardCount, Converter={StaticResource IntToCardCountStringConverter}}" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                    <Label Grid.Column="1" Foreground="White" Content="{Binding Card.UIName}"
+                                           VerticalAlignment="Center" HorizontalAlignment="Left" />
+                                    <Label Grid.Column="2" Foreground="White" FontWeight="Bold"
+                                           Content="{Binding CardCount, Converter={StaticResource IntToCardCountStringConverter}}"
+                                           VerticalAlignment="Center" HorizontalAlignment="Right" />
                                 </Grid>
                             </DataTemplate>
                         </ListView.ItemTemplate>
@@ -221,21 +266,23 @@
                 </Grid>
                 <Grid Grid.Row="1">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="25"/>
-                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="25" />
+                        <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
-                    <Label Grid.Row="0" Foreground="White" Background="black" Content="Krosmiques" HorizontalAlignment="Left" Width="150"/>
+                    <Label Grid.Row="0" Foreground="White" Background="black" Content="Krosmiques"
+                           HorizontalAlignment="Left" Width="150" />
                     <ListView Width="150" Grid.Row="1" Background="#66000000" ItemsSource="{Binding CardsKrosmiques}"
-                                ScrollViewer.HorizontalScrollBarVisibility="Hidden"
-                                ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                              ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                              ScrollViewer.VerticalScrollBarVisibility="Hidden">
                         <ListView.ItemContainerStyle>
                             <Style TargetType="ListViewItem">
-                                <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch" />
                             </Style>
                         </ListView.ItemContainerStyle>
                         <ListView.ItemTemplate>
                             <DataTemplate>
-                                <Grid Height="25" Opacity="0.8" Background="{Binding Card, Converter={StaticResource GodToColor}}">
+                                <Grid Height="25" Opacity="0.8"
+                                      Background="{Binding Card, Converter={StaticResource GodToColor}}">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="46" />
                                         <ColumnDefinition Width="*" MaxWidth="70" />
@@ -243,16 +290,20 @@
                                     </Grid.ColumnDefinitions>
                                     <Grid.ToolTip>
                                         <ToolTip Background="Transparent" BorderBrush="Transparent">
-                                            <Image Width="204" Height="256" Source="{Binding Card.ImagePath}"/>
+                                            <Image Width="204" Height="256" Source="{Binding Card.ImagePath}" />
                                         </ToolTip>
                                     </Grid.ToolTip>
                                     <Image Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center">
                                         <Image.Source>
-                                            <CroppedBitmap Source="{Binding Card.ImagePath}" SourceRect="48, 68, 124, 58"/>
+                                            <CroppedBitmap Source="{Binding Card.ImagePath}"
+                                                           SourceRect="48, 68, 124, 58" />
                                         </Image.Source>
                                     </Image>
-                                    <Label Grid.Column="1" Foreground="White" Content="{Binding Card.UIName}" VerticalAlignment="Center" HorizontalAlignment="Left"/>
-                                    <Label Grid.Column="2" Foreground="White" FontWeight="Bold" Content="{Binding CardCount, Converter={StaticResource IntToCardCountStringConverter}}" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                    <Label Grid.Column="1" Foreground="White" Content="{Binding Card.UIName}"
+                                           VerticalAlignment="Center" HorizontalAlignment="Left" />
+                                    <Label Grid.Column="2" Foreground="White" FontWeight="Bold"
+                                           Content="{Binding CardCount, Converter={StaticResource IntToCardCountStringConverter}}"
+                                           VerticalAlignment="Center" HorizontalAlignment="Right" />
                                 </Grid>
                             </DataTemplate>
                         </ListView.ItemTemplate>
@@ -260,12 +311,13 @@
                 </Grid>
             </Grid>
         </Grid>
-        <Grid Name="statsGrid" Height="400" Background="#33000000" MaxWidth="850"   
+        <Grid Name="statsGrid" Height="400" Background="#33000000" MaxWidth="850"
               Visibility="Collapsed"
               tz:Transitionz.Opacity="{tz:OpacityParams From=0, To=1, Duration=200, TransitionOn=Visibility}"
               tz:Transitionz.Translate="{tz:TranslateParams From='10,0', To='0,0', Duration=200, TransitionOn=Visibility}"
               tz:Transitionz.Visibility="{Binding ElementName=toggleStatsDeckButton, Path=IsChecked, Converter={StaticResource BoolToVisConverter}}">
-            <TabControl Background="{Binding HasIndex, Converter={StaticResource BoolToColor}}" TabStripPlacement="Right">
+            <TabControl Background="{Binding HasIndex, Converter={StaticResource BoolToColor}}"
+                        TabStripPlacement="Right">
                 <TabControl.Resources>
                     <Style TargetType="TabItem">
                         <Setter Property="Template">
@@ -273,10 +325,10 @@
                                 <ControlTemplate TargetType="TabItem">
                                     <Grid Name="Panel">
                                         <ContentPresenter x:Name="ContentSite"
-                                        VerticalAlignment="Center"
-                                        HorizontalAlignment="Center"
-                                        ContentSource="Header"
-                                        Margin="10,2"/>
+                                                          VerticalAlignment="Center"
+                                                          HorizontalAlignment="Center"
+                                                          ContentSource="Header"
+                                                          Margin="10,2" />
                                     </Grid>
                                     <ControlTemplate.Triggers>
                                         <Trigger Property="IsSelected" Value="True">
@@ -294,83 +346,108 @@
                 <TabItem Header="Statistiques">
                     <Grid>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="100"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="175"/>
+                            <ColumnDefinition Width="100" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="175" />
                         </Grid.ColumnDefinitions>
                         <Grid Name="checkboxes" Grid.Column="0">
                             <Grid.Resources>
                                 <Style x:Key="Flag" TargetType="CheckBox">
                                     <Style.Triggers>
                                         <Trigger Property="IsChecked" Value="False">
-                                            <Setter Property="Opacity" Value="0.5"/>
+                                            <Setter Property="Opacity" Value="0.5" />
                                         </Trigger>
                                     </Style.Triggers>
-                                    <Setter Property="BorderThickness" Value="2"/>
+                                    <Setter Property="BorderThickness" Value="2" />
                                     <Setter Property="Template">
                                         <Setter.Value>
                                             <ControlTemplate TargetType="CheckBox">
-                                                <Image Source="{Binding Path=Content, RelativeSource={RelativeSource TemplatedParent}}"/>
+                                                <Image
+                                                    Source="{Binding Path=Content, RelativeSource={RelativeSource TemplatedParent}}" />
                                             </ControlTemplate>
                                         </Setter.Value>
                                     </Setter>
                                 </Style>
                             </Grid.Resources>
                             <Grid.RowDefinitions>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
                             </Grid.RowDefinitions>
-                            <CheckBox Grid.Row="0" Name="Iop" Checked="CheckBox_Checked" Unchecked="CheckBox_Checked" HorizontalAlignment="Center" Content="/Images/Gods/Iop.png" Style="{StaticResource Flag}"/>
-                            <CheckBox Grid.Row="1" Name="Ecaflip" Checked="CheckBox_Checked" Unchecked="CheckBox_Checked" HorizontalAlignment="Center" Content="/Images/Gods/Eca.png" Style="{StaticResource Flag}"/>
-                            <CheckBox Grid.Row="2" Name="Cra"  Checked="CheckBox_Checked" Unchecked="CheckBox_Checked" HorizontalAlignment="Center" Content="/Images/Gods/Cra.png" Style="{StaticResource Flag}"/>
-                            <CheckBox Grid.Row="3" Name="Eniripsa" Checked="CheckBox_Checked" Unchecked="CheckBox_Checked" HorizontalAlignment="Center" Content="/Images/Gods/Eni.png" Style="{StaticResource Flag}"/>
-                            <CheckBox Grid.Row="4" Name="Sacrieur" Checked="CheckBox_Checked" Unchecked="CheckBox_Checked" HorizontalAlignment="Center" Content="/Images/Gods/Sacri.png" Style="{StaticResource Flag}"/>
-                            <CheckBox Grid.Row="5" Name="Sadida" Checked="CheckBox_Checked" Unchecked="CheckBox_Checked" HorizontalAlignment="Center" Content="/Images/Gods/Sadi.png" Style="{StaticResource Flag}"/>
-                            <CheckBox Grid.Row="6" Name="Sram" Checked="CheckBox_Checked" Unchecked="CheckBox_Checked" HorizontalAlignment="Center" Content="/Images/Gods/Sram.png" Style="{StaticResource Flag}"/>
-                            <CheckBox Grid.Row="7" Name="Xelor" Checked="CheckBox_Checked" Unchecked="CheckBox_Checked" HorizontalAlignment="Center" Content="/Images/Gods/Xel.png" Style="{StaticResource Flag}"/>
-                            <CheckBox Grid.Row="8" Name="Enutrof" Checked="CheckBox_Checked" Unchecked="CheckBox_Checked" HorizontalAlignment="Center" Content="/Images/Gods/Enu.png" Style="{StaticResource Flag}"/>
+                            <CheckBox Grid.Row="0" Name="Iop" Checked="CheckBox_Checked" Unchecked="CheckBox_Checked"
+                                      HorizontalAlignment="Center" Content="/Images/Gods/Iop.png"
+                                      Style="{StaticResource Flag}" />
+                            <CheckBox Grid.Row="1" Name="Ecaflip" Checked="CheckBox_Checked"
+                                      Unchecked="CheckBox_Checked" HorizontalAlignment="Center"
+                                      Content="/Images/Gods/Eca.png" Style="{StaticResource Flag}" />
+                            <CheckBox Grid.Row="2" Name="Cra" Checked="CheckBox_Checked" Unchecked="CheckBox_Checked"
+                                      HorizontalAlignment="Center" Content="/Images/Gods/Cra.png"
+                                      Style="{StaticResource Flag}" />
+                            <CheckBox Grid.Row="3" Name="Eniripsa" Checked="CheckBox_Checked"
+                                      Unchecked="CheckBox_Checked" HorizontalAlignment="Center"
+                                      Content="/Images/Gods/Eni.png" Style="{StaticResource Flag}" />
+                            <CheckBox Grid.Row="4" Name="Sacrieur" Checked="CheckBox_Checked"
+                                      Unchecked="CheckBox_Checked" HorizontalAlignment="Center"
+                                      Content="/Images/Gods/Sacri.png" Style="{StaticResource Flag}" />
+                            <CheckBox Grid.Row="5" Name="Sadida" Checked="CheckBox_Checked"
+                                      Unchecked="CheckBox_Checked" HorizontalAlignment="Center"
+                                      Content="/Images/Gods/Sadi.png" Style="{StaticResource Flag}" />
+                            <CheckBox Grid.Row="6" Name="Sram" Checked="CheckBox_Checked" Unchecked="CheckBox_Checked"
+                                      HorizontalAlignment="Center" Content="/Images/Gods/Sram.png"
+                                      Style="{StaticResource Flag}" />
+                            <CheckBox Grid.Row="7" Name="Xelor" Checked="CheckBox_Checked" Unchecked="CheckBox_Checked"
+                                      HorizontalAlignment="Center" Content="/Images/Gods/Xel.png"
+                                      Style="{StaticResource Flag}" />
+                            <CheckBox Grid.Row="8" Name="Enutrof" Checked="CheckBox_Checked"
+                                      Unchecked="CheckBox_Checked" HorizontalAlignment="Center"
+                                      Content="/Images/Gods/Enu.png" Style="{StaticResource Flag}" />
                         </Grid>
                         <Grid Grid.Column="1">
                             <Grid.RowDefinitions>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
                             </Grid.RowDefinitions>
                             <lvc:CartesianChart Grid.Row="0" Series="{Binding WinrateParClasse}" LegendLocation="None">
                                 <lvc:CartesianChart.AxisX>
-                                    <lvc:Axis Separator="{Binding Separator}" Labels="{Binding Labels}"/>
+                                    <lvc:Axis Separator="{Binding Separator}" Labels="{Binding Labels}" />
                                 </lvc:CartesianChart.AxisX>
                                 <lvc:CartesianChart.AxisY>
-                                    <lvc:Axis Title="Winrate" LabelFormatter="{Binding Formatter}"/>
+                                    <lvc:Axis Title="Winrate" LabelFormatter="{Binding Formatter}" />
                                 </lvc:CartesianChart.AxisY>
                             </lvc:CartesianChart>
                             <lvc:CartesianChart Grid.Row="1" Series="{Binding ToursParClasse}" LegendLocation="None">
                                 <lvc:CartesianChart.AxisX>
-                                    <lvc:Axis Separator="{Binding Separator}" Labels="{Binding Labels}"/>
+                                    <lvc:Axis Separator="{Binding Separator}" Labels="{Binding Labels}" />
                                 </lvc:CartesianChart.AxisX>
                                 <lvc:CartesianChart.AxisY>
-                                    <lvc:Axis Title="Tours moyen" LabelFormatter="{Binding Formatter}"/>
+                                    <lvc:Axis Title="Tours moyen" LabelFormatter="{Binding Formatter}" />
                                 </lvc:CartesianChart.AxisY>
                             </lvc:CartesianChart>
                         </Grid>
                         <StackPanel Margin="15" Orientation="Vertical" Grid.Column="2">
                             <Grid Height="35">
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
                                 </Grid.ColumnDefinitions>
-                                <Image Source="/Images/trophy.png" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center"/>
-                                <Label Content="{Binding WinsForThisGroup, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontWeight="Bold"/>
-                                <Image Source="/Images/skull.png" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center"/>
-                                <Label Content="{Binding LosesForThisGroup, UpdateSourceTrigger=PropertyChanged}" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontWeight="Bold"/>
+                                <Image Source="/Images/trophy.png" Grid.Row="0" Grid.Column="0"
+                                       HorizontalAlignment="Center" />
+                                <Label Content="{Binding WinsForThisGroup, UpdateSourceTrigger=PropertyChanged}"
+                                       Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left"
+                                       Foreground="White" FontWeight="Bold" />
+                                <Image Source="/Images/skull.png" Grid.Row="0" Grid.Column="2"
+                                       HorizontalAlignment="Center" />
+                                <Label Content="{Binding LosesForThisGroup, UpdateSourceTrigger=PropertyChanged}"
+                                       Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Left"
+                                       Foreground="White" FontWeight="Bold" />
                             </Grid>
                             <!--<Grid Height="35">
                                 <Grid.ColumnDefinitions>
@@ -402,38 +479,47 @@
                 <TabItem Header="Historique">
                     <Grid>
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="9*"/>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="9*" />
                         </Grid.RowDefinitions>
                         <Grid Grid.Row="0">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="2*"/>
-                                <ColumnDefinition Width="5*"/>
-                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="2*" />
+                                <ColumnDefinition Width="5*" />
+                                <ColumnDefinition Width="2*" />
                             </Grid.ColumnDefinitions>
-                            <ComboBox Name="OwnClasses" SelectedValue="{Binding OwnClasseFilter, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Background="#211E1E" Margin="5" Grid.Column="0"/>
+                            <ComboBox Name="OwnClasses"
+                                      SelectedValue="{Binding OwnClasseFilter, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                                      Background="#211E1E" Margin="5" Grid.Column="0" />
                             <Grid Grid.Column="1">
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="4*"/>
-                                    <ColumnDefinition Width="7*"/>
+                                    <ColumnDefinition Width="4*" />
+                                    <ColumnDefinition Width="7*" />
                                 </Grid.ColumnDefinitions>
-                                <Label Content="Pseudo :" Margin="5" Grid.Column="0" HorizontalAlignment="Right" Foreground="White" FontWeight="Bold"/>
-                                <TextBox Text="{Binding OpponentNameFilter, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Grid.Column="1" Margin="5" HorizontalAlignment="Left" Width="150"/>
+                                <Label Content="Pseudo :" Margin="5" Grid.Column="0" HorizontalAlignment="Right"
+                                       Foreground="White" FontWeight="Bold" />
+                                <TextBox
+                                    Text="{Binding OpponentNameFilter, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                                    Grid.Column="1" Margin="5" HorizontalAlignment="Left" Width="150" />
                             </Grid>
-                            <ComboBox Name="OpponentClasses" SelectedValue="{Binding OpponentClasseFilter, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Background="#211E1E" Margin="5" Grid.Column="2"/>
+                            <ComboBox Name="OpponentClasses"
+                                      SelectedValue="{Binding OpponentClasseFilter, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                                      Background="#211E1E" Margin="5" Grid.Column="2" />
                         </Grid>
-                        <ListView Grid.Row="1" Background="{Binding HasIndex, Converter={StaticResource BoolToColor}}" Name="listHisto" ItemsSource="{Binding MatchsWithFilters, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}">
+                        <ListView Grid.Row="1" Background="{Binding HasIndex, Converter={StaticResource BoolToColor}}"
+                                  Name="listHisto"
+                                  ItemsSource="{Binding MatchsWithFilters, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}">
                             <ListView.ItemContainerStyle>
                                 <Style TargetType="ListViewItem">
-                                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
                                 </Style>
                             </ListView.ItemContainerStyle>
                             <ListView.ItemTemplate>
                                 <DataTemplate>
                                     <Grid>
                                         <Grid.RowDefinitions>
-                                            <RowDefinition Height="75"/>
-                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="75" />
+                                            <RowDefinition Height="Auto" />
                                         </Grid.RowDefinitions>
                                         <Grid Grid.Row="0">
                                             <Grid.ColumnDefinitions>
@@ -441,39 +527,56 @@
                                                 <ColumnDefinition Width="5*" />
                                                 <ColumnDefinition Width="*" />
                                             </Grid.ColumnDefinitions>
-                                            <Image Source="{Binding OwnImage}" Grid.Column="0" HorizontalAlignment="Center"/>
+                                            <Image Source="{Binding OwnImage}" Grid.Column="0"
+                                                   HorizontalAlignment="Center" />
                                             <Grid Grid.Column="1" Margin="2">
                                                 <Grid.RowDefinitions>
-                                                    <RowDefinition Height="*"/>
-                                                    <RowDefinition Height="*"/>
-                                                    <RowDefinition Height="*"/>
+                                                    <RowDefinition Height="*" />
+                                                    <RowDefinition Height="*" />
+                                                    <RowDefinition Height="*" />
                                                 </Grid.RowDefinitions>
-                                                <Label Content="{Binding OpponentName}" HorizontalAlignment="Center" Foreground="White" FontWeight="Bold"/>
-                                                <StackPanel Grid.Row="1" HorizontalAlignment="Center" Orientation="Horizontal">
-                                                    <Label Content="{Binding ResultatMatch, Converter={StaticResource IntToMatchResultStringConverter}}" Foreground="White" FontWeight="Bold"/>
-                                                    <Label Content="-" Foreground="White" FontWeight="Bold"/>
-                                                    <Label Content="{Binding NbToursMatch}" Foreground="White" FontWeight="Bold"/>
-                                                    <Label Content="tours" Foreground="White" FontWeight="Bold"/>
+                                                <Label Content="{Binding OpponentName}" HorizontalAlignment="Center"
+                                                       Foreground="White" FontWeight="Bold" />
+                                                <StackPanel Grid.Row="1" HorizontalAlignment="Center"
+                                                            Orientation="Horizontal">
+                                                    <Label
+                                                        Content="{Binding ResultatMatch, Converter={StaticResource IntToMatchResultStringConverter}}"
+                                                        Foreground="White" FontWeight="Bold" />
+                                                    <Label Content="-" Foreground="White" FontWeight="Bold" />
+                                                    <Label Content="{Binding NbToursMatch}" Foreground="White"
+                                                           FontWeight="Bold" />
+                                                    <Label Content="tours" Foreground="White" FontWeight="Bold" />
                                                 </StackPanel>
-                                                <ToggleButton Name="detailsButton" Content="Details" Width="100" Grid.Row="2" HorizontalAlignment="Center"/>
+                                                <ToggleButton Name="detailsButton" Content="Details" Width="100"
+                                                              Grid.Row="2" HorizontalAlignment="Center" />
                                             </Grid>
-                                            <Image Source="{Binding OpponentImage}" Grid.Column="2" HorizontalAlignment="Center"/>
+                                            <Image Source="{Binding OpponentImage}" Grid.Column="2"
+                                                   HorizontalAlignment="Center" />
                                         </Grid>
-                                        <ListView MaxHeight="200" Grid.Row="1" Visibility="{Binding ElementName=detailsButton, Path=IsChecked, Converter={StaticResource BoolToVisConverter}}" Background="{Binding HasIndex, Converter={StaticResource BoolToColor}}" Name="listHisto" ItemsSource="{Binding Deck.CardsList}">
+                                        <ListView MaxHeight="200" Grid.Row="1"
+                                                  Visibility="{Binding ElementName=detailsButton, Path=IsChecked, Converter={StaticResource BoolToVisConverter}}"
+                                                  Background="{Binding HasIndex, Converter={StaticResource BoolToColor}}"
+                                                  Name="listHisto" ItemsSource="{Binding Deck.CardsList}">
                                             <ListView.ItemContainerStyle>
                                                 <Style TargetType="ListViewItem">
-                                                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
                                                 </Style>
                                             </ListView.ItemContainerStyle>
                                             <ListView.ItemTemplate>
                                                 <DataTemplate>
-                                                    <Grid Opacity="0.8" Background="{Binding Card, Converter={StaticResource GodToColor}}" Height="25">
+                                                    <Grid Opacity="0.8"
+                                                          Background="{Binding Card, Converter={StaticResource GodToColor}}"
+                                                          Height="25">
                                                         <Grid.ColumnDefinitions>
                                                             <ColumnDefinition Width="*" />
                                                             <ColumnDefinition Width="25" />
                                                         </Grid.ColumnDefinitions>
-                                                        <Label Grid.Column="0" Foreground="White" Content="{Binding Card.UIName}" HorizontalAlignment="Left"/>
-                                                        <Label Grid.Column="1" Foreground="White" FontWeight="Bold" Content="{Binding CardCount, Converter={StaticResource IntToCardCountStringConverter}}" HorizontalAlignment="Right"/>
+                                                        <Label Grid.Column="0" Foreground="White"
+                                                               Content="{Binding Card.UIName}"
+                                                               HorizontalAlignment="Left" />
+                                                        <Label Grid.Column="1" Foreground="White" FontWeight="Bold"
+                                                               Content="{Binding CardCount, Converter={StaticResource IntToCardCountStringConverter}}"
+                                                               HorizontalAlignment="Right" />
                                                     </Grid>
                                                 </DataTemplate>
                                             </ListView.ItemTemplate>

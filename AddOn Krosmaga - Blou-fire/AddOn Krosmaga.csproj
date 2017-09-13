@@ -1,0 +1,1024 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{30822A3C-7D56-4701-87BF-13CC5151E16C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AddOn_Krosmaga___Blou_fire</RootNamespace>
+    <AssemblyName>AddOn Krosmaga - Blou-fire</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon_LMV_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="De.TorstenMandelkow.MetroChart, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d5b8d1bbc99c4a2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\ModernUICharts.1.0.0\lib\De.TorstenMandelkow.MetroChart.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MahApps.Metro, Version=1.5.0.23, Culture=neutral, PublicKeyToken=f4fb5a3c4d1e5b4f, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.1.5.0\lib\net45\MahApps.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialIcons, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialIcons.1.0.3\lib\MaterialIcons.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.4.12\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="SciChart.Wpf.UI.Transitionz, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SciChart.Wpf.UI.Transitionz.1.0.4\lib\net45\SciChart.Wpf.UI.Transitionz.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.105.2, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.105.2\lib\net451\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.3.0.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WPFLocalizeExtension, Version=2.3.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WpfLocalizeExtension.2.3.2\lib\net35\WPFLocalizeExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="XAMLMarkupExtensions, Version=1.2.1.3, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\XAMLMarkupExtensions.1.2.1.3\lib\net40\XAMLMarkupExtensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Builders\EventsManager\CardMovedEvent.cs" />
+    <Compile Include="Builders\EventsManager\CardPlayedEvent.cs" />
+    <Compile Include="Builders\EventsManager\NewAOEEvent.cs" />
+    <Compile Include="Builders\GameEvents.Builder.cs" />
+    <Compile Include="Builders\GameFinished.Builder.cs" />
+    <Compile Include="Builders\GameStarted.Builder.cs" />
+    <Compile Include="Builders\PlayerAccountLoaded.Builder.cs" />
+    <Compile Include="Builders\StartOfTurn.Builder.cs" />
+    <Compile Include="Converter\GameResultToBrushConverter.cs" />
+    <Compile Include="Converter\GameResultToStringConverter.cs" />
+    <Compile Include="Data\CellCoord.Builder.cs" />
+    <Compile Include="Data\ClientPreferences.Builder.cs" />
+    <Compile Include="Data\Custom.Builder.cs" />
+    <Compile Include="Data\CustomByGod.Builder.cs" />
+    <Compile Include="Data\CustomisationSlot.Builder.cs" />
+    <Compile Include="Data\DeckInfo.Builder.cs" />
+    <Compile Include="Data\GameEvent.Builder.cs" />
+    <Compile Include="Data\Location.Builder.cs" />
+    <Compile Include="Data\Player.Builder.cs" />
+    <Compile Include="Data\PlayerProfile.Builder.cs" />
+    <Compile Include="Data\PlayerRankInfo.Builder.cs" />
+    <Compile Include="Data\SelectedDeckByGod.Builder.cs" />
+    <Compile Include="Data\Uuid.Builder.cs" />
+    <Compile Include="Data\ValueModification.Builder.cs" />
+    <Compile Include="Enums\CardLocation.cs" />
+    <Compile Include="Enums\ClassEnum.cs" />
+    <Compile Include="Enums\EventType.cs" />
+    <Compile Include="Enums\GameType.cs" />
+    <Compile Include="Enums\God.cs" />
+    <Compile Include="Enums\Language.cs" />
+    <Compile Include="Enums\LocationType.cs" />
+    <Compile Include="Enums\LocDescriptionAttribute.cs" />
+    <Compile Include="Enums\MovementType.cs" />
+    <Compile Include="Enums\Reason.cs" />
+    <Compile Include="Enums\Result.cs" />
+    <Compile Include="Enums\ResultHandlerType.cs" />
+    <Compile Include="Enums\SaisonsEnum.cs" />
+    <Compile Include="Enums\TriggerableCapacityType.cs" />
+    <Compile Include="FlyoutControls\Tracker\MatchesHistoPage.xaml.cs">
+      <DependentUpon>MatchesHistoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FlyoutControls\Tracker\PageModel\MatchesHistoPageModel.cs" />
+    <Compile Include="FlyoutControls\Tracker\PageModel\ProfileDataPageModel.cs" />
+    <Compile Include="FlyoutControls\Tracker\PageModel\TrackerStatsPageModel.cs" />
+    <Compile Include="FlyoutControls\Tracker\ProfileDataPage.xaml.cs">
+      <DependentUpon>ProfileDataPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FlyoutControls\Tracker\TrackerStats.xaml.cs">
+      <DependentUpon>TrackerStats.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Converter\EnumDescriptionConverter.cs" />
+    <Compile Include="Helpers\Helpers.cs" />
+    <Compile Include="Helpers\ObservableObject.cs" />
+    <Compile Include="Helpers\RelayCommand.cs" />
+    <Compile Include="Helpers\ThemeManagerHelper.cs" />
+    <Compile Include="Helpers\ViewModelBase.cs" />
+    <Compile Include="KrosmagaReader.cs" />
+    <Compile Include="Models\TrackerModel.cs" />
+    <Compile Include="PageModels\MainPageModel.cs" />
+    <Compile Include="PageModels\SettingsPageModel.cs" />
+    <Compile Include="Pages\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SettingsPage.xaml.cs">
+      <DependentUpon>SettingsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProducerConsumer\Consumer.cs" />
+    <Compile Include="ProducerConsumer\Producer.cs" />
+    <Compile Include="ProducerConsumer\SyncEvents.cs" />
+    <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="Services\TrackerCoreSrv.cs" />
+    <Compile Include="UIElements\Converters.cs" />
+    <Compile Include="UIElements\Deck.cs" />
+    <Compile Include="UIElements\DeckUI.Helper.cs" />
+    <Compile Include="UIElements\Match.cs" />
+    <Compile Include="UIPlayerDatas.cs" />
+    <Compile Include="Utility\LocUtil.cs" />
+    <Page Include="FlyoutControls\Tracker\MatchesHistoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FlyoutControls\Tracker\ProfileDataPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FlyoutControls\Tracker\TrackerStats.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Pages\MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\SettingsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JsonCardsParser\JsonCardsParser.csproj">
+      <Project>{f1a8a519-e3cc-4e74-9fe5-9e0ad8b843fa}</Project>
+      <Name>JsonCardsParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SniffingLibs\SniffingLibs.csproj">
+      <Project>{f28a1fdd-6e33-4625-b754-d731c765898d}</Project>
+      <Name>SniffingLibs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLiteConnector\SQLiteConnector.csproj">
+      <Project>{e168781c-e15c-450e-a6f5-e04584597293}</Project>
+      <Name>SQLiteConnector</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\fleau.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\skull.png" />
+    <Resource Include="Images\trophy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="NetFwTypeLib">
+      <Guid>{58FBCF7C-E7A9-467C-80B3-FC65E8FCCA08}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Gods\Cra.png" />
+    <Resource Include="Images\Gods\Eca.png" />
+    <Resource Include="Images\Gods\Eni.png" />
+    <Resource Include="Images\Gods\Enu.png" />
+    <Resource Include="Images\Gods\Iop.png" />
+    <Resource Include="Images\Gods\Sacri.png" />
+    <Resource Include="Images\Gods\Sadi.png" />
+    <Resource Include="Images\Gods\Sram.png" />
+    <Resource Include="Images\Gods\Xel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\hand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\handred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controls\" />
+    <Folder Include="FlyoutControls\Overlay\" />
+    <Folder Include="Services\Interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DiscordIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon_LMV_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\CardImages\abragland.png" />
+    <Resource Include="Images\CardImages\abraknyde.png" />
+    <Resource Include="Images\CardImages\abraknyde_ancestral.png" />
+    <Resource Include="Images\CardImages\abraxane.png" />
+    <Resource Include="Images\CardImages\acide_sandoz.png" />
+    <Resource Include="Images\CardImages\adamai_niveau_1.png" />
+    <Resource Include="Images\CardImages\adamai_niveau_2.png" />
+    <Resource Include="Images\CardImages\adamai_niveau_3.png" />
+    <Resource Include="Images\CardImages\affaiblissement.png" />
+    <Resource Include="Images\CardImages\aiguille.png" />
+    <Resource Include="Images\CardImages\alargix.png" />
+    <Resource Include="Images\CardImages\alibert_niveau_1.png" />
+    <Resource Include="Images\CardImages\alibert_niveau_2.png" />
+    <Resource Include="Images\CardImages\alibert_niveau_3.png" />
+    <Resource Include="Images\CardImages\amalia_niveau_1.png" />
+    <Resource Include="Images\CardImages\amalia_niveau_2.png" />
+    <Resource Include="Images\CardImages\amalia_niveau_3.png" />
+    <Resource Include="Images\CardImages\amsrad_cepaisset.png" />
+    <Resource Include="Images\CardImages\anathar.png" />
+    <Resource Include="Images\CardImages\appel_a_la_baston.png" />
+    <Resource Include="Images\CardImages\arakne.png" />
+    <Resource Include="Images\CardImages\arakne_albinos.png" />
+    <Resource Include="Images\CardImages\arakne_a_crochets.png" />
+    <Resource Include="Images\CardImages\arakne_brodeuse.png" />
+    <Resource Include="Images\CardImages\arakne_majeure.png" />
+    <Resource Include="Images\CardImages\arakne_spectrale.png" />
+    <Resource Include="Images\CardImages\araknoplasme_token.png" />
+    <Resource Include="Images\CardImages\arbre_a_chachas.png" />
+    <Resource Include="Images\CardImages\arbre_token.png" />
+    <Resource Include="Images\CardImages\archille.png" />
+    <Resource Include="Images\CardImages\armee_des_ombres.png" />
+    <Resource Include="Images\CardImages\armure_sanguine.png" />
+    <Resource Include="Images\CardImages\aroma_bome.png" />
+    <Resource Include="Images\CardImages\art_du_fourrage.png" />
+    <Resource Include="Images\CardImages\asprogik_mils.png" />
+    <Resource Include="Images\CardImages\assoiffe.png" />
+    <Resource Include="Images\CardImages\atcham_niveau_1.png" />
+    <Resource Include="Images\CardImages\atcham_niveau_2.png" />
+    <Resource Include="Images\CardImages\atcham_niveau_3.png" />
+    <Resource Include="Images\CardImages\attirance.png" />
+    <Resource Include="Images\CardImages\autorite.png" />
+    <Resource Include="Images\CardImages\az.png" />
+    <Resource Include="Images\CardImages\azraoul.png" />
+    <Resource Include="Images\CardImages\bakara_niveau_1.png" />
+    <Resource Include="Images\CardImages\bakara_niveau_2.png" />
+    <Resource Include="Images\CardImages\bakara_niveau_3.png" />
+    <Resource Include="Images\CardImages\baraklud.png" />
+    <Resource Include="Images\CardImages\barbe_monde.png" />
+    <Resource Include="Images\CardImages\baron_sramedi.png" />
+    <Resource Include="Images\CardImages\bas_de_laine.png" />
+    <Resource Include="Images\CardImages\bas_les_pattes.png" />
+    <Resource Include="Images\CardImages\bebe_phorreur.png" />
+    <Resource Include="Images\CardImages\bebe_phorreur_armure.png" />
+    <Resource Include="Images\CardImages\bebe_phorreur_corrompu.png" />
+    <Resource Include="Images\CardImages\bebe_phorreur_elite.png" />
+    <Resource Include="Images\CardImages\bebe_tofu.png" />
+    <Resource Include="Images\CardImages\belgodass.png" />
+    <Resource Include="Images\CardImages\bellaphone.png" />
+    <Resource Include="Images\CardImages\ben_debouche.png" />
+    <Resource Include="Images\CardImages\bernalette_chichi.png" />
+    <Resource Include="Images\CardImages\bernardo_de_la_carpett.png" />
+    <Resource Include="Images\CardImages\betty_boubz.png" />
+    <Resource Include="Images\CardImages\black_tiwabbit.png" />
+    <Resource Include="Images\CardImages\black_wabbit.png" />
+    <Resource Include="Images\CardImages\blanquette.png" />
+    <Resource Include="Images\CardImages\bluff.png" />
+    <Resource Include="Images\CardImages\bombe_token.png" />
+    <Resource Include="Images\CardImages\bond.png" />
+    <Resource Include="Images\CardImages\bond_du_felin.png" />
+    <Resource Include="Images\CardImages\boo.png" />
+    <Resource Include="Images\CardImages\botanique.png" />
+    <Resource Include="Images\CardImages\boufballe.png" />
+    <Resource Include="Images\CardImages\boufette.png" />
+    <Resource Include="Images\CardImages\boufton_blanc.png" />
+    <Resource Include="Images\CardImages\boufton_noir.png" />
+    <Resource Include="Images\CardImages\bouftou_celeste.png" />
+    <Resource Include="Images\CardImages\bouftou_dominant.png" />
+    <Resource Include="Images\CardImages\bouftou_du_printemps.png" />
+    <Resource Include="Images\CardImages\bouftou_male.png" />
+    <Resource Include="Images\CardImages\bouftou_noir.png" />
+    <Resource Include="Images\CardImages\bouftou_royal.png" />
+    <Resource Include="Images\CardImages\bouftou_sauvage.png" />
+    <Resource Include="Images\CardImages\bould_erdash.png" />
+    <Resource Include="Images\CardImages\bowne_piauch.png" />
+    <Resource Include="Images\CardImages\brulure_temporelle.png" />
+    <Resource Include="Images\CardImages\buisson.png" />
+    <Resource Include="Images\CardImages\buisson_token.png" />
+    <Resource Include="Images\CardImages\butin_token.png" />
+    <Resource Include="Images\CardImages\bwork_chevaucheur.png" />
+    <Resource Include="Images\CardImages\cactana.png" />
+    <Resource Include="Images\CardImages\cactoblong.png" />
+    <Resource Include="Images\CardImages\camouflage.png" />
+    <Resource Include="Images\CardImages\canar.png" />
+    <Resource Include="Images\CardImages\cavalier_nimbo.png" />
+    <Resource Include="Images\CardImages\cawotte.png" />
+    <Resource Include="Images\CardImages\chacha.png" />
+    <Resource Include="Images\CardImages\chachafer.png" />
+    <Resource Include="Images\CardImages\chacha_lait.png" />
+    <Resource Include="Images\CardImages\chacha_noir_token.png" />
+    <Resource Include="Images\CardImages\chacha_or.png" />
+    <Resource Include="Images\CardImages\chacha_rabia.png" />
+    <Resource Include="Images\CardImages\chacha_sauvage.png" />
+    <Resource Include="Images\CardImages\chacha_serval.png" />
+    <Resource Include="Images\CardImages\chacha_teigne.png" />
+    <Resource Include="Images\CardImages\chacha_tyran.png" />
+    <Resource Include="Images\CardImages\chaferfu.png" />
+    <Resource Include="Images\CardImages\chafer_archer.png" />
+    <Resource Include="Images\CardImages\chafer_d_elite.png" />
+    <Resource Include="Images\CardImages\chafer_lancier.png" />
+    <Resource Include="Images\CardImages\chafer_token.png" />
+    <Resource Include="Images\CardImages\chafer_translucide.png" />
+    <Resource Include="Images\CardImages\charge.png" />
+    <Resource Include="Images\CardImages\chasseur.png" />
+    <Resource Include="Images\CardImages\chatar.png" />
+    <Resource Include="Images\CardImages\chauve_souris.png" />
+    <Resource Include="Images\CardImages\chauve_souris_dodue.png" />
+    <Resource Include="Images\CardImages\chef_de_guerre_bouftou.png" />
+    <Resource Include="Images\CardImages\chef_grouilleux.png" />
+    <Resource Include="Images\CardImages\chronophagie.png" />
+    <Resource Include="Images\CardImages\chuchoteurs_arbaletriers.png" />
+    <Resource Include="Images\CardImages\chuchoteurs_fantassins.png" />
+    <Resource Include="Images\CardImages\chuchoteurs_porte-etendard.png" />
+    <Resource Include="Images\CardImages\chuck_maurice.png" />
+    <Resource Include="Images\CardImages\clara_byne.png" />
+    <Resource Include="Images\CardImages\cleophee_niveau_1.png" />
+    <Resource Include="Images\CardImages\cleophee_niveau_2.png" />
+    <Resource Include="Images\CardImages\cleophee_niveau_3.png" />
+    <Resource Include="Images\CardImages\coffre_a_grosse_serrure.png" />
+    <Resource Include="Images\CardImages\coffre_fort.png" />
+    <Resource Include="Images\CardImages\coffre_tirelire.png" />
+    <Resource Include="Images\CardImages\cogneur_nimbo.png" />
+    <Resource Include="Images\CardImages\colere_de_iop.png" />
+    <Resource Include="Images\CardImages\compulsion.png" />
+    <Resource Include="Images\CardImages\comte_harebourg_niveau_1.png" />
+    <Resource Include="Images\CardImages\comte_harebourg_niveau_2.png" />
+    <Resource Include="Images\CardImages\comte_harebourg_niveau_3.png" />
+    <Resource Include="Images\CardImages\corbacassin.png" />
+    <Resource Include="Images\CardImages\corbac_chef.png" />
+    <Resource Include="Images\CardImages\corbac_token.png" />
+    <Resource Include="Images\CardImages\corum.png" />
+    <Resource Include="Images\CardImages\coup_de_sang.png" />
+    <Resource Include="Images\CardImages\crapaud_mufle.png" />
+    <Resource Include="Images\CardImages\craps.png" />
+    <Resource Include="Images\CardImages\craqueboule.png" />
+    <Resource Include="Images\CardImages\craqueboule_chuchote.png" />
+    <Resource Include="Images\CardImages\craqueboule_or.png" />
+    <Resource Include="Images\CardImages\craqueleur.png" />
+    <Resource Include="Images\CardImages\craqueleur_ancestral.png" />
+    <Resource Include="Images\CardImages\craqueleur_chuchote.png" />
+    <Resource Include="Images\CardImages\craqueleur_magmatique.png" />
+    <Resource Include="Images\CardImages\craqueleur_royal.png" />
+    <Resource Include="Images\CardImages\creusee.png" />
+    <Resource Include="Images\CardImages\criblage.png" />
+    <Resource Include="Images\CardImages\cupidite.png" />
+    <Resource Include="Images\CardImages\dark_vlad.png" />
+    <Resource Include="Images\CardImages\decouverte.png" />
+    <Resource Include="Images\CardImages\defhi_croquets.png" />
+    <Resource Include="Images\CardImages\demasquer.png" />
+    <Resource Include="Images\CardImages\dente_le_remonteur.png" />
+    <Resource Include="Images\CardImages\dephasage.png" />
+    <Resource Include="Images\CardImages\dernier_recours.png" />
+    <Resource Include="Images\CardImages\deserboss.png" />
+    <Resource Include="Images\CardImages\desynchronisation.png" />
+    <Resource Include="Images\CardImages\detournement.png" />
+    <Resource Include="Images\CardImages\devouement.png" />
+    <Resource Include="Images\CardImages\de_du_chacha.png" />
+    <Resource Include="Images\CardImages\de_du_chateux.png" />
+    <Resource Include="Images\CardImages\de_ecaflip.png" />
+    <Resource Include="Images\CardImages\de_pipe.png" />
+    <Resource Include="Images\CardImages\de_rebondissant.png" />
+    <Resource Include="Images\CardImages\diod_dewit.png" />
+    <Resource Include="Images\CardImages\do.png" />
+    <Resource Include="Images\CardImages\dodu.png" />
+    <Resource Include="Images\CardImages\don_rascailles.png" />
+    <Resource Include="Images\CardImages\dragon_cochon_niveau_1.png" />
+    <Resource Include="Images\CardImages\dragon_cochon_niveau_2.png" />
+    <Resource Include="Images\CardImages\dragon_cochon_niveau_3.png" />
+    <Resource Include="Images\CardImages\dressage.png" />
+    <Resource Include="Images\CardImages\dureden_taillair.png" />
+    <Resource Include="Images\CardImages\dwanlaposh.png" />
+    <Resource Include="Images\CardImages\ebranler.png" />
+    <Resource Include="Images\CardImages\echaenge.png" />
+    <Resource Include="Images\CardImages\edass_le_trouble_fete.png" />
+    <Resource Include="Images\CardImages\ejipe.png" />
+    <Resource Include="Images\CardImages\eksa_soth.png" />
+    <Resource Include="Images\CardImages\elely.png" />
+    <Resource Include="Images\CardImages\elevage.png" />
+    <Resource Include="Images\CardImages\eliacube.png" />
+    <Resource Include="Images\CardImages\elixir_de_jouvence.png" />
+    <Resource Include="Images\CardImages\empathie.png" />
+    <Resource Include="Images\CardImages\empereur_gelax.png" />
+    <Resource Include="Images\CardImages\enfouissement.png" />
+    <Resource Include="Images\CardImages\engrais.png" />
+    <Resource Include="Images\CardImages\enracine.png" />
+    <Resource Include="Images\CardImages\epee_celeste.png" />
+    <Resource Include="Images\CardImages\epouventrail.png" />
+    <Resource Include="Images\CardImages\equite.png" />
+    <Resource Include="Images\CardImages\eratz_le_revendicateur.png" />
+    <Resource Include="Images\CardImages\erik_rak.png" />
+    <Resource Include="Images\CardImages\escroc.png" />
+    <Resource Include="Images\CardImages\esquive.png" />
+    <Resource Include="Images\CardImages\evangelyne_niveau_1.png" />
+    <Resource Include="Images\CardImages\evangelyne_niveau_2.png" />
+    <Resource Include="Images\CardImages\evangelyne_niveau_3.png" />
+    <Resource Include="Images\CardImages\eventrail.png" />
+    <Resource Include="Images\CardImages\exactitude.png" />
+    <Resource Include="Images\CardImages\excarnus.png" />
+    <Resource Include="Images\CardImages\fantome_cra.png" />
+    <Resource Include="Images\CardImages\fan_token.png" />
+    <Resource Include="Images\CardImages\felida.png" />
+    <Resource Include="Images\CardImages\fin_de_la_souffrance.png" />
+    <Resource Include="Images\CardImages\fiole_de_douleur.png" />
+    <Resource Include="Images\CardImages\fiole_de_frayeur.png" />
+    <Resource Include="Images\CardImages\fiole_de_psykoz.png" />
+    <Resource Include="Images\CardImages\fiole_de_torpeur.png" />
+    <Resource Include="Images\CardImages\fiole_infectee.png" />
+    <Resource Include="Images\CardImages\flaqueux.png" />
+    <Resource Include="Images\CardImages\fleau_dore.png" />
+    <Resource Include="Images\CardImages\fleche_chercheuse.png" />
+    <Resource Include="Images\CardImages\fleche_criblante.png" />
+    <Resource Include="Images\CardImages\fleche_destructrice.png" />
+    <Resource Include="Images\CardImages\fleche_de_recul.png" />
+    <Resource Include="Images\CardImages\fleche_d_immolation.png" />
+    <Resource Include="Images\CardImages\fleche_explosive.png" />
+    <Resource Include="Images\CardImages\fleche_percante.png" />
+    <Resource Include="Images\CardImages\fleche_tempete.png" />
+    <Resource Include="Images\CardImages\flopin.png" />
+    <Resource Include="Images\CardImages\forbank.png" />
+    <Resource Include="Images\CardImages\force_de_l_age.png" />
+    <Resource Include="Images\CardImages\fosscheur.png" />
+    <Resource Include="Images\CardImages\fripon.png" />
+    <Resource Include="Images\CardImages\frondeur_nimbo.png" />
+    <Resource Include="Images\CardImages\fulgurance.png" />
+    <Resource Include="Images\CardImages\fumfamfim.png" />
+    <Resource Include="Images\CardImages\funerailles.png" />
+    <Resource Include="Images\CardImages\garde_temps.png" />
+    <Resource Include="Images\CardImages\gelatine_token.png" />
+    <Resource Include="Images\CardImages\gelee_citron.png" />
+    <Resource Include="Images\CardImages\gelee_encre.png" />
+    <Resource Include="Images\CardImages\gelee_fraise.png" />
+    <Resource Include="Images\CardImages\gelee_framboise.png" />
+    <Resource Include="Images\CardImages\gelee_menthe.png" />
+    <Resource Include="Images\CardImages\gelee_sucree.png" />
+    <Resource Include="Images\CardImages\gelure.png" />
+    <Resource Include="Images\CardImages\glaie.png" />
+    <Resource Include="Images\CardImages\gligli.png" />
+    <Resource Include="Images\CardImages\gligli_agressif.png" />
+    <Resource Include="Images\CardImages\gligli_ancestral.png" />
+    <Resource Include="Images\CardImages\gligli_royal.png" />
+    <Resource Include="Images\CardImages\globule_la_crapule.png" />
+    <Resource Include="Images\CardImages\goule.png" />
+    <Resource Include="Images\CardImages\gouloutony.png" />
+    <Resource Include="Images\CardImages\goultard_niveau_1.png" />
+    <Resource Include="Images\CardImages\goultard_niveau_2.png" />
+    <Resource Include="Images\CardImages\goultard_niveau_3.png" />
+    <Resource Include="Images\CardImages\grainaille.png" />
+    <Resource Include="Images\CardImages\graines_de_folie.png" />
+    <Resource Include="Images\CardImages\graines_de_sacrifice.png" />
+    <Resource Include="Images\CardImages\graine_token.png" />
+    <Resource Include="Images\CardImages\grand_craqueleur_chuchote.png" />
+    <Resource Include="Images\CardImages\grany.png" />
+    <Resource Include="Images\CardImages\gredin.png" />
+    <Resource Include="Images\CardImages\grimm_beurguen.png" />
+    <Resource Include="Images\CardImages\grinch.png" />
+    <Resource Include="Images\CardImages\grine_piz.png" />
+    <Resource Include="Images\CardImages\gros_nambourg.png" />
+    <Resource Include="Images\CardImages\grougal_niveau_1.png" />
+    <Resource Include="Images\CardImages\grougal_niveau_2.png" />
+    <Resource Include="Images\CardImages\grougal_niveau_3.png" />
+    <Resource Include="Images\CardImages\grouilleux.png" />
+    <Resource Include="Images\CardImages\gruffon.png" />
+    <Resource Include="Images\CardImages\guy.png" />
+    <Resource Include="Images\CardImages\guy_yomtella.png" />
+    <Resource Include="Images\CardImages\gwanpa_wabbit.png" />
+    <Resource Include="Images\CardImages\gzenah.png" />
+    <Resource Include="Images\CardImages\hacheur_nimbo.png" />
+    <Resource Include="Images\CardImages\harcelement.png" />
+    <Resource Include="Images\CardImages\havre_sac.png" />
+    <Resource Include="Images\CardImages\heure_de_gloire.png" />
+    <Resource Include="Images\CardImages\horloge.png" />
+    <Resource Include="Images\CardImages\incision.png" />
+    <Resource Include="Images\CardImages\indie_niveau_1.png" />
+    <Resource Include="Images\CardImages\indie_niveau_2.png" />
+    <Resource Include="Images\CardImages\indie_niveau_3.png" />
+    <Resource Include="Images\CardImages\initiative.png" />
+    <Resource Include="Images\CardImages\instantina.png" />
+    <Resource Include="Images\CardImages\intimidation.png" />
+    <Resource Include="Images\CardImages\jabs.png" />
+    <Resource Include="Images\CardImages\jahash_niveau_1.png" />
+    <Resource Include="Images\CardImages\jahash_niveau_2.png" />
+    <Resource Include="Images\CardImages\jahash_niveau_3.png" />
+    <Resource Include="Images\CardImages\jems_blond.png" />
+    <Resource Include="Images\CardImages\jet_le_pied_volant.png" />
+    <Resource Include="Images\CardImages\jice_aouaire.png" />
+    <Resource Include="Images\CardImages\jiji.png" />
+    <Resource Include="Images\CardImages\joris_niveau_1.png" />
+    <Resource Include="Images\CardImages\joris_niveau_2.png" />
+    <Resource Include="Images\CardImages\joris_niveau_3.png" />
+    <Resource Include="Images\CardImages\julith_jurgen_niveau_1.png" />
+    <Resource Include="Images\CardImages\julith_jurgen_niveau_2.png" />
+    <Resource Include="Images\CardImages\julith_jurgen_niveau_3.png" />
+    <Resource Include="Images\CardImages\justice_niveau_1.png" />
+    <Resource Include="Images\CardImages\justice_niveau_2.png" />
+    <Resource Include="Images\CardImages\justice_niveau_3.png" />
+    <Resource Include="Images\CardImages\kabrok_niveau_1.png" />
+    <Resource Include="Images\CardImages\kabrok_niveau_2.png" />
+    <Resource Include="Images\CardImages\kabrok_niveau_3.png" />
+    <Resource Include="Images\CardImages\kamasutar.png" />
+    <Resource Include="Images\CardImages\kam_erlite.png" />
+    <Resource Include="Images\CardImages\karla_blondie.png" />
+    <Resource Include="Images\CardImages\katar_niveau_1.png" />
+    <Resource Include="Images\CardImages\katar_niveau_2.png" />
+    <Resource Include="Images\CardImages\katar_niveau_3.png" />
+    <Resource Include="Images\CardImages\katsou_mee.png" />
+    <Resource Include="Images\CardImages\kerubim_niveau_1.png" />
+    <Resource Include="Images\CardImages\kerubim_niveau_2.png" />
+    <Resource Include="Images\CardImages\kerubim_niveau_3.png" />
+    <Resource Include="Images\CardImages\khan_karkass_niveau_1.png" />
+    <Resource Include="Images\CardImages\khan_karkass_niveau_2.png" />
+    <Resource Include="Images\CardImages\khan_karkass_niveau_3.png" />
+    <Resource Include="Images\CardImages\kibri.png" />
+    <Resource Include="Images\CardImages\klore_ofil.png" />
+    <Resource Include="Images\CardImages\kokoko.png" />
+    <Resource Include="Images\CardImages\kolo_kolko.png" />
+    <Resource Include="Images\CardImages\korbax.png" />
+    <Resource Include="Images\CardImages\kralamor.png" />
+    <Resource Include="Images\CardImages\kralamour.png" />
+    <Resource Include="Images\CardImages\kriss_la_krass_niveau_1.png" />
+    <Resource Include="Images\CardImages\kriss_la_krass_niveau_2.png" />
+    <Resource Include="Images\CardImages\kriss_la_krass_niveau_3.png" />
+    <Resource Include="Images\CardImages\lait_bambou.png" />
+    <Resource Include="Images\CardImages\lame_ourduvis.png" />
+    <Resource Include="Images\CardImages\laon_epee_filante.png" />
+    <Resource Include="Images\CardImages\lapinos.png" />
+    <Resource Include="Images\CardImages\lapino_token.png" />
+    <Resource Include="Images\CardImages\lard_devil.png" />
+    <Resource Include="Images\CardImages\larmes_de_sang.png" />
+    <Resource Include="Images\CardImages\larve_blanche.png" />
+    <Resource Include="Images\CardImages\larve_bleue.png" />
+    <Resource Include="Images\CardImages\larve_orange.png" />
+    <Resource Include="Images\CardImages\larve_verte.png" />
+    <Resource Include="Images\CardImages\larve_violette.png" />
+    <Resource Include="Images\CardImages\la_folle_token.png" />
+    <Resource Include="Images\CardImages\la_gerbouille.png" />
+    <Resource Include="Images\CardImages\la_gonflable_token.png" />
+    <Resource Include="Images\CardImages\la_sacrifiee_token.png" />
+    <Resource Include="Images\CardImages\lebolas.png" />
+    <Resource Include="Images\CardImages\leila.png" />
+    <Resource Include="Images\CardImages\lien_de_sang.png" />
+    <Resource Include="Images\CardImages\lilotte_niveau_1.png" />
+    <Resource Include="Images\CardImages\lilotte_niveau_2.png" />
+    <Resource Include="Images\CardImages\lilotte_niveau_3.png" />
+    <Resource Include="Images\CardImages\li_crounch.png" />
+    <Resource Include="Images\CardImages\lou_niveau_1.png" />
+    <Resource Include="Images\CardImages\lou_niveau_2.png" />
+    <Resource Include="Images\CardImages\lou_niveau_3.png" />
+    <Resource Include="Images\CardImages\lucie_fhair.png" />
+    <Resource Include="Images\CardImages\lumino.png" />
+    <Resource Include="Images\CardImages\l_enklarveur.png" />
+    <Resource Include="Images\CardImages\magmog_le_boufrog.png" />
+    <Resource Include="Images\CardImages\maine_cooyne.png" />
+    <Resource Include="Images\CardImages\main_de_nidas.png" />
+    <Resource Include="Images\CardImages\maitre_chuchoku.png" />
+    <Resource Include="Images\CardImages\maitre_des_ombres.png" />
+    <Resource Include="Images\CardImages\maloboss.png" />
+    <Resource Include="Images\CardImages\malobouc.png" />
+    <Resource Include="Images\CardImages\malocac.png" />
+    <Resource Include="Images\CardImages\malopo.png" />
+    <Resource Include="Images\CardImages\malox_makugen.png" />
+    <Resource Include="Images\CardImages\maluss.png" />
+    <Resource Include="Images\CardImages\mandale.png" />
+    <Resource Include="Images\CardImages\many_de_brakmar.png" />
+    <Resource Include="Images\CardImages\marcassinet.png" />
+    <Resource Include="Images\CardImages\marcassin_or.png" />
+    <Resource Include="Images\CardImages\marline_niveau_1.png" />
+    <Resource Include="Images\CardImages\marline_niveau_2.png" />
+    <Resource Include="Images\CardImages\marline_niveau_3.png" />
+    <Resource Include="Images\CardImages\marquage.png" />
+    <Resource Include="Images\CardImages\marteleur_nimbo.png" />
+    <Resource Include="Images\CardImages\martingale.png" />
+    <Resource Include="Images\CardImages\maskemane_niveau_1.png" />
+    <Resource Include="Images\CardImages\maskemane_niveau_2.png" />
+    <Resource Include="Images\CardImages\maskemane_niveau_3.png" />
+    <Resource Include="Images\CardImages\masse.png" />
+    <Resource Include="Images\CardImages\maude.png" />
+    <Resource Include="Images\CardImages\megathon.png" />
+    <Resource Include="Images\CardImages\merkator.png" />
+    <Resource Include="Images\CardImages\milimulou.png" />
+    <Resource Include="Images\CardImages\milimulou_garou.png" />
+    <Resource Include="Images\CardImages\milkar.png" />
+    <Resource Include="Images\CardImages\miranda.png" />
+    <Resource Include="Images\CardImages\missiz_frizz.png" />
+    <Resource Include="Images\CardImages\miss_nuit.png" />
+    <Resource Include="Images\CardImages\mitaine.png" />
+    <Resource Include="Images\CardImages\momie_de_quartz_token.png" />
+    <Resource Include="Images\CardImages\moogrr.png" />
+    <Resource Include="Images\CardImages\moogrron.png" />
+    <Resource Include="Images\CardImages\moogrr_dominant.png" />
+    <Resource Include="Images\CardImages\moogrr_royale.png" />
+    <Resource Include="Images\CardImages\moogr_celeste.png" />
+    <Resource Include="Images\CardImages\moon_niveau_1.png" />
+    <Resource Include="Images\CardImages\moon_niveau_2.png" />
+    <Resource Include="Images\CardImages\moon_niveau_3.png" />
+    <Resource Include="Images\CardImages\mort_proche.png" />
+    <Resource Include="Images\CardImages\moskito.png" />
+    <Resource Include="Images\CardImages\mot_de_silence.png" />
+    <Resource Include="Images\CardImages\mot_reconstituant.png" />
+    <Resource Include="Images\CardImages\mot_retablissant.png" />
+    <Resource Include="Images\CardImages\mot_soignant.png" />
+    <Resource Include="Images\CardImages\moumoune.png" />
+    <Resource Include="Images\CardImages\mulou.png" />
+    <Resource Include="Images\CardImages\muloune.png" />
+    <Resource Include="Images\CardImages\mulou_alpha.png" />
+    <Resource Include="Images\CardImages\mulou_garou.png" />
+    <Resource Include="Images\CardImages\murmures_sauvages.png" />
+    <Resource Include="Images\CardImages\nainfants.png" />
+    <Resource Include="Images\CardImages\necrome_cra_f.png" />
+    <Resource Include="Images\CardImages\necrome_cra_h.png" />
+    <Resource Include="Images\CardImages\necrome_eca_f.png" />
+    <Resource Include="Images\CardImages\necrome_eca_h.png" />
+    <Resource Include="Images\CardImages\necrome_eni_f.png" />
+    <Resource Include="Images\CardImages\necrome_eni_h.png" />
+    <Resource Include="Images\CardImages\necrome_enu_f.png" />
+    <Resource Include="Images\CardImages\necrome_enu_h.png" />
+    <Resource Include="Images\CardImages\necrome_iop_f.png" />
+    <Resource Include="Images\CardImages\necrome_iop_h.png" />
+    <Resource Include="Images\CardImages\necrome_sacrier_f.png" />
+    <Resource Include="Images\CardImages\necrome_sacrier_h.png" />
+    <Resource Include="Images\CardImages\necrome_sadida_f.png" />
+    <Resource Include="Images\CardImages\necrome_sadida_h.png" />
+    <Resource Include="Images\CardImages\necrome_sram_f.png" />
+    <Resource Include="Images\CardImages\necrome_sram_h.png" />
+    <Resource Include="Images\CardImages\necrome_xelor_f.png" />
+    <Resource Include="Images\CardImages\necrome_xelor_h.png" />
+    <Resource Include="Images\CardImages\necrom_l_ancien.png" />
+    <Resource Include="Images\CardImages\necronomigore.png" />
+    <Resource Include="Images\CardImages\necro_phorreur.png" />
+    <Resource Include="Images\CardImages\nomekop_le_crapoteur.png" />
+    <Resource Include="Images\CardImages\nonne.png" />
+    <Resource Include="Images\CardImages\noxine_token.png" />
+    <Resource Include="Images\CardImages\nox_niveau_1.png" />
+    <Resource Include="Images\CardImages\nox_niveau_2.png" />
+    <Resource Include="Images\CardImages\nox_niveau_3.png" />
+    <Resource Include="Images\CardImages\oeil_de_lynx.png" />
+    <Resource Include="Images\CardImages\ogivol_scalarcin.png" />
+    <Resource Include="Images\CardImages\ombre.png" />
+    <Resource Include="Images\CardImages\orbe.png" />
+    <Resource Include="Images\CardImages\orma.png" />
+    <Resource Include="Images\CardImages\oscar_nak.png" />
+    <Resource Include="Images\CardImages\otomai_niveau_1.png" />
+    <Resource Include="Images\CardImages\otomai_niveau_2.png" />
+    <Resource Include="Images\CardImages\otomai_niveau_3.png" />
+    <Resource Include="Images\CardImages\pacte_de_sang.png" />
+    <Resource Include="Images\CardImages\padgref_demouelle.png" />
+    <Resource Include="Images\CardImages\paladir_cra_f.png" />
+    <Resource Include="Images\CardImages\paladir_cra_h.png" />
+    <Resource Include="Images\CardImages\paladir_eca_f.png" />
+    <Resource Include="Images\CardImages\paladir_eca_h.png" />
+    <Resource Include="Images\CardImages\paladir_eni_f.png" />
+    <Resource Include="Images\CardImages\paladir_eni_h.png" />
+    <Resource Include="Images\CardImages\paladir_enu_f.png" />
+    <Resource Include="Images\CardImages\paladir_enu_h.png" />
+    <Resource Include="Images\CardImages\paladir_iop_f.png" />
+    <Resource Include="Images\CardImages\paladir_iop_h.png" />
+    <Resource Include="Images\CardImages\paladir_sacri_f.png" />
+    <Resource Include="Images\CardImages\paladir_sacri_h.png" />
+    <Resource Include="Images\CardImages\paladir_sadida_f.png" />
+    <Resource Include="Images\CardImages\paladir_sadida_h.png" />
+    <Resource Include="Images\CardImages\paladir_sram_f.png" />
+    <Resource Include="Images\CardImages\paladir_sram_h.png" />
+    <Resource Include="Images\CardImages\paladir_xelor_f.png" />
+    <Resource Include="Images\CardImages\paladir_xelor_h.png" />
+    <Resource Include="Images\CardImages\pampactus.png" />
+    <Resource Include="Images\CardImages\patek_tag.png" />
+    <Resource Include="Images\CardImages\patty_ceriz.png" />
+    <Resource Include="Images\CardImages\pelle.png" />
+    <Resource Include="Images\CardImages\pelle_sismique.png" />
+    <Resource Include="Images\CardImages\persan.png" />
+    <Resource Include="Images\CardImages\pesanteur.png" />
+    <Resource Include="Images\CardImages\petit_coffre.png" />
+    <Resource Include="Images\CardImages\petit_ogrest_niveau_1.png" />
+    <Resource Include="Images\CardImages\petit_ogrest_niveau_2.png" />
+    <Resource Include="Images\CardImages\petit_ogrest_niveau_3.png" />
+    <Resource Include="Images\CardImages\peur.png" />
+    <Resource Include="Images\CardImages\phaeris_niveau_1.png" />
+    <Resource Include="Images\CardImages\phaeris_niveau_2.png" />
+    <Resource Include="Images\CardImages\phaeris_niveau_3.png" />
+    <Resource Include="Images\CardImages\phorrerstein.png" />
+    <Resource Include="Images\CardImages\phorreur.png" />
+    <Resource Include="Images\CardImages\phorreur_ancestral.png" />
+    <Resource Include="Images\CardImages\phorreur_corrompu.png" />
+    <Resource Include="Images\CardImages\phorreur_domestique.png" />
+    <Resource Include="Images\CardImages\phorreur_elite.png" />
+    <Resource Include="Images\CardImages\phorreur_furieux.png" />
+    <Resource Include="Images\CardImages\phorreur_royal.png" />
+    <Resource Include="Images\CardImages\phorzerker.png" />
+    <Resource Include="Images\CardImages\phorzerker_enu.png" />
+    <Resource Include="Images\CardImages\phorzerker_moumoune.png" />
+    <Resource Include="Images\CardImages\pied_du_sacrieur.png" />
+    <Resource Include="Images\CardImages\piege_explosif_actif_ext1.png" />
+    <Resource Include="Images\CardImages\piege_explosif_ext1.png" />
+    <Resource Include="Images\CardImages\piege_mortel_actif_ext1.png" />
+    <Resource Include="Images\CardImages\piege_mortel_ext1.png" />
+    <Resource Include="Images\CardImages\piege_troublant_actif_ext1.png" />
+    <Resource Include="Images\CardImages\piege_troublant_ext1.png" />
+    <Resource Include="Images\CardImages\pierre_tombale.png" />
+    <Resource Include="Images\CardImages\pioche_antique.png" />
+    <Resource Include="Images\CardImages\pioussin.png" />
+    <Resource Include="Images\CardImages\piou_aux_oeufs_d_or.png" />
+    <Resource Include="Images\CardImages\piou_bleu.png" />
+    <Resource Include="Images\CardImages\piou_rouge.png" />
+    <Resource Include="Images\CardImages\piou_royal.png" />
+    <Resource Include="Images\CardImages\piou_vert.png" />
+    <Resource Include="Images\CardImages\piou_violet.png" />
+    <Resource Include="Images\CardImages\pissenlion.png" />
+    <Resource Include="Images\CardImages\pissenlit_diabolique.png" />
+    <Resource Include="Images\CardImages\pissenlit_duveteux_token.png" />
+    <Resource Include="Images\CardImages\pissenlit_malefique.png" />
+    <Resource Include="Images\CardImages\plante_kanniboul.png" />
+    <Resource Include="Images\CardImages\poele.png" />
+    <Resource Include="Images\CardImages\poils_de_jiji.png" />
+    <Resource Include="Images\CardImages\pollinisation.png" />
+    <Resource Include="Images\CardImages\polter.png" />
+    <Resource Include="Images\CardImages\polter_tofu.png" />
+    <Resource Include="Images\CardImages\poussiere_temporelle.png" />
+    <Resource Include="Images\CardImages\premier_sang.png" />
+    <Resource Include="Images\CardImages\prespic.png" />
+    <Resource Include="Images\CardImages\pretresse_coiffe.png" />
+    <Resource Include="Images\CardImages\pretresse_coupe.png" />
+    <Resource Include="Images\CardImages\princesse_briniere.png" />
+    <Resource Include="Images\CardImages\prince_belimberbe.png" />
+    <Resource Include="Images\CardImages\prisme_fleau.png" />
+    <Resource Include="Images\CardImages\protecteur_nimbo.png" />
+    <Resource Include="Images\CardImages\protoflex.png" />
+    <Resource Include="Images\CardImages\puissance.png" />
+    <Resource Include="Images\CardImages\puissance_sylvestre.png" />
+    <Resource Include="Images\CardImages\punition.png" />
+    <Resource Include="Images\CardImages\pupuce.png" />
+    <Resource Include="Images\CardImages\purge.png" />
+    <Resource Include="Images\CardImages\purpuce.png" />
+    <Resource Include="Images\CardImages\qilby_niveau_1.png" />
+    <Resource Include="Images\CardImages\qilby_niveau_2.png" />
+    <Resource Include="Images\CardImages\qilby_niveau_3.png" />
+    <Resource Include="Images\CardImages\quartz.png" />
+    <Resource Include="Images\CardImages\rabet.png" />
+    <Resource Include="Images\CardImages\radoris_montrouge.png" />
+    <Resource Include="Images\CardImages\ragnagna.png" />
+    <Resource Include="Images\CardImages\ralentissement.png" />
+    <Resource Include="Images\CardImages\ratchet.png" />
+    <Resource Include="Images\CardImages\ratou.png" />
+    <Resource Include="Images\CardImages\rattrapage.png" />
+    <Resource Include="Images\CardImages\rat_dechant.png" />
+    <Resource Include="Images\CardImages\rat_devil.png" />
+    <Resource Include="Images\CardImages\rat_dominant.png" />
+    <Resource Include="Images\CardImages\rat_tiboiseur.png" />
+    <Resource Include="Images\CardImages\ravage.png" />
+    <Resource Include="Images\CardImages\raymond_garden.png" />
+    <Resource Include="Images\CardImages\razortemps.png" />
+    <Resource Include="Images\CardImages\refus_de_mort.png" />
+    <Resource Include="Images\CardImages\reine_nowel.png" />
+    <Resource Include="Images\CardImages\relance.png" />
+    <Resource Include="Images\CardImages\remington_niveau_1.png" />
+    <Resource Include="Images\CardImages\remington_niveau_2.png" />
+    <Resource Include="Images\CardImages\remington_niveau_3.png" />
+    <Resource Include="Images\CardImages\renisurrection.png" />
+    <Resource Include="Images\CardImages\repos_eternel.png" />
+    <Resource Include="Images\CardImages\requinou.png" />
+    <Resource Include="Images\CardImages\requin_lancier.png" />
+    <Resource Include="Images\CardImages\requin_marteau.png" />
+    <Resource Include="Images\CardImages\rituel_sram.png" />
+    <Resource Include="Images\CardImages\robin_des_landes.png" />
+    <Resource Include="Images\CardImages\rocknocerok.png" />
+    <Resource Include="Images\CardImages\roi_chafer.png" />
+    <Resource Include="Images\CardImages\roi_des_bouftous.png" />
+    <Resource Include="Images\CardImages\roi_des_truches.png" />
+    <Resource Include="Images\CardImages\roi_gelax.png" />
+    <Resource Include="Images\CardImages\rollback.png" />
+    <Resource Include="Images\CardImages\ronce.png" />
+    <Resource Include="Images\CardImages\ronces_agressives.png" />
+    <Resource Include="Images\CardImages\ronces_multiples.png" />
+    <Resource Include="Images\CardImages\rose_demoniaque.png" />
+    <Resource Include="Images\CardImages\rose_maudite.png" />
+    <Resource Include="Images\CardImages\rose_tenebreuse.png" />
+    <Resource Include="Images\CardImages\roulage_de_pelle.png" />
+    <Resource Include="Images\CardImages\roulette_ecaflip.png" />
+    <Resource Include="Images\CardImages\ruel_niveau_1.png" />
+    <Resource Include="Images\CardImages\ruel_niveau_2.png" />
+    <Resource Include="Images\CardImages\ruel_niveau_3.png" />
+    <Resource Include="Images\CardImages\rupuce.png" />
+    <Resource Include="Images\CardImages\sablier_de_xelor.png" />
+    <Resource Include="Images\CardImages\sacrifice.png" />
+    <Resource Include="Images\CardImages\sacrifice_poupesque.png" />
+    <Resource Include="Images\CardImages\sacrifice_veritable.png" />
+    <Resource Include="Images\CardImages\sac_de_graines.png" />
+    <Resource Include="Images\CardImages\saignee_mortelle.png" />
+    <Resource Include="Images\CardImages\saizan_zen.png" />
+    <Resource Include="Images\CardImages\salbatroce.png" />
+    <Resource Include="Images\CardImages\sambalinette.png" />
+    <Resource Include="Images\CardImages\sanction.png" />
+    <Resource Include="Images\CardImages\sangsuce_tsu_tsu.png" />
+    <Resource Include="Images\CardImages\sang_brulant.png" />
+    <Resource Include="Images\CardImages\sang_meprise.png" />
+    <Resource Include="Images\CardImages\sang_tatoue.png" />
+    <Resource Include="Images\CardImages\sarcophage.png" />
+    <Resource Include="Images\CardImages\savoir_sadida.png" />
+    <Resource Include="Images\CardImages\scaraboss.png" />
+    <Resource Include="Images\CardImages\scarabrute.png" />
+    <Resource Include="Images\CardImages\scarador.png" />
+    <Resource Include="Images\CardImages\scarafon.png" />
+    <Resource Include="Images\CardImages\scaramel.png" />
+    <Resource Include="Images\CardImages\scara_bruni.png" />
+    <Resource Include="Images\CardImages\scara_celeste.png" />
+    <Resource Include="Images\CardImages\scoreur.png" />
+    <Resource Include="Images\CardImages\second_souffle.png" />
+    <Resource Include="Images\CardImages\seduction.png" />
+    <Resource Include="Images\CardImages\selk_ator.png" />
+    <Resource Include="Images\CardImages\sellor_noob.png" />
+    <Resource Include="Images\CardImages\senilite.png" />
+    <Resource Include="Images\CardImages\sergent_poiscaille.png" />
+    <Resource Include="Images\CardImages\shafouine.png" />
+    <Resource Include="Images\CardImages\shava_shavien.png" />
+    <Resource Include="Images\CardImages\shin_larve.png" />
+    <Resource Include="Images\CardImages\silas_le_solitaire.png" />
+    <Resource Include="Images\CardImages\sinistro.png" />
+    <Resource Include="Images\CardImages\sir_comte_flex.png" />
+    <Resource Include="Images\CardImages\skale.png" />
+    <Resource Include="Images\CardImages\snouffle.png" />
+    <Resource Include="Images\CardImages\snouffle_noir.png" />
+    <Resource Include="Images\CardImages\sono_sino.png" />
+    <Resource Include="Images\CardImages\sournoiserie.png" />
+    <Resource Include="Images\CardImages\sphincter_cell.png" />
+    <Resource Include="Images\CardImages\sufod.png" />
+    <Resource Include="Images\CardImages\sylvine_folherbe.png" />
+    <Resource Include="Images\CardImages\tartanque.png" />
+    <Resource Include="Images\CardImages\taure.png" />
+    <Resource Include="Images\CardImages\teleportation.png" />
+    <Resource Include="Images\CardImages\tireur_d_elite.png" />
+    <Resource Include="Images\CardImages\tir_rapide.png" />
+    <Resource Include="Images\CardImages\tiwabbit_kiafin.png" />
+    <Resource Include="Images\CardImages\tiwabbit_tados.png" />
+    <Resource Include="Images\CardImages\tofoune.png" />
+    <Resource Include="Images\CardImages\tofukaz.png" />
+    <Resource Include="Images\CardImages\tofu_celeste.png" />
+    <Resource Include="Images\CardImages\tofu_dominant.png" />
+    <Resource Include="Images\CardImages\tofu_enrage.png" />
+    <Resource Include="Images\CardImages\tofu_explosif.png" />
+    <Resource Include="Images\CardImages\tofu_male.png" />
+    <Resource Include="Images\CardImages\tofu_mutant.png" />
+    <Resource Include="Images\CardImages\tofu_noir.png" />
+    <Resource Include="Images\CardImages\tofu_royal.png" />
+    <Resource Include="Images\CardImages\tofu_ventripotent.png" />
+    <Resource Include="Images\CardImages\tolot.png" />
+    <Resource Include="Images\CardImages\tomla_klass.png" />
+    <Resource Include="Images\CardImages\tournesol_sauvage.png" />
+    <Resource Include="Images\CardImages\toutancoffron.png" />
+    <Resource Include="Images\CardImages\tout_ou_rien.png" />
+    <Resource Include="Images\CardImages\transchamation.png" />
+    <Resource Include="Images\CardImages\transformatose.png" />
+    <Resource Include="Images\CardImages\transphorzerker.png" />
+    <Resource Include="Images\CardImages\tremblement_de_terre.png" />
+    <Resource Include="Images\CardImages\tristecoeur.png" />
+    <Resource Include="Images\CardImages\tristepin_niveau_1.png" />
+    <Resource Include="Images\CardImages\tristepin_niveau_2.png" />
+    <Resource Include="Images\CardImages\tristepin_niveau_3.png" />
+    <Resource Include="Images\CardImages\tronknyde.png" />
+    <Resource Include="Images\CardImages\trool.png" />
+    <Resource Include="Images\CardImages\trucage.png" />
+    <Resource Include="Images\CardImages\truche.png" />
+    <Resource Include="Images\CardImages\truchemuche.png" />
+    <Resource Include="Images\CardImages\truche_foldingue.png" />
+    <Resource Include="Images\CardImages\truche_royale.png" />
+    <Resource Include="Images\CardImages\truchideur.png" />
+    <Resource Include="Images\CardImages\truchon.png" />
+    <Resource Include="Images\CardImages\tsar_tsu_tsu.png" />
+    <Resource Include="Images\CardImages\tsutsu_mikaze.png" />
+    <Resource Include="Images\CardImages\uppercut.png" />
+    <Resource Include="Images\CardImages\ush_niveau_1.png" />
+    <Resource Include="Images\CardImages\ush_niveau_2.png" />
+    <Resource Include="Images\CardImages\ush_niveau_3.png" />
+    <Resource Include="Images\CardImages\veuve_noire.png" />
+    <Resource Include="Images\CardImages\virilite.png" />
+    <Resource Include="Images\CardImages\vitalite_ancestrale.png" />
+    <Resource Include="Images\CardImages\wabbit.png" />
+    <Resource Include="Images\CardImages\wabbit_gm.png" />
+    <Resource Include="Images\CardImages\wabbit_infernal.png" />
+    <Resource Include="Images\CardImages\wabbit_tados.png" />
+    <Resource Include="Images\CardImages\wa_wabbit.png" />
+    <Resource Include="Images\CardImages\welsh.png" />
+    <Resource Include="Images\CardImages\will_skass.png" />
+    <Resource Include="Images\CardImages\wobot_01.png" />
+    <Resource Include="Images\CardImages\wobot_02.png" />
+    <Resource Include="Images\CardImages\wo_wabbit.png" />
+    <Resource Include="Images\CardImages\xelorium.png" />
+    <Resource Include="Images\CardImages\yugo_niveau_1.png" />
+    <Resource Include="Images\CardImages\yugo_niveau_2.png" />
+    <Resource Include="Images\CardImages\yugo_niveau_3.png" />
+    <Resource Include="Images\CardImages\zaldior.png" />
+    <Resource Include="Images\CardImages\zespadon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.105.2\build\net451\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.105.2\build\net451\System.Data.SQLite.Core.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Ce projet fait référence à des packages NuGet qui sont manquants sur cet ordinateur. Utilisez l'option de restauration des packages NuGet pour les télécharger. Pour plus d'informations, consultez http://go.microsoft.com/fwlink/?LinkID=322105. Le fichier manquant est : {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.105.2\build\net451\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.105.2\build\net451\System.Data.SQLite.Core.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -10,13 +10,13 @@ using AddOn_Krosmaga___Blou_fire.Enums;
 
 namespace AddOn_Krosmaga___Blou_fire.Converter
 {
-	public class GameResultToStringConverter :IValueConverter
+	public class GameResultToStringConverter : IValueConverter
 	{
 		public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
 		{
 			if (value != null)
 			{
-				var result = (GameResult)value;
+				var result = (GameResult) value;
 				var c = "N/A";
 				if (result == GameResult.Win)
 					c = "Win";

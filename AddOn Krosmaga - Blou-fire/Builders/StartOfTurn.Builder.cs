@@ -7,97 +7,75 @@ using System.Threading.Tasks;
 
 namespace AddOn_Krosmaga___Blou_fire.Builders
 {
-    class StartOfTurn
-    {
-        private KrosmagaReader reader;
+	class StartOfTurn
+	{
+		private KrosmagaReader reader;
 
-        private int _turn;
-        private int _playerIndex;
-        private int _realActionPoints;
-        private int _maxActionPoints;
-        
-        public int Turn
-        {
-            get
-            {
-                return _turn;
-            }
+		private int _turn;
+		private int _playerIndex;
+		private int _realActionPoints;
+		private int _maxActionPoints;
 
-            set
-            {
-                _turn = value;
-            }
-        }
+		public int Turn
+		{
+			get { return _turn; }
 
-        public int PlayerIndex
-        {
-            get
-            {
-                return _playerIndex;
-            }
+			set { _turn = value; }
+		}
 
-            set
-            {
-                _playerIndex = value;
-            }
-        }
+		public int PlayerIndex
+		{
+			get { return _playerIndex; }
 
-        public int RealActionPoints
-        {
-            get
-            {
-                return _realActionPoints;
-            }
+			set { _playerIndex = value; }
+		}
 
-            set
-            {
-                _realActionPoints = value;
-            }
-        }
+		public int RealActionPoints
+		{
+			get { return _realActionPoints; }
 
-        public int MaxActionPoints
-        {
-            get
-            {
-                return _maxActionPoints;
-            }
+			set { _realActionPoints = value; }
+		}
 
-            set
-            {
-                _maxActionPoints = value;
-            }
-        }
+		public int MaxActionPoints
+		{
+			get { return _maxActionPoints; }
 
-        public StartOfTurn() { }
+			set { _maxActionPoints = value; }
+		}
 
-        public void Decode(byte[] array)
-        {
-            reader = new KrosmagaReader();
-            reader.SetData(array);
-            int tag;
+		public StartOfTurn()
+		{
+		}
 
-            while(reader.B.BaseStream.Position < reader.B.BaseStream.Length && (tag = reader.ReadTag()) != 0)
-            {
-                if(tag == 8)
-                {
-                    Turn = (int)reader.ReadRawVarint32();
-                    continue;
-                }
-                else if(tag == 16)
-                {
-                    PlayerIndex = (int)reader.ReadRawVarint32();
-                    continue;
-                }
-                else if(tag == 24)
-                {
-                    RealActionPoints = (int)reader.ReadRawVarint32();
-                    continue;
-                }
-                else if(tag == 32)
-                {
-                    MaxActionPoints = (int)reader.ReadRawVarint32();
-                }
-            }
-        }
-    }
+		public void Decode(byte[] array)
+		{
+			reader = new KrosmagaReader();
+			reader.SetData(array);
+			int tag;
+
+			while (reader.B.BaseStream.Position < reader.B.BaseStream.Length && (tag = reader.ReadTag()) != 0)
+			{
+				if (tag == 8)
+				{
+					Turn = (int) reader.ReadRawVarint32();
+					continue;
+				}
+				else if (tag == 16)
+				{
+					PlayerIndex = (int) reader.ReadRawVarint32();
+					continue;
+				}
+				else if (tag == 24)
+				{
+					RealActionPoints = (int) reader.ReadRawVarint32();
+					continue;
+				}
+				else if (tag == 32)
+				{
+					MaxActionPoints = (int) reader.ReadRawVarint32();
+				}
+			}
+		}
+	}
 }

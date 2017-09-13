@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace AddOn_Krosmaga___Blou_fire.Enums
 {
-    public enum CardLocation
-    {
-        Nowhere,
-        OwnHand,
-        OwnPile,
-        OwnGraveyard,
-        OpponentHand,
-        OpponentPile,
-        OpponentGraveyard,
-        Playground
-    }
+	public enum CardLocation
+	{
+		Nowhere,
+		OwnHand,
+		OwnPile,
+		OwnGraveyard,
+		OpponentHand,
+		OpponentPile,
+		OpponentGraveyard,
+		Playground
+	}
 }
