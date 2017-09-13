@@ -253,6 +253,7 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 
 		private int _ownCardsInHand;
 		private int _opponentCardsInHand;
+		private int _currentTurn;
 
 
 		public int OwnCardsInHand
@@ -272,6 +273,16 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 			{
 				_opponentCardsInHand = value;
 				OnPropertyChanged("OpponentCardsInHand");
+			}
+		}
+
+		public int CurrentTurn
+		{
+			get { return _currentTurn; }
+			set
+			{
+				_currentTurn = value;
+				OnPropertyChanged("CurrentTurn");
 			}
 		}
 

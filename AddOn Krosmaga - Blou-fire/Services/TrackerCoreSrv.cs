@@ -99,7 +99,7 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 							Builders.StartOfTurn startofturn = new Builders.StartOfTurn();
 							send = _binaryReader.ReadBytes((int) size);
 							startofturn.Decode(send);
-							//UIActionStartOfTurn(startofturn);
+							UIActionStartOfTurn(startofturn);
 							break;
 						case "89438706FC2AE2CD11B3891BE848AD7887": // GameStartedEvent
 							Builders.GameStarted gamestarted = new Builders.GameStarted();
@@ -150,6 +150,11 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 			}
 		}
 
+		private void UIActionStartOfTurn(StartOfTurn startofturn)
+		{
+				TrackerModel.CurrentTurn = startofturn.Turn;
+		}
+
 
 		private void UIActionGameEventStarted(GameStarted value)
 		{
@@ -195,7 +200,7 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 		private void UIActionGameFinishedEvent(GameFinished value)
 		{
 			Connector.SaveMatchResult(TrackerModel.OpponentClasse, new List<int>(), TrackerModel.VsPseudo,
-				TrackerModel.OwnClasse, value.WinnerPlayer == TrackerModel.MyIndex ? 1 : 0, 0, (int) TrackerModel.GameType,
+				TrackerModel.OwnClasse, value.WinnerPlayer == TrackerModel.MyIndex ? 1 : 0, TrackerModel.CurrentTurn, (int) TrackerModel.GameType,
 				DateTime.Now);
 			UpdateMatchsWithFilterList();
 		}
