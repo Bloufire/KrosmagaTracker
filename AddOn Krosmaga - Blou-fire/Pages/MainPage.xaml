@@ -59,8 +59,8 @@
     </controls:MetroWindow.RightWindowCommands>
     <controls:MetroWindow.Flyouts >
         <controls:FlyoutsControl >
-            <controls:Flyout Header="FlyoutLeft" Position="Left" Width="auto" IsOpen="{Binding IsLeftFlyOpen}">
-                <tracker:TrackerStats></tracker:TrackerStats>
+            <controls:Flyout Header="Settings" Position="Left" Width="auto" IsOpen="{Binding IsLeftFlyOpen}">
+               <tracker:SettingsPage></tracker:SettingsPage>
             </controls:Flyout>
         </controls:FlyoutsControl>
     </controls:MetroWindow.Flyouts >

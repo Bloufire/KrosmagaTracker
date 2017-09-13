@@ -7,6 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
+using AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker;
 using AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel;
 using AddOn_Krosmaga___Blou_fire.Helpers;
 using AddOn_Krosmaga___Blou_fire.Pages;

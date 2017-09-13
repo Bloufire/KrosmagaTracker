@@ -13,12 +13,12 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace AddOn_Krosmaga___Blou_fire.Pages
+namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker
 {
 	/// <summary>
 	/// Logique d'interaction pour SettingsPage.xaml
 	/// </summary>
-	public partial class SettingsPage 
+	public partial class SettingsPage : UserControl
 	{
 		public SettingsPage()
 		{

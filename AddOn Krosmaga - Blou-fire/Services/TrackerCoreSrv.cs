@@ -214,10 +214,10 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 			TrackerModel.FilteredGames = TrackerModel.FilteredGames;
 		}
 
-	
+
 
 		#endregion
 
-
+		
 	}
 }

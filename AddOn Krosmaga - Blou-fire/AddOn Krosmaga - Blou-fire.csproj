@@ -148,6 +148,9 @@
     <Compile Include="FlyoutControls\Tracker\ProfileDataPage.xaml.cs">
       <DependentUpon>ProfileDataPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FlyoutControls\Tracker\SettingsPage.xaml.cs">
+      <DependentUpon>SettingsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FlyoutControls\Tracker\TrackerStats.xaml.cs">
       <DependentUpon>TrackerStats.xaml</DependentUpon>
     </Compile>
@@ -160,12 +163,9 @@
     <Compile Include="KrosmagaReader.cs" />
     <Compile Include="Models\TrackerModel.cs" />
     <Compile Include="PageModels\MainPageModel.cs" />
-    <Compile Include="PageModels\SettingsPageModel.cs" />
+    <Compile Include="FlyoutControls\Tracker\PageModel\SettingsPageModel.cs" />
     <Compile Include="Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\SettingsPage.xaml.cs">
-      <DependentUpon>SettingsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ProducerConsumer\Consumer.cs" />
     <Compile Include="ProducerConsumer\Producer.cs" />
@@ -186,6 +186,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="FlyoutControls\Tracker\SettingsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="FlyoutControls\Tracker\TrackerStats.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -203,10 +207,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Pages\MainPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\SettingsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
