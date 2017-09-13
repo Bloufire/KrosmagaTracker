@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker
 {
 	/// <summary>
-	/// Logique d'interaction pour SettingsPage.xaml
+	/// Logique d'interaction pour MainUserControlPage.xaml
 	/// </summary>
-	public partial class SettingsPage : UserControl
+	public partial class MainUserControlPage : UserControl
 	{
-		public SettingsPage()
+		public MainUserControlPage()
 		{
 			InitializeComponent();
 		}

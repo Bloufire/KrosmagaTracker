@@ -1,18 +1,24 @@
-﻿using System.Windows;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Input;
 using AddOn_Krosmaga___Blou_fire.Helpers;
 using MahApps.Metro;
 
 namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 {
-	public class SettingsPageModel : ObservableObject
+	public class SettingsFlyoutPageModel : ObservableObject
 	{
-		public SettingsPageModel()
+		public SettingsFlyoutPageModel()
 		{
 			//Association des commands ici
 			AccentSelectionChanged = new RelayCommand(ChangeAppStyle);
 			//ColorsSelectorOnSelectionChanged = new RelayCommand(ColorsSelectorOnSelectionChangedAction);
 			ThemeSelectionChanged = new RelayCommand(ChangeAppStyle);
+
 		}
 
 		#region Properties
@@ -63,7 +69,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 			// set the Red accent and dark theme only to the current window
 			ThemeManager.ChangeAppStyle(Application.Current,
 				ThemeManager.GetAccent(SelectedItemAccent.Name),
-				ThemeManager.GetAppTheme(_darkAndLightThemeBool == true ? "basedark" :"baselight"));
+				ThemeManager.GetAppTheme(_darkAndLightThemeBool == true ? "basedark" : "baselight"));
 		}
 	}
 }

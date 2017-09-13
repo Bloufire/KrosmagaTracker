@@ -139,17 +139,22 @@
     <Compile Include="Enums\ResultHandlerType.cs" />
     <Compile Include="Enums\SaisonsEnum.cs" />
     <Compile Include="Enums\TriggerableCapacityType.cs" />
+    <Compile Include="FlyoutControls\Tracker\MainUserControlPage.xaml.cs">
+      <DependentUpon>MainUserControlPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FlyoutControls\Tracker\MatchesHistoPage.xaml.cs">
       <DependentUpon>MatchesHistoPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FlyoutControls\Tracker\PageModel\MainUserControlPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\MatchesHistoPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\ProfileDataPageModel.cs" />
+    <Compile Include="FlyoutControls\Tracker\PageModel\SettingsFlyoutPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\TrackerStatsPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\ProfileDataPage.xaml.cs">
       <DependentUpon>ProfileDataPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="FlyoutControls\Tracker\SettingsPage.xaml.cs">
-      <DependentUpon>SettingsPage.xaml</DependentUpon>
+    <Compile Include="FlyoutControls\Tracker\SettingsFlyoutPage.xaml.cs">
+      <DependentUpon>SettingsFlyoutPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="FlyoutControls\Tracker\TrackerStats.xaml.cs">
       <DependentUpon>TrackerStats.xaml</DependentUpon>
@@ -163,7 +168,6 @@
     <Compile Include="KrosmagaReader.cs" />
     <Compile Include="Models\TrackerModel.cs" />
     <Compile Include="PageModels\MainPageModel.cs" />
-    <Compile Include="FlyoutControls\Tracker\PageModel\SettingsPageModel.cs" />
     <Compile Include="Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -178,6 +182,10 @@
     <Compile Include="UIElements\Match.cs" />
     <Compile Include="UIPlayerDatas.cs" />
     <Compile Include="Utility\LocUtil.cs" />
+    <Page Include="FlyoutControls\Tracker\MainUserControlPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="FlyoutControls\Tracker\MatchesHistoPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -186,7 +194,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="FlyoutControls\Tracker\SettingsPage.xaml">
+    <Page Include="FlyoutControls\Tracker\SettingsFlyoutPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

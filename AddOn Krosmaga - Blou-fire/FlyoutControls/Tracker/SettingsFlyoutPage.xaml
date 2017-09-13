@@ -1,42 +1,20 @@
-﻿<controls:MetroWindow x:Class="AddOn_Krosmaga___Blou_fire.Pages.SettingsPage"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:AddOn_Krosmaga___Blou_fire.Pages"
-      xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
-      xmlns:converters="http://metro.mahapps.com/winfx/xaml/shared"
-      xmlns:metro="clr-namespace:MahApps.Metro;assembly=MahApps.Metro"
-      xmlns:pageModels="clr-namespace:AddOn_Krosmaga___Blou_fire.PageModels"
-      xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
-      mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="500"
-      SizeToContent="WidthAndHeight"
-      GlowBrush="{DynamicResource AccentColorBrush}"
-      Title="SettingsPage">
-    <Window.DataContext>
-        <pageModels:SettingsPageModel />
-    </Window.DataContext>
-    <controls:MetroWindow.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
-                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
-    </controls:MetroWindow.Resources>
-    <controls:MetroWindow.TitleTemplate>
-        <DataTemplate>
-            <TextBlock Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Content, Converter={converters:ToUpperConverter}}"
-                       TextTrimming="CharacterEllipsis"
-                       VerticalAlignment="Center"
-                       Margin="8 -1 0 0"
-                       FontSize="{DynamicResource WindowTitleFontSize}"
-                       FontFamily="{DynamicResource DefaultFont}" />
-        </DataTemplate>
-    </controls:MetroWindow.TitleTemplate>
-    <Grid>
+﻿<UserControl x:Class="AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.SettingsFlyoutPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker"
+             xmlns:pageModel="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel"
+             xmlns:metro="clr-namespace:MahApps.Metro;assembly=MahApps.Metro"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.DataContext>
+   <pageModel:SettingsFlyoutPageModel></pageModel:SettingsFlyoutPageModel>
+    </UserControl.DataContext>
 
+    <Grid>
         <Grid.Resources>
             <Style TargetType="Button"
                    BasedOn="{StaticResource MetroButton}">

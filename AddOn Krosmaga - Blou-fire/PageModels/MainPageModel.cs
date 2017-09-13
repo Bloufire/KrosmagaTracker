@@ -151,15 +151,7 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 
 		private void BtnSettingsOnClick()
 		{
-			if (settingsWindow != null)
-			{
-				settingsWindow.Activate();
-				return;
-			}
-
-			settingsWindow = new SettingsPage();
-			settingsWindow.Closed += (o, args) => settingsWindow = null;
-			settingsWindow.Show();
+			IsLeftFlyOpen = !_isLeftFlyOpen;
 		}
 
 		public ICommand BtnDiscord_OnClick { get; }

@@ -15,9 +15,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 
 		public ProfileDataPageModel()
 		{
-			App myApplication = ((App) Application.Current);
-			_trackerSrv = myApplication.TrackerCoreService;
-			_trackerSrv.TrackerModel.PropertyChanged += _trackerSrv_PropertyChanged;
+			TrackerSrv.TrackerModel.PropertyChanged += _trackerSrv_PropertyChanged;
 			UpdateScreen();
 		}
 
@@ -28,9 +26,9 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 
 		private void UpdateScreen()
 		{
-			MyPseudo = _trackerSrv.TrackerModel.OwnPseudo;
-			MyWinsNb = _trackerSrv.TrackerModel.OwnWinsNb;
-			MyLosesNb = _trackerSrv.TrackerModel.OwnLosesNb;
+			MyPseudo = TrackerSrv.TrackerModel.OwnPseudo;
+			MyWinsNb = TrackerSrv.TrackerModel.OwnWinsNb;
+			MyLosesNb = TrackerSrv.TrackerModel.OwnLosesNb;
 		}
 
 		#endregion
@@ -38,7 +36,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 		#region Properties
 
 		private string _myPseudo;
-		private TrackerCoreSrv _trackerSrv;
+		
 
 		public string MyPseudo
 		{

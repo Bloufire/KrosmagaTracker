@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker
 {
 	/// <summary>
-	/// Logique d'interaction pour MatchesHistoPage.xaml
+	/// Logique d'interaction pour SettingsFlyoutPage.xaml
 	/// </summary>
-	public partial class MatchesHistoPage
+	public partial class SettingsFlyoutPage : UserControl
 	{
-		public MatchesHistoPage()
+		public SettingsFlyoutPage()
 		{
 			InitializeComponent();
 		}

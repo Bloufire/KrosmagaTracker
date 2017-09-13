@@ -10,7 +10,7 @@
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300">
     <UserControl.DataContext>
-        <pageModel:MatchesHistoPageModel />
+       <pageModel:MatchesHistoPageModel></pageModel:MatchesHistoPageModel>
     </UserControl.DataContext>
     <UserControl.Resources>
         <converter:GameResultToBrushConverter x:Key="GameResultToBrushConverter" />
