@@ -10,6 +10,7 @@ namespace AddOn_Krosmaga___Blou_fire.Helpers
 	public class RelayCommand : ICommand
 	{
 		private readonly Action actionAExecuter;
+		private readonly Action<object> _execute;
 
 		public RelayCommand(Action action)
 		{
@@ -25,7 +26,33 @@ namespace AddOn_Krosmaga___Blou_fire.Helpers
 
 		public void Execute(object parameter)
 		{
+			if(parameter == null)
 			actionAExecuter();
+			_execute(parameter);
 		}
+
+			#region Fields
+
+
+
+		#endregion // Fields
+
+		#region Constructors
+
+		public RelayCommand(Action<object> execute)
+			: this(execute, null)
+		{
+		}
+
+		public RelayCommand(Action<object> execute, Predicate<object> canExecute)
+		{
+			if (execute == null)
+				throw new ArgumentNullException("execute");
+
+			_execute = execute;
+		}
+		#endregion // Constructors
+
+		
 	}
 }

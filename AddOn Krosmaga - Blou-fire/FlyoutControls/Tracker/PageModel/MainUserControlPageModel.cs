@@ -14,21 +14,22 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 		public MainUserControlPageModel()
 		{
 			TrackerSrv.PropertyChanged += TrackerSrv_PropertyChanged;
-			MenuSelectionChanged = new RelayCommand(SetNewContent);
+		
 
 		}
 
 		private void TrackerSrv_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
 		{
-			SetNewContent();
+			
 		}
 
-		private void SetNewContent()
+		private void SetNewContent(object args)
 		{
-			if (SelectedMenuStat.Parent.GetType() == typeof(TreeViewItem)) // verify that parent is TreeViewItem
+			var selectedItem = (TreeViewItem) args;
+			if (selectedItem.Parent.GetType() == typeof(TreeViewItem)) // verify that parent is TreeViewItem
 			{
-				TreeViewItem parent = (TreeViewItem)SelectedMenuStat.Parent;
-				switch ($"{parent.Header}_{SelectedMenuStat.Header}")
+				TreeViewItem parent = (TreeViewItem)selectedItem.Parent;
+				switch ($"{parent.Header}_{selectedItem.Header}")
 				{
 					case "Arena_Summary":
 						SelectedMenuFilterStat = new TrackerStats();
@@ -61,19 +62,21 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 		}
 
 		#region MenuSelection
+		private ICommand _menuSelectionChanged;
 
-		public ICommand MenuSelectionChanged { get; }
-
-		private TreeViewItem _selectedMenuStat;
-		public TreeViewItem SelectedMenuStat
+		public ICommand MenuSelectionChanged
 		{
-			get => this._selectedMenuStat;
-			set
+			get
 			{
-				this._selectedMenuStat = value;
-				OnPropertyChanged("SelectedMenuStat");
+
+				if (_menuSelectionChanged == null)
+					_menuSelectionChanged = new RelayCommand(this.SetNewContent);
+
+				return _menuSelectionChanged;
 			}
 		}
+
+	
 
 		#endregion
 

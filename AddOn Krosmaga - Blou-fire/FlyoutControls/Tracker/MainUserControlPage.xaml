@@ -17,7 +17,7 @@
         <StackPanel>
             
         <GroupBox Header="Menu" DockPanel.Dock="Left" Width="180" MinWidth="180">
-                <TreeView HorizontalAlignment="Stretch" VerticalAlignment="Stretch" SelectedValuePath="">
+                <TreeView Name="TreeViewMenuStat" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" SelectedValuePath="">
                     <TreeViewItem Header="Arena" IsExpanded="True">
                         <TreeViewItem Header="Summary"></TreeViewItem>
                         <TreeViewItem Header="Runs"></TreeViewItem>
@@ -29,18 +29,13 @@
                     </TreeViewItem>
                     <i:Interaction.Triggers>
                         <i:EventTrigger EventName="SelectedItemChanged">
-                            <i:InvokeCommandAction Command="{Binding MenuSelectionChanged}" />
+                            <i:InvokeCommandAction Command="{Binding MenuSelectionChanged}" CommandParameter="{Binding ElementName=TreeViewMenuStat, Path=SelectedItem}" />
                         </i:EventTrigger>
                     </i:Interaction.Triggers>
-                    <TreeView.ItemContainerStyle>
-                        <Style TargetType="{x:Type TreeViewItem}">
-                            <Setter Property="IsSelected" Value="{Binding IsSelected}" />
-                        </Style>
-                    </TreeView.ItemContainerStyle>
                 </TreeView>
        </GroupBox>
-            <GroupBox Header="Filtres" DockPanel.Dock="Left" Width="180" MinWidth="180" Content="{Binding SelectedMenuFilterStat}">
-                
+            <GroupBox Header="Filtres" DockPanel.Dock="Left" Width="180" MinWidth="180" >
+                <controls:TransitioningContentControl x:Name="transitioning"  Transition="Default" Content="{Binding SelectedMenuFilterStat}"/>
             </GroupBox>
         </StackPanel>
         <Grid>
