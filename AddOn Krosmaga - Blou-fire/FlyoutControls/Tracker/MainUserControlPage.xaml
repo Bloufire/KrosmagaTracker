@@ -34,32 +34,13 @@
                     </i:Interaction.Triggers>
                 </TreeView>
        </GroupBox>
-            <GroupBox Header="Filtres" DockPanel.Dock="Left" Width="180" MinWidth="180" >
-                <controls:TransitioningContentControl x:Name="transitioning"  Transition="Default" Content="{Binding SelectedMenuFilterStat}"/>
+        <GroupBox Header="Filtres" DockPanel.Dock="Left" Width="180" MinWidth="180"  >
+                <controls:TransitioningContentControl x:Name="StatFilterContent"  Transition="Default" Content="{Binding SelectedMenuFilterStat}"/>
             </GroupBox>
         </StackPanel>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-            <GroupBox Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2" Header="Histo" HorizontalAlignment="Stretch">
-                <local:MatchesHistoPage />
-            </GroupBox>
-            <GroupBox Grid.Row="0" Grid.Column="2" Header="Sample">
-                <StackPanel>
-                    <!--<Button Command="{Binding OpenLeftFlyoutCmd}">Open Left Side</Button>-->
-                </StackPanel>
-            </GroupBox>
-            <GroupBox Grid.Column="0" Grid.Row="2" Header="Profile Data">
-                <local:ProfileDataPage />
-            </GroupBox>
-        </Grid>
+
+        <GroupBox Header="Histo">
+            <controls:TransitioningContentControl x:Name="StatChartContent"  Transition="Default" Content="{Binding SelectedMenuStatChartContent}"/>
+        </GroupBox>
     </DockPanel>
 </UserControl>

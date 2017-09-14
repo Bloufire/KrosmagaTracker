@@ -166,6 +166,7 @@
     <Compile Include="Helpers\ThemeManagerHelper.cs" />
     <Compile Include="Helpers\ViewModelBase.cs" />
     <Compile Include="KrosmagaReader.cs" />
+    <Compile Include="Models\FiltersStatModel.cs" />
     <Compile Include="Models\TrackerModel.cs" />
     <Compile Include="PageModels\MainPageModel.cs" />
     <Compile Include="Pages\MainPage.xaml.cs">

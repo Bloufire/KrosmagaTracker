@@ -28,6 +28,7 @@ namespace AddOn_Krosmaga___Blou_fire.Helpers
 		{
 			if(parameter == null)
 			actionAExecuter();
+			else
 			_execute(parameter);
 		}
 

@@ -31,6 +31,8 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 		public TrackerModel
 			TrackerModel { get; set; } //Model qui sera à découper par page. Peut contenir toutes les données actuellement.
 
+		public FiltersStatModel CurrentFiltersStatModel { get; set; }
+
 		#endregion
 
 		protected override void OnPropertyChanged(string propertyName)
@@ -216,10 +218,20 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 			{
 				TrackerModel.FilteredGames.Add(new UIElements.Match(item));
 			}
-			TrackerModel.FilteredGames = TrackerModel.FilteredGames;
+			
+			TrackerModel.FilteredGames = StartFiltreMatches();  
 		}
 
+		private List<Match> StartFiltreMatches()
+		{
+			if (CurrentFiltersStatModel == null) return TrackerModel.FilteredGames;
 
+			if (CurrentFiltersStatModel.SelectedClass != ClassEnum.None)
+				TrackerModel.FilteredGames.RemoveAll(x => x.PlayerClassName != CurrentFiltersStatModel.SelectedClass.ToString());
+			if (CurrentFiltersStatModel.SelectedVsClass != ClassEnum.None)
+				TrackerModel.FilteredGames.RemoveAll(x => x.OppenentClassName != CurrentFiltersStatModel.SelectedVsClass.ToString());
+			return TrackerModel.FilteredGames;
+		}
 
 		#endregion
 

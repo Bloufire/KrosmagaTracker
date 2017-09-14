@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using AddOn_Krosmaga___Blou_fire.Enums;
 using AddOn_Krosmaga___Blou_fire.Helpers;
+using AddOn_Krosmaga___Blou_fire.Models;
 using MahApps.Metro;
 
 namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
@@ -19,6 +20,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 			ComboSaisonValues = Enum.GetValues(typeof(SaisonsEnum));
 			ComboClasseValues = Enum.GetValues(typeof(ClassEnum));
 			ComboOppClasseValues = Enum.GetValues(typeof(ClassEnum));
+			TrackerSrv.CurrentFiltersStatModel = new FiltersStatModel();
 		}
 
 		#region properties
@@ -43,6 +45,8 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 			set
 			{
 				this._selectedItemSaison = value;
+				var v = SaisonsEnum.TryParse(_selectedItemSaison, out SaisonsEnum result);
+				TrackerSrv.CurrentFiltersStatModel.SelectedSaison = result;
 				OnPropertyChanged("SelectedItemSaison");
 			}
 		}
@@ -69,6 +73,8 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 			set
 			{
 				this._selectedItemOppClasse = value;
+				var v = ClassEnum.TryParse(_selectedItemOppClasse, out ClassEnum result);
+				TrackerSrv.CurrentFiltersStatModel.SelectedVsClass = result;
 				OnPropertyChanged("SelectedItemOppClasse");
 			}
 		}
@@ -95,6 +101,9 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 			set
 			{
 				this._selectedItemClasse = value;
+
+				var v = ClassEnum.TryParse(_selectedItemClasse, out ClassEnum result);
+				TrackerSrv.CurrentFiltersStatModel.SelectedClass = result;
 				OnPropertyChanged("SelectedItemClasse");
 			}
 		}

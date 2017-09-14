@@ -9,6 +9,7 @@ using System.Windows.Media;
 using System.Xml.Serialization;
 using AddOn_Krosmaga___Blou_fire.Enums;
 using AddOn_Krosmaga___Blou_fire.Helpers;
+using AddOn_Krosmaga___Blou_fire.Models;
 using AddOn_Krosmaga___Blou_fire.Services;
 
 namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
@@ -22,10 +23,17 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 		public MatchesHistoPageModel() : base()
 		{
 			TrackerSrv.TrackerModel.PropertyChanged += _trackerSrv_PropertyChanged;
+			TrackerSrv.CurrentFiltersStatModel.PropertyChanged += CurrentFiltersStatModel_PropertyChanged; ;
 			TrackerSrv.UpdateMatchsWithFilterList();
 			UpdateScreen();
 		}
 
+		private void CurrentFiltersStatModel_PropertyChanged(object sender, PropertyChangedEventArgs e)
+		{
+			TrackerSrv.UpdateMatchsWithFilterList();
+		}
+
+	
 
 		private void UpdateScreen()
 		{

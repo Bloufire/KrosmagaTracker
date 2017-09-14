@@ -32,15 +32,24 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 				switch ($"{parent.Header}_{selectedItem.Header}")
 				{
 					case "Arena_Summary":
-						SelectedMenuFilterStat = new TrackerStats();
+						SelectedMenuFilterStat = null;
+						SelectedMenuStatChartContent = null;
 						break;
 					case "Arena_Runs":
+						SelectedMenuFilterStat = null;
+						SelectedMenuStatChartContent = null;
 						break;
 					case "Constructed_Summary":
+						SelectedMenuFilterStat = new TrackerStats();
+						SelectedMenuStatChartContent = new MatchesHistoPage();
 						break;
 					case "Constructed_Matches":
+						SelectedMenuFilterStat = null;
+						SelectedMenuStatChartContent = null;
 						break;
 					case "Constructed_Charts":
+						SelectedMenuFilterStat = null;
+						SelectedMenuStatChartContent = null;
 						break;
 				}
 				
@@ -49,20 +58,11 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 
 		}
 
+		private ICommand _menuSelectionChanged;
 		private UserControl selectedMenuFilterStat;
-
-		public UserControl SelectedMenuFilterStat
-		{
-			get { return selectedMenuFilterStat; }
-			set
-			{
-				selectedMenuFilterStat = value;
-				OnPropertyChanged(nameof(SelectedMenuFilterStat));
-			}
-		}
+		private UserControl selectedMenuStatChartContent;
 
 		#region MenuSelection
-		private ICommand _menuSelectionChanged;
 
 		public ICommand MenuSelectionChanged
 		{
@@ -76,7 +76,26 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 			}
 		}
 
-	
+		#region Content Properties
+		public UserControl SelectedMenuStatChartContent
+		{
+			get { return selectedMenuStatChartContent; }
+			set
+			{
+				selectedMenuStatChartContent = value;
+				OnPropertyChanged(nameof(SelectedMenuStatChartContent));
+			}
+		}
+		public UserControl SelectedMenuFilterStat
+		{
+			get { return selectedMenuFilterStat; }
+			set
+			{
+				selectedMenuFilterStat = value;
+				OnPropertyChanged(nameof(SelectedMenuFilterStat));
+			}
+		} 
+		#endregion
 
 		#endregion
 
