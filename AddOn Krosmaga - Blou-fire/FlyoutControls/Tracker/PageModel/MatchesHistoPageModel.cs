@@ -23,6 +23,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 		public MatchesHistoPageModel() : base()
 		{
 			TrackerSrv.TrackerModel.PropertyChanged += _trackerSrv_PropertyChanged;
+			if(TrackerSrv.CurrentFiltersStatModel != null)
 			TrackerSrv.CurrentFiltersStatModel.PropertyChanged += CurrentFiltersStatModel_PropertyChanged; ;
 			TrackerSrv.UpdateMatchsWithFilterList();
 			UpdateScreen();

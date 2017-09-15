@@ -15,10 +15,8 @@
                       BorderThickness="0"
                       GlowBrush="Black"
                       ResizeMode="CanResizeWithGrip"
-                      
                       WindowTransitionsEnabled="False"
                       WindowStartupLocation="CenterScreen">
-
     <Window.DataContext>
         <pageModels:MainPageModel></pageModels:MainPageModel>
     </Window.DataContext>
@@ -66,7 +64,16 @@
             <controls:MetroTabItem Header="Stats">
                 <tracker:MainUserControlPage></tracker:MainUserControlPage>
             </controls:MetroTabItem>
-            <controls:MetroTabItem Header="Profile">
+            <controls:MetroTabItem Header="Historique">
+                <GroupBox Header="Historique des matchs">
+                    <tracker:MatchesHistoPage></tracker:MatchesHistoPage>
+                </GroupBox>
+
+            </controls:MetroTabItem>
+            <controls:MetroTabItem Header="Dofus Tool">
+                <tracker:DofusTrackerPage></tracker:DofusTrackerPage>
+            </controls:MetroTabItem>
+            <controls:MetroTabItem Header="Profil">
                 <tracker:ProfileDataPage></tracker:ProfileDataPage>
             </controls:MetroTabItem>
         </controls:MetroAnimatedTabControl>

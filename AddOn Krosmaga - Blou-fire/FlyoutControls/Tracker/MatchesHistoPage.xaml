@@ -10,7 +10,7 @@
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300">
     <UserControl.DataContext>
-       <pageModel:MatchesHistoPageModel></pageModel:MatchesHistoPageModel>
+        <pageModel:MatchesHistoPageModel></pageModel:MatchesHistoPageModel>
     </UserControl.DataContext>
     <UserControl.Resources>
         <converter:GameResultToBrushConverter x:Key="GameResultToBrushConverter" />
@@ -21,7 +21,88 @@
               AutoGenerateColumns="False" CanUserAddRows="False"
               CanUserDeleteRows="False" CanUserResizeRows="False"
               IsReadOnly="True" CanUserResizeColumns="True">
+        <DataGrid.RowStyle>
+            <Style TargetType="{x:Type DataGridRow}">
+                <Setter Property="DetailsVisibility" Value="Collapsed"/>
+                <Style.Triggers>
+                    <Trigger Property="IsSelected" Value="True">
+                        <Trigger.EnterActions>
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="DetailsVisibility">
+                                        <DiscreteObjectKeyFrame KeyTime="0:0:0" Value="{x:Static Visibility.Visible}"/>
+                                    </ObjectAnimationUsingKeyFrames>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </Trigger.EnterActions>
+                        <Trigger.ExitActions>
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="DetailsVisibility">
+                                        <DiscreteObjectKeyFrame KeyTime="0:0:0.4"  Value="{x:Static Visibility.Collapsed}"/>
+                                    </ObjectAnimationUsingKeyFrames>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </Trigger.ExitActions>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </DataGrid.RowStyle>
+        <DataGrid.RowDetailsTemplate>
+            <DataTemplate>
+                <Grid>
+                    <Grid.LayoutTransform>
+                        <ScaleTransform ScaleY="0"/>
+                    </Grid.LayoutTransform>
+                    <Grid.Style>
+                        <Style TargetType="Grid">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsSelected, RelativeSource={RelativeSource AncestorType=DataGridRow}}"  Value="True">
+                                    <DataTrigger.EnterActions>
+                                        <BeginStoryboard>
+                                            <Storyboard>
+                                                <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="LayoutTransform.ScaleY">
+                                                    <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1">
+                                                        <EasingDoubleKeyFrame.EasingFunction>
+                                                            <CubicEase EasingMode="EaseInOut" />
+                                                        </EasingDoubleKeyFrame.EasingFunction>
+                                                    </EasingDoubleKeyFrame>
+                                                </DoubleAnimationUsingKeyFrames>
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </DataTrigger.EnterActions>
+                                    <DataTrigger.ExitActions>
+                                        <BeginStoryboard>
+                                            <Storyboard>
+                                                <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="LayoutTransform.ScaleY">
+                                                    <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0">
+                                                        <EasingDoubleKeyFrame.EasingFunction>
+                                                            <CubicEase EasingMode="EaseInOut" />
+                                                        </EasingDoubleKeyFrame.EasingFunction>
+                                                    </EasingDoubleKeyFrame>
+                                                </DoubleAnimationUsingKeyFrames>
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </DataTrigger.ExitActions>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Grid.Style>
+                    <Grid.Children>
+                         <local:CardPage ></local:CardPage>
+                    </Grid.Children>
+                </Grid>
+            </DataTemplate>
+        </DataGrid.RowDetailsTemplate>
         <DataGrid.Columns>
+            <DataGridTemplateColumn Header="test" SortMemberPath="PlayerHero">
+                <DataGridTemplateColumn.CellTemplate>
+                    <DataTemplate>
+                        <Button Content="Decks" x:Name="b1"  >
+                        </Button>
+                    </DataTemplate>
+                </DataGridTemplateColumn.CellTemplate>
+            </DataGridTemplateColumn>
             <DataGridTemplateColumn Header="Class" SortMemberPath="PlayerHero">
                 <DataGridTemplateColumn.CellTemplate>
                     <DataTemplate>
