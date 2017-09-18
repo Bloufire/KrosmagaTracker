@@ -61,19 +61,21 @@
     </controls:MetroWindow.Flyouts>
     <StackPanel>
         <controls:MetroAnimatedTabControl>
-            <controls:MetroTabItem Header="Stats">
+            <controls:MetroTabItem Header="[Stats]">
                 <tracker:MainUserControlPage></tracker:MainUserControlPage>
             </controls:MetroTabItem>
-            <controls:MetroTabItem Header="Historique">
+            <controls:MetroTabItem Header="[Historique]">
                 <GroupBox Header="Historique des matchs">
                     <tracker:MatchesHistoPage></tracker:MatchesHistoPage>
                 </GroupBox>
-
             </controls:MetroTabItem>
-            <controls:MetroTabItem Header="Dofus Tool">
+            <controls:MetroTabItem Header="[Game Tracker]">
+              <tracker:InGameTrackerPage></tracker:InGameTrackerPage>
+            </controls:MetroTabItem>
+            <controls:MetroTabItem Header="[Dofus Tool]">
                 <tracker:DofusTrackerPage></tracker:DofusTrackerPage>
             </controls:MetroTabItem>
-            <controls:MetroTabItem Header="Profil">
+            <controls:MetroTabItem Header="[Profil]">
                 <tracker:ProfileDataPage></tracker:ProfileDataPage>
             </controls:MetroTabItem>
         </controls:MetroAnimatedTabControl>

@@ -148,6 +148,9 @@
     <Compile Include="FlyoutControls\Tracker\DofusTrackerPage.xaml.cs">
       <DependentUpon>DofusTrackerPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FlyoutControls\Tracker\InGameTrackerPage.xaml.cs">
+      <DependentUpon>InGameTrackerPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FlyoutControls\Tracker\MainUserControlPage.xaml.cs">
       <DependentUpon>MainUserControlPage.xaml</DependentUpon>
     </Compile>
@@ -161,6 +164,7 @@
     <Compile Include="FlyoutControls\Tracker\PageModel\ProfileDataPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\SettingsFlyoutPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\TrackerStatsPageModel.cs" />
+    <Compile Include="FlyoutControls\Tracker\PageModel\VsProfileDataPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\ProfileDataPage.xaml.cs">
       <DependentUpon>ProfileDataPage.xaml</DependentUpon>
     </Compile>
@@ -171,6 +175,9 @@
       <DependentUpon>TrackerStats.xaml</DependentUpon>
     </Compile>
     <Compile Include="Converter\EnumDescriptionConverter.cs" />
+    <Compile Include="FlyoutControls\Tracker\VsProfileDataPage.xaml.cs">
+      <DependentUpon>VsProfileDataPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Helpers\Helpers.cs" />
     <Compile Include="Helpers\ObservableObject.cs" />
     <Compile Include="Helpers\RelayCommand.cs" />
@@ -206,6 +213,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="FlyoutControls\Tracker\InGameTrackerPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="FlyoutControls\Tracker\MainUserControlPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -223,6 +234,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="FlyoutControls\Tracker\TrackerStats.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FlyoutControls\Tracker\VsProfileDataPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

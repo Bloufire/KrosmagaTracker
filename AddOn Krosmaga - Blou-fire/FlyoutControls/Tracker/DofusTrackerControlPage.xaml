@@ -15,14 +15,14 @@
         <Image Margin="5" Height="30" Width="30" Source="../../Images/dofus_hidden.png"></Image>
 
         <TextBox x:Name="txtNum" x:FieldModifier="private" Margin="5" Width="50" Text="{Binding NumValue}"/>
-        <Button x:Name="cmdUp" x:FieldModifier="private" Margin="3" Content="+1" Width="25">
+        <Button x:Name="cmdUp" x:FieldModifier="private" Margin="3" Content="+1" Width="30">
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="Click">
                     <i:InvokeCommandAction Command="{Binding AddOneCounter}" />
                 </i:EventTrigger>
             </i:Interaction.Triggers>
         </Button>
-        <Button x:Name="cmdDown" x:FieldModifier="private" Margin="3"  Content="-1" Width="25"  >
+        <Button x:Name="cmdDown" x:FieldModifier="private" Margin="3"  Content="-1" Width="30"  >
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="Click">
                     <i:InvokeCommandAction Command="{Binding SubOneCounter}"/>
