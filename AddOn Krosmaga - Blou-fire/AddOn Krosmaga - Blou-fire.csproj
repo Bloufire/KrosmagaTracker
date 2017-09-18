@@ -40,7 +40,7 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>icon_LMV_icon.ico</ApplicationIcon>
+    <ApplicationIcon>icone_bureau_blou.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="De.TorstenMandelkow.MetroChart, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d5b8d1bbc99c4a2a, processorArchitecture=MSIL">
@@ -352,6 +352,7 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="icon_LMV_icon.ico" />
+    <Resource Include="icone_bureau_blou.ico" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\CardImages\abragland.png" />

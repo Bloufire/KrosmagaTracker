@@ -81,41 +81,43 @@ namespace AddOn_Krosmaga___Blou_fire.UIElements
 		}
 	}
 
-	public class GodClassToColor : IValueConverter
-	{
-		public object Convert(object value, Type targetType,
-			object parameter, CultureInfo culture)
-		{
-			JsonCardsParser.Card val = (JsonCardsParser.Card) value;
-			if (val.Rarity == 4)
-				return "#6D58C2"; // INFINITE
-			else
-			{
-				switch (val.GodType)
-				{
-					case 1:
-						return "#B02511"; // IOP
-					case 2:
-						return "#474D1A"; // CRA
-					case 3:
-						return "#C05343"; // ENI
-					case 4:
-						return "#78128D"; // ECA
-					case 5:
-						return "#A87E00"; // ENU
-					case 6:
-						return "#434D67"; // SRAM
-					case 7:
-						return "#29387E"; // XEL
-					case 8:
-						return "#382F25"; // SACRI
-					case 10:
-						return "#848A00"; // SADI
-					default:
-						return "#734744"; // NEUTRE
-				}
-			}
-		}
+    public class GodClassToColor : IValueConverter
+    {
+        public object Convert(object value, Type targetType,
+            object parameter, CultureInfo culture)
+        {
+            JsonCardsParser.Card val = (JsonCardsParser.Card)value;
+            if (val.Rarity == 4)
+                return "#A5D3E7"; // INFINITE
+            else if (val.Rarity == 3)
+                return "#6840BD"; // KROSMIQUE
+            else
+            {
+                switch (val.GodType)
+                {
+                    case 1:
+                        return "#B02511"; // IOP
+                    case 2:
+                        return "#474D1A"; // CRA
+                    case 3:
+                        return "#C05343"; // ENI
+                    case 4:
+                        return "#78128D"; // ECA
+                    case 5:
+                        return "#A87E00"; // ENU
+                    case 6:
+                        return "#434D67"; // SRAM
+                    case 7:
+                        return "#29387E"; // XEL
+                    case 8:
+                        return "#382F25"; // SACRI
+                    case 10:
+                        return "#848A00"; // SADI
+                    default:
+                        return "#734744"; // NEUTRE
+                }
+            }
+        }
 
 		public object ConvertBack(object value, Type targetType, object parameter,
 			System.Globalization.CultureInfo culture)
