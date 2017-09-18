@@ -10,9 +10,26 @@
     <UserControl.DataContext>
         <pageModel:CardPageModel></pageModel:CardPageModel>
     </UserControl.DataContext>
-    <StackPanel>
-        <TextBlock Text="{Binding CardToShow.Name}"></TextBlock>
-        <TextBlock Text="{Binding CardToShow.CostAP}"></TextBlock>
-    </StackPanel>
-    
+    <UserControl.Resources>
+       
+    </UserControl.Resources>
+    <Grid Height="25" Opacity="0.8" Background="{Binding CardToShow, Converter={StaticResource GodToColor}}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="46" />
+            <ColumnDefinition Width="*" MaxWidth="70" />
+            <ColumnDefinition Width="25" />
+        </Grid.ColumnDefinitions>
+        <Grid.ToolTip>
+            <ToolTip Background="Transparent" BorderBrush="Transparent">
+                <Image Width="204" Height="256" Source="{Binding CardToShow.ImagePath}"/>
+            </ToolTip>
+        </Grid.ToolTip>
+        <Image Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Image.Source>
+                <CroppedBitmap Source="{Binding CardToShow.ImagePath}" SourceRect="48, 68, 124, 58"/>
+            </Image.Source>
+        </Image>
+        <Label Grid.Column="1" Foreground="White" Content="{Binding CardToShow.UIName}" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Label Grid.Column="2" Foreground="White" FontWeight="Bold" Content="{Binding CardCount, Converter={StaticResource IntToCardCountStringConverter}}" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+    </Grid>
 </UserControl>
