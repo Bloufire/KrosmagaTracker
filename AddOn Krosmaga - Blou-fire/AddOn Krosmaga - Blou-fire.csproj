@@ -164,6 +164,8 @@
     <Compile Include="FlyoutControls\Tracker\PageModel\ProfileDataPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\SettingsFlyoutPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\TrackerStatsPageModel.cs" />
+    <Compile Include="FlyoutControls\Tracker\PageModel\VsCardsInHandPageModel.cs" />
+    <Compile Include="FlyoutControls\Tracker\PageModel\VsPlayedCardsPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\VsProfileDataPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\ProfileDataPage.xaml.cs">
       <DependentUpon>ProfileDataPage.xaml</DependentUpon>

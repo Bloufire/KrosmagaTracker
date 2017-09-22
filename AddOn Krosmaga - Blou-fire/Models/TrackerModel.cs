@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AddOn_Krosmaga___Blou_fire.Enums;
 using AddOn_Krosmaga___Blou_fire.UIElements;
+using JsonCardsParser;
 
 namespace AddOn_Krosmaga___Blou_fire.Models
 {
@@ -14,6 +15,11 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 	/// </summary>
 	public class TrackerModel : ObservableObject
 	{
+		public TrackerModel()
+		{
+			
+		}
+
 		#region Own Profile Data
 
 		#region OwnPseudo
@@ -254,6 +260,13 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 		private int _ownCardsInHand;
 		private int _opponentCardsInHand;
 		private int _currentTurn;
+		private List<DeckUI> _deck;
+
+		private List<Card> _opponentPlayedCards;
+		private List<DeckUI> _cardAlreadyPlayed;
+		private List<DeckUI> _cardsInHand;
+		private List<DeckUI> _deckInfinites;
+		private List<DeckUI> _deckKrosmiques;
 
 
 		public int OwnCardsInHand
@@ -286,11 +299,119 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 			}
 		}
 
+		public List<JsonCardsParser.Card> OpponentPlayedCards
+		{
+			get
+			{
+				if (_opponentPlayedCards != null) return _opponentPlayedCards;
+				_opponentPlayedCards = new List<Card>();
+				return _opponentPlayedCards;
+			}
+
+			set
+			{
+				_opponentPlayedCards = value;
+				OnPropertyChanged("OpponentPlayedCards");
+			}
+		}
+
+		public List<DeckUI> CardAlreadyPlayed
+		{
+			get
+			{
+				if (_cardAlreadyPlayed != null) return _cardAlreadyPlayed;
+				_cardAlreadyPlayed = new List<DeckUI>();
+				return _cardAlreadyPlayed;
+			}
+			set
+			{
+				_cardAlreadyPlayed = value;
+				OnPropertyChanged("CardAlreadyPlayed");
+
+			}
+		}
+
+		public List<DeckUI> Deck
+		{
+			get
+			{
+				if (_deck != null) return _deck;
+				_deck = new List<DeckUI>();
+				return _deck;
+			}
+			set
+			{
+				_deck = value;
+				OnPropertyChanged("Deck");
+			}
+		}
+
+
+		public List<DeckUI> CardsInHand
+		{
+			get
+			{
+				if (_cardsInHand != null) return _cardsInHand;
+				_cardsInHand = new List<DeckUI>();
+				return _cardsInHand;
+			}
+			set
+			{
+				_cardsInHand = value;
+				OnPropertyChanged("CardsInHand");
+			}
+		}
+
+		public List<DeckUI> DeckInfinites
+		{
+			get
+			{
+				if (_deckInfinites != null) return _deckInfinites;
+				_deckInfinites = new List<DeckUI>();
+				return _deckInfinites;
+			}
+			set
+			{
+				_deckInfinites = value;
+				OnPropertyChanged("DeckInfinites");
+			}
+		}
+
+		public List<DeckUI> DeckKrosmiques
+		{
+			get
+			{
+				if (_deckKrosmiques != null) return _deckKrosmiques;
+				_deckKrosmiques = new List<DeckUI>();
+				return _deckKrosmiques;
+			}
+			set
+			{
+				_deckKrosmiques = value;
+				OnPropertyChanged("DeckKrosmiques");
+			}
+		}
+
 		#endregion
 
 		protected override void OnPropertyChanged(string propertyName)
 		{
 			base.OnPropertyChanged(propertyName);
+		}
+
+		public void AddCardToDeck(DeckUI card)
+		{
+			Deck.Add(card);
+		}
+
+		public void RemoveCardFromCardInHand(DeckUI card)
+		{
+			CardsInHand.Remove(card);
+		}
+
+		public void AddCardToCardInHand(DeckUI card)
+		{
+			CardsInHand.Add(card);
 		}
 	}
 }

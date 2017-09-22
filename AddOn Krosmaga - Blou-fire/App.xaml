@@ -18,6 +18,7 @@
                 <ResourceDictionary
                     Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/basedark.xaml" />
             </ResourceDictionary.MergedDictionaries>
+            <BooleanToVisibilityConverter x:Key="GodToColor" />
         </ResourceDictionary>
     </Application.Resources>
 </Application>

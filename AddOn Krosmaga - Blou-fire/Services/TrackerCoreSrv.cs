@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using AddOn_Krosmaga___Blou_fire.Builders;
+using AddOn_Krosmaga___Blou_fire.Data;
 using AddOn_Krosmaga___Blou_fire.Enums;
 using AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel;
 using AddOn_Krosmaga___Blou_fire.Helpers;
@@ -32,7 +33,7 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 			TrackerModel { get; set; } //Model qui sera à découper par page. Peut contenir toutes les données actuellement.
 
 		public FiltersStatModel CurrentFiltersStatModel { get; set; }
-
+		
 		#endregion
 
 		protected override void OnPropertyChanged(string propertyName)
@@ -119,7 +120,7 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 							Builders.GameEvents gameevents = new Builders.GameEvents();
 							send = _binaryReader.ReadBytes((int) size);
 							gameevents.Decode(send);
-							//UIActionGameEventsEvent(gameevents);
+							UIActionGameEventsEvent(gameevents);
 							break;
 						case "24454BD9B42E0A231174846DD1A86A7ABB": // PlayerAccountLoadedEvent
 							Builders.PlayerAccountLoaded playerAccountLoaded = new Builders.PlayerAccountLoaded();
@@ -204,7 +205,247 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 			Connector.SaveMatchResult(TrackerModel.OpponentClasse, new List<int>(), TrackerModel.VsPseudo,
 				TrackerModel.OwnClasse, value.WinnerPlayer == TrackerModel.MyIndex ? 1 : 0, TrackerModel.CurrentTurn, (int) TrackerModel.GameType,
 				DateTime.Now);
+			TrackerModel.OpponentPlayedCards.Clear();
 			UpdateMatchsWithFilterList();
+		}
+
+		private void UIActionGameEventsEvent(Builders.GameEvents value)
+		{
+		
+				foreach (var item in value.EventsList)
+				{
+					IterateEvents(item);
+				}
+			
+		}
+
+		private void IterateEvents(GameEvent value)
+		{
+			List<Builders.EventsManager.CardMovedEvent> list = new List<Builders.EventsManager.CardMovedEvent>();
+			if (value.EventType == Enums.EventType.CARD_MOVED)
+			{
+				Builders.EventsManager.CardMovedEvent cardMoved = new Builders.EventsManager.CardMovedEvent(value);
+
+				//Si une carte de ladversaire se "déplace"
+				if ((cardMoved.CardLocationFrom == Enums.CardLocation.OwnHand &&
+				     cardMoved.CardLocationTo == Enums.CardLocation.Playground ||
+				     cardMoved.CardLocationFrom == Enums.CardLocation.OwnHand &&
+				     cardMoved.CardLocationTo == Enums.CardLocation.OwnGraveyard ||
+				     cardMoved.CardLocationFrom == Enums.CardLocation.OpponentPile &&
+				     cardMoved.CardLocationTo == Enums.CardLocation.OpponentGraveyard ||
+				     cardMoved.CardLocationFrom == Enums.CardLocation.OwnPile &&
+				     cardMoved.CardLocationTo == Enums.CardLocation.OwnGraveyard) &&
+				    cardMoved.ConcernedFighter != TrackerModel.MyIndex)
+				{
+					TrackerModel.OpponentPlayedCards.Add(CardsCollection.getCardById((int)cardMoved.TradingCard));
+					JsonCardsParser.Card card = CardsCollection.getCardById((int)cardMoved.TradingCard);
+					UIElements.DeckUI deckUI;
+					if (!TrackerModel.CardAlreadyPlayed.Any(x => x.CardCount == cardMoved.Card))
+					{
+						deckUI = TrackerModel.Deck.FirstOrDefault(x => x.Card == card);
+						if (deckUI != null)
+							deckUI.CardCount++;
+						else
+						{
+							deckUI = new UIElements.DeckUI(card, 1);
+							TrackerModel.AddCardToDeck(deckUI);
+						}
+						
+					}
+					else
+					{
+						deckUI = TrackerModel.CardsInHand.FirstOrDefault(x => x.Card == card);
+						if (deckUI != null)
+						{
+							if (deckUI.CardCount > 1)
+							{
+								deckUI.CardCount--;
+							}
+							else
+							{
+								TrackerModel.RemoveCardFromCardInHand(deckUI);
+							}
+								}
+					}
+				}
+				if (cardMoved.CardLocationTo == Enums.CardLocation.Playground ||
+				    cardMoved.CardLocationTo == Enums.CardLocation.OwnGraveyard ||
+				    cardMoved.CardLocationTo == Enums.CardLocation.OpponentGraveyard ||
+				    cardMoved.CardLocationTo == Enums.CardLocation.OpponentHand ||
+				    cardMoved.CardLocationTo == Enums.CardLocation.OwnHand)
+				{
+					if (!TrackerModel.CardAlreadyPlayed.Any(x => x.CardCount == cardMoved.Card))
+					{
+						JsonCardsParser.Card card = null;
+						if (cardMoved.CardLocationFrom == Enums.CardLocation.Nowhere &&
+						    cardMoved.CardLocationTo == Enums.CardLocation.OwnHand && cardMoved.ConcernedFighter != TrackerModel.MyIndex)
+						{
+							if (cardMoved.RelatedTradingCard == 589)
+								card = new JsonCardsParser.Card() { Id = 1565 };
+						}
+						else
+						{
+							if (cardMoved.TradingCard == 1565)
+								card = new JsonCardsParser.Card() { Id = 1565 };
+							else
+								card = CardsCollection.getCardById((int)cardMoved.TradingCard);
+						}
+						if (card != null)
+							TrackerModel.CardAlreadyPlayed.Add(new UIElements.DeckUI(card, cardMoved.Card));
+					}
+				}
+				if ((cardMoved.CardLocationTo == Enums.CardLocation.OwnHand && cardMoved.ConcernedFighter != TrackerModel.MyIndex) ||
+				    (cardMoved.CardLocationTo == Enums.CardLocation.OpponentHand && cardMoved.ConcernedFighter == TrackerModel.MyIndex))
+				{
+					TrackerModel.OpponentCardsInHand += 1;
+				}
+				if ((cardMoved.CardLocationTo == Enums.CardLocation.OwnHand && cardMoved.ConcernedFighter == TrackerModel.MyIndex) ||
+				    (cardMoved.CardLocationTo == Enums.CardLocation.OpponentHand && cardMoved.ConcernedFighter != TrackerModel.MyIndex))
+				{
+					TrackerModel.OwnCardsInHand += 1;
+				}
+				if ((cardMoved.CardLocationFrom == Enums.CardLocation.OwnHand && cardMoved.ConcernedFighter != TrackerModel.MyIndex) ||
+				    (cardMoved.CardLocationFrom == Enums.CardLocation.OpponentHand &&
+				     cardMoved.ConcernedFighter == TrackerModel.MyIndex))
+				{
+					TrackerModel.OpponentCardsInHand -= 1;
+				}
+				if ((cardMoved.CardLocationFrom == Enums.CardLocation.OwnHand && cardMoved.ConcernedFighter == TrackerModel.MyIndex) ||
+				    (cardMoved.CardLocationFrom == Enums.CardLocation.OpponentHand &&
+				     cardMoved.ConcernedFighter != TrackerModel.MyIndex))
+				{
+					TrackerModel.OwnCardsInHand -= 1;
+				}
+				if (cardMoved.ConcernedFighter == TrackerModel.MyIndex)
+				{
+					if ((cardMoved.CardLocationFrom == Enums.CardLocation.OpponentGraveyard &&
+					     cardMoved.CardLocationTo == Enums.CardLocation.OpponentHand) ||
+					    (cardMoved.CardLocationFrom == Enums.CardLocation.Playground &&
+					     cardMoved.CardLocationTo == Enums.CardLocation.OpponentHand) ||
+					    (cardMoved.CardLocationFrom == Enums.CardLocation.Nowhere &&
+					     cardMoved.CardLocationTo == Enums.CardLocation.OpponentHand))
+					{
+						JsonCardsParser.Card card = card = CardsCollection.getCardById((int)cardMoved.TradingCard);
+						if (card == null)
+						{
+							if (cardMoved.TriggeredEvents.Any(x => x.EventType == Enums.EventType.PLAYER_CARD_COST_MODIFIED))
+							{
+								card = CardsCollection.getCardById(cardMoved.TriggeredEvents
+									.First(x => x.EventType == Enums.EventType.PLAYER_CARD_COST_MODIFIED).RelatedTradingCardId);
+							}
+						}
+						if (card != null)
+						{
+							UIElements.DeckUI deckUI = TrackerModel.CardsInHand.FirstOrDefault(x => x.Card == card);
+							if (deckUI != null)
+								deckUI.CardCount++;
+							else
+							{
+								deckUI = new UIElements.DeckUI(card, 1);
+								TrackerModel.AddCardToCardInHand(deckUI);
+							}
+						}
+						}
+				}
+				else
+				{
+					if ((cardMoved.CardLocationFrom == Enums.CardLocation.Playground &&
+					     cardMoved.CardLocationTo == Enums.CardLocation.OwnHand) ||
+					    (cardMoved.CardLocationFrom == Enums.CardLocation.OwnGraveyard &&
+					     cardMoved.CardLocationTo == Enums.CardLocation.OwnHand) ||
+					    (cardMoved.CardLocationFrom == Enums.CardLocation.OpponentGraveyard &&
+					     cardMoved.CardLocationTo == Enums.CardLocation.OwnHand))
+					{
+						JsonCardsParser.Card card;
+						if (cardMoved.CardLocationFrom == Enums.CardLocation.OpponentGraveyard &&
+						    cardMoved.CardLocationTo == Enums.CardLocation.OwnHand)
+						{
+							UIElements.DeckUI deckUi = TrackerModel.CardAlreadyPlayed.FirstOrDefault(x => x.CardCount == cardMoved.Card);
+							card = deckUi.Card;
+						}
+						else
+						{
+							card = CardsCollection.getCardById((int)cardMoved.TradingCard);
+						}
+						if (card != null)
+						{
+							UIElements.DeckUI deckUI = TrackerModel.CardsInHand.FirstOrDefault(x => x.Card == card);
+							if (deckUI != null)
+								deckUI.CardCount++;
+							else
+							{
+								deckUI = new UIElements.DeckUI(card, 1);
+								TrackerModel.AddCardToCardInHand(deckUI);
+							}
+						}
+						}
+				}
+				if (cardMoved.CardLocationFrom == Enums.CardLocation.OpponentHand &&
+				    cardMoved.CardLocationTo == Enums.CardLocation.Nowhere && cardMoved.ConcernedFighter == TrackerModel.MyIndex)
+				{
+					UIElements.DeckUI deckui = TrackerModel.CardAlreadyPlayed.FirstOrDefault(x => x.CardCount == cardMoved.Card);
+					//if (deckui != null && deckui.Card.Id == 1565)
+					//	TrackerModel.OpponentFleaux -= 1;
+				}
+			}
+			else if (value.EventType == Enums.EventType.CARD_TO_BE_PLAYED)
+			{
+				var eventCardMoved = value.TriggeredEvents.FirstOrDefault(x => x.EventType == Enums.EventType.CARD_MOVED);
+				if (eventCardMoved != null)
+				{
+					Builders.EventsManager.CardMovedEvent cardMoved = new Builders.EventsManager.CardMovedEvent(eventCardMoved);
+					if (cardMoved.CardLocationFrom == Enums.CardLocation.OwnHand &&
+					    cardMoved.CardLocationTo == Enums.CardLocation.Nowhere && cardMoved.ConcernedFighter != TrackerModel.MyIndex)
+					{
+						//if (value.UInt1 == 1565)
+						//	UIDatas.OpponentFleaux -= 1;
+					}
+				}
+			}
+			else if (value.EventType == Enums.EventType.A_O_E_ACTIVATED)
+			{
+				var eventCardMoved = value.TriggeredEvents.FirstOrDefault(x => x.EventType == Enums.EventType.CARD_MOVED);
+				//if (UIDatas.ActualFleauxIds.Contains(value.Int1) && eventCardMoved != null &&
+				//    eventCardMoved.Int1 != TrackerModel.MyIndex)
+				//{
+				//	UIDatas.OpponentFleaux += 1;
+				//}
+			}
+			else if (value.EventType == Enums.EventType.TURN_STARTED)
+			{
+				var listOfEvents = value.TriggeredEvents.Where(x => x.UInt1 == 589);
+				if (listOfEvents != null)
+				{
+					foreach (var item in listOfEvents)
+					{
+						Builders.EventsManager.NewAOEEvent newAOE = new Builders.EventsManager.NewAOEEvent(item);
+						/*if (UIDatas.ActualFleauxIds.Count >= 4)
+						    UIDatas.ActualFleauxIds.Dequeue();*/
+						//if (newAOE.TradingCardId == 589)
+						//	UIDatas.ActualFleauxIds.Enqueue(newAOE.ConcernedFightObject);
+					}
+				}
+			}
+			else if (value.EventType == Enums.EventType.NEW_A_O_E)
+			{
+				Builders.EventsManager.NewAOEEvent newAOE = new Builders.EventsManager.NewAOEEvent(value);
+				/*if (UIDatas.ActualFleauxIds.Count >= 4)
+				    UIDatas.ActualFleauxIds.Dequeue();*/
+				//if (newAOE.TradingCardId == 589)
+				//	UIDatas.ActualFleauxIds.Enqueue(newAOE.ConcernedFightObject);
+			}
+			else if (value.EventType == Enums.EventType.EFFECT_STOPPED)
+			{
+				//if (value.UInt1 == 589)
+				//{
+				//	UIDatas.ActualFleauxIds.Enqueue(value.Int1);
+				//}
+			}
+
+			foreach (var item in value.TriggeredEvents)
+			{
+				IterateEvents(item);
+			}
 		}
 
 
