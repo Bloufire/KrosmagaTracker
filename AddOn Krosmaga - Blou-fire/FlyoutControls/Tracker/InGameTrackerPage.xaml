@@ -5,26 +5,30 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
-    <StackPanel Orientation="Horizontal">
-    <StackPanel>
-        <GroupBox Header="Vs Profile">
+             d:DesignHeight="300" d:DesignWidth="600">
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <GroupBox Header="Vs Profile">
                 <local:VsProfileDataPage></local:VsProfileDataPage>
-        </GroupBox>
-        <GroupBox Header="Vs Cards">
-            <!--VS Cartes Jouées-->
             </GroupBox>
-    </StackPanel>
-        <StackPanel>
+            <GroupBox Header="Vs Cards">
+                <local:VsTrackedCardsPage></local:VsTrackedCardsPage>
+            </GroupBox>
+        </StackPanel >
+        <StackPanel Grid.Column="1">
             <GroupBox Header="Own Profile">
                 <local:ProfileDataPage></local:ProfileDataPage>
             </GroupBox>
             <GroupBox Header="Own Cards left">
-                    <!--Mes Cartes Restantes-->
+                <!--Mes Cartes Restantes-->
             </GroupBox>
         </StackPanel>
 
 
-    </StackPanel>
+    </Grid>
 
 </UserControl>

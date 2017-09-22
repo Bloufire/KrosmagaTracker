@@ -175,8 +175,17 @@
       <DependentUpon>TrackerStats.xaml</DependentUpon>
     </Compile>
     <Compile Include="Converter\EnumDescriptionConverter.cs" />
+    <Compile Include="FlyoutControls\Tracker\VsCardsInHandPage.xaml.cs">
+      <DependentUpon>VsCardsInHandPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FlyoutControls\Tracker\VsPlayedCardsPage.xaml.cs">
+      <DependentUpon>VsPlayedCardsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FlyoutControls\Tracker\VsProfileDataPage.xaml.cs">
       <DependentUpon>VsProfileDataPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FlyoutControls\Tracker\VsTrackedCardsPage.xaml.cs">
+      <DependentUpon>VsTrackedCardsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Helpers\Helpers.cs" />
     <Compile Include="Helpers\ObservableObject.cs" />
@@ -237,7 +246,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="FlyoutControls\Tracker\VsCardsInHandPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FlyoutControls\Tracker\VsPlayedCardsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="FlyoutControls\Tracker\VsProfileDataPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FlyoutControls\Tracker\VsTrackedCardsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -351,7 +372,6 @@
     <Resource Include="Images\DiscordIcon.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="icon_LMV_icon.ico" />
     <Resource Include="icone_bureau_blou.ico" />
   </ItemGroup>
   <ItemGroup>
