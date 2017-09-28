@@ -70,6 +70,7 @@
       <HintPath>..\packages\SciChart.Wpf.UI.Transitionz.1.0.4\lib\net45\SciChart.Wpf.UI.Transitionz.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.SQLite, Version=1.0.105.2, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Data.SQLite.Core.1.0.105.2\lib\net451\System.Data.SQLite.dll</HintPath>
@@ -196,10 +197,18 @@
     <Compile Include="Helpers\ViewModelBase.cs" />
     <Compile Include="KrosmagaReader.cs" />
     <Compile Include="Models\FiltersStatModel.cs" />
+    <Compile Include="Models\SettingsModel.cs" />
     <Compile Include="Models\TrackerModel.cs" />
     <Compile Include="PageModels\MainPageModel.cs" />
+    <Compile Include="PageModels\OverlayPageModel.cs" />
     <Compile Include="Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\OverlayPage.xaml.cs">
+      <DependentUpon>OverlayPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page1.xaml.cs">
+      <DependentUpon>Page1.xaml</DependentUpon>
     </Compile>
     <Compile Include="ProducerConsumer\Consumer.cs" />
     <Compile Include="ProducerConsumer\Producer.cs" />
@@ -280,6 +289,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\OverlayPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Page1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -308,7 +325,9 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\JsonCardsParser\JsonCardsParser.csproj">

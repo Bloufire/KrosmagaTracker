@@ -2,9 +2,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:AddOn_Krosmaga___Blou_fire"
              xmlns:system="clr-namespace:System;assembly=mscorlib"
-             StartupUri="Pages/MainPage.xaml"
+             StartupUri="Pages/OverlayPage.xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" d1p1:Ignorable="d"
-             xmlns:d1p1="http://schemas.openxmlformats.org/markup-compatibility/2006">
+             xmlns:d1p1="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
