@@ -1,47 +1,463 @@
-﻿<controls:MetroWindow  x:Class="AddOn_Krosmaga___Blou_fire.Pages.OverlayPage"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:AddOn_Krosmaga___Blou_fire.Pages"
-      xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
-      xmlns:tracker="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker"
-      xmlns:pageModels="clr-namespace:AddOn_Krosmaga___Blou_fire.PageModels"
-      xmlns:materialIcons="clr-namespace:MaterialIcons;assembly=MaterialIcons"
-      mc:Ignorable="d" 
-     
-      BorderThickness="0"
-      WindowStartupLocation="CenterScreen"
-      d:DesignHeight="800" 
-                       
-      Width="600"
-     TitlebarHeight="0"
-      
-                     >
+﻿<controls:MetroWindow x:Class="AddOn_Krosmaga___Blou_fire.Pages.OverlayPage"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                      xmlns:local="clr-namespace:AddOn_Krosmaga___Blou_fire.Pages"
+                      xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+                      xmlns:tracker="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker"
+                      xmlns:pageModels="clr-namespace:AddOn_Krosmaga___Blou_fire.PageModels"
+                      xmlns:materialIcons="clr-namespace:MaterialIcons;assembly=MaterialIcons"
+                      xmlns:converter="clr-namespace:AddOn_Krosmaga___Blou_fire.Converter"
+                      xmlns:Properties="clr-namespace:AddOn_Krosmaga___Blou_fire.Properties"
+                      xmlns:system="clr-namespace:System;assembly=mscorlib"
+                      xmlns:pages="clr-namespace:AddOn_Krosmaga___Blou_fire.OverlayContainer.Pages"
+                      xmlns:enums="clr-namespace:AddOn_Krosmaga___Blou_fire.Enums"
+                      mc:Ignorable="d"
+                      BorderThickness="0"
+                      WindowStartupLocation="CenterScreen"
+                      d:DesignHeight="750"
+                      WindowButtonCommandsOverlayBehavior="Flyouts"
+                      Width="600"
+                      WindowTitleBrush="Transparent"
+                      ShowTitleBar="{Binding IsLeftFlyOpen}"
+                      Topmost="True">
+
+    <controls:MetroWindow.Resources>
+        <converter:BoolToVisibiltyConverter x:Key="BoolToVis" />
+        <converter:BoolAndNegatToVisibiltyConverter x:Key="BoolAndNegatToVisibiltyConverter" />
+        <converter:NegatedBooleanConverter x:Key="NegatedBooleanConverter" />
+        <converter:SelectedToVisibilityConverter x:Key="SelectedToVisibilityConverter" />
+        <LinearGradientBrush
+            x:Key="HeaderBackgroundOpacityMask"
+            StartPoint="0,0"
+            EndPoint="1,0">
+            <GradientStop Color="#FFFFFFFF" Offset="0" />
+            <GradientStop Color="#FFFFFFFF" Offset="0.05" />
+            <GradientStop Color="#FFFFFFFF" Offset="1" />
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="FlyoutGradientBackground" StartPoint="0,0" EndPoint="1,0">
+            <GradientStop Color="#55bc99" Offset="0" />
+            <GradientStop Color="#000000" Offset="0.05" />
+            <GradientStop Color="#000000" Offset="1" />
+        </LinearGradientBrush>
+        <GridLength x:Key="SideMenuWidth">30</GridLength>
+        <system:Double x:Key="MainButtonSideMenuSize">50</system:Double>
+        <system:Double x:Key="MainButtonRectangleSize">30</system:Double>
+        <system:Double x:Key="SecondButtonSideMenuSize">40</system:Double>
+        <system:Double x:Key="SecondButtonRectangleSize">22</system:Double>
+        <system:Double x:Key="ThirdButtonSideMenuSize">30</system:Double>
+        <system:Double x:Key="ThirdButtonRectangleSize">15</system:Double>
+        <system:Object x:Key="VersionLabel">V1.0.0</system:Object>
+        <Thickness x:Key="ThirdButtonSideMenuBorderThickness">1</Thickness>
+        <Thickness x:Key="MainButtonSideMenuBorderThickness">2</Thickness>
+        <Brush x:Key="ButtonBorderBrush">White</Brush>
+    </controls:MetroWindow.Resources>
     <Window.DataContext>
-        <pageModels:OverlayPageModel></pageModels:OverlayPageModel>
+        <pageModels:OverlayPageModel />
     </Window.DataContext>
-    <controls:MetroWindow.Flyouts >
-        <controls:FlyoutsControl >
-            <controls:Flyout Header="Settings" Position="Right" Width="auto" IsOpen="{Binding IsLeftFlyOpen}">
-                <tracker:MatchesHistoPage></tracker:MatchesHistoPage>
+    <controls:MetroWindow.RightWindowCommands>
+        <controls:WindowCommands Visibility="{Binding IsLeftFlyOpen, Converter={StaticResource BoolToVis}}">
+            <Button Command="{Binding BtnDiscord_OnClick}">
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Width="14" Height="16" Margin="0,2,0,0">
+                        <Rectangle.Fill>
+                            <VisualBrush>
+                                <VisualBrush.Visual>
+                                    <Image Source="../Images/DiscordIcon.png" />
+                                </VisualBrush.Visual>
+                            </VisualBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <TextBlock Margin="4" VerticalAlignment="Center" Text="Discord" />
+                </StackPanel>
+            </Button>
+        </controls:WindowCommands>
+    </controls:MetroWindow.RightWindowCommands>
+    <controls:MetroWindow.Flyouts>
+        <controls:FlyoutsControl>
+            <controls:Flyout Background="Transparent" TitleVisibility="Collapsed" Position="Right" Width="auto"
+                             IsOpen="{Binding IsLeftFlyOpen}" CloseButtonVisibility="Collapsed">
+                <controls:TransitioningContentControl>
+                    <!--Conteneur du flyout + bouton "par dessus"-->
+                    <Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <!--Conteneur où on trouveras le menu-->
+                            <Grid Grid.Column="0" Grid.Row="1" Name="SideMenuOpenneddOverlay">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="{StaticResource SideMenuWidth}" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <!--bordure transparente-->
+                                <Border Background="Transparent" Grid.Column="0" />
+                                <!--bordure gauche overlay-->
+                                <Border BorderBrush="#55bc99" Grid.Column="1" Background="#55bc99"
+                                        CornerRadius="10,0,0,10">
+                                    <!--Menu vertical est ici-->
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+
+                                        <Button Command="{Binding BtnOpenOverlay_OnClick}" HorizontalAlignment="Right"
+                                                Width="{StaticResource ThirdButtonSideMenuSize}"
+                                                Height="{StaticResource ThirdButtonSideMenuSize}"
+                                                VerticalAlignment="Bottom"
+                                                Style="{DynamicResource MetroCircleButtonStyle}"
+                                                BorderThickness="{StaticResource ThirdButtonSideMenuBorderThickness}"
+                                                BorderBrush="{StaticResource ButtonBorderBrush}" Grid.Row="0"
+                                                Background="#227866">
+
+                                            <StackPanel Orientation="Horizontal">
+                                                <Rectangle Width="{StaticResource ThirdButtonRectangleSize}"
+                                                           Height="{StaticResource ThirdButtonRectangleSize}">
+                                                    <Rectangle.Fill>
+                                                        <VisualBrush>
+                                                            <VisualBrush.Visual>
+                                                                <materialIcons:MaterialIcon Icon="ic_share" />
+                                                            </VisualBrush.Visual>
+                                                        </VisualBrush>
+                                                    </Rectangle.Fill>
+                                                </Rectangle>
+
+                                            </StackPanel>
+                                        </Button>
+                                        <Button Command="{Binding BtnSettingsOnOverlay_OnClick}"
+                                                HorizontalAlignment="Right"
+                                                Width="{StaticResource ThirdButtonSideMenuSize}"
+                                                Height="{StaticResource ThirdButtonSideMenuSize}"
+                                                VerticalAlignment="Bottom" Padding="0"
+                                                Style="{DynamicResource MetroCircleButtonStyle}"
+                                                BorderThickness="{StaticResource ThirdButtonSideMenuBorderThickness}"
+                                                BorderBrush="{StaticResource ButtonBorderBrush}" Grid.Row="1"
+                                                Background="#227866">
+
+                                            <StackPanel Orientation="Horizontal">
+                                                <Rectangle Width="{StaticResource ThirdButtonRectangleSize}"
+                                                           Height="{StaticResource ThirdButtonRectangleSize}">
+                                                    <Rectangle.Fill>
+                                                        <VisualBrush>
+                                                            <VisualBrush.Visual>
+                                                                <materialIcons:MaterialIcon Icon="ic_settings" />
+                                                            </VisualBrush.Visual>
+                                                        </VisualBrush>
+                                                    </Rectangle.Fill>
+                                                </Rectangle>
+
+                                            </StackPanel>
+                                        </Button>
+                                        <Label FontSize="7" Grid.Row="2" Content="{StaticResource VersionLabel}" />
+                                    </Grid>
+
+
+                                </Border>
+                            </Grid>
+                            <!--Conteneur du flyout , data , cartes jouées-->
+                            <Grid Grid.Column="1" Grid.Row="1"
+                                  Visibility="{Binding SelectedContentItem , Converter={StaticResource SelectedToVisibilityConverter},ConverterParameter={x:Static enums:OverlayContentEnum.Tracker}}"
+                                  Style="{StaticResource GridFadeAnimationStyle}">
+                                <pages:TrackerContentPage />
+
+                            </Grid>
+                            <Grid Style="{StaticResource GridFadeAnimationStyle}"
+                                  Visibility="{Binding SelectedContentItem , Converter={StaticResource SelectedToVisibilityConverter},ConverterParameter={x:Static enums:OverlayContentEnum.Histo}}"
+                                  Grid.Column="1" Grid.Row="1">
+
+                             <pages:EmptyOverlayPage />   
+
+                            </Grid>
+                            <Grid Style="{StaticResource GridFadeAnimationStyle}"
+                                  Visibility="{Binding SelectedContentItem , Converter={StaticResource SelectedToVisibilityConverter},ConverterParameter={x:Static enums:OverlayContentEnum.Settings}}"
+                                  Grid.Column="1" Grid.Row="1">
+
+                                <pages:EmptyOverlayPage />
+                            </Grid>
+                            <Grid Style="{StaticResource GridFadeAnimationStyle}"
+                                  Visibility="{Binding SelectedContentItem , Converter={StaticResource SelectedToVisibilityConverter},ConverterParameter={x:Static enums:OverlayContentEnum.Stats}}"
+                                  Grid.Column="1" Grid.Row="1">
+
+                                <pages:EmptyOverlayPage />
+                            </Grid>
+                        </Grid>
+
+                        <!--Bouton OpenCloseOverlay depuis l'overlay ouvert-->
+                        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center">
+                            <Button Command="{Binding BtnOpenOverlay_OnClick}"
+                                    Width="{StaticResource MainButtonSideMenuSize}"
+                                    Height="{StaticResource MainButtonSideMenuSize}"
+                                    Style="{DynamicResource MetroCircleButtonStyle}"
+                                    BorderThickness="{StaticResource MainButtonSideMenuBorderThickness}"
+                                    BorderBrush="{StaticResource ButtonBorderBrush}" Background="#227866">
+
+                                <Rectangle Width="{StaticResource MainButtonRectangleSize}"
+                                           Height="{StaticResource MainButtonRectangleSize}">
+                                    <Rectangle.Fill>
+                                        <VisualBrush>
+                                            <VisualBrush.Visual>
+                                                <materialIcons:MaterialIcon Icon="ic_remove" Background="Transparent" />
+                                            </VisualBrush.Visual>
+                                        </VisualBrush>
+                                    </Rectangle.Fill>
+                                </Rectangle>
+
+                            </Button>
+                            <Button Command="{Binding BtnTrackerOnOverlay_OnClick}" HorizontalAlignment="Right"
+                                    Width="{StaticResource SecondButtonSideMenuSize}"
+                                    Height="{StaticResource SecondButtonSideMenuSize}"
+                                    VerticalAlignment="Bottom"
+                                    Style="{DynamicResource MetroCircleButtonStyle}"
+                                    BorderThickness="{StaticResource ThirdButtonSideMenuBorderThickness}"
+                                    BorderBrush="{StaticResource ButtonBorderBrush}" Background="#227866">
+
+                                <StackPanel Orientation="Horizontal">
+                                    <Rectangle Width="{StaticResource SecondButtonRectangleSize}"
+                                               Height="{StaticResource SecondButtonRectangleSize}">
+                                        <Rectangle.Fill>
+                                            <VisualBrush>
+                                                <VisualBrush.Visual>
+                                                    <materialIcons:MaterialIcon Icon="ic_child_care" />
+                                                </VisualBrush.Visual>
+                                            </VisualBrush>
+                                        </Rectangle.Fill>
+                                    </Rectangle>
+
+                                </StackPanel>
+                            </Button>
+                            <Button Command="{Binding BtnStatsOnOverlay_OnClick}" HorizontalAlignment="Right"
+                                    Width="{StaticResource SecondButtonSideMenuSize}"
+                                    Height="{StaticResource SecondButtonSideMenuSize}"
+                                    VerticalAlignment="Bottom"
+                                    Style="{DynamicResource MetroCircleButtonStyle}"
+                                    BorderThickness="{StaticResource ThirdButtonSideMenuBorderThickness}"
+                                    BorderBrush="{StaticResource ButtonBorderBrush}" Background="#227866">
+
+                                <StackPanel Orientation="Horizontal">
+                                    <Rectangle Width="{StaticResource SecondButtonRectangleSize}"
+                                               Height="{StaticResource SecondButtonRectangleSize}">
+                                        <Rectangle.Fill>
+                                            <VisualBrush>
+                                                <VisualBrush.Visual>
+                                                    <materialIcons:MaterialIcon Icon="ic_pie_chart" />
+                                                </VisualBrush.Visual>
+                                            </VisualBrush>
+                                        </Rectangle.Fill>
+                                    </Rectangle>
+
+                                </StackPanel>
+                            </Button>
+                            <Button Command="{Binding BtnHistoOnOverlay_OnClick}" HorizontalAlignment="Right"
+                                    Width="{StaticResource SecondButtonSideMenuSize}"
+                                    Height="{StaticResource SecondButtonSideMenuSize}"
+                                    VerticalAlignment="Bottom" Padding="0"
+                                    Style="{DynamicResource MetroCircleButtonStyle}"
+                                    BorderThickness="{StaticResource ThirdButtonSideMenuBorderThickness}"
+                                    BorderBrush="{StaticResource ButtonBorderBrush}" Background="#227866">
+
+                                <StackPanel Orientation="Horizontal">
+                                    <Rectangle Width="{StaticResource SecondButtonRectangleSize}"
+                                               Height="{StaticResource SecondButtonRectangleSize}">
+                                        <Rectangle.Fill>
+                                            <VisualBrush>
+                                                <VisualBrush.Visual>
+                                                    <materialIcons:MaterialIcon Icon="ic_av_timer" />
+                                                </VisualBrush.Visual>
+                                            </VisualBrush>
+                                        </Rectangle.Fill>
+                                    </Rectangle>
+
+                                </StackPanel>
+                            </Button>
+                        </StackPanel>
+
+                    </Grid>
+                </controls:TransitioningContentControl>
+
+
             </controls:Flyout>
         </controls:FlyoutsControl>
     </controls:MetroWindow.Flyouts>
-    
-         <Button Command="{Binding BtnSettings_OnClick}" HorizontalAlignment="Right" Width="40" Height="40">
-            <StackPanel Orientation="Horizontal">
-                <Rectangle Width="20" Height="20">
+    <!--Bouton OpenCloseOverlay quand l'overlay fermé-->
+    <Grid Visibility="{Binding IsLeftFlyOpen, Converter={StaticResource BoolAndNegatToVisibiltyConverter}}">
+        <!--Conteneur où on trouveras le menu-->
+        <Grid Name="SideMenuClosedOverlay">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="{StaticResource SideMenuWidth}" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <!--bordure transparente-->
+            <Border Background="Transparent" Grid.Column="0" Grid.RowSpan="2" />
+            <!--bordure gauche overlay-->
+            <Border BorderBrush="#55bc99" Grid.Column="1" Grid.Row="1" Background="#55bc99"
+                    CornerRadius="10,0,0,10">
+                <!--Menu vertical est ici-->
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <!--1er Bouton Niv 3-->
+                    <Button Command="{Binding BtnOpenOverlay_OnClick}" HorizontalAlignment="Right"
+                            Width="{StaticResource ThirdButtonSideMenuSize}"
+                            Height="{StaticResource ThirdButtonSideMenuSize}" VerticalAlignment="Bottom"
+                            Style="{DynamicResource MetroCircleButtonStyle}"
+                            BorderThickness="{StaticResource ThirdButtonSideMenuBorderThickness}"
+                            BorderBrush="{StaticResource ButtonBorderBrush}" Grid.Row="0" Background="#227866">
+
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Width="{StaticResource ThirdButtonRectangleSize}"
+                                       Height="{StaticResource ThirdButtonRectangleSize}">
+                                <Rectangle.Fill>
+                                    <VisualBrush>
+                                        <VisualBrush.Visual>
+                                            <materialIcons:MaterialIcon Icon="ic_share" />
+                                        </VisualBrush.Visual>
+                                    </VisualBrush>
+                                </Rectangle.Fill>
+                            </Rectangle>
+
+                        </StackPanel>
+                    </Button>
+                    <!--2eme Bouton Niv 3-->
+                    <Button Command="{Binding BtnSettingsOnOverlay_OnClick}" HorizontalAlignment="Right"
+                            Width="{StaticResource ThirdButtonSideMenuSize}"
+                            Height="{StaticResource ThirdButtonSideMenuSize}" VerticalAlignment="Bottom" Padding="0"
+                            Style="{DynamicResource MetroCircleButtonStyle}"
+                            BorderThickness="{StaticResource ThirdButtonSideMenuBorderThickness}"
+                            BorderBrush="{StaticResource ButtonBorderBrush}" Grid.Row="1" Background="#227866">
+
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Width="{StaticResource ThirdButtonRectangleSize}"
+                                       Height="{StaticResource ThirdButtonRectangleSize}">
+                                <Rectangle.Fill>
+                                    <VisualBrush>
+                                        <VisualBrush.Visual>
+                                            <materialIcons:MaterialIcon Icon="ic_settings" />
+                                        </VisualBrush.Visual>
+                                    </VisualBrush>
+                                </Rectangle.Fill>
+                            </Rectangle>
+
+                        </StackPanel>
+                    </Button>
+                    <Label FontSize="7" Grid.Row="2" Content="{StaticResource VersionLabel}" />
+                </Grid>
+
+
+            </Border>
+
+        </Grid>
+        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center">
+            <!--1er Bouton Niv 1-->
+            <Button Name="MainButtonClosedSideMenu" Command="{Binding BtnOpenOverlay_OnClick}"
+                    Width="{StaticResource MainButtonSideMenuSize}"
+                    Height="{StaticResource MainButtonSideMenuSize}"
+                    Style="{DynamicResource MetroCircleButtonStyle}"
+
+                    BorderThickness="{StaticResource MainButtonSideMenuBorderThickness}"
+                    BorderBrush="{StaticResource ButtonBorderBrush}" Background="#227866">
+
+                <Rectangle Width="{StaticResource MainButtonRectangleSize}"
+                           Height="{StaticResource MainButtonRectangleSize}">
                     <Rectangle.Fill>
                         <VisualBrush>
                             <VisualBrush.Visual>
-                                <materialIcons:MaterialIcon Icon="ic_settings" />
+                                <materialIcons:MaterialIcon Icon="ic_add" />
                             </VisualBrush.Visual>
                         </VisualBrush>
                     </Rectangle.Fill>
                 </Rectangle>
 
-            </StackPanel>
-      </Button>
-   
+            </Button>
+
+            <!--1er Bouton Niv 2-->
+            <Button Command="{Binding BtnTrackerOnOverlay_OnClick}" HorizontalAlignment="Right"
+                    Width="{StaticResource SecondButtonSideMenuSize}"
+                    Height="{StaticResource SecondButtonSideMenuSize}"
+                    VerticalAlignment="Bottom"
+                    Style="{DynamicResource MetroCircleButtonStyle}"
+                    BorderThickness="{StaticResource ThirdButtonSideMenuBorderThickness}"
+                    BorderBrush="{StaticResource ButtonBorderBrush}" Background="#227866">
+
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Width="{StaticResource SecondButtonRectangleSize}"
+                               Height="{StaticResource SecondButtonRectangleSize}">
+                        <Rectangle.Fill>
+                            <VisualBrush>
+                                <VisualBrush.Visual>
+                                    <materialIcons:MaterialIcon Icon="ic_child_care" />
+                                </VisualBrush.Visual>
+                            </VisualBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+
+                </StackPanel>
+            </Button>
+
+            <Button Command="{Binding BtnStatsOnOverlay_OnClick}" HorizontalAlignment="Right"
+                    Width="{StaticResource SecondButtonSideMenuSize}"
+                    Height="{StaticResource SecondButtonSideMenuSize}"
+                    VerticalAlignment="Bottom"
+                    Style="{DynamicResource MetroCircleButtonStyle}"
+                    BorderThickness="{StaticResource ThirdButtonSideMenuBorderThickness}"
+                    BorderBrush="{StaticResource ButtonBorderBrush}" Background="#227866">
+
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Width="{StaticResource SecondButtonRectangleSize}"
+                               Height="{StaticResource SecondButtonRectangleSize}">
+                        <Rectangle.Fill>
+                            <VisualBrush>
+                                <VisualBrush.Visual>
+                                    <materialIcons:MaterialIcon Icon="ic_pie_chart" />
+                                </VisualBrush.Visual>
+                            </VisualBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+
+                </StackPanel>
+            </Button>
+            <!--2eme Bouton Niv 2-->
+            <Button Command="{Binding BtnHistoOnOverlay_OnClick}" HorizontalAlignment="Right"
+                    Width="{StaticResource SecondButtonSideMenuSize}"
+                    Height="{StaticResource SecondButtonSideMenuSize}"
+                    VerticalAlignment="Bottom" Padding="0"
+                    Style="{DynamicResource MetroCircleButtonStyle}"
+                    BorderThickness="{StaticResource ThirdButtonSideMenuBorderThickness}"
+                    BorderBrush="{StaticResource ButtonBorderBrush}" Background="#227866">
+
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Width="{StaticResource SecondButtonRectangleSize}"
+                               Height="{StaticResource SecondButtonRectangleSize}">
+                        <Rectangle.Fill>
+                            <VisualBrush>
+                                <VisualBrush.Visual>
+                                    <materialIcons:MaterialIcon Icon="ic_av_timer" />
+                                </VisualBrush.Visual>
+                            </VisualBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+
+                </StackPanel>
+            </Button>
+        </StackPanel>
+    </Grid>
 </controls:MetroWindow>

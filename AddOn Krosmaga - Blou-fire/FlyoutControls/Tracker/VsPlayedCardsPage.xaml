@@ -7,14 +7,15 @@
              xmlns:pageModel="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel"
              xmlns:uiElements="clr-namespace:AddOn_Krosmaga___Blou_fire.UIElements"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
+           >
     <UserControl.Resources>
         <uiElements:IntToCardCountStringConverter x:Key="IntToCardCountStringConverter" />
     </UserControl.Resources>
     <UserControl.DataContext>
         <pageModel:VsPlayedCardsPageModel />
     </UserControl.DataContext>
-    <ListView Grid.Row="3" Width="150" Background="#66000000" ItemsSource="{Binding VsDeck}"
+
+    <ListView Grid.Row="3"  Background="#66000000" ItemsSource="{Binding VsDeck}"
               ScrollViewer.HorizontalScrollBarVisibility="Hidden"
               ScrollViewer.VerticalScrollBarVisibility="Hidden">
         <ListView.ItemContainerStyle>
@@ -24,7 +25,7 @@
         </ListView.ItemContainerStyle>
         <ListView.ItemTemplate>
             <DataTemplate>
-                <Grid Height="25" Opacity="0.8"
+                <Grid Height="25" Opacity="0.8" HorizontalAlignment="Center"
                       Background="{Binding Card, Converter={StaticResource GodToColor}}">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="46" />
@@ -50,4 +51,5 @@
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
+
 </UserControl>

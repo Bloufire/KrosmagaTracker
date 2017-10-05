@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace AddOn_Krosmaga___Blou_fire.Pages
+namespace AddOn_Krosmaga___Blou_fire.OverlayContainer.Pages
 {
     /// <summary>
-    /// Logique d'interaction pour Page1.xaml
+    /// Logique d'interaction pour TrackerContentPage.xaml
     /// </summary>
-    public partial class Page1 : Page
+    public partial class TrackerContentPage : UserControl
     {
-        public Page1()
+        public TrackerContentPage()
         {
             InitializeComponent();
         }

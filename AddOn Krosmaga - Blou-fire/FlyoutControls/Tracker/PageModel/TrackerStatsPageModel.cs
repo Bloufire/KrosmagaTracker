@@ -15,6 +15,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 {
 	public class TrackerStatsPageModel : ObservableObject
 	{
+	
 		public TrackerStatsPageModel()
 		{
 			ComboSaisonValues = Enum.GetValues(typeof(SaisonsEnum));

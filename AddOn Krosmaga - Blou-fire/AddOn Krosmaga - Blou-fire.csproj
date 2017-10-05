@@ -110,8 +110,17 @@
     <Compile Include="Builders\GameStarted.Builder.cs" />
     <Compile Include="Builders\PlayerAccountLoaded.Builder.cs" />
     <Compile Include="Builders\StartOfTurn.Builder.cs" />
+    <Compile Include="Converter\BoolAndNegatToVisibiltyConverter.cs" />
+    <Compile Include="Converter\BoolToVisibiltyConverter.cs" />
+    <Compile Include="Converter\BrushToColorConverter.cs" />
+    <Compile Include="Converter\CombiningConverter.cs" />
     <Compile Include="Converter\GameResultToBrushConverter.cs" />
     <Compile Include="Converter\GameResultToStringConverter.cs" />
+    <Compile Include="Converter\NegatedBooleanConverter.cs" />
+    <Compile Include="Converter\SelectedToVisibilityConverter.cs" />
+    <Compile Include="CustomControls\TapToDisplayContent.xaml.cs">
+      <DependentUpon>TapToDisplayContent.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Data\CellCoord.Builder.cs" />
     <Compile Include="Data\ClientPreferences.Builder.cs" />
     <Compile Include="Data\Custom.Builder.cs" />
@@ -135,6 +144,7 @@
     <Compile Include="Enums\LocationType.cs" />
     <Compile Include="Enums\LocDescriptionAttribute.cs" />
     <Compile Include="Enums\MovementType.cs" />
+    <Compile Include="Enums\OverlayContentEnum.cs" />
     <Compile Include="Enums\Reason.cs" />
     <Compile Include="Enums\Result.cs" />
     <Compile Include="Enums\ResultHandlerType.cs" />
@@ -199,6 +209,12 @@
     <Compile Include="Models\FiltersStatModel.cs" />
     <Compile Include="Models\SettingsModel.cs" />
     <Compile Include="Models\TrackerModel.cs" />
+    <Compile Include="OverlayContainer\Pages\EmptyOverlayPage.xaml.cs">
+      <DependentUpon>EmptyOverlayPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OverlayContainer\Pages\TrackerContentPage.xaml.cs">
+      <DependentUpon>TrackerContentPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PageModels\MainPageModel.cs" />
     <Compile Include="PageModels\OverlayPageModel.cs" />
     <Compile Include="Pages\MainPage.xaml.cs">
@@ -206,9 +222,6 @@
     </Compile>
     <Compile Include="Pages\OverlayPage.xaml.cs">
       <DependentUpon>OverlayPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Page1.xaml.cs">
-      <DependentUpon>Page1.xaml</DependentUpon>
     </Compile>
     <Compile Include="ProducerConsumer\Consumer.cs" />
     <Compile Include="ProducerConsumer\Producer.cs" />
@@ -221,6 +234,10 @@
     <Compile Include="UIElements\Match.cs" />
     <Compile Include="UIPlayerDatas.cs" />
     <Compile Include="Utility\LocUtil.cs" />
+    <Page Include="CustomControls\TapToDisplayContent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="FlyoutControls\Tracker\CardPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -285,6 +302,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="OverlayContainer\Pages\EmptyOverlayPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OverlayContainer\Pages\TrackerContentPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -293,7 +318,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\Page1.xaml">
+    <Page Include="Resources\ConstantValue.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -315,6 +340,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="packages.config" />
@@ -387,6 +413,7 @@
   <ItemGroup>
     <Folder Include="Controls\" />
     <Folder Include="FlyoutControls\Overlay\" />
+    <Folder Include="OverlayContainer\PageModels\" />
     <Folder Include="Services\Interfaces\" />
   </ItemGroup>
   <ItemGroup>
@@ -1097,6 +1124,13 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\dofus_hidden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DesignImagesKindry\icon_defeat_mini.png" />
+    <Resource Include="Images\DesignImagesKindry\icon_fleau_mini.png" />
+    <Resource Include="Images\DesignImagesKindry\icon_mainA_mini.png" />
+    <Resource Include="Images\DesignImagesKindry\icon_mainB_mini.png" />
+    <Resource Include="Images\DesignImagesKindry\icon_victoire_mini.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.105.2\build\net451\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.105.2\build\net451\System.Data.SQLite.Core.targets')" />

@@ -13,24 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace AddOn_Krosmaga___Blou_fire.Pages
+namespace AddOn_Krosmaga___Blou_fire.CustomControls
 {
-	/// <summary>
-	/// Logique d'interaction pour OverlayPage.xaml
-	/// </summary>
-	public partial class OverlayPage
-	{
-		public OverlayPage()
-		{
-			InitializeComponent();
-			this.AllowsTransparency = true;
-			//this.WindowStyle = WindowStyle.None;
-			this.ResizeMode = ResizeMode.NoResize;
-			this.Background = Brushes.Transparent;
-
-			
-
-
-		}
-	}
+    /// <summary>
+    /// Logique d'interaction pour TapToDisplayContent.xaml
+    /// </summary>
+    public partial class TapToDisplayContent : UserControl
+    {
+        public TapToDisplayContent()
+        {
+            InitializeComponent();
+        }
+    }
 }

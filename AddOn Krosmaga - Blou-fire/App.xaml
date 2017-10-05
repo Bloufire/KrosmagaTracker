@@ -5,7 +5,10 @@
              StartupUri="Pages/OverlayPage.xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" d1p1:Ignorable="d"
              xmlns:d1p1="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls">
+             xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+             xmlns:uiElements="clr-namespace:AddOn_Krosmaga___Blou_fire.UIElements"
+             xmlns:enums="clr-namespace:AddOn_Krosmaga___Blou_fire.Enums"
+             xmlns:converter="clr-namespace:AddOn_Krosmaga___Blou_fire.Converter">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -19,7 +22,47 @@
                 <ResourceDictionary
                     Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/basedark.xaml" />
             </ResourceDictionary.MergedDictionaries>
-            <BooleanToVisibilityConverter x:Key="GodToColor" />
+            <uiElements:GodClassToColor x:Key="GodToColor" />
+           
+            <!--Converter-->
+            <converter:SelectedToVisibilityConverter x:Key="SelectedToVisibilityConverter" />
+
+            <!--Style-->
+            <Style x:Key="GridFadeAnimationStyle" TargetType="Grid">
+                <Style.Triggers>
+                    <Trigger Property="Visibility" Value="Visible">
+                        <Trigger.EnterActions>
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:.2" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </Trigger.EnterActions>
+                        <Trigger.ExitActions>
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.2" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </Trigger.ExitActions>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+
+            <!--UserControlOverlay-->
+            <LinearGradientBrush x:Key="FlyoutGradientBackground" StartPoint="0,0" EndPoint="1,0">
+                <GradientStop Color="#55bc99" Offset="0" />
+                <GradientStop Color="#000000" Offset="0.05" />
+                <GradientStop Color="#000000" Offset="1" />
+            </LinearGradientBrush>
+            <LinearGradientBrush
+                x:Key="HeaderBackgroundOpacityMask"
+                StartPoint="0,0"
+                EndPoint="1,0">
+                <GradientStop Color="#FFFFFFFF" Offset="0" />
+                <GradientStop Color="#FFFFFFFF" Offset="0.05" />
+                <GradientStop Color="#FFFFFFFF" Offset="1" />
+            </LinearGradientBrush>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

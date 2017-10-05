@@ -9,7 +9,7 @@
              xmlns:pageModel="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel"
              xmlns:converter="clr-namespace:AddOn_Krosmaga___Blou_fire.Converter"
              mc:Ignorable="d"
-             d:DesignHeight="700" d:DesignWidth="300">
+             d:DesignHeight="700" d:DesignWidth="300" >
     <UserControl.Resources>
         <converter:EnumDescriptionConverter x:Key="EnumDescriptionConverter" />
     </UserControl.Resources>
