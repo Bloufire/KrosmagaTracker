@@ -21,7 +21,7 @@
         </StackPanel >
         <StackPanel Grid.Column="1">
             <GroupBox Header="Own Profile">
-                <local:ProfileDataPage></local:ProfileDataPage>
+                <local:OwnProfileDataPage></local:OwnProfileDataPage>
             </GroupBox>
             <GroupBox Header="Own Cards left">
                 <!--Mes Cartes Restantes-->

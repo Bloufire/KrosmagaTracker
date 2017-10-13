@@ -11,6 +11,8 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 	{
 		private int _vsLosesNb;
 		private int _vsWinsNb;
+		private int _vsNbFleau;
+		private int _vsNbCardsInHand;
 		private string _vsPseudo;
 
 		#region CTOR
@@ -24,6 +26,8 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 		{
 			VsPseudo = TrackerSrv.TrackerModel.VsPseudo;
 			VsWinsNb = TrackerSrv.TrackerModel.VsWinsNb;
+			VsNbCardsInHand = TrackerSrv.TrackerModel.CardsInHand.Count;
+			VsNbFleau = TrackerSrv.TrackerModel.NbFleau;
 			VsLosesNb = TrackerSrv.TrackerModel.VsLosesNb;
 		}
 
@@ -48,6 +52,25 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 			get { return _vsWinsNb; }
 			set { _vsWinsNb = value;
 				OnPropertyChanged(nameof(VsWinsNb));
+			}
+		}
+		public int VsNbFleau
+		{
+			get { return _vsNbFleau; }
+			set
+			{
+				_vsNbFleau = value;
+				OnPropertyChanged(nameof(VsNbFleau));
+			}
+		}
+
+		public int VsNbCardsInHand
+		{
+			get { return _vsNbCardsInHand; }
+			set
+			{
+				_vsNbCardsInHand = value;
+				OnPropertyChanged(nameof(VsNbCardsInHand));
 			}
 		}
 

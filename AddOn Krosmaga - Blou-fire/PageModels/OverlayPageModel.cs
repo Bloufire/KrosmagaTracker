@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using AddOn_Krosmaga___Blou_fire.Enums;
@@ -15,14 +16,9 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 		public OverlayPageModel()
 		{
 			SelectedContentItem = OverlayContentEnum.Tracker;
+			Left = SystemParameters.PrimaryScreenWidth - 400;
+
 		}
-
-
-
-		private const int WINDOWOPENED = 1000;
-		private const int WINDOWCLOSED = 40;
-
-
 
 		#region Commands
 		public ICommand BtnOpenOverlay_OnClick => new RelayCommand(BtnOpenOverlay);
@@ -31,9 +27,9 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 		public ICommand BtnHistoOnOverlay_OnClick => new RelayCommand(BtnOpenOverlayHisto);
 		public ICommand BtnSettingsOnOverlay_OnClick => new RelayCommand(BtnOpenOverlaySettings);
 		public ICommand BtnDiscord_OnClick { get; }
-	
-		
-	
+
+
+
 		private void BtnOpenOverlay()
 		{
 			IsLeftFlyOpen = !IsLeftFlyOpen;
@@ -89,6 +85,28 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 				_selectedContentItem = value;
 				OnPropertyChanged("SelectedContentItem");
 			}
+		}
+
+
+		private double winLeft;
+
+		public double Left
+		{
+			get { return winLeft; }
+			set
+			{
+			
+				winLeft = value;
+				OnPropertyChanged("Left");
+			}
+		}
+
+		private double winTop;
+
+		public double Top
+		{
+			get { return winTop; }
+			set { winTop = value; }
 		}
 
 		#endregion

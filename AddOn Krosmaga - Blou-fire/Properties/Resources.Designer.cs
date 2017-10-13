@@ -59,5 +59,14 @@ namespace AddOn_Krosmaga___Blou_fire.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à #227866.
+        /// </summary>
+        internal static string SideMenuButtonBackground {
+            get {
+                return ResourceManager.GetString("SideMenuButtonBackground", resourceCulture);
+            }
+        }
     }
 }

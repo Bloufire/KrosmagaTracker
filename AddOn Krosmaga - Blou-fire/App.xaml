@@ -63,6 +63,10 @@
                 <GradientStop Color="#FFFFFFFF" Offset="0.05" />
                 <GradientStop Color="#FFFFFFFF" Offset="1" />
             </LinearGradientBrush>
+            
+            <!--Button-->
+            <Brush x:Key="SideMenuButtonBackground">#227866</Brush>
+            
         </ResourceDictionary>
     </Application.Resources>
 </Application>

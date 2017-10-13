@@ -257,9 +257,12 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 
 		#region CardsInHands
 
+		private Queue<int> _actualFleauxIds;
+
 		private int _ownCardsInHand;
 		private int _opponentCardsInHand;
 		private int _currentTurn;
+		private int _nbFleau;
 		private List<DeckUI> _deck;
 
 		private List<Card> _opponentPlayedCards;
@@ -267,8 +270,17 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 		private List<DeckUI> _cardsInHand;
 		private List<DeckUI> _deckInfinites;
 		private List<DeckUI> _deckKrosmiques;
+		
+		public Queue<int> ActualFleauxIds
+		{
+			get { return _actualFleauxIds; }
 
-
+			set
+			{
+				_actualFleauxIds = value;
+				OnPropertyChanged("ActualFleauxIds");
+			}
+		}
 		public int OwnCardsInHand
 		{
 			get { return _ownCardsInHand; }
@@ -298,7 +310,15 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 				OnPropertyChanged("CurrentTurn");
 			}
 		}
-
+		public int NbFleau
+		{
+			get { return _nbFleau; }
+			set
+			{
+				_nbFleau = value;
+				OnPropertyChanged("NbFleau");
+			}
+		}
 		public List<JsonCardsParser.Card> OpponentPlayedCards
 		{
 			get

@@ -5,23 +5,54 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker"
              xmlns:pageModel="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <system:Double x:Key="WinLoseIconSize">40</system:Double>
+        <GridLength x:Key="WinLoseColumn">50</GridLength>
+    </UserControl.Resources>
     <UserControl.DataContext>
         <pageModel:VsProfileDataPageModel />
     </UserControl.DataContext>
     <StackPanel>
-        <DockPanel>
-            <Label Margin="5" Width="80">Pseudo</Label>
-            <Label Margin="5" HorizontalAlignment="Center" Content="{Binding VsPseudo}" />
-        </DockPanel>
-        <DockPanel>
-            <Label Margin="5" Width="80">Win</Label>
-            <Label Margin="5" HorizontalAlignment="Center" Content="{Binding VsWinsNb}" />
-        </DockPanel>
-        <DockPanel>
-            <Label Margin="5" Width="80">Lose</Label>
-            <Label Margin="5" HorizontalAlignment="Center" Content="{Binding VsLosesNb}" />
-        </DockPanel>
+        <Label Margin="5,10,5,20" HorizontalAlignment="Center" FontSize="25" Content="{Binding VsPseudo}" />
+        
+        <!--Bloc de données adversaire-->
+        <Grid Margin="5,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="{StaticResource WinLoseColumn}"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="{StaticResource WinLoseColumn}"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center">
+                <Image Grid.Column="0" Width="{StaticResource WinLoseIconSize}" Height="{StaticResource WinLoseIconSize}" Source="../../Images/DesignImagesKindry/icon_victoire_mini.png" />
+                <Label Grid.Column="1" Margin="5" HorizontalAlignment="Center" Content="{Binding VsWinsNb}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Center">
+                <Image Grid.Column="2" Width="{StaticResource WinLoseIconSize}" Height="{StaticResource WinLoseIconSize}" Source="../../Images/DesignImagesKindry/icon_defeat_mini.png"/>
+                <Label Grid.Column="3" Margin="5" HorizontalAlignment="Center" Content="{Binding VsLosesNb}" />
+            </StackPanel>
+        </Grid>
+
+        <!--Bloc de données fléau et main adverse-->
+        <Grid Margin="5,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="{StaticResource WinLoseColumn}"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="{StaticResource WinLoseColumn}"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center">
+                <Image Grid.Column="0" Width="{StaticResource WinLoseIconSize}" Height="{StaticResource WinLoseIconSize}" Source="../../Images/DesignImagesKindry/icon_mainb_mini.png" />
+                <Label Grid.Column="1" Margin="5" HorizontalAlignment="Center" Content="{Binding VsNbCardsInHand}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Center">
+                <Image Grid.Column="2" Width="{StaticResource WinLoseIconSize}" Height="{StaticResource WinLoseIconSize}" Source="../../Images/DesignImagesKindry/icon_fleau_mini.png"/>
+                <Label Grid.Column="3" Margin="5" HorizontalAlignment="Center" Content="{Binding VsNbFleau}" />
+            </StackPanel>
+        </Grid>
+
     </StackPanel>
 </UserControl>

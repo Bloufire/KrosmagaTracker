@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -13,6 +15,7 @@ using AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel;
 using AddOn_Krosmaga___Blou_fire.Helpers;
 using AddOn_Krosmaga___Blou_fire.Models;
 using AddOn_Krosmaga___Blou_fire.ProducerConsumer;
+using AddOn_Krosmaga___Blou_fire.Utility;
 using JsonCardsParser;
 using SQLiteConnector;
 using Match = AddOn_Krosmaga___Blou_fire.UIElements.Match;
@@ -28,8 +31,7 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 		private byte[] _lastMessage = new byte[1];
 		private List<Match> _filteredGames;
 		public CardCollection CardsCollection { get; set; }
-
-		public TrackerModel
+			public TrackerModel
 			TrackerModel { get; set; } //Model qui sera à découper par page. Peut contenir toutes les données actuellement.
 
 		public FiltersStatModel CurrentFiltersStatModel { get; set; }
@@ -51,7 +53,10 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 
 			StartService();
 			UpdateMatchsWithFilterList();
+			
 		}
+
+
 
 		public void StartService()
 		{
@@ -384,8 +389,8 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 				    cardMoved.CardLocationTo == Enums.CardLocation.Nowhere && cardMoved.ConcernedFighter == TrackerModel.MyIndex)
 				{
 					UIElements.DeckUI deckui = TrackerModel.CardAlreadyPlayed.FirstOrDefault(x => x.CardCount == cardMoved.Card);
-					//if (deckui != null && deckui.Card.Id == 1565)
-					//	TrackerModel.OpponentFleaux -= 1;
+					if (deckui != null && deckui.Card.Id == 1565)
+						TrackerModel.NbFleau -= 1;
 				}
 			}
 			else if (value.EventType == Enums.EventType.CARD_TO_BE_PLAYED)
@@ -397,19 +402,19 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 					if (cardMoved.CardLocationFrom == Enums.CardLocation.OwnHand &&
 					    cardMoved.CardLocationTo == Enums.CardLocation.Nowhere && cardMoved.ConcernedFighter != TrackerModel.MyIndex)
 					{
-						//if (value.UInt1 == 1565)
-						//	UIDatas.OpponentFleaux -= 1;
+						if (value.UInt1 == 1565)
+							TrackerModel.NbFleau -= 1;
 					}
 				}
 			}
 			else if (value.EventType == Enums.EventType.A_O_E_ACTIVATED)
 			{
 				var eventCardMoved = value.TriggeredEvents.FirstOrDefault(x => x.EventType == Enums.EventType.CARD_MOVED);
-				//if (UIDatas.ActualFleauxIds.Contains(value.Int1) && eventCardMoved != null &&
-				//    eventCardMoved.Int1 != TrackerModel.MyIndex)
-				//{
-				//	UIDatas.OpponentFleaux += 1;
-				//}
+				if (TrackerModel.ActualFleauxIds.Contains(value.Int1) && eventCardMoved != null &&
+					eventCardMoved.Int1 != TrackerModel.MyIndex)
+				{
+					TrackerModel.NbFleau += 1;
+				}
 			}
 			else if (value.EventType == Enums.EventType.TURN_STARTED)
 			{
@@ -421,8 +426,8 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 						Builders.EventsManager.NewAOEEvent newAOE = new Builders.EventsManager.NewAOEEvent(item);
 						/*if (UIDatas.ActualFleauxIds.Count >= 4)
 						    UIDatas.ActualFleauxIds.Dequeue();*/
-						//if (newAOE.TradingCardId == 589)
-						//	UIDatas.ActualFleauxIds.Enqueue(newAOE.ConcernedFightObject);
+						if (newAOE.TradingCardId == 589)
+							TrackerModel.ActualFleauxIds.Enqueue(newAOE.ConcernedFightObject);
 					}
 				}
 			}
@@ -431,8 +436,8 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 				Builders.EventsManager.NewAOEEvent newAOE = new Builders.EventsManager.NewAOEEvent(value);
 				/*if (UIDatas.ActualFleauxIds.Count >= 4)
 				    UIDatas.ActualFleauxIds.Dequeue();*/
-				//if (newAOE.TradingCardId == 589)
-				//	UIDatas.ActualFleauxIds.Enqueue(newAOE.ConcernedFightObject);
+				if (newAOE.TradingCardId == 589)
+					TrackerModel.ActualFleauxIds.Enqueue(newAOE.ConcernedFightObject);
 			}
 			else if (value.EventType == Enums.EventType.EFFECT_STOPPED)
 			{

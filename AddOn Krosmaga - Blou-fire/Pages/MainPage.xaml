@@ -76,7 +76,7 @@
                 <tracker:DofusTrackerPage></tracker:DofusTrackerPage>
             </controls:MetroTabItem>
             <controls:MetroTabItem Header="[Profil]">
-                <tracker:ProfileDataPage></tracker:ProfileDataPage>
+                <tracker:OwnProfileDataPage></tracker:OwnProfileDataPage>
             </controls:MetroTabItem>
         </controls:MetroAnimatedTabControl>
 

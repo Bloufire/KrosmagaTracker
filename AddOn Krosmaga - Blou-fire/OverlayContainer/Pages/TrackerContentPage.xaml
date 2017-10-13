@@ -15,18 +15,16 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
+            <!--<RowDefinition Height="Auto" />-->
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <GroupBox Header="Mes Stats" Grid.Row="0">
-            <tracker:ProfileDataPage />
-        </GroupBox>
-        <GroupBox Header="Stats Adverse" Grid.Row="1">
-            <tracker:VsProfileDataPage />
-        </GroupBox>
-        <GroupBox Header="Cartes Jouées" Grid.Row="2">
+        <!--<GroupBox Header="Mes Stats" Grid.Row="0">
+            <tracker:OwnProfileDataPage />
+        </GroupBox>-->
+             <tracker:VsProfileDataPage />
+         <GroupBox Header="Cartes Jouées" Grid.Row="1">
             <ScrollViewer VerticalScrollBarVisibility="Hidden">
                 <tracker:VsPlayedCardsPage />
             </ScrollViewer>
