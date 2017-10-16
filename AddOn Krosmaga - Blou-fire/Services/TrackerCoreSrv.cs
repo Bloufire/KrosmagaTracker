@@ -211,7 +211,11 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 				TrackerModel.OwnClasse, value.WinnerPlayer == TrackerModel.MyIndex ? 1 : 0, TrackerModel.CurrentTurn, (int) TrackerModel.GameType,
 				DateTime.Now);
 			TrackerModel.OpponentPlayedCards.Clear();
+			
 			UpdateMatchsWithFilterList();
+
+			//On efface le deck du model
+			TrackerModel.Deck.Clear();
 		}
 
 		private void UIActionGameEventsEvent(Builders.GameEvents value)

@@ -26,7 +26,6 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 		{
 			VsPseudo = TrackerSrv.TrackerModel.VsPseudo;
 			VsWinsNb = TrackerSrv.TrackerModel.VsWinsNb;
-			VsNbCardsInHand = TrackerSrv.TrackerModel.CardsInHand.Count;
 			VsNbFleau = TrackerSrv.TrackerModel.NbFleau;
 			VsLosesNb = TrackerSrv.TrackerModel.VsLosesNb;
 			VsNbCardsInHand = TrackerSrv.TrackerModel.OpponentCardsInHand;
