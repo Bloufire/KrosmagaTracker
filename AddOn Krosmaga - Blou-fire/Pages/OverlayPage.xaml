@@ -13,19 +13,21 @@
                       xmlns:system="clr-namespace:System;assembly=mscorlib"
                       xmlns:pages="clr-namespace:AddOn_Krosmaga___Blou_fire.OverlayContainer.Pages"
                       xmlns:enums="clr-namespace:AddOn_Krosmaga___Blou_fire.Enums"
+                      xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
                       mc:Ignorable="d"
                       BorderThickness="0"
                       WindowStartupLocation="Manual"
                       Left="{Binding Left}"
-                     
+                      
                       d:DesignHeight="750"
                       WindowButtonCommandsOverlayBehavior="Flyouts"
-                      Width="400"
+                      Width="{StaticResource OverlayWidth}"
                       WindowTitleBrush="Transparent"
                       NonActiveWindowTitleBrush="Transparent"
+                     
                       ShowTitleBar="{Binding IsLeftFlyOpen}"
                       Topmost="True">
-
+   
     <controls:MetroWindow.Resources>
         <converter:BoolToVisibiltyConverter x:Key="BoolToVis" />
         <converter:BoolAndNegatToVisibiltyConverter x:Key="BoolAndNegatToVisibiltyConverter" />
@@ -179,15 +181,16 @@
                             <Grid Style="{StaticResource GridFadeAnimationStyle}"
                                   Visibility="{Binding SelectedContentItem , Converter={StaticResource SelectedToVisibilityConverter},ConverterParameter={x:Static enums:OverlayContentEnum.Histo}}"
                                   Grid.Column="1" Grid.Row="1">
-                        
-                         <tracker:MatchesHistoPage></tracker:MatchesHistoPage>
+
+
+                                <pages:HistoOverlayContentPage />
 
                             </Grid>
                             <Grid Style="{StaticResource GridFadeAnimationStyle}"
                                   Visibility="{Binding SelectedContentItem , Converter={StaticResource SelectedToVisibilityConverter},ConverterParameter={x:Static enums:OverlayContentEnum.Settings}}"
                                   Grid.Column="1" Grid.Row="1">
 
-                                <pages:EmptyOverlayPage />
+                                <pages:SettingsOverlayContentPage />
                             </Grid>
                             <Grid Style="{StaticResource GridFadeAnimationStyle}"
                                   Visibility="{Binding SelectedContentItem , Converter={StaticResource SelectedToVisibilityConverter},ConverterParameter={x:Static enums:OverlayContentEnum.Stats}}"
@@ -204,7 +207,8 @@
                                     Height="{StaticResource MainButtonSideMenuSize}"
                                     Style="{DynamicResource MetroCircleButtonStyle}"
                                     BorderThickness="{StaticResource MainButtonSideMenuBorderThickness}"
-                                    BorderBrush="{StaticResource ButtonBorderBrush}" Background="{StaticResource SideMenuButtonBackground}">
+                                    BorderBrush="{StaticResource ButtonBorderBrush}"
+                                    Background="{StaticResource SideMenuButtonBackground}">
 
                                 <Rectangle Width="{StaticResource MainButtonRectangleSize}"
                                            Height="{StaticResource MainButtonRectangleSize}">
@@ -224,7 +228,8 @@
                                     VerticalAlignment="Bottom"
                                     Style="{DynamicResource MetroCircleButtonStyle}"
                                     BorderThickness="{StaticResource ThirdButtonSideMenuBorderThickness}"
-                                    BorderBrush="{StaticResource ButtonBorderBrush}" Background="{StaticResource SideMenuButtonBackground}">
+                                    BorderBrush="{StaticResource ButtonBorderBrush}"
+                                    Background="{StaticResource SideMenuButtonBackground}">
 
                                 <StackPanel Orientation="Horizontal">
                                     <Rectangle Width="{StaticResource SecondButtonRectangleSize}"
@@ -246,7 +251,8 @@
                                     VerticalAlignment="Bottom"
                                     Style="{DynamicResource MetroCircleButtonStyle}"
                                     BorderThickness="{StaticResource ThirdButtonSideMenuBorderThickness}"
-                                    BorderBrush="{StaticResource ButtonBorderBrush}" Background="{StaticResource SideMenuButtonBackground}">
+                                    BorderBrush="{StaticResource ButtonBorderBrush}"
+                                    Background="{StaticResource SideMenuButtonBackground}">
 
                                 <StackPanel Orientation="Horizontal">
                                     <Rectangle Width="{StaticResource SecondButtonRectangleSize}"
@@ -268,7 +274,8 @@
                                     VerticalAlignment="Bottom" Padding="0"
                                     Style="{DynamicResource MetroCircleButtonStyle}"
                                     BorderThickness="{StaticResource ThirdButtonSideMenuBorderThickness}"
-                                    BorderBrush="{StaticResource ButtonBorderBrush}" Background="{StaticResource SideMenuButtonBackground}">
+                                    BorderBrush="{StaticResource ButtonBorderBrush}"
+                                    Background="{StaticResource SideMenuButtonBackground}">
 
                                 <StackPanel Orientation="Horizontal">
                                     <Rectangle Width="{StaticResource SecondButtonRectangleSize}"
@@ -324,7 +331,8 @@
                             Height="{StaticResource ThirdButtonSideMenuSize}" VerticalAlignment="Bottom"
                             Style="{DynamicResource MetroCircleButtonStyle}"
                             BorderThickness="{StaticResource ThirdButtonSideMenuBorderThickness}"
-                            BorderBrush="{StaticResource ButtonBorderBrush}" Grid.Row="0" Background="{StaticResource SideMenuButtonBackground}">
+                            BorderBrush="{StaticResource ButtonBorderBrush}" Grid.Row="0"
+                            Background="{StaticResource SideMenuButtonBackground}">
 
                         <StackPanel Orientation="Horizontal">
                             <Rectangle Width="{StaticResource ThirdButtonRectangleSize}"
@@ -346,7 +354,8 @@
                             Height="{StaticResource ThirdButtonSideMenuSize}" VerticalAlignment="Bottom" Padding="0"
                             Style="{DynamicResource MetroCircleButtonStyle}"
                             BorderThickness="{StaticResource ThirdButtonSideMenuBorderThickness}"
-                            BorderBrush="{StaticResource ButtonBorderBrush}" Grid.Row="1" Background="{StaticResource SideMenuButtonBackground}">
+                            BorderBrush="{StaticResource ButtonBorderBrush}" Grid.Row="1"
+                            Background="{StaticResource SideMenuButtonBackground}">
 
                         <StackPanel Orientation="Horizontal">
                             <Rectangle Width="{StaticResource ThirdButtonRectangleSize}"
@@ -377,7 +386,8 @@
                     Style="{DynamicResource MetroCircleButtonStyle}"
 
                     BorderThickness="{StaticResource MainButtonSideMenuBorderThickness}"
-                    BorderBrush="{StaticResource ButtonBorderBrush}" Background="{StaticResource SideMenuButtonBackground}">
+                    BorderBrush="{StaticResource ButtonBorderBrush}"
+                    Background="{StaticResource SideMenuButtonBackground}">
 
                 <Rectangle Width="{StaticResource MainButtonRectangleSize}"
                            Height="{StaticResource MainButtonRectangleSize}">
@@ -399,7 +409,8 @@
                     VerticalAlignment="Bottom"
                     Style="{DynamicResource MetroCircleButtonStyle}"
                     BorderThickness="{StaticResource ThirdButtonSideMenuBorderThickness}"
-                    BorderBrush="{StaticResource ButtonBorderBrush}" Background="{StaticResource SideMenuButtonBackground}">
+                    BorderBrush="{StaticResource ButtonBorderBrush}"
+                    Background="{StaticResource SideMenuButtonBackground}">
 
                 <StackPanel Orientation="Horizontal">
                     <Rectangle Width="{StaticResource SecondButtonRectangleSize}"
@@ -422,7 +433,8 @@
                     VerticalAlignment="Bottom"
                     Style="{DynamicResource MetroCircleButtonStyle}"
                     BorderThickness="{StaticResource ThirdButtonSideMenuBorderThickness}"
-                    BorderBrush="{StaticResource ButtonBorderBrush}" Background="{StaticResource SideMenuButtonBackground}">
+                    BorderBrush="{StaticResource ButtonBorderBrush}"
+                    Background="{StaticResource SideMenuButtonBackground}">
 
                 <StackPanel Orientation="Horizontal">
                     <Rectangle Width="{StaticResource SecondButtonRectangleSize}"
@@ -445,7 +457,8 @@
                     VerticalAlignment="Bottom" Padding="0"
                     Style="{DynamicResource MetroCircleButtonStyle}"
                     BorderThickness="{StaticResource ThirdButtonSideMenuBorderThickness}"
-                    BorderBrush="{StaticResource ButtonBorderBrush}" Background="{StaticResource SideMenuButtonBackground}">
+                    BorderBrush="{StaticResource ButtonBorderBrush}"
+                    Background="{StaticResource SideMenuButtonBackground}">
 
                 <StackPanel Orientation="Horizontal">
                     <Rectangle Width="{StaticResource SecondButtonRectangleSize}"

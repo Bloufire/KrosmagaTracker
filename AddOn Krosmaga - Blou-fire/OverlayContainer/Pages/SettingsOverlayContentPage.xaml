@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="AddOn_Krosmaga___Blou_fire.OverlayContainer.Pages.SettingsOverlayContentPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AddOn_Krosmaga___Blou_fire.OverlayContainer.Pages"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+             xmlns:tracker="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker"
+             xmlns:pageModel="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.DataContext>
+        <pageModel:SettingsOverlayParamPageModel/>
+    </UserControl.DataContext>
+    <DockPanel   OpacityMask="{StaticResource HeaderBackgroundOpacityMask}"
+                      Background="{StaticResource FlyoutGradientBackground}"
+                  VerticalAlignment="Stretch">
+        <GroupBox Header="Settings" DockPanel.Dock="Top"  >
+            <controls:MetroAnimatedSingleRowTabControl >
+                <controls:MetroTabItem  Header="Overlay" controls:ControlsHelper.HeaderFontSize="{StaticResource AnimatedTabControlHeaderMediumSize}">
+                    <tracker:SettingsOverlayParamPage/>
+                </controls:MetroTabItem>
+                <controls:MetroTabItem Header="Tracker" controls:ControlsHelper.HeaderFontSize="{StaticResource AnimatedTabControlHeaderMediumSize}">
+                    <Label>Soon...</Label>
+                </controls:MetroTabItem>
+                <controls:MetroTabItem Header="Other" controls:ControlsHelper.HeaderFontSize="{StaticResource AnimatedTabControlHeaderMediumSize}">
+                   <Label>Soon...</Label>
+                </controls:MetroTabItem>
+            </controls:MetroAnimatedSingleRowTabControl>
+        </GroupBox>
+
+        <Button Command="{Binding CloseOverlay}" Margin="10" Content="Quitter Tracker" HorizontalAlignment="Center" VerticalAlignment="Bottom"  DockPanel.Dock="Bottom"></Button>
+
+    </DockPanel>
+</UserControl>

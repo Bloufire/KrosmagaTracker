@@ -117,4 +117,7 @@
   <data name="SideMenuButtonBackground" xml:space="preserve">
     <value>#227866</value>
   </data>
+  <data name="OverlayWidth" type="System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>350</value>
+  </data>
 </root>

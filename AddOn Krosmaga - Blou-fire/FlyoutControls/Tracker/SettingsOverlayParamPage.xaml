@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.SettingsOverlayParamPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <GroupBox Header="General">
+            <StackPanel>
+                <CheckBox Margin="{StaticResource DefaultMinMargin}">Hide (completely)</CheckBox>
+                <CheckBox Margin="{StaticResource DefaultMinMargin}">Hide if Krosmaga in background</CheckBox>
+                <CheckBox Margin="{StaticResource DefaultMinMargin}">Hide decks</CheckBox>
+                <CheckBox Margin="{StaticResource DefaultMinMargin}">Hide Timers</CheckBox>
+                <Grid>
+
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label VerticalAlignment="Center" Grid.Column="0">Reset settings :</Label>
+                    <Button  Grid.Column="1" Margin="{StaticResource DefaultMinMargin}" >Reset</Button>
+
+                </Grid>
+            </StackPanel>
+        </GroupBox>
+    </Grid>
+</UserControl>

@@ -21,13 +21,16 @@
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/blue.xaml" />
                 <ResourceDictionary
                     Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/basedark.xaml" />
+                
+                
+
             </ResourceDictionary.MergedDictionaries>
             <uiElements:GodClassToColor x:Key="GodToColor" />
            
             <!--Converter-->
             <converter:SelectedToVisibilityConverter x:Key="SelectedToVisibilityConverter" />
 
-            <!--Style-->
+            <!--Style-->    
             <Style x:Key="GridFadeAnimationStyle" TargetType="Grid">
                 <Style.Triggers>
                     <Trigger Property="Visibility" Value="Visible">
@@ -52,8 +55,8 @@
             <!--UserControlOverlay-->
             <LinearGradientBrush x:Key="FlyoutGradientBackground" StartPoint="0,0" EndPoint="1,0">
                 <GradientStop Color="#55bc99" Offset="0" />
-                <GradientStop Color="#000000" Offset="0.05" />
-                <GradientStop Color="#000000" Offset="1" />
+                <GradientStop Color="{StaticResource WhiteColor}" Offset="0.05" />
+                <GradientStop Color="{StaticResource WhiteColor}" Offset="1" />
             </LinearGradientBrush>
             <LinearGradientBrush
                 x:Key="HeaderBackgroundOpacityMask"
@@ -66,7 +69,15 @@
             
             <!--Button-->
             <Brush x:Key="SideMenuButtonBackground">#227866</Brush>
-            
+            <Style x:Key="ColumnHeaderDefaultStyle" TargetType="DataGridColumnHeader" >
+                <Setter Property="Background" Value="Transparent"></Setter>
+                
+                </Style>
+            <Thickness x:Key="DefaultLargeMargin"  >7</Thickness>
+            <Thickness x:Key="DefaultMargin"  >5</Thickness>
+            <Thickness x:Key="DefaultMinMargin"  >3</Thickness>
+            <system:Double x:Key="AnimatedTabControlHeaderMediumSize">20</system:Double>
+            <system:Double x:Key="OverlayWidth" >350</system:Double>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

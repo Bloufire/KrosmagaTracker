@@ -42,7 +42,8 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 		public int VsLosesNb
 		{
 			get { return _vsLosesNb; }
-			set { _vsLosesNb = value;
+			set {
+				_vsLosesNb = value;
 				OnPropertyChanged(nameof(VsLosesNb));
 			}
 		}

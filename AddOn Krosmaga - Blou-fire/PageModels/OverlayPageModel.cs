@@ -8,6 +8,9 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using AddOn_Krosmaga___Blou_fire.Enums;
 using AddOn_Krosmaga___Blou_fire.Helpers;
+using AddOn_Krosmaga___Blou_fire.Properties;
+using MahApps.Metro.Controls;
+using MahApps.Metro.Controls.Dialogs;
 
 namespace AddOn_Krosmaga___Blou_fire.PageModels
 {
@@ -16,13 +19,13 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 		public OverlayPageModel()
 		{
 			SelectedContentItem = OverlayContentEnum.Tracker;
-			Left = SystemParameters.PrimaryScreenWidth - 400;
+			Left = SystemParameters.PrimaryScreenWidth - Resources.OverlayWidth;
 
 		}
 
 		#region Commands
 		public ICommand BtnOpenOverlay_OnClick => new RelayCommand(BtnOpenOverlay);
-		public ICommand BtnTrackerOnOverlay_OnClick => new RelayCommand(BtnOpenOverlayTracker);
+	    public ICommand BtnTrackerOnOverlay_OnClick => new RelayCommand(BtnOpenOverlayTracker);
 		public ICommand BtnStatsOnOverlay_OnClick => new RelayCommand(BtnOpenOverlayStats);
 		public ICommand BtnHistoOnOverlay_OnClick => new RelayCommand(BtnOpenOverlayHisto);
 		public ICommand BtnSettingsOnOverlay_OnClick => new RelayCommand(BtnOpenOverlaySettings);
@@ -35,7 +38,11 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 			IsLeftFlyOpen = !IsLeftFlyOpen;
 		}
 
-		private void BtnOpenOverlayTracker()
+      
+
+
+
+        private void BtnOpenOverlayTracker()
 		{
 			SelectedContentItem = OverlayContentEnum.Tracker;
 			IsLeftFlyOpen = true;
@@ -60,11 +67,44 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 		{
 			Helpers.Helpers.TryOpenUrl("https://discord.gg/UR2TQEp");
 		}
-		#endregion
+        #endregion
 
 
-		#region Properties
-		private bool _isLeftFlyOpen;
+        #region Properties
+
+	    private ICommand _closeOverlayCommand;
+	    public ICommand CloseOverlay
+	    {
+	        get
+	        {
+
+	            if (_closeOverlayCommand == null)
+	                _closeOverlayCommand = new AsyncCommand(CloseOverlayNow);
+
+	            return _closeOverlayCommand;
+	        }
+	    }
+
+	    private async Task CloseOverlayNow()
+	    {
+			var metroWindow = (Application.Current.MainWindow as MetroWindow);
+		    var res = await metroWindow.ShowMessageAsync("Quitter Kros'Tracker", "Êtes-vous sûr ?", MessageDialogStyle.AffirmativeAndNegative, new MetroDialogSettings()
+			    {
+				    DialogTitleFontSize = 15,
+				    DialogMessageFontSize = 13,
+				    AffirmativeButtonText = "Oui",
+				    NegativeButtonText = "Non",
+				    DefaultButtonFocus = MessageDialogResult.Affirmative
+
+			    }
+		    );
+
+		    if (res == MessageDialogResult.Affirmative)
+			    System.Windows.Application.Current.Shutdown();
+		}
+
+
+	    private bool _isLeftFlyOpen;
 		public bool IsLeftFlyOpen
 		{
 			get => this._isLeftFlyOpen;
@@ -109,9 +149,8 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 			set { winTop = value; }
 		}
 
-		#endregion
+        #endregion
 
-
-
-	}
+	  
+    }
 }

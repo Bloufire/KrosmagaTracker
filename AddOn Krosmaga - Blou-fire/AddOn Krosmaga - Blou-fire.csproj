@@ -57,6 +57,12 @@
     <Reference Include="MahApps.Metro, Version=1.5.0.23, Culture=neutral, PublicKeyToken=f4fb5a3c4d1e5b4f, processorArchitecture=MSIL">
       <HintPath>..\packages\MahApps.Metro.1.5.0\lib\net45\MahApps.Metro.dll</HintPath>
     </Reference>
+    <Reference Include="MaterialDesignColors, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.1.1.2\lib\net45\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=2.3.1.953, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.2.3.1.953\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
     <Reference Include="MaterialIcons, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialIcons.1.0.3\lib\MaterialIcons.dll</HintPath>
     </Reference>
@@ -102,6 +108,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Base\AsyncCommandBase.cs" />
     <Compile Include="Builders\EventsManager\CardMovedEvent.cs" />
     <Compile Include="Builders\EventsManager\CardPlayedEvent.cs" />
     <Compile Include="Builders\EventsManager\NewAOEEvent.cs" />
@@ -118,9 +125,6 @@
     <Compile Include="Converter\GameResultToStringConverter.cs" />
     <Compile Include="Converter\NegatedBooleanConverter.cs" />
     <Compile Include="Converter\SelectedToVisibilityConverter.cs" />
-    <Compile Include="CustomControls\TapToDisplayContent.xaml.cs">
-      <DependentUpon>TapToDisplayContent.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Data\CellCoord.Builder.cs" />
     <Compile Include="Data\ClientPreferences.Builder.cs" />
     <Compile Include="Data\Custom.Builder.cs" />
@@ -174,6 +178,8 @@
     <Compile Include="FlyoutControls\Tracker\PageModel\MatchesHistoPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\ProfileDataPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\SettingsFlyoutPageModel.cs" />
+    <Compile Include="FlyoutControls\Tracker\PageModel\SettingsOverlayParamPageModel.cs" />
+    <Compile Include="FlyoutControls\Tracker\PageModel\SettingsTrackerParamPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\TrackerStatsPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\VsCardsInHandPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\VsPlayedCardsPageModel.cs" />
@@ -183,6 +189,12 @@
     </Compile>
     <Compile Include="FlyoutControls\Tracker\SettingsFlyoutPage.xaml.cs">
       <DependentUpon>SettingsFlyoutPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FlyoutControls\Tracker\SettingsOverlayParamPage.xaml.cs">
+      <DependentUpon>SettingsOverlayParamPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FlyoutControls\Tracker\SettingsTrackerParamPage.xaml.cs">
+      <DependentUpon>SettingsTrackerParamPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="FlyoutControls\Tracker\TrackerStats.xaml.cs">
       <DependentUpon>TrackerStats.xaml</DependentUpon>
@@ -200,17 +212,26 @@
     <Compile Include="FlyoutControls\Tracker\VsTrackedCardsPage.xaml.cs">
       <DependentUpon>VsTrackedCardsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\AsyncCommand.cs" />
+    <Compile Include="Helpers\DelegateCommand.cs" />
     <Compile Include="Helpers\Helpers.cs" />
     <Compile Include="Helpers\ObservableObject.cs" />
     <Compile Include="Helpers\RelayCommand.cs" />
     <Compile Include="Helpers\ThemeManagerHelper.cs" />
     <Compile Include="Helpers\ViewModelBase.cs" />
+    <Compile Include="Interfaces\IAsyncCommand.cs" />
     <Compile Include="KrosmagaReader.cs" />
     <Compile Include="Models\FiltersStatModel.cs" />
     <Compile Include="Models\SettingsModel.cs" />
     <Compile Include="Models\TrackerModel.cs" />
     <Compile Include="OverlayContainer\Pages\EmptyOverlayPage.xaml.cs">
       <DependentUpon>EmptyOverlayPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OverlayContainer\Pages\HistoOverlayContentPage.xaml.cs">
+      <DependentUpon>HistoOverlayContentPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OverlayContainer\Pages\SettingsOverlayContentPage.xaml.cs">
+      <DependentUpon>SettingsOverlayContentPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="OverlayContainer\Pages\TrackerContentPage.xaml.cs">
       <DependentUpon>TrackerContentPage.xaml</DependentUpon>
@@ -235,10 +256,6 @@
     <Compile Include="UIPlayerDatas.cs" />
     <Compile Include="Utility\LocUtil.cs" />
     <Compile Include="Utility\User32.cs" />
-    <Page Include="CustomControls\TapToDisplayContent.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="FlyoutControls\Tracker\CardPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -268,6 +285,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="FlyoutControls\Tracker\SettingsFlyoutPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FlyoutControls\Tracker\SettingsOverlayParamPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FlyoutControls\Tracker\SettingsTrackerParamPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -304,6 +329,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="OverlayContainer\Pages\EmptyOverlayPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OverlayContainer\Pages\HistoOverlayContentPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OverlayContainer\Pages\SettingsOverlayContentPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -413,7 +446,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controls\" />
-    <Folder Include="FlyoutControls\Overlay\" />
     <Folder Include="OverlayContainer\PageModels\" />
     <Folder Include="Services\Interfaces\" />
   </ItemGroup>

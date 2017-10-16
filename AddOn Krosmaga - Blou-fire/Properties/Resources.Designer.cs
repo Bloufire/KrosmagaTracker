@@ -61,6 +61,16 @@ namespace AddOn_Krosmaga___Blou_fire.Properties {
         }
         
         /// <summary>
+        ///   Recherche une ressource localisée de type System.Double semblable à 350.
+        /// </summary>
+        internal static double OverlayWidth {
+            get {
+                object obj = ResourceManager.GetObject("OverlayWidth", resourceCulture);
+                return ((double)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à #227866.
         /// </summary>
         internal static string SideMenuButtonBackground {

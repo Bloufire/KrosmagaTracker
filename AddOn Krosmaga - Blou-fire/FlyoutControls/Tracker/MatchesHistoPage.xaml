@@ -7,7 +7,7 @@
              xmlns:pageModel="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel"
              xmlns:lex="http://wpflocalizeextension.codeplex.com"
              xmlns:converter="clr-namespace:AddOn_Krosmaga___Blou_fire.Converter"
-             mc:Ignorable="d"
+             mc:Ignorable="d" Background="Transparent"
              d:DesignHeight="300" d:DesignWidth="300">
     <UserControl.DataContext>
         <pageModel:MatchesHistoPageModel></pageModel:MatchesHistoPageModel>
@@ -20,11 +20,13 @@
     <DataGrid Name="DataGridGames" ItemsSource="{Binding FilteredGames}"
               AutoGenerateColumns="False" CanUserAddRows="False"
               CanUserDeleteRows="False" CanUserResizeRows="False"
-              IsReadOnly="True" CanUserResizeColumns="True">
+              IsReadOnly="True" CanUserResizeColumns="True" VerticalScrollBarVisibility="Hidden" Background="Transparent">
+      
         <DataGrid.RowStyle>
             <Style TargetType="{x:Type DataGridRow}">
-                <Setter Property="DetailsVisibility" Value="Collapsed"/>
-                <Style.Triggers>
+                <Setter Property="Background" Value="Transparent"></Setter>
+                <!--<Setter Property="DetailsVisibility" Value="Collapsed"/>-->
+                <!--<Style.Triggers>
                     <Trigger Property="IsSelected" Value="True">
                         <Trigger.EnterActions>
                             <BeginStoryboard>
@@ -45,19 +47,20 @@
                             </BeginStoryboard>
                         </Trigger.ExitActions>
                     </Trigger>
-                </Style.Triggers>
+                </Style.Triggers>-->
             </Style>
         </DataGrid.RowStyle>
         <DataGrid.RowDetailsTemplate>
             <DataTemplate>
-                <Grid>
+                <!--<Grid>
                     <Grid.LayoutTransform>
                         <ScaleTransform ScaleY="0"/>
                     </Grid.LayoutTransform>
                     <Grid.Style>
                         <Style TargetType="Grid">
                             <Style.Triggers>
-                                <DataTrigger Binding="{Binding IsSelected, RelativeSource={RelativeSource AncestorType=DataGridRow}}"  Value="True">
+                                -->
+                <!--<DataTrigger Binding="{Binding IsSelected, RelativeSource={RelativeSource AncestorType=DataGridRow}}"  Value="True">
                                     <DataTrigger.EnterActions>
                                         <BeginStoryboard>
                                             <Storyboard>
@@ -84,26 +87,27 @@
                                             </Storyboard>
                                         </BeginStoryboard>
                                     </DataTrigger.ExitActions>
-                                </DataTrigger>
+                                </DataTrigger>-->
+                <!--
                             </Style.Triggers>
                         </Style>
                     </Grid.Style>
                     <Grid.Children>
                          <local:CardPage ></local:CardPage>
                     </Grid.Children>
-                </Grid>
+                </Grid>-->
             </DataTemplate>
         </DataGrid.RowDetailsTemplate>
         <DataGrid.Columns>
-            <DataGridTemplateColumn Header="test" SortMemberPath="PlayerHero">
+            <!--<DataGridTemplateColumn Header="Deck" SortMemberPath="PlayedDeck">
                 <DataGridTemplateColumn.CellTemplate>
                     <DataTemplate>
                         <Button Content="Decks" x:Name="b1"  >
                         </Button>
                     </DataTemplate>
                 </DataGridTemplateColumn.CellTemplate>
-            </DataGridTemplateColumn>
-            <DataGridTemplateColumn Header="Class" SortMemberPath="PlayerHero">
+            </DataGridTemplateColumn>-->
+            <DataGridTemplateColumn Header="Class" SortMemberPath="PlayerHero" Width="auto">
                 <DataGridTemplateColumn.CellTemplate>
                     <DataTemplate>
                         <Image Source="{Binding OwnImage}" Width="30" Height="30"
@@ -111,7 +115,7 @@
                     </DataTemplate>
                 </DataGridTemplateColumn.CellTemplate>
             </DataGridTemplateColumn>
-            <DataGridTemplateColumn Header="VS" SortMemberPath="PlayerHero">
+            <DataGridTemplateColumn Header="VS" SortMemberPath="PlayerHero" Width="40">
                 <DataGridTemplateColumn.CellTemplate>
                     <DataTemplate>
                         <Image Source="{Binding OpponentImage}" Width="30" Height="30"
@@ -119,7 +123,7 @@
                     </DataTemplate>
                 </DataGridTemplateColumn.CellTemplate>
             </DataGridTemplateColumn>
-            <DataGridTextColumn Header="Name" Binding="{Binding OpponentName}">
+            <DataGridTextColumn Header="Name" Binding="{Binding OpponentName}" Width="auto">
                 <DataGridTextColumn.ElementStyle>
                     <Style TargetType="TextBlock">
                         <Setter Property="HorizontalAlignment" Value="Center" />
@@ -127,7 +131,8 @@
                 </DataGridTextColumn.ElementStyle>
             </DataGridTextColumn>
             <DataGridTextColumn Header="Result"
-                                Binding="{Binding ResultatMatch ,Converter={StaticResource GameResultToStringConverter}}">
+                                
+                                Binding="{Binding ResultatMatch ,Converter={StaticResource GameResultToStringConverter}}" Width="65">
                 <DataGridTextColumn.ElementStyle>
                     <Style TargetType="TextBlock">
                         <Setter Property="HorizontalAlignment" Value="Center" />
@@ -136,7 +141,7 @@
                     </Style>
                 </DataGridTextColumn.ElementStyle>
             </DataGridTextColumn>
-            <DataGridTextColumn Header="Tours" Binding="{Binding NbToursMatch}">
+            <!--<DataGridTextColumn Header="Tours" Binding="{Binding NbToursMatch}">
                 <DataGridTextColumn.ElementStyle>
                     <Style TargetType="TextBlock">
                         <Setter Property="HorizontalAlignment" Value="Center" />
@@ -150,7 +155,7 @@
                         <Setter Property="HorizontalAlignment" Value="Center" />
                     </Style>
                 </DataGridTextColumn.ElementStyle>
-            </DataGridTextColumn>
+            </DataGridTextColumn>-->
         </DataGrid.Columns>
 
 
