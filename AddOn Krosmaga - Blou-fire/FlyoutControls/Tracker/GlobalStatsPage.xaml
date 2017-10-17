@@ -6,16 +6,99 @@
              xmlns:local="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker"
                xmlns:metroChart="clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart"
              xmlns:pageModel="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel"
+             xmlns:wpf="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+             xmlns:data="clr-namespace:AddOn_Krosmaga___Blou_fire.Data"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <UserControl.DataContext>
         <pageModel:GlobalStatsPageModel/>
+        
     </UserControl.DataContext>
+    <StackPanel Height="200" Orientation="Vertical" HorizontalAlignment="Center">
 
-    <metroChart:RadialGaugeChart  Background="Transparent" ChartTitleVisibility="Visible" ChartTitle="{Binding TitreDuChart}" ChartSubTitle="{Binding SsTitreDuChart}" SelectedBrush="Transparent" ChartLegendVisibility="Collapsed" DockPanel.Dock="Left"  >
-        <metroChart:RadialGaugeChart.Series>
-            <metroChart:ChartSeries SeriesTitle="Winrate Total" DisplayMember="Name" ValueMember="Value" ItemsSource="{Binding WinrateOverall}"/>
+        <Grid VerticalAlignment="Top">
+            <TextBlock Style="{StaticResource WinrateGaugeTextStyle}">
+            <Run Text="{Binding WinrateTotal}"/>%
+            <LineBreak/>
+            <Run Text="Winrate" FontSize="10" />
+            </TextBlock>
+            <wpf:Gauge Value="{Binding WinrateTotal}" Style="{StaticResource WinrateGaugeStyle}"/>
+        </Grid>
+        <StackPanel >
+            <TextBlock Margin="0,5" Text="Matchups" FontWeight="SemiBold" TextAlignment="Center"/>
+            <UniformGrid Width="200" Margin="0,5,0,0">
+                <UniformGrid.Resources>
+                    <Style TargetType="Image">
+                        <Setter Property="Width" Value="24"/>
+                        <Setter Property="Height" Value="24"/>
+                        <Setter Property="RenderOptions.BitmapScalingMode" Value="Fant"/>
+                    </Style>
+                    <Style TargetType="StackPanel">
+                        <Setter Property="Orientation" Value="Horizontal"/>
+                        <Setter Property="Margin" Value="4,2,0,0"/>
+                    </Style>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="VerticalAlignment" Value="Center"/>
+                        <Setter Property="FontWeight" Value="SemiBold"/>
+                        <Setter Property="Margin" Value="3,0,0,0"/>
+                    </Style>
+                </UniformGrid.Resources>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="../../Images/Gods/Cra.png" Width="{StaticResource IconDefaultSize}" Height="{StaticResource IconDefaultSize}"/>
+                    <TextBlock>
+                                <Run Text="{Binding MUData.CraWinrateMU, Mode=OneWay}"/>%
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel>
+                    <Image Source="../../Images/Gods/Eca.png"  Width="{StaticResource IconDefaultSize}" Height="{StaticResource IconDefaultSize}"/>
+                    <TextBlock>
+                                <Run Text="{Binding MUData.EcaWinrateMU, Mode=OneWay}"/>%
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel>
+                    <Image Source="../../Images/Gods/Eni.png"  Width="{StaticResource IconDefaultSize}" Height="{StaticResource IconDefaultSize}"/>
+                    <TextBlock>
+                                <Run Text="{Binding MUData.EniWinrateMU, Mode=OneWay}"/>%
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel>
+                    <Image Source="../../Images/Gods/Enu.png" Width="{StaticResource IconDefaultSize}" Height="{StaticResource IconDefaultSize}"/>
+                    <TextBlock>
+                                <Run Text="{Binding MUData.EnuWinrateMU, Mode=OneWay}"/>%
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel>
+                    <Image Source="../../Images/Gods/Iop.png"  Width="{StaticResource IconDefaultSize}" Height="{StaticResource IconDefaultSize}"/>
+                    <TextBlock>
+                                <Run Text="{Binding MUData.IopWinrateMU, Mode=OneWay}"/>%
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel>
+                    <Image Source="../../Images/Gods/Sacri.png"  Width="{StaticResource IconDefaultSize}" Height="{StaticResource IconDefaultSize}"/>
+                    <TextBlock>
+                                <Run Text="{Binding MUData.SacriWinrateMU, Mode=OneWay}"/>%
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel>
+                    <Image Source="../../Images/Gods/Sadi.png"  Width="{StaticResource IconDefaultSize}" Height="{StaticResource IconDefaultSize}"/>
+                    <TextBlock>
+                                <Run Text="{Binding MUData.SadiWinrateMU, Mode=OneWay}"/>%
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel>
+                    <Image Source="../../Images/Gods/Sram.png"  Width="{StaticResource IconDefaultSize}" Height="{StaticResource IconDefaultSize}"/>
+                    <TextBlock>
+                                <Run Text="{Binding MUData.SramWinrateMU, Mode=OneWay}"/>%
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel>
+                    <Image Source="../../Images/Gods/Xel.png" Width="{StaticResource IconDefaultSize}" Height="{StaticResource IconDefaultSize}"/>
+                    <TextBlock>
+                    <Run Text="{Binding MUData.XelWinrateMU, Mode=OneWay}"/>%
+                    </TextBlock>
+                </StackPanel>
+            </UniformGrid>
+        </StackPanel>
+    </StackPanel>
 
-        </metroChart:RadialGaugeChart.Series>
-    </metroChart:RadialGaugeChart>
 </UserControl>

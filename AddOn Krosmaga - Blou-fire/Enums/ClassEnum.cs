@@ -26,6 +26,8 @@ namespace AddOn_Krosmaga___Blou_fire.Enums
 
 		[LocDescription("Sacrieur")] Sacrieur,
 
-		[LocDescription("Sadida")] Sadida
+		[LocDescription("Sadida")] Sadida,
+
+	
 	}
 }

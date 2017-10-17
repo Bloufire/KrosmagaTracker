@@ -15,6 +15,8 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 	{
 		public GlobalStatsPageModel()
 		{
+
+
 		}
 
 
@@ -25,16 +27,16 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 			get
 			{
 				var games = TrackerSrv.TrackerModel.FilteredGames.ToList();
-				var wins = games.Where(x => x.ResultatMatch == (int) GameResult.Win).ToList();
-				
+				var wins = games.Where(x => x.ResultatMatch == (int)GameResult.Win).ToList();
+
 				return wins.Count > 0
-					? wins.Select(x => new ChartStats {Name = "Wins", Value = Math.Round(100.0 * wins.Count() / games.Count)})
+					? wins.Select(x => new ChartStats { Name = "Wins", Value = Math.Round(100.0 * wins.Count() / games.Count) })
 					: EmptyChartStats("Wins");
 			}
 		}
 		public IEnumerable<ChartStats> AvgWinratePerClass
 		=> TrackerSrv.TrackerModel.FilteredGames.ToList().GroupBy(x => x.PlayerClasse)
-				
+
 				.OrderBy(x => x.Key)
 				.Select(x =>
 						new ChartStats
@@ -44,8 +46,8 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 							Brush = new SolidColorBrush(Helpers.Helpers.GetClassColor(x.Key, true)),
 							Class = StatsCore.GetKrosClassByName(x.Key)
 						});
-		
-	
+
+
 		public IEnumerable<ChartStats> WinratePerClassOverall
 		{
 			get
@@ -59,9 +61,53 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 			}
 		}
 
+		public Func<double, string> EmptyFormatter { get; } = val => string.Empty;
+
+		private MatchUpData _muData;
+
+		public MatchUpData MUData
+		{
+			get
+			{
+				if (_muData != null)
+					return _muData;
+				else
+				{
+					_muData = new MatchUpData();
+					return _muData;
+				}
+			}
+			set
+			{
+				_muData = value;
+
+				OnPropertyChanged("MUData");
+			}
+		}
+
+		private double _winrateTotal;
+
+		public double WinrateTotal
+		{
+			get
+			{
+
+				var games = TrackerSrv.TrackerModel.FilteredGames.ToList();
+				var wins = games.Where(x => x.ResultatMatch == (int)GameResult.Win).ToList();
+
+				return wins.Count > 0
+					? wins.Select(x => new ChartStats { Name = "Wins", Value = Math.Round(100.0 * wins.Count() / games.Count) }).First().Value
+					: 0;
+			}
+			set
+			{
+				_winrateTotal = value;
+				OnPropertyChanged("WinrateTotal");
+			}
+		}
 
 
-		private ChartStats[] EmptyChartStats(string name) => new[] {new ChartStats() {Name = name, Value = 0}};
+		private ChartStats[] EmptyChartStats(string name) => new[] { new ChartStats() { Name = name, Value = 0 } };
 		private string _titreDuChart;
 
 		public string TitreDuChart
@@ -86,5 +132,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 			}
 		}
 		#endregion
+
+
 	}
 }
