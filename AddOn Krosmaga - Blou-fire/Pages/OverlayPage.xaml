@@ -196,7 +196,7 @@
                                   Visibility="{Binding SelectedContentItem , Converter={StaticResource SelectedToVisibilityConverter},ConverterParameter={x:Static enums:OverlayContentEnum.Stats}}"
                                   Grid.Column="1" Grid.Row="1">
 
-                                <pages:EmptyOverlayPage />
+                                <pages:StatsOverlayContentPage></pages:StatsOverlayContentPage>
                             </Grid>
                         </Grid>
 

@@ -125,6 +125,7 @@
     <Compile Include="Converter\GameResultToStringConverter.cs" />
     <Compile Include="Converter\NegatedBooleanConverter.cs" />
     <Compile Include="Converter\SelectedToVisibilityConverter.cs" />
+    <Compile Include="DataModel\KrosClass.cs" />
     <Compile Include="Data\CellCoord.Builder.cs" />
     <Compile Include="Data\ClientPreferences.Builder.cs" />
     <Compile Include="Data\Custom.Builder.cs" />
@@ -176,6 +177,7 @@
     <Compile Include="FlyoutControls\Tracker\PageModel\DofusTrackerControlPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\MainUserControlPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\MatchesHistoPageModel.cs" />
+    <Compile Include="FlyoutControls\Tracker\PageModel\PickAClassControlPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\ProfileDataPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\SettingsFlyoutPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\SettingsOverlayParamPageModel.cs" />
@@ -186,6 +188,9 @@
     <Compile Include="FlyoutControls\Tracker\PageModel\VsProfileDataPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\OwnProfileDataPage.xaml.cs">
       <DependentUpon>OwnProfileDataPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FlyoutControls\Tracker\PickAClassControlPage.xaml.cs">
+      <DependentUpon>PickAClassControlPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="FlyoutControls\Tracker\SettingsFlyoutPage.xaml.cs">
       <DependentUpon>SettingsFlyoutPage.xaml</DependentUpon>
@@ -232,6 +237,9 @@
     </Compile>
     <Compile Include="OverlayContainer\Pages\SettingsOverlayContentPage.xaml.cs">
       <DependentUpon>SettingsOverlayContentPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OverlayContainer\Pages\StatsOverlayContentPage.xaml.cs">
+      <DependentUpon>StatsOverlayContentPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="OverlayContainer\Pages\TrackerContentPage.xaml.cs">
       <DependentUpon>TrackerContentPage.xaml</DependentUpon>
@@ -281,6 +289,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="FlyoutControls\Tracker\OwnProfileDataPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FlyoutControls\Tracker\PickAClassControlPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -337,6 +349,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="OverlayContainer\Pages\SettingsOverlayContentPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OverlayContainer\Pages\StatsOverlayContentPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
