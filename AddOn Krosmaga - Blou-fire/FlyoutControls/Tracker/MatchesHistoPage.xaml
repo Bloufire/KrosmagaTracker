@@ -99,14 +99,7 @@
             </DataTemplate>
         </DataGrid.RowDetailsTemplate>
         <DataGrid.Columns>
-            <!--<DataGridTemplateColumn Header="Deck" SortMemberPath="PlayedDeck">
-                <DataGridTemplateColumn.CellTemplate>
-                    <DataTemplate>
-                        <Button Content="Decks" x:Name="b1"  >
-                        </Button>
-                    </DataTemplate>
-                </DataGridTemplateColumn.CellTemplate>
-            </DataGridTemplateColumn>-->
+          
             <DataGridTemplateColumn Header="Class" SortMemberPath="PlayerHero" Width="auto">
                 <DataGridTemplateColumn.CellTemplate>
                     <DataTemplate>

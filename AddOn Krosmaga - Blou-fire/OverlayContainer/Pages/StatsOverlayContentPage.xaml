@@ -17,8 +17,12 @@
         <GroupBox Header="Pick a class">
             <tracker:PickAClassControlPage></tracker:PickAClassControlPage>
         </GroupBox>
-        <GroupBox Header="Global Stats"></GroupBox>
-        <GroupBox Header="My Games"></GroupBox>
+        <GroupBox Header="Global Stats" >
+            <tracker:GlobalStatsPage></tracker:GlobalStatsPage>
+        </GroupBox>
+        <GroupBox Header="Global Stats" >
+            <Button Content="Advanced Stats"></Button>
+        </GroupBox>
     </StackPanel>
 
 </UserControl>

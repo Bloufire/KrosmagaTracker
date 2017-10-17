@@ -78,6 +78,7 @@
             <Thickness x:Key="DefaultMinMargin"  >3</Thickness>
             <system:Double x:Key="AnimatedTabControlHeaderMediumSize">20</system:Double>
             <system:Double x:Key="OverlayWidth" >350</system:Double>
+            <system:Double x:Key="IconDefaultSize">20</system:Double>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

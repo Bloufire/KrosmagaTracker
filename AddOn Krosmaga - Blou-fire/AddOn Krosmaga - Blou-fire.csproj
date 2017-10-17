@@ -46,13 +46,11 @@
     <Reference Include="De.TorstenMandelkow.MetroChart, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d5b8d1bbc99c4a2a, processorArchitecture=MSIL">
       <HintPath>..\packages\ModernUICharts.1.0.0\lib\De.TorstenMandelkow.MetroChart.dll</HintPath>
     </Reference>
-    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
-      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="LiveCharts, Version=0.7.17.0, Culture=neutral, PublicKeyToken=c5935629d38af058, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.7.17\lib\portable-net40+sl5+win8+wp8+wpa81\LiveCharts.dll</HintPath>
     </Reference>
-    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
-      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="LiveCharts.Wpf, Version=0.7.17.0, Culture=neutral, PublicKeyToken=3b585c2a5f1a92c1, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.7.17\lib\net452\LiveCharts.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="MahApps.Metro, Version=1.5.0.23, Culture=neutral, PublicKeyToken=f4fb5a3c4d1e5b4f, processorArchitecture=MSIL">
       <HintPath>..\packages\MahApps.Metro.1.5.0\lib\net45\MahApps.Metro.dll</HintPath>
@@ -127,6 +125,7 @@
     <Compile Include="Converter\SelectedToVisibilityConverter.cs" />
     <Compile Include="DataModel\KrosClass.cs" />
     <Compile Include="Data\CellCoord.Builder.cs" />
+    <Compile Include="Data\ChartStats.cs" />
     <Compile Include="Data\ClientPreferences.Builder.cs" />
     <Compile Include="Data\Custom.Builder.cs" />
     <Compile Include="Data\CustomByGod.Builder.cs" />
@@ -138,6 +137,7 @@
     <Compile Include="Data\PlayerProfile.Builder.cs" />
     <Compile Include="Data\PlayerRankInfo.Builder.cs" />
     <Compile Include="Data\SelectedDeckByGod.Builder.cs" />
+    <Compile Include="Data\StatsCore.cs" />
     <Compile Include="Data\Uuid.Builder.cs" />
     <Compile Include="Data\ValueModification.Builder.cs" />
     <Compile Include="Enums\CardLocation.cs" />
@@ -164,6 +164,9 @@
     <Compile Include="FlyoutControls\Tracker\DofusTrackerPage.xaml.cs">
       <DependentUpon>DofusTrackerPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FlyoutControls\Tracker\GlobalStatsPage.xaml.cs">
+      <DependentUpon>GlobalStatsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FlyoutControls\Tracker\InGameTrackerPage.xaml.cs">
       <DependentUpon>InGameTrackerPage.xaml</DependentUpon>
     </Compile>
@@ -175,6 +178,7 @@
     </Compile>
     <Compile Include="FlyoutControls\Tracker\PageModel\CardPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\DofusTrackerControlPageModel.cs" />
+    <Compile Include="FlyoutControls\Tracker\PageModel\GlobalStatsPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\MainUserControlPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\MatchesHistoPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\PickAClassControlPageModel.cs" />
@@ -273,6 +277,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="FlyoutControls\Tracker\DofusTrackerPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FlyoutControls\Tracker\GlobalStatsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

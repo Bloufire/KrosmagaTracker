@@ -25,19 +25,5 @@ namespace AddOn_Krosmaga___Blou_fire.DataModel
         public string ImageUri { get; set; }
     }
 
-    public static class KrosClassData
-    {
-        public static List<KrosClass> GetAllClassAndImage()
-        {
-            var ComboClasseValues = Enum.GetValues(typeof(ClassEnum));
-
-            var listToReturn = new List<KrosClass>();
-            listToReturn.Add(new KrosClass("Iop","../../Images/Gods/Iop.png"));
-            listToReturn.Add(new KrosClass("Cra", "../../Images/Gods/Cra.png"));
-            listToReturn.Add(new KrosClass("Eni", "../../Images/Gods/Eni.png"));
-            listToReturn.Add(new KrosClass("Enu", "../../Images/Gods/Enu.png"));
-
-            return listToReturn;
-        }
-    }
+   
 }
