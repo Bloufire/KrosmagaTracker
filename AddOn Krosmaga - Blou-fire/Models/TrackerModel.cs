@@ -273,7 +273,12 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 		
 		public Queue<int> ActualFleauxIds
 		{
-			get { return _actualFleauxIds; }
+			get
+            {
+                if (_actualFleauxIds != null) return _actualFleauxIds;
+                _actualFleauxIds = new Queue<int>();
+                return _actualFleauxIds;
+            }
 
 			set
 			{

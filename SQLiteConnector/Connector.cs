@@ -50,7 +50,8 @@ namespace SQLiteConnector
 
         private static void Close()
         {
-            _maConnexion.Close();
+            if(_maConnexion != null)
+                _maConnexion.Close();
         }
 
         public static bool SaveMatchResult(string opponentClasse, 

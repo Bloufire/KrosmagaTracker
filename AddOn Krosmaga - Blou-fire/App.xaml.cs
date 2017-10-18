@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 using AddOn_Krosmaga___Blou_fire.Services;
-
+    
 namespace AddOn_Krosmaga___Blou_fire
 {
 	/// <summary>
@@ -19,7 +19,6 @@ namespace AddOn_Krosmaga___Blou_fire
 		protected override void OnStartup(StartupEventArgs e)
 		{
 			TrackerCoreService = new TrackerCoreSrv();
-			TrackerCoreService.StartService();
 			base.OnStartup(e);
 		}
 	}

@@ -49,24 +49,23 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 		{
 			CardsCollection = new CardCollection {Collection = new JsonCard().ChargerCartes()};
 			Helpers.Helpers.FirewallValidation();
-			Producer producer = new Producer(_workQueue);
+            TrackerModel = new TrackerModel();
+            UpdateMatchsWithFilterList();
 
+            Producer producer = new Producer(_workQueue);
 			StartService();
-			UpdateMatchsWithFilterList();
-			
 		}
 
 
 
 		public void StartService()
 		{
-			TrackerModel = new TrackerModel();
 			var consumer = Task.Run(() =>
 			{
 				while (true)
 				{
-					byte[] data = _workQueue.Take();
-					Krosmaga(0, data);
+                    byte[] data = _workQueue.Take();
+                    Krosmaga(0, data);
 				}
 			});
 		}
@@ -91,14 +90,14 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 				_binaryReader.ReadBytes(3);
 				while (_binaryReader.BaseStream.Position < _binaryReader.BaseStream.Length && _binaryReader.ReadByte() != 0)
 				{
-					//fileLog.WriteLine("Reading...");
+                    //fileLog.WriteLine("Reading...");
 
-					_binaryReader.ReadBytes(3);
+                    _binaryReader.ReadBytes(3);
 					string messageId = Helpers.Helpers.ConcatHeader(_binaryReader);
-					_binaryReader.ReadByte();
-					uint size = Helpers.Helpers.ReadRawVarint32(_binaryReader);
+                    _binaryReader.ReadByte();
+                    uint size = Helpers.Helpers.ReadRawVarint32(_binaryReader);
 
-					byte[] send;
+                    byte[] send;
 
 					switch (messageId)
 					{
@@ -235,15 +234,12 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 			{
 				Builders.EventsManager.CardMovedEvent cardMoved = new Builders.EventsManager.CardMovedEvent(value);
 
-				//Si une carte de ladversaire se "déplace"
-				if ((cardMoved.CardLocationFrom == Enums.CardLocation.OwnHand &&
-				     cardMoved.CardLocationTo == Enums.CardLocation.Playground ||
-				     cardMoved.CardLocationFrom == Enums.CardLocation.OwnHand &&
-				     cardMoved.CardLocationTo == Enums.CardLocation.OwnGraveyard ||
-				     cardMoved.CardLocationFrom == Enums.CardLocation.OpponentPile &&
-				     cardMoved.CardLocationTo == Enums.CardLocation.OpponentGraveyard ||
-				     cardMoved.CardLocationFrom == Enums.CardLocation.OwnPile &&
-				     cardMoved.CardLocationTo == Enums.CardLocation.OwnGraveyard) &&
+                //Si une carte de ladversaire se "déplace"
+                // AJOUT CARTE DANS LA LISTE DES CARTES JOUEES
+                if ((cardMoved.CardLocationFrom == Enums.CardLocation.OwnHand && cardMoved.CardLocationTo == Enums.CardLocation.Playground ||
+				     cardMoved.CardLocationFrom == Enums.CardLocation.OwnHand && cardMoved.CardLocationTo == Enums.CardLocation.OwnGraveyard ||
+				     cardMoved.CardLocationFrom == Enums.CardLocation.OpponentPile && cardMoved.CardLocationTo == Enums.CardLocation.OpponentGraveyard ||
+				     cardMoved.CardLocationFrom == Enums.CardLocation.OwnPile && cardMoved.CardLocationTo == Enums.CardLocation.OwnGraveyard) &&
 				    cardMoved.ConcernedFighter != TrackerModel.MyIndex)
 				{
 					TrackerModel.OpponentPlayedCards.Add(CardsCollection.getCardById((int)cardMoved.TradingCard));
@@ -306,24 +302,24 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 				if ((cardMoved.CardLocationTo == Enums.CardLocation.OwnHand && cardMoved.ConcernedFighter != TrackerModel.MyIndex) ||
 				    (cardMoved.CardLocationTo == Enums.CardLocation.OpponentHand && cardMoved.ConcernedFighter == TrackerModel.MyIndex))
 				{
-					TrackerModel.OpponentCardsInHand += 1;
+                    TrackerModel.OpponentCardsInHand += 1;
 				}
 				if ((cardMoved.CardLocationTo == Enums.CardLocation.OwnHand && cardMoved.ConcernedFighter == TrackerModel.MyIndex) ||
 				    (cardMoved.CardLocationTo == Enums.CardLocation.OpponentHand && cardMoved.ConcernedFighter != TrackerModel.MyIndex))
 				{
-					TrackerModel.OwnCardsInHand += 1;
+                    TrackerModel.OwnCardsInHand += 1;
 				}
 				if ((cardMoved.CardLocationFrom == Enums.CardLocation.OwnHand && cardMoved.ConcernedFighter != TrackerModel.MyIndex) ||
 				    (cardMoved.CardLocationFrom == Enums.CardLocation.OpponentHand &&
 				     cardMoved.ConcernedFighter == TrackerModel.MyIndex))
 				{
-					TrackerModel.OpponentCardsInHand -= 1;
+                    TrackerModel.OpponentCardsInHand -= 1;
 				}
 				if ((cardMoved.CardLocationFrom == Enums.CardLocation.OwnHand && cardMoved.ConcernedFighter == TrackerModel.MyIndex) ||
 				    (cardMoved.CardLocationFrom == Enums.CardLocation.OpponentHand &&
 				     cardMoved.ConcernedFighter != TrackerModel.MyIndex))
 				{
-					TrackerModel.OwnCardsInHand -= 1;
+                    TrackerModel.OwnCardsInHand -= 1;
 				}
 				if (cardMoved.ConcernedFighter == TrackerModel.MyIndex)
 				{
@@ -414,8 +410,7 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 			else if (value.EventType == Enums.EventType.A_O_E_ACTIVATED)
 			{
 				var eventCardMoved = value.TriggeredEvents.FirstOrDefault(x => x.EventType == Enums.EventType.CARD_MOVED);
-				if (TrackerModel.ActualFleauxIds.Contains(value.Int1) && eventCardMoved != null &&
-					eventCardMoved.Int1 != TrackerModel.MyIndex)
+				if (eventCardMoved != null && TrackerModel.ActualFleauxIds.Contains(value.Int1) && eventCardMoved.Int1 != TrackerModel.MyIndex)
 				{
 					TrackerModel.NbFleau += 1;
 				}
