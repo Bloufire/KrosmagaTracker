@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Input;
 using System.Windows.Media;
 using AddOn_Krosmaga___Blou_fire.Data;
 using AddOn_Krosmaga___Blou_fire.DataModel;
 using AddOn_Krosmaga___Blou_fire.Enums;
 using AddOn_Krosmaga___Blou_fire.Helpers;
+using MahApps.Metro.Controls;
 
 namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 {
@@ -16,7 +19,12 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 		public GlobalStatsPageModel()
 		{
 
+			TrackerSrv.CurrentFiltersStatModel.PropertyChanged += CurrentFiltersStatModel_PropertyChanged; ;
+		}
 
+		private void CurrentFiltersStatModel_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+		{
+			ActiveFilter = TrackerSrv.CurrentFiltersStatModel.SelectedGameType.ToString();
 		}
 
 
@@ -133,6 +141,28 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 		}
 		#endregion
 
+		#region Command
+
+		private ICommand _filterMatchupTappedCmd;
+		public ICommand FilterMatchupTappedCmd
+		{
+			get
+			{
+
+				if (_filterMatchupTappedCmd == null)
+					_filterMatchupTappedCmd = new RelayCommand(OpenFilterMatchupWindows);
+
+				return _filterMatchupTappedCmd;
+			}
+		}
+
+		private void OpenFilterMatchupWindows()
+		{
+			
+		}
+
+		public string ActiveFilter { get; set; }
+		#endregion
 
 	}
 }

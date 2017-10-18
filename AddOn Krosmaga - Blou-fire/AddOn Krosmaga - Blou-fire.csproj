@@ -156,6 +156,12 @@
     <Compile Include="Enums\ResultHandlerType.cs" />
     <Compile Include="Enums\SaisonsEnum.cs" />
     <Compile Include="Enums\TriggerableCapacityType.cs" />
+    <Compile Include="FlyoutControls\Tracker\AdvancedStatsContentPage.xaml.cs">
+      <DependentUpon>AdvancedStatsContentPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FlyoutControls\Tracker\AdvancedStatsPage.xaml.cs">
+      <DependentUpon>AdvancedStatsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FlyoutControls\Tracker\CardPage.xaml.cs">
       <DependentUpon>CardPage.xaml</DependentUpon>
     </Compile>
@@ -177,6 +183,8 @@
     <Compile Include="FlyoutControls\Tracker\MatchesHistoPage.xaml.cs">
       <DependentUpon>MatchesHistoPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FlyoutControls\Tracker\PageModel\AdvancedStatsContentPageModel.cs" />
+    <Compile Include="FlyoutControls\Tracker\PageModel\AdvancedStatsPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\CardPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\DofusTrackerControlPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\GlobalStatsPageModel.cs" />
@@ -269,6 +277,14 @@
     <Compile Include="UIPlayerDatas.cs" />
     <Compile Include="Utility\LocUtil.cs" />
     <Compile Include="Utility\User32.cs" />
+    <Page Include="FlyoutControls\Tracker\AdvancedStatsContentPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FlyoutControls\Tracker\AdvancedStatsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="FlyoutControls\Tracker\CardPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

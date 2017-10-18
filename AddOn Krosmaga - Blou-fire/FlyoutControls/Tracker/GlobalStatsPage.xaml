@@ -8,13 +8,50 @@
              xmlns:pageModel="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel"
              xmlns:wpf="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
              xmlns:data="clr-namespace:AddOn_Krosmaga___Blou_fire.Data"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:materialIcons="clr-namespace:MaterialIcons;assembly=MaterialIcons"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <UserControl.DataContext>
         <pageModel:GlobalStatsPageModel/>
         
     </UserControl.DataContext>
-    <StackPanel Height="200" Orientation="Vertical" HorizontalAlignment="Center">
+
+    <GroupBox >
+        <GroupBox.Header>
+            <Grid>
+                <TextBlock Text="QUICK OVERALL WINRATE"  Foreground="White" VerticalAlignment="Center"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" >
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseDown">
+                            <i:InvokeCommandAction Command="{Binding FilterMatchupTappedCmd}" />
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    <StackPanel.Style>
+                        <Style>
+                            <Setter Property="StackPanel.Opacity" Value="0.7"/>
+                            <Style.Triggers>
+                                <Trigger Property="StackPanel.IsMouseOver" Value="True">
+                                    <Setter Property="StackPanel.Opacity" Value="0.9"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </StackPanel.Style>
+                    <TextBlock Margin="4" VerticalAlignment="Center" Text="{Binding ActiveFilter}"/>
+                    <Rectangle Width="14" Height="16" Margin="0,2,0,0">
+                        <Rectangle.Fill>
+                            <VisualBrush>
+                                <VisualBrush.Visual>
+                                    <materialIcons:MaterialIcon Icon="ic_settings" />
+                                </VisualBrush.Visual>
+                            </VisualBrush>
+                        </Rectangle.Fill>
+                    </Rectangle> 
+                    <TextBlock Margin="4" VerticalAlignment="Center" />
+                </StackPanel>
+            </Grid>
+        </GroupBox.Header>
+        <StackPanel Height="200" Orientation="Vertical" HorizontalAlignment="Center">
 
         <Grid VerticalAlignment="Top">
             <TextBlock Style="{StaticResource WinrateGaugeTextStyle}">
@@ -100,5 +137,5 @@
             </UniformGrid>
         </StackPanel>
     </StackPanel>
-
+</GroupBox>
 </UserControl>

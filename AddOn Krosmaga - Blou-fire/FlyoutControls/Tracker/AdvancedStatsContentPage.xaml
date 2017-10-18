@@ -1,0 +1,160 @@
+﻿<UserControl x:Class="AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.AdvancedStatsContentPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker"
+             xmlns:pageModel="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.DataContext>
+        <pageModel:AdvancedStatsContentPageModel/>
+    </UserControl.DataContext>
+    
+   
+    <DataGrid Name="DataGridMatchups" ItemsSource="{Binding Path=Matchups}"  HorizontalAlignment="Center" Margin="10"
+               AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" CanUserResizeRows="False" IsReadOnly="True" CanUserSortColumns="False" CanUserResizeColumns="False" CanUserReorderColumns="False">
+        <DataGrid.Columns>
+            <DataGridTemplateColumn Header="You \ VS" SortMemberPath="Class">
+                <DataGridTemplateColumn.CellTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Image Source="{Binding KrosClassUsed.ImageUri}" Width="24" Height="24" RenderOptions.BitmapScalingMode="Fant" ToolTip="{Binding KrosClassUsed.NameClass}" />
+                          
+                        </Grid>
+                    </DataTemplate>
+                </DataGridTemplateColumn.CellTemplate>
+            </DataGridTemplateColumn>
+
+            <DataGridTextColumn Binding="{Binding CraWinrateMU, StringFormat='\{0\}%'}" MinWidth="47">
+                <DataGridTextColumn.HeaderTemplate>
+                    <DataTemplate>
+                        <Image RenderOptions.BitmapScalingMode="Fant" Source="../../Images/Gods/Cra.png" Width="24" Height="24" />
+                    </DataTemplate>
+                </DataGridTextColumn.HeaderTemplate>
+                <DataGridTextColumn.ElementStyle>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="HorizontalAlignment" Value="Center" />
+                        <!--<Setter Property="Foreground" Value="{Binding Druid.WinRateTextBrush}" />-->
+                    </Style>
+                </DataGridTextColumn.ElementStyle>
+            </DataGridTextColumn>
+            <DataGridTextColumn Binding="{Binding EcaWinrateMU, StringFormat='\{0\}%'}" MinWidth="47">
+                <DataGridTextColumn.HeaderTemplate>
+                    <DataTemplate>
+                        <Image RenderOptions.BitmapScalingMode="Fant" Source="../../Images/Gods/Eca.png" Width="24" Height="24" />
+                    </DataTemplate>
+                </DataGridTextColumn.HeaderTemplate>
+                <DataGridTextColumn.ElementStyle>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="HorizontalAlignment" Value="Center" />
+                        <!--<Setter Property="Foreground" Value="{Binding Hunter.WinRateTextBrush}" />-->
+                    </Style>
+                </DataGridTextColumn.ElementStyle>
+            </DataGridTextColumn>
+            <DataGridTextColumn Binding="{Binding EniWinrateMU, StringFormat='\{0\}%'}" MinWidth="47">
+                <DataGridTextColumn.HeaderTemplate>
+                    <DataTemplate>
+                        <Image RenderOptions.BitmapScalingMode="Fant" Source="../../Images/Gods/Eni.png" Width="24" Height="24" />
+                    </DataTemplate>
+                </DataGridTextColumn.HeaderTemplate>
+                <DataGridTextColumn.ElementStyle>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="HorizontalAlignment" Value="Center" />
+                        <!--<Setter Property="Foreground" Value="{Binding Mage.WinRateTextBrush}" />-->
+                    </Style>
+                </DataGridTextColumn.ElementStyle>
+            </DataGridTextColumn>
+            <DataGridTextColumn Binding="{Binding EnuWinrateMU, StringFormat='\{0\}%'}" MinWidth="47">
+                <DataGridTextColumn.HeaderTemplate>
+                    <DataTemplate>
+                        <Image RenderOptions.BitmapScalingMode="Fant" Source="../../Images/Gods/Enu.png" Width="24" Height="24" />
+                    </DataTemplate>
+                </DataGridTextColumn.HeaderTemplate>
+                <DataGridTextColumn.ElementStyle>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="HorizontalAlignment" Value="Center" />
+                        <!--<Setter Property="Foreground" Value="{Binding Paladin.WinRateTextBrush}" />-->
+                    </Style>
+                </DataGridTextColumn.ElementStyle>
+            </DataGridTextColumn>
+            <DataGridTextColumn Binding="{Binding IopWinrateMU, StringFormat='\{0\}%'}" MinWidth="47">
+                <DataGridTextColumn.HeaderTemplate>
+                    <DataTemplate>
+                        <Image RenderOptions.BitmapScalingMode="Fant" Source="../../Images/Gods/Iop.png" Width="24" Height="24" />
+                    </DataTemplate>
+                </DataGridTextColumn.HeaderTemplate>
+                <DataGridTextColumn.ElementStyle>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="HorizontalAlignment" Value="Center" />
+                        <!--<Setter Property="Foreground" Value="{Binding Priest.WinRateTextBrush}" />-->
+                    </Style>
+                </DataGridTextColumn.ElementStyle>
+            </DataGridTextColumn>
+            <DataGridTextColumn Binding="{Binding SacriWinrateMU, StringFormat='\{0\}%'}" MinWidth="47">
+                <DataGridTextColumn.HeaderTemplate>
+                    <DataTemplate>
+                        <Image RenderOptions.BitmapScalingMode="Fant" Source="../../Images/Gods/Sacri.png" Width="24" Height="24" />
+                    </DataTemplate>
+                </DataGridTextColumn.HeaderTemplate>
+                <DataGridTextColumn.ElementStyle>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="HorizontalAlignment" Value="Center" />
+                        <!--<Setter Property="Foreground" Value="{Binding Rogue.WinRateTextBrush}" />-->
+                    </Style>
+                </DataGridTextColumn.ElementStyle>
+            </DataGridTextColumn>
+            <DataGridTextColumn Binding="{Binding SadiWinrateMU, StringFormat='\{0\}%'}" MinWidth="47">
+                <DataGridTextColumn.HeaderTemplate>
+                    <DataTemplate>
+                        <Image RenderOptions.BitmapScalingMode="Fant" Source="../../Images/Gods/Sadi.png" Width="24" Height="24" />
+                    </DataTemplate>
+                </DataGridTextColumn.HeaderTemplate>
+                <DataGridTextColumn.ElementStyle>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="HorizontalAlignment" Value="Center" />
+                        <!--<Setter Property="Foreground" Value="{Binding Shaman.WinRateTextBrush}" />-->
+                    </Style>
+                </DataGridTextColumn.ElementStyle>
+            </DataGridTextColumn>
+            <DataGridTextColumn Binding="{Binding SramWinrateMU, StringFormat='\{0\}%'}" MinWidth="47">
+                <DataGridTextColumn.HeaderTemplate>
+                    <DataTemplate>
+                        <Image RenderOptions.BitmapScalingMode="Fant" Source="../../Images/Gods/Sram.png" Width="24" Height="24" />
+                    </DataTemplate>
+                </DataGridTextColumn.HeaderTemplate>
+                <DataGridTextColumn.ElementStyle>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="HorizontalAlignment" Value="Center" />
+                        <!--<Setter Property="Foreground" Value="{Binding Warlock.WinRateTextBrush}" />-->
+                    </Style>
+                </DataGridTextColumn.ElementStyle>
+            </DataGridTextColumn>
+            <DataGridTextColumn Binding="{Binding XelWinrateMU, StringFormat='\{0\}%'}" MinWidth="47">
+                <DataGridTextColumn.HeaderTemplate>
+                    <DataTemplate>
+                        <Image RenderOptions.BitmapScalingMode="Fant" Source="../../Images/Gods/Xel.png" Width="24" Height="24" />
+                    </DataTemplate>
+                </DataGridTextColumn.HeaderTemplate>
+                <DataGridTextColumn.ElementStyle>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="HorizontalAlignment" Value="Center" />
+                        <!--<Setter Property="Foreground" Value="{Binding Warrior.WinRateTextBrush}" />-->
+                    </Style>
+                </DataGridTextColumn.ElementStyle>
+            </DataGridTextColumn>
+            
+            
+            <DataGridTextColumn Header="Total" Binding="{Binding Total.Summary}" MinWidth="47">
+                <DataGridTextColumn.ElementStyle>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="HorizontalAlignment" Value="Center" />
+                        <Setter Property="Foreground" Value="{Binding Total.WinRateTextBrush}" />
+                    </Style>
+                </DataGridTextColumn.ElementStyle>
+            </DataGridTextColumn>
+        </DataGrid.Columns>
+    </DataGrid>
+
+
+</UserControl>

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Media;
+using AddOn_Krosmaga___Blou_fire.DataModel;
 using AddOn_Krosmaga___Blou_fire.Enums;
 using AddOn_Krosmaga___Blou_fire.Helpers;
 using AddOn_Krosmaga___Blou_fire.Services;
@@ -24,12 +25,19 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 		private double _xelWinrateMu;
 		private double _sacriWinrateMu;
 		private double _sadiWinrateMu;
-
+		public List<KrosClass> ComboClasseValues { get; set; }
 		public MatchUpData()
 		{
 			App myApplication = ((App)Application.Current);
 			TrackerSrv = myApplication.TrackerCoreService;
-			CalculAllMatchup(ClassEnum.Sadida);
+			ComboClasseValues = StatsCore.GetAllClassAndImage();
+			TrackerSrv.CurrentFiltersStatModel.PropertyChanged += CurrentFiltersStatModel_PropertyChanged;
+
+		}
+
+		private void CurrentFiltersStatModel_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+		{
+			CalculAllMatchup(TrackerSrv.CurrentFiltersStatModel.SelectedClass);
 		}
 
 		public double IopWinrateMU
@@ -55,7 +63,9 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 		public double EniWinrateMU
 		{
 			get { return _eniWinrateMu; }
-			set { _eniWinrateMu = value; OnPropertyChanged("EniWinrateMU");
+			set
+			{
+				_eniWinrateMu = value; OnPropertyChanged("EniWinrateMU");
 			}
 		}
 
@@ -102,7 +112,9 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 		public double SacriWinrateMU
 		{
 			get { return _sacriWinrateMu; }
-			set { _sacriWinrateMu = value;
+			set
+			{
+				_sacriWinrateMu = value;
 				OnPropertyChanged("SacriWinrateMU");
 			}
 		}
@@ -110,7 +122,9 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 		public double SadiWinrateMU
 		{
 			get { return _sadiWinrateMu; }
-			set { _sadiWinrateMu = value;
+			set
+			{
+				_sadiWinrateMu = value;
 				OnPropertyChanged("SadiWinrateMU");
 			}
 		}
@@ -127,17 +141,23 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 
 		public List<Match> GetAllRankedMatchsByClass(ClassEnum classSelected)
 		{
-			var allRankedMatch = GetAllMatchsFromGameType(GameType.RANDOM_RANKED);
+			var allRankedMatch = GetAllMatchsFromGameType(GameType.VERSUS_IA);
 			var allRankedMatchFilteredPerClass = allRankedMatch.FindAll(match =>
 				match.PlayerClassName == classSelected.ToString());
 			return allRankedMatchFilteredPerClass;
 
 		}
 
+		public KrosClass KrosClassUsed { get; set; }
+
+
+
 		public void CalculAllMatchup(ClassEnum classSelected)
 		{
+			ResetAllMatchUp();
+			KrosClassUsed = ComboClasseValues.First(x => x.NameClass == classSelected.ToString());
 			var AllMatches = GetAllRankedMatchsByClass(classSelected);
-			var allCharts = AllMatches.GroupBy(x => x.PlayerClasse)
+			var allCharts = AllMatches.GroupBy(x => x.OppenentClassName)
 
 				.OrderBy(x => x.Key)
 				.Select(x =>
@@ -155,7 +175,7 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 					switch (enumClassOut)
 					{
 						case ClassEnum.None:
-							
+
 							break;
 						case ClassEnum.Iop:
 							IopWinrateMU = stats.Value;
@@ -191,6 +211,19 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 
 			}
 
+		}
+
+		private void ResetAllMatchUp()
+		{
+			EcaWinrateMU = 0;
+			IopWinrateMU = 0;
+			CraWinrateMU = 0;
+			EniWinrateMU = 0;
+			EnuWinrateMU = 0;
+			SramWinrateMU = 0;
+			SacriWinrateMU = 0;
+			SadiWinrateMU = 0;
+			XelWinrateMU = 0;
 		}
 	}
 }
