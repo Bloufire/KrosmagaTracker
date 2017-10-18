@@ -29,6 +29,9 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 		public ICommand BtnStatsOnOverlay_OnClick => new RelayCommand(BtnOpenOverlayStats);
 		public ICommand BtnHistoOnOverlay_OnClick => new RelayCommand(BtnOpenOverlayHisto);
 		public ICommand BtnSettingsOnOverlay_OnClick => new RelayCommand(BtnOpenOverlaySettings);
+		
+		public ICommand BtnOpenContactOverlay_OnClick => new RelayCommand(BtnOpenContactOverlaySettings);
+
 		public ICommand BtnDiscord_OnClick { get; }
 
 
@@ -62,7 +65,12 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 			SelectedContentItem = OverlayContentEnum.Settings;
 			IsLeftFlyOpen = true;
 		}
-
+		
+		private void BtnOpenContactOverlaySettings()
+		{
+			SelectedContentItem = OverlayContentEnum.ContactUs;
+			IsLeftFlyOpen = true;
+		}
 		private void BtnDiscordOnClick()
 		{
 			Helpers.Helpers.TryOpenUrl("https://discord.gg/UR2TQEp");

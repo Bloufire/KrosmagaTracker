@@ -198,6 +198,12 @@
 
                                 <pages:StatsOverlayContentPage></pages:StatsOverlayContentPage>
                             </Grid>
+                            <Grid Style="{StaticResource GridFadeAnimationStyle}"
+                                  Visibility="{Binding SelectedContentItem , Converter={StaticResource SelectedToVisibilityConverter},ConverterParameter={x:Static enums:OverlayContentEnum.ContactUs}}"
+                                  Grid.Column="1" Grid.Row="1">
+
+                                <pages:ContactUsContentPage></pages:ContactUsContentPage>
+                            </Grid>
                         </Grid>
 
                         <!--Bouton OpenCloseOverlay depuis l'overlay ouvert-->
@@ -326,7 +332,7 @@
                         <RowDefinition Height="Auto" />
                     </Grid.RowDefinitions>
                     <!--1er Bouton Niv 3-->
-                    <Button Command="{Binding BtnOpenOverlay_OnClick}" HorizontalAlignment="Right"
+                    <Button Command="{Binding BtnOpenContactOverlay_OnClick}" HorizontalAlignment="Right"
                             Width="{StaticResource ThirdButtonSideMenuSize}"
                             Height="{StaticResource ThirdButtonSideMenuSize}" VerticalAlignment="Bottom"
                             Style="{DynamicResource MetroCircleButtonStyle}"
