@@ -16,15 +16,15 @@
     </UserControl.Resources>
     <StackPanel  OpacityMask="{StaticResource HeaderBackgroundOpacityMask}"
                  Background="{StaticResource FlyoutGradientBackground}">
-        <GroupBox Header="Pick a class">
+        <GroupBox Header="Filters">
             <tracker:PickAClassControlPage></tracker:PickAClassControlPage>
         </GroupBox>
       <!--GlobalStatsPage possède sa propre GroupBox-->
        <tracker:GlobalStatsPage></tracker:GlobalStatsPage>
        
-        <GroupBox Header="Options" >
+      
            <tracker:AdvancedStatsPage></tracker:AdvancedStatsPage>
-        </GroupBox>
+      
     </StackPanel>
 
 </UserControl>

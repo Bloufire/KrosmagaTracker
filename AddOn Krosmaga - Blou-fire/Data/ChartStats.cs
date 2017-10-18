@@ -13,6 +13,8 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 		public string Name { get; set; }
 		public KrosClass Class { get; set; }
 		public double Value { get; set; }
+		public int NbWin { get; set; }
+		public int NbLose { get; set; }
 		public Brush Brush { get; set; }
 	}
 }

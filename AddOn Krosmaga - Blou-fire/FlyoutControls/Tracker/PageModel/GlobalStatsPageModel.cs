@@ -100,6 +100,22 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 			get
 			{
 
+				TrackerSrv.TrackerModel.FilteredGames.ToList().GroupBy(x => x.PlayerClasse)
+
+					.OrderBy(x => x.Key)
+					.Select(x =>
+						new ChartStats
+						{
+							Name = x.Key,
+							Value = Math.Round(100.0 * x.Count(g => g.ResultatMatch == (int)GameResult.Win) / x.Count(), 1),
+							Brush = new SolidColorBrush(Helpers.Helpers.GetClassColor(x.Key, true)),
+							Class = StatsCore.GetKrosClassByName(x.Key)
+						});
+				
+
+
+
+
 				var games = TrackerSrv.TrackerModel.FilteredGames.ToList();
 				var wins = games.Where(x => x.ResultatMatch == (int)GameResult.Win).ToList();
 

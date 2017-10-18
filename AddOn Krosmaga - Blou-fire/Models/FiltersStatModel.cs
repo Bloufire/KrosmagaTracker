@@ -14,6 +14,8 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 		private ClassEnum _selectedClass;
 		private ClassEnum _selectedVsClass;
 		private GameType _selectedGameType;
+		private bool _isDetailWinrateDisplayedAsPercent;
+
 		public FiltersStatModel()
 		{
 			
@@ -63,6 +65,16 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 			{
 				_selectedVsClass = value;
 				OnPropertyChanged("SelectedVsClass");
+			}
+		}
+
+		public bool IsDetailWinrateDisplayedAsPercent
+		{
+			get { return _isDetailWinrateDisplayedAsPercent; }
+			set
+			{
+				_isDetailWinrateDisplayedAsPercent = value;
+				OnPropertyChanged("IsDetailWinrateDisplayedAsPercent");
 			}
 		}
 

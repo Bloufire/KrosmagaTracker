@@ -123,6 +123,8 @@
                     </Setter.Value>
                 </Setter>
             </Style>
+            <converter:BoolToVisibiltyConverter x:Key="BoolToVis" />
+            <converter:BoolAndNegatToVisibiltyConverter x:Key="BoolAndNegatToVisibiltyConverter" />
         </ResourceDictionary>
     </Application.Resources>
 </Application>

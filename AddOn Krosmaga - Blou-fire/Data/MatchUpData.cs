@@ -25,21 +25,61 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 		private double _xelWinrateMu;
 		private double _sacriWinrateMu;
 		private double _sadiWinrateMu;
+
+		private double _iopWinrateWin;
+		private double _craWinrateWin;
+		private double _eniWinrateWin;
+		private double _ecaWinrateWin;
+		private double _enuWinrateWin;
+		private double _sramWinrateWin;
+		private double _xelWinrateWin;
+		private double _sacriWinrateWin;
+		private double _sadiWinrateWin;
+
+		private double _iopWinrateLose;
+		private double _craWinrateLose;
+		private double _eniWinrateLose;
+		private double _ecaWinrateLose;
+		private double _enuWinrateLose;
+		private double _sramWinrateLose;
+		private double _xelWinrateLose;
+		private double _sacriWinrateLose;
+		private double _sadiWinrateLose;
+		private ClassEnum myClassPick;
+
 		public List<KrosClass> ComboClasseValues { get; set; }
 		public MatchUpData()
 		{
 			App myApplication = ((App)Application.Current);
 			TrackerSrv = myApplication.TrackerCoreService;
 			ComboClasseValues = StatsCore.GetAllClassAndImage();
-			TrackerSrv.CurrentFiltersStatModel.PropertyChanged += CurrentFiltersStatModel_PropertyChanged;
+			TrackerSrv.CurrentFiltersStatModel.PropertyChanged += CurrentFiltersStatModelFromEmptyClass_PropertyChanged;
+			CalculAllMatchup(TrackerSrv.CurrentFiltersStatModel.SelectedClass);
+		}
 
+		public MatchUpData(ClassEnum myClassPick)
+		{
+			this.myClassPick = myClassPick;
+			App myApplication = ((App)Application.Current);
+			TrackerSrv = myApplication.TrackerCoreService;
+			ComboClasseValues = StatsCore.GetAllClassAndImage();
+			TrackerSrv.CurrentFiltersStatModel.PropertyChanged += CurrentFiltersStatModel_PropertyChanged;
+			if (myClassPick != ClassEnum.None)
+				KrosClassUsed = ComboClasseValues.First(x => x.NameClass == myClassPick.ToString());
+			CalculAllMatchup(myClassPick);
 		}
 
 		private void CurrentFiltersStatModel_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
 		{
+			ClassEnum.TryParse(KrosClassUsed.NameClass, out ClassEnum enumClassOut);
+			CalculAllMatchup(enumClassOut);
+		}
+		private void CurrentFiltersStatModelFromEmptyClass_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+		{
+			
 			CalculAllMatchup(TrackerSrv.CurrentFiltersStatModel.SelectedClass);
 		}
-
+		#region properties
 		public double IopWinrateMU
 		{
 			get { return _iopWinrateMu; }
@@ -49,7 +89,6 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 				OnPropertyChanged("IopWinrateMU");
 			}
 		}
-
 		public double CraWinrateMU
 		{
 			get { return _craWinrateMu; }
@@ -128,20 +167,255 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 				OnPropertyChanged("SadiWinrateMU");
 			}
 		}
+		#endregion
+
+		#region Win-Lose
+		
+		public double IopWinrateWin
+		{
+			get { return _iopWinrateWin; }
+			set
+			{
+				_iopWinrateWin = value;
+				OnPropertyChanged("IopWinrateWin");
+			}
+		}
+		public double CraWinrateWin
+		{
+			get { return _craWinrateWin; }
+			set
+			{
+				_craWinrateWin = value;
+				OnPropertyChanged("CraWinrateWin");
+			}
+		}
+
+		public double EniWinrateWin
+		{
+			get { return _eniWinrateWin; }
+			set
+			{
+				_eniWinrateWin = value; OnPropertyChanged("EniWinrateWin");
+			}
+		}
+
+		public double EcaWinrateWin
+		{
+			get { return _ecaWinrateWin; }
+			set
+			{
+				_ecaWinrateWin = value;
+				OnPropertyChanged("EcaWinrateWin");
+			}
+		}
+
+		public double EnuWinrateWin
+		{
+			get { return _enuWinrateWin; }
+			set
+			{
+				_enuWinrateWin = value;
+				OnPropertyChanged("EnuWinrateWin");
+			}
+		}
+
+		public double SramWinrateWin
+		{
+			get { return _sramWinrateWin; }
+			set
+			{
+				_sramWinrateWin = value;
+				OnPropertyChanged("SramWinrateWin");
+			}
+		}
+
+		public double XelWinrateWin
+		{
+			get { return _xelWinrateWin; }
+			set
+			{
+				_xelWinrateWin = value;
+				OnPropertyChanged("XelWinrateWin");
+			}
+		}
+
+		public double SacriWinrateWin
+		{
+			get { return _sacriWinrateWin; }
+			set
+			{
+				_sacriWinrateWin = value;
+				OnPropertyChanged("SacriWinrateWin");
+			}
+		}
+
+		public double SadiWinrateWin
+		{
+			get { return _sadiWinrateWin; }
+			set
+			{
+				_sadiWinrateWin = value;
+				OnPropertyChanged("SadiWinrateWin");
+			}
+		}
+
+		public double IopWinrateLose
+		{
+			get { return _iopWinrateLose; }
+			set
+			{
+				_iopWinrateLose = value;
+				OnPropertyChanged("IopWinrateLose");
+			}
+		}
+		public double CraWinrateLose
+		{
+			get { return _craWinrateLose; }
+			set
+			{
+				_craWinrateLose = value;
+				OnPropertyChanged("CraWinrateLose");
+			}
+		}
+
+		public double EniWinrateLose
+		{
+			get { return _eniWinrateLose; }
+			set
+			{
+				_eniWinrateLose = value; OnPropertyChanged("EniWinrateLose");
+			}
+		}
+
+		public double EcaWinrateLose
+		{
+			get { return _ecaWinrateLose; }
+			set
+			{
+				_ecaWinrateLose = value;
+				OnPropertyChanged("EcaWinrateLose");
+			}
+		}
+
+		public double EnuWinrateLose
+		{
+			get { return _enuWinrateLose; }
+			set
+			{
+				_enuWinrateLose = value;
+				OnPropertyChanged("EnuWinrateLose");
+			}
+		}
+
+		public double SramWinrateLose
+		{
+			get { return _sramWinrateLose; }
+			set
+			{
+				_sramWinrateLose = value;
+				OnPropertyChanged("SramWinrateLose");
+			}
+		}
+
+		public double XelWinrateLose
+		{
+			get { return _xelWinrateLose; }
+			set
+			{
+				_xelWinrateLose = value;
+				OnPropertyChanged("XelWinrateLose");
+			}
+		}
+
+		public double SacriWinrateLose
+		{
+			get { return _sacriWinrateLose; }
+			set
+			{
+				_sacriWinrateLose = value;
+				OnPropertyChanged("SacriWinrateLose");
+			}
+		}
+
+		public double SadiWinrateLose
+		{
+			get { return _sadiWinrateLose; }
+			set
+			{
+				_sadiWinrateLose = value;
+				OnPropertyChanged("SadiWinrateLose");
+			}
+		}
+		#endregion
+
+		#region Display W-L
+
+		public string IopWinrateDisplay
+		{
+			get { return $"{IopWinrateWin}-{IopWinrateLose}"; }
+			
+		}
+		public string CraWinrateDisplay
+		{
+			get { return $"{CraWinrateWin}-{CraWinrateLose}"; }
+			
+		}
+
+		public string EniWinrateDisplay
+		{
+			get { return $"{EniWinrateWin}-{EniWinrateLose}"; }
+			
+		}
+
+		public string EcaWinrateDisplay
+		{
+			get { return $"{EcaWinrateWin}-{EcaWinrateLose}"; }
+			
+		}
+
+		public string EnuWinrateDisplay
+		{
+			get { return $"{EnuWinrateWin}-{EnuWinrateLose}"; }
+			
+		}
+
+		public string SramWinrateDisplay
+		{
+			get { return $"{SramWinrateWin}-{SramWinrateLose}"; }
+		
+		}
+
+		public string XelWinrateDisplay
+		{
+			get { return $"{XelWinrateWin}-{XelWinrateLose}"; }
+		
+		}
+
+		public string SacriWinrateDisplay
+		{
+			get { return $"{SacriWinrateWin}-{SacriWinrateLose}"; }
+		
+		}
+
+		public string SadiWinrateDisplay
+		{
+			get { return $"{SadiWinrateWin}-{SadiWinrateLose}"; }
+		}
+		#endregion
 
 		public List<Match> GetAllMatchsFromGameType(GameType gameType)
 		{
 			var allKrosClass = TrackerSrv.TrackerModel.FilteredGames;
 			return allKrosClass.FindAll(x => x.MatchType == gameType);
 		}
-		public List<Match> GetAllRankedMatchs()
+		public List<Match> GetAllRankedMatchs(GameType gameType)
 		{
-			return GetAllMatchsFromGameType(GameType.RANDOM_RANKED);
+			return GetAllMatchsFromGameType(gameType);
 		}
 
-		public List<Match> GetAllRankedMatchsByClass(ClassEnum classSelected)
+		public List<Match> GetAllRankedMatchsByClass(ClassEnum classSelected,GameType gameType)
 		{
-			var allRankedMatch = GetAllMatchsFromGameType(GameType.VERSUS_IA);
+			var allRankedMatch = GetAllMatchsFromGameType(gameType);
 			var allRankedMatchFilteredPerClass = allRankedMatch.FindAll(match =>
 				match.PlayerClassName == classSelected.ToString());
 			return allRankedMatchFilteredPerClass;
@@ -155,8 +429,8 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 		public void CalculAllMatchup(ClassEnum classSelected)
 		{
 			ResetAllMatchUp();
-			KrosClassUsed = ComboClasseValues.First(x => x.NameClass == classSelected.ToString());
-			var AllMatches = GetAllRankedMatchsByClass(classSelected);
+	
+			var AllMatches = GetAllRankedMatchsByClass(classSelected,TrackerSrv.CurrentFiltersStatModel.SelectedGameType);
 			var allCharts = AllMatches.GroupBy(x => x.OppenentClassName)
 
 				.OrderBy(x => x.Key)
@@ -165,6 +439,8 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 					{
 						Name = x.Key,
 						Value = Math.Round(100.0 * x.Count(g => g.ResultatMatch == (int)GameResult.Win) / x.Count(), 1),
+						NbWin = x.Count(g => g.ResultatMatch == (int)GameResult.Win),
+						NbLose = x.Count(g => g.ResultatMatch == (int)GameResult.Loss),
 						Brush = new SolidColorBrush(Helpers.Helpers.GetClassColor(x.Key, true)),
 						Class = StatsCore.GetKrosClassByName(x.Key)
 					});
@@ -179,30 +455,48 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 							break;
 						case ClassEnum.Iop:
 							IopWinrateMU = stats.Value;
+							IopWinrateWin = stats.NbWin;
+							IopWinrateLose = stats.NbLose;
 							break;
 						case ClassEnum.Cra:
 							CraWinrateMU = stats.Value;
+							CraWinrateWin = stats.NbWin;
+							CraWinrateLose = stats.NbLose;
 							break;
 						case ClassEnum.Eniripsa:
 							EniWinrateMU = stats.Value;
+							EniWinrateWin = stats.NbWin;
+							EniWinrateLose = stats.NbLose;
 							break;
 						case ClassEnum.Ecaflip:
 							EcaWinrateMU = stats.Value;
+							EcaWinrateWin = stats.NbWin;
+							EcaWinrateLose = stats.NbLose;
 							break;
 						case ClassEnum.Enutrof:
 							EnuWinrateMU = stats.Value;
+							EnuWinrateWin = stats.NbWin;
+							EnuWinrateLose = stats.NbLose;
 							break;
 						case ClassEnum.Sram:
 							SramWinrateMU = stats.Value;
+							SramWinrateWin = stats.NbWin;
+							SramWinrateLose = stats.NbLose;
 							break;
 						case ClassEnum.Xelor:
 							XelWinrateMU = stats.Value;
+							XelWinrateWin = stats.NbWin;
+							XelWinrateLose = stats.NbLose;
 							break;
 						case ClassEnum.Sacrieur:
 							SacriWinrateMU = stats.Value;
+							SacriWinrateWin = stats.NbWin;
+							SacriWinrateLose = stats.NbLose;
 							break;
 						case ClassEnum.Sadida:
 							SadiWinrateMU = stats.Value;
+							SadiWinrateWin = stats.NbWin;
+							SadiWinrateLose = stats.NbLose;
 							break;
 						default:
 							throw new ArgumentOutOfRangeException(nameof(classSelected), classSelected, null);
