@@ -42,8 +42,11 @@ namespace AddOn_Krosmaga___Blou_fire.ProducerConsumer
 			{
 				foreach (IPAddress ip in HosyEntry.AddressList)
 				{
-					if (ip.AddressFamily == AddressFamily.InterNetwork)
-						ipadd = ip.ToString();
+                    if (ip.AddressFamily == AddressFamily.InterNetwork)
+                    {
+                        ipadd = ip.ToString();
+                        break;
+                    }
 				}
 			}
 
