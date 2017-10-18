@@ -25,6 +25,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 		private void CurrentFiltersStatModel_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
 		{
 			ActiveFilter = TrackerSrv.CurrentFiltersStatModel.SelectedGameType.ToString();
+			WinrateTotal = RecalculWinRateClass();
 		}
 
 
@@ -97,32 +98,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 
 		public double WinrateTotal
 		{
-			get
-			{
-
-				TrackerSrv.TrackerModel.FilteredGames.ToList().GroupBy(x => x.PlayerClasse)
-
-					.OrderBy(x => x.Key)
-					.Select(x =>
-						new ChartStats
-						{
-							Name = x.Key,
-							Value = Math.Round(100.0 * x.Count(g => g.ResultatMatch == (int)GameResult.Win) / x.Count(), 1),
-							Brush = new SolidColorBrush(Helpers.Helpers.GetClassColor(x.Key, true)),
-							Class = StatsCore.GetKrosClassByName(x.Key)
-						});
-				
-
-
-
-
-				var games = TrackerSrv.TrackerModel.FilteredGames.ToList();
-				var wins = games.Where(x => x.ResultatMatch == (int)GameResult.Win).ToList();
-
-				return wins.Count > 0
-					? wins.Select(x => new ChartStats { Name = "Wins", Value = Math.Round(100.0 * wins.Count() / games.Count) }).First().Value
-					: 0;
-			}
+			get { return RecalculWinRateClass(); }
 			set
 			{
 				_winrateTotal = value;
@@ -130,6 +106,20 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 			}
 		}
 
+		private double RecalculWinRateClass()
+		{
+			var games = TrackerSrv.TrackerModel.FilteredGames.ToList().FindAll(x=> x.MatchType == TrackerSrv.CurrentFiltersStatModel.SelectedGameType &&
+			                                                                       x.PlayerClassName == TrackerSrv.CurrentFiltersStatModel.SelectedClass.ToString());
+			var wins = games.Where(x =>
+				x.ResultatMatch == (int) GameResult.Win).ToList();
+
+			return wins.Count > 0
+				? wins.Select(x => new ChartStats {Name = "Wins", Value = Math.Round(100.0 * wins.Count() / games.Count)}).First()
+					.Value
+				: 0;
+		}
+
+		
 
 		private ChartStats[] EmptyChartStats(string name) => new[] { new ChartStats() { Name = name, Value = 0 } };
 		private string _titreDuChart;
