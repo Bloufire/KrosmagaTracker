@@ -29,6 +29,17 @@ namespace JsonCardsParser
                 }
             }
 
+            Card unknown = new Card
+            {
+                Id = -1,
+                CardType = 1,
+                GodType = 0,
+                Name = "unknown",
+                UIName = "Unknown Card"
+            };
+            unknown.SetImagePath("FR");
+            returnedList.Add(unknown);
+
             return returnedList;
         }
     }
