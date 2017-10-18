@@ -18,10 +18,17 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
     {
         
         public List<KrosClass> ComboClasseValues { get; set; }
-        public PickAClassControlPageModel()
+		public List<GameType> ComboGameTypeValues { get; set; }
+
+		public PickAClassControlPageModel()
         {
             ComboClasseValues = StatsCore.GetAllClassAndImage();
-            TrackerSrv.CurrentFiltersStatModel = new FiltersStatModel();
+			if(ComboGameTypeValues == null)
+				ComboGameTypeValues = new List<GameType>();
+
+			ComboGameTypeValues.Add(GameType.RANDOM_RANKED);
+			ComboGameTypeValues.Add(GameType.VERSUS_IA);
+			TrackerSrv.CurrentFiltersStatModel = new FiltersStatModel();
         }
 
         #region ClasseSelection
@@ -43,7 +50,21 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
             }
         }
 
-        private void ComboBoxClasse_OnSelectionChangedAction()
+	    private GameType _selectedItemGameType;
+
+	    public GameType SelectedItemGameType
+		{
+		    get => this._selectedItemGameType;
+		    set
+		    {
+			    this._selectedItemGameType = value;
+
+			    TrackerSrv.CurrentFiltersStatModel.SelectedGameType = _selectedItemGameType;
+			    OnPropertyChanged("SelectedItemClasse");
+		    }
+	    }
+		
+		private void ComboBoxClasse_OnSelectionChangedAction()
         {
             if (_selectedItemClasse != null)
             {

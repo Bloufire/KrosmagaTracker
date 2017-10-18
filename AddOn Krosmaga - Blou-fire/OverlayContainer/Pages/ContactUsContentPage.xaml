@@ -1,0 +1,106 @@
+﻿<UserControl x:Class="AddOn_Krosmaga___Blou_fire.OverlayContainer.Pages.ContactUsContentPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AddOn_Krosmaga___Blou_fire.OverlayContainer.Pages"
+             xmlns:pageModels="clr-namespace:AddOn_Krosmaga___Blou_fire.OverlayContainer.PageModels"
+             xmlns:helpers="clr-namespace:AddOn_Krosmaga___Blou_fire.Helpers"
+             xmlns:ease="clr-namespace:AddOn_Krosmaga___Blou_fire.Ease"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300"
+             Background="{StaticResource WhiteBrush}">
+    <UserControl.DataContext>
+        <pageModels:ContactUsContentPageModel/>
+    </UserControl.DataContext>
+    <GroupBox Header="Contact Us">
+        <StackPanel Margin="5">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock VerticalAlignment="Center" Margin="5">Discord :</TextBlock>
+                <Button Command="{Binding BtnDiscord_OnClick}">
+                    <StackPanel Orientation="Horizontal">
+                        <Rectangle Width="14" Height="16" Margin="0,2,0,0">
+                            <Rectangle.Fill>
+                                <VisualBrush>
+                                    <VisualBrush.Visual>
+                                        <Image Source="../../Images/DiscordIcon.png" />
+                                    </VisualBrush.Visual>
+                                </VisualBrush>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                        <TextBlock  VerticalAlignment="Center" Text="Open Discord" />
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+
+
+            <GroupBox Header="Remerciements" Height="300" Margin="5,20,5,5">
+                <Grid>
+                    <!-- Trigger to start the animation when loaded -->
+                    <Grid.Triggers>
+                        <EventTrigger RoutedEvent="Grid.MouseEnter">
+                            <BeginStoryboard>
+                                <BeginStoryboard.Storyboard>
+                                    <!-- Animate back and forth forever -->
+                                    <Storyboard
+                                        AutoReverse="True"
+                                        RepeatBehavior="Forever">
+                                        <!-- Animate from top to bottom -->
+                                        <DoubleAnimation
+                                            Storyboard.TargetName="Mediator"
+                                            Storyboard.TargetProperty="ScrollableHeightMultiplier"
+                                            From="0"
+                                            To="1"
+                                            Duration="0:0:10">
+                                            <DoubleAnimation.EasingFunction>
+                                                <!-- Ease in and out -->
+                                                <ease:CustomLinearEasingFunction EasingMode="EaseInOut"/>
+                                            </DoubleAnimation.EasingFunction>
+                                        </DoubleAnimation>
+                                    </Storyboard>
+                                </BeginStoryboard.Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </Grid.Triggers>
+
+                    <!-- ScrollViewer that will be animated -->
+                    <ScrollViewer
+                        x:Name="Scroller">
+                        <!-- Arbitrary content... -->
+                        <StackPanel>
+                            <!--<StackPanel.Style>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="Margin" Value="5"></Setter>
+                            </Style>
+                        </StackPanel.Style>-->
+                            <TextBlock HorizontalAlignment="Center" FontSize="25">Merci à vous</TextBlock>
+                            <TextBlock HorizontalAlignment="Center" FontSize="18">Team Test</TextBlock>
+                            <TextBlock Margin="5" >Kewl</TextBlock>
+                            <TextBlock Margin="5">Flaxeau</TextBlock>
+                            <TextBlock Margin="5">Guiver</TextBlock>
+                            <TextBlock Margin="5" >Red</TextBlock>
+                            <TextBlock Margin="5">Salamander</TextBlock>
+                            <TextBlock Margin="5">....</TextBlock>
+                            <TextBlock HorizontalAlignment="Center" FontSize="18">Team Graph</TextBlock>
+                            <TextBlock Margin="5" >Kindry</TextBlock>
+                            <TextBlock HorizontalAlignment="Center" FontSize="18">Team Dev</TextBlock>
+                            <TextBlock Margin="5" >Blou</TextBlock>
+                            <TextBlock Margin="5">Xeno</TextBlock>
+                            <TextBlock Margin="5">Guiver</TextBlock>
+
+
+                        </StackPanel>
+                    </ScrollViewer>
+
+                    <!-- Mediator that forwards the property changes -->
+                    <helpers:ScrollViewerMediator
+                        x:Name="Mediator"
+                        ScrollViewer="{Binding ElementName=Scroller}"/>
+                </Grid>
+            </GroupBox>
+
+
+        </StackPanel>
+    </GroupBox>
+</UserControl>
+

@@ -9,7 +9,7 @@ namespace AddOn_Krosmaga___Blou_fire.Enums
 {
 	public enum GameType
 	{
-		[Description("Random Ranked")] RANDOM_RANKED = 1,
+		[Description("Ranked")] RANDOM_RANKED = 1,
 		[Description("Random Unranked")] RANDOM_UNRANKED = 2,
 		[Description("Versus IA")] VERSUS_IA = 3,
 		[Description("Draft")] DRAFT = 4,

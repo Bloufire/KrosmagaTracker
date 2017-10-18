@@ -18,6 +18,8 @@ namespace AddOn_Krosmaga___Blou_fire.Enums
 		[LocDescription("Settings")]
 		Settings,
 		[LocDescription("Histo")]
-		Histo
+		Histo,
+		[LocDescription("ContactUs")]
+		ContactUs
 	}
 }

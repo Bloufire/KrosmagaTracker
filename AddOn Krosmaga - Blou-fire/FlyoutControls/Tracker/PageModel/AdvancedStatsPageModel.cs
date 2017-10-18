@@ -34,8 +34,8 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 	    {
 		    AdvancedStatsContentPage ui = new AdvancedStatsContentPage();
 		    MetroWindow newWindow = new MetroWindow();
-		    newWindow.Height = 350;
-		    newWindow.Width = 600;
+		    newWindow.Height = 410;
+		    newWindow.Width = 580;
 		    newWindow.Title = "Matchup Details";
 		    newWindow.Content = ui;
 		    newWindow.Show();

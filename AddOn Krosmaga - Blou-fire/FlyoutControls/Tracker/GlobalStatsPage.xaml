@@ -20,7 +20,7 @@
     <GroupBox >
         <GroupBox.Header>
             <Grid>
-                <TextBlock Text="QUICK OVERALL WINRATE"  Foreground="White" VerticalAlignment="Center"/>
+                <TextBlock Text="QUICK STATS"  Foreground="White" VerticalAlignment="Center" />
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" >
                     <i:Interaction.Triggers>
                         <i:EventTrigger EventName="MouseDown">
@@ -51,18 +51,11 @@
                 </StackPanel>
             </Grid>
         </GroupBox.Header>
-        <StackPanel Height="200" Orientation="Vertical" HorizontalAlignment="Center">
+        <StackPanel Height="240" Orientation="Vertical" HorizontalAlignment="Center">
 
-        <Grid VerticalAlignment="Top">
-            <TextBlock Style="{StaticResource WinrateGaugeTextStyle}">
-            <Run Text="{Binding WinrateTotal}"/>%
-            <LineBreak/>
-            <Run Text="Winrate" FontSize="10" />
-            </TextBlock>
-            <wpf:Gauge Value="{Binding WinrateTotal}" Style="{StaticResource WinrateGaugeStyle}"/>
-        </Grid>
+     
         <StackPanel >
-            <TextBlock Margin="0,5" Text="Matchups" FontWeight="SemiBold" TextAlignment="Center"/>
+            <TextBlock Margin="0,10,0,0" Text="Matchups" FontWeight="SemiBold" TextAlignment="Center"/>
             <UniformGrid Width="200" Margin="0,5,0,0">
                 <UniformGrid.Resources>
                     <Style TargetType="Image">
@@ -136,6 +129,18 @@
                 </StackPanel>
             </UniformGrid>
         </StackPanel>
-    </StackPanel>
+            <StackPanel>
+                <TextBlock Margin="0,20,0,10" Text="Global Winrate Ranked" FontWeight="SemiBold" TextAlignment="Center"/>
+         
+            <Grid VerticalAlignment="Top">
+                <TextBlock Style="{StaticResource WinrateGaugeTextStyle}">
+                    <Run Text="{Binding WinrateTotal}"/>%
+                    <LineBreak/>
+                    <Run Text="Winrate" FontSize="10" />
+                </TextBlock>
+                <wpf:Gauge Value="{Binding WinrateTotal}" Style="{StaticResource WinrateGaugeStyle}"/>
+            </Grid>
+            </StackPanel>
+        </StackPanel>
 </GroupBox>
 </UserControl>
