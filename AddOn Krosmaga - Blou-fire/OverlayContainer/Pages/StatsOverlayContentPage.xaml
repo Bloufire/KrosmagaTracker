@@ -7,6 +7,8 @@
              xmlns:lex="http://wpflocalizeextension.codeplex.com"
              xmlns:system="clr-namespace:System;assembly=mscorlib"
              xmlns:tracker="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker"
+             xmlns:materialIcons="clr-namespace:MaterialIcons;assembly=MaterialIcons"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <UserControl.Resources>
@@ -17,8 +19,12 @@
         <GroupBox Header="Pick a class">
             <tracker:PickAClassControlPage></tracker:PickAClassControlPage>
         </GroupBox>
-        <GroupBox Header="Global Stats"></GroupBox>
-        <GroupBox Header="My Games"></GroupBox>
+      <!--GlobalStatsPage possède sa propre GroupBox-->
+       <tracker:GlobalStatsPage></tracker:GlobalStatsPage>
+       
+        <GroupBox Header="Options" >
+           <tracker:AdvancedStatsPage></tracker:AdvancedStatsPage>
+        </GroupBox>
     </StackPanel>
 
 </UserControl>

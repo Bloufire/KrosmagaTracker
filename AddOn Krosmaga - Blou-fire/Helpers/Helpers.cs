@@ -7,6 +7,8 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media;
+using AddOn_Krosmaga___Blou_fire.Enums;
 using NetFwTypeLib;
 using NLog.Fluent;
 
@@ -174,6 +176,39 @@ namespace AddOn_Krosmaga___Blou_fire.Helpers
 			if (b.BaseStream.Position == b.BaseStream.Length)
 				return 0;
 			return b.ReadByte();
+		}
+
+		public static Color GetClassColor(string argKey, bool b)
+		{
+			Enum.TryParse(argKey, out ClassEnum enumClass);
+			switch ((int)enumClass)
+			{
+				case 1:
+					return GetColorFromHex("#B02511"); // IOP
+				case 2:
+					return GetColorFromHex("#474D1A"); // CRA
+				case 3:
+					return GetColorFromHex("#C05343"); // ENI
+				case 4:
+					return GetColorFromHex("#78128D"); // ECA
+				case 5:
+					return GetColorFromHex("#A87E00"); // ENU
+				case 6:
+					return GetColorFromHex("#434D67"); // SRAM
+				case 7:
+					return GetColorFromHex("#29387E"); // XEL
+				case 8:
+					return GetColorFromHex("#382F25"); // SACRI
+				case 10:
+					return GetColorFromHex("#848A00"); // SADI
+				default:
+					return GetColorFromHex("#734744"); // NEUTRE
+			}
+		}
+
+		private static Color GetColorFromHex(string hexColor)
+		{
+			return (Color) ColorConverter.ConvertFromString(hexColor);
 		}
 	}
 }

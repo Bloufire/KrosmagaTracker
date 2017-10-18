@@ -173,18 +173,18 @@ namespace AddOn_Krosmaga___Blou_fire
 
 		public void RemoveItemToWinrateParClasse(string title)
 		{
-			string stringValue = title.Substring(0, 1).ToUpper() + title.Substring(1).ToLower();
-			var value = WinrateParClasse.FirstOrDefault(x => x.Title == stringValue);
-			if (value != null)
-				WinrateParClasse.Remove(value);
+			//string stringValue = title.Substring(0, 1).ToUpper() + title.Substring(1).ToLower();
+			//var value = WinrateParClasse.FirstOrDefault(x => x. == stringValue);
+			//if (value != null)
+			//	WinrateParClasse.Remove(value);
 		}
 
 		public void RemoveItemToToursParClasse(string title)
 		{
-			string stringValue = title.Substring(0, 1).ToUpper() + title.Substring(1).ToLower();
-			var value = ToursParClasse.FirstOrDefault(x => x.Title == stringValue);
-			if (value != null)
-				ToursParClasse.Remove(value);
+			//string stringValue = title.Substring(0, 1).ToUpper() + title.Substring(1).ToLower();
+			//var value = ToursParClasse.FirstOrDefault(x => x.Title == stringValue);
+			//if (value != null)
+			//	ToursParClasse.Remove(value);
 		}
 
 		public void AddCardToDeck(DeckUI card)

@@ -413,7 +413,7 @@
                                 <RowDefinition Height="*" />
                                 <RowDefinition Height="*" />
                             </Grid.RowDefinitions>
-                            <lvc:CartesianChart Grid.Row="0" Series="{Binding WinrateParClasse}" LegendLocation="None">
+                            <!--<lvc:CartesianChart Grid.Row="0" Series="{Binding WinrateParClasse}" LegendLocation="None">
                                 <lvc:CartesianChart.AxisX>
                                     <lvc:Axis Separator="{Binding Separator}" Labels="{Binding Labels}" />
                                 </lvc:CartesianChart.AxisX>
@@ -428,7 +428,7 @@
                                 <lvc:CartesianChart.AxisY>
                                     <lvc:Axis Title="Tours moyen" LabelFormatter="{Binding Formatter}" />
                                 </lvc:CartesianChart.AxisY>
-                            </lvc:CartesianChart>
+                            </lvc:CartesianChart>-->
                         </Grid>
                         <StackPanel Margin="15" Orientation="Vertical" Grid.Column="2">
                             <Grid Height="35">

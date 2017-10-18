@@ -13,16 +13,17 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 		private SaisonsEnum _selectedSaison;
 		private ClassEnum _selectedClass;
 		private ClassEnum _selectedVsClass;
-
+		private GameType _selectedGameType;
 		public FiltersStatModel()
 		{
 			
 		}
-		public FiltersStatModel(SaisonsEnum selectedSaison, ClassEnum selectedClass, ClassEnum selectedVsClass)
+		public FiltersStatModel(SaisonsEnum selectedSaison, ClassEnum selectedClass, ClassEnum selectedVsClass,GameType selectedGameType)
 		{
 			SelectedSaison = selectedSaison;
 			SelectedClass = selectedClass;
 			SelectedVsClass = selectedVsClass;
+			SelectedGameType = selectedGameType;
 		}
 
 		#region Properties
@@ -46,7 +47,15 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 				OnPropertyChanged("SelectedClass");
 			}
 		}
-
+		public GameType SelectedGameType
+		{
+			get { return _selectedGameType; }
+			set
+			{
+				_selectedGameType = value;
+				OnPropertyChanged("SelectedGameType");
+			}
+		}
 		public ClassEnum SelectedVsClass
 		{
 			get { return _selectedVsClass; }

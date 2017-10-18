@@ -13,20 +13,7 @@
         <pageModel:PickAClassControlPageModel />
     </UserControl.DataContext>
     <StackPanel >
-        <!--<controls:SplitButton
-            HorizontalContentAlignment="Left"
-            HorizontalAlignment="Center"
-            VerticalContentAlignment="Center"
-            Width="120"
-            Margin="5"
-           
-            SelectedItem="{Binding SelectedItemClasse}"
-            ItemsSource="{Binding ComboClasseValues}"
-            DisplayMemberPath="NameClass"
-            VerticalAlignment="Center" 
-          >
-            <controls:SplitButton.Icon > </controls:SplitButton.Icon>
-            </controls:SplitButton>-->
+  
 
         <ComboBox Name="ComboBoxClasseframe" SelectedItem="{Binding SelectedItemClasse}"
                   Margin="5"
@@ -34,9 +21,11 @@
             <ComboBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="{Binding NameClass}" />
-                    <Image Source="{Binding ImageUri}"/>
-                    </StackPanel>
+                        
+                        <Image Source="{Binding ImageUri}" Width="{StaticResource IconDefaultSize}" Height="{StaticResource IconDefaultSize}" VerticalAlignment="Center" Margin="3"/>
+                        <TextBlock Text="{Binding NameClass}" VerticalAlignment="Center" FontSize="14" Margin="3" />
+                        
+                     </StackPanel>
                 </DataTemplate>
             </ComboBox.ItemTemplate>
             <i:Interaction.Triggers>

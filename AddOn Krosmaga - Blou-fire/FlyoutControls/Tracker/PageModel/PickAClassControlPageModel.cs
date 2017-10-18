@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using AddOn_Krosmaga___Blou_fire.Data;
 using AddOn_Krosmaga___Blou_fire.DataModel;
 using AddOn_Krosmaga___Blou_fire.Enums;
 using AddOn_Krosmaga___Blou_fire.Helpers;
@@ -19,7 +20,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
         public List<KrosClass> ComboClasseValues { get; set; }
         public PickAClassControlPageModel()
         {
-            ComboClasseValues = KrosClassData.GetAllClassAndImage();
+            ComboClasseValues = StatsCore.GetAllClassAndImage();
             TrackerSrv.CurrentFiltersStatModel = new FiltersStatModel();
         }
 
