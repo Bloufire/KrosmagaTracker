@@ -37,7 +37,7 @@
                             <Image Width="204" Height="256" Source="{Binding Card.ImagePath}" />
                         </ToolTip>
                     </Grid.ToolTip>
-                    <Image Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Image Grid.Column="0" Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center">
                         <Image.Source>
                             <CroppedBitmap Source="{Binding Card.ImagePath}" SourceRect="48, 68, 124, 58" />
                         </Image.Source>

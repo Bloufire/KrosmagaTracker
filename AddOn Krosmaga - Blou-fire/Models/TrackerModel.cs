@@ -270,8 +270,11 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 		private List<DeckUI> _cardsInHand;
 		private List<DeckUI> _deckInfinites;
 		private List<DeckUI> _deckKrosmiques;
-		
-		public Queue<int> ActualFleauxIds
+
+        private List<KeyValuePair<int, int>> _cardIdsByTurn;
+
+
+        public Queue<int> ActualFleauxIds
 		{
 			get
             {
@@ -305,6 +308,22 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 				OnPropertyChanged("OpponentCardsInHand");
 			}
 		}
+
+        public List<KeyValuePair<int, int>> CardIdsByTurn
+        {
+            get
+            {
+                if (_cardIdsByTurn != null) return _cardIdsByTurn;
+                _cardIdsByTurn = new List<KeyValuePair<int,int>>();
+                return _cardIdsByTurn;
+            }
+
+            set
+            {
+                _cardIdsByTurn = value;
+                OnPropertyChanged("CardIdsByTurn");
+            }
+        }
 
 		public int CurrentTurn
 		{
@@ -391,8 +410,8 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 		{
 			get
 			{
-				if (_deckInfinites != null) return _deckInfinites;
-				_deckInfinites = new List<DeckUI>();
+				if (_deckInfinites != null) return _deck.Where(x => x.Card.Rarity == 4).ToList();
+                _deckInfinites = new List<DeckUI>();
 				return _deckInfinites;
 			}
 			set
@@ -406,8 +425,8 @@ namespace AddOn_Krosmaga___Blou_fire.Models
 		{
 			get
 			{
-				if (_deckKrosmiques != null) return _deckKrosmiques;
-				_deckKrosmiques = new List<DeckUI>();
+				if (_deckKrosmiques != null) return _deck.Where(x => x.Card.Rarity == 3).ToList();
+                _deckKrosmiques = new List<DeckUI>();
 				return _deckKrosmiques;
 			}
 			set

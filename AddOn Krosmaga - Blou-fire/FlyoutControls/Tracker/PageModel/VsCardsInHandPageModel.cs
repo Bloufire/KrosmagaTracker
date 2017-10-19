@@ -27,7 +27,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 		{
 			get
 			{
-				if (_vsCardsInHand != null) return _vsCardsInHand.OrderByDescending(x => x.Card.GodType).ThenBy(x => x.Card.CostAP).ToList();
+				if (_vsCardsInHand != null) return _vsCardsInHand.OrderBy(x => x.DrawTurn).ToList();
 				_vsCardsInHand = new List<DeckUI>();
 				return _vsCardsInHand;
 

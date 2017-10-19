@@ -5,6 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AddOn_Krosmaga___Blou_fire.OverlayContainer.Pages"
              xmlns:tracker="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker"
+             xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
              mc:Ignorable="d" 
          >
     <Grid
@@ -23,11 +24,31 @@
         <!--<GroupBox Header="Mes Stats" Grid.Row="0">
             <tracker:OwnProfileDataPage />
         </GroupBox>-->
-             <tracker:VsProfileDataPage />
-         <GroupBox Header="Cartes Jouées" Grid.Row="1">
-            <ScrollViewer VerticalScrollBarVisibility="Hidden">
-                <tracker:VsPlayedCardsPage />
-            </ScrollViewer>
+        <tracker:VsProfileDataPage />
+        <GroupBox Header="Opponent" DockPanel.Dock="Top" Grid.Row="1" >
+            <controls:MetroAnimatedSingleRowTabControl>
+                <controls:MetroTabItem  Header="Hand" controls:ControlsHelper.HeaderFontSize="{StaticResource AnimatedTabControlHeaderMediumSize}">
+                    <GroupBox>
+                        <ScrollViewer VerticalScrollBarVisibility="Hidden">
+                            <tracker:VsCardsInHandPage />
+                        </ScrollViewer>
+                    </GroupBox>
+                </controls:MetroTabItem>
+                <controls:MetroTabItem Header="Special" controls:ControlsHelper.HeaderFontSize="{StaticResource AnimatedTabControlHeaderMediumSize}">
+                    <GroupBox>
+                        <ScrollViewer VerticalScrollBarVisibility="Hidden">
+                            <tracker:VsSpecialCardsUsed />
+                        </ScrollViewer>
+                    </GroupBox>
+                </controls:MetroTabItem>
+                <controls:MetroTabItem Header="Deck" controls:ControlsHelper.HeaderFontSize="{StaticResource AnimatedTabControlHeaderMediumSize}">
+                    <GroupBox>
+                        <ScrollViewer VerticalScrollBarVisibility="Hidden">
+                            <tracker:VsPlayedCardsPage />
+                        </ScrollViewer>
+                    </GroupBox>
+                </controls:MetroTabItem>
+            </controls:MetroAnimatedSingleRowTabControl>
         </GroupBox>
     </Grid>
 </UserControl>

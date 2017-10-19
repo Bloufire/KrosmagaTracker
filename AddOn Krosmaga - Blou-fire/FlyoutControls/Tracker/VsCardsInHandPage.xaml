@@ -4,53 +4,46 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker"
-             xmlns:uiElements="clr-namespace:AddOn_Krosmaga___Blou_fire.UIElements"
              xmlns:pageModel="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel"
-             mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
-    <UserControl.DataContext>
-        <pageModel:VsCardsInHandPageModel></pageModel:VsCardsInHandPageModel>
-    </UserControl.DataContext>
+             xmlns:uiElements="clr-namespace:AddOn_Krosmaga___Blou_fire.UIElements"
+             mc:Ignorable="d" >
     <UserControl.Resources>
-        <uiElements:IntToCardCountStringConverter
-            x:Key="IntToCardCountStringConverter" />
+        <uiElements:IntToCardCountStringConverter x:Key="IntToCardCountStringConverter" />
     </UserControl.Resources>
-    <Grid>
-        <ListView Grid.Row="3" Width="150" Background="#66000000" ItemsSource="{Binding VsCardsInHand}"
-                  ScrollViewer.HorizontalScrollBarVisibility="Hidden"
-                  ScrollViewer.VerticalScrollBarVisibility="Hidden">
-            <ListView.ItemContainerStyle>
-                <Style TargetType="ListViewItem">
-                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
-                </Style>
-            </ListView.ItemContainerStyle>
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <Grid Height="25" Opacity="0.8"
-                          Background="{Binding Card, Converter={StaticResource GodToColor}}">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="46" />
-                            <ColumnDefinition Width="*" MaxWidth="70" />
-                            <ColumnDefinition Width="25" />
-                        </Grid.ColumnDefinitions>
-                        <Grid.ToolTip>
-                            <ToolTip Background="Transparent" BorderBrush="Transparent">
-                                <Image Width="204" Height="256" Source="{Binding Card.ImagePath}" />
-                            </ToolTip>
-                        </Grid.ToolTip>
-                        <Image Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center">
-                            <Image.Source>
-                                <CroppedBitmap Source="{Binding Card.ImagePath}" SourceRect="48, 68, 124, 58" />
-                            </Image.Source>
-                        </Image>
-                        <Label Grid.Column="1" Foreground="White" Content="{Binding Card.UIName}"
-                               VerticalAlignment="Center" HorizontalAlignment="Left" />
-                        <Label Grid.Column="2" Foreground="White" FontWeight="Bold"
-                               Content="{Binding CardCount, Converter={StaticResource IntToCardCountStringConverter}}"
-                               VerticalAlignment="Center" HorizontalAlignment="Right" />
-                    </Grid>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-    </Grid>
+    <UserControl.DataContext>
+        <pageModel:VsCardsInHandPageModel />
+    </UserControl.DataContext>
+
+    <ListView Grid.Row="3"  Background="#66000000" ItemsSource="{Binding VsCardsInHand}"
+              ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+              ScrollViewer.VerticalScrollBarVisibility="Hidden">
+        <ListView.ItemContainerStyle>
+            <Style TargetType="ListViewItem">
+                <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+            </Style>
+        </ListView.ItemContainerStyle>
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <Grid Height="25" Opacity="0.8" HorizontalAlignment="Center"
+                      Background="{Binding Card, Converter={StaticResource GodToColor}}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="46" />
+                        <ColumnDefinition Width="*" MaxWidth="70" />
+                        <ColumnDefinition Width="25" />
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Image.Source>
+                            <CroppedBitmap Source="{Binding Card.ImagePath}" SourceRect="48, 68, 124, 58" />
+                        </Image.Source>
+                    </Image>
+                    <Label Grid.Column="1" Foreground="White" Content="{Binding Card.UIName}"
+                           VerticalAlignment="Center" HorizontalAlignment="Left" />
+                    <Label Grid.Column="2" Foreground="White" FontWeight="Bold"
+                           Content="{Binding DrawTurn}"
+                           VerticalAlignment="Center" HorizontalAlignment="Right" />
+                </Grid>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+
 </UserControl>

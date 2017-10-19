@@ -11,6 +11,7 @@ namespace AddOn_Krosmaga___Blou_fire.UIElements
 	{
 		private JsonCardsParser.Card _card;
 		private int _cardCount;
+        private int _drawTurn;
 
 		public DeckUI(Card card, int count)
 		{
@@ -31,5 +32,7 @@ namespace AddOn_Krosmaga___Blou_fire.UIElements
 
 			set { _cardCount = value; }
 		}
-	}
+
+        public int DrawTurn { get => _drawTurn; set => _drawTurn = value; }
+    }
 }

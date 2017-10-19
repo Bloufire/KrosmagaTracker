@@ -203,6 +203,7 @@
     <Compile Include="FlyoutControls\Tracker\OwnProfileDataPage.xaml.cs">
       <DependentUpon>OwnProfileDataPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FlyoutControls\Tracker\PageModel\VsSpecialCardsUsedPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PickAClassControlPage.xaml.cs">
       <DependentUpon>PickAClassControlPage.xaml</DependentUpon>
     </Compile>
@@ -227,6 +228,9 @@
     </Compile>
     <Compile Include="FlyoutControls\Tracker\VsProfileDataPage.xaml.cs">
       <DependentUpon>VsProfileDataPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FlyoutControls\Tracker\VsSpecialCardsUsed.xaml.cs">
+      <DependentUpon>VsSpecialCardsUsed.xaml</DependentUpon>
     </Compile>
     <Compile Include="FlyoutControls\Tracker\VsTrackedCardsPage.xaml.cs">
       <DependentUpon>VsTrackedCardsPage.xaml</DependentUpon>
@@ -352,6 +356,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="FlyoutControls\Tracker\VsProfileDataPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FlyoutControls\Tracker\VsSpecialCardsUsed.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -1214,6 +1222,9 @@
     <Resource Include="Images\DesignImagesKindry\icon_mainA_mini.png" />
     <Resource Include="Images\DesignImagesKindry\icon_mainB_mini.png" />
     <Resource Include="Images\DesignImagesKindry\icon_victoire_mini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\CardImages\unknown.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\twitter.png" />
