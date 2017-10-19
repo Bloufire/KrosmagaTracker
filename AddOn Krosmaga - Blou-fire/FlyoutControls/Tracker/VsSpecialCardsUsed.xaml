@@ -33,7 +33,7 @@
                       Background="{Binding Card, Converter={StaticResource GodToColor}}">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="46" />
-                            <ColumnDefinition Width="*" MaxWidth="70" />
+                            <ColumnDefinition Width="100"/>
                             <ColumnDefinition Width="25" />
                         </Grid.ColumnDefinitions>
                         <Grid.ToolTip>
@@ -69,7 +69,7 @@
                       Background="{Binding Card, Converter={StaticResource GodToColor}}">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="46" />
-                            <ColumnDefinition Width="*" MaxWidth="70" />
+                            <ColumnDefinition Width="100" />
                             <ColumnDefinition Width="25" />
                         </Grid.ColumnDefinitions>
                         <Grid.ToolTip>
