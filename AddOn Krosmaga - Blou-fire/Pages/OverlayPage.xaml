@@ -107,7 +107,7 @@
                                 <!--bordure transparente-->
                                 <Border Background="Transparent" Grid.Column="0" />
                                 <!--bordure gauche overlay-->
-                                <Border BorderBrush="#55bc99" Grid.Column="1" Background="#55bc99"
+                                <Border BorderBrush="{StaticResource SideMenuColorBrush}" Grid.Column="1" Background="{StaticResource SideMenuColorBrush}"
                                         CornerRadius="10,0,0,10">
                                     <!--Menu vertical est ici-->
                                     <Grid>
@@ -118,14 +118,13 @@
                                             <RowDefinition Height="Auto" />
                                         </Grid.RowDefinitions>
 
-                                        <Button Command="{Binding BtnOpenOverlay_OnClick}" HorizontalAlignment="Right"
+                                        <Button Command="{Binding BtnOpenContactOverlay_OnClick}" HorizontalAlignment="Right"
                                                 Width="{StaticResource ThirdButtonSideMenuSize}"
-                                                Height="{StaticResource ThirdButtonSideMenuSize}"
-                                                VerticalAlignment="Bottom"
+                                                Height="{StaticResource ThirdButtonSideMenuSize}" VerticalAlignment="Bottom"
                                                 Style="{DynamicResource MetroCircleButtonStyle}"
                                                 BorderThickness="{StaticResource ThirdButtonSideMenuBorderThickness}"
                                                 BorderBrush="{StaticResource ButtonBorderBrush}" Grid.Row="0"
-                                                Background="{StaticResource SideMenuButtonBackground}">
+                                                Background="{StaticResource SideMenuColorBrush}">
 
                                             <StackPanel Orientation="Horizontal">
                                                 <Rectangle Width="{StaticResource ThirdButtonRectangleSize}"
@@ -321,7 +320,7 @@
             <!--bordure transparente-->
             <Border Background="Transparent" Grid.Column="0" Grid.RowSpan="2" />
             <!--bordure gauche overlay-->
-            <Border BorderBrush="#55bc99" Grid.Column="1" Grid.Row="1" Background="#55bc99"
+            <Border BorderBrush="{StaticResource SideMenuColorBrush}" Grid.Column="1" Grid.Row="1" Background="{StaticResource SideMenuColorBrush}"
                     CornerRadius="10,0,0,10">
                 <!--Menu vertical est ici-->
                 <Grid>

@@ -7,19 +7,36 @@
              xmlns:pageModels="clr-namespace:AddOn_Krosmaga___Blou_fire.OverlayContainer.PageModels"
              xmlns:helpers="clr-namespace:AddOn_Krosmaga___Blou_fire.Helpers"
              xmlns:ease="clr-namespace:AddOn_Krosmaga___Blou_fire.Ease"
+             xmlns:materialIcons="clr-namespace:MaterialIcons;assembly=MaterialIcons"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300"
+             d:DesignHeight="500" d:DesignWidth="300"
              Background="{StaticResource WhiteBrush}">
     <UserControl.DataContext>
         <pageModels:ContactUsContentPageModel/>
     </UserControl.DataContext>
     <GroupBox Header="Contact Us">
         <StackPanel Margin="5">
-            <StackPanel Orientation="Horizontal">
-                <TextBlock VerticalAlignment="Center" Margin="5">Discord :</TextBlock>
-                <Button Command="{Binding BtnDiscord_OnClick}">
+            <Grid  >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions >
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <TextBlock VerticalAlignment="Center" Margin="5"  Grid.Row="0"  Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center">Contact Us</TextBlock>
+                <TextBlock VerticalAlignment="Center" Margin="5"  Grid.Row="1"  Grid.Column="0" >Discord Tracker:</TextBlock>
+                <Button Command="{Binding BtnDiscord_OnClick}"  Grid.Row="1"  Grid.Column="1" Margin="5" >
                     <StackPanel Orientation="Horizontal">
-                        <Rectangle Width="14" Height="16" Margin="0,2,0,0">
+                        <Rectangle Width="14" Height="16" Margin="2">
                             <Rectangle.Fill>
                                 <VisualBrush>
                                     <VisualBrush.Visual>
@@ -31,21 +48,106 @@
                         <TextBlock  VerticalAlignment="Center" Text="Open Discord" />
                     </StackPanel>
                 </Button>
-            </StackPanel>
+                <Separator Grid.Row="2" Grid.ColumnSpan="2"></Separator>
+                <TextBlock VerticalAlignment="Center" Margin="5" Grid.Row="3"  Grid.Column="0">Found a bug ?</TextBlock>
+                <Button Command="{Binding BtnTwitterKrosTracker_OnClick}"  Grid.Row="3"  Grid.Column="1" Margin="5">
+                    <StackPanel Orientation="Horizontal">
+                        <Rectangle Width="14" Height="14" Margin="2">
+                            <Rectangle.Fill>
+                                <VisualBrush>
+                                    <VisualBrush.Visual>
+                                        <materialIcons:MaterialIcon Icon="ic_bug_report" />
+                                    </VisualBrush.Visual>
+                                </VisualBrush>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                        <TextBlock  VerticalAlignment="Center" Text="Report Bug" />
+                    </StackPanel>
+                </Button>
+                <TextBlock VerticalAlignment="Center" Margin="5"  Grid.Row="4"  Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center">The Team</TextBlock>
 
 
-            <GroupBox Header="Remerciements" Height="300" Margin="5,20,5,5">
+                <TextBlock VerticalAlignment="Center" Margin="5" Grid.Row="5"  Grid.Column="0">[Dev] Blou-Fire:</TextBlock>
+                <Button Command="{Binding BtnTwitterBlou_OnClick}"  Grid.Row="5"  Grid.Column="1" Margin="5">
+                    <StackPanel Orientation="Horizontal">
+                        <Rectangle Width="14" Height="14" Margin="2">
+                            <Rectangle.Fill>
+                                <VisualBrush>
+                                    <VisualBrush.Visual>
+                                        <Image Source="../../Images/twitter.png" />
+                                    </VisualBrush.Visual>
+                                </VisualBrush>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                        <TextBlock  VerticalAlignment="Center" Text="Open Twitter" />
+                    </StackPanel>
+                </Button>
+
+                <TextBlock VerticalAlignment="Center" Margin="5" Grid.Row="6"  Grid.Column="0">[Dev] Xeno:</TextBlock>
+                <Button Command="{Binding BtnTwitterXeno_OnClick}"  Grid.Row="6"  Grid.Column="1" Margin="5">
+                    <StackPanel Orientation="Horizontal">
+                        <Rectangle Width="14" Height="14" Margin="2">
+                            <Rectangle.Fill>
+                                <VisualBrush>
+                                    <VisualBrush.Visual>
+                                        <Image Source="../../Images/twitter.png" />
+                                    </VisualBrush.Visual>
+                                </VisualBrush>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                        <TextBlock  VerticalAlignment="Center" Text="Open Twitter" />
+                    </StackPanel>
+                </Button>
+
+
+                <TextBlock VerticalAlignment="Center" Margin="5" Grid.Row="7"  Grid.Column="0">[Graph] Kindry:</TextBlock>
+                <Button Command="{Binding BtnTwitterKindry_OnClick}"  Grid.Row="7"  Grid.Column="1" Margin="5">
+                    <StackPanel Orientation="Horizontal">
+                        <Rectangle Width="14" Height="14" Margin="2">
+                            <Rectangle.Fill>
+                                <VisualBrush>
+                                    <VisualBrush.Visual>
+                                        <Image Source="../../Images/twitter.png" />
+                                    </VisualBrush.Visual>
+                                </VisualBrush>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                        <TextBlock  VerticalAlignment="Center" Text="Open Twitter" />
+                    </StackPanel>
+                </Button>
+
+                <TextBlock VerticalAlignment="Center" Margin="5" Grid.Row="8"  Grid.Column="0">[Web] Guiver:</TextBlock>
+                <Button Command="{Binding BtnTwitterKindry_OnClick}"  Grid.Row="8"  Grid.Column="1" Margin="5">
+                    <StackPanel Orientation="Horizontal">
+                        <Rectangle Width="14" Height="14" Margin="2">
+                            <Rectangle.Fill>
+                                <VisualBrush>
+                                    <VisualBrush.Visual>
+                                        <Image Source="../../Images/twitter.png" />
+                                    </VisualBrush.Visual>
+                                </VisualBrush>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                        <TextBlock  VerticalAlignment="Center" Text="Open Twitter" />
+                    </StackPanel>
+                </Button>
+             
+            </Grid>
+            
+            
+            
+            <!--<GroupBox Header="Remerciements" Height="300" Margin="5,20,5,5">
                 <Grid>
-                    <!-- Trigger to start the animation when loaded -->
+                    --><!-- Trigger to start the animation when loaded --><!--
                     <Grid.Triggers>
                         <EventTrigger RoutedEvent="Grid.MouseEnter">
                             <BeginStoryboard>
                                 <BeginStoryboard.Storyboard>
-                                    <!-- Animate back and forth forever -->
+                                    --><!-- Animate back and forth forever --><!--
                                     <Storyboard
                                         AutoReverse="True"
                                         RepeatBehavior="Forever">
-                                        <!-- Animate from top to bottom -->
+                                        --><!-- Animate from top to bottom --><!--
                                         <DoubleAnimation
                                             Storyboard.TargetName="Mediator"
                                             Storyboard.TargetProperty="ScrollableHeightMultiplier"
@@ -53,7 +155,7 @@
                                             To="1"
                                             Duration="0:0:10">
                                             <DoubleAnimation.EasingFunction>
-                                                <!-- Ease in and out -->
+                                                --><!-- Ease in and out --><!--
                                                 <ease:CustomLinearEasingFunction EasingMode="EaseInOut"/>
                                             </DoubleAnimation.EasingFunction>
                                         </DoubleAnimation>
@@ -63,16 +165,16 @@
                         </EventTrigger>
                     </Grid.Triggers>
 
-                    <!-- ScrollViewer that will be animated -->
+                    --><!-- ScrollViewer that will be animated --><!--
                     <ScrollViewer
                         x:Name="Scroller">
-                        <!-- Arbitrary content... -->
+                        --><!-- Arbitrary content... --><!--
                         <StackPanel>
-                            <!--<StackPanel.Style>
+                            --><!--<StackPanel.Style>
                             <Style TargetType="TextBlock">
                                 <Setter Property="Margin" Value="5"></Setter>
                             </Style>
-                        </StackPanel.Style>-->
+                        </StackPanel.Style>--><!--
                             <TextBlock HorizontalAlignment="Center" FontSize="25">Merci à vous</TextBlock>
                             <TextBlock HorizontalAlignment="Center" FontSize="18">Team Test</TextBlock>
                             <TextBlock Margin="5" >Kewl</TextBlock>
@@ -92,12 +194,12 @@
                         </StackPanel>
                     </ScrollViewer>
 
-                    <!-- Mediator that forwards the property changes -->
+                    --><!-- Mediator that forwards the property changes --><!--
                     <helpers:ScrollViewerMediator
                         x:Name="Mediator"
                         ScrollViewer="{Binding ElementName=Scroller}"/>
                 </Grid>
-            </GroupBox>
+            </GroupBox>-->
 
 
         </StackPanel>

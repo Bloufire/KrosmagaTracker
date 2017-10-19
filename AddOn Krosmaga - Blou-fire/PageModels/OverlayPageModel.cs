@@ -38,6 +38,7 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 
 		private void BtnOpenOverlay()
 		{
+		
 			IsLeftFlyOpen = !IsLeftFlyOpen;
 		}
 

@@ -72,11 +72,7 @@
             </Style>
 
             <!--UserControlOverlay-->
-            <LinearGradientBrush x:Key="FlyoutGradientBackground" StartPoint="0,0" EndPoint="1,0">
-                <GradientStop Color="#55bc99" Offset="0" />
-                <GradientStop Color="{StaticResource WhiteColor}" Offset="0.05" />
-                <GradientStop Color="{StaticResource WhiteColor}" Offset="1" />
-            </LinearGradientBrush>
+           
             <LinearGradientBrush
                 x:Key="HeaderBackgroundOpacityMask"
                 StartPoint="0,0"
@@ -87,8 +83,7 @@
             </LinearGradientBrush>
             
             <!--Button-->
-            <Brush x:Key="SideMenuButtonBackground">#227866</Brush>
-            <Style x:Key="ColumnHeaderDefaultStyle" TargetType="DataGridColumnHeader" >
+              <Style x:Key="ColumnHeaderDefaultStyle" TargetType="DataGridColumnHeader" >
                 <Setter Property="Background" Value="Transparent"></Setter>
                 
                 </Style>
@@ -125,6 +120,13 @@
             </Style>
             <converter:BoolToVisibiltyConverter x:Key="BoolToVis" />
             <converter:BoolAndNegatToVisibiltyConverter x:Key="BoolAndNegatToVisibiltyConverter" />
+            <Brush x:Key="SideMenuColorBrush" >#005666</Brush>
+            <Brush x:Key="SideMenuButtonBackground">#005666</Brush>
+            <LinearGradientBrush x:Key="FlyoutGradientBackground" StartPoint="0,0" EndPoint="1,0">
+                <GradientStop Color="#008999" Offset="0" />
+                <GradientStop Color="{StaticResource WhiteColor}" Offset="0.05" />
+                <GradientStop Color="{StaticResource WhiteColor}" Offset="1" />
+            </LinearGradientBrush>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
