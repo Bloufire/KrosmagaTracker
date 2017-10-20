@@ -123,7 +123,8 @@
                                                 Style="{DynamicResource MetroCircleButtonStyle}"
                                                 BorderThickness="{StaticResource ThirdButtonSideMenuBorderThickness}"
                                                 BorderBrush="{StaticResource ButtonBorderBrush}" Grid.Row="0"
-                                                Background="{StaticResource SideMenuColorBrush}">
+                                                Background="{StaticResource SideMenuColorBrush}"
+                                                ToolTip="Contact Us">
 
                                             <StackPanel Orientation="Horizontal">
                                                 <Rectangle Width="{StaticResource ThirdButtonRectangleSize}"
@@ -147,7 +148,8 @@
                                                 Style="{DynamicResource MetroCircleButtonStyle}"
                                                 BorderThickness="{StaticResource ThirdButtonSideMenuBorderThickness}"
                                                 BorderBrush="{StaticResource ButtonBorderBrush}" Grid.Row="1"
-                                                Background="{StaticResource SideMenuButtonBackground}">
+                                                Background="{StaticResource SideMenuButtonBackground}"
+                                                ToolTip="Settings / Quit Overlay">
 
                                             <StackPanel Orientation="Horizontal">
                                                 <Rectangle Width="{StaticResource ThirdButtonRectangleSize}"
@@ -212,7 +214,8 @@
                                     Style="{DynamicResource MetroCircleButtonStyle}"
                                     BorderThickness="{StaticResource MainButtonSideMenuBorderThickness}"
                                     BorderBrush="{StaticResource ButtonBorderBrush}"
-                                    Background="{StaticResource SideMenuButtonBackground}">
+                                    Background="{StaticResource SideMenuButtonBackground}"
+                                    ToolTip="Open/Close Overlay">
 
                                 <Rectangle Width="{StaticResource MainButtonRectangleSize}"
                                            Height="{StaticResource MainButtonRectangleSize}">
@@ -233,7 +236,8 @@
                                     Style="{DynamicResource MetroCircleButtonStyle}"
                                     BorderThickness="{StaticResource ThirdButtonSideMenuBorderThickness}"
                                     BorderBrush="{StaticResource ButtonBorderBrush}"
-                                    Background="{StaticResource SideMenuButtonBackground}">
+                                    Background="{StaticResource SideMenuButtonBackground}"
+                                    ToolTip="Game Tracking">
 
                                 <StackPanel Orientation="Horizontal">
                                     <Rectangle Width="{StaticResource SecondButtonRectangleSize}"
@@ -256,7 +260,8 @@
                                     Style="{DynamicResource MetroCircleButtonStyle}"
                                     BorderThickness="{StaticResource ThirdButtonSideMenuBorderThickness}"
                                     BorderBrush="{StaticResource ButtonBorderBrush}"
-                                    Background="{StaticResource SideMenuButtonBackground}">
+                                    Background="{StaticResource SideMenuButtonBackground}"
+                                    ToolTip="Statistics">
 
                                 <StackPanel Orientation="Horizontal">
                                     <Rectangle Width="{StaticResource SecondButtonRectangleSize}"
@@ -279,7 +284,8 @@
                                     Style="{DynamicResource MetroCircleButtonStyle}"
                                     BorderThickness="{StaticResource ThirdButtonSideMenuBorderThickness}"
                                     BorderBrush="{StaticResource ButtonBorderBrush}"
-                                    Background="{StaticResource SideMenuButtonBackground}">
+                                    Background="{StaticResource SideMenuButtonBackground}"
+                                    ToolTip="Games History">
 
                                 <StackPanel Orientation="Horizontal">
                                     <Rectangle Width="{StaticResource SecondButtonRectangleSize}"
@@ -336,7 +342,8 @@
                             Style="{DynamicResource MetroCircleButtonStyle}"
                             BorderThickness="{StaticResource ThirdButtonSideMenuBorderThickness}"
                             BorderBrush="{StaticResource ButtonBorderBrush}" Grid.Row="0"
-                            Background="{StaticResource SideMenuButtonBackground}">
+                            Background="{StaticResource SideMenuButtonBackground}"
+                            ToolTip="Contact Us">
 
                         <StackPanel Orientation="Horizontal">
                             <Rectangle Width="{StaticResource ThirdButtonRectangleSize}"
@@ -359,7 +366,8 @@
                             Style="{DynamicResource MetroCircleButtonStyle}"
                             BorderThickness="{StaticResource ThirdButtonSideMenuBorderThickness}"
                             BorderBrush="{StaticResource ButtonBorderBrush}" Grid.Row="1"
-                            Background="{StaticResource SideMenuButtonBackground}">
+                            Background="{StaticResource SideMenuButtonBackground}"
+                            ToolTip="Settings / Quit Overlay">
 
                         <StackPanel Orientation="Horizontal">
                             <Rectangle Width="{StaticResource ThirdButtonRectangleSize}"
@@ -391,7 +399,8 @@
 
                     BorderThickness="{StaticResource MainButtonSideMenuBorderThickness}"
                     BorderBrush="{StaticResource ButtonBorderBrush}"
-                    Background="{StaticResource SideMenuButtonBackground}">
+                    Background="{StaticResource SideMenuButtonBackground}"
+                    ToolTip="Open/Close Overlay">
 
                 <Rectangle Width="{StaticResource MainButtonRectangleSize}"
                            Height="{StaticResource MainButtonRectangleSize}">
@@ -414,7 +423,8 @@
                     Style="{DynamicResource MetroCircleButtonStyle}"
                     BorderThickness="{StaticResource ThirdButtonSideMenuBorderThickness}"
                     BorderBrush="{StaticResource ButtonBorderBrush}"
-                    Background="{StaticResource SideMenuButtonBackground}">
+                    Background="{StaticResource SideMenuButtonBackground}"
+                    ToolTip="Game Tracking">
 
                 <StackPanel Orientation="Horizontal">
                     <Rectangle Width="{StaticResource SecondButtonRectangleSize}"
@@ -438,7 +448,8 @@
                     Style="{DynamicResource MetroCircleButtonStyle}"
                     BorderThickness="{StaticResource ThirdButtonSideMenuBorderThickness}"
                     BorderBrush="{StaticResource ButtonBorderBrush}"
-                    Background="{StaticResource SideMenuButtonBackground}">
+                    Background="{StaticResource SideMenuButtonBackground}"
+                    ToolTip="Statistics">
 
                 <StackPanel Orientation="Horizontal">
                     <Rectangle Width="{StaticResource SecondButtonRectangleSize}"
@@ -462,7 +473,8 @@
                     Style="{DynamicResource MetroCircleButtonStyle}"
                     BorderThickness="{StaticResource ThirdButtonSideMenuBorderThickness}"
                     BorderBrush="{StaticResource ButtonBorderBrush}"
-                    Background="{StaticResource SideMenuButtonBackground}">
+                    Background="{StaticResource SideMenuButtonBackground}"
+                    ToolTip="Games History">
 
                 <StackPanel Orientation="Horizontal">
                     <Rectangle Width="{StaticResource SecondButtonRectangleSize}"
