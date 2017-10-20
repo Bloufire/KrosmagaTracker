@@ -18,14 +18,13 @@
                       BorderThickness="0"
                       WindowStartupLocation="Manual"
                       Left="{Binding Left}"
-                      
                       d:DesignHeight="750"
                       WindowButtonCommandsOverlayBehavior="Flyouts"
                       Width="{StaticResource OverlayWidth}"
                       WindowTitleBrush="Transparent"
                       NonActiveWindowTitleBrush="Transparent"
-                     
-                      ShowTitleBar="{Binding IsLeftFlyOpen}"
+                      MouseDown="OverlayPage_OnMouseDown"
+                      ShowTitleBar="False"
                       Topmost="True">
    
     <controls:MetroWindow.Resources>
@@ -42,7 +41,7 @@
             <GradientStop Color="#FFFFFFFF" Offset="1" />
         </LinearGradientBrush>
         <LinearGradientBrush x:Key="FlyoutGradientBackground" StartPoint="0,0" EndPoint="1,0">
-            <GradientStop Color="#55bc99" Offset="0" />
+            <GradientStop Color="#005666" Offset="0" />
             <GradientStop Color="#000000" Offset="0.05" />
             <GradientStop Color="#000000" Offset="1" />
         </LinearGradientBrush>
@@ -61,7 +60,7 @@
     <Window.DataContext>
         <pageModels:OverlayPageModel />
     </Window.DataContext>
-    <controls:MetroWindow.RightWindowCommands>
+    <!--<controls:MetroWindow.RightWindowCommands>
         <controls:WindowCommands Visibility="{Binding IsLeftFlyOpen, Converter={StaticResource BoolToVis}}">
             <Button Command="{Binding BtnDiscord_OnClick}">
                 <StackPanel Orientation="Horizontal">
@@ -78,7 +77,7 @@
                 </StackPanel>
             </Button>
         </controls:WindowCommands>
-    </controls:MetroWindow.RightWindowCommands>
+    </controls:MetroWindow.RightWindowCommands>-->
     <controls:MetroWindow.Flyouts>
         <controls:FlyoutsControl>
             <controls:Flyout Background="Transparent" TitleVisibility="Collapsed" Position="Right" Width="300"
