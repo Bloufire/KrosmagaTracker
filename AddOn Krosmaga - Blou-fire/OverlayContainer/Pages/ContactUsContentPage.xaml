@@ -117,7 +117,7 @@
                 </Button>
 
                 <TextBlock VerticalAlignment="Center" Margin="5" Grid.Row="8"  Grid.Column="0">[Web] Guiver:</TextBlock>
-                <Button Command="{Binding BtnTwitterKindry_OnClick}"  Grid.Row="8"  Grid.Column="1" Margin="5">
+                <Button Command="{Binding BtnTwitterGuiver_OnClick}"  Grid.Row="8"  Grid.Column="1" Margin="5">
                     <StackPanel Orientation="Horizontal">
                         <Rectangle Width="14" Height="14" Margin="2">
                             <Rectangle.Fill>
