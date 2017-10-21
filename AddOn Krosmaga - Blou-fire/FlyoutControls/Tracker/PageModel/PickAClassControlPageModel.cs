@@ -28,6 +28,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 
 			ComboGameTypeValues.Add(GameType.RANDOM_RANKED);
 			ComboGameTypeValues.Add(GameType.VERSUS_IA);
+	        ComboGameTypeValues.Add(GameType.RANDOM_UNRANKED);
 			TrackerSrv.CurrentFiltersStatModel = new FiltersStatModel();
         }
 

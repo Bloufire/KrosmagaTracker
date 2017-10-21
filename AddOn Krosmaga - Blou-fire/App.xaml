@@ -45,10 +45,15 @@
 
             </ResourceDictionary.MergedDictionaries>
             <uiElements:GodClassToColor x:Key="GodToColor" />
-           
+
+        
             <!--Converter-->
             <converter:SelectedToVisibilityConverter x:Key="SelectedToVisibilityConverter" />
-
+            <Style x:Key="CenterHeaderColumStyle" 
+                   BasedOn="{StaticResource MetroDataGridColumnHeader}" 
+                   TargetType="{x:Type DataGridColumnHeader}">
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            </Style>
             <!--Style-->    
             <Style x:Key="GridFadeAnimationStyle" TargetType="Grid">
                 <Style.Triggers>

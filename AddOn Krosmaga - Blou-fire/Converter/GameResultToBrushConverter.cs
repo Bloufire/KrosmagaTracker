@@ -19,7 +19,7 @@ namespace AddOn_Krosmaga___Blou_fire.Converter
 				var result = (GameResult) value;
 				var c = Colors.Black;
 				if (result == GameResult.Win)
-					c = Colors.Green;
+					c = Colors.LawnGreen;
 				else if (result == GameResult.Loss)
 					c = Colors.Red;
 				return new SolidColorBrush(c);

@@ -11,7 +11,7 @@
     <Grid    VerticalAlignment="Stretch"
              OpacityMask="{StaticResource HeaderBackgroundOpacityMask}"
              Background="{StaticResource FlyoutGradientBackground}">
-        <GroupBox Header="Histo Page">
+        <GroupBox Header="Games History">
 
             <tracker:MatchesHistoPage></tracker:MatchesHistoPage>
         </GroupBox>

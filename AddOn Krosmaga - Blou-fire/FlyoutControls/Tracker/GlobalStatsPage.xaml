@@ -38,7 +38,7 @@
                         </Style>
                     </StackPanel.Style>
                     <TextBlock Margin="4" VerticalAlignment="Center" Text="{Binding ActiveFilter}"/>
-                    <Rectangle Width="14" Height="16" Margin="0,2,0,0">
+                    <!--<Rectangle Width="14" Height="16" Margin="0,2,0,0">
                         <Rectangle.Fill>
                             <VisualBrush>
                                 <VisualBrush.Visual>
@@ -46,7 +46,7 @@
                                 </VisualBrush.Visual>
                             </VisualBrush>
                         </Rectangle.Fill>
-                    </Rectangle> 
+                    </Rectangle>--> 
                     <TextBlock Margin="4" VerticalAlignment="Center" />
                 </StackPanel>
             </Grid>
