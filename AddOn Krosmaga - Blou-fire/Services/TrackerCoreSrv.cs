@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,7 @@ using AddOn_Krosmaga___Blou_fire.Models;
 using AddOn_Krosmaga___Blou_fire.ProducerConsumer;
 using AddOn_Krosmaga___Blou_fire.Utility;
 using JsonCardsParser;
+using NetFwTypeLib;
 using SQLiteConnector;
 using Match = AddOn_Krosmaga___Blou_fire.UIElements.Match;
 
@@ -52,10 +54,46 @@ namespace AddOn_Krosmaga___Blou_fire.Services
             TrackerModel = new TrackerModel();
             UpdateMatchsWithFilterList();
 
-            Producer producer = new Producer(_workQueue);
+
+			Connector.CreateDatabase();
+
+		
+			FirewallValidation();
+
+			Producer producer = new Producer(_workQueue);
 			StartService();
 		}
 
+		private void FirewallValidation()
+		{
+			Type tNetFwPolicy2 = Type.GetTypeFromProgID("HNetCfg.FwPolicy2");
+			INetFwPolicy2 fwPolicy2 = (INetFwPolicy2)Activator.CreateInstance(tNetFwPolicy2);
+			var currentProfiles = fwPolicy2.CurrentProfileTypes;
+
+			bool _exist = false;
+
+			foreach (INetFwRule rule in fwPolicy2.Rules)
+			{
+				if (rule.Name.IndexOf("KrosmagaAddOn: " + System.IO.Path.GetFileName(Assembly.GetEntryAssembly().Location)) != -1)
+				{
+					fwPolicy2.Rules.Remove(rule.Name);
+					break;
+				}
+			}
+			if (!_exist)
+			{
+				INetFwRule firewallRule = (INetFwRule)Activator.CreateInstance(Type.GetTypeFromProgID("HNetCfg.FWRule"));
+				firewallRule.Action = NET_FW_ACTION_.NET_FW_ACTION_ALLOW;
+				firewallRule.Enabled = true;
+				firewallRule.InterfaceTypes = "All";
+				firewallRule.ApplicationName = Assembly.GetEntryAssembly().Location;
+				firewallRule.Name = "KrosmagaAddOn: " + System.IO.Path.GetFileName(Assembly.GetEntryAssembly().Location);
+				INetFwPolicy2 firewallPolicy = (INetFwPolicy2)Activator.CreateInstance
+					(Type.GetTypeFromProgID("HNetCfg.FwPolicy2"));
+				firewallRule.Direction = NET_FW_RULE_DIRECTION_.NET_FW_RULE_DIR_IN;
+				firewallPolicy.Rules.Add(firewallRule);
+			}
+		}
 
 
 		public void StartService()
