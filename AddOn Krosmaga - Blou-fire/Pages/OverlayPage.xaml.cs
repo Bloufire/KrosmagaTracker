@@ -36,6 +36,12 @@ namespace AddOn_Krosmaga___Blou_fire.Pages
 
 		}
 
-		
+
+		private void OverlayPage_OnMouseDown(object sender, MouseButtonEventArgs e)
+		{
+			if (e.ChangedButton == MouseButton.Left)
+				this.DragMove();
+		}
+
 	}
 }

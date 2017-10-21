@@ -97,12 +97,12 @@ namespace AddOn_Krosmaga___Blou_fire.PageModels
 	    private async Task CloseOverlayNow()
 	    {
 			var metroWindow = (Application.Current.MainWindow as MetroWindow);
-		    var res = await metroWindow.ShowMessageAsync("Quitter Kros'Tracker", "Êtes-vous sûr ?", MessageDialogStyle.AffirmativeAndNegative, new MetroDialogSettings()
+		    var res = await metroWindow.ShowMessageAsync("Quit Kros'Tracker", "Are you sure you want to exit ?", MessageDialogStyle.AffirmativeAndNegative, new MetroDialogSettings()
 			    {
 				    DialogTitleFontSize = 15,
 				    DialogMessageFontSize = 13,
-				    AffirmativeButtonText = "Oui",
-				    NegativeButtonText = "Non",
+				    AffirmativeButtonText = "Yes",
+				    NegativeButtonText = "No",
 				    DefaultButtonFocus = MessageDialogResult.Affirmative
 
 			    }

@@ -19,7 +19,8 @@
         <GroupBox Header="Settings" DockPanel.Dock="Top"  >
             <controls:MetroAnimatedSingleRowTabControl >
                 <controls:MetroTabItem  Header="Overlay" controls:ControlsHelper.HeaderFontSize="{StaticResource AnimatedTabControlHeaderMediumSize}">
-                    <tracker:SettingsOverlayParamPage/>
+                    <Label>Soon...</Label>
+                    <!--<tracker:SettingsOverlayParamPage/>-->
                 </controls:MetroTabItem>
                 <controls:MetroTabItem Header="Tracker" controls:ControlsHelper.HeaderFontSize="{StaticResource AnimatedTabControlHeaderMediumSize}">
                     <Label>Soon...</Label>
@@ -30,7 +31,7 @@
             </controls:MetroAnimatedSingleRowTabControl>
         </GroupBox>
 
-        <Button Command="{Binding CloseOverlay}" Margin="10" Content="Quitter Tracker" HorizontalAlignment="Center" VerticalAlignment="Bottom"  DockPanel.Dock="Bottom"></Button>
+        <Button Command="{Binding CloseOverlay}" Margin="10" Content="Quit Tracker" HorizontalAlignment="Center" VerticalAlignment="Bottom"  DockPanel.Dock="Bottom"></Button>
 
     </DockPanel>
 </UserControl>
