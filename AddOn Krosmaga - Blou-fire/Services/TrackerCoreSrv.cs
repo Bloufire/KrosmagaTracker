@@ -275,6 +275,7 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 
 			//On efface le deck du model
 			TrackerModel.Deck.Clear();
+            TrackerModel.CardsInHand.Clear();
 		}
 
 		private void UIActionGameEventsEvent(Builders.GameEvents value)
@@ -323,39 +324,39 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                             TrackerModel.AddCardToDeck(deckUI);
 						}
 						
-                        if(!TrackerModel.CardIdsByTurn.Any(x => x.Key == cardMoved.Card))
-                        {
-                            var cardToRemove = TrackerModel.CardsInHand.FirstOrDefault(x => x.DrawTurn == 0);
-                            if(cardToRemove != null)
-                            {
-                                TrackerModel.RemoveCardFromCardInHand(cardToRemove);
-                            }
-                        }
-                        else
-                        {
-                            var cardInList = TrackerModel.CardIdsByTurn.First(x => x.Key == cardMoved.Card);
-                            var cardToRemove = TrackerModel.CardsInHand.FirstOrDefault(x => x.Card.Id == -1 && x.DrawTurn == cardInList.Value);
-                            if (cardToRemove != null)
-                            {
-                                TrackerModel.RemoveCardFromCardInHand(cardToRemove);
-                            }
-                        }
+                        //if(!TrackerModel.CardIdsByTurn.Any(x => x.Key == cardMoved.Card))
+                        //{
+                        //    var cardToRemove = TrackerModel.CardsInHand.FirstOrDefault(x => x.DrawTurn == 0);
+                        //    if(cardToRemove != null)
+                        //    {
+                        //        TrackerModel.RemoveCardFromCardInHand(cardToRemove);
+                        //    }
+                        //}
+                        //else
+                        //{
+                        //    var cardInList = TrackerModel.CardIdsByTurn.First(x => x.Key == cardMoved.Card);
+                        //    var cardToRemove = TrackerModel.CardsInHand.FirstOrDefault(x => x.Card.Id == -1 && x.DrawTurn == cardInList.Value);
+                        //    if (cardToRemove != null)
+                        //    {
+                        //        TrackerModel.RemoveCardFromCardInHand(cardToRemove);
+                        //    }
+                        //}
 					}
-					else
-					{
-						deckUI = TrackerModel.CardsInHand.FirstOrDefault(x => x.Card == card);
-						if (deckUI != null)
-						{
-							if (deckUI.CardCount > 1)
-							{
-								deckUI.CardCount--;
-							}
-							else
-							{
-								TrackerModel.RemoveCardFromCardInHand(deckUI);
-							}
-						}
-					}
+					//else
+					//{
+					//	deckUI = TrackerModel.CardsInHand.FirstOrDefault(x => x.Card == card);
+					//	if (deckUI != null)
+					//	{
+					//		if (deckUI.CardCount > 1)
+					//		{
+					//			deckUI.CardCount--;
+					//		}
+					//		else
+					//		{
+					//			TrackerModel.RemoveCardFromCardInHand(deckUI);
+					//		}
+					//	}
+					//}
 				}
 				if (cardMoved.CardLocationTo == Enums.CardLocation.Playground ||
 				    cardMoved.CardLocationTo == Enums.CardLocation.OwnGraveyard ||
@@ -391,14 +392,103 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 				    (cardMoved.CardLocationTo == Enums.CardLocation.OpponentHand && cardMoved.ConcernedFighter == TrackerModel.MyIndex))
 				{
                     TrackerModel.OpponentCardsInHand += 1;
-                    if (cardMoved.RelatedTradingCard != 589)
+                    JsonCardsParser.Card unknown = null;
+                    UIElements.DeckUI deckui = null;
+                    switch(cardMoved.RelatedTradingCard)
                     {
-                        JsonCardsParser.Card unknown = CardsCollection.getCardById(-1);
-                        UIElements.DeckUI deckui = new UIElements.DeckUI(unknown, 1)
-                        {
-                            DrawTurn = TrackerModel.CurrentTurn
-                        };
-                        TrackerModel.AddCardToCardInHand(deckui);
+                        case 589:
+                            deckui = new UIElements.DeckUI(CardsCollection.getCardById(1565), 1)
+                            {
+                                DrawTurn = TrackerModel.CurrentTurn,
+                                IdObject = cardMoved.Card
+                            };
+                            //if (!TrackerModel.CardsInHand.Any(x => x.IdObject == deckui.IdObject))
+                            TrackerModel.AddCardToCardInHand(deckui);
+                            break;
+                        default:
+                            if (cardMoved.ConcernedFighter == TrackerModel.MyIndex)
+                            {
+                                if ((cardMoved.CardLocationFrom == Enums.CardLocation.OpponentGraveyard &&
+                                     cardMoved.CardLocationTo == Enums.CardLocation.OpponentHand) ||
+                                    (cardMoved.CardLocationFrom == Enums.CardLocation.Playground &&
+                                     cardMoved.CardLocationTo == Enums.CardLocation.OpponentHand) ||
+                                    (cardMoved.CardLocationFrom == Enums.CardLocation.Nowhere &&
+                                     cardMoved.CardLocationTo == Enums.CardLocation.OpponentHand))
+                                {
+                                    JsonCardsParser.Card card = card = CardsCollection.getCardById((int)cardMoved.TradingCard);
+                                    if (card == null)
+                                    {
+                                        if (cardMoved.TriggeredEvents.Any(x => x.EventType == Enums.EventType.PLAYER_CARD_COST_MODIFIED))
+                                        {
+                                            card = CardsCollection.getCardById(cardMoved.TriggeredEvents
+                                                .First(x => x.EventType == Enums.EventType.PLAYER_CARD_COST_MODIFIED).RelatedTradingCardId);
+                                        }
+                                    }
+                                    if (card != null)
+                                    {
+                                        UIElements.DeckUI deckUI = new UIElements.DeckUI(card, 1)
+                                        {
+                                            DrawTurn = TrackerModel.CurrentTurn,
+                                            IdObject = cardMoved.Card
+                                        };
+                                        TrackerModel.AddCardToCardInHand(deckUI);
+                                    }
+                                }
+                                else
+                                {
+                                    unknown = CardsCollection.getCardById(-1);
+                                    deckui = new UIElements.DeckUI(unknown, 1)
+                                    {
+                                        DrawTurn = TrackerModel.CurrentTurn,
+                                        IdObject = cardMoved.Card
+                                    };
+                                    //if (!TrackerModel.CardsInHand.Any(x => x.IdObject == deckui.IdObject))
+                                    TrackerModel.AddCardToCardInHand(deckui);
+                                }
+                            }
+                            else
+                            {
+                                if ((cardMoved.CardLocationFrom == Enums.CardLocation.Playground &&
+                                     cardMoved.CardLocationTo == Enums.CardLocation.OwnHand) ||
+                                    (cardMoved.CardLocationFrom == Enums.CardLocation.OwnGraveyard &&
+                                     cardMoved.CardLocationTo == Enums.CardLocation.OwnHand) ||
+                                    (cardMoved.CardLocationFrom == Enums.CardLocation.OpponentGraveyard &&
+                                     cardMoved.CardLocationTo == Enums.CardLocation.OwnHand))
+                                {
+                                    JsonCardsParser.Card card;
+                                    if (cardMoved.CardLocationFrom == Enums.CardLocation.OpponentGraveyard &&
+                                        cardMoved.CardLocationTo == Enums.CardLocation.OwnHand)
+                                    {
+                                        UIElements.DeckUI deckUi = TrackerModel.CardAlreadyPlayed.FirstOrDefault(x => x.CardCount == cardMoved.Card);
+                                        card = deckUi.Card;
+                                    }
+                                    else
+                                    {
+                                        card = CardsCollection.getCardById((int)cardMoved.TradingCard);
+                                    }
+                                    if (card != null)
+                                    {
+                                        UIElements.DeckUI deckUI = new UIElements.DeckUI(card, 1)
+                                        {
+                                            DrawTurn = TrackerModel.CurrentTurn,
+                                            IdObject = cardMoved.Card
+                                        };
+                                        TrackerModel.AddCardToCardInHand(deckUI);
+                                    }
+                                }
+                                else
+                                {
+                                    unknown = CardsCollection.getCardById(-1);
+                                    deckui = new UIElements.DeckUI(unknown, 1)
+                                    {
+                                        DrawTurn = TrackerModel.CurrentTurn,
+                                        IdObject = cardMoved.Card
+                                    };
+                                    //if (!TrackerModel.CardsInHand.Any(x => x.IdObject == deckui.IdObject))
+                                    TrackerModel.AddCardToCardInHand(deckui);
+                                }
+                            }
+                            break;
                     }
                 }
                 if ((cardMoved.CardLocationTo == Enums.CardLocation.OwnHand && cardMoved.ConcernedFighter == TrackerModel.MyIndex) ||
@@ -411,7 +501,18 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 				     cardMoved.ConcernedFighter == TrackerModel.MyIndex))
 				{
                     TrackerModel.OpponentCardsInHand -= 1;
-				}
+                    var carte = TrackerModel.CardsInHand.FirstOrDefault(x => x.IdObject == cardMoved.Card);
+                    if (carte != null)
+                        TrackerModel.RemoveCardFromCardInHand(carte);
+                    else
+                    {
+                        var cardToRemove = TrackerModel.CardsInHand.FirstOrDefault(x => x.Card.Id == -1 && x.DrawTurn == 0);
+                        if (cardToRemove != null)
+                        {
+                            TrackerModel.RemoveCardFromCardInHand(cardToRemove);
+                        }
+                    }
+                }
 				if ((cardMoved.CardLocationFrom == Enums.CardLocation.OwnHand && cardMoved.ConcernedFighter == TrackerModel.MyIndex) ||
 				    (cardMoved.CardLocationFrom == Enums.CardLocation.OpponentHand &&
 				     cardMoved.ConcernedFighter != TrackerModel.MyIndex))
@@ -438,9 +539,15 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 						}
 						if (card != null)
 						{
-                            UIElements.DeckUI deckUI = new UIElements.DeckUI(card, 1);
-                            deckUI.DrawTurn = TrackerModel.CurrentTurn;
-                            TrackerModel.AddCardToCardInHand(deckUI);
+                            //var carte = TrackerModel.CardsInHand.FirstOrDefault(x => x.IdObject == cardMoved.Card);
+                            //if (carte != null)
+                            //    TrackerModel.RemoveCardFromCardInHand(carte);
+                            //UIElements.DeckUI deckUI = new UIElements.DeckUI(card, 1)
+                            //{
+                            //    DrawTurn = TrackerModel.CurrentTurn,
+                            //    IdObject = cardMoved.Card
+                            //};
+                            //TrackerModel.AddCardToCardInHand(deckUI);
                         }
 					}
 				}
@@ -466,9 +573,12 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 						}
 						if (card != null)
 						{
-							UIElements.DeckUI deckUI = new UIElements.DeckUI(card, 1);
-                            deckUI.DrawTurn = TrackerModel.CurrentTurn;
-                            TrackerModel.AddCardToCardInHand(deckUI);
+                            //UIElements.DeckUI deckUI = new UIElements.DeckUI(card, 1)
+                            //{
+                            //    DrawTurn = TrackerModel.CurrentTurn,
+                            //    IdObject = cardMoved.Card
+                            //};
+                            //TrackerModel.AddCardToCardInHand(deckUI);
 						}
 					}
 				}
@@ -489,8 +599,8 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 					if (cardMoved.CardLocationFrom == Enums.CardLocation.OwnHand &&
 					    cardMoved.CardLocationTo == Enums.CardLocation.Nowhere && cardMoved.ConcernedFighter != TrackerModel.MyIndex)
 					{
-						if (value.UInt1 == 1565)
-							TrackerModel.NbFleau -= 1;
+                        if (value.UInt1 == 1565)
+                            TrackerModel.NbFleau -= 1;
 					}
 				}
 			}
@@ -500,11 +610,6 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 				if (eventCardMoved != null && TrackerModel.ActualFleauxIds.Contains(value.Int1) && eventCardMoved.Int1 != TrackerModel.MyIndex)
 				{
 					TrackerModel.NbFleau += 1;
-                    var deckui = new UIElements.DeckUI(CardsCollection.getCardById(1565), 1)
-                    {
-                        DrawTurn = TrackerModel.CurrentTurn
-                    };
-                    TrackerModel.AddCardToCardInHand(deckui);
                 }
 			}
 			else if (value.EventType == Enums.EventType.TURN_STARTED)

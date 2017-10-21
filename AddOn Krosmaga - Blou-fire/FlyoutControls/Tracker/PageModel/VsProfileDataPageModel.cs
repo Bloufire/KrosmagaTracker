@@ -14,6 +14,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 		private int _vsNbFleau;
 		private int _vsNbCardsInHand;
 		private string _vsPseudo;
+        private string _vsCurrentTurn;
 
 		#region CTOR
 		public VsProfileDataPageModel()
@@ -29,6 +30,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 			VsNbFleau = TrackerSrv.TrackerModel.NbFleau;
 			VsLosesNb = TrackerSrv.TrackerModel.VsLosesNb;
 			VsNbCardsInHand = TrackerSrv.TrackerModel.OpponentCardsInHand;
+            VsCurrentTurn = "Turn " + TrackerSrv.TrackerModel.CurrentTurn.ToString();
 		}
 
 		private void TrackerModel_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
@@ -85,6 +87,16 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 			}
 		}
 
-		#endregion
-	}
+        public string VsCurrentTurn
+        {
+            get { return _vsCurrentTurn; }
+            set
+            {
+                _vsCurrentTurn = value;
+                OnPropertyChanged(nameof(VsCurrentTurn));
+            }
+        }
+
+        #endregion
+    }
 }
