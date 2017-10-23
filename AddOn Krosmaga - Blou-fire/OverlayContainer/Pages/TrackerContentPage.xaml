@@ -6,6 +6,7 @@
              xmlns:local="clr-namespace:AddOn_Krosmaga___Blou_fire.OverlayContainer.Pages"
              xmlns:tracker="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker"
              xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+             xmlns:materialIcons="clr-namespace:MaterialIcons;assembly=MaterialIcons"
              mc:Ignorable="d" 
          >
     <Grid
@@ -28,25 +29,45 @@
         <GroupBox Header="Opponent" DockPanel.Dock="Top" Grid.Row="1" >
             <controls:MetroAnimatedSingleRowTabControl>
                 <controls:MetroTabItem  Header="Hand" controls:ControlsHelper.HeaderFontSize="{StaticResource AnimatedTabControlHeaderMediumSize}">
-                    <GroupBox>
-                        <ScrollViewer VerticalScrollBarVisibility="Hidden">
+                 
+                        <!--<GroupBox.Header>
+                            <StackPanel Orientation="Horizontal">
+                                <Button>
+                                    <Button.Content>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Rectangle Width="14" Height="12" VerticalAlignment="Center" Margin="3">
+                                                <Rectangle.Fill>
+                                                    <VisualBrush>
+                                                        <VisualBrush.Visual>
+                                                            <materialIcons:MaterialIcon Icon="ic_swap_horiz" />
+                                                        </VisualBrush.Visual>
+                                                    </VisualBrush>
+                                                </Rectangle.Fill>
+                                            </Rectangle>
+                                            <TextBlock VerticalAlignment="Center" >Open in new window</TextBlock> 
+                                        </StackPanel>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+                        </GroupBox.Header>-->
+                        <ScrollViewer VerticalScrollBarVisibility="Hidden" Margin="5">
                             <tracker:VsCardsInHandPage />
                         </ScrollViewer>
-                    </GroupBox>
+                   
                 </controls:MetroTabItem>
                 <controls:MetroTabItem Header="Special" controls:ControlsHelper.HeaderFontSize="{StaticResource AnimatedTabControlHeaderMediumSize}">
-                    <GroupBox>
-                        <ScrollViewer VerticalScrollBarVisibility="Hidden">
+
+                    <ScrollViewer VerticalScrollBarVisibility="Hidden" Margin="5">
                             <tracker:VsSpecialCardsUsed />
                         </ScrollViewer>
-                    </GroupBox>
+                   
                 </controls:MetroTabItem>
                 <controls:MetroTabItem Header="Deck" controls:ControlsHelper.HeaderFontSize="{StaticResource AnimatedTabControlHeaderMediumSize}">
-                    <GroupBox>
-                        <ScrollViewer VerticalScrollBarVisibility="Hidden">
+
+                    <ScrollViewer VerticalScrollBarVisibility="Hidden" Margin="5">
                             <tracker:VsPlayedCardsPage />
                         </ScrollViewer>
-                    </GroupBox>
+                
                 </controls:MetroTabItem>
             </controls:MetroAnimatedSingleRowTabControl>
         </GroupBox>

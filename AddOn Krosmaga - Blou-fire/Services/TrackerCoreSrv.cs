@@ -668,10 +668,10 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 		{
 			if (CurrentFiltersStatModel == null) return TrackerModel.FilteredGames;
 
-			if (CurrentFiltersStatModel.SelectedClass != ClassEnum.None)
-				TrackerModel.FilteredGames.RemoveAll(x => x.PlayerClassName != CurrentFiltersStatModel.SelectedClass.ToString());
-			if (CurrentFiltersStatModel.SelectedVsClass != ClassEnum.None)
-				TrackerModel.FilteredGames.RemoveAll(x => x.OppenentClassName != CurrentFiltersStatModel.SelectedVsClass.ToString());
+			//if (CurrentFiltersStatModel.SelectedClass != ClassEnum.None)
+			//	TrackerModel.FilteredGames.RemoveAll(x => x.PlayerClassName != CurrentFiltersStatModel.SelectedClass.ToString());
+			//if (CurrentFiltersStatModel.SelectedVsClass != ClassEnum.None)
+			//	TrackerModel.FilteredGames.RemoveAll(x => x.OppenentClassName != CurrentFiltersStatModel.SelectedVsClass.ToString());
 			return TrackerModel.FilteredGames;
 		}
 

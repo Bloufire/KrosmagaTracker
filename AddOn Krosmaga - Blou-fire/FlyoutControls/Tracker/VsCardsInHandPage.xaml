@@ -28,7 +28,7 @@
                       Background="{Binding Card, Converter={StaticResource GodToColor}}">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="46" />
-                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="120" />
                         <ColumnDefinition Width="25" />
                     </Grid.ColumnDefinitions>
                     <Image Grid.Column="0" Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center">

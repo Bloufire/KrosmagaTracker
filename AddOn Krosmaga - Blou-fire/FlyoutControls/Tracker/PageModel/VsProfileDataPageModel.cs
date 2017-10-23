@@ -14,7 +14,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 		private int _vsNbFleau;
 		private int _vsNbCardsInHand;
 		private string _vsPseudo;
-        private string _vsCurrentTurn;
+		private string _vsCurrentTurn;
 
 		#region CTOR
 		public VsProfileDataPageModel()
@@ -30,7 +30,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 			VsNbFleau = TrackerSrv.TrackerModel.NbFleau;
 			VsLosesNb = TrackerSrv.TrackerModel.VsLosesNb;
 			VsNbCardsInHand = TrackerSrv.TrackerModel.OpponentCardsInHand;
-            VsCurrentTurn = "Turn " + TrackerSrv.TrackerModel.CurrentTurn.ToString();
+			VsCurrentTurn = "Turn " + TrackerSrv.TrackerModel.CurrentTurn.ToString();
 		}
 
 		private void TrackerModel_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
@@ -44,7 +44,8 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 		public int VsLosesNb
 		{
 			get { return _vsLosesNb; }
-			set {
+			set
+			{
 				_vsLosesNb = value;
 				OnPropertyChanged(nameof(VsLosesNb));
 			}
@@ -53,7 +54,9 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 		public int VsWinsNb
 		{
 			get { return _vsWinsNb; }
-			set { _vsWinsNb = value;
+			set
+			{
+				_vsWinsNb = value;
 				OnPropertyChanged(nameof(VsWinsNb));
 			}
 		}
@@ -79,7 +82,10 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 
 		public string VsPseudo
 		{
-			get { return _vsPseudo; }
+			get
+			{
+				return string.IsNullOrEmpty(_vsPseudo) ? "     " : _vsPseudo;
+			}
 			set
 			{
 				_vsPseudo = value;
@@ -87,16 +93,16 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 			}
 		}
 
-        public string VsCurrentTurn
-        {
-            get { return _vsCurrentTurn; }
-            set
-            {
-                _vsCurrentTurn = value;
-                OnPropertyChanged(nameof(VsCurrentTurn));
-            }
-        }
+		public string VsCurrentTurn
+		{
+			get { return _vsCurrentTurn; }
+			set
+			{
+				_vsCurrentTurn = value;
+				OnPropertyChanged(nameof(VsCurrentTurn));
+			}
+		}
 
-        #endregion
-    }
+		#endregion
+	}
 }

@@ -29,7 +29,7 @@
                       Background="{Binding Card, Converter={StaticResource GodToColor}}">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="46" />
-                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="120" />
                         <ColumnDefinition Width="25" />
                     </Grid.ColumnDefinitions>
                     <Grid.ToolTip>
