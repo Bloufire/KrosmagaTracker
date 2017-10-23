@@ -20,6 +20,18 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 		{
 
 			TrackerSrv.CurrentFiltersStatModel.PropertyChanged += CurrentFiltersStatModel_PropertyChanged; ;
+			TrackerSrv.TrackerModel.PropertyChanged += TrackerModel_PropertyChanged;
+		}
+
+		private void TrackerModel_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+		{
+			if (e.PropertyName.Equals(nameof(TrackerSrv.TrackerModel.FilteredGames)))
+			{
+				WinrateTotal = RecalculWinRateClass();
+
+				MUData.CalculAllMatchup(TrackerSrv.CurrentFiltersStatModel.SelectedClass);
+			}
+		
 		}
 
 		private void CurrentFiltersStatModel_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)

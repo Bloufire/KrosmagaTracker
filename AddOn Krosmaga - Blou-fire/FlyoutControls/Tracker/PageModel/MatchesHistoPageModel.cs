@@ -5,12 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Input;
 using System.Windows.Media;
 using System.Xml.Serialization;
 using AddOn_Krosmaga___Blou_fire.Enums;
 using AddOn_Krosmaga___Blou_fire.Helpers;
 using AddOn_Krosmaga___Blou_fire.Models;
 using AddOn_Krosmaga___Blou_fire.Services;
+using AddOn_Krosmaga___Blou_fire.UIElements;
+using MahApps.Metro.Controls;
 
 namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 {
@@ -47,7 +50,11 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 
 		public List<UIElements.Match> FilteredGames
 		{
-			get { return _filteredGames?.OrderByDescending(x => x.Date).ToList(); }
+			get
+			{
+				return _filteredGames?.OrderByDescending(x => x.Date).ToList(); 
+				
+			}
 
 			set
 			{
@@ -59,6 +66,26 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 		#endregion
 
 		#region Commands
+		private ICommand _loadDataRowDetailShow;
+		public ICommand LoadDataRowDetailShowCmd
+		{
+			get
+			{
+
+				if (_loadDataRowDetailShow == null)
+					_loadDataRowDetailShow = new RelayCommand(this.LoadDataRowDetailShow);
+
+				return _loadDataRowDetailShow;
+			}
+		}
+
+		private void LoadDataRowDetailShow(object args)
+		{
+			var match = (Match)args;
+			_filteredGames.Find(x => x.IdMatch == match.IdMatch).Deck.UpdateCardList();
+		}
+
+
 
 		#endregion
 
@@ -66,5 +93,10 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 		{
 			UpdateScreen();
 		}
+
+
+
+
+
 	}
 }

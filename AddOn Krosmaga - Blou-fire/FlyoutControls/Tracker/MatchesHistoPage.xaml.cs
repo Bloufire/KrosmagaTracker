@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MahApps.Metro.Controls;
 
 namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker
 {
@@ -23,6 +24,25 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker
 		public MatchesHistoPage()
 		{
 			InitializeComponent();
+		}
+
+
+		private void MenuItem_OnClick(object sender, RoutedEventArgs e)
+		{
+			//Get the clicked MenuItem
+			var menuItem = (MenuItem)sender;
+
+			//Get the ContextMenu to which the menuItem belongs
+			var contextMenu = (ContextMenu)menuItem.Parent;
+
+
+			AdvancedStatsContentPage ui = new AdvancedStatsContentPage();
+			MetroWindow newWindow = new MetroWindow();
+			newWindow.Height = 410;
+			newWindow.Width = 580;
+			newWindow.Title = "Matchup Details";
+			newWindow.Content = ui;
+			newWindow.Show();
 		}
 	}
 }

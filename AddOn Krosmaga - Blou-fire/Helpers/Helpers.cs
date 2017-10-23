@@ -9,8 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media;
 using AddOn_Krosmaga___Blou_fire.Enums;
+using AddOn_Krosmaga___Blou_fire.UIElements;
+using JsonCardsParser;
 using NetFwTypeLib;
 using NLog.Fluent;
+using Card = SQLiteConnector.Card;
 
 namespace AddOn_Krosmaga___Blou_fire.Helpers
 {
@@ -209,6 +212,33 @@ namespace AddOn_Krosmaga___Blou_fire.Helpers
 		private static Color GetColorFromHex(string hexColor)
 		{
 			return (Color) ColorConverter.ConvertFromString(hexColor);
+		}
+
+
+		
+		public static List<DeckUI> TransformCardListToDeckUiList(List<Card> valueCardsList)
+		{
+			CardCollection cards;
+			cards = new CardCollection();
+			cards.Collection = new JsonCard().ChargerCartes();
+			var valueToReturn = new List<DeckUI>();
+			foreach (var card in valueCardsList)
+			{
+				var cardToAdd = cards.getCardById(card.RealCardId);
+				//Si la carte existe déjà dans la liste , on 
+
+				if (valueToReturn.Find(x => x.Card == cardToAdd) == null)
+				{
+					var deckui = new DeckUI(cardToAdd, 1);
+					valueToReturn.Add(deckui);
+				}
+				else
+				{
+					valueToReturn.Find(x => x.Card == cardToAdd).CardCount = ++valueToReturn.Find(x => x.Card == cardToAdd).CardCount;
+				}
+			}
+
+			return valueToReturn;
 		}
 	}
 }

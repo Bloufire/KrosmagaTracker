@@ -178,6 +178,7 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 			{
 				_iopWinrateWin = value;
 				OnPropertyChanged("IopWinrateWin");
+				OnPropertyChanged("IopWinrateDisplay");
 			}
 		}
 		public double CraWinrateWin
@@ -187,6 +188,7 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 			{
 				_craWinrateWin = value;
 				OnPropertyChanged("CraWinrateWin");
+				OnPropertyChanged("CraWinrateDisplay");
 			}
 		}
 
@@ -196,6 +198,7 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 			set
 			{
 				_eniWinrateWin = value; OnPropertyChanged("EniWinrateWin");
+				OnPropertyChanged("EniWinrateDisplay");
 			}
 		}
 
@@ -206,6 +209,7 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 			{
 				_ecaWinrateWin = value;
 				OnPropertyChanged("EcaWinrateWin");
+				OnPropertyChanged("EcaWinrateDisplay");
 			}
 		}
 
@@ -216,6 +220,7 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 			{
 				_enuWinrateWin = value;
 				OnPropertyChanged("EnuWinrateWin");
+				OnPropertyChanged("EnuWinrateDisplay");
 			}
 		}
 
@@ -226,6 +231,7 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 			{
 				_sramWinrateWin = value;
 				OnPropertyChanged("SramWinrateWin");
+				OnPropertyChanged("SramWinrateDisplay");
 			}
 		}
 
@@ -236,6 +242,7 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 			{
 				_xelWinrateWin = value;
 				OnPropertyChanged("XelWinrateWin");
+				OnPropertyChanged("XelWinrateDisplay");
 			}
 		}
 
@@ -246,6 +253,7 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 			{
 				_sacriWinrateWin = value;
 				OnPropertyChanged("SacriWinrateWin");
+				OnPropertyChanged("SacriWinrateDisplay");
 			}
 		}
 
@@ -256,6 +264,7 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 			{
 				_sadiWinrateWin = value;
 				OnPropertyChanged("SadiWinrateWin");
+				OnPropertyChanged("SadiWinrateDisplay");
 			}
 		}
 
@@ -266,6 +275,7 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 			{
 				_iopWinrateLose = value;
 				OnPropertyChanged("IopWinrateLose");
+				OnPropertyChanged("IopWinrateDisplay");
 			}
 		}
 		public double CraWinrateLose
@@ -275,6 +285,7 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 			{
 				_craWinrateLose = value;
 				OnPropertyChanged("CraWinrateLose");
+				OnPropertyChanged("CraWinrateDisplay");
 			}
 		}
 
@@ -284,6 +295,7 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 			set
 			{
 				_eniWinrateLose = value; OnPropertyChanged("EniWinrateLose");
+				OnPropertyChanged("EniWinrateDisplay");
 			}
 		}
 
@@ -294,6 +306,7 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 			{
 				_ecaWinrateLose = value;
 				OnPropertyChanged("EcaWinrateLose");
+				OnPropertyChanged("EniWinrateDisplay");
 			}
 		}
 
@@ -304,6 +317,7 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 			{
 				_enuWinrateLose = value;
 				OnPropertyChanged("EnuWinrateLose");
+				OnPropertyChanged("EnuWinrateDisplay");
 			}
 		}
 
@@ -314,6 +328,7 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 			{
 				_sramWinrateLose = value;
 				OnPropertyChanged("SramWinrateLose");
+				OnPropertyChanged("SramWinrateDisplay");
 			}
 		}
 
@@ -324,6 +339,7 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 			{
 				_xelWinrateLose = value;
 				OnPropertyChanged("XelWinrateLose");
+				OnPropertyChanged("XelWinrateDisplay");
 			}
 		}
 
@@ -334,6 +350,7 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 			{
 				_sacriWinrateLose = value;
 				OnPropertyChanged("SacriWinrateLose");
+				OnPropertyChanged("SacriWinrateDisplay");
 			}
 		}
 
@@ -344,6 +361,7 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 			{
 				_sadiWinrateLose = value;
 				OnPropertyChanged("SadiWinrateLose");
+				OnPropertyChanged("SadiWinrateDisplay");
 			}
 		}
 		#endregion
@@ -504,7 +522,7 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 				}
 
 			}
-
+							
 		}
 
 		private void ResetAllMatchUp()
@@ -518,6 +536,24 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 			SacriWinrateMU = 0;
 			SadiWinrateMU = 0;
 			XelWinrateMU = 0;
+			EcaWinrateWin = 0;
+			IopWinrateWin = 0;
+			CraWinrateWin = 0;
+			EniWinrateWin = 0;
+			EnuWinrateWin = 0;
+			SramWinrateWin = 0;
+			SacriWinrateWin = 0;
+			SadiWinrateWin = 0;
+			XelWinrateWin = 0;
+			EcaWinrateLose = 0;
+			IopWinrateLose = 0;
+			CraWinrateLose = 0;
+			EniWinrateLose = 0;
+			EnuWinrateLose = 0;
+			SramWinrateLose = 0;
+			SacriWinrateLose = 0;
+			SadiWinrateLose = 0;
+			XelWinrateLose = 0;
 		}
 	}
 }

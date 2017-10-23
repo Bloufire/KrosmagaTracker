@@ -58,12 +58,12 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 
 		}
 
-		private ICommand _menuSelectionChanged;
+	
 		private UserControl selectedMenuFilterStat;
 		private UserControl selectedMenuStatChartContent;
 
 		#region MenuSelection
-
+		private ICommand _menuSelectionChanged;
 		public ICommand MenuSelectionChanged
 		{
 			get

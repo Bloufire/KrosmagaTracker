@@ -76,61 +76,61 @@
                 <StackPanel Orientation="Horizontal">
                     <Image Source="../../Images/Gods/Cra.png" Width="{StaticResource IconDefaultSize}" Height="{StaticResource IconDefaultSize}"/>
                     <TextBlock>
-                                <Run Text="{Binding MUData.CraWinrateMU, Mode=OneWay}"/>%
-                    </TextBlock>
+                                <Run Text="{Binding MUData.CraWinrateDisplay, Mode=OneWay}"/>
+                        </TextBlock>
                 </StackPanel>
                 <StackPanel>
                     <Image Source="../../Images/Gods/Eca.png"  Width="{StaticResource IconDefaultSize}" Height="{StaticResource IconDefaultSize}"/>
                     <TextBlock>
-                                <Run Text="{Binding MUData.EcaWinrateMU, Mode=OneWay}"/>%
-                    </TextBlock>
+                                <Run Text="{Binding MUData.EcaWinrateDisplay, Mode=OneWay}"/>
+                        </TextBlock>
                 </StackPanel>
                 <StackPanel>
                     <Image Source="../../Images/Gods/Eni.png"  Width="{StaticResource IconDefaultSize}" Height="{StaticResource IconDefaultSize}"/>
                     <TextBlock>
-                                <Run Text="{Binding MUData.EniWinrateMU, Mode=OneWay}"/>%
-                    </TextBlock>
+                                <Run Text="{Binding MUData.EniWinrateDisplay, Mode=OneWay}"/>
+                        </TextBlock>
                 </StackPanel>
                 <StackPanel>
                     <Image Source="../../Images/Gods/Enu.png" Width="{StaticResource IconDefaultSize}" Height="{StaticResource IconDefaultSize}"/>
                     <TextBlock>
-                                <Run Text="{Binding MUData.EnuWinrateMU, Mode=OneWay}"/>%
-                    </TextBlock>
+                                <Run Text="{Binding MUData.EnuWinrateDisplay, Mode=OneWay}"/>
+                        </TextBlock>
                 </StackPanel>
                 <StackPanel>
                     <Image Source="../../Images/Gods/Iop.png"  Width="{StaticResource IconDefaultSize}" Height="{StaticResource IconDefaultSize}"/>
                     <TextBlock>
-                                <Run Text="{Binding MUData.IopWinrateMU, Mode=OneWay}"/>%
-                    </TextBlock>
+                                <Run Text="{Binding MUData.IopWinrateDisplay, Mode=OneWay}"/>
+                        </TextBlock>
                 </StackPanel>
                 <StackPanel>
                     <Image Source="../../Images/Gods/Sacri.png"  Width="{StaticResource IconDefaultSize}" Height="{StaticResource IconDefaultSize}"/>
                     <TextBlock>
-                                <Run Text="{Binding MUData.SacriWinrateMU, Mode=OneWay}"/>%
-                    </TextBlock>
+                                <Run Text="{Binding MUData.SacriWinrateDisplay, Mode=OneWay}"/>
+                        </TextBlock>
                 </StackPanel>
                 <StackPanel>
                     <Image Source="../../Images/Gods/Sadi.png"  Width="{StaticResource IconDefaultSize}" Height="{StaticResource IconDefaultSize}"/>
                     <TextBlock>
-                                <Run Text="{Binding MUData.SadiWinrateMU, Mode=OneWay}"/>%
-                    </TextBlock>
+                                <Run Text="{Binding MUData.SadiWinrateDisplay, Mode=OneWay}"/>
+                        </TextBlock>
                 </StackPanel>
                 <StackPanel>
                     <Image Source="../../Images/Gods/Sram.png"  Width="{StaticResource IconDefaultSize}" Height="{StaticResource IconDefaultSize}"/>
                     <TextBlock>
-                                <Run Text="{Binding MUData.SramWinrateMU, Mode=OneWay}"/>%
-                    </TextBlock>
+                                <Run Text="{Binding MUData.SramWinrateDisplay, Mode=OneWay}"/>
+                        </TextBlock>
                 </StackPanel>
                 <StackPanel>
                     <Image Source="../../Images/Gods/Xel.png" Width="{StaticResource IconDefaultSize}" Height="{StaticResource IconDefaultSize}"/>
                     <TextBlock>
-                    <Run Text="{Binding MUData.XelWinrateMU, Mode=OneWay}"/>%
-                    </TextBlock>
+                    <Run Text="{Binding MUData.XelWinrateDisplay, Mode=OneWay}"/>
+                        </TextBlock>
                 </StackPanel>
             </UniformGrid>
         </StackPanel>
             <StackPanel>
-                <TextBlock Margin="0,20,0,10" Text="Global Winrate Ranked" FontWeight="SemiBold" TextAlignment="Center"/>
+                <TextBlock Margin="0,20,0,10" Text="Global Winrate" FontWeight="SemiBold" TextAlignment="Center"/>
          
             <Grid VerticalAlignment="Top">
                 <TextBlock Style="{StaticResource WinrateGaugeTextStyle}">
