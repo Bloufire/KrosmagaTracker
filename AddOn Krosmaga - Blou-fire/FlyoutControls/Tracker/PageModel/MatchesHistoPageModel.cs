@@ -91,6 +91,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 
 		public void _trackerSrv_PropertyChanged(object sender, PropertyChangedEventArgs e)
 		{
+			if(e.PropertyName.Equals(nameof(TrackerSrv.TrackerModel.FilteredGames)))
 			UpdateScreen();
 		}
 

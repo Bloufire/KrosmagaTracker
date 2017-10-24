@@ -15,6 +15,8 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 		private int _vsNbCardsInHand;
 		private string _vsPseudo;
 		private string _vsCurrentTurn;
+		private int _vsRank;
+		private bool _isRankVisible;
 
 		#region CTOR
 		public VsProfileDataPageModel()
@@ -30,11 +32,20 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 			VsNbFleau = TrackerSrv.TrackerModel.NbFleau;
 			VsLosesNb = TrackerSrv.TrackerModel.VsLosesNb;
 			VsNbCardsInHand = TrackerSrv.TrackerModel.OpponentCardsInHand;
+			VsRank = TrackerSrv.TrackerModel.OpponentLevel;
 			VsCurrentTurn = "Turn " + TrackerSrv.TrackerModel.CurrentTurn.ToString();
+
 		}
 
 		private void TrackerModel_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
 		{
+			if(e.PropertyName.Equals(nameof(TrackerSrv.TrackerModel.VsPseudo))
+				|| e.PropertyName.Equals(nameof(TrackerSrv.TrackerModel.VsWinsNb))
+			   || e.PropertyName.Equals(nameof(TrackerSrv.TrackerModel.NbFleau))
+			   || e.PropertyName.Equals(nameof(TrackerSrv.TrackerModel.VsLosesNb))
+			   || e.PropertyName.Equals(nameof(TrackerSrv.TrackerModel.OpponentCardsInHand))
+			   || e.PropertyName.Equals(nameof(TrackerSrv.TrackerModel.OpponentLevel))
+			   || e.PropertyName.Equals(nameof(TrackerSrv.TrackerModel.CurrentTurn)))
 			UpdateScreen();
 		}
 		#endregion
@@ -48,6 +59,31 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 			{
 				_vsLosesNb = value;
 				OnPropertyChanged(nameof(VsLosesNb));
+			}
+		}
+
+		public bool IsRankVisible
+		{
+			get { return _isRankVisible; }
+			set
+			{
+				_isRankVisible = value;
+				OnPropertyChanged(nameof(IsRankVisible));
+			}
+		}
+
+		public int VsRank
+		{
+			get
+			{
+				return _vsRank;
+				
+			}
+			set
+			{
+				_vsRank = value;
+				IsRankVisible = VsRank != 0;
+				OnPropertyChanged(nameof(VsRank));
 			}
 		}
 

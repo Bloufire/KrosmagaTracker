@@ -15,7 +15,7 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 {
 	public class MatchUpData : ObservableObject
 	{
-		protected static TrackerCoreSrv TrackerSrv;
+
 		private double _iopWinrateMu;
 		private double _craWinrateMu;
 		private double _eniWinrateMu;
@@ -51,7 +51,7 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 		public MatchUpData()
 		{
 			App myApplication = ((App)Application.Current);
-			TrackerSrv = myApplication.TrackerCoreService;
+			//TrackerSrv = myApplication.TrackerCoreService;
 			ComboClasseValues = StatsCore.GetAllClassAndImage();
 			TrackerSrv.CurrentFiltersStatModel.PropertyChanged += CurrentFiltersStatModelFromEmptyClass_PropertyChanged;
 			CalculAllMatchup(TrackerSrv.CurrentFiltersStatModel.SelectedClass);
@@ -61,7 +61,7 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 		{
 			this.myClassPick = myClassPick;
 			App myApplication = ((App)Application.Current);
-			TrackerSrv = myApplication.TrackerCoreService;
+		//	TrackerSrv = myApplication.TrackerCoreService;
 			ComboClasseValues = StatsCore.GetAllClassAndImage();
 			TrackerSrv.CurrentFiltersStatModel.PropertyChanged += CurrentFiltersStatModel_PropertyChanged;
 			if (myClassPick != ClassEnum.None)

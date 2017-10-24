@@ -133,6 +133,7 @@
                 <GradientStop Color="{StaticResource WhiteColor}" Offset="1" />
             </LinearGradientBrush>
             <uiElements:IntToCardCountStringConverter x:Key="IntToCardCountStringConverter" />
+            <converter:BoolToVisibiltyConverter x:Key="BoolToVisConverter" />
         </ResourceDictionary>
     </Application.Resources>
 </Application>
