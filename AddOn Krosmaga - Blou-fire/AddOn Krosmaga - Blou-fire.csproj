@@ -166,6 +166,9 @@
     <Compile Include="FlyoutControls\Tracker\CardPage.xaml.cs">
       <DependentUpon>CardPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FlyoutControls\Tracker\DeckListPage.xaml.cs">
+      <DependentUpon>DeckListPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FlyoutControls\Tracker\DofusTrackerControlPage.xaml.cs">
       <DependentUpon>DofusTrackerControlPage.xaml</DependentUpon>
     </Compile>
@@ -187,6 +190,7 @@
     <Compile Include="FlyoutControls\Tracker\PageModel\AdvancedStatsContentPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\AdvancedStatsPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\CardPageModel.cs" />
+    <Compile Include="FlyoutControls\Tracker\PageModel\DeckListPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\DofusTrackerControlPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\GlobalStatsPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\MainUserControlPageModel.cs" />
@@ -296,6 +300,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="FlyoutControls\Tracker\CardPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FlyoutControls\Tracker\DeckListPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

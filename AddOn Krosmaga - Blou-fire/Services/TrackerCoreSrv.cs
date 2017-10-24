@@ -259,7 +259,15 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 
 		private void UIActionGameFinishedEvent(GameFinished value)
 		{
-			Connector.SaveMatchResult(TrackerModel.OpponentClasse, new List<int>(), TrackerModel.VsPseudo,
+
+			List<int> cardsToSave = new List<int>();
+			foreach (var item in TrackerModel.Deck)
+			{
+				for (int i = 0; i < item.CardCount; i++)
+					cardsToSave.Add(item.Card.Id);
+			}
+
+			Connector.SaveMatchResult(TrackerModel.OpponentClasse, cardsToSave, TrackerModel.VsPseudo,
 				TrackerModel.OwnClasse, value.WinnerPlayer == TrackerModel.MyIndex ? 1 : 0, TrackerModel.CurrentTurn, (int) TrackerModel.GameType,
 				DateTime.Now);
 			TrackerModel.OpponentPlayedCards.Clear();

@@ -33,12 +33,14 @@ namespace AddOn_Krosmaga___Blou_fire.UIElements
 			ResultatMatch = value.ResultatMatch;
 			NbToursMatch = value.NbToursMatch;
 			Deck = new Deck(value.Deck);
+		
 			MatchType = (GameType) value.MatchType;
 			Date = value.Date;
 			OppenentClassName = value.Deck.OpponentClasse;
 			PlayerClassName = value.PlayerClasse;
 			SetImages();
 			Extended = false;
+			MyProperty = Deck.CardsList.Count;
 		}
 
 		private void SetImages()
@@ -108,7 +110,7 @@ namespace AddOn_Krosmaga___Blou_fire.UIElements
 			}
 			OwnImage = value;
 		}
-
+		
 		public string OppenentClassName
 		{
 			get { return _oppenentClassName; }
@@ -161,6 +163,14 @@ namespace AddOn_Krosmaga___Blou_fire.UIElements
 			get { return _deck; }
 
 			set { _deck = value; }
+		}
+
+		private int myVar;
+
+		public int MyProperty
+		{
+			get { return myVar; }
+			set { myVar = value; }
 		}
 
 		public GameType MatchType
