@@ -278,7 +278,7 @@ namespace AddOn_Krosmaga___Blou_fire.Services
             TrackerModel.VsLosesNb = 0;
             TrackerModel.VsPseudo = "";
             TrackerModel.CurrentTurn = 0;
-
+			TrackerModel.OpponentLevel = 0;
             UpdateMatchsWithFilterList();
 
 			//On efface le deck du model

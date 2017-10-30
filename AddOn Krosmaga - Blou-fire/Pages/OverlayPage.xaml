@@ -60,24 +60,6 @@
     <Window.DataContext>
         <pageModels:OverlayPageModel />
     </Window.DataContext>
-    <!--<controls:MetroWindow.RightWindowCommands>
-        <controls:WindowCommands Visibility="{Binding IsLeftFlyOpen, Converter={StaticResource BoolToVis}}">
-            <Button Command="{Binding BtnDiscord_OnClick}">
-                <StackPanel Orientation="Horizontal">
-                    <Rectangle Width="14" Height="16" Margin="0,2,0,0">
-                        <Rectangle.Fill>
-                            <VisualBrush>
-                                <VisualBrush.Visual>
-                                    <Image Source="../Images/DiscordIcon.png" />
-                                </VisualBrush.Visual>
-                            </VisualBrush>
-                        </Rectangle.Fill>
-                    </Rectangle>
-                    <TextBlock Margin="4" VerticalAlignment="Center" Text="Discord" />
-                </StackPanel>
-            </Button>
-        </controls:WindowCommands>
-    </controls:MetroWindow.RightWindowCommands>-->
     <controls:MetroWindow.Flyouts>
         <controls:FlyoutsControl>
             <controls:Flyout Background="Transparent" TitleVisibility="Collapsed" Position="Right" Width="300"
