@@ -1,0 +1,31 @@
+{
+  "Id": 503,
+  "Name": "sellor_noob",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 2,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    5
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 6,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Seilor Noob",
+    "DescBR": "<b>APARIÇÃO:</b>\nReduz a 1 os <b>PV</b> de uma invocação.",
+    "NameEN": "Sellor Noob",
+    "DescEN": "<b>APPEARANCE:</b>\nMakes a Minion's <b>HP</b> drop to 1.",
+    "NameES": "Sellor Noob",
+    "DescES": "<b>APARICIÓN:</b>\nReduces a 1 los <b>PdV</b> de una invocación.",
+    "NameFR": "Sellor Noob",
+    "DescFR": "<b>APPARITION :</b>\nFaites chuter à 1 les <b>PV</b> d'une invocation.",
+    "NameRU": "Селлор Нуб",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nснижает <b>ОЗ</b> выбранного существа до 1."
+  }
+}

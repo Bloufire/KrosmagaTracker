@@ -1,0 +1,32 @@
+{
+  "Id": 147,
+  "Name": "ruel_niveau_2",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 6,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    4,
+    33
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 16,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Ruel Stroud",
+    "DescBR": "Custa 3 <b>PA</b> a menos\r\npor membro aliado da Confraria do Tofu em jogo.",
+    "NameEN": "Ruel Stroud",
+    "DescEN": "Costs 3 <b>AP</b> less\r\nfor each other allied member of the Brotherhood of the Tofu in play.",
+    "NameES": "Ruel Stroud",
+    "DescES": "Cuesta 3 <b>PA</b> menos\r\npor cada miembro de la Hermandad del Tofu aliado en juego.",
+    "NameFR": "Ruel Stroud",
+    "DescFR": "Coûte 3 <b>PA</b> de moins\r\npar autre membre allié de la Confrérie du Tofu en jeu.",
+    "NameRU": "Руэль Штруд",
+    "DescRU": "Стоит на 3 <b>ОД</b> меньше\r\nза каждого союзника из Братства тофу в игре."
+  }
+}

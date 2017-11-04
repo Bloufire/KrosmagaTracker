@@ -1,0 +1,31 @@
+{
+  "Id": 287,
+  "Name": "marcassinet",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 2,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    25
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Kid Porquito",
+    "DescBR": "Ganha +1 <b>PM</b> desde que você tenha uma Porcolina no jogo.",
+    "NameEN": "Young Wild Sow",
+    "DescEN": "Gains +1 <b>MP</b> as long as you have a Glai in play.",
+    "NameES": "Jabatillo",
+    "DescES": "Gana +1 <b>PM</b> mientras tengas una jabalina en juego.",
+    "NameFR": "Marcassinet ",
+    "DescFR": "Gagne +1 <b>PM</b> tant que vous avez une Glaie en jeu.",
+    "NameRU": "Кабаненок",
+    "DescRU": "Получает +1 <b>ОП</b>, пока у вас в игре есть свинюша."
+  }
+}

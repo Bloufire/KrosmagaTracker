@@ -1,0 +1,31 @@
+{
+  "Id": 181,
+  "Name": "pampactus",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    52
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Pampacto",
+    "DescBR": "Inflige 1 dano a\r\numa invocação aliada\r\npara invocá-lo.",
+    "NameEN": "Pampastuc",
+    "DescEN": "Inflicts 1 damage on\r\nan allied Minion\r\n to summon it.",
+    "NameES": "Pampactus",
+    "DescES": "Inflige 1 de daño\r\na una invocación aliada\r\npara invocarla.",
+    "NameFR": "Pampactus",
+    "DescFR": "Infligez 1 dégât à\r\nune invocation alliée\r\npour l'invoquer.",
+    "NameRU": "Пампактус",
+    "DescRU": "Чтобы призвать его, нанесите\r\n1 единицу урона\r\nсоюзному существу."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 1307,
+  "Name": "pretresse_coiffe",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    74
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Sacerdotisa do Penteado",
+    "DescBR": "<b>APARIÇÃO:</b> Cura 2 <b>PV</b> de uma invocação e dá a ela +1 <b>AT</b>.",
+    "NameEN": "Priestess of the Headdress",
+    "DescEN": "<b>APPEARANCE:</b> Gives a Minion +1 <b>AT</b> and heals it by 2 <b>HP</b>.",
+    "NameES": "Sacerdotisa del peinado",
+    "DescES": "<b>APARICIÓN:</b> Das +1 <b>AT</b> a una invocación y le curas 2 <b>PdV</b>.",
+    "NameFR": "Prêtresse de la coiffe",
+    "DescFR": "<b>APPARITION :</b> Donnez +1 <b>AT</b> à une invocation, elle est soignée de 2 <b>PV</b>.",
+    "NameRU": "Жрица расчески",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b> дает выбранному существу +1 <b>AT</b> и восстанавливает ему 2 <b>ОЗ</b>."
+  }
+}

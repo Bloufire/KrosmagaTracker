@@ -1,0 +1,31 @@
+{
+  "Id": 620,
+  "Name": "fin_de_la_souffrance",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 8,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Fim do Sofrimento",
+    "DescBR": "Devolve à sua\r\nmão uma invocação\r\naliada ferida.",
+    "NameEN": "End of Suffering",
+    "DescEN": "Returns an injured\r\nallied Minion\r\nto your hand.",
+    "NameES": "Fin del Sufrimiento",
+    "DescES": "Sube a tu\r\nmano una invocación\r\naliada herida.",
+    "NameFR": "Fin de la Souffrance",
+    "DescFR": "Remonte dans votre\r\nmain une invocation\r\nalliée blessée.",
+    "NameRU": "Конец страданий",
+    "DescRU": "Возвращает вам в руку\r\nраненое союзное\r\nсущество."
+  }
+}

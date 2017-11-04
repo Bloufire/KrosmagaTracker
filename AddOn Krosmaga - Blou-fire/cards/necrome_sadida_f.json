@@ -1,0 +1,32 @@
+{
+  "Id": 1546,
+  "Name": "necrome_sadida_f",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 5,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    32,
+    78
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 10,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Soldado Cornus",
+    "DescBR": "<b>NECROMO</b>\nEnquanto a invocação estiver em jogo, suas <b>Sementes</b> infligem 2 danos às invocações adversárias que pisam nelas.",
+    "NameEN": "Dogwood Soldier",
+    "DescEN": "<b>NECRO</b>\nAs long as it is in play, your <b>Seeds</b> inflict 2 damage on enemy Minions that walk over them.",
+    "NameES": "Soldado cornejo",
+    "DescES": "<b>NÉCROMO</b>\nMientras esté en juego, tus <b>semillas</b> infligen 2 de daño a las invocaciones enemigas que las pisan.",
+    "NameFR": "Soldat Cornouiller",
+    "DescFR": "<b>NÉCROME</b>\nTant qu'elle est en jeu vos <b>Graines</b> infligent 2 dégâts aux invocations adverses qui marchent dessus.",
+    "NameRU": "Солдат-кизил",
+    "DescRU": "<b>НЕКРОМАН</b>\nПока он находится в игре, ваши <b>семена</b> наносят 2 единицы урона существам противника, которые проходят по ним."
+  }
+}

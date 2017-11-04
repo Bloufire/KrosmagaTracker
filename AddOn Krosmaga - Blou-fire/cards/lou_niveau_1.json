@@ -1,0 +1,31 @@
+{
+  "Id": 321,
+  "Name": "lou_niveau_1",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 2,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    44
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 26,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Lou",
+    "DescBR": "<b>APARIÇÃO:</b>\nPegue um prisma aliado.",
+    "NameEN": "Lou",
+    "DescEN": "<b>APPEARANCE:</b>\nPick up an allied prism.",
+    "NameES": "Lu",
+    "DescES": "<b>APARICIÓN:</b>\nConsigues un prisma aliado.",
+    "NameFR": "Lou",
+    "DescFR": "<b>APPARITION :</b>\nRécupérez un prisme allié.",
+    "NameRU": "Лу",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nвозьмите одну союзную призму."
+  }
+}

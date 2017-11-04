@@ -1,0 +1,32 @@
+{
+  "Id": 522,
+  "Name": "la_sacrifiee_token",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    32,
+    43
+  ],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 10,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "A Sacrificada",
+    "DescBR": "<b>MORTE:</b> Inflige 1 dano\r\nàs invocações adversárias presentes na fileira dela.",
+    "NameEN": "The Sacrificial Doll",
+    "DescEN": "<b>DEATH:</b>Inflicts 1 damage\r\non enemy Minions on its row.",
+    "NameES": "La sacrificada",
+    "DescES": "<b>MUERTE:</b> Inflige 1 de daño\r\na las invocaciones enemigas de su hilera.",
+    "NameFR": "La Sacrifiée",
+    "DescFR": "<b>MORT :</b> Inflige 1 dégât\r\naux invocations adverses de sa ligne.",
+    "NameRU": "Жертвокукла",
+    "DescRU": "<b>СМЕРТЬ:</b> наносит 1 единицу урона\r\nсуществам противника на своей линии."
+  }
+}

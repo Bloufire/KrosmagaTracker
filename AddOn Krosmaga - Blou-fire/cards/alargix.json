@@ -1,0 +1,31 @@
+{
+  "Id": 492,
+  "Name": "alargix",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 5,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    3
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 3,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Alargix",
+    "DescBR": "<b>INÍCIO DO TURNO:</b>\nCura a feridas dele.",
+    "NameEN": "Alaregix",
+    "DescEN": "<b>START OF TURN:</b>\nHeals its injuries.",
+    "NameES": "Alargix",
+    "DescES": "<b>INICIO DEL TURNO:</b>\nCura sus heridas.",
+    "NameFR": "Alargix",
+    "DescFR": "<b>DÉBUT DU TOUR :</b>\nSoigne ses blessures.",
+    "NameRU": "Аларжикс",
+    "DescRU": "<b>НАЧАЛО ХОДА:</b>\nвосстанавливает свое здоровье."
+  }
+}

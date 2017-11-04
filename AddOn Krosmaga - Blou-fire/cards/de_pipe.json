@@ -1,0 +1,31 @@
+{
+  "Id": 541,
+  "Name": "de_pipe",
+  "CardType": 1,
+  "CostAP": 1,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 4,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Dado Viciado",
+    "DescBR": "Durante esse turno,\r\no resultado dos seus arremessos de dado não pode ser inferior a 3.",
+    "NameEN": "Crook Die",
+    "DescEN": "During this turn,\r\nwhenever you roll a die, the result cannot be less than 3.",
+    "NameES": "Dado Trucado",
+    "DescES": "En este turno,\r\nno puedes sacar menos de un 3 en tus lanzamientos de dado.",
+    "NameFR": "Dé Pipé",
+    "DescFR": "Durant ce tour\r\nvos jets de dé ne peuvent être inférieur à 3.",
+    "NameRU": "Крапленая кость",
+    "DescRU": "Во время этого хода\r\nрезультаты бросков кости будут не ниже 3."
+  }
+}

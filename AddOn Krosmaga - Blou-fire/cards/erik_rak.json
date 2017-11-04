@@ -1,0 +1,31 @@
+{
+  "Id": 840,
+  "Name": "erik_rak",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    4
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 5,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Kav Ukar",
+    "DescBR": "<b>APARIÇÃO:</b>\nTransforma um\r\nprisma em <b>espólio</b>.",
+    "NameEN": "Kip Agau",
+    "DescEN": "<b>APPEARANCE:</b>\nTransforms a \r\nprism into <b>Loot</b>.",
+    "NameES": "Cris Tahl",
+    "DescES": "<b>APARICIÓN:</b>\nTransformas un\r\nprisma en <b>botín</b>.",
+    "NameFR": "Erik Rak",
+    "DescFR": "<b>APPARITION :</b>\nTransformez un\r\nPrisme en <b>Butin</b>.",
+    "NameRU": "Кир Кой",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nпревращает выбранную\r\nпризму в добычу."
+  }
+}

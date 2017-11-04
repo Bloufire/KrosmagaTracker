@@ -1,0 +1,31 @@
+{
+  "Id": 65,
+  "Name": "deserboss",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 6,
+  "Attack": 5,
+  "MovementPoint": 2,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Herbossida",
+    "DescBR": "<b>APARIÇÃO:</b>\nInflige 1 dano às invocações situadas no <b>lado do tabuleiro</b> do adversário.",
+    "NameEN": "Deserboss",
+    "DescEN": "<b>APPEARANCE:</b>\nInflicts 1 damage on Minions on the opponent's <b>side.</b>",
+    "NameES": "Herbibóss",
+    "DescES": "<b>APARICIÓN:</b>\nInflige 1 de daño a las invocaciones situadas en el <b>lado del tablero</b> enemigo.",
+    "NameFR": "Deserboss",
+    "DescFR": "<b>APPARITION :</b>\nInflige 1 dégât aux invocations situées dans le <b>camp</b> adverse.",
+    "NameRU": "Гербицидус",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nнаносит 1 единицу урона существам на <b>половине поля</b> противника."
+  }
+}

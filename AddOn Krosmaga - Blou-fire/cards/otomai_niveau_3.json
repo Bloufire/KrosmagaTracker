@@ -1,0 +1,31 @@
+{
+  "Id": 205,
+  "Name": "otomai_niveau_3",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 6,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    7
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 27,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Otomai",
+    "DescBR": "<b>MORTE:</b> Transforma as demais invocações em invocações aleatórias que custam 5 <b>PA</b>.",
+    "NameEN": "Otomai",
+    "DescEN": "<b>DEATH:</b> Transforms other Minions into random Minions costing 5 <b>AP</b>.",
+    "NameES": "Otomai",
+    "DescES": "<b>MUERTE:</b> Transforma a las demás invocaciones en invocaciones aleatorias que cuestan 5 <b>PA</b>.",
+    "NameFR": "Otomaï",
+    "DescFR": "<b>MORT :</b> Transforme les autres invocations en invocations aléatoires coûtant 5 <b>PA</b>.",
+    "NameRU": "Отомай",
+    "DescRU": "<b>СМЕРТЬ:</b> превращает существ в других случайных существ стоимостью 5 <b>ОД</b>."
+  }
+}

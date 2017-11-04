@@ -1,0 +1,35 @@
+{
+  "Id": 435,
+  "Name": "dark_vlad",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 4,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 10,
+    "ParentCard": 139,
+    "ParentLevel": 9
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Dark Vlad",
+    "DescBR": "Os ataques dele\r\ninfligem danos a todas as invocações ou\r\nDofus que estiverem ao redor dele.",
+    "NameEN": "Dark Vlad",
+    "DescEN": "His attacks\r\ninflict damage on each surrounding\r\nMinion or Dofus.",
+    "NameES": "Dark Vlad",
+    "DescES": "Sus ataques\r\ninfligen daños a cada invocación o\r\ndofus a su alrededor.",
+    "NameFR": "Dark Vlad",
+    "DescFR": "Ses attaques\r\ninfligent des dégâts sur chaque invocation ou\r\nDofus autour de lui.",
+    "NameRU": "Темный Влад",
+    "DescRU": "При атаке\r\nнаносит урон каждому существу вокруг себя или\r\nкаждому дофусу, находящемуся рядом."
+  }
+}

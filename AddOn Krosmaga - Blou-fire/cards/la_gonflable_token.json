@@ -1,0 +1,32 @@
+{
+  "Id": 183,
+  "Name": "la_gonflable_token",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    32,
+    43
+  ],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 10,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "A Inflável",
+    "DescBR": "Cura 2 <b>PV</b>\r\nde suas outras invocações presentes na fileira dela ao final de todos os deslocamentos aliados.",
+    "NameEN": "The Inflatable",
+    "DescEN": "Heals your other Minions in its line of sight by 2 <b>HP</b>\r\nafter all allied movements.",
+    "NameES": "La hinchable",
+    "DescES": "Cura 2 <b>PdV</b>\r\na tus demás invocaciones de su hilera al final de todos los desplazamientos aliados.",
+    "NameFR": "La Gonflable",
+    "DescFR": "Soigne de 2 <b>PV</b>\r\nvos autres invocations de sa ligne à la fin de tous les déplacements alliés.",
+    "NameRU": "Надувная кукла",
+    "DescRU": "После перемещения всех союзников\r\nвосстанавливает другим вашим существам на своей линии 2 <b>ОЗ</b>."
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "Id": 173,
+  "Name": "repos_eternel",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    5
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 6,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 15,
+    "ParentCard": 431,
+    "ParentLevel": 8
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Descanso Eterno",
+    "DescBR": "Durante este turno,\r\n não gaste <b>PA</b> para jogar suas cartas. Em vez disso, elimine cartas da sua lixeira.",
+    "NameEN": "Eternal Rest",
+    "DescEN": "During this turn,\r\n you don't spend <b>AP</b> to play your cards. Instead, banish cards from your discard pile.",
+    "NameES": "Descanso Eterno",
+    "DescES": "En este turno,\r\njugar tus cartas no costará <b>PA</b>. En su lugar, elimina cartas de tu descarte.",
+    "NameFR": "Repos Éternel",
+    "DescFR": "Durant ce tour,\r\nne dépensez pas de <b>PA</b> pour jouer vos cartes. A la place bannissez des cartes de votre défausse.",
+    "NameRU": "Вечный покой",
+    "DescRU": "Во время этого хода\r\nвы не тратите <b>ОД</b> для разыгрывания карт. Но при этом уничтожается столько же карт в вашем сбросе."
+  }
+}

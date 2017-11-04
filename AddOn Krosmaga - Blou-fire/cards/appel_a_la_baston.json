@@ -1,0 +1,31 @@
+{
+  "Id": 137,
+  "Name": "appel_a_la_baston",
+  "CardType": 1,
+  "CostAP": 6,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 1,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Chamado da Briga",
+    "DescBR": "Coloca na sua mão\r\nos 3 primeiros Iops\r\ndo seu bolo.",
+    "NameEN": "Call to Brawl",
+    "DescEN": "Puts the first 3 Iops\r\nfrom your deck\r\nin your hand.",
+    "NameES": "Toque de Refriega",
+    "DescES": "Coloca en tu mano\r\nlos 3 primeros yopukas\r\nde tu mazo.",
+    "NameFR": "Appel à la Baston",
+    "DescFR": "Place dans votre main\r\nles 3 premiers Iops\r\nde votre pioche.",
+    "NameRU": "Пойдем выйдем",
+    "DescRU": "Вы берете\r\n3 первых иопов\r\nиз своей колоды."
+  }
+}

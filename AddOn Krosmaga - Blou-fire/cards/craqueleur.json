@@ -1,0 +1,31 @@
+{
+  "Id": 540,
+  "Name": "craqueleur",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 4,
+  "Attack": 3,
+  "MovementPoint": 2,
+  "Families": [
+    22
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Smagador",
+    "DescBR": "<b>RESISTÊNCIA:</b> 1",
+    "NameEN": "Crackler",
+    "DescEN": "<b>RESISTANCE:</b> 1",
+    "NameES": "Crujidor",
+    "DescES": "<b>RESISTENCIA:</b> 1",
+    "NameFR": "Craqueleur",
+    "DescFR": "<b>RÉSISTANCE :</b> 1",
+    "NameRU": "Дробитель",
+    "DescRU": "<b>СОПРОТИВЛЕНИЕ:</b> 1"
+  }
+}

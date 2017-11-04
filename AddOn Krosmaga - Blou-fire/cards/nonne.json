@@ -1,0 +1,31 @@
+{
+  "Id": 1505,
+  "Name": "nonne",
+  "CardType": 0,
+  "CostAP": 15,
+  "Life": 8,
+  "Attack": 8,
+  "MovementPoint": 2,
+  "Families": [
+    27
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Freira",
+    "DescBR": "Custa 1 <b>PA</b> a menos\r\nquando uma invocação\r\nmorre.",
+    "NameEN": "Nun",
+    "DescEN": "Costs 1 <b>AP</b> less\r\nwhenever a\r\nMinion dies.",
+    "NameES": "Monja",
+    "DescES": "Cuesta 1 <b>PA</b> menos\r\ncuando una invocación\r\nmuere.",
+    "NameFR": "Nonne",
+    "DescFR": "Coûte 1 <b>PA</b> de moins\r\nquand une invocation\r\nmeurt.",
+    "NameRU": "Монашка",
+    "DescRU": "Ее стоимость уменьшается на 1 <b>ОД</b>,\r\nкогда одно из\r\nсуществ умирает."
+  }
+}

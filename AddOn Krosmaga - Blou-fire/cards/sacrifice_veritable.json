@@ -1,0 +1,31 @@
+{
+  "Id": 1126,
+  "Name": "sacrifice_veritable",
+  "CardType": 1,
+  "CostAP": 8,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 8,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Sacrifício Verdadeiro",
+    "DescBR": "As invocações em jogo se infligem uma quantidade de danos equivalente ao seu <b>AT</b>.",
+    "NameEN": "Genuine Sacrifice",
+    "DescEN": "All Minions in play inflict damage equal to their <b>AT</b> on themselves.",
+    "NameES": "Sacrificio Verdadero",
+    "DescES": "Las invocaciones en juego se infligen tanto de daño como <b>AT</b> tengan.",
+    "NameFR": "Sacrifice Véritable",
+    "DescFR": "Les invocations en jeu s'infligent autant de dégâts qu'elles ont d'<b>AT</b>.",
+    "NameRU": "Истинная жертва",
+    "DescRU": "Существа в игре наносят себе столько единиц урона, сколько у них <b>AT</b>."
+  }
+}

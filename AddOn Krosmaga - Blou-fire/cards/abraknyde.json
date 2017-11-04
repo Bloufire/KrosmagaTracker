@@ -1,0 +1,33 @@
+{
+  "Id": 106,
+  "Name": "abraknyde",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 3,
+  "Attack": 5,
+  "MovementPoint": 2,
+  "Families": [
+    17
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    165
+  ],
+  "Texts": {
+    "NameBR": "Arvraknídeo",
+    "DescBR": "<b>MORTE:</b>\nInvoca 2 Araknes\nao lado ou atrás dele.",
+    "NameEN": "Treechnid",
+    "DescEN": "<b>DEATH:</b>\nSummons 2 Arachnees\nnext to or behind it.",
+    "NameES": "Abráknido",
+    "DescES": "<b>MUERTE:</b>\nInvoca 2 araknas\na su lado.",
+    "NameFR": "Abraknyde",
+    "DescFR": "<b>MORT :</b>\nInvoque 2 Araknes\nà côté ou derrière lui.",
+    "NameRU": "Чурбанид",
+    "DescRU": "<b>СМЕРТЬ:</b>\nпризывает 2 арахни\nрядом с собой или за собой."
+  }
+}

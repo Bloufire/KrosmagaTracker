@@ -1,0 +1,31 @@
+{
+  "Id": 293,
+  "Name": "piou_aux_oeufs_d_or",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    24
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Piu dos Ovos de Ouro",
+    "DescBR": "Compre 1 carta quando\r\nvocê jogar uma carta de invocação.",
+    "NameEN": "Golden Egg Piwi",
+    "DescEN": "Draw 1 card whenever\r\nyou play a Minion.",
+    "NameES": "Pío de los huevos de oro",
+    "DescES": "Robas 1 carta cuando\r\njuegas una invocación.",
+    "NameFR": "Piou aux Oeufs d'Or",
+    "DescFR": "Piochez 1 carte quand\r\nvous jouez une invocation.",
+    "NameRU": "Золотоносная пиви",
+    "DescRU": "Когда вы разыгрываете существо, вы берете 1 карту."
+  }
+}

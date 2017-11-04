@@ -1,0 +1,37 @@
+{
+  "Id": 38,
+  "Name": "magmog_le_boufrog",
+  "CardType": 0,
+  "CostAP": 8,
+  "Life": 6,
+  "Attack": 5,
+  "MovementPoint": 2,
+  "Families": [
+    14
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 737,
+    "ParentCard": 785,
+    "ParentLevel": 9
+  },
+  "LinkedCards": [
+    36
+  ],
+  "Texts": {
+    "NameBR": "Magmog, o Paparog",
+    "DescBR": "<b>APARIÇÃO:</b>\nTransforma\r\numa invocação em\r\nPapatudo Negro.",
+    "NameEN": "Magmog the Gobbalrog",
+    "DescEN": "<b>APPEARANCE:</b>\nTransforms\r\na Minion into\r\na Black Gobball.",
+    "NameES": "Magmog, el Jálrog",
+    "DescES": "<b>APARICIÓN:</b>\nTransformas\r\nuna invocación en\r\njalató negro.",
+    "NameFR": "Magmog le Boufrog",
+    "DescFR": "<b>APPARITION :</b>\nTransformez\r\nune invocation en\r\nBouftou Noir. ",
+    "NameRU": "Магмо Буффало",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nпревращает выбранное существо\r\nв черного бараглота."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 267,
+  "Name": "detournement",
+  "CardType": 1,
+  "CostAP": 4,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    2
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 2,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Subversão",
+    "DescBR": "Faz com que uma invocação aliada situada no seu <b>lado do tabuleiro</b> mude de fileira.",
+    "NameEN": "Subversion",
+    "DescEN": "Make an allied Minion change row on your <b>side.</b>",
+    "NameES": "Corrupción",
+    "DescES": "Haz que cambie de hilera una invocación aliada situada en tu <b>lado del tablero</b>.",
+    "NameFR": "Détournement",
+    "DescFR": "Faites changer de ligne une invocation alliée située dans votre <b>camp</b>.",
+    "NameRU": "Маневр",
+    "DescRU": "Переводит на другую линию союзное существо на вашей <b>половине поля</b>."
+  }
+}

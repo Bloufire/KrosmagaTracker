@@ -1,0 +1,31 @@
+{
+  "Id": 463,
+  "Name": "radoris_montrouge",
+  "CardType": 0,
+  "CostAP": 0,
+  "Life": 1,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 7,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Omm Ega",
+    "DescBR": "Gasta 1 <b>PA</b> da sua\r\nreserva para ser invocado.\n<b>APARIÇÃO:</b> Gasta\r\nseus <b>PA</b>. Ganha +1 <b>AT</b> e\r\n+1 <b>AR</b> por <b>PA</b> utilizado.",
+    "NameEN": "Radoris Montrouge",
+    "DescEN": "Spends 1 <b>AP</b> from your \r\nreserve to be summoned.\n<b>APPEARANCE:</b> Spends\r\nyour <b>AP.</b> Gains +1 <b>AT</b> and\r\n+1 <b>AR</b> per <b>AP</b> used.",
+    "NameES": "Radoris Montrouge",
+    "DescES": "Gasta 1 <b>PA</b> de tu \r\nreserva para ser invocado.\n<b>APARICIÓN:</b> Gasta\r\ntus <b>PA</b>. Gana +1 <b>AT</b> y\r\n+1 <b>AR</b> por <b>PA</b> utilizado.",
+    "NameFR": "Radoris Montrouge",
+    "DescFR": "Dépense 1 <b>PA</b> de votre\r\nréserve pour être invoqué.\n<b>APPARITION :</b> Dépense\r\nvos <b>PA</b>. Gagne +1 <b>AT</b> et\r\n+1 <b>AR</b> par <b>PA</b> utilisé.",
+    "NameRU": "Радорис Красногор",
+    "DescRU": "При его призыве тратится 1 <b>ОД</b>\r\nиз вашего резерва.\n<b>ПОЯВЛЕНИЕ:</b> тратит\r\nваши <b>ОД</b>. Получает +1 <b>AT</b> и\r\n+1 <b>БР</b> за каждое использованное <b>ОД</b>."
+  }
+}

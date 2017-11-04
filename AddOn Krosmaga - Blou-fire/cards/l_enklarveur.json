@@ -1,0 +1,31 @@
+{
+  "Id": 300,
+  "Name": "l_enklarveur",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 6,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 8,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Enklarvador",
+    "DescBR": "<b>CONTRAGOLPE:</b>\nInflige 1 dano às outras invocações.",
+    "NameEN": "Enklarver",
+    "DescEN": "<b>COUNTERATTACK:</b>\nInflicts 1 damage on other Minions.",
+    "NameES": "El Enklarvador",
+    "DescES": "<b>VENGANZA:</b>\nInflige 1 de daño a las demás invocaciones.",
+    "NameFR": "L'Enklarveur",
+    "DescFR": "<b>CONTRE COUP :</b>\nInflige 1 dégât aux autres invocations.",
+    "NameRU": "Плутеус",
+    "DescRU": "<b>КОНТРАТАКА:</b>\nнаносит другим существам 1 единицу урона."
+  }
+}

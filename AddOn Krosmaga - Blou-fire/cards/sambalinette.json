@@ -1,0 +1,31 @@
+{
+  "Id": 878,
+  "Name": "sambalinette",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    4
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 5,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Cempila",
+    "DescBR": "<b>RESISTÊNCIA:</b> 1",
+    "NameEN": "Sambalinette",
+    "DescEN": "<b>RESISTANCE:</b> 1",
+    "NameES": "Ambolsina",
+    "DescES": "<b>RESISTENCIA:</b> 1",
+    "NameFR": "Sambalinette",
+    "DescFR": "<b>RÉSISTANCE :</b> 1",
+    "NameRU": "Самбалинет",
+    "DescRU": "<b>СОПРОТИВЛЕНИЕ:</b> 1"
+  }
+}

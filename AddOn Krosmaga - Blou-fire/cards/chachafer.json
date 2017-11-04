@@ -1,0 +1,32 @@
+{
+  "Id": 1194,
+  "Name": "chachafer",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 1,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    36,
+    28
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Miawchafer",
+    "DescBR": "<b>MONTE DE OSSOS</b>\nGanha +1 <b>AT</b> e +1 <b>AR</b> quando um Miaw aliado\r\nentra em jogo.",
+    "NameEN": "Chafer Bow Meow",
+    "DescEN": "<b>PILE OF BONES</b>\nGains +1 <b>AT</b> and +1 <b>AR</b> whenever an allied Bow Meow\r\nenters into play.",
+    "NameES": "Miaumiau chafer",
+    "DescES": "<b>MONTÓN DE HUESOS</b>\nGana +1 <b>AT</b> y +1 <b>AR</b> cuando un miaumiau aliado\r\nentra en juego.",
+    "NameFR": "Chachafer",
+    "DescFR": "<b>TAS D'OS</b>\nGagne +1 <b>AT</b> et +1 <b>AR</b> quand un Chacha allié\r\nentre en jeu.",
+    "NameRU": "Коточафер",
+    "DescRU": "<b>КУЧА КОСТЕЙ</b>\nПолучает +1 <b>AT</b> и +1 <b>БР</b>, когда союзный котокот\r\nвступает в игру."
+  }
+}

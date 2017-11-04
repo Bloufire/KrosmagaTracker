@@ -1,0 +1,32 @@
+{
+  "Id": 858,
+  "Name": "necrome_sram_h",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 4,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    5,
+    78
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 6,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Duelista Espectral",
+    "DescBR": "<b>NECROMO</b>\n<b>APARIÇÃO:</b> Destrói\r\nas invocações com até 2 <b>PV</b> se você estiver em <b>minoria</b>.",
+    "NameEN": "Spectral Duelist",
+    "DescEN": "<b>NECRO</b>\n<b>APPEARANCE:</b> Destroys\r\nMinions with 2 <b>HP</b> or less if you are <b>outnumbered</b>.",
+    "NameES": "Duelista espectral",
+    "DescES": "<b>NÉCROMO</b>\n<b>APARICIÓN:</b> Destruye\r\nlas invocaciones que tengan 2 <b>PdV</b> o menos si estás en <b>inferioridad numérica</b>.",
+    "NameFR": "Duelliste Spectral",
+    "DescFR": "<b>NÉCROME</b>\n<b>APPARITION :</b> Détruit\r\nles invocations ayant 2 <b>PV</b> ou moins si vous êtes en <b>sous nombre</b>.",
+    "NameRU": "Призрачный дуэлянт",
+    "DescRU": "<b>НЕКРОМАН</b>\n<b>ПОЯВЛЕНИЕ:</b> если вы\r\n<b>в меньшинстве</b>, уничтожает существ с <b>ОЗ</b> не выше 2."
+  }
+}

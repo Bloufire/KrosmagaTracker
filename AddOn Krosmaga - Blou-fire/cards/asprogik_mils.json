@@ -1,0 +1,31 @@
+{
+  "Id": 377,
+  "Name": "asprogik_mils",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 4,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    3
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 3,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Aspy Irina",
+    "DescBR": "<b>APARIÇÃO:</b>\nTroca seu<b>AT</b> com o de outra invocação.",
+    "NameEN": "Asprogik Fousand",
+    "DescEN": "<b>APPEARANCE:</b>\nExchange its <b>AT</b> with that of another Minion.",
+    "NameES": "Asprogik Mils",
+    "DescES": "<b>APARICIÓN:</b>\nIntercambias su <b>AT</b> con otra invocación.",
+    "NameFR": "Asprogik Mils",
+    "DescFR": "<b>APPARITION :</b>\nEchangez son <b>AT</b> avec une autre invocation.",
+    "NameRU": "Аспрожик Миллени",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nменяется показателями <b>AT</b> с другим существом."
+  }
+}

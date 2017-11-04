@@ -1,0 +1,31 @@
+{
+  "Id": 408,
+  "Name": "tofu_celeste",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 6,
+  "Attack": 5,
+  "MovementPoint": 4,
+  "Families": [
+    13
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Tofu Celestial",
+    "DescBR": "<b>APARIÇÃO:</b> Compre 3 cartas. Guarde os Tofus, as outras serão descartadas.",
+    "NameEN": "Celestial Tofu",
+    "DescEN": "<b>APPEARANCE:</b> Draw 3 cards. Keep the Tofus; discard any others.",
+    "NameES": "Tofu Celestial",
+    "DescES": "<b>APARICIÓN:</b> Robas 3 cartas. Conservas los tofus, las demás cartas se descartan.",
+    "NameFR": "Tofu Céleste",
+    "DescFR": "<b>APPARITION :</b> Piochez 3 cartes. Gardez les Tofus, les autres sont défaussées.",
+    "NameRU": "Небесный тофу",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b> возьмите 3 карты. Оставьте тофу, остальные карты сбросьте."
+  }
+}

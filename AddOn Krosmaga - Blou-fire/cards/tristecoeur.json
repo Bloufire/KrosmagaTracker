@@ -1,0 +1,35 @@
+{
+  "Id": 191,
+  "Name": "tristecoeur",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 8,
+  "Attack": 3,
+  "MovementPoint": 1,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 18,
+    "ParentCard": 109,
+    "ParentLevel": 8
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Tristemônio",
+    "DescBR": "<b>CONTRAGOLPE:</b>\nGanha +2 <b>AT</b> e +1 <b>PM</b>.",
+    "NameEN": "Perceheart",
+    "DescEN": "<b>COUNTERATTACK:</b>\nGains +2 <b>AT</b> and +1 <b>MP</b>.",
+    "NameES": "Tristemonio",
+    "DescES": "<b>VENGANZA:</b>\nGana +2 <b>AT</b> y +1 <b>PM</b>.",
+    "NameFR": "Tristecoeur",
+    "DescFR": "<b>CONTRE COUP :</b>\nGagne +2 <b>AT</b> et +1 <b>PM</b>.",
+    "NameRU": "Грустносерд",
+    "DescRU": "<b>КОНТРАТАКА:</b>\nполучает +2 <b>AT</b> и +1 <b>ОП</b>."
+  }
+}

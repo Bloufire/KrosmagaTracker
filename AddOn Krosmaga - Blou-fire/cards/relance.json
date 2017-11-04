@@ -1,0 +1,31 @@
+{
+  "Id": 169,
+  "Name": "relance",
+  "CardType": 1,
+  "CostAP": 1,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 4,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Jogar de Novo",
+    "DescBR": "Compre 2 cartas\r\n<b>OU</b> compre 1 carta.",
+    "NameEN": "Roll Again",
+    "DescEN": "Draw 2 cards\r\n<b>OR</b> draw 1 card.",
+    "NameES": "Re-tirada",
+    "DescES": "Robas 2 cartas\r\n<b>O</b> robas 1 carta.",
+    "NameFR": "Relance",
+    "DescFR": "Piochez 2 cartes\r\n<b>OU</b> piochez 1 carte.",
+    "NameRU": "Перезагрузка",
+    "DescRU": "Возьмите 2 карты\r\n<b>ИЛИ</b> возьмите 1 карту."
+  }
+}

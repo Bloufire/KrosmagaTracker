@@ -1,0 +1,31 @@
+{
+  "Id": 156,
+  "Name": "tofu_dominant",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 5,
+  "Attack": 3,
+  "MovementPoint": 2,
+  "Families": [
+    13
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Tofu Dominante",
+    "DescBR": "<b>APARIÇÃO:</b>\nGanha +1 <b>AT</b> por cada Tofu aliado presente no jogo.",
+    "NameEN": "Dominant Tofu",
+    "DescEN": "<b>APPEARANCE:</b>\nGains +1 <b>AT</b> per allied Tofu in play.",
+    "NameES": "Tofu dominante",
+    "DescES": "<b>APARICIÓN:</b>\nGana +1 <b>AT</b> por tofu aliado en juego.",
+    "NameFR": "Tofu Dominant",
+    "DescFR": "<b>APPARITION :</b>\nGagne +1 <b>AT</b> par Tofu allié en jeu.",
+    "NameRU": "Тофу-доминант",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nполучает +1 <b>AT</b> за каждого союзного тофу в игре."
+  }
+}

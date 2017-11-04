@@ -1,0 +1,31 @@
+{
+  "Id": 150,
+  "Name": "selk_ator",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 10,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Podd Ador",
+    "DescBR": "<b>APARIÇÃO:</b>\nTransforme uma <b>Semente</b> aliada em <b>Arbusto</b>.",
+    "NameEN": "Selk Ator",
+    "DescEN": "<b>APPEARANCE:</b>\nTransforms an allied <b>Seed</b> into a <b>Bush</b>.",
+    "NameES": "Selk Ator",
+    "DescES": "<b>APARICIÓN:</b>\nTransformas una <b>semilla</b> aliada en <b>arbusto</b>.",
+    "NameFR": "Selk Ator",
+    "DescFR": "<b>APPARITION :</b>\nTransformez une <b>Graine</b> alliée en <b>Buisson</b>.",
+    "NameRU": "Селк Атор",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nпревращает выбранное союзное <b>семя</b> в <b>куст</b>."
+  }
+}

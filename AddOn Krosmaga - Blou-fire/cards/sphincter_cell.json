@@ -1,0 +1,31 @@
+{
+  "Id": 20,
+  "Name": "sphincter_cell",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 4,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    19
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Sphincter Cell",
+    "DescBR": "<b>GOLPE DE MISERICÓRDIA:</b>\nRecupera o último Rato enviado para a sua lixeira.",
+    "NameEN": "Sphincter Cell",
+    "DescEN": "<b>FINAL BLOW:</b>\nReturn the last Rat that went to your discard pile to your hand.",
+    "NameES": "Sfinter Cell",
+    "DescES": "<b>GOLPE DE GRACIA:</b>\nRecupera la última rata enviada a tu descarte.",
+    "NameFR": "Sphincter Cell",
+    "DescFR": "<b>COUP DE GRÂCE :</b>\nRécupère le dernier Rat parti dans votre défausse.",
+    "NameRU": "Сфинктер Целл",
+    "DescRU": "<b>СМЕРТЕЛЬНЫЙ УДАР:</b>\nвозвращает последнюю крысу из вашего сброса."
+  }
+}

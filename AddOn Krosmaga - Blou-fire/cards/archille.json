@@ -1,0 +1,31 @@
+{
+  "Id": 504,
+  "Name": "archille",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 4,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 1,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Arquiles",
+    "DescBR": "<b>INICIATIVA</b>",
+    "NameEN": "Archilles",
+    "DescEN": "<b>FIRST STRIKE</b>",
+    "NameES": "Arquiles",
+    "DescES": "<b>INICIATIVA</b>",
+    "NameFR": "Archille",
+    "DescFR": "<b>INITIATIVE</b>",
+    "NameRU": "Архиллес",
+    "DescRU": "<b>ПЕРВЫЙ УДАР</b>"
+  }
+}

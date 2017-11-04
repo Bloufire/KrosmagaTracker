@@ -1,0 +1,31 @@
+{
+  "Id": 997,
+  "Name": "princesse_briniere",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 6,
+  "Attack": 6,
+  "MovementPoint": 3,
+  "Families": [
+    74
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Princesa Naricrina",
+    "DescBR": "<b>GOLPE DE MISERICÓRDIA: </b>\nSuas outras invocações <b>dão uma investida</b> ao longo de 1 célula.",
+    "NameEN": "Hairy Princess",
+    "DescEN": "<b>FINAL BLOW: </b>\nYour other Minions <b>charge</b> 1 cell.",
+    "NameES": "Princesa Melana",
+    "DescES": "<b>GOLPE DE GRACIA: </b>\nTus demás invocaciones <b>cargan</b> 1 casilla.",
+    "NameFR": "Princesse Brinière",
+    "DescFR": "<b>COUP DE GRÂCE : </b>\nVos autres invocations <b>chargent</b> de 1 case.",
+    "NameRU": "Принцесса Зевелюра",
+    "DescRU": "<b>СМЕРТЕЛЬНЫЙ УДАР: </b>\nдругие ваши существа делают <b>рывок</b> на 1 клетку."
+  }
+}

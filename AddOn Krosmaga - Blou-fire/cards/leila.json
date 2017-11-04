@@ -1,0 +1,31 @@
+{
+  "Id": 344,
+  "Name": "leila",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 4,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    63
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Leila",
+    "DescBR": "<b>APARIÇÃO:</b>\nConfere +1 <b>AT</b> e +1 <b>AR</b> a uma invocação.",
+    "NameEN": "Lela",
+    "DescEN": "<b>APPEARANCE:</b>\nGives a Minion +1 <b>AT</b> and +1 <b>AR</b>.",
+    "NameES": "Leila",
+    "DescES": "<b>APARICIÓN:</b>\nDas +1 <b>AT</b> y +1 <b>AR</b> a una invocación.",
+    "NameFR": "Lela",
+    "DescFR": "<b>APPARITION :</b>\nDonnez +1 <b>AT</b> et +1 <b>AR</b> à une invocation.",
+    "NameRU": "Лейла",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nдает выбранному существу +1 <b>AT</b> и +1 <b>БР</b>."
+  }
+}

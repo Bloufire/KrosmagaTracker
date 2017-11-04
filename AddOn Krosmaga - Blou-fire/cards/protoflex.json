@@ -1,0 +1,31 @@
+{
+  "Id": 513,
+  "Name": "protoflex",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 4,
+  "Attack": 3,
+  "MovementPoint": 5,
+  "Families": [
+    71
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Protoflex",
+    "DescBR": "<b>INVESTIDA</b>",
+    "NameEN": "Protoflex",
+    "DescEN": "<b>CHARGE</b>",
+    "NameES": "Protoflex",
+    "DescES": "<b>CARGA</b>",
+    "NameFR": "Protoflex",
+    "DescFR": "<b>CHARGE</b>",
+    "NameRU": "Протофлекс",
+    "DescRU": "<b>РЫВОК</b>"
+  }
+}

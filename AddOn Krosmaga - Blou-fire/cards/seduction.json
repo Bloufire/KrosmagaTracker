@@ -1,0 +1,31 @@
+{
+  "Id": 573,
+  "Name": "seduction",
+  "CardType": 1,
+  "CostAP": 12,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    3
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 3,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Sedução",
+    "DescBR": "Assuma o controle de uma invocação adversária.",
+    "NameEN": "Seduction",
+    "DescEN": "Take control of an enemy Minion.",
+    "NameES": "Atracción",
+    "DescES": "Toma el control de una invocación enemiga.",
+    "NameFR": "Séduction",
+    "DescFR": "Prenez le contrôle d'une invocation adverse.",
+    "NameRU": "Соблазнение",
+    "DescRU": "Получите контроль над существом противника."
+  }
+}

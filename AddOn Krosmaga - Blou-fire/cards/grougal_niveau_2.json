@@ -1,0 +1,31 @@
+{
+  "Id": 135,
+  "Name": "grougal_niveau_2",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 6,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    55
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 25,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Grugaloragran",
+    "DescBR": "Volta para a sua mão se ele chegar a 3 <b>PV</b> ou menos.",
+    "NameEN": "Grougaloragran",
+    "DescEN": "Returns to your hand if it has 3 <b>HP</b> or less.",
+    "NameES": "Grugaloragrán",
+    "DescES": "Sube a tu mano si llega a 3 <b>PdV</b> o menos.",
+    "NameFR": "Grougaloragran",
+    "DescFR": "Remonte dans votre main s'il tombe à 3 <b>PV</b> ou moins.",
+    "NameRU": "Гругалорагран",
+    "DescRU": "Возвращается к вам в руку, если у него остается 3 <b>ОЗ</b> или меньше."
+  }
+}

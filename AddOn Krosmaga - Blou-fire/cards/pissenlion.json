@@ -1,0 +1,31 @@
+{
+  "Id": 1032,
+  "Name": "pissenlion",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 2,
+  "Families": [
+    65
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Dendeleão",
+    "DescBR": "<b>APARIÇÃO:</b>\nReduz em 1 o <b>AT</b>\r\nde uma invocação com\r\npelo menos 2 <b>AT</b>.",
+    "NameEN": "Dandy Lion",
+    "DescEN": "<b>APPEARANCE:</b>\nReduces the <b>AT</b>\r\nof a Minion with\r\nat least 2 <b>AT</b> by 1.",
+    "NameES": "Mala semilla de girasol",
+    "DescES": "<b>APARICIÓN:</b>\nLe quitas 1 <b>AT</b>\r\na una invocación que tenga\r\nal menos 2 <b>AT</b>.",
+    "NameFR": "Pissenlion",
+    "DescFR": "<b>APPARITION :</b>\nRéduisez de 1 l'<b>AT</b>\r\nd'une invocation ayant\r\nau moins 2 <b>AT</b>.",
+    "NameRU": "Льводуванчик",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b> снижает на 1 показатель <b>AT</b> существа с показателем <b>AT</b> не менее 2."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 126,
+  "Name": "mot_de_silence",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    3
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 3,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Palavra de Silêncio",
+    "DescBR": "Inflige <b>silêncio</b> às invocações.",
+    "NameEN": "Silencing Word",
+    "DescEN": "<b>Silences</b> all Minions.",
+    "NameES": "Palabra de Silencio",
+    "DescES": "Inflige <b>silencio</b> a las invocaciones.",
+    "NameFR": "Mot de Silence",
+    "DescFR": "Réduit les invocations au <b>silence</b>.",
+    "NameRU": "Слово молчания",
+    "DescRU": "Налагает <b>немоту</b> на всех существ."
+  }
+}

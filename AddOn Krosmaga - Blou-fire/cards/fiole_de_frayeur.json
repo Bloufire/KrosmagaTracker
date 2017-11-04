@@ -1,0 +1,31 @@
+{
+  "Id": 250,
+  "Name": "fiole_de_frayeur",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    3
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 3,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Frasco de Medo",
+    "DescBR": "Inflige <b>silêncio</b> a uma invocação e a <b>empurra</b> ao longo de 3 células.",
+    "NameEN": "Fear Flask",
+    "DescEN": "<b>Silences</b> a Minion and <b>repels</b> it by 3 cells.",
+    "NameES": "Matraz de Espanto",
+    "DescES": "Inflige <b>silencio</b> a una invocación y la <b>empuja</b> 3 casillas.",
+    "NameFR": "Fiole de Frayeur",
+    "DescFR": "Inflige <b>silence</b> à une invocation et la <b>repousse</b> de 3 cases.",
+    "NameRU": "Зелье страха",
+    "DescRU": "Налагает <b>немоту</b> на выбранное существо и заставляет его <b>отступить</b> на 3 клетки."
+  }
+}

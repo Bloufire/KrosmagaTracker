@@ -1,0 +1,32 @@
+{
+  "Id": 722,
+  "Name": "necrome_eni_h",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 5,
+  "Attack": 4,
+  "MovementPoint": 2,
+  "Families": [
+    3,
+    78
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 3,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Apóstolo Necrosado",
+    "DescBR": "<b>NECROMO</b>\n<b>APARIÇÃO:</b> Inflige 2 danos às invocações adversárias no seu <b>lado do tabuleiro</b>.",
+    "NameEN": "Necrotized Apostle",
+    "DescEN": "<b>NECRO</b>\n<b>APPEARANCE:</b> Inflicts 2 damage on enemy Minions on your <b>side.</b>",
+    "NameES": "Apóstol necrosado",
+    "DescES": "<b>NÉCROMO</b>\n<b>APARICIÓN:</b> Inflige 2 de daño a las invocaciones enemigas de tu <b>lado del tablero</b>.",
+    "NameFR": "Apôtre Nécrosé",
+    "DescFR": "<b>NÉCROME</b>\n<b>APPARITION :</b> Inflige 2 dégâts aux invocations adverses dans votre <b>camp</b>.",
+    "NameRU": "Поборник смерти",
+    "DescRU": "<b>НЕКРОМАН</b>\n<b>ПОЯВЛЕНИЕ:</b> наносит 2 единицы урона существам противника на вашей <b>половине поля</b>."
+  }
+}

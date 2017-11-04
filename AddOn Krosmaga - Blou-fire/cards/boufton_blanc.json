@@ -1,0 +1,31 @@
+{
+  "Id": 376,
+  "Name": "boufton_blanc",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 1,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    14
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Paparneiro Branco",
+    "DescBR": "Ganha +1 <b>AT</b> desde que você tenha\r\noutro Papatudo no jogo.",
+    "NameEN": "White Gobbly",
+    "DescEN": "Gains +1 <b>AT</b> as long as\r\nyou have another Gobball in play.",
+    "NameES": "Jalatín blanco",
+    "DescES": "Gana +1 <b>AT</b> mientras\r\ntengas otro jalató en juego.",
+    "NameFR": "Boufton Blanc",
+    "DescFR": "Gagne +1 <b>AT</b> tant\r\nque vous avez un autre Bouftou en jeu.",
+    "NameRU": "Белый бараглотик",
+    "DescRU": "Получает +1 <b>AT</b>, пока\r\nу вас есть другой бараглот в игре."
+  }
+}

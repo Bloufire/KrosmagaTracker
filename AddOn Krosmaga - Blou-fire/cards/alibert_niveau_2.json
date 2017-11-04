@@ -1,0 +1,33 @@
+{
+  "Id": 53,
+  "Name": "alibert_niveau_2",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 4,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    4
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 11,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    528
+  ],
+  "Texts": {
+    "NameBR": "Aliberto",
+    "DescBR": "<b>APARIÇÃO:</b>\nAdiciona uma Frigideira\r\nà sua mão.",
+    "NameEN": "Alibert",
+    "DescEN": "<b>APPEARANCE:</b>\nAdd a Frying Pan\r\nto your hand.",
+    "NameES": "Álibert",
+    "DescES": "<b>APARICIÓN:</b>\nAñade una sartén\r\na tu mano.",
+    "NameFR": "Alibert",
+    "DescFR": "<b>APPARITION :</b>\nAjoute une Poêle\r\nà votre main.",
+    "NameRU": "Алибер",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nдает вам в руку\r\nсковороду."
+  }
+}

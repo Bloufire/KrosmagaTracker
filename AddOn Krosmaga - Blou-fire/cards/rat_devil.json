@@ -1,0 +1,31 @@
+{
+  "Id": 32,
+  "Name": "rat_devil",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    19
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Rato Devil",
+    "DescBR": "Ganha +2 <b>AR</b> desde que você tenha um Rato Ducampo no jogo.",
+    "NameEN": "Uptown Rat",
+    "DescEN": "Gains +2 <b>AR</b> as long as you have a Feeled Rat in play.",
+    "NameES": "Rata devil",
+    "DescES": "Gana +2 <b>AR</b> mientras tengas una rata silvestrada en juego.",
+    "NameFR": "Rat Devil",
+    "DescFR": "Gagne +2 <b>AR</b> tant que vous avez un Rat Dechant en jeu.",
+    "NameRU": "Дьявольский крыс",
+    "DescRU": "Пока у вас в игре есть полебойный крыс, получает +2 <b>БР</b>."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "Id": 1015,
+  "Name": "enfouissement",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 5,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Soterramento",
+    "DescBR": "Vise uma invocação. Ao morrer, ela vai para o bolo de seu proprietário.",
+    "NameEN": "Burying",
+    "DescEN": "Target a Minion; when it dies, it is placed on its owner's deck.",
+    "NameES": "Soterramiento",
+    "DescES": "Seleccionas una invocación; cuando esta muere, se coloca sobre el mazo de su propietario.",
+    "NameFR": "Enfouissement",
+    "DescFR": "Ciblez une invocation, quand elle meurt elle se place sur la pioche de son propriétaire.",
+    "NameRU": "По окопам",
+    "DescRU": "Выберите существо. После своей гибели оно попадет на верх колоды хозяина."
+  }
+}

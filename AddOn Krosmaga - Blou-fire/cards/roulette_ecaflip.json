@@ -1,0 +1,31 @@
+{
+  "Id": 401,
+  "Name": "roulette_ecaflip",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 4,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Roleta Ecaflip",
+    "DescBR": "Confere <b>1d6</b> <b>AR</b> a uma invocação.",
+    "NameEN": "Ecaflip Roulette",
+    "DescEN": "Confers <b>1d6</b> <b>AR</b> on a Minion.",
+    "NameES": "Ruleta de Zurcarák",
+    "DescES": "Otorga <b>1d6</b> <b>AR</b> a una invocación.",
+    "NameFR": "Roulette Ecaflip",
+    "DescFR": "Confère <b>1d6</b> <b>AR</b> à une invocation.",
+    "NameRU": "Рулетка Экафлипа",
+    "DescRU": "Дает <b>1d6</b> <b>БР</b> выбранному существу."
+  }
+}

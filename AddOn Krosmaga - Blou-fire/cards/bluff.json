@@ -1,0 +1,31 @@
+{
+  "Id": 16,
+  "Name": "bluff",
+  "CardType": 1,
+  "CostAP": 5,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 4,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Blefe",
+    "DescBR": "Troca a posição de 2 de seus Dofus.",
+    "NameEN": "Bluff",
+    "DescEN": "Switches the positions of 2 of your Dofus.",
+    "NameES": "Farol",
+    "DescES": "Intercambia la posición de 2 de tus dofus.",
+    "NameFR": "Bluff",
+    "DescFR": "Échange la position de 2 de vos Dofus.",
+    "NameRU": "Блеф",
+    "DescRU": "Поменяйте местами 2 своих дофуса."
+  }
+}

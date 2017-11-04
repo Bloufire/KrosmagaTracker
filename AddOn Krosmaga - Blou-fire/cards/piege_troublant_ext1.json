@@ -1,0 +1,33 @@
+{
+  "Id": 581,
+  "Name": "piege_troublant_ext1",
+  "CardType": 1,
+  "CostAP": 4,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    5
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 6,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    689
+  ],
+  "Texts": {
+    "NameBR": "Armadilha Inquietante",
+    "DescBR": "Coloca uma Armadilha Inquietante Ativada na mão do adversário.",
+    "NameEN": "Unsettling Trap",
+    "DescEN": "Puts an Activated Unsettling Trap in your opponent's hand.",
+    "NameES": "Trampa Perturbadora",
+    "DescES": "Coloca una trampa perturbadora activada en la mano de tu adversario.",
+    "NameFR": "Piège Troublant",
+    "DescFR": "Place un Piège Troublant Activé dans la main de votre adversaire.",
+    "NameRU": "Замутная ловушка",
+    "DescRU": "Дает взведенную замутную ловушку в руку противника."
+  }
+}

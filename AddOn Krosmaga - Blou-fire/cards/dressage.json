@@ -1,0 +1,29 @@
+{
+  "Id": 1248,
+  "Name": "dressage",
+  "CardType": 1,
+  "CostAP": 4,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 5,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Adestramento",
+    "DescBR": "Confere às suas\r\ninvocações <b>+1 AT</b>. Elas <b>dão uma investida</b> ao longo de 1 célula.",
+    "NameEN": "Sit… Stay!",
+    "DescEN": "Confers <b>+1 AT</b>\r\non your Minions; they <b>charge</b> 1 cell.",
+    "NameES": "Adiestramiento",
+    "DescES": "Confiere a tus\r\ninvocaciones <b>+1 AT</b>, y estas <b>cargan</b> 1 casilla.",
+    "NameFR": "Dressage",
+    "DescFR": "Confère à vos\r\ninvocations <b>+1 AT</b>, elles <b>chargent</b> de 1 case.",
+    "NameRU": "Дрессировка",
+    "DescRU": "Дает вашим\r\nсуществам <b>+1 AT</b>, и они делают <b>рывок</b> на 1 клетку."
+  }
+}

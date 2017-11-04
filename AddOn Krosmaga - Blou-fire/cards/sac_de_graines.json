@@ -1,0 +1,33 @@
+{
+  "Id": 71,
+  "Name": "sac_de_graines",
+  "CardType": 1,
+  "CostAP": 0,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 10,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    537
+  ],
+  "Texts": {
+    "NameBR": "Saco de Sementes",
+    "DescBR": "Adiciona 2 <b>Sementes</b>\r\nà sua mão.",
+    "NameEN": "Bag of Seeds",
+    "DescEN": "Adds 2 <b>Seeds</b>\r\nto your hand.",
+    "NameES": "Bolsa de semillas",
+    "DescES": "Añade 2 <b>semillas</b>\r\n a tu mano.",
+    "NameFR": "Sac De Graines",
+    "DescFR": "Ajoute 2 <b>Graines</b>\r\nà votre main.",
+    "NameRU": "Мешочек семян",
+    "DescRU": "Дает вам в руку\r\n2 <b>семени</b>."
+  }
+}

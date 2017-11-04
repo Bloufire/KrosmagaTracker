@@ -1,0 +1,31 @@
+{
+  "Id": 1234,
+  "Name": "tournesol_sauvage",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 2,
+  "Families": [
+    65
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Girassol Selvagem",
+    "DescBR": "<b>APARIÇÃO:</b>\nDestrua uma <b>Semente</b>,\r\numa Bomba, um Prisma, um <b>Espólio</b> ou um <b>Monte de Ossos</b> no jogo.",
+    "NameEN": "Wild Sunflower",
+    "DescEN": "<b>APPEARANCE:</b>\nDestroys a <b>Seed,</b>\r\n a Bomb, a Prism, an item of <b>Loot,</b> or a <b>Pile of Bones</b> in play.",
+    "NameES": "Girasol salvaje",
+    "DescES": "<b>APARICIÓN:</b>\nDestruyes una <b>semilla</b>,\r\nuna bomba, un prisma, <b>un botín</b> o un <b>montón de huesos</b> en juego.",
+    "NameFR": "Tournesol Sauvage",
+    "DescFR": "<b>APPARITION :</b>\nDétruisez une <b>Graine</b>,\r\nune Bombe, un Prisme, un <b>Butin</b> ou un <b>Tas d'Os</b> en jeu.",
+    "NameRU": "Дикий подсолнух",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nуничтожает <b>семя</b>,\r\n<b>бомбу</b>, <b>призму</b>, <b>добычу</b> или <b>кучу костей</b> в игре."
+  }
+}

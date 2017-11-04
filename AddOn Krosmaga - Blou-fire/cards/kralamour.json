@@ -1,0 +1,31 @@
+{
+  "Id": 487,
+  "Name": "kralamour",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 2,
+  "Families": [
+    61
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Kralamor",
+    "DescBR": "<b>APARIÇÃO:</b>\nCura 2 <b>PV</b>\r\nde uma invocação.",
+    "NameEN": "Kralove",
+    "DescEN": "<b>APPEARANCE:</b>\nHeal a Minion\r\nby 2 <b>HP</b>.",
+    "NameES": "Kralamar",
+    "DescES": "<b>APARICIÓN:</b>\nCuras 2 <b>PdV</b>\r\na una invocación.",
+    "NameFR": "Kralamour",
+    "DescFR": "<b>APPARITION :</b>\nSoignez une invocation\r\nde 2 <b>PV</b>.",
+    "NameRU": "Кальмур",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nвосстанавливает выбранному\r\nсуществу 2 <b>ОЗ</b>."
+  }
+}

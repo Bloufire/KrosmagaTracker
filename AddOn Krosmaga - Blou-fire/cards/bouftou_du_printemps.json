@@ -1,0 +1,31 @@
+{
+  "Id": 159,
+  "Name": "bouftou_du_printemps",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 3,
+  "Attack": 6,
+  "MovementPoint": 2,
+  "Families": [
+    14
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Papatudo da Primavera",
+    "DescBR": "<b>COMEÇO DO TURNO:</b>\nGanha +1 <b>AR</b>.",
+    "NameEN": "Spring Gobball",
+    "DescEN": "<b>START OF TURN:</b>\nGains +1 <b>AR</b>.",
+    "NameES": "Jalató de primavera",
+    "DescES": "<b>INICIO DEL TURNO:</b>\nGana +1 <b>AR</b>.",
+    "NameFR": "Bouftou du Printemps",
+    "DescFR": "<b>DÉBUT DU TOUR :</b>\nGagne +1 <b>AR</b>.",
+    "NameRU": "Весенний бараглот",
+    "DescRU": "<b>НАЧАЛО ХОДА:</b>\nполучает +1 <b>БР</b>."
+  }
+}

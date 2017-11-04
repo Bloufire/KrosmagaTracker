@@ -1,0 +1,31 @@
+{
+  "Id": 199,
+  "Name": "truche_foldingue",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 5,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    26
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Truz Lunático",
+    "DescBR": "<b>GOLPE DE MISERICÓRDIA:</b>\n50% de chance de\r\nmudar de proprietário.",
+    "NameEN": "Loony Strich",
+    "DescEN": "<b>FINAL BLOW:</b>\n50% chance of\r\nswitching owner.",
+    "NameES": "Pestruz locanática",
+    "DescES": "<b>GOLPE DE GRACIA:</b>\n50% de probabilidades de\r\ncambiar de propietario.",
+    "NameFR": "Truche Foldingue ",
+    "DescFR": "<b>COUP DE GRÂCE :</b>\n50% de chances de\r\nchanger de propriétaire.",
+    "NameRU": "Чокнутый страшус",
+    "DescRU": "<b>СМЕРТЕЛЬНЫЙ УДАР:</b>\nв 50% случаев переходит\r\nк другому хозяину."
+  }
+}

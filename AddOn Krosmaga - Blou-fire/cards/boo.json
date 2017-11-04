@@ -1,0 +1,33 @@
+{
+  "Id": 471,
+  "Name": "boo",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 2,
+  "Attack": 1,
+  "MovementPoint": 2,
+  "Families": [
+    49
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    471
+  ],
+  "Texts": {
+    "NameBR": "Bawo",
+    "DescBR": "Invoca um Bawo\r\nao lado dele se sobreviver\r\naos danos.",
+    "NameEN": "Mushd",
+    "DescEN": "Summons a Mushd\r\non an adjacent cell if it\r\nsurvives damage.",
+    "NameES": "Boo",
+    "DescES": "Invoca 1 boo\r\na su lado si sobrevive\r\na algún daño.",
+    "NameFR": "Boo",
+    "DescFR": "Invoque un Boo\r\nà côté de lui s'il survit\r\nà des dégâts.",
+    "NameRU": "Бяка",
+    "DescRU": "Призывает рядом \r\nс собой бяку, если \r\nвыживает после атаки."
+  }
+}

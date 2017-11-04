@@ -1,0 +1,31 @@
+{
+  "Id": 11,
+  "Name": "fantome_cra",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    2
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 2,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Fantasma Cra",
+    "DescBR": "<b>ALCANCE:</b> 1-2\n<b>NÃO VISÁVEL</b>",
+    "NameEN": "Cra Ghost",
+    "DescEN": "<b>RANGE:</b> 1-2\n<b>UNTARGETABLE</b>",
+    "NameES": "Fantasma ocra",
+    "DescES": "<b>ALCANCE:</b> 1-2\n<b>ESCURRIDIZO</b>",
+    "NameFR": "Fantôme Crâ",
+    "DescFR": "<b>PORTÉE :</b> 1-2\n<b>INCIBLABLE</b>",
+    "NameRU": "Призрак Кра",
+    "DescRU": "<b>ДАЛЬНОСТЬ АТАКИ:</b>1-2\n<b>НЕВЫЦЕЛИВАЕМЫЙ</b>"
+  }
+}

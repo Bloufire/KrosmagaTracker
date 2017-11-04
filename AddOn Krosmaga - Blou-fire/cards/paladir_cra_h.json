@@ -1,0 +1,32 @@
+{
+  "Id": 1057,
+  "Name": "paladir_cra_h",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    2,
+    77
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 2,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Explorador de Elite",
+    "DescBR": "<b>ALCANCE:</b> 1-2\nGanha +1 <b>AT</b> e +1 de <b>alcance</b> por cada Cra aliado presente no jogo.",
+    "NameEN": "Elite Scout",
+    "DescEN": "<b>RANGE:</b> 1-2\nGains +1 <b>AT</b> and +1 <b>range</b> per allied Cra in play.",
+    "NameES": "Explorador de élite",
+    "DescES": "<b>ALCANCE:</b> 1-2\nGana +1 <b>AT</b> y +1 de <b>alcance</b> por cada ocra aliado en juego.",
+    "NameFR": "Eclaireur d'Elite",
+    "DescFR": "<b>PORTÉE :</b> 1-2\nGagne +1 <b>AT</b> et +1 <b>portée</b> par Crâ allié en jeu.",
+    "NameRU": "Опытный разведчик",
+    "DescRU": "<b>ДАЛЬНОСТЬ АТАКИ:</b> 1-2\nПолучает +1 <b>AT</b> и +1 к <b>дальности атаки</b> за каждого союзного кра в игре."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 485,
+  "Name": "autorite",
+  "CardType": 1,
+  "CostAP": 8,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 1,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Autoridade",
+    "DescBR": "A invocação visada <b>dá uma investida</b> até o Dofus adversário.",
+    "NameEN": "Authority",
+    "DescEN": "The targeted Minion <b>charges</b> to the enemy Dofus.",
+    "NameES": "Autoridad",
+    "DescES": "La invocación seleccionada <b>carga</b> hasta el dofus enemigo.",
+    "NameFR": "Autorité",
+    "DescFR": "L'invocation ciblée <b>charge</b> jusqu'au Dofus adverse.",
+    "NameRU": "Авторитет",
+    "DescRU": "Выбранное существо делает <b>рывок</b> до дофуса противника."
+  }
+}

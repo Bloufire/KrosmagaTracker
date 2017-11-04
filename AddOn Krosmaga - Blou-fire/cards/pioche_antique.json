@@ -1,0 +1,29 @@
+{
+  "Id": 991,
+  "Name": "pioche_antique",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Picareta Antiga",
+    "DescBR": "Compre 1 carta.\nEla custa 1 <b>PA</b> a menos.",
+    "NameEN": "Antique Draw",
+    "DescEN": "Draw 1 card.\nIt costs 1 <b>AP</b> less.",
+    "NameES": "Pico antiguo",
+    "DescES": "Robas 1 carta.\nCuesta 1 <b>PA</b> menos.",
+    "NameFR": "Pioche Antique",
+    "DescFR": "Piochez 1 carte.\nElle coûte 1 <b>PA</b> de moins.",
+    "NameRU": "Древняя кирка",
+    "DescRU": "Вы берете 1 карту.\nЕе стоимость уменьшается на 1 <b>ОД</b>."
+  }
+}

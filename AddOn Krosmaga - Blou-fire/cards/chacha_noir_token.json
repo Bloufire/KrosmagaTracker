@@ -1,0 +1,31 @@
+{
+  "Id": 151,
+  "Name": "chacha_noir_token",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 2,
+  "Attack": 1,
+  "MovementPoint": 6,
+  "Families": [
+    36
+  ],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Miaw Negro",
+    "DescBR": "",
+    "NameEN": "Black Bow Meow",
+    "DescEN": "",
+    "NameES": "Miaumiau negro",
+    "DescES": "",
+    "NameFR": "Chacha Noir",
+    "DescFR": "",
+    "NameRU": "Черный котокот",
+    "DescRU": ""
+  }
+}

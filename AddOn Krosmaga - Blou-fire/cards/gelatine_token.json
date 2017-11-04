@@ -1,0 +1,31 @@
+{
+  "Id": 258,
+  "Name": "gelatine_token",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 1,
+  "Attack": 1,
+  "MovementPoint": 2,
+  "Families": [
+    30
+  ],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Gelatina",
+    "DescBR": "",
+    "NameEN": "Gelatine",
+    "DescEN": "",
+    "NameES": "Gelatina",
+    "DescES": "",
+    "NameFR": "Gelatine",
+    "DescFR": "",
+    "NameRU": "Желейка",
+    "DescRU": ""
+  }
+}

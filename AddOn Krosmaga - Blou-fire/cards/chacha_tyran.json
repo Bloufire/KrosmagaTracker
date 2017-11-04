@@ -1,0 +1,31 @@
+{
+  "Id": 1273,
+  "Name": "chacha_tyran",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 4,
+  "Attack": 2,
+  "MovementPoint": 4,
+  "Families": [
+    36
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Miaw Traente",
+    "DescBR": "<b>APARIÇÃO:</b>\n<b>Atrai</b> uma invocação\r\nao longo de 7 células.",
+    "NameEN": "Attractive Bow Meow",
+    "DescEN": "<b>APPEARANCE:</b>\n<b>Attracts</b> a Minion\r\n7 cells.",
+    "NameES": "Miaumiau tirano",
+    "DescES": "<b>APARICIÓN:</b>\n<b>Atrae</b> una invocación 7 casillas.",
+    "NameFR": "Chacha Tyran",
+    "DescFR": "<b>APPARITION :</b>\n<b>Attire</b> une invocation\r\nde 7 cases.",
+    "NameRU": "Котокот-тиран",
+    "DescRU": "<b>ПОЯВЛЕНИЕ</b>\n<b>Притягивает</b> выбранное существо на 7 клеток."
+  }
+}

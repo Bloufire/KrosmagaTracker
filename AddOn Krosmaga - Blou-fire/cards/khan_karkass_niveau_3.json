@@ -1,0 +1,33 @@
+{
+  "Id": 390,
+  "Name": "khan_karkass_niveau_3",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 5,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 29,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    23
+  ],
+  "Texts": {
+    "NameBR": "Khan Karkass",
+    "DescBR": "<b>APARIÇÃO:</b>\nInvoca 3 Fãs\r\nao redor dele.",
+    "NameEN": "Khan Karkass",
+    "DescEN": "<b>APPEARANCE:</b>\nSummons 3 Fans\r\non adjacent cells.",
+    "NameES": "Khan Karkasa",
+    "DescES": "<b>APARICIÓN:</b>\nInvoca 3 fans\r\na su alrededor.",
+    "NameFR": "Khan Karkass",
+    "DescFR": "<b>APPARITION :</b>\nInvoque 3 Fans\r\nautour de lui.",
+    "NameRU": "Хан Каркасс",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nпризывает вокруг себя\r\n3 фанаток."
+  }
+}

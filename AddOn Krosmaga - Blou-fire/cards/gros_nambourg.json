@@ -1,0 +1,31 @@
+{
+  "Id": 284,
+  "Name": "gros_nambourg",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 5,
+  "Attack": 3,
+  "MovementPoint": 2,
+  "Families": [
+    27
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Charles Kol",
+    "DescBR": "Ganha +1 <b>AT</b> quando uma invocação aliada morre.",
+    "NameEN": "Friar Tubs",
+    "DescEN": "Gains +1 <b>AT</b> whenever an allied Minion dies.",
+    "NameES": "Gran Bayotoro",
+    "DescES": "Gana +1 <b>AT</b> cuando una invocación aliada muere.",
+    "NameFR": "Gros Nambourg",
+    "DescFR": "Gagne +1 <b>AT</b> quand une invocation alliée meurt.",
+    "NameRU": "Брат Качок",
+    "DescRU": "Получает +1 <b>AT</b> при гибели одного из союзных существ."
+  }
+}

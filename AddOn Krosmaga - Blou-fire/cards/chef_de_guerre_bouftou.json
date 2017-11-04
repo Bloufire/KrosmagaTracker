@@ -1,0 +1,31 @@
+{
+  "Id": 296,
+  "Name": "chef_de_guerre_bouftou",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 5,
+  "Attack": 6,
+  "MovementPoint": 2,
+  "Families": [
+    14
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Chefe de Guerra Papatudo",
+    "DescBR": "<b>CHEFE:</b>\nSeus outros Papatudos ganham +1 <b>AT</b>.",
+    "NameEN": "Gobball War Chief",
+    "DescEN": "<b>LEADER:</b>\n+1 <b>AT</b> to your other Gobballs.",
+    "NameES": "Jefe de guerra jalató",
+    "DescES": "<b>LÍDER:</b>\nDa +1 <b>AT</b> a tus demás jalatós.",
+    "NameFR": "Chef de Guerre Bouftou",
+    "DescFR": "<b>CHEF :</b>\n+1 <b>AT</b> à vos autres Bouftous.",
+    "NameRU": "Бараглот-воевода",
+    "DescRU": "<b>ВОЖАК</b>\nДает другим вашим бараглотам +1 <b>AT</b>."
+  }
+}

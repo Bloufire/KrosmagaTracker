@@ -1,0 +1,34 @@
+{
+  "Id": 351,
+  "Name": "amalia_niveau_1",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 2,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    32,
+    33
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 23,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    183
+  ],
+  "Texts": {
+    "NameBR": "Amália",
+    "DescBR": "<b>APARIÇÃO:</b>\nInvoca uma Boneca Inflável.",
+    "NameEN": "Amalia",
+    "DescEN": "<b>APPEARANCE:</b>\nSummons an Inflatable Doll.",
+    "NameES": "Amalia",
+    "DescES": "<b>APARICIÓN:</b>\nInvoca 1 muñeca hinchable.",
+    "NameFR": "Amalia",
+    "DescFR": "<b>APPARITION :</b>\nInvoquez une Poupée Gonflable.",
+    "NameRU": "Амалия",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nпризывает надувную куклу."
+  }
+}

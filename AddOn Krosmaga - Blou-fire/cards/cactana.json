@@ -1,0 +1,31 @@
+{
+  "Id": 1782,
+  "Name": "cactana",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 4,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    52
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Cactana",
+    "DescBR": "<b>COMEÇO DO TURNO:</b>\nCusta 1 <b>PA</b>.",
+    "NameEN": "Cactana",
+    "DescEN": "<b>START OF TURN:</b>\nCosts 1 <b>AP</b>.",
+    "NameES": "Cactana",
+    "DescES": "<b>INICIO DEL TURNO:</b>\nCuesta 1 <b>PA</b>.",
+    "NameFR": "Cactana",
+    "DescFR": "<b>DÉBUT DU TOUR :</b>\nCoûte 1 <b>PA</b>.",
+    "NameRU": "Кактана",
+    "DescRU": "<b>НАЧАЛО ХОДА</b>\nтратит 1 <b>ОД</b>."
+  }
+}

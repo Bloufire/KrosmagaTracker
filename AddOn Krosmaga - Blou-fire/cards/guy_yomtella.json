@@ -1,0 +1,31 @@
+{
+  "Id": 494,
+  "Name": "guy_yomtella",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    2
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 2,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Gui Yermetel",
+    "DescBR": "<b>ALCANCE:</b> 1-6",
+    "NameEN": "Bill Tell",
+    "DescEN": "<b>RANGE:</b> 1-6",
+    "NameES": "Guiller Motel",
+    "DescES": "<b>ALCANCE:</b> 1-6",
+    "NameFR": "Guy Yomtella",
+    "DescFR": "<b>PORTÉE :</b> 1-6",
+    "NameRU": "Вилли Ган Телль",
+    "DescRU": "<b>ДАЛЬНОСТЬ АТАКИ:</b> 1-6"
+  }
+}

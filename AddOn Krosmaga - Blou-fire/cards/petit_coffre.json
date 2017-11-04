@@ -1,0 +1,31 @@
+{
+  "Id": 949,
+  "Name": "petit_coffre",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 1,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    76
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Baú Pequeno",
+    "DescBR": "<b>RESISTÊNCIA:</b> 1\n<b>MORTE:</b> Coloca um <b>Espólio</b> na primeira célula\r\nda fileira dele.",
+    "NameEN": "Small Chest",
+    "DescEN": "<b>RESISTANCE:</b> 1\n<b>DEATH:</b> Places <b>Loot</b> on the first cell\r\non its row.",
+    "NameES": "Cofre pequeño",
+    "DescES": "<b>RESISTENCIA:</b> 1\n<b>MUERTE:</b> Coloca un <b>botín</b> en la primera casilla\r\nde su hilera.",
+    "NameFR": "Petit Coffre",
+    "DescFR": "<b>RÉSISTANCE :</b> 1\n<b>MORT :</b> Dépose un <b>Butin</b> sur la première case\r\nde sa ligne.",
+    "NameRU": "Малыш Сундук",
+    "DescRU": "<b>СОПРОТИВЛЕНИЕ:</b> 1\n<b>СМЕРТЬ:</b> помещает на первую клетку\r\nсвоей линии <b>добычу</b>."
+  }
+}

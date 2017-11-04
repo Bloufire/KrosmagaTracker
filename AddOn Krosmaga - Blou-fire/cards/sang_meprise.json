@@ -1,0 +1,35 @@
+{
+  "Id": 277,
+  "Name": "sang_meprise",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 8,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 19,
+    "ParentCard": 289,
+    "ParentLevel": 9
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Sangue Ruim",
+    "DescBR": "Revela todos os Dofus.",
+    "NameEN": "Bloody Mistake",
+    "DescEN": "Reveals every Dofus.",
+    "NameES": "Sangre Nueva",
+    "DescES": "Descubre todos los dofus.",
+    "NameFR": "Sang Méprise",
+    "DescFR": "Dévoile tous les Dofus.",
+    "NameRU": "Кровь откровения",
+    "DescRU": "Раскрывает все дофусы."
+  }
+}

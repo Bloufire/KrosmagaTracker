@@ -1,0 +1,33 @@
+{
+  "Id": 383,
+  "Name": "arbre_a_chachas",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 5,
+  "Attack": 1,
+  "MovementPoint": 0,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 4,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    151
+  ],
+  "Texts": {
+    "NameBR": "Árvore para Miaws",
+    "DescBR": "<b>MURO</b>\n<b>CONTRAGOLPE:</b> Adiciona 1 Miaw Negro à sua mão.",
+    "NameEN": "Bow Meow Post",
+    "DescEN": "<b>WALL</b>\n<b>COUNTERATTACK:</b> Add 1 Black Bow Meow to your hand.",
+    "NameES": "Árbol para miaumiaus",
+    "DescES": "<b>MURO</b>\n<b>VENGANZA:</b> Añade 1 miaumiau negro a tu mano.",
+    "NameFR": "Arbre à Chachas",
+    "DescFR": "<b>MUR</b>\n<b>CONTRE COUP :</b> Ajoute 1 Chacha Noir à votre main.",
+    "NameRU": "Котокотовое дерево",
+    "DescRU": "<b>СТЕНА</b>\n<b>КОНТРАТАКА:</b> дает вам в руку 1 черного котокота."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 335,
+  "Name": "ush_niveau_3",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 4,
+  "Attack": 6,
+  "MovementPoint": 3,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 13,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Ush",
+    "DescBR": "<b>APARIÇÃO:</b>\nTroca a posição do Dofus adversário da fileira dele com a de outro Dofus adversário.",
+    "NameEN": "Ush",
+    "DescEN": "<b>APPEARANCE:</b>\nSwitches the positions of the enemy Dofus on its row and another enemy Dofus.",
+    "NameES": "Ush",
+    "DescES": "<b>APARICIÓN:</b>\nIntercambias la posición del dofus enemigo de su hilera con la de otro dofus enemigo.",
+    "NameFR": "Ush",
+    "DescFR": "<b>APPARITION :</b>\nÉchangez la position du Dofus adverse de sa ligne avec celle d'un autre Dofus adverse.",
+    "NameRU": "Уш",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nпоменяйте местами дофус противника на его линии с другим дофусом противника."
+  }
+}

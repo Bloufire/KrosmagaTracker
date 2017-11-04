@@ -1,0 +1,31 @@
+{
+  "Id": 144,
+  "Name": "corbac_token",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 1,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    42
+  ],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Corvoc",
+    "DescBR": "<b>APARIÇÃO:</b>\n<b>Dá uma investida</b> ao longo de 1 célula.",
+    "NameEN": "Crobak",
+    "DescEN": "<b>APPEARANCE:</b>\n<b>Charges</b> 1 cell.",
+    "NameES": "Cuerbok",
+    "DescES": "<b>APARICIÓN:</b>\n<b>Carga</b> 1 casilla.",
+    "NameFR": "Corbac",
+    "DescFR": "<b>APPARITION :</b>\n<b>Charge</b> de 1 case.",
+    "NameRU": "Карбак",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nделает <b>рывок</b> на 1 клетку."
+  }
+}

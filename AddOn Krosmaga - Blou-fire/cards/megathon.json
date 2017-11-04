@@ -1,0 +1,31 @@
+{
+  "Id": 478,
+  "Name": "megathon",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 5,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    60
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Megatum",
+    "DescBR": "<b>CONTRAGOLPE:</b>\nSeu adversário compra 1 carta.",
+    "NameEN": "Decepticod",
+    "DescEN": "<b>COUNTERATTACK:</b>\nYour opponent draws 1 card.",
+    "NameES": "Megatún",
+    "DescES": "<b>VENGANZA:</b>\nTu contrincante roba 1 carta.",
+    "NameFR": "Megathon",
+    "DescFR": "<b>CONTRE COUP :</b>\nVotre adversaire pioche 1 carte.",
+    "NameRU": "Мегатон",
+    "DescRU": "<b>КОНТРАТАКА:</b>\nпротивник берет 1 карту."
+  }
+}

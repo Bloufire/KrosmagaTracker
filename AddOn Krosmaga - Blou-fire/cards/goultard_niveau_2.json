@@ -1,0 +1,33 @@
+{
+  "Id": 425,
+  "Name": "goultard_niveau_2",
+  "CardType": 0,
+  "CostAP": 8,
+  "Life": 2,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 10,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    435
+  ],
+  "Texts": {
+    "NameBR": "Gultar",
+    "DescBR": "<b>INICIATIVA</b>\n<b>MORTE:</b> Transforma-se em Dark Vlad.",
+    "NameEN": "Goultard",
+    "DescEN": "<b>FIRST STRIKE</b>\n<b>DEATH:</b> Transforms into Dark Vlad.",
+    "NameES": "Gúltar",
+    "DescES": "<b>INICIATIVA</b>\n<b>MUERTE:</b> Se transforma en Dark Vlad.",
+    "NameFR": "Goultard",
+    "DescFR": "<b>INITIATIVE</b>\n<b>MORT :</b> Se transforme en Dark Vlad.",
+    "NameRU": "Гултар",
+    "DescRU": "<b>ПЕРВЫЙ УДАР</b>\n<b>СМЕРТЬ:</b> превращается в Темного Влада."
+  }
+}

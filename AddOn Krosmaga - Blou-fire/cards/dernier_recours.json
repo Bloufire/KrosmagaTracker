@@ -1,0 +1,31 @@
+{
+  "Id": 42,
+  "Name": "dernier_recours",
+  "CardType": 1,
+  "CostAP": 4,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    2
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 2,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Último Recurso",
+    "DescBR": "Elimina o <b>alcance</b>\r\nde uma invocação e dobra o <b>AT</b> dela.",
+    "NameEN": "Last Resort",
+    "DescEN": "Removes a Minion's <b>range</b>\r\nand doubles its <b>AT</b>.",
+    "NameES": "Último Recurso",
+    "DescES": "Elimina el <b>alcance</b>\r\nde una invocación y dobla su <b>AT</b>.",
+    "NameFR": "Dernier Recours",
+    "DescFR": "Supprime la <b>portée</b>\r\nd'une invocation et double son <b>AT</b>.",
+    "NameRU": "Крайнее средство",
+    "DescRU": "Обнуляет <b>дальность атаки</b> выбранного существа и удваивает его <b>AT</b>."
+  }
+}

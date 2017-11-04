@@ -1,0 +1,31 @@
+{
+  "Id": 171,
+  "Name": "laon_epee_filante",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 4,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 8,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Spad Akadente",
+    "DescBR": "<b>CONTRAGOLPE:</b>\nGanha +1 <b>AT</b> e +1 <b>AR</b>.",
+    "NameEN": "Falyn Sword",
+    "DescEN": "<b>COUNTERATTACK:</b>\nGains +1 <b>AT</b> and +1 <b>AR</b>.",
+    "NameES": "Gades Espada Fugaz",
+    "DescES": "<b>VENGANZA:</b>\nGana +1 <b>AT</b> y +1 <b>AR</b>.",
+    "NameFR": "Laon Epée Filante",
+    "DescFR": "<b>CONTRE COUP :</b>\nGagne +1 <b>AT</b> et +1 <b>AR</b>.",
+    "NameRU": "Лаон Летящий меч",
+    "DescRU": "<b>КОНТРАТАКА:</b>\nполучает +1 <b>AT</b> и +1 <b>БР</b>."
+  }
+}

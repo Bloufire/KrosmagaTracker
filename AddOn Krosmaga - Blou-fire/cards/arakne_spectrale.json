@@ -1,0 +1,31 @@
+{
+  "Id": 40,
+  "Name": "arakne_spectrale",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 6,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    12
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Arakne Espectral",
+    "DescBR": "Volta para a sua mão\r\nse ela tiver 1 <b>PV</b> restante.",
+    "NameEN": "Spectral Arachnee",
+    "DescEN": "Returns to your hand\r\nif it has 1 <b>HP</b> remaining.",
+    "NameES": "Arakna espectral",
+    "DescES": "Sube a tu mano\r\nsi le queda 1 <b>PdV</b>.",
+    "NameFR": "Arakne Spectrale",
+    "DescFR": "Remonte dans votre main\r\ns'il lui reste 1 <b>PV</b>.",
+    "NameRU": "Призрачный арахни",
+    "DescRU": "Возвращается к вам в руку, \r\nесли у него остается 1 <b>ОЗ</b>."
+  }
+}

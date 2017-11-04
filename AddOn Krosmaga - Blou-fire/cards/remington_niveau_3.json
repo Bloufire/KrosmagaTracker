@@ -1,0 +1,31 @@
+{
+  "Id": 74,
+  "Name": "remington_niveau_3",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    46
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 14,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Remington Smif",
+    "DescBR": "<b>ALCANCE:</b> 1-3\n<b>APARIÇÃO:</b> Transforme um prisma em bomba.",
+    "NameEN": "Remington Smisse",
+    "DescEN": "<b>RANGE:</b> 1-3\n<b>APPEARANCE:</b> Transforms a prism into a Bomb.",
+    "NameES": "Remington Smis",
+    "DescES": "<b>ALCANCE:</b> 1-3\n<b>APARICIÓN:</b> Transformas un prisma en bomba.",
+    "NameFR": "Remington Smisse",
+    "DescFR": "<b>PORTÉE :</b> 1-3\n<b>APPARITION :</b> Transformez un prisme en Bombe.",
+    "NameRU": "Ремингтон Смисс",
+    "DescRU": "<b>ДАЛЬНОСТЬ АТАКИ:</b> 1-3\n<b>ПОЯВЛЕНИЕ:</b> превращает призму в бомбу."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 1434,
+  "Name": "art_du_fourrage",
+  "CardType": 1,
+  "CostAP": 10,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 10,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "A Arte da Bagunça",
+    "DescBR": "Devolve todas as invocações à mão do dono.",
+    "NameEN": "Art of Stuffing",
+    "DescEN": "Return all Minions to their owner's hand.",
+    "NameES": "Arte del Forraje",
+    "DescES": "Sube todas las invocaciones a la mano de su propietario.",
+    "NameFR": "Art Du Fourrage",
+    "DescFR": "Remonte toutes les invocations dans la main de leur propriétaire.",
+    "NameRU": "Чудеса на фуражах",
+    "DescRU": "Возвращает всех существ в руку хозяина."
+  }
+}

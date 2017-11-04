@@ -1,0 +1,31 @@
+{
+  "Id": 476,
+  "Name": "chatar",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 3,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 4,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Gatar",
+    "DescBR": "<b>APARIÇÃO:</b>\nGanha+2 <b>AT OU</b> perde 2 PV.",
+    "NameEN": "Catar",
+    "DescEN": "<b>APPEARANCE:</b>\nGains +2 <b>AT OR</b> suffers 2 damage.",
+    "NameES": "Gatar",
+    "DescES": "<b>APARICIÓN:</b>\nGana +2 <b>AT O</b> pierde 2 <b>PdV</b>.",
+    "NameFR": "Chatar",
+    "DescFR": "<b>APPARITION :</b>\nGagne +2 <b>AT OU</b> s'inflige 2 dégâts.",
+    "NameRU": "Кошар",
+    "DescRU": "<b>ПОЯВЛЕНИЕ</b>\nПолучает +2 <b>AT ИЛИ</b> наносит себе 2 единицы урона."
+  }
+}

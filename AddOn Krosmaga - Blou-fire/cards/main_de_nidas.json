@@ -1,0 +1,29 @@
+{
+  "Id": 651,
+  "Name": "main_de_nidas",
+  "CardType": 1,
+  "CostAP": 6,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 5,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Mão de Nidas",
+    "DescBR": "Transforma uma\r\ninvocação em <b>Espólio</b>.",
+    "NameEN": "Nidas's Hand",
+    "DescEN": "Transforms a\r\nMinion into <b>Loot</b>.",
+    "NameES": "Mano de Nidas",
+    "DescES": "Transforma una\r\ninvocación en <b>botín</b>.",
+    "NameFR": "Main de Nidas",
+    "DescFR": "Transforme une\r\ninvocation en <b>Butin</b>.",
+    "NameRU": "Касание Ниддаса",
+    "DescRU": "Превращает выбранное\r\nсущество в <b>добычу</b>."
+  }
+}

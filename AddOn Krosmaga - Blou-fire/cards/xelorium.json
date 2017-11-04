@@ -1,0 +1,31 @@
+{
+  "Id": 282,
+  "Name": "xelorium",
+  "CardType": 1,
+  "CostAP": 0,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 7,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Xelorium",
+    "DescBR": "Rouba todos os <b>PA</b> da <b>reserva</b> adversária e os adiciona à sua.",
+    "NameEN": "Xelorium",
+    "DescEN": "Steal all the <b>AP</b> from your opponent's <b>reserve</b> and add them to yours.",
+    "NameES": "Xelorium",
+    "DescES": "Roba todos los <b>PA</b> de la <b>reserva</b> enemiga para añadirlos a la tuya.",
+    "NameFR": "Xélorium",
+    "DescFR": "Vole tous les <b>PA</b> de la <b>réserve</b> adverse pour les ajouter à la votre.",
+    "NameRU": "Кселориум",
+    "DescRU": "Крадет все <b>ОД</b> из <b>резерва</b> противника и добавляет их в ваш резерв."
+  }
+}

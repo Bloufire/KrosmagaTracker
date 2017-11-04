@@ -1,0 +1,31 @@
+{
+  "Id": 382,
+  "Name": "sangsuce_tsu_tsu",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    62
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Csé Csé Sanguessuga",
+    "DescBR": "Todas as curas tornam-se danos.",
+    "NameEN": "Bloodsucker Tsu Tsu",
+    "DescEN": "All heals become damage.",
+    "NameES": "Sanguijuela Tsu Tsu",
+    "DescES": "Todas las curas se convierten en daños.",
+    "NameFR": "Sangsuce Tsu Tsu",
+    "DescFR": "Tous les soins deviennent des dégâts.",
+    "NameRU": "Пилявка Цуцу",
+    "DescRU": "Эффекты, восстанавливающие здоровье, вместо этого наносят урон."
+  }
+}

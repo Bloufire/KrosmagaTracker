@@ -1,0 +1,32 @@
+{
+  "Id": 1169,
+  "Name": "paladir_sacri_h",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 8,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    6,
+    77
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 8,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Herói Mártir",
+    "DescBR": "Inflige 3 danos às invocações adversárias quando um Dofus aliado é destruído.",
+    "NameEN": "Martyred Hero",
+    "DescEN": "Inflicts 3 damage on enemy Minions whenever an allied Dofus is destroyed.",
+    "NameES": "Héroe mártir",
+    "DescES": "Causa 3 de daño a las invocaciones enemigas cuando se destruye un dofus aliado.",
+    "NameFR": "Héros Martyr",
+    "DescFR": "Inflige 3 dégâts aux invocations adverses quand un Dofus allié est détruit.",
+    "NameRU": "Герой-мученик",
+    "DescRU": "Наносит 3 ед. урона существам противника при уничтожении союзного дофуса."
+  }
+}

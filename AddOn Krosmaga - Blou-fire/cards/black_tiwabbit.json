@@ -1,0 +1,31 @@
+{
+  "Id": 322,
+  "Name": "black_tiwabbit",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 1,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    18
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Black Pekewabbit",
+    "DescBR": "<b>APARIÇÃO:</b>\nInflige 1 dano.",
+    "NameEN": "Black Tiwabbit",
+    "DescEN": "<b>APPEARANCE:</b>\nInflicts 1 damage.",
+    "NameES": "Black pekewabbit",
+    "DescES": "<b>APARICIÓN:</b>\nInfliges 1 de daño.",
+    "NameFR": "Black Tiwabbit",
+    "DescFR": "<b>APPARITION :</b>\nInfligez 1 dégât.",
+    "NameRU": "Черный тыкволик",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nнаносит 1 единицу урона."
+  }
+}

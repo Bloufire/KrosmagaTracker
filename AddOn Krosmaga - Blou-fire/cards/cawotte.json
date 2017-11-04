@@ -1,0 +1,31 @@
+{
+  "Id": 326,
+  "Name": "cawotte",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 2,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    29
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Cenouwa",
+    "DescBR": "<b>MURO</b>\n<b>FIM DO TURNO:</b>\nCura 1 <b>PV</b>\r\n de seus Wabbits.",
+    "NameEN": "Cawwot",
+    "DescEN": "<b>WALL</b>\n<b>END OF TURN:</b>\nHeals your Wabbits\r\nby 1 <b>HP</b>.",
+    "NameES": "Zanahowia",
+    "DescES": "<b>MURO</b>\n<b>FIN DEL TURNO:</b>\nCura 1 <b>PdV</b>\r\na tus wabbits.",
+    "NameFR": "Cawotte",
+    "DescFR": "<b>MUR</b>\n<b>FIN DU TOUR :</b>\nSoigne vos Wabbits\r\nde 1 <b>PV</b>.",
+    "NameRU": "Мовковь",
+    "DescRU": "<b>СТЕНА</b>\n<b>КОНЕЦ ХОДА:</b> восстанавливает вашим кволикам 1 <b>ОЗ</b>."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 511,
+  "Name": "comte_harebourg_niveau_2",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 4,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 21,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Conde Traspafrent",
+    "DescBR": "Enquanto ele estiver no jogo,\r\nas invocações aliadas coletam duas vezes\r\nos prismas.",
+    "NameEN": "Count Harebourg",
+    "DescEN": "As long as he is in play,\r\nallied Minions pick up\r\ntwice as many prisms.",
+    "NameES": "Conde Kontatrás",
+    "DescES": "Mientras esté en juego,\r\nlas invocaciones aliadas consiguen dos veces\r\nlos prismas.",
+    "NameFR": "Comte Harebourg",
+    "DescFR": "Tant qu'il est en jeu,\r\nles invocations alliées ramassent deux fois\r\nles prismes.",
+    "NameRU": "Граф Хронограф",
+    "DescRU": "Пока он находится в игре,\r\nсоюзные существа собирают\r\nв два раза больше призм."
+  }
+}

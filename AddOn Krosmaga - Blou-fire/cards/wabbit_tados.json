@@ -1,0 +1,31 @@
+{
+  "Id": 275,
+  "Name": "wabbit_tados",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 2,
+  "Attack": 3,
+  "MovementPoint": 2,
+  "Families": [
+    18
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Wabbit Mondiosso",
+    "DescBR": "<b>APARIÇÃO:</b> \n<b>Dá uma investida</b> ao longo de 2 células por cada Cenouwa aliada presente no jogo.",
+    "NameEN": "Boney Wabbit",
+    "DescEN": "<b>APPEARANCE:</b> \n<b>Charges</b> 2 cells per allied Cawwot in play.",
+    "NameES": "Wabbit huesudo",
+    "DescES": "<b>APARICIÓN:</b> \n<b>Carga</b> 2 casillas por cada zanahowia aliada en juego.",
+    "NameFR": "Wabbit Tados",
+    "DescFR": "<b>APPARITION :</b> \n<b>Charge</b> de 2 cases par Cawotte alliée en jeu.",
+    "NameRU": "Кволик-кучакост",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nделает <b>рывок</b> на 2 клетки за каждую союзную мовковь в игре."
+  }
+}

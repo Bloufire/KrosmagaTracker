@@ -1,0 +1,31 @@
+{
+  "Id": 724,
+  "Name": "larve_blanche",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 1,
+  "MovementPoint": 2,
+  "Families": [
+    16
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Larva Branca",
+    "DescBR": "Enquanto ela está em jogo,\r\nos primas não ativam mais seus efeitos.",
+    "NameEN": "White Larva",
+    "DescEN": "As long as it is in play,\r\nprisms' effects are not triggered.",
+    "NameES": "Larva blanca",
+    "DescES": "Mientras esté en juego,\r\nlos prismas no producen efecto.",
+    "NameFR": "Larve blanche",
+    "DescFR": "Tant qu'elle est en jeu,\r\nles prismes ne déclenchent pas leurs effets.",
+    "NameRU": "Белая личинка",
+    "DescRU": "Пока она находится в игре, эффекты призм не работают."
+  }
+}

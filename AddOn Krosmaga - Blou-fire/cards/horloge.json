@@ -1,0 +1,31 @@
+{
+  "Id": 12,
+  "Name": "horloge",
+  "CardType": 1,
+  "CostAP": 0,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 7,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Relógio",
+    "DescBR": "Recupere um feitiço <b>Sinistro</b> da sua lixeira.",
+    "NameEN": "Clock",
+    "DescEN": "Return a <b>Sinistro</b> spell to your hand from your discard pile.",
+    "NameES": "Reloj",
+    "DescES": "Recuperas un hechizo <b>Siniestro</b> de tu descarte.",
+    "NameFR": "Horloge",
+    "DescFR": "Récupère un sort <b>Sinistro</b> de votre défausse.",
+    "NameRU": "Часы",
+    "DescRU": "Возвращает заклинание <b>«Часовище»</b> из вашего сброса."
+  }
+}

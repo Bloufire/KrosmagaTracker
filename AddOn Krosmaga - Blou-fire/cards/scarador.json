@@ -1,0 +1,31 @@
+{
+  "Id": 187,
+  "Name": "scarador",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    23
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Scarador",
+    "DescBR": "<b>APARIÇÃO:</b>\nSeus outros Scaras\r\nganham +3 <b>AR</b>.",
+    "NameEN": "Scarador",
+    "DescEN": "<b>APPEARANCE:</b>\nYour other Scaras\r\ngain +3 <b>AR</b>.",
+    "NameES": "Escaradoro",
+    "DescES": "<b>APARICIÓN:</b>\nTus demás escaras\r\nganan +3 <b>AR</b>.",
+    "NameFR": "Scarador",
+    "DescFR": "<b>APPARITION :</b>\nVos autres Scaras\r\ngagnent +3 <b>AR</b>.",
+    "NameRU": "Скарадор",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nдает другим вашим\r\nскара +3 <b>БР</b>."
+  }
+}

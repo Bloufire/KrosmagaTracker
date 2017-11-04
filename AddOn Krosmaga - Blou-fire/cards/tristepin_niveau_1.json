@@ -1,0 +1,32 @@
+{
+  "Id": 8,
+  "Name": "tristepin_niveau_1",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    1,
+    33
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 18,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Tristepan",
+    "DescBR": "<b>INVESTIDA:</b>\nGanha <b>iniciativa</b> se houver outro membro aliado da Confraria do Tofu em jogo.",
+    "NameEN": "Percedal",
+    "DescEN": "<b>CHARGE</b>\nGains <b>first strike</b> if another allied member of the Brotherhood of the Tofu is in play.",
+    "NameES": "Tristepin",
+    "DescES": "<b>CARGA</b>\nGana <b>iniciativa</b> si tienes otro miembro de la Hermandad del Tofu en juego.",
+    "NameFR": "Tristepin",
+    "DescFR": "<b>CHARGE</b>\nGagne <b>initiative</b> si un autre membre allié de la Confrérie du Tofu est en jeu.",
+    "NameRU": "Персидаль",
+    "DescRU": "<b>РЫВОК</b>\nПолучает свойство <b>«первый удар»</b>, если в игре есть союзник из Братства тофу."
+  }
+}

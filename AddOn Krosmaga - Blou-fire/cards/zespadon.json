@@ -1,0 +1,31 @@
+{
+  "Id": 460,
+  "Name": "zespadon",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 4,
+  "Attack": 5,
+  "MovementPoint": 2,
+  "Families": [
+    40
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Peixezpada",
+    "DescBR": "<b>APARIÇÃO:</b>\nInflige 1 dano\r\nà primeira invocação diante dele.",
+    "NameEN": "Zordfish",
+    "DescEN": "<b>APPEARANCE:</b>\nInflicts 1 damage\r\non the first Minion in front of it.",
+    "NameES": "Pez zespadín",
+    "DescES": "<b>APARICIÓN:</b>\nInflige 1 de daño\r\na la primera invocación delante de él.",
+    "NameFR": "Zespadon",
+    "DescFR": "<b>APPARITION :</b>\nInflige 1 dégât\r\nà la première invocation devant lui.",
+    "NameRU": "Рыбомеч",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nнаносит 1 единицу урона\r\nпервому существу перед собой."
+  }
+}

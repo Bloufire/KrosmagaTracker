@@ -1,0 +1,31 @@
+{
+  "Id": 958,
+  "Name": "chafer_arc",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 2,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    28
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Chafer Perseguidor",
+    "DescBR": "<b>MONTE DE OSSOS</b>\n<b>ALCANCE:</b> 1-3\n<b>APARIÇÃO:</b> Destrua um <b>Monte de Ossos</b> aliado para que ele dê uma investida de 2 células.",
+    "NameEN": "Tracker Chafer",
+    "DescEN": "<b>PILE OF BONES</b>\n<b>RANGE:</b> 1-3\n<b>APPEARANCE:</b> Destroy an allied <b>Pile of Bones</b> to make it charge 2 cells.",
+    "NameES": "Chafer rastreador",
+    "DescES": "<b>MONTÓN DE HUESOS</b>\n<b>ALCANCE:</b> 1-3\n<b>APARICIÓN:</b> Destruye un <b>montón de huesos</b> aliado para hacer que cargue 2 casillas.",
+    "NameFR": "Chafer Traqueur",
+    "DescFR": "<b>TAS D'OS</b>\n<b>PORTÉE :</b> 1-3\n<b>APPARITION :</b> Détruisez un <b>tas d’os</b> allié pour le faire charger de 2 cases.",
+    "NameRU": "Чафер-загонщик",
+    "DescRU": "<b>КУЧА КОСТЕЙ</b>\n<b>ДАЛЬНОСТЬ АТАКИ:</b> 1-3\n<b>ПОЯВЛЕНИЕ:</b> уничтожьте союзную <b>кучу костей</b>, чтобы он сделал рывок на 2 клетки."
+  }
+}

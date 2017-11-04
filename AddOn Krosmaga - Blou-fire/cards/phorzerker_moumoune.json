@@ -1,0 +1,31 @@
+{
+  "Id": 1199,
+  "Name": "phorzerker_moumoune",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 7,
+  "Attack": 7,
+  "MovementPoint": 2,
+  "Families": [
+    81
+  ],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Perforzerker",
+    "DescBR": "",
+    "NameEN": "Drhellzerker",
+    "DescEN": "",
+    "NameES": "Perfórserker",
+    "DescES": "",
+    "NameFR": "Phorzerker",
+    "DescFR": "",
+    "NameRU": "Хоррсерк",
+    "DescRU": ""
+  }
+}

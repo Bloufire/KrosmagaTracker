@@ -1,0 +1,32 @@
+{
+  "Id": 1683,
+  "Name": "necrome_cra_h",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 4,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    2,
+    78
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 2,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Empalador Emboscado",
+    "DescBR": "<b>NECROMO</b>\n<b>ALCANCE:</b> 1-3\nConfere <b>vulnerabilidade</b>: 1\r\nàs invocações adversárias se você estiver em <b>minoria</b>.",
+    "NameEN": "Ambushing Impaler",
+    "DescEN": "<b>NECRO</b>\n<b>RANGE:</b> 1-3\nGives <b>vulnerability</b>: 1\r\nto enemy Minions if you are <b>outnumbered</b>.",
+    "NameES": "Empalador emboscado",
+    "DescES": "<b>NÉCROMO</b>\n<b>ALCANCE:</b> 1-3\nDa <b>vulnerabilidad</b>: 1\r\na las invocaciones enemigas si estás en <b>inferioridad numérica</b>.",
+    "NameFR": "Empaleur Embusqué",
+    "DescFR": "<b>NÉCROME</b>\n<b>PORTÉE :</b> 1-3\nDonne <b>vulnérabilité</b> : 1\r\naux invocations adverses si vous êtes en <b>sous nombre</b>.",
+    "NameRU": "Загнанный пронзатель",
+    "DescRU": "<b>НЕКРОМАН</b>\n<b>ДАЛЬНОСТЬ АТАКИ:</b> 1-3\nЕсли вы <b>в меньшинстве</b>,\r\nсущества противника получают <b>уязвимость</b> 1."
+  }
+}

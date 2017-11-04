@@ -1,0 +1,31 @@
+{
+  "Id": 203,
+  "Name": "muloune",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 4,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    15
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Miloba",
+    "DescBR": "<b>APARIÇÃO:</b>\nColoca na sua mão\r\no primeiro Milobo do\r\nseu bolo.",
+    "NameEN": "Boowolfine",
+    "DescEN": "<b>APPEARANCE:</b>\nPuts the first Boowolf\r\nfrom your deck\r\nin your hand.",
+    "NameES": "Mediuluba",
+    "DescES": "<b>APARICIÓN:</b>\nColoca en tu mano\r\nel primer milubo\r\nde tu mazo.",
+    "NameFR": "Muloune",
+    "DescFR": "<b>APPARITION:</b>\nPlace dans votre main\r\nle premier Mulou de\r\nvotre pioche.",
+    "NameRU": "Боеволчица",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nвы берете\r\nпервого боеволка\r\nиз своей колоды."
+  }
+}

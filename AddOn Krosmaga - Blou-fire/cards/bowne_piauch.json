@@ -1,0 +1,31 @@
+{
+  "Id": 177,
+  "Name": "bowne_piauch",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 5,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 4,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Bowa Sort",
+    "DescBR": "<b>APARIÇÃO:</b>\nCada jogador compra 1 carta do bolo do adversário.",
+    "NameEN": "Goud Drawr",
+    "DescEN": "<b>APPEARANCE:</b>\nEach player draws 1 card from their opponent's deck.",
+    "NameES": "Bwen Man",
+    "DescES": "<b>APARICIÓN:</b>\nCada jugador roba 1 carta del mazo del contrincante.",
+    "NameFR": "Bowne Piauch",
+    "DescFR": "<b>APPARITION :</b>\nChaque joueur pioche 1 carte de la pioche adverse.",
+    "NameRU": "Берри Дарри",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nкаждый игрок берет 1 карту из колоды противника."
+  }
+}

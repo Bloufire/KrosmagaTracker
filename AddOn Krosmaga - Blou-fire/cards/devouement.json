@@ -1,0 +1,33 @@
+{
+  "Id": 216,
+  "Name": "devouement",
+  "CardType": 1,
+  "CostAP": 8,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 7,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    530
+  ],
+  "Texts": {
+    "NameBR": "Devoção",
+    "DescBR": "Transforma uma invocação em Múmia aliada.",
+    "NameEN": "Devotion",
+    "DescEN": "Transforms a Minion into an allied Mummy.",
+    "NameES": "Devoción",
+    "DescES": "Transforma una invocación en momia aliada.",
+    "NameFR": "Dévouement",
+    "DescFR": "Transforme une invocation en Momie alliée.",
+    "NameRU": "Преданность",
+    "DescRU": "Превращает существо в союзную мумию."
+  }
+}

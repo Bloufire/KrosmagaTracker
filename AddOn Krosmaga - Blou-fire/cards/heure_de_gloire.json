@@ -1,0 +1,35 @@
+{
+  "Id": 27,
+  "Name": "heure_de_gloire",
+  "CardType": 1,
+  "CostAP": 0,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 1,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 29,
+    "ParentCard": 390,
+    "ParentLevel": 9
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Hora da Glória",
+    "DescBR": "Gasta seus <b>PA</b>\r\nrestantes para dar a uma invocação +1 <b>AT</b> e +1 <b>AR</b> por <b>PA</b> utilizado.",
+    "NameEN": "Hour of Glory",
+    "DescEN": "Spend all your remaining <b>AP</b>\r\nto give a Minion +1 <b>AT</b> and +1 <b>AR</b> per <b>AP</b> used.",
+    "NameES": "Hora de Gloria",
+    "DescES": "Gastas tus <b>PA</b>\r\nrestantes para darle a una invocación +1 <b>AT</b> y +1 <b>AR</b> por cada <b>PA</b> utilizado.",
+    "NameFR": "Heure de Gloire",
+    "DescFR": "Dépense vos <b>PA</b>\r\nrestants pour donner à une invocation +1 <b>AT</b> et +1 <b>AR</b> par <b>PA</b> utilisé.",
+    "NameRU": "Час славы",
+    "DescRU": "Использует ваши оставшиеся <b>ОД</b>\r\nи дает выбранному существу +1 <b>AT</b> и +1 <b>БР</b> за каждое использованное <b>ОД</b>."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "Id": 1172,
+  "Name": "necrome_sacrier_f",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 6,
+  "Attack": 6,
+  "MovementPoint": 2,
+  "Families": [
+    6,
+    78
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 8,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Campeã Sangrenta",
+    "DescBR": "<b>NECROMO</b>\n<b>APARIÇÃO:</b> Ganha +1 <b>AR</b> por cada invocação\r\nadversária presente no jogo.",
+    "NameEN": "Bloody Champion",
+    "DescEN": "<b>NECRO</b>\n<b>APPEARANCE:</b> Gains +1 <b>AR</b> per enemy\r\nMinion in play.",
+    "NameES": "Campeona sangrante",
+    "DescES": "<b>NÉCROMO</b>\n<b>APARICIÓN:</b> Gana +1 <b>AR</b> por cada invocación\r\nenemiga en juego.",
+    "NameFR": "Championne Sanglante",
+    "DescFR": "<b>NÉCROME</b>\n<b>APPARITION :</b> Gagne +1 <b>AR</b> par invocation\r\nadverse en jeu.",
+    "NameRU": "Кровавая чемпионка",
+    "DescRU": "<b>НЕКРОМАН</b>\n<b>ПОЯВЛЕНИЕ:</b> получает +1 <b>БР</b> за каждое существо противника в игре."
+  }
+}

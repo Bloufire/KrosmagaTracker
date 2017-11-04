@@ -1,0 +1,33 @@
+{
+  "Id": 449,
+  "Name": "graines_de_sacrifice",
+  "CardType": 1,
+  "CostAP": 5,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 10,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    522
+  ],
+  "Texts": {
+    "NameBR": "Sementes de Sacrifício",
+    "DescBR": "Transforma suas <b>Sementes</b> em Bonecas Sacrificadas.",
+    "NameEN": "Sacrificial Seeds",
+    "DescEN": "Transforms your <b>Seeds</b> into Sacrificed Dolls.",
+    "NameES": "Semillas de Sacrificio",
+    "DescES": "Tus <b>semillas</b> se transforman en muñecas sacrificadas.",
+    "NameFR": "Graines de Sacrifice",
+    "DescFR": "Transforme vos <b>Graines</b> en Poupées Sacrifiées.",
+    "NameRU": "Семена жертвоприношения",
+    "DescRU": "Превращает ваши <b>семена</b> в жертвокукол."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 711,
+  "Name": "vampyro_niveau_1",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 4,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    82
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 593,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Wagnar",
+    "DescBR": "<b>HORDA</b>\n<b>APARIÇÃO:</b>\nTodos os feitiços do\r\nseu jogo custam\r\n1 <b>PA</b> a menos.",
+    "NameEN": "Wagnar",
+    "DescEN": "<b>HORDE</b>\n<b>APPEARANCE:</b>\nAll your\r\nspells cost\r\n1 <b>AP</b> less.",
+    "NameES": "Wagnar",
+    "DescES": "<b>HORDA</b>\n<b>APARICIÓN:</b>\nTodos los hechizos de\r\ntu juego cuestan\r\n1 <b>PA</b> menos.",
+    "NameFR": "Wagnar",
+    "DescFR": "<b>HORDE</b>\n<b>APPARITION :</b>\nTous les sorts de\r\nvotre jeu coûtent\r\n1 <b>PA</b> de moins.",
+    "NameRU": "Вагнар",
+    "DescRU": "<b>ОРДА</b>\n<b>ПОЯВЛЕНИЕ:</b>\n уменьшает стоимость\r\nвсех ваших заклинаний\r\nна 1 <b>ОД</b>."
+  }
+}

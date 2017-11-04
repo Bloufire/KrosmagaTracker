@@ -1,0 +1,31 @@
+{
+  "Id": 132,
+  "Name": "ush_niveau_1",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 13,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Ush",
+    "DescBR": "<b>APARIÇÃO:</b>\nMove o Dofus aliado\r\nda fileira dele para a posição de um Dofus aliado destruído.",
+    "NameEN": "Ush",
+    "DescEN": "<b>APPEARANCE:</b>\nMoves the allied Dofus from\r\nits row to the position of a destroyed allied Dofus.",
+    "NameES": "Ush",
+    "DescES": "<b>APARICIÓN:</b>\nColoca el dofus aliado de\r\nsu hilera en el lugar de un dofus aliado destruido.",
+    "NameFR": "Ush",
+    "DescFR": "<b>APPARITION :</b>\nDéplacez le Dofus allié de\r\nsa ligne sur la position d'un Dofus allié détruit.",
+    "NameRU": "Уш",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\n переставьте союзный дофус\r\n на его линии на место разбитого союзного дофуса."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 119,
+  "Name": "bouftou_celeste",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 5,
+  "Attack": 6,
+  "MovementPoint": 3,
+  "Families": [
+    14
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Papatudo Celestial",
+    "DescBR": "<b>NÃO VISÁVEL</b>\n<b>MORTE:</b> Recupera o último Papatudo que custe até 6 <b>PA</b> enviado para a sua lixeira.",
+    "NameEN": "Celestial Gobball",
+    "DescEN": "<b>UNTARGETABLE</b>\n<b>DEATH:</b> Retrieve the last Gobball costing 6 <b>AP</b> or less that went to your discard pile.",
+    "NameES": "Jalató Celestial",
+    "DescES": "<b>ESCURRIDIZO</b>\n<b>MUERTE:</b> Recupera el último jalató que cueste 6 <b>PA</b> o menos enviado a tu descarte.",
+    "NameFR": "Bouftou Céleste",
+    "DescFR": "<b>INCIBLABLE</b>\n<b>MORT :</b> Récupère le dernier Bouftou coûtant 6 <b>PA</b> ou moins parti dans votre défausse.",
+    "NameRU": "Небесный бараглот",
+    "DescRU": "<b>НЕВЫЦЕЛИВАЕМЫЙ</b>\n<b>СМЕРТЬ:</b> возвращает из сброса последнего бараглота стоимостью не более 6 <b>ОД</b>."
+  }
+}

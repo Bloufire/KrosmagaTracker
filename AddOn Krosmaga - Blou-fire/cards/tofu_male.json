@@ -1,0 +1,31 @@
+{
+  "Id": 67,
+  "Name": "tofu_male",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    13
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Tofu Macho",
+    "DescBR": "",
+    "NameEN": "Male Tofu",
+    "DescEN": "",
+    "NameES": "Tofu macho",
+    "DescES": "",
+    "NameFR": "Tofu Male",
+    "DescFR": "",
+    "NameRU": "Тофу-самец",
+    "DescRU": ""
+  }
+}

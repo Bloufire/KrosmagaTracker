@@ -1,0 +1,29 @@
+{
+  "Id": 220,
+  "Name": "blanquette",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Cozido",
+    "DescBR": "Cura os <b>PV</b> perdidos por uma invocação.",
+    "NameEN": "Blanquette",
+    "DescEN": "Heals a Minion's missing <b>HP.</b>",
+    "NameES": "Chuleta",
+    "DescES": "Cura los <b>PdV</b> que le faltan a una invocación.",
+    "NameFR": "Blanquette",
+    "DescFR": "Soigne les <b>PV</b> manquants  d'une invocation.",
+    "NameRU": "Жаркое",
+    "DescRU": "Восстанавливает все <b>ОЗ</b> выбранному существу."
+  }
+}

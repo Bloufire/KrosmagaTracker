@@ -1,0 +1,32 @@
+{
+  "Id": 908,
+  "Name": "paladir_eca_f",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    8,
+    77
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 4,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Sentinela Esperta",
+    "DescBR": "Ganha +1 <b>AT</b> e +1 <b>AR</b>\r\na cada arremesso de dado ou moeda do aliado.",
+    "NameEN": "Sharp Sentinel",
+    "DescEN": "Gains +1 <b>AT</b> and +1 <b>AR</b>\r\nwhenever an allied die or coin is thrown.",
+    "NameES": "Centinela cortante",
+    "DescES": "Gana +1 <b>AT</b> y +1 <b>AR</b>\r\npor cada lanzamiento de dado o de moneda aliados.",
+    "NameFR": "Sentinelle Affutée",
+    "DescFR": "Gagne +1 <b>AT</b> et +1 <b>AR</b>\r\nà chaque lancer de dé ou de pièce alliés.",
+    "NameRU": "Бдительная дозорная",
+    "DescRU": "Получает +1 <b>AT</b> и +1 <b>БР</b>\r\nпри каждом броске кости или монеты союзниками."
+  }
+}

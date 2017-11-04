@@ -1,0 +1,31 @@
+{
+  "Id": 533,
+  "Name": "chafer_token",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 1,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    28
+  ],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Chafer Decrépito",
+    "DescBR": "<b>INAMOVÍVEL</b>",
+    "NameEN": "Decrepit Chafer",
+    "DescEN": "<b>IRREMOVABLE</b>",
+    "NameES": "Chafer decrépito",
+    "DescES": "<b>INAMOVIBLE:</b>",
+    "NameFR": "Chafer Décrépit",
+    "DescFR": "<b>INAMOVIBLE</b>",
+    "NameRU": "Чахлый чафер",
+    "DescRU": "<b>НЕЛЬЗЯ СДВИНУТЬ</b>"
+  }
+}

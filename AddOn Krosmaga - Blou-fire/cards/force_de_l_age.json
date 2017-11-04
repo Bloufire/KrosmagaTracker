@@ -1,0 +1,29 @@
+{
+  "Id": 1010,
+  "Name": "force_de_l_age",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 5,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Flor da Idade",
+    "DescBR": "Confere <b>+1 AT</b> e <b>+1 AR</b> a uma invocação por Enutrof aliado presente no jogo.",
+    "NameEN": "Prime of Life",
+    "DescEN": "Confers <b>+1 AT</b> and <b>+1 AR</b> per allied Enutrof in play on a Minion.",
+    "NameES": "Fuerza de la Edad",
+    "DescES": "Da a una invocación <b>+1 AT</b> y <b>+1 AR</b> por cada anutrof aliado en juego.",
+    "NameFR": "Force de l'Âge",
+    "DescFR": "Confère à une invocation <b>+1 AT</b> et <b>+1 AR</b> par Enutrof allié en jeu.",
+    "NameRU": "Мои года — мое богатство",
+    "DescRU": "Дает выбранному существу +1 <b>AT</b> и +1 <b>БР</b> за каждого союзного энутрофа в игре."
+  }
+}

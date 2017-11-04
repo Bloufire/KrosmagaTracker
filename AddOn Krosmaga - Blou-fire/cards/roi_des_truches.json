@@ -1,0 +1,31 @@
+{
+  "Id": 246,
+  "Name": "roi_des_truches",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 5,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    26
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Rei dos Truzes",
+    "DescBR": "Anula as habilidades de mudança de fileira e de proprietário dos seus Truzes.",
+    "NameEN": "King of the Striches",
+    "DescEN": "Disables your Striches' change row and change owner skills.",
+    "NameES": "Rey de las pestruces",
+    "DescES": "Anula las habilidades de cambio de hilera y cambio de propietario de tus pestruces.",
+    "NameFR": "Roi des Truches",
+    "DescFR": "Annule les compétences de changement de ligne et de propriétaire de vos Truches.",
+    "NameRU": "Король страшусов",
+    "DescRU": "Ваши страшусы теряют способность переходить на другую линию и к другому хозяину."
+  }
+}

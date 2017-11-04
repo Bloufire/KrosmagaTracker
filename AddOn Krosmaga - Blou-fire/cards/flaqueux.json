@@ -1,0 +1,31 @@
+{
+  "Id": 358,
+  "Name": "flaqueux",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 2,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    58
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Charcoso",
+    "DescBR": "<b>ALCANCE:</b> 1-2",
+    "NameEN": "Puddly",
+    "DescEN": "<b>RANGE:</b> 1-2",
+    "NameES": "Charcoso",
+    "DescES": "<b>ALCANCE:</b> 1-2",
+    "NameFR": "Flaqueux",
+    "DescFR": "<b>PORTÉE :</b> 1-2",
+    "NameRU": "Кляксер",
+    "DescRU": "<b>ДАЛЬНОСТЬ АТАКИ:</b> 1-2"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 1219,
+  "Name": "bebe_phorreur_corrompu",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 1,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    20
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Bebê Perfuratroz Corrompido",
+    "DescBR": "<b>MORTE:</b> Compre 1 carta do adversário.",
+    "NameEN": "Corrupted Young Drheller",
+    "DescEN": "<b>DEATH:</b> Draw 1 card from your opponent's deck.",
+    "NameES": "Bebé perforatroz corrupto",
+    "DescES": "<b>MUERTE:</b> Robas 1 carta de tu contrincante.",
+    "NameFR": "Bébé Phorreur Corrompu",
+    "DescFR": "<b>MORT :</b> Piochez 1 carte chez votre adversaire.",
+    "NameRU": "Хитрый малыш хорроройка",
+    "DescRU": "<b>СМЕРТЬ:</b> вы берете 1 карту из колоды противника."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 211,
+  "Name": "rituel_sram",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    5
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 6,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Ritual Sram",
+    "DescBR": "Cada jogador descarta\r\nas 3 primeiras cartas de seu bolo.",
+    "NameEN": "Sram Ritual",
+    "DescEN": "Each player discards\r\nthe first 3 cards from their deck.",
+    "NameES": "Ritual de Sram",
+    "DescES": "Cada jugador descarta\r\nlas 3 primeras cartas de su mazo.",
+    "NameFR": "Rituel Sram",
+    "DescFR": "Chaque joueur défausse\r\nles 3 premières cartes de sa pioche.",
+    "NameRU": "Ритуал Срама",
+    "DescRU": "Каждый игрок сбрасывает 3 первые карты из своей колоды."
+  }
+}

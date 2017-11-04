@@ -1,0 +1,31 @@
+{
+  "Id": 986,
+  "Name": "goule_hache",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 4,
+  "Attack": 6,
+  "MovementPoint": 3,
+  "Families": [
+    82
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Carniçal Amme",
+    "DescBR": "<b>HORDA</b>\n<b>CONTRAGOLPE:</b> Morre.",
+    "NameEN": "Ghoul Ash",
+    "DescEN": "<b>HORDE</b>\n<b>COUNTERATTACK:</b> Dies.",
+    "NameES": "Ghul Ash",
+    "DescES": "<b>HORDA</b>\n<b>VENGANZA:</b>Muere.",
+    "NameFR": "Goule Ash",
+    "DescFR": "<b>HORDE</b>\n<b>CONTRE COUP :</b> Meurt.",
+    "NameRU": "Гуль Эш",
+    "DescRU": "<b>ОРДА</b>\n<b>КОНТРАТАКА:</b> умирает."
+  }
+}

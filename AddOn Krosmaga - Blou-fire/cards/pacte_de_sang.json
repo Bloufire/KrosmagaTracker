@@ -1,0 +1,31 @@
+{
+  "Id": 62,
+  "Name": "pacte_de_sang",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 8,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Pacto de Sangue",
+    "DescBR": "Inflige 1 dano às invocações aliadas e depois lhes confere +1 <b>AT</b>.",
+    "NameEN": "Blood Pact",
+    "DescEN": "Inflicts 1 damage on allied Minions, then confers +1 <b>AT</b> on them.",
+    "NameES": "Pacto de Sangre",
+    "DescES": "Inflige 1 de daño a las invocaciones aliadas y les da +1 <b>AT</b>.",
+    "NameFR": "Pacte de Sang",
+    "DescFR": "Inflige 1 dégât aux invocations alliées puis leur confère +1 <b>AT</b>.",
+    "NameRU": "Пакт на крови",
+    "DescRU": "Наносит 1 ед. урона союзным существам, а затем дает им +1 <b>AT</b>."
+  }
+}

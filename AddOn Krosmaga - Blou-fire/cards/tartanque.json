@@ -1,0 +1,31 @@
+{
+  "Id": 313,
+  "Name": "tartanque",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 1,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    52
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Moloch",
+    "DescBR": "<b>APARIÇÃO:</b>\nSacrifique uma de suas invocações para ganhar +4 <b>AT</b> e +4 <b>AR</b>.",
+    "NameEN": "Moloch",
+    "DescEN": "<b>APPEARANCE:</b>\nSacrifice one of your Minions to gain +4 <b>AT</b> and +4 <b>AR</b>.",
+    "NameES": "Slashand",
+    "DescES": "<b>APARICIÓN:</b>\nSacrificas a 1 de tus invocaciones para ganar +4 <b>AT</b> y +4 <b>AR</b>.",
+    "NameFR": "Tartanque",
+    "DescFR": "<b>APPARITION :</b>\nSacrifiez une de vos invocations pour gagner +4 <b>AT</b> et +4 <b>AR</b>.",
+    "NameRU": "Тартанк",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nпожертвуйте одним из своих существ, чтобы получить +4 <b>AT</b> и +4 <b>БР</b>."
+  }
+}

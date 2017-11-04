@@ -1,0 +1,33 @@
+{
+  "Id": 311,
+  "Name": "kabrok_niveau_1",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 4,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    10
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 17,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    144
+  ],
+  "Texts": {
+    "NameBR": "Kabrok",
+    "DescBR": "<b>APARIÇÃO:</b>\nAdiciona 2 Corvocs à sua mão.",
+    "NameEN": "Kabrok",
+    "DescEN": "<b>APPEARANCE:</b>\nAdds 2 Crobaks to your hand.",
+    "NameES": "Kabrok",
+    "DescES": "<b>APARICIÓN:</b>\nAñade 2 cuerboks a tu mano.",
+    "NameFR": "Kabrok",
+    "DescFR": "<b>APPARITION :</b>\nAjoute 2 Corbacs à votre main.",
+    "NameRU": "Каброк",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nдает вам в руку 2 карбаков."
+  }
+}

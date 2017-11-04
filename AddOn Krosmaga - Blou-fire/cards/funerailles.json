@@ -1,0 +1,31 @@
+{
+  "Id": 1477,
+  "Name": "funerailles",
+  "CardType": 1,
+  "CostAP": 0,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    5
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 6,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Funeral",
+    "DescBR": "Descarta 3 Srams\r\ndo seu bolo.",
+    "NameEN": "Funeral",
+    "DescEN": "Discards 3 Srams\r\nfrom your deck.",
+    "NameES": "Funeral",
+    "DescES": "Descarta 3 srams\r\nde tu mazo.",
+    "NameFR": "Funérailles",
+    "DescFR": "Défausse 3 Srams\r\nde votre pioche.",
+    "NameRU": "Погребение",
+    "DescRU": "Сбрасывает 3 срамов\r\nиз вашей колоды."
+  }
+}

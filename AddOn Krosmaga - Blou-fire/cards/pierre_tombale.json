@@ -1,0 +1,31 @@
+{
+  "Id": 283,
+  "Name": "pierre_tombale",
+  "CardType": 0,
+  "CostAP": 0,
+  "Life": 3,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    5
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 6,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Lápide",
+    "DescBR": "<b>MURO</b>\n<b>APARIÇÃO:</b>\nDescarta as 3 primeiras cartas do seu bolo.",
+    "NameEN": "Tombstone",
+    "DescEN": "<b>WALL</b>\n<b>APPEARANCE:</b>\nDiscard the first 3 cards of your deck.",
+    "NameES": "Lápida",
+    "DescES": "<b>MURO</b>\n<b>APARICIÓN:</b>\nDescarta las 3 primeras cartas de tu mazo.",
+    "NameFR": "Pierre Tombale",
+    "DescFR": "<b>MUR</b>\n<b>APPARITION :</b>\nDéfausse les 3 premières cartes de votre pioche.",
+    "NameRU": "Могильный камень",
+    "DescRU": "<b>СТЕНА</b>\n<b>ПОЯВЛЕНИЕ</b>\nСбрасывает 3 первые карты из вашей колоды."
+  }
+}

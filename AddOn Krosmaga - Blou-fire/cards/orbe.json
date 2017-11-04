@@ -1,0 +1,31 @@
+{
+  "Id": 870,
+  "Name": "orbe",
+  "CardType": 1,
+  "CostAP": 4,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    605
+  ],
+  "Texts": {
+    "NameBR": "Orbe",
+    "DescBR": "Inflige 2 danos\r\na uma invocação. Se você tiver 3 Orbes na mão, eles se fundirão para criar um Orbe Dourado.",
+    "NameEN": "Orb",
+    "DescEN": "Inflicts 2 damage\r\non a Minion. If you have 3 Orbs in your hand, they merge to create a Golden Orb.",
+    "NameES": "Orbe",
+    "DescES": "Inflige 2 de daño\r\na una invocación. Si tienes 3 orbes en tu mano, se fusionan y crean un orbe dorado.",
+    "NameFR": "Orbe",
+    "DescFR": "Inflige 2 dégâts\r\nà une invocation. Si vous avez 3 Orbes en main, ils fusionnent pour créer un Orbe Doré.",
+    "NameRU": "Сфера",
+    "DescRU": "Наносит выбранному\r\nсуществу 2 ед. урона. Если у вас в руке есть 3 сферы, они сливаются и образуют золотую сферу."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 808,
+  "Name": "tolot",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 2,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    4
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 5,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Brasiwawa",
+    "DescBR": "Enquanto ele estiver no jogo, seus <b>Espólios</b> são gratuitos.",
+    "NameEN": "Toot",
+    "DescEN": "As long as it is in play, your <b>Loot</b> is free.",
+    "NameES": "Tolot",
+    "DescES": "Mientras esté en juego, tus <b>botines</b> son gratuitos.",
+    "NameFR": "Tolot",
+    "DescFR": "Tant qu'il est en jeu vos <b>Butins</b> sont gratuits.",
+    "NameRU": "Толо",
+    "DescRU": "Пока он находится в игре, ваша <b>добыча</b> ничего не стоит."
+  }
+}

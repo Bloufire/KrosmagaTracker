@@ -1,0 +1,32 @@
+{
+  "Id": 707,
+  "Name": "necrome_enu_h",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 7,
+  "Attack": 4,
+  "MovementPoint": 2,
+  "Families": [
+    4,
+    78
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 5,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Campeão Caduco",
+    "DescBR": "<b>NECROMO</b>\n<b>INAMOVÍVEL</b>",
+    "NameEN": "Decrepit Champion",
+    "DescEN": "<b>NECRO</b>\n<b>IRREMOVABLE</b>",
+    "NameES": "Campeón carcamal",
+    "DescES": "<b>NÉCROMO</b>\n<b>INAMOVIBLE</b>",
+    "NameFR": "Champion Croulant",
+    "DescFR": "<b>NÉCROME</b>\n<b>INAMOVIBLE</b>",
+    "NameRU": "Чемпион-развалина",
+    "DescRU": "<b>НЕКРОМАН</b>\n<b>НЕЛЬЗЯ СДВИНУТЬ</b>"
+  }
+}

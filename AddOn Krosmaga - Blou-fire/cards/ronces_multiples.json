@@ -1,0 +1,31 @@
+{
+  "Id": 442,
+  "Name": "ronces_multiples",
+  "CardType": 1,
+  "CostAP": 7,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 10,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Sarças Múltiplas",
+    "DescBR": "Inflige <b>silêncio</b> às invocações adversárias e cura 3 <b>PV</b> de suas invocações.",
+    "NameEN": "Manifold Bramble",
+    "DescEN": "<b>Silences</b> enemy Minions and heals your Minions by 3 <b>HP</b>.",
+    "NameES": "Zarzas Múltiples",
+    "DescES": "Inflige <b>silencio</b> a las invocaciones enemigas y cura 3 <b>PdV</b> a tus invocaciones.",
+    "NameFR": "Ronces Multiples",
+    "DescFR": "Réduit les invocations adverses au <b>silence</b> et soigne de 3 <b>PV</b> vos invocations.",
+    "NameRU": "Колючие заросли",
+    "DescRU": "Налагает на существ противника <b>немоту</b> и восстанавливает вашим существам 3 <b>ОЗ</b>."
+  }
+}

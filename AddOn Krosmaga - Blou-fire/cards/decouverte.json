@@ -1,0 +1,29 @@
+{
+  "Id": 1029,
+  "Name": "decouverte",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 5,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Descoberta",
+    "DescBR": "Faz seus prismas reaparecerem.",
+    "NameEN": "Discovery",
+    "DescEN": "Makes your prisms reappear.",
+    "NameES": "Descubrimiento",
+    "DescES": "Hace que los prismas vuelvan a aparecer.",
+    "NameFR": "Découverte",
+    "DescFR": "Fait à nouveau apparaitre vos prismes.",
+    "NameRU": "Открытие",
+    "DescRU": "Ваши призмы появляются снова."
+  }
+}

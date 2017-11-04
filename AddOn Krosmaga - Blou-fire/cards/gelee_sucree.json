@@ -1,0 +1,31 @@
+{
+  "Id": 1711,
+  "Name": "gelee_sucree",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 2,
+  "Attack": 3,
+  "MovementPoint": 2,
+  "Families": [
+    30
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Gelatina Doce",
+    "DescBR": "<b>APARIÇÃO:</b>\nColoca na sua mão\r\nas 2 primeiras Gelatinas\r\ndo seu bolo.",
+    "NameEN": "Sugary Jelly",
+    "DescEN": "<b>APPEARANCE:</b>\nPut the first 2 Jellies\r\nfrom your deck\r\nin your hand.",
+    "NameES": "Gelatina azucarada",
+    "DescES": "<b>APARICIÓN:</b>\nColoca en tu mano\r\nlas 2 primeras gelatinas\r\nde tu mazo.",
+    "NameFR": "Gelée Sucrée",
+    "DescFR": "<b>APPARITION :</b>\nPlace dans votre main\r\nles 2 premières Gelées\r\nde votre pioche.",
+    "NameRU": "Сладкое желе",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nвы берете 2 первых желе из своей колоды."
+  }
+}

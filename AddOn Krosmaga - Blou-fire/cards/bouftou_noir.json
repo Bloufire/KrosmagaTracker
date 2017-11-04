@@ -1,0 +1,31 @@
+{
+  "Id": 36,
+  "Name": "bouftou_noir",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    14
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Papatudo Negro",
+    "DescBR": "",
+    "NameEN": "Black Gobball",
+    "DescEN": "",
+    "NameES": "Jalató negro",
+    "DescES": "",
+    "NameFR": "Bouftou Noir",
+    "DescFR": "",
+    "NameRU": "Черный бараглот",
+    "DescRU": ""
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 452,
+  "Name": "cactoblong",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 6,
+  "Attack": 6,
+  "MovementPoint": 3,
+  "Families": [
+    52
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Cactoblongo",
+    "DescBR": "<b>APARIÇÃO:</b>\nSofre 2 danos.",
+    "NameEN": "Saguaro",
+    "DescEN": "<b>APPEARANCE:</b>\nSuffers 2 damage.",
+    "NameES": "Cactoblongo",
+    "DescES": "<b>APARICIÓN:</b>\nSe inflige 2 de daño.",
+    "NameFR": "Cactoblong",
+    "DescFR": "<b>APPARITION :</b>\nS'inflige 2 dégâts.",
+    "NameRU": "Длинноктус",
+    "DescRU": "<b>ПОЯВЛЕНИЕ</b>\nнаносит себе 2 единицы урона."
+  }
+}

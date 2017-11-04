@@ -1,0 +1,31 @@
+{
+  "Id": 136,
+  "Name": "tofu_explosif",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 1,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    13
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Tofu Explosivo",
+    "DescBR": "<b>MORTE:</b>\nInflige às invocações adversárias 1 dano por cada Tofu aliado presente no jogo.",
+    "NameEN": "Explosive Tofu",
+    "DescEN": "<b>DEATH:</b>\nInflicts 1 damage per allied Tofu in play on enemy Minions.",
+    "NameES": "Tofu explosivo",
+    "DescES": "<b>MUERTE:</b>\nInflige 1 de daño a las invocaciones enemigas por cada tofu aliado en juego.",
+    "NameFR": "Tofu Explosif",
+    "DescFR": "<b>MORT :</b>\nInflige aux invocations adverses 1 dégât par Tofu allié en jeu.",
+    "NameRU": "Взрывоопасный тофу",
+    "DescRU": "<b>СМЕРТЬ:</b>\nнаносит существам противника 1 единицу урона за каждого союзного тофу в игре."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 1175,
+  "Name": "camouflage",
+  "CardType": 1,
+  "CostAP": 0,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    2
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 2,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Camuflagem",
+    "DescBR": "Confere <b>inamovível</b>\r\n a uma invocação.",
+    "NameEN": "Camouflage",
+    "DescEN": "Confers <b>irremovable</b>\r\non a Minion.",
+    "NameES": "Camuflaje",
+    "DescES": "Otorga <b>inamovible</b>\r\na una invocación.",
+    "NameFR": "Camouflage",
+    "DescFR": "Confère <b>inamovible</b>\r\nà une invocation.",
+    "NameRU": "Маскировка",
+    "DescRU": "Выбранное существо получает свойство <b>«нельзя сдвинуть»</b>."
+  }
+}

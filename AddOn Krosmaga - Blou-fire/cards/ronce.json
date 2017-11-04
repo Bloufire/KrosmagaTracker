@@ -1,0 +1,33 @@
+{
+  "Id": 316,
+  "Name": "ronce",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 10,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    537
+  ],
+  "Texts": {
+    "NameBR": "Sarça",
+    "DescBR": "Inflige 2 danos.\r\nAdiciona uma <b>Semente</b> à sua mão se a invocação morrer.",
+    "NameEN": "Bramble",
+    "DescEN": "Inflicts 2 damage.\r\nAdds one <b>Seed</b> to your hand if the Minion dies.",
+    "NameES": "Zarza",
+    "DescES": "Inflige 2 de daño.\r\nAñade una <b>semilla</b> a tu mano si la invocación muere.",
+    "NameFR": "Ronce",
+    "DescFR": "Inflige 2 dégâts.\r\nAjoute une <b>Graine</b> à votre main si l'invocation meurt.",
+    "NameRU": "Колючка",
+    "DescRU": "Наносит 2 ед. урона.\r\nЕсли существо погибает, дает вам в руку <b>семя</b>."
+  }
+}

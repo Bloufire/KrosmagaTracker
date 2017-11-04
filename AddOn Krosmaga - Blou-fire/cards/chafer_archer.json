@@ -1,0 +1,31 @@
+{
+  "Id": 198,
+  "Name": "chafer_archer",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 1,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    28
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Chafer Arqueiro",
+    "DescBR": "<b>MONTE DE OSSOS</b>\n<b>ALCANCE:</b> 1-2\n<b>APARIÇÃO:</b> Coloca um <b>Monte de Ossos</b> no seu <b>lado</b>.",
+    "NameEN": "Chafer Archer",
+    "DescEN": "<b>PILE OF BONES</b>\n<b>RANGE:</b> 1-2\n<b>APPEARANCE:</b> Puts a <b>Pile of Bones</b> on your <b>side.</b>",
+    "NameES": "Chafer arquero",
+    "DescES": "<b>MONTÓN DE HUESOS</b>\n<b>ALCANCE:</b> 1-2\n<b>APARICIÓN:</b> Coloca un <b>montón de huesos</b> en tu <b>lado</b>.",
+    "NameFR": "Chafer Archer ",
+    "DescFR": "<b>TAS D'OS</b>\n<b>PORTÉE :</b> 1-2\n<b>APPARITION :</b> Placez un <b>tas d'os</b> dans votre <b>camp</b>.",
+    "NameRU": "Чафер-лучник",
+    "DescRU": "<b>КУЧА КОСТЕЙ</b>\n<b>ДАЛЬНОСТЬ АТАКИ:</b> 1-2\n<b>ПОЯВЛЕНИЕ:</b> положите <b>кучу костей</b> на своей <b>половине поля</b>."
+  }
+}

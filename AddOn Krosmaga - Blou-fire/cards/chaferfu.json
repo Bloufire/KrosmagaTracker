@@ -1,0 +1,31 @@
+{
+  "Id": 386,
+  "Name": "chaferfu",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 4,
+  "Attack": 4,
+  "MovementPoint": 2,
+  "Families": [
+    28
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Chaferloko",
+    "DescBR": "<b>MONTE DE OSSOS</b>\n<b>Teletransporta-se</b> por 2 células quando um Chafer aliado morre.",
+    "NameEN": "Chaferfu",
+    "DescEN": "<b>PILE OF BONES</b>\n<b>Teleports</b> 2 cells whenever an ally dies.",
+    "NameES": "Chaferloko",
+    "DescES": "<b>MONTÓN DE HUESOS</b>\nSe <b>teletransporta</b> 2 casillas cuando un chafer aliado muere.",
+    "NameFR": "Chaferfu",
+    "DescFR": "<b>TAS D'OS</b>\nSe <b>téléporte</b> de 2 cases quand un Chafer allié meurt.",
+    "NameRU": "Буйночафер",
+    "DescRU": "<b>КУЧА КОСТЕЙ</b>\n<b>Телепортируется</b> на 2 клетки, когда погибает союзный чафер."
+  }
+}

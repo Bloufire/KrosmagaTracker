@@ -1,0 +1,31 @@
+{
+  "Id": 837,
+  "Name": "piege_explosif_actif_ext1",
+  "CardType": 1,
+  "CostAP": 0,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    5
+  ],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 6,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Armadilha Explosiva Ativada",
+    "DescBR": "Inflige 2 danos às suas invocações. Você tem 3 turnos para jogá-las, ou seus Dofus sofrerão 2 danos.",
+    "NameEN": "Activated Explosive Trap",
+    "DescEN": "Inflicts 2 damage on your Minions. You have 3 turns to play it, or all your Dofus will suffer 2 damage.",
+    "NameES": "Trampa explosiva activada",
+    "DescES": "Inflige 2 de daño a tus invocaciones. Tienes 3 turnos para jugarla o tus dofus sufrirán 2 de daño.",
+    "NameFR": "Piège Explosif Activé",
+    "DescFR": "Inflige 2 dégâts à vos invocations. Vous avez 3 tours pour le jouer ou vos Dofus subiront 2 dégâts.",
+    "NameRU": "Взведенная взрывная ловушка",
+    "DescRU": "Наносит 2 ед. урона вашим существам. Сыграйте ловушку за 3 ходов, иначе ваши дофусы получат 2 ед. урона."
+  }
+}

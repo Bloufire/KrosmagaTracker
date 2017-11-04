@@ -1,0 +1,31 @@
+{
+  "Id": 432,
+  "Name": "piou_bleu",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 4,
+  "Families": [
+    24
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Piu Azul",
+    "DescBR": "<b>APARIÇÃO:</b>\nDê +1 <b>AR</b> a uma invocação.",
+    "NameEN": "Blue Piwi",
+    "DescEN": "<b>APPEARANCE:</b>\nGives a Minion +1 <b>AR</b>.",
+    "NameES": "Pío azul",
+    "DescES": "<b>APARICIÓN:</b>\nDas +1 <b>AR</b> a una invocación.",
+    "NameFR": "Piou Bleu",
+    "DescFR": "<b>APPARITION :</b>\nDonnez +1 <b>AR</b> à une invocation.",
+    "NameRU": "Синяя пиви",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nдает выбранному существу +1 <b>БР</b>."
+  }
+}

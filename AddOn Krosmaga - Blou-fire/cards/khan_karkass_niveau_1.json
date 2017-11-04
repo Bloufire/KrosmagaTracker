@@ -1,0 +1,33 @@
+{
+  "Id": 161,
+  "Name": "khan_karkass_niveau_1",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 29,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    23
+  ],
+  "Texts": {
+    "NameBR": "Khan Karkass",
+    "DescBR": "<b>APARIÇÃO:</b>\nAdiciona 1 Fã à sua mão.",
+    "NameEN": "Khan Karkass",
+    "DescEN": "<b>APPEARANCE:</b>\nAdd 1 Fan to your hand.",
+    "NameES": "Khan Karkasa",
+    "DescES": "<b>APARICIÓN:</b>\nAñade 1 fan a tu mano.",
+    "NameFR": "Khan Karkass",
+    "DescFR": "<b>APPARITION :</b>\nAjoute 1 Fan à  votre main.",
+    "NameRU": "Хан Каркасс",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nдает вам в руку 1 фанатку."
+  }
+}

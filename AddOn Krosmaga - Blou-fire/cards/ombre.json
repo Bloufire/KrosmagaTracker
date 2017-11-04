@@ -1,0 +1,31 @@
+{
+  "Id": 66,
+  "Name": "ombre",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 3,
+  "Attack": 6,
+  "MovementPoint": 3,
+  "Families": [
+    60
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Sombra",
+    "DescBR": "<b>FIM DO TURNO:</b>\nColoca 1 carta da sua\r\nmão na do adversário e coloca 1 carta da mão do adversário na sua.",
+    "NameEN": "Shadow",
+    "DescEN": "<b>END OF TURN:</b>\nPut 1 card from your\r\nhand in your opponent's hand and put 1 card from your opponent's hand in your hand.",
+    "NameES": "Sombra",
+    "DescES": "<b>FIN DEL TURNO:</b>\nColoca 1 carta de tu mano en la mano enemiga y 1 carta de la mano enemiga en la tuya.",
+    "NameFR": "Ombre",
+    "DescFR": "<b>FIN DU TOUR :</b>\nPlace 1 carte de votre\r\nmain dans la main adverse et place 1 carte de la main adverse dans la votre.",
+    "NameRU": "Тень",
+    "DescRU": "<b>КОНЕЦ ХОДА:</b>\nдает 1 карту из вашей руки \r\nв руку противнику и 1 карту из руки противника — в вашу руку."
+  }
+}

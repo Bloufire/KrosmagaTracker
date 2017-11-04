@@ -1,0 +1,31 @@
+{
+  "Id": 926,
+  "Name": "colere_de_iop",
+  "CardType": 1,
+  "CostAP": 4,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 1,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Ira de Iop",
+    "DescBR": "Destrói todas as invocações com até\r\n2 <b>AT</b>.",
+    "NameEN": "Iop's Wrath",
+    "DescEN": "Destroys all Minions with\r\n2 <b>AT</b> or less.",
+    "NameES": "Ira de Yopuka",
+    "DescES": "Destruye todas las invocaciones que tengan\r\n2 <b>AT</b> o menos.",
+    "NameFR": "Colère de Iop",
+    "DescFR": "Détruit toutes les invocations ayant\r\n2 <b>AT</b> ou moins.",
+    "NameRU": "Ярость Иопа",
+    "DescRU": "Уничтожает всех существ с показателем\r\n<b>AT</b> 2 или меньше."
+  }
+}

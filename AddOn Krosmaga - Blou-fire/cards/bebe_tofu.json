@@ -1,0 +1,31 @@
+{
+  "Id": 531,
+  "Name": "bebe_tofu",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 1,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    13
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Bebê Tofu",
+    "DescBR": "<b>MORTE:</b> Seus Tofus\r\n<b>dão uma investida</b> ao longo de 1 célula.",
+    "NameEN": "Baby Tofu",
+    "DescEN": "<b>DEATH:</b> Your Tofus\r\n<b>charge</b> 1 cell.",
+    "NameES": "Bebé tofu",
+    "DescES": "<b>MUERTE:</b> Tus tofus\r\n<b>cargan</b> 1 casilla.",
+    "NameFR": "Bébé Tofu",
+    "DescFR": "<b>MORT :</b> Vos Tofus\r\n<b>chargent</b> de 1 case.",
+    "NameRU": "Малыш тофу",
+    "DescRU": "<b>СМЕРТЬ</b>\r\nВаши тофу делают <b>рывок</b> на 1 клетку."
+  }
+}

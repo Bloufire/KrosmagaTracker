@@ -1,0 +1,31 @@
+{
+  "Id": 468,
+  "Name": "garde_temps",
+  "CardType": 1,
+  "CostAP": 20,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 7,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Guarda-Tempo",
+    "DescBR": "Destrói um Dofus.",
+    "NameEN": "Timekeeper",
+    "DescEN": "Destroys a Dofus.",
+    "NameES": "Guarda Tiempo",
+    "DescES": "Destruye un dofus.",
+    "NameFR": "Garde Temps",
+    "DescFR": "Détruit un Dofus.",
+    "NameRU": "Хранитель времени",
+    "DescRU": "Разрушает выбранный дофус."
+  }
+}

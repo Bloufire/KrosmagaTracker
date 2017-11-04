@@ -1,0 +1,31 @@
+{
+  "Id": 319,
+  "Name": "chuchoteurs_fantassins",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 4,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    31
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Sussurradores de Infantaria",
+    "DescBR": "",
+    "NameEN": "Infantry Whisperers",
+    "DescEN": "",
+    "NameES": "Susurradores de infantería",
+    "DescES": "",
+    "NameFR": "Chuchoteurs Fantassins",
+    "DescFR": "",
+    "NameRU": "Шептуны-пехотинцы",
+    "DescRU": ""
+  }
+}

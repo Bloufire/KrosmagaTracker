@@ -1,0 +1,32 @@
+{
+  "Id": 844,
+  "Name": "necrome_xelor_h",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 4,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    9,
+    78
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 7,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Mestre Debulhador",
+    "DescBR": "<b>NECROMO</b>\n<b>APARIÇÃO:</b>\nAdiciona 5 <b>PA</b> à sua \r\n<b>reserva</b> se você estiver\r\nem <b>minoria</b>.",
+    "NameEN": "Master Teller",
+    "DescEN": "<b>NECRO</b>\n<b>APPEARANCE:</b>\nAdds 5 <b>AP</b> to your \r\n<b>reserve</b> if you are \r\n<b>outnumbered</b>.",
+    "NameES": "Maestro desgranador",
+    "DescES": "<b>NÉCROMO</b>\n<b>APARICIÓN:</b>\nAñade 5 <b>PA</b> a tu\r\n<b>reserva</b> si estás\r\nen <b>inferioridad numérica</b>.",
+    "NameFR": "Maître Egreneur",
+    "DescFR": "<b>NÉCROME</b>\n<b>APPARITION :</b>\nAjoute 5 <b>PA</b> à votre\r\n<b>réserve</b> si vous êtes\r\nen <b>sous nombre</b>.",
+    "NameRU": "Мастер-зацеплястер",
+    "DescRU": "<b>НЕКРОМАН</b>\n<b>ПОЯВЛЕНИЕ:</b>\nесли вы находитесь в меньшинстве, \r\nдобавляет в ваш <b>резерв</b>\r\n5 <b>ОД</b>."
+  }
+}

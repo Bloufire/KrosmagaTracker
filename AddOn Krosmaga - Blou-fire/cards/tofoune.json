@@ -1,0 +1,31 @@
+{
+  "Id": 105,
+  "Name": "tofoune",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    13
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Tofuna",
+    "DescBR": "<b>APARIÇÃO:</b>\nCompre 1 carta.\r\nSe não for um Tofu,\r\nela será descartada.",
+    "NameEN": "Tofoone",
+    "DescEN": "<b>APPEARANCE:</b>\nDraw 1 card.\r\nDiscard it if\r\nit is not a Tofu.",
+    "NameES": "Tofona",
+    "DescES": "<b>APARICIÓN:</b>\nRobas 1 carta.\r\nSi no es un tofu,\r\nse descarta.",
+    "NameFR": "Tofoune",
+    "DescFR": "<b>APPARITION :</b>\nPiochez 1 carte.\r\nSi ce n'est pas un Tofu\r\nelle est défaussée.",
+    "NameRU": "Тофунчик",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nвозьмите 1 карту.\r\nЕсли это не тофу,\r\nкарта сбрасывается."
+  }
+}

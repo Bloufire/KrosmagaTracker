@@ -1,0 +1,32 @@
+{
+  "Id": 1185,
+  "Name": "necrome_sadida_h",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 6,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    32,
+    78
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 10,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Errante Silvestre",
+    "DescBR": "<b>NECROMO</b>\n<b>APARIÇÃO:</b>\nSubstitui seus prismas\r\npor <b>Sementes</b>.",
+    "NameEN": "Sylvan Prowler",
+    "DescEN": "<b>NECRO</b>\n<b>APPEARANCE:</b>\nReplaces your prisms\r\nwith <b>Seeds</b>.",
+    "NameES": "Rondador silvestre",
+    "DescES": "<b>NÉCROMO</b>\n<b>APARICIÓN:</b>\nSustituye tus prismas\r\npor <b>semillas</b>.",
+    "NameFR": "Rôdeur Sylvestre",
+    "DescFR": "<b>NÉCROME</b>\n<b>APPARITION :</b>\nRemplace vos prismes\r\npar des <b>Graines</b>.",
+    "NameRU": "Лесной бродяга",
+    "DescRU": "<b>НЕКРОМАН</b>\n<b>ПОЯВЛЕНИЕ:</b> заменяет ваши призмы <b>семенами</b>."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 550,
+  "Name": "echaenge",
+  "CardType": 1,
+  "CostAP": 1,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 4,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Gato Por Lebre",
+    "DescBR": "Todos os jogadores compram 1 carta de seu adversário.",
+    "NameEN": "Meowxchange",
+    "DescEN": "Each player draws 1 card from their opponent.",
+    "NameES": "Gato por Liebre",
+    "DescES": "Cada jugador roba 1 carta de su contrincante.",
+    "NameFR": "Echaenge",
+    "DescFR": "Chaque joueur pioche 1 carte chez son adversaire.",
+    "NameRU": "Обмаен",
+    "DescRU": "Каждый игрок берет 1 карту у противника."
+  }
+}

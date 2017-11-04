@@ -1,0 +1,31 @@
+{
+  "Id": 1670,
+  "Name": "craqueleur_magmatique",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 3,
+  "Attack": 4,
+  "MovementPoint": 2,
+  "Families": [
+    22
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Smagabola Magmático",
+    "DescBR": "<b>RESISTÊNCIA:</b> 1\n<b>CONTRAGOLPE:</b> Inflige 2 danos ao adversário no corpo a corpo.",
+    "NameEN": "Magmatic Crackrock",
+    "DescEN": "<b>RESISTANCE:</b> 1\n<b>COUNTERATTACK:</b> Inflicts 2 damage on its opponent in close combat.",
+    "NameES": "Crujibola magmático",
+    "DescES": "<b>RESISTENCIA:</b> 1\n<b>VENGANZA:</b> Inflige 2 de daño a su enemigo en cuerpo a cuerpo.",
+    "NameFR": "Craqueboule Magmatique",
+    "DescFR": "<b>RÉSISTANCE :</b> 1\n<b>CONTRE COUP :</b> Inflige 2 dégâts à son adversaire au corps à corps.",
+    "NameRU": "Магмовый дробикамень",
+    "DescRU": "<b>СОПРОТИВЛЕНИЕ:</b> 1\n<b>КОНТРАТАКА:</b> наносит 2 единицы урона сопернику в рукопашном бою."
+  }
+}

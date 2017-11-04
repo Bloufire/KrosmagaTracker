@@ -1,0 +1,31 @@
+{
+  "Id": 667,
+  "Name": "phaeris_niveau_2",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 4,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    55
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 737,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Faeris",
+    "DescBR": "<b>APARIÇÃO:</b>\nReduz ao <b>silêncio</b> as invocações presentes\r\nno <b>lado do tabuleiro</b> do adversário.",
+    "NameEN": "Phaerys",
+    "DescEN": "<b>APPEARANCE:</b>\n<b>Silences</b> Minions on\r\nthe opponent's <b>side.</b>",
+    "NameES": "Faeris",
+    "DescES": "<b>APARICIÓN:</b>\nInflige <b>silencio</b> a las invocaciones que estén\r\nen el <b>lado del tablero</b> enemigo.",
+    "NameFR": "Phaeris",
+    "DescFR": "<b>APPARITION :</b>\nRéduit au <b>silence</b> les invocations présentes\r\ndans le <b>camp</b> adverse.",
+    "NameRU": "Фаэрис",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nналагает <b>немоту</b> на существ, стоящих\r\nна <b>половине поля</b> противника."
+  }
+}

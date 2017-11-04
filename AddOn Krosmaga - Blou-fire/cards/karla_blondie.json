@@ -1,0 +1,31 @@
+{
+  "Id": 101,
+  "Name": "karla_blondie",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 5,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 4,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Karla Blondie",
+    "DescBR": "<b>APARIÇÃO:</b>\nGanha <b>1d6</b> <b>AT</b>.",
+    "NameEN": "Karla Blondie",
+    "DescEN": "<b>APPEARANCE:</b>\nGains <b>1d6</b> <b>AT</b>.",
+    "NameES": "Karla Blondie",
+    "DescES": "<b>APARICIÓN:</b>\nGana <b>1d6</b> <b>AT</b>.",
+    "NameFR": "Karla Blondie",
+    "DescFR": "<b>APPARITION :</b>\nGagne <b>1d6</b> <b>AT</b>.",
+    "NameRU": "Карла Блонди",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nее показатель <b>AT</b> увеличивается на число, выпавшее на <b>1d6</b>."
+  }
+}

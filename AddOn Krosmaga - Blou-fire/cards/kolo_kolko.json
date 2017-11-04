@@ -1,0 +1,31 @@
+{
+  "Id": 562,
+  "Name": "kolo_kolko",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 5,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 10,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Kolo Kolko",
+    "DescBR": "Ganha <b>iniciativa</b> e <b>não visável</b> desde que você tenha uma <b>Semente</b> no jogo.",
+    "NameEN": "Kolo Kolko",
+    "DescEN": "Gains <b>first strike</b> and <b>untargetable</b> as long as you have a <b>Seed</b> in play.",
+    "NameES": "Kolo Kolko",
+    "DescES": "Gana <b>iniciativa</b> y <b>escurridizo</b> mientras tengas una <b>semilla</b> en juego.",
+    "NameFR": "Kolo Kolko",
+    "DescFR": "Gagne <b>initiative</b> et <b>inciblable</b> tant que vous avez une <b>Graine</b> en jeu.",
+    "NameRU": "Коло Колко",
+    "DescRU": "Получает свойства <b>«первый удар»</b> и <b>«невыцеливаемый»</b>, пока у вас в игре есть <b>семя</b>."
+  }
+}

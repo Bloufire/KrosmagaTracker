@@ -1,0 +1,31 @@
+{
+  "Id": 519,
+  "Name": "criblage",
+  "CardType": 1,
+  "CostAP": 8,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    2
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 2,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Crivagem",
+    "DescBR": "Inflige a um Dofus\r\numa quantidade de danos equivalente à de Cras aliados presentes no jogo.",
+    "NameEN": "Riddling",
+    "DescEN": "Inflicts as much damage on a Dofus\r\nas there are allied Cras in play.",
+    "NameES": "Acribillador",
+    "DescES": "Inflige a un dofus\r\ntantos daños como número de ocras tengas en juego.",
+    "NameFR": "Criblage",
+    "DescFR": "Inflige à un Dofus\r\nautant de dégâts que de Crâs alliés en jeu.",
+    "NameRU": "Расстрел",
+    "DescRU": "Наносит выбранному дофусу урон, равный количеству союзных кра в игре."
+  }
+}

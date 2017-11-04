@@ -1,0 +1,31 @@
+{
+  "Id": 336,
+  "Name": "chauve_souris",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    82
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Morcego",
+    "DescBR": "<b>HORDA</b>",
+    "NameEN": "Bat",
+    "DescEN": "<b>HORDE</b>",
+    "NameES": "Murciego",
+    "DescES": "<b>HORDA</b>",
+    "NameFR": "Chauve Souris",
+    "DescFR": "<b>HORDE</b>",
+    "NameRU": "Летучая мышь",
+    "DescRU": "<b>ОРДА</b>"
+  }
+}

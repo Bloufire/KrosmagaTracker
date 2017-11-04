@@ -1,0 +1,31 @@
+{
+  "Id": 86,
+  "Name": "eventrail",
+  "CardType": 1,
+  "CostAP": 4,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 1,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Ventania",
+    "DescBR": "Inflige 3 danos\r\nàs invocações adversárias de uma fileira.",
+    "NameEN": "Gutting Gust",
+    "DescEN": "Inflicts 3 damage\r\non enemy Minions on a row.",
+    "NameES": "Borrasca",
+    "DescES": "Inflige 3 de daño\r\na las invocaciones enemigas de una hilera.",
+    "NameFR": "Éventrail",
+    "DescFR": "Inflige 3 dégâts\r\naux invocations adverses d'une ligne.",
+    "NameRU": "Пронзание",
+    "DescRU": "Наносит 3 ед. урона\r\nсуществам противника на одной линии."
+  }
+}

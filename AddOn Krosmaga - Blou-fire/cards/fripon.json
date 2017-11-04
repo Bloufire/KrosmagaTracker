@@ -1,0 +1,31 @@
+{
+  "Id": 46,
+  "Name": "fripon",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 5,
+  "Attack": 3,
+  "MovementPoint": 2,
+  "Families": [
+    20
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Patife",
+    "DescBR": "<b>MORTE:</b>\nRecupera 1 carta aleatória da lixeira do adversário.",
+    "NameEN": "Rascal",
+    "DescEN": "<b>DEATH:</b>\nReturn 1 random card from the opponent's discard pile to your hand.",
+    "NameES": "Perfowarrior",
+    "DescES": "<b>MUERTE:</b>\nToma 1 carta aleatoria del descarte de tu contrincante.",
+    "NameFR": "Fripon",
+    "DescFR": "<b>MORT :</b>\nRécupère 1 carte aléatoire de la défausse adverse.",
+    "NameRU": "Картокрад",
+    "DescRU": "<b>СМЕРТЬ:</b>\nдает 1 случайную карту из сброса противника."
+  }
+}

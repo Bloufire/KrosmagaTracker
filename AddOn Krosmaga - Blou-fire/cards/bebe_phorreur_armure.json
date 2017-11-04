@@ -1,0 +1,31 @@
+{
+  "Id": 1473,
+  "Name": "bebe_phorreur_armure",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 1,
+  "Attack": 1,
+  "MovementPoint": 2,
+  "Families": [
+    20
+  ],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Bebê Perfuratroz Blindado",
+    "DescBR": "Ganha +1 <b>AT</b> e +1 <b>AR</b> quando um Perfuratroz aliado morre.",
+    "NameEN": "Armored Young Drheller",
+    "DescEN": "Gains +1 <b>AT</b> and +1 <b>AR</b> whenever an allied Drheller dies.",
+    "NameES": "Bebé perforatroz acorazado",
+    "DescES": "Gana +1 <b>AT</b> y +1 <b>AR</b> cuando un perforatroz aliado muere.",
+    "NameFR": "Bébé Phorreur Armuré",
+    "DescFR": "Gagne +1 <b>AT</b> et +1 <b>AR</b> quand un Phorreur allié meurt.",
+    "NameRU": "Бронемалыш хорроройка",
+    "DescRU": "Получает +1 <b>AT</b> и +1 <b>БР</b>, когда погибает союзная хорроройка."
+  }
+}

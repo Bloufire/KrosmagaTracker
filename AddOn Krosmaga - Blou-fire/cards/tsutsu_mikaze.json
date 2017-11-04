@@ -1,0 +1,33 @@
+{
+  "Id": 1344,
+  "Name": "tsutsu_mikaze",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 2,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    62
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    1344
+  ],
+  "Texts": {
+    "NameBR": "Csé Csé Mikaze",
+    "DescBR": "Adiciona um Csé Csé\r\nMikaze à sua mão se ele sobreviver aos danos.",
+    "NameEN": "Tsu Tsu Mikaze",
+    "DescEN": "Adds a Tsu Tsu Mikaze\r\nto your hand if it survives damage.",
+    "NameES": "Tsu Tsu mikaze",
+    "DescES": "Añade un Tsu Tsu\r\nmikaze a tu mano si sobrevive a algún daño.",
+    "NameFR": "Tsu Tsu Mikaze",
+    "DescFR": "Ajoute un Tsu Tsu\r\nMikaze à votre main s'il survit à des dégâts.",
+    "NameRU": "Цуцу Микадзе",
+    "DescRU": "Дает вам в руку \r\nЦуцу Микадзе, если выживает после атаки."
+  }
+}

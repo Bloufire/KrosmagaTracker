@@ -1,0 +1,31 @@
+{
+  "Id": 68,
+  "Name": "desynchronisation",
+  "CardType": 1,
+  "CostAP": 0,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 7,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Dessincronização",
+    "DescBR": "Gaste seus <b>PA</b> restantes para infligir uma quantidade equivalente\r\nde danos.",
+    "NameEN": "Desynchronization",
+    "DescEN": "Spend your remaining <b>AP</b> to inflict the equivalent amount\r\nin damage.",
+    "NameES": "Desincronización",
+    "DescES": "Gastas tus <b>PA</b> restantes para infligir\r\nlos daños equivalentes.",
+    "NameFR": "Désynchronisation",
+    "DescFR": "Dépense vos <b>PA</b> restants pour infliger l'équivalent\r\nen dégâts.",
+    "NameRU": "Рассинхронизация",
+    "DescRU": "Тратит оставшиеся у вас <b>ОД</b> и наносит столько же\r\nединиц урона."
+  }
+}

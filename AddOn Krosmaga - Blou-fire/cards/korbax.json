@@ -1,0 +1,31 @@
+{
+  "Id": 371,
+  "Name": "korbax",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 5,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    60
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Korvox",
+    "DescBR": "Ganha <b>iniciativa</b> e <b>não visável</b> desde que você tenha um Justiceiro no jogo.",
+    "NameEN": "Krobax",
+    "DescEN": "Gain <b>first strike</b> and <b>untargetable</b> so long as you have another Vigilante in play.",
+    "NameES": "Cuerbax",
+    "DescES": "Gana <b>iniciativa</b> y <b>escurridizo</b> mientras tengas otro justiciero en juego.",
+    "NameFR": "Korbax",
+    "DescFR": "Gagne <b>initiative</b> et <b>inciblable</b> tant que vous avez un autre Justicier en jeu.",
+    "NameRU": "Корбакс",
+    "DescRU": "Получает свойства <b>«первый удар»</b> и <b>«невыцеливаемый»</b>, пока у вас в игре есть другой мститель."
+  }
+}

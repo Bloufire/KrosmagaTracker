@@ -1,0 +1,31 @@
+{
+  "Id": 318,
+  "Name": "fleche_chercheuse",
+  "CardType": 1,
+  "CostAP": 1,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    2
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 2,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Flecha Guiada",
+    "DescBR": "Inflige 1 dano.\r\nSe a invocação for destruída, pegue este feitiço de volta. Ele custa 1 <b>PA</b> a mais.",
+    "NameEN": "Homing Arrow",
+    "DescEN": "Inflicts 1 damage;\r\nif the Minion is destroyed, retrieve this spell. It costs 1 <b>AP</b> more.",
+    "NameES": "Flecha Buscadora",
+    "DescES": "Inflige 1 de daño,\r\nsi la invocación muere, recuperas este hechizo. Cuesta 1 <b>PA</b> más.",
+    "NameFR": "Flèche Chercheuse",
+    "DescFR": "Inflige 1 dégât,\r\nsi l'invocation est détruite récupérez ce sort. Il coûte 1 <b>PA</b> de plus.",
+    "NameRU": "Стрела-бумеранг",
+    "DescRU": "Наносит 1 ед. урона.\r\nЕсли существо погибает, заклинание возвращается к вам. Его стоимость увеличивается на 1 <b>ОД</b>."
+  }
+}

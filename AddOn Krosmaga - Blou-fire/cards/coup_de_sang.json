@@ -1,0 +1,31 @@
+{
+  "Id": 213,
+  "Name": "coup_de_sang",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 8,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Golpe de Sangue",
+    "DescBR": "Confere a uma invocação a mesma quantidade de <b>AT</b> que ela tem de <b>PV</b>.",
+    "NameEN": "Blood Punch",
+    "DescEN": "Confers as many <b>AT</b> on a Minion as it has <b>HP</b>.",
+    "NameES": "Golpe Sangriento",
+    "DescES": "Da a una invocación tanto <b>AT</b> como <b>PdV</b> tenga.",
+    "NameFR": "Coup de Sang",
+    "DescFR": "Confère à une invocation autant d'<b>AT</b> qu'elle a de <b>PV</b>.",
+    "NameRU": "Вспышка гнева",
+    "DescRU": "Дает выбранному существу столько <b>AT</b>, сколько у него <b>ОЗ</b>."
+  }
+}

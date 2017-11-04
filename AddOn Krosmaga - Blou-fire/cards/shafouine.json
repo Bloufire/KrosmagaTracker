@@ -1,0 +1,33 @@
+{
+  "Id": 149,
+  "Name": "shafouine",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 4,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    151
+  ],
+  "Texts": {
+    "NameBR": "Bisbichana",
+    "DescBR": "<b>APARIÇÃO:</b>\nInvoca um Miaw Negro.",
+    "NameEN": "Shesearch",
+    "DescEN": "<b>APPEARANCE:</b>\nSummons a Black Bow Meow.",
+    "NameES": "Gatotilla",
+    "DescES": "<b>APARICIÓN:</b>\nInvoca un miaumiau negro.",
+    "NameFR": "Shafouine",
+    "DescFR": "<b>APPARITION :</b>\nInvoquez un Chacha Noir.",
+    "NameRU": "Люба Пытна",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nпризывает черного котокота."
+  }
+}

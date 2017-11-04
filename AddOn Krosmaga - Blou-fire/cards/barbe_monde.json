@@ -1,0 +1,33 @@
+{
+  "Id": 1464,
+  "Name": "barbe_monde",
+  "CardType": 0,
+  "CostAP": 9,
+  "Life": 7,
+  "Attack": 5,
+  "MovementPoint": 2,
+  "Families": [
+    74
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    843
+  ],
+  "Texts": {
+    "NameBR": "Bram Barbamundo",
+    "DescBR": "Invoca uma unidade de <b>Bambinões</b> diante dele após o deslocamento de todas as suas invocações.",
+    "NameEN": "Bram Beardamon",
+    "DescEN": "Summons a unit of <b>Dwarfants</b> in front of him after all of your Minions have moved.",
+    "NameES": "Bram Barbamundo",
+    "DescES": "Invoca una unidad de <b>enaniños</b> ante él, tras el desplazamiento de todas tus invocaciones.",
+    "NameFR": "Brâm Barbemonde",
+    "DescFR": "Invoque une unité de<b> Nainfants</b> devant lui après le déplacement de toutes vos invocations.",
+    "NameRU": "Брам Брадомир",
+    "DescRU": "Призывает отряд<b> гномчиков</b> перед собой после перемещения всех ваших существ."
+  }
+}

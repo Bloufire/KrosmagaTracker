@@ -1,0 +1,35 @@
+{
+  "Id": 502,
+  "Name": "pupuce",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    67
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 8,
+    "ParentCard": 453,
+    "ParentLevel": 9
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Pupulga",
+    "DescBR": "<b>APARIÇÃO:</b>\nEntra para a família da invocação visada.",
+    "NameEN": "Fleeflee",
+    "DescEN": "<b>APPEARANCE:</b>\nBecomes one of the targeted Minion's family.",
+    "NameES": "Pulguita",
+    "DescES": "<b>APARICIÓN:</b>\nEntra en la familia de la invocación seleccionada.",
+    "NameFR": "Pupuce",
+    "DescFR": "<b>APPARITION :</b>\nDevient de la famille de l'invocation ciblée.",
+    "NameRU": "Пупусь",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nпринимает класс выбранного существа."
+  }
+}

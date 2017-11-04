@@ -1,0 +1,31 @@
+{
+  "Id": 327,
+  "Name": "grinch",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 2,
+  "Families": [
+    54
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Grinch",
+    "DescBR": "<b>APARIÇÃO:</b>\nInflige <b>silêncio</b>\r\na uma invocação.",
+    "NameEN": "Grinch",
+    "DescEN": "<b>APPEARANCE:</b>\n<b>SILENCES</b>\r\na Minion.",
+    "NameES": "Grinch",
+    "DescES": "<b>APARICIÓN:</b>\nInfliges <b>silencio</b>\r\na una invocación.",
+    "NameFR": "Grinch",
+    "DescFR": "<b>APPARITION :</b>\nRéduisez une invocation\r\nau <b>silence</b>.",
+    "NameRU": "Гринч",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nналагает <b>немоту</b>\r\nна выбранное существо."
+  }
+}

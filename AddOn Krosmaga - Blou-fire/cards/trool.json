@@ -1,0 +1,31 @@
+{
+  "Id": 21,
+  "Name": "trool",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 7,
+  "Attack": 6,
+  "MovementPoint": 2,
+  "Families": [
+    73
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Trool",
+    "DescBR": "<b>APARIÇÃO:</b>\n<b>Empurra</b> uma invocação\r\nao longo de 2 células.",
+    "NameEN": "Trool",
+    "DescEN": "<b>APPEARANCE:</b>\n<b>Repels</b> a Minion\r\nby 2 cells.",
+    "NameES": "Trool",
+    "DescES": "<b>APARICIÓN:</b>\n<b>Empujas</b> una invocación\r\n2 casillas.",
+    "NameFR": "Trool",
+    "DescFR": "<b>APPARITION :</b>\n<b>Repoussez</b> une invocation\r\nde 2 cases.",
+    "NameRU": "Трулль",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b> <b>отталкивает</b> выбранное существо на 2 клетки."
+  }
+}

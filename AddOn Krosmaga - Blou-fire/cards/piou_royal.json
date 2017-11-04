@@ -1,0 +1,31 @@
+{
+  "Id": 52,
+  "Name": "piou_royal",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 5,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    24
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Piu Real",
+    "DescBR": "Enquanto ele está em jogo,\r\no custo dos seus Pius é reduzido em 2 <b>PA</b>.\n<b>CHEFE:</b>Seus outros Pius ganham\r\n+1 <b>AT</b>.",
+    "NameEN": "Royal Piwi",
+    "DescEN": "As long as it is in play,\r\nyour Piwis cost 2 <b>AP</b> less.\n<b>LEADER:</b> +1 <b>AT</b> to your\r\nother Piwis.",
+    "NameES": "Pío Real",
+    "DescES": "Mientras esté en juego,\r\nel coste de tus píos se reduce 2 <b>PA</b>.\n<b>LÍDER: </b> +1 <b>AT</b> a tus\r\ndemás píos.",
+    "NameFR": "Piou Royal",
+    "DescFR": "Tant qu'il est en jeu,\r\nle coût de vos Pious est réduit de 2 <b>PA</b>.\n<b>CHEF  : </b> +1 <b>AT</b> à vos\r\nautres Pious.",
+    "NameRU": "Королевская пиви",
+    "DescRU": "Пока она находится в игре,\r\nстоимость ваших пиви уменьшается на 2 <b>ОД</b>.\n<b>ВОЖАК: </b>дает другим вашим\r\nпиви +1 <b>AT</b>."
+  }
+}

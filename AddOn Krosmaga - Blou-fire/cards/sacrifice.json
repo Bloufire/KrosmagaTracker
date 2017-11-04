@@ -1,0 +1,31 @@
+{
+  "Id": 304,
+  "Name": "sacrifice",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 8,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Sacrifício",
+    "DescBR": "Sacrifique uma invocação sua para infligir uma quantidade de danos equivalente à dos <b>AT</b> dela a outra invocação.",
+    "NameEN": "Sacrifice",
+    "DescEN": "Sacrifice one of your Minions to inflict as much damage as it has <b>AT</b> on another Minion.",
+    "NameES": "Sacrificio",
+    "DescES": "Sacrificas una de tus invocaciones para infligir tantos daños como <b>AT</b> tenga a otra invocación.",
+    "NameFR": "Sacrifice",
+    "DescFR": "Sacrifiez une de vos invocations pour infliger autant de dégâts qu'elle a d'<b>AT</b> à une autre invocation.",
+    "NameRU": "Жертвоприношение",
+    "DescRU": "Пожертвуйте одним из своих существ, чтобы нанести другому существу урон, равный показателю <b>AT</b> первого существа."
+  }
+}

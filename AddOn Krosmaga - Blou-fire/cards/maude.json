@@ -1,0 +1,35 @@
+{
+  "Id": 586,
+  "Name": "maude",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 6,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    5
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 299,
+    "ParentCard": 652,
+    "ParentLevel": 9
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Maud",
+    "DescBR": "<b>FERIDA:</b>\nGanha +2 <b>AT</b> e <b>resistência</b> 1.",
+    "NameEN": "Maude",
+    "DescEN": "<b>INJURED:</b>\nGains +2 <b>AT</b> and <b>resistance</b> 1.",
+    "NameES": "Magda",
+    "DescES": "<b>SANGRANTE:</b>\nGana +2 <b>AT</b> y <b>resistencia</b> 1.",
+    "NameFR": "Maude",
+    "DescFR": "<b>BLESSÉ :</b>\nGagne +2 <b>AT</b> et <b>résistance</b> 1.",
+    "NameRU": "Мод",
+    "DescRU": "<b>РАНЕНА:</b>\nполучает +2 <b>AT</b> и <b>сопротивление</b> 1."
+  }
+}

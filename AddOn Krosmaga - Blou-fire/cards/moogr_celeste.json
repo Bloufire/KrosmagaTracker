@@ -1,0 +1,33 @@
+{
+  "Id": 646,
+  "Name": "moogr_celeste",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 5,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    39
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    429
+  ],
+  "Texts": {
+    "NameBR": "Mugrr Celestial",
+    "DescBR": "<b>APARIÇÃO:</b>\nInvoca 2 Mugrrons para o lado dele, depois <b>dá uma investida</b> ao longo de 2 células.",
+    "NameEN": "Celestial Moogrr",
+    "DescEN": "<b>APPEARANCE:</b>\nSummons 2 Moogrroons on adjacent cells, then <b>charges</b> 2 cells.",
+    "NameES": "Muuugresa Celestial",
+    "DescES": "<b>APARICIÓN:</b>\nInvoca 2 muuugritones a su lado y <b>carga</b> 2 casillas.",
+    "NameFR": "Moogrr Céleste",
+    "DescFR": "<b>APPARITION :</b>\nInvoque 2 Moogrrons à côté de lui, puis <b>charge</b> de 2 cases.",
+    "NameRU": "Небесный муйвол",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nпризывает 2 муйволят рядом с собой, а затем делает <b>рывок</b> на 2 клетки."
+  }
+}

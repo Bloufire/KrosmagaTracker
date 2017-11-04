@@ -1,0 +1,31 @@
+{
+  "Id": 421,
+  "Name": "masse",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 9,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    60
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Frondor",
+    "DescBR": "As invocações que ele fere morrem se você tiver outro Justiceiro no jogo.",
+    "NameEN": "Trank",
+    "DescEN": "Minions he injures die if you have another Vigilante in play.",
+    "NameES": "Zíar",
+    "DescES": "Las invocaciones heridas por Zíar mueren si tienes otro justiciero en juego.",
+    "NameFR": "Masse",
+    "DescFR": "Les invocations qu'il blesse meurent si vous avez un autre Justicier en jeu.",
+    "NameRU": "Ствол",
+    "DescRU": "Существа, получившие от него урон, погибают, если у вас в игре есть еще один мститель."
+  }
+}

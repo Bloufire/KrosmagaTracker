@@ -1,0 +1,31 @@
+{
+  "Id": 78,
+  "Name": "chuck_maurice",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 1,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 1,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Chuck Morres",
+    "DescBR": "<b>INICIATIVA</b>",
+    "NameEN": "Chuck Morris",
+    "DescEN": "<b>FIRST STRIKE</b>",
+    "NameES": "Chuck Maurice",
+    "DescES": "<b>INICIATIVA</b>",
+    "NameFR": "Chuck Maurice",
+    "DescFR": "<b>INITIATIVE</b>",
+    "NameRU": "Чак Морис",
+    "DescRU": "<b>ПЕРВЫЙ УДАР</b>"
+  }
+}

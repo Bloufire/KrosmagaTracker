@@ -1,0 +1,31 @@
+{
+  "Id": 206,
+  "Name": "fumfamfim",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 1,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 8,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Funfanfim",
+    "DescBR": "<b>APARIÇÃO:</b>\nTroca de posição\r\ncom um aliado.",
+    "NameEN": "Fumfamfim",
+    "DescEN": "<b>APPEARANCE:</b>\nSwitches places \r\nwith an ally.",
+    "NameES": "Funfanfín",
+    "DescES": "<b>APARICIÓN:</b>\nIntercambias su posición\r\ncon un aliado.",
+    "NameFR": "Fumfamfim",
+    "DescFR": "<b>APPARITION :</b>\nÉchangez sa position\r\navec celle d'un allié.",
+    "NameRU": "Дымдумдам",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nменяется местами\r\nс одним из союзных существ."
+  }
+}

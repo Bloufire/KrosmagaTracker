@@ -1,0 +1,27 @@
+{
+  "Id": 799,
+  "Name": "zespadon_noir",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 4,
+  "Attack": 5,
+  "MovementPoint": 2,
+  "Families": [
+    40
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameFR": "Zespadon Noir",
+    "DescFR": "<b>FIN DU TOUR :</b>\nInflige 1 dégât\r\nà la première invocation devant lui.",
+    "NameEN": "Black Zordfish",
+    "DescEN": "<b>END OF TURN:</b>\nInflicts 1 damage\r\non the first Minion in front of it.",
+    "NameES": "Zespadín negro",
+    "DescES": "<b>FIN DEL TURNO:</b>\nInflige 1 de daño\r\na la primera invocación delante de él."
+  }
+}

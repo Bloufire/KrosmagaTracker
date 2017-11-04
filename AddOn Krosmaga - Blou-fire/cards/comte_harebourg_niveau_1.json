@@ -1,0 +1,31 @@
+{
+  "Id": 461,
+  "Name": "comte_harebourg_niveau_1",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 21,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Conde Traspafrent",
+    "DescBR": "<b>APARIÇÃO:</b>\nRecupera todos os\r\nprismas <b>PA</b> no jogo.",
+    "NameEN": "Count Harebourg",
+    "DescEN": "<b>APPEARANCE:</b>\nCollect all the\r\n<b>AP</b> prisms in play.",
+    "NameES": "Conde Kontatrás",
+    "DescES": "<b>APARICIÓN:</b>\nConsigue todos los \r\nprismas de <b>PA</b> en juego.",
+    "NameFR": "Comte Harebourg",
+    "DescFR": "<b>APPARITION :</b>\nRécupère tous les\r\nprismes <b>PA</b> en jeu.",
+    "NameRU": "Граф Хронограф",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nсобирает все \r\nпризмы <b>ОД</b>, находящиеся в игре."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 775,
+  "Name": "phaeris_niveau_1",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    55
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 737,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Faeris",
+    "DescBR": "<b>APARIÇÃO:</b>\nReduz ao <b>silêncio</b> as invocações de uma fileira.",
+    "NameEN": "Phaerys",
+    "DescEN": "<b>APPEARANCE:</b>\n<b>Silences</b> Minions on a row.",
+    "NameES": "Faeris",
+    "DescES": "<b>APARICIÓN:</b>\nInflige <b>silencio</b> a las invocaciones de una hilera.",
+    "NameFR": "Phaeris",
+    "DescFR": "<b>APPARITION :</b>\nRéduit au <b>silence</b> les invocations d’une ligne.",
+    "NameRU": "Фаэрис",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nналагает <b>немоту</b> на существ на одной линии."
+  }
+}

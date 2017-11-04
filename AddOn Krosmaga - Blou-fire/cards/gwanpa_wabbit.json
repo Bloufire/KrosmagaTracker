@@ -1,0 +1,33 @@
+{
+  "Id": 566,
+  "Name": "gwanpa_wabbit",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 2,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    18
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    326
+  ],
+  "Texts": {
+    "NameBR": "Vovô Wabbit",
+    "DescBR": "<b>APARIÇÃO:</b>\nColoque uma Cenouwa\r\nno seu <b>lado do tabuleiro</b>.",
+    "NameEN": "Gwandpa Wabbit",
+    "DescEN": "<b>APPEARANCE:</b>\nPuts a Cawwot\r\non your <b>side.</b>",
+    "NameES": "Awelito wabbit",
+    "DescES": "<b>APARICIÓN:</b>\nColoca una zanahowia\r\nen tu <b>lado del tablero</b>.",
+    "NameFR": "Gwand Pa Wabbit ",
+    "DescFR": "<b>APPARITION :</b>\nPlacez une Cawotte\r\ndans votre <b>camp</b>.",
+    "NameRU": "Ставый кволик",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nставит мовковь\r\nна вашей <b>половине поля</b>."
+  }
+}

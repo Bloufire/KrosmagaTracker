@@ -1,0 +1,33 @@
+{
+  "Id": 1080,
+  "Name": "pissenlit_diabolique",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 4,
+  "Attack": 2,
+  "MovementPoint": 2,
+  "Families": [
+    65
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    794
+  ],
+  "Texts": {
+    "NameBR": "Dente-de-Leão Diabólico",
+    "DescBR": "<b>CONTRAGOLPE:</b>\nInvoca um Dente-de-Leão Plumoso 2 células à frente dele se for possível.",
+    "NameEN": "Evil Dandelion",
+    "DescEN": "<b>COUNTERATTACK:</b>\nSummons a Downy Dandelion 2 cells in front of it, if possible.",
+    "NameES": "Diente de león diabólico",
+    "DescES": "<b>VENGANZA:</b>\nInvoca un diente de león pelón 2 casillas delante de él si es posible.",
+    "NameFR": "Pissenlit Diabolique",
+    "DescFR": "<b>CONTRE COUP :</b>\nInvoque un Pissenlit Duveteux à 2 cases devant lui si c'est possible.",
+    "NameRU": "Дьявольский льводуванчик",
+    "DescRU": "<b>КОНТРАТАКА:</b> призывает пушистого льводуванчика через одну клетку перед собой, если это возможно."
+  }
+}

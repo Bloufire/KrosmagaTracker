@@ -1,0 +1,31 @@
+{
+  "Id": 379,
+  "Name": "charge",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 1,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Investida",
+    "DescBR": "A invocação visada\r\n<b>dá uma investida</b> ao longo de 2 células.",
+    "NameEN": "Charge",
+    "DescEN": "The targeted Minion\r\n<b>charges</b> 2 cells.",
+    "NameES": "Carga",
+    "DescES": "La invocación seleccionada\r\n<b>carga</b> 2 casillas.",
+    "NameFR": "Charge",
+    "DescFR": "L'invocation ciblée\r\n<b>charge</b> de 2 cases.",
+    "NameRU": "Рывок",
+    "DescRU": "Выбранное существо делает <b>рывок</b> на 2 клетки."
+  }
+}

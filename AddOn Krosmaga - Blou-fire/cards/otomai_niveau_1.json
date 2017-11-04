@@ -1,0 +1,31 @@
+{
+  "Id": 457,
+  "Name": "otomai_niveau_1",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 5,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    7
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 27,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Otomai",
+    "DescBR": "Transforma-se em uma invocação aleatória que custará 4 <b>PA</b> se ele sobreviver a um ataque.",
+    "NameEN": "Otomai",
+    "DescEN": "Transforms into a random Minion costing 4 <b>AP</b> if it survives damage.",
+    "NameES": "Otomai",
+    "DescES": "Se transforma en invocación aleatoria que cueste 4 <b>PA</b> si sobrevive a algún daño.",
+    "NameFR": "Otomaï",
+    "DescFR": "Se transforme en invocation aléatoire coûtant 4 <b>PA</b> s'il survit à des dégâts.",
+    "NameRU": "Отомай",
+    "DescRU": "Превращается в случайное существо стоимостью 4 <b>ОД</b>, если выживает после получения урона."
+  }
+}

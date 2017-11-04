@@ -1,0 +1,31 @@
+{
+  "Id": 650,
+  "Name": "phorreur_ancestral",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 4,
+  "MovementPoint": 2,
+  "Families": [
+    20
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Perfuratroz Ancestral",
+    "DescBR": "<b>APARIÇÃO:</b>\nElimina as 2 últimas cartas enviadas para a lixeira de cada jogador.",
+    "NameEN": "Ancestral Drheller",
+    "DescEN": "<b>APPEARANCE:</b>\nBanishes the last 2 cards that went to the discard pile of each player.",
+    "NameES": "Perforatroz Ancestral",
+    "DescES": "<b>APARICIÓN:</b>\nElimina las 2 últimas cartas enviadas al descarte de cada jugador.",
+    "NameFR": "Phorreur Ancestral",
+    "DescFR": "<b>APPARITION :</b>\nBannit les 2 dernières cartes parties dans la défausse de chaque joueur.",
+    "NameRU": "Древняя хорроройка",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nуничтожает 2 последние карты в сбросе каждого игрока."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 545,
+  "Name": "joris_niveau_3",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 5,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    34
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 6,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Mestre Joris",
+    "DescBR": "Enquanto está em jogo,\r\no custo dos feitiços adversários aumenta em 3 <b>PA</b>.",
+    "NameEN": "Master Joris",
+    "DescEN": "As long as it is in play,\r\nit increases the cost of enemy spells by 3 <b>AP</b>.",
+    "NameES": "Maestro Joris",
+    "DescES": "Mientras esté en juego,\r\nel coste de los hechizos enemigos aumenta 3 <b>PA</b>.",
+    "NameFR": "Maître Joris",
+    "DescFR": "Tant qu'il est en jeu,\r\nle coût des sorts adverses est augmenté de 3 <b>PA</b>.",
+    "NameRU": "Мастер Жорис",
+    "DescRU": "Находясь в игре,\r\nувеличивает на 3 ОД стоимость заклинаний противника."
+  }
+}

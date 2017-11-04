@@ -1,0 +1,31 @@
+{
+  "Id": 536,
+  "Name": "lapino_token",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 1,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    18
+  ],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Toelho",
+    "DescBR": "Cura 1 <b>PV</b>\r\nde suas outras invocações presentes na fileira dele ao final de todos os deslocamentos aliados.",
+    "NameEN": "Coney",
+    "DescEN": "Heals your other Minions in its line of sight by 1 <b>HP</b>\r\nafter all allied movements.",
+    "NameES": "Cunejo",
+    "DescES": "Cura 1 <b>PdV</b>\r\na tus demás invocaciones de su hilera al final de todos los desplazamientos aliados.",
+    "NameFR": "Lapino",
+    "DescFR": "Soigne de 1 <b>PV</b>\r\nvos autres invocations de sa ligne à la fin de tous les déplacements alliés.",
+    "NameRU": "Зайчонок",
+    "DescRU": "После перемещения всех союзников\r\nвосстанавливает другим вашим существам на своей линии 1 <b>ОЗ</b>."
+  }
+}

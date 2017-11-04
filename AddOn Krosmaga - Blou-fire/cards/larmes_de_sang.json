@@ -1,0 +1,31 @@
+{
+  "Id": 330,
+  "Name": "larmes_de_sang",
+  "CardType": 1,
+  "CostAP": 5,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 8,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Lágrimas de Sangue",
+    "DescBR": "Confere <b>escudo</b> a uma invocação. Depois, ela <b>dá uma investida</b> ao longo de 1 célula.",
+    "NameEN": "Tears of Blood",
+    "DescEN": "Confers <b>shield</b> on a Minion, then it <b>charges</b> 1 cell.",
+    "NameES": "Lágrimas de Sangre",
+    "DescES": "Da <b>escudo</b> a una invocación, luego esta <b>carga</b> 1 casilla.",
+    "NameFR": "Larmes de Sang",
+    "DescFR": "Confère <b>bouclier</b> à une invocation puis elle <b>charge</b> de 1 case.",
+    "NameRU": "Кровавые слезы",
+    "DescRU": "Дает <b>щит</b> выбранному существу, а затем оно делает <b>рывок</b> на 1 клетку."
+  }
+}

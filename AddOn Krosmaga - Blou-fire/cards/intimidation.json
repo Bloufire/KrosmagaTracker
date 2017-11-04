@@ -1,0 +1,31 @@
+{
+  "Id": 451,
+  "Name": "intimidation",
+  "CardType": 1,
+  "CostAP": 4,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 1,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Intimidação",
+    "DescBR": "Suas invocações <b>dão uma investida</b> ao longo de 2 células.",
+    "NameEN": "Intimidation",
+    "DescEN": "Your Minions <b>charge</b> 2 cells.",
+    "NameES": "Intimidación",
+    "DescES": "Tus invocaciones <b>cargan</b> 2 casillas.",
+    "NameFR": "Intimidation",
+    "DescFR": "Vos invocations <b>chargent</b> de 2 cases.",
+    "NameRU": "Устрашение",
+    "DescRU": "Ваши существа делают <b>рывок</b> на 2 клетки."
+  }
+}

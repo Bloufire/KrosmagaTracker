@@ -1,0 +1,31 @@
+{
+  "Id": 241,
+  "Name": "gelee_citron",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 4,
+  "Attack": 2,
+  "MovementPoint": 2,
+  "Families": [
+    30
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Gelatina de Limão",
+    "DescBR": "<b>APARIÇÃO:</b>\nSuas outras Gelatinas <b>dão uma investida</b>.",
+    "NameEN": "Lemon Jelly",
+    "DescEN": "<b>APPEARANCE:</b>\nYour other Jellies <b>charge</b>.",
+    "NameES": "Gelatina de limón",
+    "DescES": "<b>APARICIÓN:</b>\nTus demás gelatinas <b>cargan</b>.",
+    "NameFR": "Gelée Citron",
+    "DescFR": "<b>APPARITION :</b>\nVos autres Gelées <b>chargent</b>.",
+    "NameRU": "Лимонное желе",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nдругие ваши желе делают <b>рывок</b>."
+  }
+}

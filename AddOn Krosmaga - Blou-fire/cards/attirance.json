@@ -1,0 +1,31 @@
+{
+  "Id": 292,
+  "Name": "attirance",
+  "CardType": 1,
+  "CostAP": 5,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 8,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Atração",
+    "DescBR": "<b>Atrai</b> todos os prismas adversários para o seu <b>lado do tabuleiro</b>.",
+    "NameEN": "Attraction",
+    "DescEN": "<b>Attracts</b> all enemy prisms toward your <b>side.</b>",
+    "NameES": "Atracción",
+    "DescES": "<b>Atrae</b> todos los prismas enemigos hacia tu <b>lado del tablero</b>.",
+    "NameFR": "Attirance",
+    "DescFR": "<b>Attire</b> tous les prismes adverses vers votre <b>camp</b>.",
+    "NameRU": "Притягивание",
+    "DescRU": "<b>Притягивает</b> все призмы противника на вашу <b>половину поля</b>."
+  }
+}

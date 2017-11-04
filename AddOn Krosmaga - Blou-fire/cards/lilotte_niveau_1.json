@@ -1,0 +1,31 @@
+{
+  "Id": 563,
+  "Name": "lilotte_niveau_1",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 2,
+  "Attack": 1,
+  "MovementPoint": 4,
+  "Families": [
+    44
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 1,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Lilota",
+    "DescBR": "<b>Dá uma investida</b> ao longo de 1 célula\r\nquando seu adversário\r\njoga uma carta de invocação.",
+    "NameEN": "Lilotte",
+    "DescEN": "<b>Charges</b> 1 cell\r\nwhenever your opponent\r\nplays a Minion.",
+    "NameES": "Lilota",
+    "DescES": "<b>Carga</b> 1 casilla\r\ncuando tu contrincante\r\nutiliza una invocación.",
+    "NameFR": "Lilotte",
+    "DescFR": "<b>Charge</b> de 1 case\r\nquand votre adversaire\r\njoue une invocation.",
+    "NameRU": "Лилотта",
+    "DescRU": "Делает <b>рывок</b> на 1 клетку, когда противник \r\nразыгрывает существо."
+  }
+}

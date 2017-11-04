@@ -1,0 +1,33 @@
+{
+  "Id": 1055,
+  "Name": "bas_de_laine",
+  "CardType": 1,
+  "CostAP": 12,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 5,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 466,
+    "ParentCard": 1719,
+    "ParentLevel": 9
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Meialgodão",
+    "DescBR": "As cartas presentes\r\nna sua mão custarão 0 <b>PA</b> se forem jogadas neste turno.",
+    "NameEN": "Cottonsock",
+    "DescEN": "The cards\r\nin your hand cost 0 <b>AP</b> if they are played during this turn.",
+    "NameES": "Dentro del Colchón",
+    "DescES": "Las cartas presentes\r\nen tu mano cuestan 0 <b>PA</b> si se juegan durante este turno.",
+    "NameFR": "Bas de Laine",
+    "DescFR": "Les cartes présentes\r\ndans votre main coûtent 0 <b>PA</b> si elles sont jouées durant ce tour.",
+    "NameRU": "Кубышка",
+    "DescRU": "В течение этого хода\r\nкарты у вас в руке стоят 0 <b>ОД</b>."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "Id": 93,
+  "Name": "ronces_agressives",
+  "CardType": 1,
+  "CostAP": 4,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 10,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    537
+  ],
+  "Texts": {
+    "NameBR": "Sarças Agressivas",
+    "DescBR": "Inflige 3 danos às invocações de uma fileira. Adiciona uma <b>Semente</b> à sua mão.",
+    "NameEN": "Aggressive Bramble",
+    "DescEN": "Inflicts 3 damage on Minions on a row. Add 1 <b>Seed</b> to your hand.",
+    "NameES": "Zarzas Agresivas",
+    "DescES": "Inflige 3 de daño a las invocaciones de una hilera. Añade una <b>semilla</b> a tu mano.",
+    "NameFR": "Ronces Agressives",
+    "DescFR": "Inflige 3 dégâts aux invocations d'une ligne. Ajoute une <b>Graine</b> à votre main.",
+    "NameRU": "Агрессивная колючка",
+    "DescRU": "Наносит 3 ед. урона существам на одной линии. Дает вам в руку <b>семя</b>."
+  }
+}

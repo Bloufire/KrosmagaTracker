@@ -1,0 +1,31 @@
+{
+  "Id": 1202,
+  "Name": "chacha_serval",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 2,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    36
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Miaw Serval",
+    "DescBR": "<b>FIM DO TURNO:</b>\nSeus outros Miaws ganham +1 <b>AT</b> e +1 <b>AR</b>.",
+    "NameEN": "Serval Bow Meow",
+    "DescEN": "<b>END OF TURN:</b>\nYour other Bow Meows gain +1 <b>AT</b> and +1 <b>AR</b>.",
+    "NameES": "Miaumiau serval",
+    "DescES": "<b>FIN DEL TURNO:</b>\nTus demás miaumiaus ganan +1 <b>AT</b> y +1 <b>AR</b>.",
+    "NameFR": "Chacha Serval",
+    "DescFR": "<b>FIN DU TOUR :</b>\nVos autres Chachas gagnent +1 <b>AT</b> et +1 <b>AR</b>.",
+    "NameRU": "Котокот-сервал",
+    "DescRU": "<b>КОНЕЦ ХОДА</b>\nДает другим вашим котокотам +1 <b>AT</b> и +1 <b>БР</b>."
+  }
+}

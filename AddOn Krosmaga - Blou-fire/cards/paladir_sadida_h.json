@@ -1,0 +1,32 @@
+{
+  "Id": 717,
+  "Name": "paladir_sadida_h",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 6,
+  "Attack": 6,
+  "MovementPoint": 3,
+  "Families": [
+    32,
+    77
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 10,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Herói Cascudeiro",
+    "DescBR": "<b>APARIÇÃO:</b> \nInflige à primeira invocação diante dele a mesma quantidade de danos que de <b>Sementes</b> aliadas presentes no jogo.",
+    "NameEN": "Chestnutter Hero",
+    "DescEN": "<b>APPEARANCE:</b> \nInflicts as much damage as there are allied <b>Seeds</b> in play on the first Minion in front of it.",
+    "NameES": "Héroe castañeador",
+    "DescES": "<b>APARICIÓN:</b> \nInflige a la primera invocación delante de él tantos daños como <b>semillas</b> aliadas haya en juego.",
+    "NameFR": "Héros Chataîgneur",
+    "DescFR": "<b>APPARITION :</b> \nInflige à la première invocation devant lui autant de dégâts que de <b>Graines</b> alliées en jeu.",
+    "NameRU": "Герой Каштанус",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b> \nнаносит первому существу перед собой столько единиц урона, сколько у вас союзных <b>гулей</b> в игре."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 454,
+  "Name": "maskemane_niveau_3",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 5,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    45
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 20,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Maskeman Psicopata",
+    "DescBR": "<b>APARIÇÃO:</b>\nTodos os jogadores compram 5 cartas.",
+    "NameEN": "Psychopath Maskemane",
+    "DescEN": "<b>APPEARANCE:</b>\nEach player draws 5 cards.",
+    "NameES": "Maskeman - Sáikopat",
+    "DescES": "<b>APARICIÓN:</b>\nCada jugador roba 5 cartas.",
+    "NameFR": "Maskemane Psycho",
+    "DescFR": "<b>APPARITION :</b>\nChaque joueur pioche 5 cartes.",
+    "NameRU": "Маскеман-психопат",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nкаждый игрок берет 5 карт."
+  }
+}

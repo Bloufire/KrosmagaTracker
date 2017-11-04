@@ -1,0 +1,31 @@
+{
+  "Id": 121,
+  "Name": "felida",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 5,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 1,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Felida",
+    "DescBR": "Suas invocações custam 1 <b>PA</b> a menos, e seus feitiços custam 1 <b>PA</b> a mais.",
+    "NameEN": "Felida",
+    "DescEN": "Your Minions cost 1 <b>AP</b> less, and your spells cost 1 <b>AP</b> more.",
+    "NameES": "Felida",
+    "DescES": "Tus invocaciones cuestan 1 <b>PA</b> menos, tus hechizos cuestan 1 <b>PA</b> más.",
+    "NameFR": "Felida",
+    "DescFR": "Vos invocations coûtent 1 <b>PA</b> de moins, vos sorts coûtent 1 <b>PA</b> de plus.",
+    "NameRU": "Фелида",
+    "DescRU": "Стоимость ваших существ уменьшается на 1 <b>ОД</b>, стоимость ваших заклинаний увеличивается на 1 <b>ОД</b>."
+  }
+}

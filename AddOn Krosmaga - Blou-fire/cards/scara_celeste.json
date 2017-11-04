@@ -1,0 +1,31 @@
+{
+  "Id": 853,
+  "Name": "scara_celeste",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 3,
+  "Attack": 6,
+  "MovementPoint": 3,
+  "Families": [
+    23
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Scarafolha Celestial",
+    "DescBR": "<b>FIM DO TURNO:</b>\nSuas outras invocações\r\nganham +1 <b>AR</b>.",
+    "NameEN": "Celestial Scaraleaf",
+    "DescEN": "<b>END OF TURN:</b>\nYour other Minions\r\ngain +1 <b>AR</b>.",
+    "NameES": "Escarahoja Celestial",
+    "DescES": "<b>FIN DEL TURNO:</b>\nTus demás invocaciones\r\nganan +1 <b>AR</b>.",
+    "NameFR": "Scarafeuille Céleste",
+    "DescFR": "<b>FIN DU TOUR :</b>\nVos autres invocations\r\ngagnent +1 <b>AR</b>.",
+    "NameRU": "Небесный скаралист",
+    "DescRU": "<b>КОНЕЦ ХОДА:</b>\nдает другим вашим\r\nсуществам +1 <b>БР</b>."
+  }
+}

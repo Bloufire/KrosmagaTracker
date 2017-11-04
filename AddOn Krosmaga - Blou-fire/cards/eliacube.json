@@ -1,0 +1,29 @@
+{
+  "Id": 483,
+  "Name": "eliacube",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 9,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Eliacubo",
+    "DescBR": "<b>MURO</b>\nAdiciona 1 <b>PA</b> à sua\r\n<b>reserva</b> quando uma invocação morre.",
+    "NameEN": "Eliacube",
+    "DescEN": "<b>WALL</b>\nAdds 1 <b>AP</b> to your\r\n<b>reserve</b> whenever a Minion dies.",
+    "NameES": "Selacubo",
+    "DescES": "<b>MURO</b>\nAñade 1 <b>PA</b> a tu\r\n<b>reserva</b> cuando una invocación muere.",
+    "NameFR": "Eliacube",
+    "DescFR": "<b>MUR</b>\nAjoute 1 <b>PA</b> à votre\r\n<b>réserve</b> quand une invocation meurt.",
+    "NameRU": "Элиакуб",
+    "DescRU": "<b>СТЕНА</b>\nДобавляет в ваш <b>резерв</b> 1 <b>ОД</b>, когда погибает существо."
+  }
+}

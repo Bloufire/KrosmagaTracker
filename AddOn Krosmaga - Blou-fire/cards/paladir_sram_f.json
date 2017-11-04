@@ -1,0 +1,32 @@
+{
+  "Id": 1492,
+  "Name": "paladir_sram_f",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 3,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    5,
+    77
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 6,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Heroína Pérfida",
+    "DescBR": "<b>APARIÇÃO:</b>\nReduz em 1 turno a contagem regressiva das armadilhas Sram da mão do adversário.",
+    "NameEN": "Treacherous Heroine",
+    "DescEN": "<b>APPEARANCE:</b>\nReduces the countdown of Sram traps in the enemy hand by 1 turn.",
+    "NameES": "Heroína pérfida",
+    "DescES": "<b>APARICIÓN:</b>\nReduce en 1 turno la cuenta atrás de las trampas sram de la mano del contrincante.",
+    "NameFR": "Héroïne Perfide",
+    "DescFR": "<b>APPARITION :</b>\nRéduit de 1 tour le compte à rebours des pièges Sram de la main adverse.",
+    "NameRU": "Вероломная героиня",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nускоряет на 1 ход срок срабатывания ловушек Срама в руке противника."
+  }
+}

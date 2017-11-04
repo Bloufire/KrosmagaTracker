@@ -1,0 +1,31 @@
+{
+  "Id": 168,
+  "Name": "ush_niveau_2",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 4,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 13,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Ush",
+    "DescBR": "<b>APARIÇÃO:</b>\nTroca a posição do Dofus aliado da fileira dele com a de outro Dofus aliado.",
+    "NameEN": "Ush",
+    "DescEN": "<b>APPEARANCE:</b>\nSwitches the positions of the allied Dofus on its row and another allied Dofus.",
+    "NameES": "Ush",
+    "DescES": "<b>APARICIÓN:</b>\nIntercambia la posición del dofus aliado de su hilera con la de otro dofus aliado.",
+    "NameFR": "Ush",
+    "DescFR": "<b>APPARITION :</b>\nÉchangez la position du Dofus allié de sa ligne avec celle d'un autre Dofus allié.",
+    "NameRU": "Уш",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nпоменяйте местами союзный дофус на его линии с другим союзным дофусом."
+  }
+}

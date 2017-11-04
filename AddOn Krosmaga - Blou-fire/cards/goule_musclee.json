@@ -1,0 +1,31 @@
+{
+  "Id": 644,
+  "Name": "goule_musclee",
+  "CardType": 0,
+  "CostAP": 8,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    82
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Carniçal Gueiro",
+    "DescBR": "<b>HORDA</b>\n<b>APARIÇÃO:</b> Elimina os\r\nCarniçais da sua lixeira.\nGanha +1 <b>AT</b> e +1 <b>AR</b> por Carniçal eliminado.",
+    "NameEN": "Ghoul Dorak",
+    "DescEN": "<b>HORDE</b>\n<b>APPEARANCE:</b> Banishes the\r\nGhouls from your discard pile.\nGains +1 <b>AT</b> and +1 <b>AR</b> per Ghoul banished.",
+    "NameES": "Ghul Dorak",
+    "DescES": "<b>HORDA</b>\n<b>APARICIÓN:</b> Elimina los\r\nghuls de tu descarte.\nGana +1 <b>AT</b> y +1 <b>AR</b> por ghul eliminado.",
+    "NameFR": "Goule Dorak",
+    "DescFR": "<b>HORDE</b>\n<b>APPARITION :</b> Bannit les\r\nGoules de votre défausse.\nGagne +1 <b>AT</b> et +1 <b>AR</b> par Goule bannie.",
+    "NameRU": "Гуль Дорак",
+    "DescRU": "<b>ОРДА</b>\n<b>ПОЯВЛЕНИЕ:</b> уничтожает\r\nгулей в вашем сбросе.\nПолучает +1 <b>AT</b> и +1 <b>БР</b> за каждого уничтоженного гуля."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "Id": 701,
+  "Name": "paladir_eca_h",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 5,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    8,
+    77
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 4,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Herói Felino",
+    "DescBR": "Volta à sua\r\nmão se destruir um Dofus.\r\nEle passa a custar 0 <b>PA</b>.",
+    "NameEN": "Feline Hero",
+    "DescEN": "Returns to your hand\r\nif it destroys a Dofus;\r\nit now costs 0 <b>AP</b>.",
+    "NameES": "Héroe felino",
+    "DescES": "Sube a tu mano\r\nsi destruye un dofus.\r\nCuesta entonces 0 <b>PA</b>.",
+    "NameFR": "Héros Félin",
+    "DescFR": "Remonte dans votre\r\nmain s'il détruit un Dofus.\r\nIl coûte désormais 0 <b>PA</b>.",
+    "NameRU": "Котогерой",
+    "DescRU": "Возвращается к вам в руку, если уничтожает дофус.\r\nЗатем стоит 0 <b>ОД</b>."
+  }
+}

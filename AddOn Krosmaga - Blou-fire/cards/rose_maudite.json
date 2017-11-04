@@ -1,0 +1,31 @@
+{
+  "Id": 980,
+  "Name": "rose_maudite",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 2,
+  "Families": [
+    65
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Rosa Maldita",
+    "DescBR": "Inflige 1 dano às invocações que ferirem as suas em um combate.",
+    "NameEN": "Cursed Rose",
+    "DescEN": "Inflicts 1 damage on Minions that injure your Minions during a fight.",
+    "NameES": "Rosa maldita",
+    "DescES": "Inflige 1 de daño a las invocaciones que dañen a tus invocaciones en un combate.",
+    "NameFR": "Rose Maudite",
+    "DescFR": "Inflige 1 dégât aux invocations qui blessent vos invocations lors d'un combat.",
+    "NameRU": "Проклятая роза",
+    "DescRU": "Наносит 1 единицу урона существам, которые ранят ваших существ в бою."
+  }
+}

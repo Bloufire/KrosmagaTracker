@@ -1,0 +1,29 @@
+{
+  "Id": 1801,
+  "Name": "tas_dos",
+  "CardType": 2,
+  "CostAP": 0,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Monte de Ossos",
+    "DescBR": "Os Chaferes que pisam em um <b>Monte de Ossos</b> aliado ganham +1 <b>AT</b> e +1 <b>AR</b>, e as outras invocações o destroem.",
+    "NameEN": "Pile of Bones",
+    "DescEN": "Chafers who walk on an allied <b>Pile of Bones</b> gain +1 <b>AT</b> and +1 <b>AR.</b> Other Minions destroy it.",
+    "NameES": "Montón de huesos",
+    "DescES": "Los chafers que pisan un <b>montón de huesos</b> aliado ganan +1 <b>AT</b> y +1 <b>AR</b>, las demás invocaciones lo destruyen.",
+    "NameFR": "Tas d'Os",
+    "DescFR": "Les Chafers qui marchent sur un <b>tas d'os</b> allié gagnent +1 <b>AT</b> et +1 <b>AR</b>, les autres invocations le détruisent.",
+    "NameRU": "Куча костей",
+    "DescRU": "Если чафер проходит по союзной <b>куче костей</b>, он получает +1 <b>AT</b> и +1 <b>БР</b>, а остальные существа просто уничтожают ее."
+  }
+}

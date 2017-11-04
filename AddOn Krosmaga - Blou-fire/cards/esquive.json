@@ -1,0 +1,31 @@
+{
+  "Id": 481,
+  "Name": "esquive",
+  "CardType": 1,
+  "CostAP": 1,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    2
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 2,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Esquiva",
+    "DescBR": "<b>Empurra</b> uma invocação aliada ao longo de 4 células.",
+    "NameEN": "Dodge",
+    "DescEN": "<b>Repels</b> an allied Minion by 4 cells.",
+    "NameES": "Esquiva",
+    "DescES": "<b>Empuja</b> una invocación aliada 4 casillas.",
+    "NameFR": "Esquive",
+    "DescFR": "<b>Repousse</b> une invocation alliée de 4 cases.",
+    "NameRU": "Уклонение",
+    "DescRU": "<b>Отталкивает</b> союзное существо на 4 клетки."
+  }
+}

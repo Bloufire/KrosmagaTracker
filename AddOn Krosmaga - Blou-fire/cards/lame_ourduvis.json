@@ -1,0 +1,31 @@
+{
+  "Id": 567,
+  "Name": "lame_ourduvis",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 6,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    5
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 6,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Kiama Ovício",
+    "DescBR": "<b>Teletransporta-se</b> para trás\r\nde seu adversário depois de sofrer danos durante um combate.",
+    "NameEN": "Luvav Slice",
+    "DescEN": "<b>Teleports</b> behind\r\nits opponent after having suffered damage during a battle.",
+    "NameES": "Lamor Alvizo",
+    "DescES": "Se <b>teletransporta</b> detrás\r\nde su contrincante tras recibir daños durante un combate.",
+    "NameFR": "Lame Ourduvis",
+    "DescFR": "Se <b>téléporte</b> derrière\r\nson adversaire après avoir subit des dégâts lors d'un combat.",
+    "NameRU": "Лайма де Бош",
+    "DescRU": "<b>Телепортируется</b> за спину противника, получив урон в бою."
+  }
+}

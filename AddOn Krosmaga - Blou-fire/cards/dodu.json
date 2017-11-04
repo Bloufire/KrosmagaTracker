@@ -1,0 +1,33 @@
+{
+  "Id": 302,
+  "Name": "dodu",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 4,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 10,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    22
+  ],
+  "Texts": {
+    "NameBR": "Gorducho",
+    "DescBR": "<b>APARIÇÃO:</b>\nTransforma uma de suas <b>Sementes</b> em Boneca Louca.",
+    "NameEN": "Dodu",
+    "DescEN": "<b>APPEARANCE:</b>\nTransform one of your <b>Seeds</b> into a Madoll.",
+    "NameES": "Choncho",
+    "DescES": "<b>APARICIÓN:</b>\nTransformas una de tus <b>semillas</b> en muñeca loca.",
+    "NameFR": "Dodu",
+    "DescFR": "<b>APPARITION :</b>\nTransformez une de vos <b>Graines</b> en Poupée Folle.",
+    "NameRU": "Пухлик",
+    "DescRU": "<b>ПОЯВЛЕНИЕ</b>\nПревращает одно из ваших <b>семян</b> в буйнокуклу."
+  }
+}

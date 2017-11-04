@@ -1,0 +1,36 @@
+{
+  "Id": 532,
+  "Name": "kamasutar",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 2,
+  "Families": [
+    20,
+    33
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 16,
+    "ParentCard": 450,
+    "ParentLevel": 8
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Kama Sutar",
+    "DescBR": "<b>APARIÇÃO:</b>\nRecupera as 5 últimas cartas enviadas para a sua lixeira se sua mão estiver vazia.",
+    "NameEN": "Kamasutar",
+    "DescEN": "<b>APPEARANCE:</b>\nReturn the last 5 cards that went to your discard pile to your hand if it is empty.",
+    "NameES": "Kamasutar",
+    "DescES": "<b>APARICIÓN:</b>\nRecupera las 5 últimas cartas enviadas a tu descarte si tu mano se encuentra vacía.",
+    "NameFR": "Kamasutar",
+    "DescFR": "<b>APPARITION :</b>\nRécupère les 5 dernières cartes parties dans votre défausse si votre main est vide.",
+    "NameRU": "Камасутар",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nвозвращает 5 последних карт из вашего сброса, если у вас в руке нет карт."
+  }
+}

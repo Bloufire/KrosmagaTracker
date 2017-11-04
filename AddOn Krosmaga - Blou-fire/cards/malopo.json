@@ -1,0 +1,31 @@
+{
+  "Id": 264,
+  "Name": "malopo",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    47
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Maloal",
+    "DescBR": "<b>ALCANCE:</b> 1-2\n<b>FIM DO TURNO:</b>\nDestrói o prisma adversário que estiver na mesma fileira.",
+    "NameEN": "Badskin",
+    "DescEN": "<b>RANGE:</b> 1-2\n<b>END OF TURN:</b>\nDestroys the enemy prism on its row.",
+    "NameES": "Malapiel",
+    "DescES": "<b>ALCANCE:</b> 1-2\n<b>FIN DEL TURNO:</b>\nDestruye el prisma enemigo de su hilera.",
+    "NameFR": "Malopo",
+    "DescFR": "<b>PORTÉE :</b> 1-2\n<b>FIN DU TOUR :</b>\nDétruit le prisme adverse de sa ligne.",
+    "NameRU": "Злыднестрел",
+    "DescRU": "<b>ДАЛЬНОСТЬ АТАКИ:</b> 1-2\n<b>КОНЕЦ ХОДА:</b>\nуничтожает призму противника на своей линии."
+  }
+}

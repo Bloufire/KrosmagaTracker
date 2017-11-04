@@ -1,0 +1,31 @@
+{
+  "Id": 115,
+  "Name": "premier_sang",
+  "CardType": 1,
+  "CostAP": 1,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    5
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 6,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Eliminação Sangrenta",
+    "DescBR": "Elimina a última carta enviada para a sua lixeira para infligir 2 danos.",
+    "NameEN": "First Blood",
+    "DescEN": "Banishes the last card that went to your discard pile to be inflict 2 damage.",
+    "NameES": "Primer Sangrado",
+    "DescES": "Elimina la última carta enviada a tu descarte para infligir 2 de daño.",
+    "NameFR": "Premier Sang",
+    "DescFR": "Bannit la dernière carte partie dans votre défausse pour infliger 2 dégâts.",
+    "NameRU": "Первая кровь",
+    "DescRU": "Наносит 2 ед. урона. Требуется уничтожить последнюю карту в вашем сбросе."
+  }
+}

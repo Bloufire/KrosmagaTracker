@@ -1,0 +1,32 @@
+{
+  "Id": 61,
+  "Name": "adamai_niveau_3",
+  "CardType": 0,
+  "CostAP": 8,
+  "Life": 5,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    55,
+    33
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 9,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Adamai",
+    "DescBR": "<b>APARIÇÃO:</b>\nUma invocação volta para a mão de seu proprietário.",
+    "NameEN": "Adamai",
+    "DescEN": "<b>APPEARANCE:</b>\nReturn a Minion to its owner's hand.",
+    "NameES": "Adamai",
+    "DescES": "<b>APARICIÓN:</b>\nSubes una invocación a la mano de su propietario.",
+    "NameFR": "Adamaï",
+    "DescFR": "<b>APPARITION :</b>\nRemontez une invocation dans la main de son propriétaire.",
+    "NameRU": "Адамай",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>возвращает выбранное существо в руку хозяина."
+  }
+}

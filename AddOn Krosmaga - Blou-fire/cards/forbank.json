@@ -1,0 +1,31 @@
+{
+  "Id": 959,
+  "Name": "forbank",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 2,
+  "Families": [
+    4
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 5,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Corsaque",
+    "DescBR": "Desenterra um <b>Espólio</b>\r\nna célula diante dele após o deslocamento das suas invocações.",
+    "NameEN": "Forbank",
+    "DescEN": "Unearths an item of <b>Loot</b>\r\non the cell in front of it after your Minions have moved.",
+    "NameES": "Forbank",
+    "DescES": "Desentierra un <b>botín</b>\r\nen la casilla de delante de él al final de los desplazamientos de tus invocaciones.",
+    "NameFR": "Forbank",
+    "DescFR": "Déterre un <b>Butin</b>\r\nsur la case devant lui à la fin des déplacements de vos invocations.",
+    "NameRU": "Грабанк",
+    "DescRU": "После перемещения всех союзников откапывает <b>добычу</b> на клетке перед собой."
+  }
+}

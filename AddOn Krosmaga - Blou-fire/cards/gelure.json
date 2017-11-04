@@ -1,0 +1,31 @@
+{
+  "Id": 362,
+  "Name": "gelure",
+  "CardType": 1,
+  "CostAP": 0,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 7,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Enregelamento",
+    "DescBR": "Transfere seus <b>PA</b> para sua <b>reserva</b>.",
+    "NameEN": "Frostbite",
+    "DescEN": "Transfers your <b>AP</b> to your <b>reserve</b>.",
+    "NameES": "Congelación",
+    "DescES": "Transfiere tus <b>PA</b> en tu <b>reserva</b>.",
+    "NameFR": "Gelure",
+    "DescFR": "Transfère vos <b>PA</b> vers votre <b>réserve</b>.",
+    "NameRU": "Заморозка",
+    "DescRU": "Перемещает ваши <b>ОД</b> в ваш <b>резерв</b>."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "Id": 1705,
+  "Name": "elixir_de_jouvence",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Elixir da Juventude",
+    "DescBR": "Confere +1 <b>AT</b> e +1 <b>AR</b>\r\n a uma invocação.",
+    "NameEN": "Elixir of Life",
+    "DescEN": "Confers +1 <b>AT</b> and +1 <b>AR</b>\r\non a Minion.",
+    "NameES": "Elixir de juventud",
+    "DescES": "Confiere +1 <b>AT</b> y +1 <b>AR</b>\r\na una invocación.",
+    "NameFR": "Elixir de Jouvence ",
+    "DescFR": "Confère +1 <b>AT</b> et +1 <b>AR</b>\r\nà une invocation.",
+    "NameRU": "Эликсир молодости",
+    "DescRU": "Дает выбранному существу\r\n+1 <b>AT</b> и +1 <b>БР</b>."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 945,
+  "Name": "reine_nowel",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 2,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    54
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Rainha de Nataw",
+    "DescBR": "<b>APARIÇÃO:</b>\nPresentes de Nataw aparecem aleatoriamente no tabuleiro.",
+    "NameEN": "Kwismas Queen",
+    "DescEN": "<b>APPEARANCE:</b>\nKwismas Gifts randomly appear on the board.",
+    "NameES": "Reina de Nawidad",
+    "DescES": "<b>APARICIÓN:</b>\nRegalos de Nawidad aparecen aleatoriamente en el tablero.",
+    "NameFR": "Reine de Nowel",
+    "DescFR": "<b>APPARITION :</b>\nDes cadeaux de Nowel apparaissent aléatoirement sur le terrain.",
+    "NameRU": "Королева Вождества",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nна поле случайным образом появляются вождественские подарки."
+  }
+}

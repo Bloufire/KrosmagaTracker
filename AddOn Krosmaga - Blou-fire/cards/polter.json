@@ -1,0 +1,31 @@
+{
+  "Id": 49,
+  "Name": "polter",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 1,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    66
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Esporo",
+    "DescBR": "<b>CONTRAGOLPE:</b>\nTransforma em <b>Arbusto</b> a invocação que lhe causar danos.",
+    "NameEN": "Polter",
+    "DescEN": "<b>COUNTERATTACK:</b>\nTransforms the Minion that inflicted damage on it into a <b>Bush</b>.",
+    "NameES": "Polter",
+    "DescES": "<b>VENGANZA:</b>\nTransforma en <b>arbusto</b> la invocación que le cause daños.",
+    "NameFR": "Polter",
+    "DescFR": "<b>CONTRE COUP :</b>\nTransforme en <b>Buisson</b> l'invocation qui lui inflige des dégâts.",
+    "NameRU": "Полтер",
+    "DescRU": "<b>КОНТРАТАКА:</b>\nпревращает существо, нанесшее ему урон, в <b>куст</b>."
+  }
+}

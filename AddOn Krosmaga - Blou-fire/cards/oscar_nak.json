@@ -1,0 +1,31 @@
+{
+  "Id": 549,
+  "Name": "oscar_nak",
+  "CardType": 0,
+  "CostAP": 15,
+  "Life": 7,
+  "Attack": 7,
+  "MovementPoint": 3,
+  "Families": [
+    5
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 6,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Vigg Arysta",
+    "DescBR": "Custa 1 <b>PA</b> a menos por cada carta presente na sua lixeira.",
+    "NameEN": "Oscar Kass",
+    "DescEN": "Costs 1 <b>AP</b> less per card in your discard pile.",
+    "NameES": "Constantimo",
+    "DescES": "Cuesta 1 <b>PA</b> menos por cada carta que se encuentre en tu descarte.",
+    "NameFR": "Oscar Nak",
+    "DescFR": "Coûte 1 <b>PA</b> de moins par carte dans votre défausse.",
+    "NameRU": "Остан Кивора",
+    "DescRU": "Стоит на 1 <b>ОД</b> меньше за каждую карту в вашем сбросе."
+  }
+}

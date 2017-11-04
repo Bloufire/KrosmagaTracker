@@ -1,0 +1,33 @@
+{
+  "Id": 475,
+  "Name": "rat_dominant",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 5,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    19
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    312
+  ],
+  "Texts": {
+    "NameBR": "Rato Dominante",
+    "DescBR": "<b>MORTE:</b>\nInvoca 1 Ratu.",
+    "NameEN": "Dominant Rat",
+    "DescEN": "<b>DEATH:</b>\nSummons 1 Ratou.",
+    "NameES": "Rata dominante",
+    "DescES": "<b>MUERTE:</b>\nInvoca 1 ratató.",
+    "NameFR": "Rat Dominant",
+    "DescFR": "<b>MORT :</b>\nInvoque 1 Ratou.",
+    "NameRU": "Крыс-доминант",
+    "DescRU": "<b>СМЕРТЬ:</b>\nпризывает 1 крысенка."
+  }
+}

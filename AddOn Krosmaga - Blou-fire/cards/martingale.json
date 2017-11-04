@@ -1,0 +1,31 @@
+{
+  "Id": 922,
+  "Name": "martingale",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 4,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Martingale",
+    "DescBR": "Devolve a sua mão ao bolo. Compre a mesma quantidade de cartas.",
+    "NameEN": "Martingale",
+    "DescEN": "Put the cards from your hand at the bottom of your deck. Draw the same number of cards.",
+    "NameES": "Martingala",
+    "DescES": "Coloca tu mano bajo tu mazo. Robas un número igual de cartas.",
+    "NameFR": "Martingale",
+    "DescFR": "Replace votre main sous votre pioche. Piochez autant de cartes.",
+    "NameRU": "Перерасчет",
+    "DescRU": "Помещает карты из вашей руки в низ вашей колоды. Вы берете столько же карт."
+  }
+}

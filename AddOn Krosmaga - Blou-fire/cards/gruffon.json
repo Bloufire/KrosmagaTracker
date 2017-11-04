@@ -1,0 +1,35 @@
+{
+  "Id": 474,
+  "Name": "gruffon",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 2,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    70
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 12,
+    "ParentCard": 356,
+    "ParentLevel": 8
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Garatuja",
+    "DescBR": "<b>APARIÇÃO:</b>\n50% de chance de revelar todos os Dofus adversários.",
+    "NameEN": "Grufon",
+    "DescEN": "<b>APPEARANCE:</b>\n50% chance of revealing all the enemy Dofus.",
+    "NameES": "Garabato",
+    "DescES": "<b>APARICIÓN:</b>\n50% de probabilidades de descubrir todos los dofus enemigos.",
+    "NameFR": "Grufon",
+    "DescFR": "<b>APPARITION :</b>\n50% de chances de dévoiler tous les Dofus adverses.",
+    "NameRU": "Груфон",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\n50%-я вероятность раскрыть все дофусы противника."
+  }
+}

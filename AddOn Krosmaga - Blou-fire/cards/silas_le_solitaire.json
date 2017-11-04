@@ -1,0 +1,31 @@
+{
+  "Id": 307,
+  "Name": "silas_le_solitaire",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 4,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 8,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Silas, o Solitário",
+    "DescBR": "<b>GUARDA-COSTAS</b>",
+    "NameEN": "Silas the Solitary",
+    "DescEN": "<b>BODYGUARD</b>",
+    "NameES": "Silas, el Solitario",
+    "DescES": "<b>GUARDAESPALDAS</b>",
+    "NameFR": "Silas le Solitaire",
+    "DescFR": "<b>GARDE DU CORPS</b>",
+    "NameRU": "Силас-одиночка",
+    "DescRU": "<b>ТЕЛОХРАНИТЕЛЬ</b>"
+  }
+}

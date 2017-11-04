@@ -1,0 +1,31 @@
+{
+  "Id": 547,
+  "Name": "tout_ou_rien",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 4,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Tudo ou Nada",
+    "DescBR": "Suas invocações\r\n<b>dão uma investida</b> ao longo de 2 células\r\n<b>OU</b> <b>recuam</b> 2 células.",
+    "NameEN": "All or Nothing",
+    "DescEN": "Your Minions\r\n<b>charge</b> 2 cells\r\n<b>OR</b> <b>move back</b> 2 cells.",
+    "NameES": "Todo o Nada",
+    "DescES": "Tus invocaciones\r\n<b>cargan</b> 2 casillas\r\n<b>O</b> <b>retroceden</b>2 casillas.",
+    "NameFR": "Tout ou Rien",
+    "DescFR": "Vos invocations\r\n<b>chargent</b> de 2 cases\r\n<b>OU</b> <b>reculent</b> de 2 cases.",
+    "NameRU": "Все или ничего",
+    "DescRU": "Ваши существа\r\nделают <b>рывок</b> на 2 клетки\r\n<b>ИЛИ</b> <b>отступают</b> на 2 клетки."
+  }
+}

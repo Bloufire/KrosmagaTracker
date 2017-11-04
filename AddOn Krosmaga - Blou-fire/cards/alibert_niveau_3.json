@@ -1,0 +1,33 @@
+{
+  "Id": 221,
+  "Name": "alibert_niveau_3",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 4,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    4
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 11,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    17
+  ],
+  "Texts": {
+    "NameBR": "Aliberto",
+    "DescBR": "<b>APARIÇÃO:</b>\nAdiciona um Leite de Bambu\r\nà sua mão.",
+    "NameEN": "Alibert",
+    "DescEN": "<b>APPEARANCE:</b>\nAdds a Bamboo Milk\r\nto your hand.",
+    "NameES": "Álibert",
+    "DescES": "<b>APARICIÓN:</b>\nAñade una leche de bambú\r\na tu mano.",
+    "NameFR": "Alibert",
+    "DescFR": "<b>APPARITION :</b>\nAjoute un Lait de Bambou\r\nà votre main.",
+    "NameRU": "Алибер",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nдает вам в руку\r\nбамбуковое молоко."
+  }
+}

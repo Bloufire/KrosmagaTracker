@@ -1,0 +1,32 @@
+{
+  "Id": 329,
+  "Name": "adamai_niveau_2",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 4,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    55,
+    33
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 9,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Adamai",
+    "DescBR": "<b>APARIÇÃO:</b>\nUma invocação que tenha\r\n4 <b>AT</b> ou menos volta para a mão\r\nde seu proprietário.",
+    "NameEN": "Adamai",
+    "DescEN": "<b>APPEARANCE:</b>\nReturns a Minion\r\nwith 4 <b>AT</b>\r\n or less to its owner's hand.",
+    "NameES": "Adamai",
+    "DescES": "<b>APARICIÓN:</b>\nSubes una invocación\r\nque tenga 4 <b>AT</b> o menos\r\na la mano de su\r\npropietario.",
+    "NameFR": "Adamaï",
+    "DescFR": "<b>APPARITION :</b>\nRemontez dans la main\r\nde son propriétaire une invocation ayant 4 <b>AT</b>\r\nou moins.",
+    "NameRU": "Адамай",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b> возвращает в руку хозяина существо с показателем <b>AT</b> не более 4."
+  }
+}

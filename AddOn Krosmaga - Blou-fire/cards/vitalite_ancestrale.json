@@ -1,0 +1,29 @@
+{
+  "Id": 1431,
+  "Name": "vitalite_ancestrale",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 5,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Vitalidade Ancestral",
+    "DescBR": "Passa para 4 os <b>PM</b>\r\ndas invocações em jogo.",
+    "NameEN": "Ancestral Vitality",
+    "DescEN": "Sets the <b>MP</b> of Minions\r\n that are in play to 4.",
+    "NameES": "Vitalidad Ancestral",
+    "DescES": "Cambia a 4 los <b>PM</b>\r\nde las invocaciones en juego.",
+    "NameFR": "Vitalite Ancestrale",
+    "DescFR": "Passe à 4 les <b>PM</b>\r\ndes invocations en jeu.",
+    "NameRU": "Древняя жизненная сила",
+    "DescRU": "Показатель <b>ОП</b> всех существ в игре становится равным 4."
+  }
+}

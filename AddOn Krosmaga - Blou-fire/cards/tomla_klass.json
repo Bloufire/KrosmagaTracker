@@ -1,0 +1,31 @@
+{
+  "Id": 103,
+  "Name": "tomla_klass",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 1,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Tomé Stiloso",
+    "DescBR": "<b>APARIÇÃO:</b>\nConfere +2 <b>AT</b> a uma invocação.",
+    "NameEN": "Klassy Tom",
+    "DescEN": "<b>APPEARANCE:</b>\nGives a Minion +2 <b>AT</b>.",
+    "NameES": "Tomás Tiloso",
+    "DescES": "<b>APARICIÓN:</b>\nDas +2 <b>AT</b> a una invocación.",
+    "NameFR": "Tomla Klass",
+    "DescFR": "<b>APPARITION :</b>\nDonnez +2 <b>AT</b> à une invocation.",
+    "NameRU": "Томчер Тяка",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nдает выбранному существу +2 <b>AT</b>."
+  }
+}

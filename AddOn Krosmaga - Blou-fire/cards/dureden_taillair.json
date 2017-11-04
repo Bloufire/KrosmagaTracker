@@ -1,0 +1,31 @@
+{
+  "Id": 411,
+  "Name": "dureden_taillair",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 4,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 8,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Durod Mattar",
+    "DescBR": "<b>FERIDO:</b> +2 <b>AT</b>.",
+    "NameEN": "Tex Alyckn",
+    "DescEN": "<b>INJURED:</b> +2 <b>AT.</b>",
+    "NameES": "Dureden Pellar",
+    "DescES": "<b>SANGRANTE:</b> +2 <b>AT</b>.",
+    "NameFR": "Dureden Taillair",
+    "DescFR": "<b>BLESSÉ :</b> +2 <b>AT</b>.",
+    "NameRU": "Дурден Тейлор",
+    "DescRU": "<b>РАНЕН:</b> +2 <b>AT</b>."
+  }
+}

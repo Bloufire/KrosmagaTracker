@@ -1,0 +1,31 @@
+{
+  "Id": 410,
+  "Name": "ravage",
+  "CardType": 1,
+  "CostAP": 5,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 1,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Devastação",
+    "DescBR": "Confere +2 <b>AT</b> e <b>iniciativa</b> a um Iop aliado.",
+    "NameEN": "Devastate",
+    "DescEN": "Confers +2 <b>AT</b> and <b>first strike</b> on an allied Iop.",
+    "NameES": "Estragos",
+    "DescES": "Da +2 <b>AT</b> e <b>iniciativa</b> a un yopuka aliado.",
+    "NameFR": "Ravage",
+    "DescFR": "Confère +2 <b>AT</b> et <b>initiative</b> à un Iop allié.",
+    "NameRU": "Разгром",
+    "DescRU": "Дает союзному иопу +2 <b>AT</b> и свойство <b>«первый удар»</b>."
+  }
+}

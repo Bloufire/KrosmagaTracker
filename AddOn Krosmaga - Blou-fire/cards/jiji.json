@@ -1,0 +1,37 @@
+{
+  "Id": 127,
+  "Name": "jiji",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 2,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    44
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 1,
+    "ParentCard": 237,
+    "ParentLevel": 9
+  },
+  "LinkedCards": [
+    39
+  ],
+  "Texts": {
+    "NameBR": "Jiji",
+    "DescBR": "<b>FIM DO TURNO:</b>\nPerde seus pelos...\n(adiciona 2 Pelos à mão do adversário)",
+    "NameEN": "Jiji",
+    "DescEN": "<b>END OF TURN:</b>\nLoses its hair…\n(adds 2 Hairs to the opponent's hand)",
+    "NameES": "Yiyi",
+    "DescES": "<b>FIN DEL TURNO:</b>\nPierde su pelaje...\n(añade 2 pelos a la mano de tu contrincante).",
+    "NameFR": "Jiji",
+    "DescFR": "<b>FIN DU TOUR :</b>\nPerd ses poils...\n(ajoute 2 Poils dans la main adverse)",
+    "NameRU": "Жижи",
+    "DescRU": "<b>КОНЕЦ ХОДА:</b>\nтеряет шерсть...\n(Дает 2 карты «Шерсть» в руку противника.)"
+  }
+}

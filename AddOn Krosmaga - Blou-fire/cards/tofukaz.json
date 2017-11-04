@@ -1,0 +1,31 @@
+{
+  "Id": 148,
+  "Name": "tofukaz",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    13
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Tofukaz",
+    "DescBR": "Ganha +2 <b>AT</b> e +1 <b>PM</b> quando um de seus Tofus morre.",
+    "NameEN": "Tofukaz",
+    "DescEN": "Gains +2 <b>AT</b> and +1 <b>MP</b> whenever one of your Tofus dies.",
+    "NameES": "Tofukaz",
+    "DescES": "Gana +2 <b>AT</b> y +1 <b>PM</b> cuando uno de tus tofus muere.",
+    "NameFR": "Tofukaz",
+    "DescFR": "Gagne +2 <b>AT</b> et +1 <b>PM</b> quand un de vos Tofus meurt.",
+    "NameRU": "Тофунздя",
+    "DescRU": "Получает +2 <b>AT</b> и +1 <b>ОП</b>, когда один из ваших тофу погибает."
+  }
+}

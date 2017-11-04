@@ -1,0 +1,31 @@
+{
+  "Id": 428,
+  "Name": "wobot_01",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 6,
+  "Attack": 5,
+  "MovementPoint": 2,
+  "Families": [
+    18
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Wobot 01",
+    "DescBR": "<b>CHEFE:</b> Seus outros Wabbits ganham +1 <b>AT</b>.",
+    "NameEN": "Wobot 01",
+    "DescEN": "<b>LEADER:</b>+1 <b>AT</b> to your other Wabbits.",
+    "NameES": "Wobot 01",
+    "DescES": "<b>LÍDER:</b>Da +1 <b>AT</b> a tus demás wabbits.",
+    "NameFR": "Wobot 01",
+    "DescFR": "<b>CHEF :</b> +1 <b>AT</b> à vos autres Wabbits.",
+    "NameRU": "Вобот 01",
+    "DescRU": "<b>ВОЖАК:</b> дает другим вашим кволикам +1 <b>AT</b>."
+  }
+}

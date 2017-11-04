@@ -1,0 +1,31 @@
+{
+  "Id": 18,
+  "Name": "tofu_royal",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 5,
+  "Attack": 4,
+  "MovementPoint": 4,
+  "Families": [
+    13
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Tofu Real",
+    "DescBR": "<b>CHEFE:</b>\nSeus outros Tofus ganham +1 <b>AT</b> e +1 <b>PM</b>.",
+    "NameEN": "Royal Tofu",
+    "DescEN": "<b>LEADER:</b>\n+1 <b>AT</b> and +1 <b>MP</b> to your other Tofus.",
+    "NameES": "Tofu Real",
+    "DescES": "<b>LÍDER:</b>\n Da +1 <b>AT</b> y +1 <b>PM</b> a tus demás tofus.",
+    "NameFR": "Tofu Royal",
+    "DescFR": "<b>CHEF :</b>\n+1 <b>AT</b> et +1 <b>PM</b> à vos autres Tofus.",
+    "NameRU": "Королевский тофу",
+    "DescRU": "<b>ВОЖАК:</b>\nдает другим вашим тофу +1 <b>AT</b> и +1 <b>ОП</b>."
+  }
+}

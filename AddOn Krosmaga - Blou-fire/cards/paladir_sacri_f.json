@@ -1,0 +1,32 @@
+{
+  "Id": 601,
+  "Name": "paladir_sacri_f",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 5,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    6,
+    77
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 8,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Oráculo Ofendido",
+    "DescBR": "<b>APARIÇÃO:</b>\nConfere +1 <b>AT</b> e +1 <b>AR</b>\r\nàs invocações aliadas feridas. Esse bônus é dobrado para os Sacriers.",
+    "NameEN": "Offended Oracle",
+    "DescEN": "<b>APPEARANCE:</b>\nGives injured allied Minions\r\n+1 <b>AT</b> and +1 <b>AR</b>. This bonus is doubled for Sacriers.",
+    "NameES": "Oráculo ofendido",
+    "DescES": "<b>APARICIÓN:</b>\nDa +1 <b>AT</b> y +1 <b>AR</b>\r\n a las invocaciones aliadas heridas. Este bonus se duplica para los sacrógritos.",
+    "NameFR": "Oracle Offensé",
+    "DescFR": "<b>APPARITION :</b>\nDonne +1 <b>AT</b> et +1 <b>AR</b>\r\naux invocations alliées blessées. Ce bonus est doublé pour les Sacrieurs.",
+    "NameRU": "Оскорбленный оракул",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nдает вашим раненым\r\nсуществам +1 <b>AT</b> и +1 <b>БР</b>. Для сакриеров эффект вдвое сильнее."
+  }
+}

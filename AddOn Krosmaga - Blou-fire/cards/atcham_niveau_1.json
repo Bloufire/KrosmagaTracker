@@ -1,0 +1,31 @@
+{
+  "Id": 143,
+  "Name": "atcham_niveau_1",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 24,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Atcham",
+    "DescBR": "Imune aos danos\r\ndos feitiços.",
+    "NameEN": "Atcham",
+    "DescEN": "Immune to spell\r\n damage.",
+    "NameES": "Atcham",
+    "DescES": "Insensible a los daños\r\nde los hechizos.",
+    "NameFR": "Atcham",
+    "DescFR": "Insensible aux dégâts\r\ndes sorts.",
+    "NameRU": "Апчам",
+    "DescRU": "Не получает урона\r\nот заклинаний."
+  }
+}

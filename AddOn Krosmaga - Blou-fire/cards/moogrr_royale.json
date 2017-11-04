@@ -1,0 +1,31 @@
+{
+  "Id": 367,
+  "Name": "moogrr_royale",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 6,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    39
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Mugrr Real",
+    "DescBR": "<b>INVESTIDA</b>",
+    "NameEN": "Royal Moogrr",
+    "DescEN": "<b>CHARGE</b>",
+    "NameES": "Muuugresa Real",
+    "DescES": "<b>CARGA</b>",
+    "NameFR": "Moogrr Royale",
+    "DescFR": "<b>CHARGE</b>",
+    "NameRU": "Королевский муйвол",
+    "DescRU": "<b>РЫВОК</b>"
+  }
+}

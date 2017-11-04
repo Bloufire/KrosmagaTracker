@@ -1,0 +1,31 @@
+{
+  "Id": 488,
+  "Name": "teleportation",
+  "CardType": 1,
+  "CostAP": 6,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 7,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Teletransporte",
+    "DescBR": "<b>Teletransporta</b> uma invocação para uma célula do seu <b>lado do tabuleiro</b>.",
+    "NameEN": "Teleportation",
+    "DescEN": "<b>Teleports</b> a Minion onto a cell on your <b>side.</b>",
+    "NameES": "Teletransportación",
+    "DescES": "<b>Teletransporta</b> una invocación a una casilla de tu <b>lado del tablero</b>.",
+    "NameFR": "Téléportation",
+    "DescFR": "<b>Téléporte</b> une invocation sur une case de votre <b>camp</b>.",
+    "NameRU": "Телепортация",
+    "DescRU": "<b>Телепортирует</b> существо на одну из клеток на вашей <b>половине поля</b>."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 1440,
+  "Name": "affaiblissement",
+  "CardType": 1,
+  "CostAP": 1,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    5
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 6,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Enfraquecimento",
+    "DescBR": "Elimina a última carta enviada para a sua lixeira a fim de reduzir a 1 o <b>AT</b> de uma invocação.",
+    "NameEN": "Weakening",
+    "DescEN": "Banishes the last card that went to your discard pile to make a Minion's <b>AT</b> drop to 1.",
+    "NameES": "Debilitamiento",
+    "DescES": "Elimina la última carta enviada a tu descarte para reducir a 1 el <b>AT</b> de una invocación.",
+    "NameFR": "Affaiblissement",
+    "DescFR": "Bannit la dernière carte partie dans votre défausse pour faire chuter à 1 l'<b>AT</b> d'une invocation.",
+    "NameRU": "Ослабление",
+    "DescRU": "Уничтожает последнюю карту из вашего сброса и снижает показатель <b>AT</b> выбранного существа до 1."
+  }
+}

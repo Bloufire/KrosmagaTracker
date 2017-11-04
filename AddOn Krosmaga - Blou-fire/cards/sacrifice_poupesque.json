@@ -1,0 +1,31 @@
+{
+  "Id": 510,
+  "Name": "sacrifice_poupesque",
+  "CardType": 1,
+  "CostAP": 5,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 10,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Sacrifício Bonecal",
+    "DescBR": "Sacrifique suas Bonecas. Cada uma delas inflige 1 dano ao Dofus adversário que estiver na mesma fileira.",
+    "NameEN": "Dolly Sacrifice",
+    "DescEN": "Sacrifice your Dolls. They each inflict 1 damage on the enemy Dofus on their row.",
+    "NameES": "Sacrificio Muñequero",
+    "DescES": "Sacrificas tus muñecas. Cada muñeca inflige 1 de daño al dofus enemigo de su hilera.",
+    "NameFR": "Sacrifice Poupesque",
+    "DescFR": "Sacrifiez vos Poupées. Elles infligent chacune 1 dégât au Dofus adverse de leur ligne.",
+    "NameRU": "Жертвоприношение кукол",
+    "DescRU": "Принесите в жертву своих кукол. Каждая из них наносит 1 ед. урона дофусу противника на своей линии."
+  }
+}

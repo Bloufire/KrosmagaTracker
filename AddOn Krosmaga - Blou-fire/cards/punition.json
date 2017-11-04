@@ -1,0 +1,31 @@
+{
+  "Id": 56,
+  "Name": "punition",
+  "CardType": 1,
+  "CostAP": 8,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 8,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Punição",
+    "DescBR": "Sacrifique um de seus Dofus para infligir 3 danos a um Dofus adversário.",
+    "NameEN": "Punishment",
+    "DescEN": "Sacrifice one of your Dofus, then inflict 3 damage on an enemy Dofus.",
+    "NameES": "Castigo",
+    "DescES": "Sacrificas uno de tus dofus para infligir 3 de daño a un dofus enemigo.",
+    "NameFR": "Punition",
+    "DescFR": "Sacrifiez un de vos Dofus pour infliger 3 dégâts à un Dofus adverse.",
+    "NameRU": "Наказание",
+    "DescRU": "Пожертвуйте одним из своих дофусов, чтобы нанести 3 ед. урона дофусу противника."
+  }
+}

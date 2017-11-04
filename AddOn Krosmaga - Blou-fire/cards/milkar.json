@@ -1,0 +1,31 @@
+{
+  "Id": 384,
+  "Name": "milkar",
+  "CardType": 0,
+  "CostAP": 10,
+  "Life": 7,
+  "Attack": 7,
+  "MovementPoint": 2,
+  "Families": [
+    15
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Amilkar",
+    "DescBR": "<b>INVESTIDA</b>\n<b>GOLPE DE MISERICÓRDIA:</b>\n<b>Dá uma investida</b>.",
+    "NameEN": "Milkar",
+    "DescEN": "<b>CHARGE</b>\n<b>FINAL BLOW:</b>\n<b>Charges</b>.",
+    "NameES": "Milkar",
+    "DescES": "<b>CARGA</b>\n<b>GOLPE DE GRACIA:</b>\n<b>Carga</b>.",
+    "NameFR": "Milkar",
+    "DescFR": "<b>CHARGE</b>\n<b>COUP DE GRÂCE :</b>\n<b>Charge</b>.",
+    "NameRU": "Милкар",
+    "DescRU": "<b>РЫВОК</b>\n<b>СМЕРТЕЛЬНЫЙ УДАР:</b>\nделает <b>рывок</b>."
+  }
+}

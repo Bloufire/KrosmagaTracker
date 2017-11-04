@@ -1,0 +1,31 @@
+{
+  "Id": 375,
+  "Name": "equite",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    3
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 3,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Igualdade",
+    "DescBR": "O <b>AT</b> das invocações\r\npassa a ser 1.",
+    "NameEN": "Equality",
+    "DescEN": "Makes all Minion's\r\n<b>AT</b> drop to 1.",
+    "NameES": "Igualdad",
+    "DescES": "El <b>AT</b> de las invocaciones\r\npasa a 1.",
+    "NameFR": "Equité",
+    "DescFR": "Passe l'<b>AT</b> des\r\ninvocations à 1.",
+    "NameRU": "Равенство",
+    "DescRU": "Показатель <b>AT</b> всех существ становится равным 1."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 85,
+  "Name": "wo_wabbit",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 4,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    18
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Wabbit Gowdo",
+    "DescBR": "<b>APARIÇÃO:</b>\nConfere +1 <b>AT</b> e +1 <b>AR</b> aos seus outros Wabbits por cada Cenouwa aliada presente no jogo.",
+    "NameEN": "Wo Wabbit",
+    "DescEN": "<b>APPEARANCE:</b>\nGives +1 <b>AT</b> and +1 <b>AR</b> to your other Wabbits per allied Cawwot in play.",
+    "NameES": "Wabbit wodo",
+    "DescES": "<b>APARICIÓN:</b>\nDa a tus wabbits +1 <b>AT</b> y +1 <b>AR</b> por cada zanahowia aliada en juego.",
+    "NameFR": "Wo Wabbit",
+    "DescFR": "<b>APPARITION :</b>\nDonne  à vos autres Wabbits  +1 <b>AT</b> et +1 <b>AR</b> par Cawotte alliée en jeu.",
+    "NameRU": "Кволик во",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nдает другим вашим кволикам +1 <b>AT</b> и +1 <b>БР</b> за каждую союзную мовковь в игре."
+  }
+}

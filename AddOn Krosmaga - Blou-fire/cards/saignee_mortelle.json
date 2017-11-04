@@ -1,0 +1,31 @@
+{
+  "Id": 443,
+  "Name": "saignee_mortelle",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    5
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 6,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Sangria Mortal",
+    "DescBR": "Reduz a 1 os <b>PV</b>\r\ndas invocações.",
+    "NameEN": "Bled Dry",
+    "DescEN": "Makes Minions' <b>HP</b>\r\n drop to 1.",
+    "NameES": "Sangría Mortal",
+    "DescES": "Reduce a 1 los <b>PdV</b>\r\nde las invocaciones.",
+    "NameFR": "Saignée Mortelle",
+    "DescFR": "Fait chuter à 1 les <b>PV</b>\r\ndes invocations.",
+    "NameRU": "Смертельное кровопускание",
+    "DescRU": "Снижает <b>ОЗ</b>\r\nвсех существ до 1."
+  }
+}

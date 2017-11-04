@@ -1,0 +1,31 @@
+{
+  "Id": 398,
+  "Name": "tofu_enrage",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 2,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    13
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Tofu Raivoso",
+    "DescBR": "<b>APARIÇÃO:</b>\n<b>Dá uma investida</b> ao longo da quantidade de células equivalente ao número de Tofus\r\npresentes no jogo.",
+    "NameEN": "Enraged Tofu",
+    "DescEN": "<b>APPEARANCE:</b>\n<b>Charges</b> as many cells as you have Tofus\r\nin play.",
+    "NameES": "Tofu Rabioso",
+    "DescES": "<b>APARICIÓN:</b>\n<b>Carga</b> tantas casillas como tofus tengas\r\nen juego.",
+    "NameFR": "Tofu Enragé",
+    "DescFR": "<b>APPARITION :</b>\n<b>Charge</b> d'autant de cases que vous avez de Tofus\r\nen jeu.",
+    "NameRU": "Яростный тофу",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nделает <b>рывок</b> на количество клеток, равное количеству ваших тофу\r\nв игре."
+  }
+}

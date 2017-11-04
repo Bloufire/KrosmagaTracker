@@ -1,0 +1,33 @@
+{
+  "Id": 240,
+  "Name": "khan_karkass_niveau_2",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 5,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 29,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    23
+  ],
+  "Texts": {
+    "NameBR": "Khan Karkass",
+    "DescBR": "<b>CONTRAGOLPE:</b>\nAdiciona 1 Fã à sua mão.",
+    "NameEN": "Khan Karkass",
+    "DescEN": "<b>COUNTERATTACK:</b>\nAdd 1 Fan to your hand.",
+    "NameES": "Khan Karkasa",
+    "DescES": "<b>VENGANZA:</b>\nAñade 1 fan a tu mano.",
+    "NameFR": "Khan Karkass",
+    "DescFR": "<b>CONTRE COUP :</b>\nAjoute 1 Fan à votre main.",
+    "NameRU": "Хан Каркасс",
+    "DescRU": "<b>КОНТРАТАКА:</b>\nдает вам в руку 1 фанатку."
+  }
+}

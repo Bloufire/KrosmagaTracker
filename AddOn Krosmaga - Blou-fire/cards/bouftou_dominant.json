@@ -1,0 +1,31 @@
+{
+  "Id": 178,
+  "Name": "bouftou_dominant",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    14
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Papatudo Dominante",
+    "DescBR": "<b>APARIÇÃO:</b>\nSeus outros Papatudos ganham +1 <b>AR</b>.",
+    "NameEN": "Dominant Gobball",
+    "DescEN": "<b>APPEARANCE:</b>\nGives +1 <b>AR</b> to your other Gobballs.",
+    "NameES": "Jalató dominante",
+    "DescES": "<b>APARICIÓN:</b>\nDa +1 <b>AR</b> a tus demás jalatós.",
+    "NameFR": "Bouftou Dominant",
+    "DescFR": "<b>APPARITION :</b>\nDonne +1 <b>AR</b> à vos autres Bouftous.",
+    "NameRU": "Бараглот-доминант",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nдает другим вашим бараглотам +1 <b>БР</b>."
+  }
+}

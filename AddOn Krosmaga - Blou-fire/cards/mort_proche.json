@@ -1,0 +1,31 @@
+{
+  "Id": 465,
+  "Name": "mort_proche",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 8,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Moribundo",
+    "DescBR": "Confere +3 <b>AT</b> e +2 <b>AR</b>\r\na uma invocação. Ela morre no fim do turno.",
+    "NameEN": "Moribund",
+    "DescEN": "Confers +3 <b>AT</b> and +2 <b>AR</b>\r\non a Minion. Dies at the end of its turn.",
+    "NameES": "Muerte Cercana",
+    "DescES": "Da +3 <b>AT</b> y +2 <b>AR</b>\r\na una invocación. Al final de su turno muere.",
+    "NameFR": "Mort Proche",
+    "DescFR": "Confère +3 <b>AT</b> et +2 <b>AR</b>\r\nà une invocation. Elle meurt à la fin de son tour.",
+    "NameRU": "Близкая смерть",
+    "DescRU": "Дает выбранному существу +3 <b>AT</b> и +2 <b>БР</b>. В конце своего хода оно умирает."
+  }
+}

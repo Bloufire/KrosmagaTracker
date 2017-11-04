@@ -1,0 +1,32 @@
+{
+  "Id": 170,
+  "Name": "cleophee_niveau_3",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    2,
+    33
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 136,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Cleofé",
+    "DescBR": "<b>ALCANCE:</b> 1-3\nAtaca uma segunda vez após um combate se outro membro aliado da Confraria do Tofu estiver em jogo.",
+    "NameEN": "Cleome",
+    "DescEN": "<b>RANGE:</b> 1-3\nAttacks a second time after a fight if another allied member of the Brotherhood of the Tofu is in play.",
+    "NameES": "Cleofé",
+    "DescES": "<b>ALCANCE:</b> 1-3\nAtaca una segunda vez después de un combate si tienes otro miembro de la Hermandad del Tofu en juego.",
+    "NameFR": "Cléophée",
+    "DescFR": "<b>PORTÉE :</b> 1-3\nAttaque une deuxième fois après un combat si un autre membre allié de la Confrérie du Tofu est en jeu.",
+    "NameRU": "Клео",
+    "DescRU": "<b>ДАЛЬНОСТЬ АТАКИ:</b> 1-3\nАтакует повторно после боя, если в игре есть союзник из Братства тофу."
+  }
+}

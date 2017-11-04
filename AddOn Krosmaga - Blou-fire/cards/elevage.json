@@ -1,0 +1,31 @@
+{
+  "Id": 1472,
+  "Name": "elevage",
+  "CardType": 1,
+  "CostAP": 1,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 5,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    1473
+  ],
+  "Texts": {
+    "NameBR": "Criação",
+    "DescBR": "Adiciona 2 Bebês Perfuratrozes Blindados à sua mão.",
+    "NameEN": "Breeding",
+    "DescEN": "Add 2 Armored Young Drhellers to your hand.",
+    "NameES": "Cría",
+    "DescES": "Añade 2 bebés perforatroces acorazados a tu mano.",
+    "NameFR": "Elevage",
+    "DescFR": "Ajoute 2 Bébés Phorreurs Armurés à votre main.",
+    "NameRU": "Питомник",
+    "DescRU": "Дает вам в руку 2 бронемалышей хорророек."
+  }
+}

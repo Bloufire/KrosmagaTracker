@@ -1,0 +1,29 @@
+{
+  "Id": 1539,
+  "Name": "senilite",
+  "CardType": 1,
+  "CostAP": 4,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 5,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Senilidade",
+    "DescBR": "Reduz em 2 o <b>AT</b>\r\ndas invocações adversárias até o seu próximo turno.",
+    "NameEN": "Senility",
+    "DescEN": "Reduces enemy Minions' <b>AT</b>\r\nby 2 until the next turn.",
+    "NameES": "Senilidad",
+    "DescES": "Quita 2 <b>AT</b>\r\na las invocaciones enemigas hasta tu próximo turno.",
+    "NameFR": "Sénilité",
+    "DescFR": "Réduit de 2 l'<b>AT</b>\r\ndes invocations adverses jusqu'à votre prochain tour.",
+    "NameRU": "Старение",
+    "DescRU": "Сокращает на 2 показатель <b>AT</b>\r\nсуществ противника до вашего следующего хода."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 499,
+  "Name": "tiwabbit_kiafin",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 1,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    18
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Pekewabbit Kofome",
+    "DescBR": "<b>APARIÇÃO:</b>\nGanha +1 <b>AT</b> e +1 <b>AR</b>\r\nse você tiver uma Cenouwa no jogo.",
+    "NameEN": "Tiwabbit Wosungwee",
+    "DescEN": "<b>APPEARANCE:</b>\nGains +1 <b>AT</b> and +1 <b>AR</b>\r\nif you have a Cawwot in play.",
+    "NameES": "Pekewabbit hambriento",
+    "DescES": "<b>APARICIÓN:</b>\nGana +1 <b>AT</b> y +1 <b>AR</b>\r\nsi tienes una zanahowia en juego.",
+    "NameFR": "Tiwabbit Kiafin",
+    "DescFR": "<b>APPARITION :</b>\nGagne +1 <b>AT</b> et +1 <b>AR</b>\r\nsi vous avez une Cawotte en jeu.",
+    "NameRU": "Тыкволик-нежрал",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b> если у вас в игре есть мовковь,\nполучает +1 <b>AT</b> и +1 <b>БР</b>."
+  }
+}

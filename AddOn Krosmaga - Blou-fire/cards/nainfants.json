@@ -1,0 +1,31 @@
+{
+  "Id": 843,
+  "Name": "nainfants",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 1,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    74
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Bambinões",
+    "DescBR": "<b>MORTE:</b>\nA invocação que destrói os Bambinões muda de fileira aleatoriamente.",
+    "NameEN": "Dwarfants",
+    "DescEN": "<b>DEATH:</b>\nThe Minion who destroys the Dwarfants changes row randomly.",
+    "NameES": "Enaniños",
+    "DescES": "<b>MUERTE:</b>\nLa invocación que destruye a los enaniños cambia de hilera aleatoriamente.",
+    "NameFR": "Nainfants",
+    "DescFR": "<b>MORT :</b>\nL'invocation qui détruit les Nainfants change de ligne aléatoirement.",
+    "NameRU": "Гномчики",
+    "DescRU": "<b>СМЕРТЬ:</b>\nсущество, уничтожившее гномчиков, случайным образом меняет линию."
+  }
+}

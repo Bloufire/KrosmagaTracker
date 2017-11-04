@@ -1,0 +1,31 @@
+{
+  "Id": 50,
+  "Name": "roi_des_bouftous",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 1,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    14
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Rei dos Papatudos",
+    "DescBR": "<b>APARIÇÃO:</b>\nGanha +1 <b>AT</b> e +1 <b>AR</b> por cada Papatudo aliado presente no jogo.",
+    "NameEN": "King of the Gobballs",
+    "DescEN": "<b>APPEARANCE:</b>\nGains +1 <b>AT</b> and +1 <b>AR</b> per other allied Gobball in play.",
+    "NameES": "Rey de los jalatós",
+    "DescES": "<b>APARICIÓN:</b>\nGana +1 <b>AT</b> y +1 <b>AR</b> por cada jalató aliado en juego.",
+    "NameFR": "Roi des Bouftous",
+    "DescFR": "<b>APPARITION :</b>\nGagne +1 <b>AT</b> et +1 <b>AR</b> par autre Bouftou allié en jeu.",
+    "NameRU": "Король бараглотов",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nполучает +1 <b>AT</b> и +1 <b>БР</b> за каждого союзного бараглота в игре."
+  }
+}

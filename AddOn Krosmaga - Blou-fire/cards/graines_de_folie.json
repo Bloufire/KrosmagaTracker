@@ -1,0 +1,33 @@
+{
+  "Id": 543,
+  "Name": "graines_de_folie",
+  "CardType": 1,
+  "CostAP": 6,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 10,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    22
+  ],
+  "Texts": {
+    "NameBR": "Sementes de Loucura",
+    "DescBR": "Transforma suas <b>Sementes</b> em Bonecas Loucas.",
+    "NameEN": "Seeden Impulse",
+    "DescEN": "Transforms your <b>Seeds</b> into Madolls.",
+    "NameES": "Semillas de Locura",
+    "DescES": "Todas tus <b>semillas</b> se transforman en muñecas locas.",
+    "NameFR": "Graines de Folie",
+    "DescFR": "Transforme vos <b>Graines</b> en Poupées Folles.",
+    "NameRU": "Семена безумия",
+    "DescRU": "Превращает ваши <b>семена</b> в буйнокукол."
+  }
+}

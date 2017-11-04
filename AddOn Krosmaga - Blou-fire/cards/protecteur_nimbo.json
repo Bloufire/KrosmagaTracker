@@ -1,0 +1,31 @@
+{
+  "Id": 714,
+  "Name": "protecteur_nimbo",
+  "CardType": 0,
+  "CostAP": 8,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 2,
+  "Families": [
+    74
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Lindanão Protetor",
+    "DescBR": "<b>GUARDA-COSTAS</b>\n<b>APARIÇÃO:</b> Ganha +2 <b>AR</b> por cada invocação\r\naliada presente no jogo.",
+    "NameEN": "Midgin Protector",
+    "DescEN": "<b>BODYGUARD:</b>\n<b>APPEARANCE:</b> Gains +2 <b>AR</b> per allied\r\nMinion in play.",
+    "NameES": "Protector taponano",
+    "DescES": "<b>GUARDAESPALDAS</b>\n<b>APARICIÓN:</b>Gana +2 <b>AR</b> por invocación\r\naliada en juego.",
+    "NameFR": "Protecteur Nimbos",
+    "DescFR": "<b>GARDE DU CORPS</b>\n<b>APPARITION :</b> Gagne +2 <b>AR</b> par invocation\r\nalliée en jeu.",
+    "NameRU": "Гномище-защитник",
+    "DescRU": "<b>ТЕЛОХРАНИТЕЛЬ</b>\n<b>ПОЯВЛЕНИЕ:</b> получает +2 <b>БР</b> за каждое союзное\r\nсущество в игре."
+  }
+}

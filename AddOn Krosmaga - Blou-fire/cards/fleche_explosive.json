@@ -1,0 +1,31 @@
+{
+  "Id": 210,
+  "Name": "fleche_explosive",
+  "CardType": 1,
+  "CostAP": 4,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    2
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 2,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Flecha Explosiva",
+    "DescBR": "Inflige 4 danos.",
+    "NameEN": "Explosive Arrow",
+    "DescEN": "Inflicts 4 damage.",
+    "NameES": "Flecha Explosiva",
+    "DescES": "Inflige 4 de daño.",
+    "NameFR": "Flèche Explosive",
+    "DescFR": "Inflige 4 dégâts.",
+    "NameRU": "Разрывная стрела",
+    "DescRU": "Наносит 4 ед. урона."
+  }
+}

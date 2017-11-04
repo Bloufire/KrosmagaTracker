@@ -1,0 +1,31 @@
+{
+  "Id": 9,
+  "Name": "mot_retablissant",
+  "CardType": 1,
+  "CostAP": 5,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    3
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 3,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Palavra Renovadora",
+    "DescBR": "Confere +2 <b>AR</b> às suas invocações.",
+    "NameEN": "Renewing Word",
+    "DescEN": "Confers +2 <b>AR</b> on your Minions.",
+    "NameES": "Palabra Restablecedora",
+    "DescES": "Da +2 <b>AR</b> a tus invocaciones.",
+    "NameFR": "Mot Rétablissant",
+    "DescFR": "Confère +2 <b>AR</b> à vos invocations.",
+    "NameRU": "Слово укрепления",
+    "DescRU": "Дает вашим существам +2 <b>БР</b>."
+  }
+}

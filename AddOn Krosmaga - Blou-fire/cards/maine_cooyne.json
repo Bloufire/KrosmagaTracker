@@ -1,0 +1,31 @@
+{
+  "Id": 862,
+  "Name": "maine_cooyne",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 5,
+  "Attack": 4,
+  "MovementPoint": 1,
+  "Families": [
+    36
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Mané Valente",
+    "DescBR": "<b>FIM DO TURNO:</b>\nMuda sua quantidade de <b>PM</b> para que fique igual ao número de Miaws aliados presentes no jogo.",
+    "NameEN": "Maine Goon",
+    "DescEN": "<b>END OF TURN:</b>\nMakes its <b>MP</b> equal to the number of allied Bow Meows in play.",
+    "NameES": "Mein Kuyn",
+    "DescES": "<b>FIN DEL TURNO:</b>\nCambia sus <b>PM</b> para que sean iguales al número de miaumiaus aliados en juego.",
+    "NameFR": "Maine Cooyne",
+    "DescFR": "<b>FIN DU TOUR :</b>\nChange ses <b>PM</b> pour qu'ils soient égaux au nombre de Chachas alliés en jeu.",
+    "NameRU": "Мельн Кульн",
+    "DescRU": "<b>КОНЕЦ ХОДА:</b>\nего показатель <b>ОП</b> становится равным числу союзных котокотов."
+  }
+}

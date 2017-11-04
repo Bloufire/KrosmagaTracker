@@ -1,0 +1,31 @@
+{
+  "Id": 592,
+  "Name": "chafer_serpe",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 2,
+  "Families": [
+    28
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Chafer Ceifador",
+    "DescBR": "<b>MONTE DE OSSOS</b>\nPode ser invocado em\r\num <b>Monte de Ossos</b> aliado.",
+    "NameEN": "Reaper Chafer",
+    "DescEN": "<b>PILE OF BONES</b>\nCan be summoned on\r\nan allied <b>Pile of Bones.</b>",
+    "NameES": "Chafer segador",
+    "DescES": "<b>MONTÓN DE HUESOS</b>\nPuede invocarse sobre\r\nun <b>montón de huesos</b> aliado.",
+    "NameFR": "Chafer Faucheur",
+    "DescFR": "<b>TAS D'OS</b>\nPeut être invoqué sur\r\nun <b>tas d'os</b> allié.",
+    "NameRU": "Чафер-косарь",
+    "DescRU": "<b>КУЧА КОСТЕЙ</b>\nПри вводе в игру\r\nего можно поставить на союзную <b>кучу костей</b>."
+  }
+}

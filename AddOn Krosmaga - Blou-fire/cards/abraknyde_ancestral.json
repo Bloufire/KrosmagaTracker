@@ -1,0 +1,33 @@
+{
+  "Id": 298,
+  "Name": "abraknyde_ancestral",
+  "CardType": 0,
+  "CostAP": 8,
+  "Life": 5,
+  "Attack": 7,
+  "MovementPoint": 2,
+  "Families": [
+    17
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    144
+  ],
+  "Texts": {
+    "NameBR": "Arvraknídeo Ancestral",
+    "DescBR": "<b>MORTE:</b>\nInvoca 2 Corvos\r\nao lado ou atrás dele.",
+    "NameEN": "Ancestral Treechnid",
+    "DescEN": "<b>DEATH:</b>\nSummons 2 Crobaks\r\nnext to or behind it.",
+    "NameES": "Abráknido Ancestral",
+    "DescES": "<b>MUERTE:</b>\nInvoca 2 cuerboks\r\na su lado.",
+    "NameFR": "Abraknyde Ancestral",
+    "DescFR": "<b>MORT :</b>\nInvoque 2 Corbacs\r\nà côté ou derrière lui.",
+    "NameRU": "Древний чурбанид",
+    "DescRU": "<b>СМЕРТЬ:</b>\nпризывает 2 карбаков\r\nрядом с собой или позади себя."
+  }
+}

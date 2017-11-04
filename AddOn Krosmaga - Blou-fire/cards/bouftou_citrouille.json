@@ -1,0 +1,33 @@
+{
+  "Id": 851,
+  "Name": "bouftou_citrouille",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    14
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    851
+  ],
+  "Texts": {
+    "NameBR": "Papatudo Abóbora",
+    "DescBR": "A invocação que o mata se transforma em Papatudo Abóbora.",
+    "NameEN": "Pumpkin Gobball",
+    "DescEN": "The Minion that kills it turns into a Pumpkin Gobball.",
+    "NameES": "Jalató calabaza",
+    "DescES": "La invocación que lo mata se transforma en jalató calabaza.",
+    "NameFR": "Bouftou Citrouille",
+    "DescFR": "L'invocation qui le tue se transforme en Bouftou Citrouille.",
+    "NameRU": "Бараглот-тыква",
+    "DescRU": "Убившее его существо превращается в бараглота-тыкву."
+  }
+}

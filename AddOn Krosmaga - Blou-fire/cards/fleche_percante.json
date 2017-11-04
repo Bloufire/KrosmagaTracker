@@ -1,0 +1,31 @@
+{
+  "Id": 281,
+  "Name": "fleche_percante",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    2
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 2,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Flecha Perfurante",
+    "DescBR": "<b>PERFURA-ARMADURA:</b>\nInflige 2 danos.",
+    "NameEN": "Piercing Arrow",
+    "DescEN": "<b>ARMOR-PIERCING:</b>\nInflicts 2 damage.",
+    "NameES": "Flecha Atravesadora",
+    "DescES": "<b>PERFORA-ARMADURA:</b>\nInflige 2 de daño.",
+    "NameFR": "Flèche Perçante",
+    "DescFR": "<b>PERCE ARMURE :</b>\nInflige 2 dégâts.",
+    "NameRU": "Бронебойная стрела",
+    "DescRU": "<b>ПРОБИВАНИЕ БРОНИ</b>\nНаносит 2 ед. урона."
+  }
+}

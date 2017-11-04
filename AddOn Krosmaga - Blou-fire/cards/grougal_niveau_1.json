@@ -1,0 +1,31 @@
+{
+  "Id": 157,
+  "Name": "grougal_niveau_1",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    55
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 25,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Grugaloragran",
+    "DescBR": "<b>COMEÇO DO TURNO:</b>\nCura 1 <b>PV</b> de seus Dofus.",
+    "NameEN": "Grougaloragran",
+    "DescEN": "<b>START OF TURN:</b>\nHeals all of your Dofus by 1 <b> HP</b>.",
+    "NameES": "Grugaloragrán",
+    "DescES": "<b>INICIO DEL TURNO:</b>\nCura 1 <b>PdV</b> a tus dofus.",
+    "NameFR": "Grougaloragran",
+    "DescFR": "<b>DÉBUT DU TOUR :</b>\nSoigne vos Dofus de 1 <b>PV</b>. ",
+    "NameRU": "Гругалорагран",
+    "DescRU": "<b>НАЧАЛО ХОДА:</b>\nвосстанавливает вашим дофусам по 1 <b>ОЗ</b>."
+  }
+}

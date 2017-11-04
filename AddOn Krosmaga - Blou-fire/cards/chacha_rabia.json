@@ -1,0 +1,31 @@
+{
+  "Id": 1422,
+  "Name": "chacha_rabia",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 2,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    36
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Miaw Voroço",
+    "DescBR": "<b>APARIÇÃO:</b>\nColoca na sua mão\r\no primeiro Miaw do\r\nseu bolo.",
+    "NameEN": "Mumbow Meow Jumble",
+    "DescEN": "<b>APPEARANCE:</b>\nPut the first Bow Meow\r\nfrom your deck\r\nin your hand.",
+    "NameES": "Miaumiau xiliar",
+    "DescES": "<b>APARICIÓN:</b>\nColoca en tu mano\r\nel primer miaumiau de\r\ntu mazo.",
+    "NameFR": "Chacha Rabia",
+    "DescFR": "<b>APPARITION :</b>\nPlace dans votre main\r\nle premier Chacha de\r\nvotre pioche.",
+    "NameRU": "Котокот-рабиа",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nвы берете\r\nпервого котокота\r\nиз своей колоды."
+  }
+}

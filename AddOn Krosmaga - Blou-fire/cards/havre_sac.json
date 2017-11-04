@@ -1,0 +1,29 @@
+{
+  "Id": 672,
+  "Name": "havre_sac",
+  "CardType": 1,
+  "CostAP": 5,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 5,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Saco de viagem",
+    "DescBR": "Inflige a um Dofus\r\numa quantidade de danos equivalente\r\nà de <b>Espólios</b> no jogo.",
+    "NameEN": "Haven Bag",
+    "DescEN": "Inflicts as much damage\r\n on a Dofus as there is\r\n<b>Loot</b> in play.",
+    "NameES": "Merkasako",
+    "DescES": "Infliges a un dofus\r\ntantos daños como\r\n<b>botines</b> en juego.",
+    "NameFR": "Havre-sac",
+    "DescFR": "Infligez à un Dofus\r\nautant de dégâts que\r\nde <b>Butins</b> en jeu.",
+    "NameRU": "Ранец",
+    "DescRU": "Наносит выбранному\r\nдофусу урон, равный\r\nколичеству <b>добычи</b> в игре."
+  }
+}

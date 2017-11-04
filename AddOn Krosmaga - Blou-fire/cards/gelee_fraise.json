@@ -1,0 +1,33 @@
+{
+  "Id": 201,
+  "Name": "gelee_fraise",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 2,
+  "Families": [
+    30
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    258
+  ],
+  "Texts": {
+    "NameBR": "Gelatina de Morango",
+    "DescBR": "<b>APARIÇÃO:</b>\nInvoque uma Gelatina.",
+    "NameEN": "Strawberry Jelly",
+    "DescEN": "<b>APPEARANCE:</b>\nSummon a Gelatine.",
+    "NameES": "Gelatina de fresa",
+    "DescES": "<b>APARICIÓN:</b>\nInvocas una gelatina.",
+    "NameFR": "Gelée Fraise",
+    "DescFR": "<b>APPARITION :</b>\nInvoquez une Gelatine.",
+    "NameRU": "Клубничное желе",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nпризывает желейку."
+  }
+}

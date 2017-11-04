@@ -1,0 +1,31 @@
+{
+  "Id": 539,
+  "Name": "abragland",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 4,
+  "Attack": 4,
+  "MovementPoint": 2,
+  "Families": [
+    17
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Arvrolota",
+    "DescBR": "<b>APARIÇÃO:</b>\nGanha +1 <b>AT</b> por cada Arakne\r\npresente no jogo.",
+    "NameEN": "Treechorn",
+    "DescEN": "<b>APPEARANCE:</b>\nGains +1 <b>AT</b> per Arachnee\r\nin play.",
+    "NameES": "Abrakllota",
+    "DescES": "<b>APARICIÓN:</b> \nGana +1 <b>AT</b> por arakna\r\nen juego.",
+    "NameFR": "Abragland",
+    "DescFR": "<b>APPARITION :</b>\nGagne +1 <b>AT</b> par Arakne\r\nen jeu.",
+    "NameRU": "Чурбажелудь",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nполучает +1 <b>АТ</b> за каждого арахни\r\nв игре."
+  }
+}

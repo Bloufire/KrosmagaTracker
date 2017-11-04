@@ -1,0 +1,37 @@
+{
+  "Id": 368,
+  "Name": "chacha_or",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 7,
+  "Families": [
+    36
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 13,
+    "ParentCard": 335,
+    "ParentLevel": 9
+  },
+  "LinkedCards": [
+    368
+  ],
+  "Texts": {
+    "NameBR": "Miaw Dourado",
+    "DescBR": "Substitui seus\r\nMiaws Negros por\r\nMiaws Dourados.",
+    "NameEN": "Golden Bow Meow",
+    "DescEN": "Replaces your \r\nBlack Bow Meows with\r\nGolden Bow Meows.",
+    "NameES": "Miaumiau dorado",
+    "DescES": "Sustituye tus\r\nmiaumiaus negros\r\npor miaumiaus dorados.",
+    "NameFR": "Chacha Or",
+    "DescFR": "Remplace vos\r\nChachas Noirs par\r\ndes Chachas Or.",
+    "NameRU": "Золотой котокот",
+    "DescRU": "Заменяет ваших\r\nчерных котокотов \r\nзолотыми котокотами."
+  }
+}

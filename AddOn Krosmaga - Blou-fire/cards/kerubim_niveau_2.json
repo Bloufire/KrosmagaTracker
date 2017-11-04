@@ -1,0 +1,31 @@
+{
+  "Id": 363,
+  "Name": "kerubim_niveau_2",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 8,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Kerubim Antiquário",
+    "DescBR": "<b>APARIÇÃO:</b>\nDestrói o prisma adversário da fileira dele e depois revela um Dofus adversário.",
+    "NameEN": "Kerub the Broker",
+    "DescEN": "<b>APPEARANCE:</b>\nDestroys the enemy prism on its row, then reveals an enemy Dofus.",
+    "NameES": "Kerubim Anticuario",
+    "DescES": "<b>APARICIÓN:</b>\nDestruye el prisma enemigo de su hilera y descubres un dofus del contrincante.",
+    "NameFR": "Kerubim le Brocanteur",
+    "DescFR": "<b>APPARITION :</b>\nDétruit le prisme adverse de sa ligne puis dévoilez un Dofus adverse.",
+    "NameRU": "Керубим Старьевщик",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nуничтожает призму противника на своей линии, затем раскрывает дофус противника."
+  }
+}

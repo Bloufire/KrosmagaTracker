@@ -1,0 +1,31 @@
+{
+  "Id": 538,
+  "Name": "larve_bleue",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 2,
+  "Families": [
+    16
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Larva Azul",
+    "DescBR": "<b>APARIÇÃO:</b>\nTodos os jogadores compram 1 carta.",
+    "NameEN": "Blue Larva",
+    "DescEN": "<b>APPEARANCE:</b>\nEach player draws 1 card.",
+    "NameES": "Larva azul",
+    "DescES": "<b>APARICIÓN:</b>\nCada jugador roba 1 carta.",
+    "NameFR": "Larve Bleue",
+    "DescFR": "<b>APPARITION :</b>\nChaque joueur pioche 1 carte.",
+    "NameRU": "Синяя личинка",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nкаждый игрок берет по 1 карте."
+  }
+}

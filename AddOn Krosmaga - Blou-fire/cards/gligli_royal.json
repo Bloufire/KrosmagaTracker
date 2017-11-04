@@ -1,0 +1,31 @@
+{
+  "Id": 70,
+  "Name": "gligli_royal",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 4,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    25
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Valili Real",
+    "DescBR": "<b>APARIÇÃO:</b>\nSeus outros Valilis <b>dão uma investida</b> ao longo de 2 células.",
+    "NameEN": "Royal Blibli",
+    "DescEN": "<b>APPEARANCE:</b>\nYour other Bliblis <b>charge</b> 2 cells.",
+    "NameES": "Balí Real",
+    "DescES": "<b>APARICIÓN:</b>\nTus demás balíes <b>cargan</b> 2 casillas.",
+    "NameFR": "Gligli Royal",
+    "DescFR": "<b>APPARITION :</b>\nVos autres Gliglis <b>chargent</b> de 2 cases.",
+    "NameRU": "Королевский нафнаф",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nдругие ваши нафнафы делают <b>рывок</b> на 2 клетки."
+  }
+}

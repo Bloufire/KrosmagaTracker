@@ -1,0 +1,31 @@
+{
+  "Id": 33,
+  "Name": "bouftou_male",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    14
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Papatudo Macho",
+    "DescBR": "<b>MORTE:</b> O prisma aliado de sua fileira reaparece.",
+    "NameEN": "Male Gobball",
+    "DescEN": "<b>DEATH:</b> The allied prism on its row reappears.",
+    "NameES": "Jalató macho",
+    "DescES": "<b>MUERTE:</b> Vuelve a aparecer el prisma aliado de su hilera.",
+    "NameFR": "Bouftou Male",
+    "DescFR": "<b>MORT :</b> Le prisme allié de sa ligne apparait à nouveau.",
+    "NameRU": "Бараглот-самец",
+    "DescRU": "<b>СМЕРТЬ:</b> союзная призма на его линии появляется вновь."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 438,
+  "Name": "roi_gelax",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 4,
+  "Attack": 4,
+  "MovementPoint": 2,
+  "Families": [
+    30
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Rei Gelax",
+    "DescBR": "<b>FIM DO TURNO:</b>\nRecupera uma Gelatina aleatória da sua lixeira.",
+    "NameEN": "King Jellix",
+    "DescEN": "<b>END OF TURN:</b>\nReturn a random Jelly from your discard pile to your hand.",
+    "NameES": "Rey Gelax",
+    "DescES": "<b>FIN DEL TURNO:</b>\nRecupera una gelatina aleatoria de tu descarte.",
+    "NameFR": "Roi Gelax",
+    "DescFR": "<b>FIN DU TOUR :</b>\nRécupère une Gelée aléatoire de votre défausse.",
+    "NameRU": "Король Желакс",
+    "DescRU": "<b>КОНЕЦ ХОДА:</b>\nвозвращает одно случайное желе из вашего сброса."
+  }
+}

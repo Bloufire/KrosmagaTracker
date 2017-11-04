@@ -1,0 +1,31 @@
+{
+  "Id": 830,
+  "Name": "moon_niveau_1",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    34
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 473,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Moon",
+    "DescBR": "<b>APARIÇÃO</b>:\nMuda o <b>AT</b> das outras invocações para deixá-lo igual ao dele.",
+    "NameEN": "Moon",
+    "DescEN": "<b>APPEARANCE</b>:\nMakes other Minions' <b>AT</b> equal to its own.",
+    "NameES": "Moon",
+    "DescES": "<b>APARICIÓN</b>:\nCambia el <b>AT</b> de las demás invocaciones para que este sea igual al suyo.",
+    "NameFR": "Moon",
+    "DescFR": "<b>APPARITION</b> :\nChange l'<b>AT</b> des autres invocations pour qu'elle soit égale à la sienne.",
+    "NameRU": "Луна",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nприравнивает показатель <b>AT</b> других существ к своему показателю AT."
+  }
+}

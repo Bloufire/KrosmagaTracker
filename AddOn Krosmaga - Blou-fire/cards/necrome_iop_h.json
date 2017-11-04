@@ -1,0 +1,32 @@
+{
+  "Id": 1174,
+  "Name": "necrome_iop_h",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 7,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    1,
+    78
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 1,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Bruta Ímpia",
+    "DescBR": "<b>NECROMO</b>\n<b>GOLPE DE MISERICÓRDIA:</b> Coloca na sua mão a primeira Campeã da Blasfêmia do seu bolo.",
+    "NameEN": "Unrighteous Brute",
+    "DescEN": "<b>NECRO</b>\n<b>FINAL BLOW:</b> Put the first Champion of Blasphemy from your deck in your hand.",
+    "NameES": "Bestia impía",
+    "DescES": "<b>NÉCROMO</b>\n<b>GOLPE DE GRACIA:</b> Coloca en tu mano la primera campeona blasfema de tu mazo.",
+    "NameFR": "Brute Impie",
+    "DescFR": "<b>NÉCROME</b>\n<b>COUP DE GRÂCE :</b> Place dans votre main la première Championne du Blasphème de votre pioche.",
+    "NameRU": "Нечестивое животное",
+    "DescRU": "<b>НЕКРОМАН</b>\n<b>СМЕРТЕЛЬНЫЙ УДАР:</b> Вы берете первую «Чемпионку грубости» из своей колоды."
+  }
+}

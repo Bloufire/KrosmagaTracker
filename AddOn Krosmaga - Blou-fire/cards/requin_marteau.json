@@ -1,0 +1,31 @@
+{
+  "Id": 197,
+  "Name": "requin_marteau",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 6,
+  "Attack": 1,
+  "MovementPoint": 2,
+  "Families": [
+    68
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Tubarão-Martelo",
+    "DescBR": "<b>APARIÇÃO:</b>\nGanha +1 <b>AT</b> por cada invocação ferida presente no jogo.",
+    "NameEN": "Hammer Shark",
+    "DescEN": "<b>APPEARANCE:</b>\nGains +1 <b>AT</b> per injured Minion in play.",
+    "NameES": "Tiburón martillo",
+    "DescES": "<b>APARICIÓN:</b>\nGana +1 <b>AT</b> por cada invocación herida en juego.",
+    "NameFR": "Requin Marteau",
+    "DescFR": "<b>APPARITION :</b>\nGagne +1 <b>AT</b> par invocation blessée en jeu.",
+    "NameRU": "Акула-молот",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b> получает +1 <b>AT</b> за каждое раненое существо в игре."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "Id": 1184,
+  "Name": "necrome_eca_h",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 6,
+  "Attack": 8,
+  "MovementPoint": 2,
+  "Families": [
+    8,
+    78
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 4,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Arranhador Tonquino",
+    "DescBR": "<b>NECROMO</b>\n<b>INAMOVÍVEL</b>\n<b>COMEÇO DO TURNO:</b> Inflige 1 <b>OU</b> 2 danos a si mesmo.",
+    "NameEN": "Clawer Tonkino",
+    "DescEN": "<b>NECRO</b>\n<b>IRREMOVABLE</b>\n<b>START OF TURN:</b> Suffers 1 <b>OR</b> 2 damage.",
+    "NameES": "Arañador Tonkino",
+    "DescES": "<b>NÉCROMO</b>\n<b>INAMOVIBLE</b>\n<b>INICIO DEL TURNO:</b> Se inflige 1 <b>O</b> 2 de daño.",
+    "NameFR": "Griffeur Tonkino",
+    "DescFR": "<b>NÉCROME</b>\n<b>INAMOVIBLE</b>\n<b>DÉBUT DU TOUR :</b> S'inflige 1 <b>OU</b> 2 dégâts.",
+    "NameRU": "Тонкино-бичеватель",
+    "DescRU": "<b>НЕКРОМАН</b>\n<b>НЕЛЬЗЯ СДВИНУТЬ</b>\n<b>НАЧАЛО ХОДА:</b> наносит себе 1 <b>ИЛИ</b> 2 единицы урона."
+  }
+}

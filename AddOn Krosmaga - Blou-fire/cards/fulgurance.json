@@ -1,0 +1,31 @@
+{
+  "Id": 423,
+  "Name": "fulgurance",
+  "CardType": 1,
+  "CostAP": 6,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 8,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Fulgurância",
+    "DescBR": "Uma de suas invocações troca de lugar com outra.",
+    "NameEN": "Light Speed",
+    "DescEN": "Exchange the position of one of your Minions with another.",
+    "NameES": "Fulgor",
+    "DescES": "Una de tus invocaciones y una invocación enemiga intercambian su posición.",
+    "NameFR": "Fulgurance",
+    "DescFR": "Echange la position d'une de vos invocations avec celle d'une autre.",
+    "NameRU": "Вспышка",
+    "DescRU": "Меняет местами одно из ваших существ с другим существом."
+  }
+}

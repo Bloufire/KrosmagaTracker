@@ -1,0 +1,35 @@
+{
+  "Id": 341,
+  "Name": "harcelement",
+  "CardType": 1,
+  "CostAP": 7,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    2
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 2,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 22,
+    "ParentCard": 340,
+    "ParentLevel": 8
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Assédio",
+    "DescBR": "Inflige 1 dano a todos os Dofus adversários.",
+    "NameEN": "Harassment",
+    "DescEN": "Inflicts 1 damage on all enemy Dofus.",
+    "NameES": "Hostigamiento",
+    "DescES": "Inflige 1 de daño a todos los dofus enemigos.",
+    "NameFR": "Harcèlement",
+    "DescFR": "Inflige 1 dégât à tous les Dofus adverses.",
+    "NameRU": "Преследование",
+    "DescRU": "Наносит 1 ед. урона всем дофусам противника."
+  }
+}

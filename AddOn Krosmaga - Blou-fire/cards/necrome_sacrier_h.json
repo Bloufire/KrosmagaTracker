@@ -1,0 +1,32 @@
+{
+  "Id": 757,
+  "Name": "necrome_sacrier_h",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    6,
+    78
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 8,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Discípulo da Agonia",
+    "DescBR": "<b>NECROMO</b>\n<b>FIM DO TURNO:</b>\nInflige 1 dano às invocações adversárias\r\ne também a si mesmo.",
+    "NameEN": "Disciple of Agony",
+    "DescEN": "<b>NECRO</b>\n<b>END OF TURN:</b>\nInflicts 1 damage on enemy Minions\r\nas well as on itself.",
+    "NameES": "Discípulo de la agonía",
+    "DescES": "<b>NÉCROMO</b>\n<b>FIN DEL TURNO:</b>\nInflige 1 de daño a las invocaciones enemigas\r\ny a sí mismo.",
+    "NameFR": "Disciple de l'Agonie",
+    "DescFR": "<b>NÉCROME</b>\n<b>FIN DU TOUR :</b>\nInflige 1 dégât aux invocations adverses\r\nainsi qu'à lui même.",
+    "NameRU": "Адепт агонии",
+    "DescRU": "<b>НЕКРОМАН</b>\n<b>КОНЕЦ ХОДА:</b> наносит существам противника и себе 1 ед. урона."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 388,
+  "Name": "scaramel",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 1,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    23
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Scaramelo",
+    "DescBR": "<b>APARIÇÃO:</b>\nGanha +2 <b>AR</b> por\r\nScara aliado em jogo.",
+    "NameEN": "Scaramel",
+    "DescEN": "<b>APPEARANCE:</b>\nGains +2 <b>AR</b> per\r\nallied Scara in play.",
+    "NameES": "Escaramelo",
+    "DescES": "<b>APARICIÓN:</b>\nGana +2 <b>AR</b> por cada\r\nescara aliado en juego.",
+    "NameFR": "Scaramel",
+    "DescFR": "<b>APPARITION :</b>\nGagne +2 <b>AR</b> par\r\nScara allié en jeu.",
+    "NameRU": "Скарамель",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nполучает +2 <b>БР</b> за каждого союзного\r\nскара в игре."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 312,
+  "Name": "ratou",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 2,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    19
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Ratu",
+    "DescBR": "<b>APARIÇÃO:</b>\n<b>Dá uma investida</b> ao longo da quantidade de células equivalente ao número de Ratos em jogo.",
+    "NameEN": "Ratou",
+    "DescEN": "<b>APPEARANCE:</b>\n<b>Charges</b> the same number of cells as there are other Rats in play.",
+    "NameES": "Ratató",
+    "DescES": "<b>APARICIÓN:</b>\n<b>Carga</b> tantas casillas como otras ratas tengas en juego.",
+    "NameFR": "Ratou",
+    "DescFR": "<b>APPARITION :</b>\n<b>Charge</b> d'autant de cases que vous avez d'autres Rats en jeu.",
+    "NameRU": "Крысенок",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nделает <b>рывок</b> на количество клеток, равное числу других ваших крыс в игре."
+  }
+}

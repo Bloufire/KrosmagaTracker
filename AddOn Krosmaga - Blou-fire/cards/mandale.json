@@ -1,0 +1,31 @@
+{
+  "Id": 370,
+  "Name": "mandale",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 7,
+  "Attack": 2,
+  "MovementPoint": 2,
+  "Families": [
+    72
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Mand Alha",
+    "DescBR": "<b>CONTRAGOLPE:</b>\nGanha +3 <b>AT</b>.",
+    "NameEN": "Mandhal",
+    "DescEN": "<b>COUNTERATTACK:</b>\nGains +3 <b>AT</b>.",
+    "NameES": "Manodhazo",
+    "DescES": "<b>VENGANZA:</b>\nGana +3 <b>AT</b>.",
+    "NameFR": "Mandhal",
+    "DescFR": "<b>CONTRE COUP :</b>\nGagne +3 <b>AT</b>.",
+    "NameRU": "Мандхаль",
+    "DescRU": "<b>КОНТРАТАКА:</b>\nполучает +3 <b>AT</b>."
+  }
+}

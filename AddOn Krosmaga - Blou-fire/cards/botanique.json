@@ -1,0 +1,33 @@
+{
+  "Id": 627,
+  "Name": "botanique",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 10,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    885
+  ],
+  "Texts": {
+    "NameBR": "Botânica",
+    "DescBR": "Transforma uma\r\n<b>Semente</b> em <b>Árvore</b>.",
+    "NameEN": "Botany",
+    "DescEN": "Transforms a\r\n<b>Seed</b> into a <b>Tree</b>.",
+    "NameES": "Botánica",
+    "DescES": "Transforma una\r\n<b>semilla</b> en <b>árbol</b>.",
+    "NameFR": "Botanique",
+    "DescFR": "Transforme une\r\n<b>Graine</b> en <b>Arbre</b>.",
+    "NameRU": "Ботаника",
+    "DescRU": "Превращает выбранное\r\n<b>семя</b> в <b>дерево</b>."
+  }
+}

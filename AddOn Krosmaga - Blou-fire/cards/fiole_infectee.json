@@ -1,0 +1,31 @@
+{
+  "Id": 167,
+  "Name": "fiole_infectee",
+  "CardType": 1,
+  "CostAP": 4,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    3
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 3,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Frasco Infectado",
+    "DescBR": "Troca o <b>AT</b>\r\nde 2 invocações.",
+    "NameEN": "Infected Flask",
+    "DescEN": "Switches the <b>AT</b>\r\nof 2 Minions.",
+    "NameES": "Matraz Infectado",
+    "DescES": "Intercambias el <b>AT</b>\r\nde 2 invocaciones.",
+    "NameFR": "Fiole Infectée",
+    "DescFR": "Echangez l'<b>AT</b>\r\nde 2 invocations.",
+    "NameRU": "Зелье инфекции",
+    "DescRU": "Два существа меняются\r\nпоказателями <b>AT</b>."
+  }
+}

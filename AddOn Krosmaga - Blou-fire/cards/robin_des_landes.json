@@ -1,0 +1,31 @@
+{
+  "Id": 350,
+  "Name": "robin_des_landes",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 1,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    2
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 2,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Robin das Estepes",
+    "DescBR": "<b>ALCANCE:</b> 1-4",
+    "NameEN": "Robin Falsehood",
+    "DescEN": "<b>RANGE:</b> 1-4",
+    "NameES": "Robin de las Landas",
+    "DescES": "<b>ALCANCE:</b> 1-4",
+    "NameFR": "Robin des Landes",
+    "DescFR": "<b>PORTÉE :</b> 1-4",
+    "NameRU": "Робин Крут",
+    "DescRU": "<b>ДАЛЬНОСТЬ АТАКИ:</b> 1-4"
+  }
+}

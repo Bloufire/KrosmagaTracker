@@ -1,0 +1,31 @@
+{
+  "Id": 2,
+  "Name": "malox_makugen",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 6,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    3
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 3,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Malox Makugen",
+    "DescBR": "Inflige 1 dano ao Dofus adversário presente na fileira dele quando uma invocação é curada.",
+    "NameEN": "Malox Makugen",
+    "DescEN": "Inflicts 1 damage on the enemy Dofus on its row whenever a Minion is healed.",
+    "NameES": "Malox Makugen",
+    "DescES": "Inflige 1 de daño al dofus enemigo de su hilera cuando se cura una invocación.",
+    "NameFR": "Malox Makugen",
+    "DescFR": "Inflige 1 dégât au Dofus adverse de sa ligne quand une invocation est soignée.",
+    "NameRU": "Малокс Макуген",
+    "DescRU": "Наносит 1 единицу урона дофусу противника на своей линии, когда существо восстанавливает здоровье."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "Id": 403,
+  "Name": "welsh",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 6,
+    "ParentCard": 545,
+    "ParentLevel": 9
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Welsh",
+    "DescBR": "Ganha +1 <b>AT</b> e +1 <b>AR</b> quando uma invocação adversária entra em jogo.",
+    "NameEN": "Welsh",
+    "DescEN": "Gains +1 <b>AT</b> and +1 <b>AR</b> whenever an enemy Minion enters into play.",
+    "NameES": "Welsh",
+    "DescES": "Gana +1 <b>AT</b> y +1 <b>AR</b> cuando una invocación enemiga entra en juego.",
+    "NameFR": "Welsh",
+    "DescFR": "Gagne +1 <b>AT</b> et +1 <b>AR</b> quand une invocation adverse entre en jeu.",
+    "NameRU": "Велш",
+    "DescRU": "Получает +1 <b>AT</b> и +1 <b>БР</b>, когда существо противника вступает в игру."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 1350,
+  "Name": "tir_rapide",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    2
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 2,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Tiro Rápido",
+    "DescBR": "A invocação visada desencadeia um ataque.",
+    "NameEN": "Rapid Fire",
+    "DescEN": "The targeted Minion triggers an attack.",
+    "NameES": "Tiro Rápido",
+    "DescES": "La invocación seleccionada provoca un ataque.",
+    "NameFR": "Tir Rapide",
+    "DescFR": "L’invocation ciblée déclenche une attaque.",
+    "NameRU": "Скорострельность",
+    "DescRU": "Выбранное существо атакует."
+  }
+}

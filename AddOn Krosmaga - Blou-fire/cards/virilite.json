@@ -1,0 +1,31 @@
+{
+  "Id": 194,
+  "Name": "virilite",
+  "CardType": 1,
+  "CostAP": 5,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 1,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Virilidade",
+    "DescBR": "Confere +2 <b>AT</b> e +1 <b>AR</b> às suas invocações.",
+    "NameEN": "Virility",
+    "DescEN": "Confers +2 <b>AT</b> and +1 <b>AR</b> on your Minions.",
+    "NameES": "Virilidad",
+    "DescES": "Da +2 <b>AT</b> y +1 <b>AR</b> a tus invocaciones.",
+    "NameFR": "Virilité",
+    "DescFR": "Confère +2 <b>AT</b> et +1 <b>AR</b> à vos invocations.",
+    "NameRU": "Дух мачо",
+    "DescRU": "Дает вашим существам +2 <b>AT</b> и +1 <b>БР</b>."
+  }
+}

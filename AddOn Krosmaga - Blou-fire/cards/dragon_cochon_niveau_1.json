@@ -1,0 +1,31 @@
+{
+  "Id": 81,
+  "Name": "dragon_cochon_niveau_1",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 5,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    51
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 7,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Dragão-Porco",
+    "DescBR": "",
+    "NameEN": "Dragon Pig",
+    "DescEN": "",
+    "NameES": "Dragocerdo",
+    "DescES": "",
+    "NameFR": "Dragon Cochon",
+    "DescFR": "",
+    "NameRU": "Дракосвин",
+    "DescRU": ""
+  }
+}

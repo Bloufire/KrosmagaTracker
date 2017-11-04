@@ -1,0 +1,33 @@
+{
+  "Id": 174,
+  "Name": "canar",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 5,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 10,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    183
+  ],
+  "Texts": {
+    "NameBR": "Topa",
+    "DescBR": "<b>APARIÇÃO:</b>\nTransforma uma de suas <b>Sementes</b> em Boneca Inflável.",
+    "NameEN": "Canar",
+    "DescEN": "<b>APPEARANCE:</b>\nTransform one of your <b>Seeds</b> into an Inflatable Doll.",
+    "NameES": "Patuso",
+    "DescES": "<b>APARICIÓN:</b>\nTransformas una de tus <b>semillas</b> en muñeca hinchable.",
+    "NameFR": "Canar",
+    "DescFR": "<b>APPARITION :</b>\nTransformez une de vos <b>Graines</b> en Poupée Gonflable.",
+    "NameRU": "Болдуй",
+    "DescRU": "<b>ПОЯВЛЕНИЕ</b>\nпревращает одно из ваших <b>семян</b> в надувную куклу."
+  }
+}

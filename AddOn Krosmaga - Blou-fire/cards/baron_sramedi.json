@@ -1,0 +1,31 @@
+{
+  "Id": 385,
+  "Name": "baron_sramedi",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 5,
+  "Attack": 6,
+  "MovementPoint": 3,
+  "Families": [
+    5
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 6,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Barão Sramedi",
+    "DescBR": "<b>MORTE:</b> Volta para a sua mão se houver ao menos 10 cartas na sua lixeira.",
+    "NameEN": "Baron Sramedi",
+    "DescEN": "<b>DEATH:</b> Returns to your hand if you have at least 10 cards in your discard pile.",
+    "NameES": "Barón Sramedi",
+    "DescES": "<b>MUERTE:</b> Sube a tu mano si tienes al menos 10 cartas en tu descarte.",
+    "NameFR": "Baron Sramedi",
+    "DescFR": "<b>MORT :</b> Remonte dans votre main si vous avez au moins 10 cartes dans votre défausse.",
+    "NameRU": "Барон Срамница",
+    "DescRU": "<b>СМЕРТЬ:</b> возвращается к вам в руку, если у вас в сбросе хотя бы 10 карт."
+  }
+}

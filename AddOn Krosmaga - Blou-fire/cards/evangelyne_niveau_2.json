@@ -1,0 +1,32 @@
+{
+  "Id": 493,
+  "Name": "evangelyne_niveau_2",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 2,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    2,
+    33
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 22,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Evangelyne",
+    "DescBR": "<b>ALCANCE:</b> 1-4\nGanha +2 <b>de alcance</b> se houver outro\r\nmembro aliado da Confraria do Tofu no jogo.",
+    "NameEN": "Evangelyne",
+    "DescEN": "<b>RANGE:</b> 1-4\nGains +2 <b>range</b> if another\r\nallied member of the Brotherhood of the Tofu is in play.",
+    "NameES": "Evangelyne",
+    "DescES": "<b>ALCANCE:</b> 1-4\nGana +2 de <b>alcance</b> si tienes\r\notro miembro de la Hermandad del Tofu en juego.",
+    "NameFR": "Evangelyne",
+    "DescFR": "<b>PORTÉE :</b> 1-4\nGagne +2 <b>portée</b> si un\r\nautre membre allié de la Confrérie du Tofu est en jeu.",
+    "NameRU": "Евангелина",
+    "DescRU": "<b>ДАЛЬНОСТЬ АТАКИ:</b> 1-4\nПолучает +2 к <b>дальности атаки</b>,\r\nесли в игре есть союзник из Братства тофу."
+  }
+}

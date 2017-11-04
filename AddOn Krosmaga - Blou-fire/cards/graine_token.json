@@ -1,0 +1,29 @@
+{
+  "Id": 537,
+  "Name": "graine_token",
+  "CardType": 2,
+  "CostAP": 1,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 10,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Semente",
+    "DescBR": "Quando uma invocação\r\npisa em uma <b>Semente</b>, ela ganha +1 <b>AR</b> se for aliada ou sofre 1 dano se for adversária.",
+    "NameEN": "Seed",
+    "DescEN": "A Minion that\r\nwalks on a <b>Seed</b> gains +1 <b>AR</b> if it is an ally, or suffers 1 damage if it is an enemy.",
+    "NameES": "Semilla",
+    "DescES": "Una invocación que\r\npisa una <b>semilla</b> gana +1 <b>AR</b> si es un aliado o sufre 1 de daño si es un enemigo.",
+    "NameFR": "Graine",
+    "DescFR": "Une invocation qui\r\nmarche sur une <b>Graine</b> gagne +1 <b>AR</b> si c'est un allié ou reçoit 1 dégât si c'est un adversaire.",
+    "NameRU": "Семя",
+    "DescRU": "Пройдя по <b>семени</b>,\r\nсоюзное существо получает +1 <b>БР</b>, а существо противника получает 1 единицу урона."
+  }
+}

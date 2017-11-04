@@ -1,0 +1,33 @@
+{
+  "Id": 1643,
+  "Name": "persan",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 2,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    36
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    151
+  ],
+  "Texts": {
+    "NameBR": "Persa",
+    "DescBR": "<b>MORTE:</b>\nInvoca um Miaw Negro.",
+    "NameEN": "Persian",
+    "DescEN": "<b>DEATH:</b>\nSummons a Black Bow Meow.",
+    "NameES": "Persa",
+    "DescES": "<b>MUERTE:</b>\nInvoca un miaumiau negro.",
+    "NameFR": "Persan",
+    "DescFR": "<b>MORT :</b>\nInvoque un Chacha Noir.",
+    "NameRU": "Перс",
+    "DescRU": "<b>СМЕРТЬ:</b>\nпризывает черного котокота."
+  }
+}

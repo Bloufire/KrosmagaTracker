@@ -1,0 +1,34 @@
+{
+  "Id": 218,
+  "Name": "grand_craqueleur_chuchote",
+  "CardType": 0,
+  "CostAP": 8,
+  "Life": 5,
+  "Attack": 4,
+  "MovementPoint": 2,
+  "Families": [
+    22,
+    31
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    279
+  ],
+  "Texts": {
+    "NameBR": "Grande Smagador Sussurrado",
+    "DescBR": "<b>ALCANCE:</b> 1-2\n<b>RESISTÊNCIA:</b> 1\n<b>MORTE:</b> Invoca Sussurradores com Balestra.",
+    "NameEN": "Big Whispered Crackler",
+    "DescEN": "<b>RANGE:</b>1-2\n<b>RESISTANCE:</b> 1\n<b>DEATH:</b> Summons Crossbow Whisperers.",
+    "NameES": "Gran crujidor susurrado",
+    "DescES": "<b>ALCANCE:</b> 1-2\n<b>RESISTENCIA:</b> 1\n<b>MUERTE:</b> Invoca susurradores ballesteros.",
+    "NameFR": "Grand Craqueleur Chuchoté",
+    "DescFR": "<b>PORTÉE :</b> 1-2\n<b>RÉSISTANCE :</b> 1\n<b>MORT :</b> Invoque des Chuchoteurs Arbalétriers.",
+    "NameRU": "Большептунный дробитель",
+    "DescRU": "<b>ДАЛЬНОСТЬ АТАКИ:</b> 1-2\n<b>СОПРОТИВЛЕНИЕ:</b> 1\n<b>СМЕРТЬ:</b> призывает шептунов-арбалетчиков."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 120,
+  "Name": "engrais",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 10,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Adubo",
+    "DescBR": "Compre 1 carta. Ela custará 1 <b>PA</b> a menos por cada <b>Semente</b> aliada presente no jogo.",
+    "NameEN": "Fertilizer",
+    "DescEN": "Draw 1 card; it costs 1 <b>AP</b> less per allied <b>Seed</b> in play.",
+    "NameES": "Abono",
+    "DescES": "Robas 1 carta. Cuesta 1 <b>PA</b> menos por cada <b>semilla</b> aliada en juego.",
+    "NameFR": "Engrais",
+    "DescFR": "Piochez 1 carte, elle coûte 1 <b>PA</b> de moins par <b>Graine</b> alliée en jeu.",
+    "NameRU": "Удобрение",
+    "DescRU": "Возьмите карту. Ее стоимость снижается на 1 <b>ОД</b> за каждое союзное <b>семя</b> в игре."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 357,
+  "Name": "sinistro",
+  "CardType": 1,
+  "CostAP": 4,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 7,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Sinistro",
+    "DescBR": "(É colocado sobre um Dofus aliado.)\n<b>FIM DO TURNO:</b> Inflige 1 dano ao adversário ou\r\nao Dofus diante dele.\r\nÉ destruído se for ferido.",
+    "NameEN": "Sinistro",
+    "DescEN": "(Puts itself on an allied Dofus.)\n<b>END OF TURN:</b> Inflicts 1 damage on the opponent or\r\non the Dofus in front of it.\r\nIt is destroyed if injured.",
+    "NameES": "Siniestro",
+    "DescES": "(Se coloca en un dofus aliado.)\n<b>FIN DEL TURNO:</b> Inflige 1 de daño al adversario o\r\nal dofus delante de él.\r\nSe destruye si resulta herido.",
+    "NameFR": "Sinistro",
+    "DescFR": "(Se place sur un Dofus allié.)\n<b>FIN DU TOUR :</b> Inflige 1 dégât à l'adversaire ou\r\nau Dofus devant lui.\r\nIl est détruit si blessé.",
+    "NameRU": "Часовище",
+    "DescRU": "(Поместите на свой дофус.)\n<b>КОНЕЦ ХОДА:</b> наносит 1 ед. урона противнику или дофусу на своей линии.\r\nИсчезает от урона по дофусу."
+  }
+}

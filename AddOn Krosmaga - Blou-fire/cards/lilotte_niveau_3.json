@@ -1,0 +1,31 @@
+{
+  "Id": 237,
+  "Name": "lilotte_niveau_3",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 4,
+  "Families": [
+    44
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 1,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Lilota",
+    "DescBR": "<b>Dá uma investida</b> ao longo de 1 célula quando você joga uma carta.",
+    "NameEN": "Lilotte",
+    "DescEN": "<b>Charges</b> 1 cell whenever you play a card.",
+    "NameES": "Lilota",
+    "DescES": "<b>Carga</b> 1 casilla cada vez que utilizas una carta.",
+    "NameFR": "Lilotte",
+    "DescFR": "<b>Charge</b> de 1 case quand vous jouez une carte.",
+    "NameRU": "Лилотта",
+    "DescRU": "Делает <b>рывок</b> на 1 клетку, когда вы разыгрываете карту."
+  }
+}

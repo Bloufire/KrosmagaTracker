@@ -1,0 +1,31 @@
+{
+  "Id": 28,
+  "Name": "larve_violette",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 1,
+  "Attack": 1,
+  "MovementPoint": 2,
+  "Families": [
+    16
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Larva Violeta",
+    "DescBR": "<b>APARIÇÃO:</b>\n<b>Empurra</b> uma invocação\r\nao longo de 2 células.",
+    "NameEN": "Purple Larva",
+    "DescEN": "<b>APPEARANCE:</b>\n<b>Repels</b> a Minion\r\nby 2 cells.",
+    "NameES": "Larva violeta",
+    "DescES": "<b>APARICIÓN:</b>\n<b>Empujas</b> una invocación\r\n2 casillas.",
+    "NameFR": "Larve Violette",
+    "DescFR": "<b>APPARITION :</b>\n<b>Repoussez</b> une invocation\r\nde 2 cases.",
+    "NameRU": "Фиолетовая личинка",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b> <b>отталкивает</b> выбранное существо на 2 клетки."
+  }
+}

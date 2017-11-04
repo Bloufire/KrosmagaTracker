@@ -1,0 +1,32 @@
+{
+  "Id": 674,
+  "Name": "paladir_eni_f",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 4,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    3,
+    77
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 3,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Pacificadora Animada",
+    "DescBR": "Inflige 1 dano às invocações adversárias quando uma invocação\r\naliada é curada.",
+    "NameEN": "Cheerful Peacemaker",
+    "DescEN": "Inflicts 1 damage on enemy Minions\r\nwhenever an allied Minion is healed.",
+    "NameES": "Pacificadora alegre",
+    "DescES": "Inflige 1 de daño a las invocaciones enemigas cuando una invocación\r\naliada se cura.",
+    "NameFR": "Pacificatrice Enjouée",
+    "DescFR": "Inflige 1 dégât aux invocations adverses quand une invocation\r\nalliée est soignée.",
+    "NameRU": "Веселая усмирительница",
+    "DescRU": "Наносит 1 единицу урона существам противника,\r\nкогда союзное существо восстанавливает здоровье."
+  }
+}

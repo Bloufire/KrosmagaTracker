@@ -1,0 +1,31 @@
+{
+  "Id": 295,
+  "Name": "fleche_de_recul",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    2
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 2,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Flecha de Recuo",
+    "DescBR": "<b>Empurra</b> uma invocação adversária ao longo de 5 células.",
+    "NameEN": "Retreat Arrow",
+    "DescEN": "<b>Repels</b> an enemy Minion by 5 cells.",
+    "NameES": "Flecha de Retroceso",
+    "DescES": "<b>Empuja</b> una invocación enemiga 5 casillas.",
+    "NameFR": "Flèche de Recul",
+    "DescFR": "<b>Repousse</b> une invocation adverse de 5 cases.",
+    "NameRU": "Стрела отступления",
+    "DescRU": "<b>Отталкивает</b> существо противника на 5 клеток."
+  }
+}

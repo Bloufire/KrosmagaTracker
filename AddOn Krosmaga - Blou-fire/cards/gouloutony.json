@@ -1,0 +1,31 @@
+{
+  "Id": 7,
+  "Name": "gouloutony",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    82
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Gurmã",
+    "DescBR": "<b>HORDA</b>\n<b>APARIÇÃO</b>: \nGanha +3 <b>AT</b> se você não tiver Carniçais no terreno.",
+    "NameEN": "Ghourmand",
+    "DescEN": "<b>HORDE</b>\n<b>APPEARANCE:</b> \nGains +3 <b>AT</b> if you have no Ghouls on the board.",
+    "NameES": "Ghulotony",
+    "DescES": "<b>HORDA</b>\n<b>APARICIÓN</b>: \nGana +3 <b>AT</b> si aún no tienes ghuls en el tablero.",
+    "NameFR": "Gouloutony",
+    "DescFR": "<b>HORDE</b>\n<b>APPARITION</b> : \nGagne +3 <b>AT</b> si vous n'avez pas de goules sur le terrain.",
+    "NameRU": "Чревоугод",
+    "DescRU": "<b>ОРДА</b>\n<b>ПОЯВЛЕНИЕ</b>: \nПолучает +3 <b>AT</b>, если у вас нет гулей на поле."
+  }
+}

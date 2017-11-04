@@ -1,0 +1,31 @@
+{
+  "Id": 568,
+  "Name": "kam_erlite",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 5,
+  "MovementPoint": 2,
+  "Families": [
+    27
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Philip Ylsen",
+    "DescBR": "Ganha +1 <b>AR</b> quando uma invocação aliada morre.",
+    "NameEN": "Felonious Monk",
+    "DescEN": "Gains +1 <b>AR</b> whenever an allied Minion dies.",
+    "NameES": "Bud Bueyser",
+    "DescES": "Gana +1 <b>AR</b> cuando una invocación aliada muere.",
+    "NameFR": "Kam Erlite",
+    "DescFR": "Gagne +1 <b>AR</b> quand une invocation alliée meurt.",
+    "NameRU": "Кам Эрлит",
+    "DescRU": "Получает +1 <b>БР</b> при гибели одного из союзных существ."
+  }
+}

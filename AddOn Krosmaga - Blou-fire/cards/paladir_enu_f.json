@@ -1,0 +1,34 @@
+{
+  "Id": 1223,
+  "Name": "paladir_enu_f",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 4,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    4,
+    77
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 5,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    1473
+  ],
+  "Texts": {
+    "NameBR": "Heroína Secular",
+    "DescBR": "<b>APARIÇÃO:</b>\nInvoca um Bebê Perfuratroz Blindado em cada célula da linha dela.",
+    "NameEN": "Ancient Heroine",
+    "DescEN": "<b>APPEARANCE:</b>\nSummons an Armored Young Drheller on each cell on her line.",
+    "NameES": "Heroína secular",
+    "DescES": "<b>APARICIÓN:</b>\nInvoca un bebé perforatroz acorazado en cada casilla de su fila.",
+    "NameFR": "Héroïne Séculaire",
+    "DescFR": "<b>APPARITION :</b>\nInvoque un Bébé Phorreur Armuré sur chaque case de sa rangée.",
+    "NameRU": "Столетняя героиня",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nпризывает бронемалыша хорроройку на каждую клетку в своем ряду."
+  }
+}

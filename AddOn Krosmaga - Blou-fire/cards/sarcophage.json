@@ -1,0 +1,31 @@
+{
+  "Id": 154,
+  "Name": "sarcophage",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 7,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Sarcófago",
+    "DescBR": "Compre 1 carta ou 2 cartas se você tiver ao menos 5 <b>PA</b> em sua <b>reserva</b>.",
+    "NameEN": "Sarcophagus",
+    "DescEN": "Draw 1 card or 2 cards if you have at least 5 <b>AP</b> in your <b>reserve</b>.",
+    "NameES": "Sarcófago",
+    "DescES": "Robas 1 carta o 2 cartas si tienes al menos 5 <b>PA</b> en tu <b>reserva</b>.",
+    "NameFR": "Sarcophage",
+    "DescFR": "Piochez 1 carte ou 2 cartes si vous avez au moins 5 <b>PA</b> dans votre <b>réserve</b>.",
+    "NameRU": "Саркофаг",
+    "DescRU": "Возьмите 1 карту. Если у вас в <b>резерве</b> не менее 5 <b>ОД</b>, возьмите еще 1 карту."
+  }
+}

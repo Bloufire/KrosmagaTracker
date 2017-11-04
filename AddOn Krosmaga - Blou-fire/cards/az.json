@@ -1,0 +1,36 @@
+{
+  "Id": 544,
+  "Name": "az",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 2,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    13,
+    33
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 12,
+    "ParentCard": 525,
+    "ParentLevel": 5
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Az",
+    "DescBR": "<b>CHEFE:</b>\nSuas outras invocações recebem +2 <b>AT</b>.",
+    "NameEN": "Az",
+    "DescEN": "<b>LEADER:</b>\n+2 <b>AT</b> to your other Minions.",
+    "NameES": "Az",
+    "DescES": "<b>LÍDER:</b>\nDa +2 <b>AT</b> a tus demás invocaciones.",
+    "NameFR": "Az",
+    "DescFR": "<b>CHEF :</b>\n+2 <b>AT</b> à vos autres invocations.",
+    "NameRU": "Аз",
+    "DescRU": "<b>ВОЖАК:</b>\nдает другим вашим существам +2 <b>AT</b>."
+  }
+}

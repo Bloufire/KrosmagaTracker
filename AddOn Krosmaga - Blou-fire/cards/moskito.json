@@ -1,0 +1,31 @@
+{
+  "Id": 466,
+  "Name": "moskito",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 1,
+  "Attack": 1,
+  "MovementPoint": 4,
+  "Families": [
+    62
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Moskito",
+    "DescBR": "<b>APARIÇÃO:</b>\nTroca de posição com uma de suas invocações.",
+    "NameEN": "Moskito",
+    "DescEN": "<b>APPEARANCE:</b>\nSwitches places with one of your Minions.",
+    "NameES": "Moskito",
+    "DescES": "<b>APARICIÓN:</b>\nIntercambias su posición con una de tus invocaciones.",
+    "NameFR": "Moskito",
+    "DescFR": "<b>APPARITION :</b>\nÉchangez sa position avec une de vos invocations.",
+    "NameRU": "Москит",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nменяется местами с одним из ваших существ."
+  }
+}
