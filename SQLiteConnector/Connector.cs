@@ -6,32 +6,61 @@ using System.Threading.Tasks;
 using System.Data.SQLite;
 using System.IO;
 using System.Reflection;
+using NLog;
 
 namespace SQLiteConnector
 {
     public static class Connector
     {
         static SQLiteConnection _maConnexion;
-
+        private static Logger logger = LogManager.GetCurrentClassLogger();
         public static void CreateDatabase()
         {
             if (!File.Exists("krosmagaAddOn.db"))
             {
-                SQLiteConnection.CreateFile("krosmagaAddOn.db");
+                try
+                {
+                    SQLiteConnection.CreateFile("krosmagaAddOn.db");
+                }
+                catch (Exception e)
+                {
+                    logger.Error("Error: SQLiteConnection.CreateFile(krosmagaAddOn.db) : " + e);
+                }
+
                 using (_maConnexion = new SQLiteConnection("Data Source = krosmagaAddOn.db; Version = 3;"))
                 {
                     _maConnexion.Open();
                     string sql = "CREATE TABLE " + '"' + "Match" + '"' + " ( `idMatch` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, `opponentName` TEXT NOT NULL, `playerClasse` TEXT NOT NULL, `resultatMatch` INTEGER NOT NULL, `nbToursMatch` INTEGER NOT NULL, `Fk_deckId` INTEGER NOT NULL, `matchType` INTEGER NOT NULL, `date` TEXT, FOREIGN KEY(`Fk_deckId`) REFERENCES `Deck`(`idDeck`) )";
                     SQLiteCommand command = new SQLiteCommand(sql, _maConnexion);
-                    command.ExecuteNonQuery();
-
+                    try
+                    {
+                        command.ExecuteNonQuery();
+                    }
+                    catch (Exception e)
+                    {
+                        logger.Error("Error: SQL CREATE TABLE Match : " + e);
+                    }
                     sql = "CREATE TABLE " + '"' + "Deck" + '"' + " ( `idDeck` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, `opponentClasse` TEXT NOT NULL )";
                     command = new SQLiteCommand(sql, _maConnexion);
-                    command.ExecuteNonQuery();
+                    try
+                    {
+                        command.ExecuteNonQuery();
+                    }
+                    catch (Exception e)
+                    {
+                        logger.Error("Error: SQL CREATE TABLE Deck : " + e);
+                    }
 
                     sql = "CREATE TABLE " + '"' + "Card" + '"' + " ( `idCard` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, `realCardId` INTEGER NOT NULL, `Fk_deckId` INTEGER NOT NULL, FOREIGN KEY(`Fk_deckId`) REFERENCES `Deck`(`idDeck`) )";
                     command = new SQLiteCommand(sql, _maConnexion);
-                    command.ExecuteNonQuery();
+                    try
+                    {
+                        command.ExecuteNonQuery();
+                    }
+                    catch (Exception e)
+                    {
+                        logger.Error("Error: SQL CREATE TABLE Card : " + e);
+                    }
                     _maConnexion.Close();
                 }
             }
@@ -54,7 +83,7 @@ namespace SQLiteConnector
                 _maConnexion.Close();
         }
 
-        public static bool SaveMatchResult(string opponentClasse, 
+        public static bool SaveMatchResult(string opponentClasse,
             List<int> cards,
             string opponentName,
             string playerClasse,
@@ -69,7 +98,15 @@ namespace SQLiteConnector
             {
                 string sql = "INSERT INTO Deck (opponentClasse) values ('" + opponentClasse + "')";
                 SQLiteCommand commande = new SQLiteCommand(sql, _maConnexion);
-                commande.ExecuteNonQuery();
+                try
+                {
+                    commande.ExecuteNonQuery();
+                }
+                catch (Exception e)
+                {
+                    logger.Error("Error: INSERT INTO Deck (opponentClasse) : " + e);
+                }
+
 
                 sql = "SELECT last_insert_rowid()";
                 commande = new SQLiteCommand(sql, _maConnexion);
@@ -82,12 +119,26 @@ namespace SQLiteConnector
                 {
                     sql = "INSERT INTO Card (realCardId, Fk_deckId) values (" + item + ", " + deckId + " )";
                     commande = new SQLiteCommand(sql, _maConnexion);
-                    commande.ExecuteNonQuery();
+                    try
+                    {
+                        commande.ExecuteNonQuery();
+                    }
+                    catch (Exception e)
+                    {
+                        logger.Error("Error: INSERT INTO Card (realCardId, Fk_deckId) : " + e);
+                    }
                 }
 
                 sql = "INSERT INTO Match (opponentName, playerClasse, resultatMatch, nbToursMatch, Fk_deckId, matchType, date) values ('" + opponentName + "', '" + playerClasse + "', " + matchResult + ", " + nbTours + ", " + deckId + ", " + matchType + ", '" + dateString + "' )";
                 commande = new SQLiteCommand(sql, _maConnexion);
-                commande.ExecuteNonQuery();
+                try
+                {
+                    commande.ExecuteNonQuery();
+                }
+                catch (Exception e)
+                {
+                    logger.Error("Error: INSERT INTO Match (opponentName, playerClasse, resultatMatch, nbToursMatch, Fk_deckId, matchType, date) : " + e);
+                }
                 Close();
                 return true;
             }
