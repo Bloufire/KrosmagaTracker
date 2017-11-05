@@ -251,6 +251,8 @@ namespace AddOn_Krosmaga___Blou_fire.Services
             UpdateMatchsWithFilterList();
             //On efface le deck du model
             TrackerModel.Deck.Clear();
+            TrackerModel.DeckInfinites.Clear();
+            TrackerModel.DeckKrosmiques.Clear();
             TrackerModel.CardsInHand.Clear();
         }
 

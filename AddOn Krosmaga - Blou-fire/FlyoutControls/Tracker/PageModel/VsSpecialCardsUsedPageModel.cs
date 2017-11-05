@@ -63,7 +63,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
             set
             {
                 _vsDeckKrosmiques = value;
-                OnPropertyChanged("VsDeckInfinites");
+                OnPropertyChanged("VsDeckKrosmiques");
             }
         }
     }

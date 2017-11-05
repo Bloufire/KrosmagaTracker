@@ -45,7 +45,7 @@ namespace AddOn_Krosmaga___Blou_fire.ProducerConsumer
             {
                 foreach (IPAddress ip in HosyEntry.AddressList)
                 {
-                    logger.Info("ip.AddressFamily = " + ip.AddressFamily + " / AddressFamily.InterNetwork = " + AddressFamily.InterNetwork);
+                    logger.Info("ip.AddressFamily = " + ip.AddressFamily + " / AddressFamily.InterNetwork = " + AddressFamily.InterNetwork + " / ipadd = " + ip.ToString());
                     if (ip.AddressFamily == AddressFamily.InterNetwork)
                     {
                         ipadd = ip.ToString();
@@ -55,25 +55,51 @@ namespace AddOn_Krosmaga___Blou_fire.ProducerConsumer
             }
             if (ipadd == "")
             {
-                logger.Error("HosyEntry.AddressList.Length = " + HosyEntry.AddressList.Length);
-                logger.Error("ipadd is empty (ip.AddressFamily never equal to AddressFamily.InterNetwork)");
+                logger.Error("Error : ipadd is empty (ip.AddressFamily never equal to AddressFamily.InterNetwork)");
+                logger.Error("Error : HosyEntry.AddressList.Length = " + HosyEntry.AddressList.Length);
             }
-            mainSocket = new Socket(AddressFamily.InterNetwork,
-                SocketType.Raw, ProtocolType.IP);
-
-            mainSocket.Bind(new IPEndPoint(IPAddress.Parse(ipadd), 4988));
-
-            mainSocket.SetSocketOption(SocketOptionLevel.IP,
-                SocketOptionName.HeaderIncluded,
-                true);
-
+            try
+            {
+                mainSocket = new Socket(AddressFamily.InterNetwork, SocketType.Raw, ProtocolType.IP);
+            }
+            catch (Exception e)
+            {
+                logger.Error("Error : new Socket() " + e);
+            }
+            try
+            {
+                mainSocket.Bind(new IPEndPoint(IPAddress.Parse(ipadd), 4988));
+            }
+            catch (Exception e)
+            {
+                logger.Error("Error : mainSocket.Bind() " + e);
+            }
+            try
+            {
+                mainSocket.SetSocketOption(SocketOptionLevel.IP, SocketOptionName.HeaderIncluded, true);
+            }
+            catch (Exception e)
+            {
+                logger.Error("Error : mainSocket.SetSocketOption() " + e);
+            }
             byte[] byTrue = new byte[4] {1, 0, 0, 0};
             byte[] byOut = new byte[4] {0, 0, 0, 0};
-
-            mainSocket.IOControl(IOControlCode.ReceiveAll, BitConverter.GetBytes(1), null);
-
-            mainSocket.BeginReceive(byteData, 0, byteData.Length, SocketFlags.None,
-                new AsyncCallback(OnReceive), null);
+            try
+            {
+                mainSocket.IOControl(IOControlCode.ReceiveAll, BitConverter.GetBytes(1), null);
+            }
+            catch (Exception e)
+            {
+                logger.Error("Error : mainSocket.IOControl() " + e);
+            }
+            try
+            {
+                mainSocket.BeginReceive(byteData, 0, byteData.Length, SocketFlags.None, new AsyncCallback(OnReceive), null);
+            }
+            catch (Exception e)
+            {
+                logger.Error("Error : mainSocket.BeginReceive() " + e);
+            }
         }
 
         private void OnReceive(IAsyncResult ar)
@@ -91,6 +117,7 @@ namespace AddOn_Krosmaga___Blou_fire.ProducerConsumer
             }
             catch (Exception e)
             {
+                logger.Error("Error : private void OnReceive " + e);
                 byteData = new byte[4096];
                 ThreadRun();
             }
@@ -126,6 +153,7 @@ namespace AddOn_Krosmaga___Blou_fire.ProducerConsumer
             }
             catch (Exception e)
             {
+                logger.Error("Error : private void ParseData " + e);
                 byteData = new byte[4096];
                 ThreadRun();
             }
