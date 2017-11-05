@@ -30,14 +30,9 @@ namespace AddOn_Krosmaga___Blou_fire.Pages
 			//this.WindowStyle = WindowStyle.None;
 			this.ResizeMode = ResizeMode.NoResize;
 			this.Background = Brushes.Transparent;
+        }
 
-		
-
-
-		}
-
-
-		private void OverlayPage_OnMouseDown(object sender, MouseButtonEventArgs e)
+        private void OverlayPage_OnMouseDown(object sender, MouseButtonEventArgs e)
 		{
 			if (e.ChangedButton == MouseButton.Left)
 				this.DragMove();

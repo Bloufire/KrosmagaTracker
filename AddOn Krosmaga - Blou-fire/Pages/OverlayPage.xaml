@@ -25,7 +25,9 @@
                       NonActiveWindowTitleBrush="Transparent"
                       MouseDown="OverlayPage_OnMouseDown"
                       ShowTitleBar="False"
-                      Topmost="True">
+                      Topmost="True"
+                      ShowInTaskbar="False"
+                      WindowStyle="ToolWindow">
    
     <controls:MetroWindow.Resources>
         <converter:BoolToVisibiltyConverter x:Key="BoolToVis" />
