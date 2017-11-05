@@ -35,19 +35,17 @@
                 </Grid.ColumnDefinitions>
                 <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center">
                     <Image Grid.Column="0" Width="{StaticResource WinLoseIconSize}"
-                           Height="{StaticResource WinLoseIconSize}" ToolTip="Win(s)"
+                           Height="{StaticResource WinLoseIconSize}" ToolTip="Win·s·"
                            Source="../../Images/DesignImagesKindry/icon_victoire_mini.png" >
-
-                        <Image.OpacityMask >
-                                <SolidColorBrush   Color="#ffff00ff" />
-                            </Image.OpacityMask>
-
+                        <Image.OpacityMask>
+                            <SolidColorBrush   Color="#ffff00ff" />
+                        </Image.OpacityMask>
                     </Image>
                     <Label Grid.Column="1" Margin="5" HorizontalAlignment="Center" VerticalAlignment="Center" Content="{Binding VsWinsNb}" />
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Center">
                     <Image Grid.Column="2" Width="{StaticResource WinLoseIconSize}"
-                           Height="{StaticResource WinLoseIconSize}" ToolTip="loss(es)"
+                           Height="{StaticResource WinLoseIconSize}" ToolTip="Loss·es·"
                            Source="../../Images/DesignImagesKindry/icon_defeat_mini.png" />
                     <Label Grid.Column="3" Margin="5" HorizontalAlignment="Center"  VerticalAlignment="Center" Content="{Binding VsLosesNb}" />
                 </StackPanel>
@@ -67,16 +65,15 @@
                 </Grid.ColumnDefinitions>
                 <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center">
                     <Image Grid.Column="0" Width="{StaticResource WinLoseIconSize}"
-                           Height="{StaticResource WinLoseIconSize}"
+                           Height="{StaticResource WinLoseIconSize}" ToolTip="Opponent's hand"
                            Source="../../Images/DesignImagesKindry/icon_mainb_mini.png" >
-                      
                     </Image>
                     
                     <Label Grid.Column="1" Margin="5" HorizontalAlignment="Center"  Content="{Binding VsNbCardsInHand}" />
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Center">
                     <Image Grid.Column="2" Width="{StaticResource WinLoseIconSize}"
-                           Height="{StaticResource WinLoseIconSize}"
+                           Height="{StaticResource WinLoseIconSize}" ToolTip="Opponent's curse"
                            Source="../../Images/DesignImagesKindry/icon_fleau_mini.png" />
                     <Label Grid.Column="3" Margin="5" HorizontalAlignment="Center" Content="{Binding VsNbFleau}" />
                 </StackPanel>
