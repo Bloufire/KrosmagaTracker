@@ -1,0 +1,35 @@
+{
+  "Id": 315,
+  "Name": "rollback",
+  "CardType": 1,
+  "CostAP": 8,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 7,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 21,
+    "ParentCard": 574,
+    "ParentLevel": 9
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Rollback",
+    "DescBR": "Gasta todos os <b>PA</b>\r\nda sua <b>reserva</b>. Suas invocações <b>dão uma investida</b> ao longo da quantidade equivalente de células.",
+    "NameEN": "Rollback",
+    "DescEN": "Spend all <b>AP</b> in your <b>reserve</b>. Your Minions <b>charge</b> the same number of cells.",
+    "NameES": "Rolbac",
+    "DescES": "Gasta todos los <b>PA</b>\r\nde tu <b>reserva</b>. Tus invocaciones <b>cargan</b> el número de casillas equivalente.",
+    "NameFR": "Rollback",
+    "DescFR": "Dépense tous les <b>PA</b>\r\nde votre <b>réserve</b>. Vos invocations <b>chargent</b> d'autant de cases.",
+    "NameRU": "Откат",
+    "DescRU": "Использует все <b>ОД</b>\r\nиз вашего <b>резерва</b>. Ваши существа делают <b>рывок</b> на соответствующее количество клеток."
+  }
+}

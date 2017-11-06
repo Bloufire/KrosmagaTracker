@@ -1,0 +1,32 @@
+{
+  "Id": 637,
+  "Name": "necrome_iop_f",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    1,
+    78
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 1,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Campeã da Blasfêmia",
+    "DescBR": "<b>NECROMO</b>\n<b>APARIÇÃO:</b> Devolve para a\r\nmão do proprietário a primeira invocação da fileira dela se você estiver em <b>minoria</b>.",
+    "NameEN": "Champion of Blasphemy",
+    "DescEN": "<b>NECRO</b>\n<b>APPEARANCE:</b> Returns the\r\nfirst Minion on its row to its owner's hand if you are <b>outnumbered</b>.",
+    "NameES": "Campeona blasfema",
+    "DescES": "<b>NÉCROMO</b>\n<b>APARICIÓN:</b> Sube la primera invocación de su hilera a la mano de su propietario si estás en <b>inferioridad numérica</b>.",
+    "NameFR": "Championne du Blasphème",
+    "DescFR": "<b>NÉCROME</b>\n<b>APPARITION :</b> Remonte dans\r\nla main de son propriétaire la première invocation de sa ligne si vous êtes en <b>sous nombre</b>.",
+    "NameRU": "Чемпионка грубости",
+    "DescRU": "<b>НЕКРОМАН</b>\n<b>ПОЯВЛЕНИЕ:</b> если вы <b>в меньшинстве</b>, возвращает в руку хозяина первое существо на своей линии."
+  }
+}

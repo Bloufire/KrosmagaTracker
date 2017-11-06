@@ -1,0 +1,31 @@
+{
+  "Id": 288,
+  "Name": "joris_niveau_1",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    34
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 6,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Joris",
+    "DescBR": "<b>CHEFE:</b>\nConfere <b>não visável</b> às suas\r\noutras invocações.",
+    "NameEN": "Joris",
+    "DescEN": "<b>LEADER:</b>\nGives <b>untargetable</b> to your\r\nother Minions.",
+    "NameES": "Joris",
+    "DescES": "<b>LÍDER:</b>\nOtorga <b>escurridizo</b> a tus\r\ndemás invocaciones.",
+    "NameFR": "Joris",
+    "DescFR": "<b>CHEF :</b>\nDonne <b>inciblable</b> à vos\r\nautres invocations.",
+    "NameRU": "Жорис",
+    "DescRU": "<b>ВОЖАК:</b> дает другим вашим существам свойство <b>«невыцеливаемый»</b>."
+  }
+}

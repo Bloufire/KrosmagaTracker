@@ -1,0 +1,31 @@
+{
+  "Id": 131,
+  "Name": "fosscheur",
+  "CardType": 1,
+  "CostAP": 4,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    5
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 6,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Mortumba",
+    "DescBR": "Move as cartas da lixeira do seu adversário para a sua.",
+    "NameEN": "Grave Reaper",
+    "DescEN": "Move the cards in your opponent's discard pile to yours.",
+    "NameES": "Sepulturaña",
+    "DescES": "Mueve las cartas del descarte de tu contrincante al tuyo.",
+    "NameFR": "Fosscheur",
+    "DescFR": "Déplace les cartes de la défausse de votre adversaire dans la votre.",
+    "NameRU": "Смертокос",
+    "DescRU": "Перемещает карты из сброса противника в ваш сброс."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 436,
+  "Name": "chauve_souris_dodue",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 6,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    82
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Morcego Rechonchudo",
+    "DescBR": "<b>HORDA</b>\n<b>APARIÇÃO</b>: Ganha +1 <b>AT</b> por cada Carniçal aliado\r\npresente no jogo.",
+    "NameEN": "Beefy Bat",
+    "DescEN": "<b>HORDE</b>\n<b>APPEARANCE:</b> Gains +1 <b>AT</b> per allied Ghoul\r\nin play.",
+    "NameES": "Murciego rechoncho",
+    "DescES": "<b>HORDA</b>\n<b>APARICIÓN</b>: Gana +1 <b>AT</b> por ghul aliado\r\nen juego.",
+    "NameFR": "Chauve Souris Dodue",
+    "DescFR": "<b>HORDE</b>\n<b>APPARITION</b> : Gagne +1 <b>AT</b> par Goule alliée\r\nen jeu.",
+    "NameRU": "Упитанная летучая мышь",
+    "DescRU": "<b>ОРДА</b>\n<b>ПОЯВЛЕНИЕ</b>:  получает +1 <b>AT</b> за каждого союзного гуля\r\nв игре."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 416,
+  "Name": "bond",
+  "CardType": 1,
+  "CostAP": 4,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 1,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Salto",
+    "DescBR": "<b>Teletransporta</b> uma invocação aliada por 3 células.",
+    "NameEN": "Jump",
+    "DescEN": "<b>Teleports</b> an allied Minion by 3 cells.",
+    "NameES": "Salto",
+    "DescES": "<b>Teletransporta</b> una invocación aliada 3 casillas.",
+    "NameFR": "Bond",
+    "DescFR": "<b>Téléporte</b> une invocation alliée de 3 cases.",
+    "NameRU": "Скачок",
+    "DescRU": "<b>Телепортирует</b> союзное существо на 3 клетки."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 227,
+  "Name": "dephasage",
+  "CardType": 1,
+  "CostAP": 1,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    3
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 3,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Defasagem",
+    "DescBR": "Confere o estado <b>não visável</b>\r\na uma invocação.",
+    "NameEN": "Phase Difference",
+    "DescEN": "Confers <b>untargetable</b>\r\non a Minion.",
+    "NameES": "Desfase",
+    "DescES": "Otorga <b>escurridizo</b>\r\na una invocación.",
+    "NameFR": "Déphasage",
+    "DescFR": "Confère <b>inciblable</b>\r\nà une invocation.",
+    "NameRU": "Сдвиг по фазе",
+    "DescRU": "Выбранное существо получает свойство <b>«невыцеливаемый»</b>."
+  }
+}

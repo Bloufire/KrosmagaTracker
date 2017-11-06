@@ -1,0 +1,31 @@
+{
+  "Id": 574,
+  "Name": "comte_harebourg_niveau_3",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 5,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 21,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Conde Traspafrent",
+    "DescBR": "<b>APARIÇÃO:</b>\nDestrói todos os prismas adversários.",
+    "NameEN": "Count Harebourg",
+    "DescEN": "<b>APPEARANCE:</b>\nDestroys all enemy Prisms.",
+    "NameES": "Conde Kontatrás",
+    "DescES": "<b>APARICIÓN:</b>\nDestruye todos los prismas enemigos.",
+    "NameFR": "Comte Harebourg",
+    "DescFR": "<b>APPARITION :</b>\nDétruit tous les prismes adverses.",
+    "NameRU": "Граф Хронограф",
+    "DescRU": "<b>ПОЯВЛЕНИЕ</b>\nуничтожает все призмы противника."
+  }
+}

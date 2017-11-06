@@ -15,6 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using MahApps.Metro.Controls;
 using MahApps.Metro.Controls.Dialogs;
+using NLog;
 
 namespace AddOn_Krosmaga___Blou_fire.Pages
 {
@@ -22,22 +23,25 @@ namespace AddOn_Krosmaga___Blou_fire.Pages
 	/// Logique d'interaction pour OverlayPage.xaml
 	/// </summary>
 	public partial class OverlayPage
-	{
-		public OverlayPage()
+    {
+        private static Logger logger = LogManager.GetCurrentClassLogger();
+        public OverlayPage()
 		{
-			InitializeComponent();
+            try
+            {
+                InitializeComponent();
+            }
+            catch (Exception e)
+            {
+                logger.Error("Error : " + e);
+            }
 			this.AllowsTransparency = true;
 			//this.WindowStyle = WindowStyle.None;
 			this.ResizeMode = ResizeMode.NoResize;
 			this.Background = Brushes.Transparent;
+        }
 
-		
-
-
-		}
-
-
-		private void OverlayPage_OnMouseDown(object sender, MouseButtonEventArgs e)
+        private void OverlayPage_OnMouseDown(object sender, MouseButtonEventArgs e)
 		{
 			if (e.ChangedButton == MouseButton.Left)
 				this.DragMove();

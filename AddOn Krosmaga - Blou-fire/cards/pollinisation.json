@@ -1,0 +1,35 @@
+{
+  "Id": 553,
+  "Name": "pollinisation",
+  "CardType": 1,
+  "CostAP": 7,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 10,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 23,
+    "ParentCard": 459,
+    "ParentLevel": 9
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Polinização",
+    "DescBR": "Inflige 3 danos às invocações adversárias. Uma <b>Semente</b> aliada é colocada nas células das que morrem.",
+    "NameEN": "Pollination",
+    "DescEN": "Inflicts 3 damage on enemy Minions; if any die, an allied <b>Seed</b> is put on their cell.",
+    "NameES": "Polinización",
+    "DescES": "Inflige 3 de daño a las invocaciones enemigas, una <b>semilla</b> aliada se coloca en las casillas de las que mueren.",
+    "NameFR": "Pollinisation",
+    "DescFR": "Inflige 3 dégâts aux invocations adverses, une <b>Graine</b> alliée est placée sur les cases de celles qui meurent.",
+    "NameRU": "Опыление",
+    "DescRU": "Наносит 3 ед. урона существам противника и ставит союзное <b>семя</b> на клетки погибших существ."
+  }
+}

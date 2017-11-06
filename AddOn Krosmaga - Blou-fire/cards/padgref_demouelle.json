@@ -1,0 +1,31 @@
+{
+  "Id": 80,
+  "Name": "padgref_demouelle",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 2,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 8,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Nondome Dullah",
+    "DescBR": "Inflige 1 dano a\r\num de seus Dofus para invocá-lo.",
+    "NameEN": "Nomarow Transplent",
+    "DescEN": "Inflict 1 damage\r\non one of your Dofus to summon it.",
+    "NameES": "Noai Aludem",
+    "DescES": "Inflige 1 de daño\r\na uno de tus dofus para invocarlo.",
+    "NameFR": "Padgref Demouelle",
+    "DescFR": "Infligez 1 dégât à\r\nun de vos Dofus pour l'invoquer.",
+    "NameRU": "Гипофизарий Тадамус",
+    "DescRU": "Призывая его, вы наносите 1 единицу урона\r\nодному из своих дофусов."
+  }
+}

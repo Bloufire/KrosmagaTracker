@@ -1,0 +1,31 @@
+{
+  "Id": 1005,
+  "Name": "phorreur_corrompu",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 6,
+  "Attack": 3,
+  "MovementPoint": 2,
+  "Families": [
+    20
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Perfuratroz Corrompido",
+    "DescBR": "Inflige 1 dano às\r\noutras invocações na mesma fileira quando você compra uma carta.",
+    "NameEN": "Corrupted Drheller",
+    "DescEN": "Inflicts 1 damage on the\r\nother Minions on its row whenever you draw 1 card.",
+    "NameES": "Perforatroz corrupto",
+    "DescES": "Inflige 1 de daño a las\r\ndemás invocaciones de su hilera cuando robas una carta.",
+    "NameFR": "Phorreur Corrompu",
+    "DescFR": "Inflige 1 dégât aux\r\nautres invocations de sa ligne quand vous piochez une carte.",
+    "NameRU": "Хитрая хорроройка",
+    "DescRU": "Наносит 1 ед. урона другим существам на своей линии, когда вы берете карту."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 44,
+  "Name": "rocknocerok",
+  "CardType": 1,
+  "CostAP": 6,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 1,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Roknocerrok",
+    "DescBR": "Inflige 2 danos às invocações adversárias.",
+    "NameEN": "Rocknoceros",
+    "DescEN": "Inflicts 2 damage on enemy Minions.",
+    "NameES": "Rocaceronte",
+    "DescES": "Inflige 2 de daño a las invocaciones enemigas.",
+    "NameFR": "Rocknocerok",
+    "DescFR": "Inflige 2 dégâts aux invocations adverses.",
+    "NameRU": "Камнерог",
+    "DescRU": "Наносит 2 ед. урона существам противника."
+  }
+}

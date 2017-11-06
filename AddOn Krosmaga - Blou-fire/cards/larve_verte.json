@@ -1,0 +1,31 @@
+{
+  "Id": 99,
+  "Name": "larve_verte",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 2,
+  "Attack": 1,
+  "MovementPoint": 2,
+  "Families": [
+    16
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Larva Verde",
+    "DescBR": "<b>APARIÇÃO:</b>Faz com que uma invocação que tenha 3 <b>AT</b> ou menos passe aleatoriamente para uma fileira adjacente.",
+    "NameEN": "Green Larva",
+    "DescEN": "<b>APPEARANCE:</b> Moves a Minion with 3 <b>AT</b> or less to a random adjacent row.",
+    "NameES": "Larva verde",
+    "DescES": "<b>APARICIÓN:</b> Desplazas una invocación que tenga 3 <b>AT</b> o menos a una hilera adyacente aleatoria.",
+    "NameFR": "Larve Verte",
+    "DescFR": "<b>APPARITION :</b> Déplacez une invocation ayant 3 <b>AT</b> ou moins sur une ligne adjacente aléatoire.",
+    "NameRU": "Зеленая личинка",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b> перемещает существо с показателем <b>AT</b> не более 3 на одну из соседних линий."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "Id": 652,
+  "Name": "kriss_la_krass_niveau_3",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 7,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 299,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    1053
+  ],
+  "Texts": {
+    "NameBR": "Kriss, o Krasso",
+    "DescBR": "<b>APARIÇÃO:</b>\nAcrescente 1 Papabola à mão do adversário.  Jogue suas Papabolas gratuitamente.",
+    "NameEN": "Kriss Krass",
+    "DescEN": "<b>APPEARANCE:</b>\nAdds 1 Gobbowl Ball to your opponent's hand.  Play your Gobbowl Balls for free!",
+    "NameES": "Kriss, el Guarro",
+    "DescES": "<b>APARICIÓN:</b>\nAñades 1 jalabola a la mano de tu contrincante.  Juegas gratis tus jalabolas.",
+    "NameFR": "Kriss La Krass",
+    "DescFR": "<b>APPARITION :</b>\nAjoutez 1 Boufballe à la main de votre adversaire.  Jouez gratuitement vos Boufballes.",
+    "NameRU": "Крисс Красс",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nдает в руку противнику 1 барабольный мяч.  Разыгрывая свои барабольные мячи, вы не тратите ОД."
+  }
+}

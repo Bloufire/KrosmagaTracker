@@ -1,0 +1,31 @@
+{
+  "Id": 392,
+  "Name": "peur",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    5
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 6,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Medo",
+    "DescBR": "<b>Empurra</b> as invocações adversárias ao longo de 4 células.",
+    "NameEN": "Fear",
+    "DescEN": "<b>Repels</b> enemy Minions by 4 cells.",
+    "NameES": "Miedo",
+    "DescES": "<b>Empuja</b> las invocaciones enemigas 4 casillas.",
+    "NameFR": "Peur",
+    "DescFR": "<b>Repousse</b> les invocations adverses de 4 cases.",
+    "NameRU": "Страх",
+    "DescRU": "<b>Отталкивает</b> существ противника на 4 клетки."
+  }
+}

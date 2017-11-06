@@ -1,0 +1,31 @@
+{
+  "Id": 437,
+  "Name": "orma",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 1,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 10,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Olmor",
+    "DescBR": "<b>FIM DO TURNO:</b>\nGanha +1 <b>AT</b> e +1 <b>AR</b>\r\nse você tiver uma <b>Semente</b>\r\nno jogo.",
+    "NameEN": "Elmer",
+    "DescEN": "<b>END OF TURN:</b>\r\nGains +1 <b>AT</b> and +1 <b>AR</b>\r\nif you have a <b>Seed</b>\nin play.",
+    "NameES": "Ormo",
+    "DescES": "<b>FIN DEL TURNO:</b>\nGana +1 <b>AT</b> y +1 <b>AR</b>\r\nsi tienes una <b>semilla</b>\r\nen juego.",
+    "NameFR": "Orma",
+    "DescFR": "<b>FIN DU TOUR :</b>\nGagne +1 <b>AT</b> et +1 <b>AR</b>\r\nsi vous avez une <b>Graine</b>\r\nen jeu.",
+    "NameRU": "Орма",
+    "DescRU": "<b>КОНЕЦ ХОДА:</b> получает +1 <b>AT</b> и +1 <b>БР</b>, если у вас в игре есть <b>семя</b>."
+  }
+}

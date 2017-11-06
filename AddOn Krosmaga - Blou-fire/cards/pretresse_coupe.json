@@ -1,0 +1,31 @@
+{
+  "Id": 583,
+  "Name": "pretresse_coupe",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 3,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    74
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Sacerdotisa do Corte",
+    "DescBR": "<b>APARIÇÃO:</b> Cura 2 <b>PV</b> de uma invocação e dá a ela +1 <b>AR</b>.",
+    "NameEN": "Priestess of the Haircut",
+    "DescEN": "<b>APPEARANCE:</b> Gives a Minion +1 <b>AR</b> and heals it by 2 <b>HP</b>.",
+    "NameES": "Sacerdotisa del corte",
+    "DescES": "<b>APARICIÓN:</b> Das +1 <b>AR</b> a una invocación y le curas 2 <b>PdV</b>.",
+    "NameFR": "Prêtresse de la coupe",
+    "DescFR": "<b>APPARITION :</b> Donnez +1 <b>AR</b> à une invocation, elle est soignée de 2 <b>PV</b>.",
+    "NameRU": "Жрица ножниц",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b> дает выбранному существу +1 <b>БР</b> и восстанавливает ему 2 <b>ОЗ</b>."
+  }
+}

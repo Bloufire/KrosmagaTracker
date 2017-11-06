@@ -1,0 +1,32 @@
+{
+  "Id": 1800,
+  "Name": "bouftou_squelette",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 2,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    14,
+    28
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Papatudo Chafer",
+    "DescBR": "<b>MONTE DE OSSOS</b>\n<b>APARIÇÃO:</b>\nColoca na sua mão\r\no próximo Chafer do\r\nseu bolo.",
+    "NameEN": "Chafer Gobball",
+    "DescEN": "<b>PILE OF BONES</b>\n<b>APPEARANCE:</b>\nPuts the next Chafer\r\nfrom your deck\r\nin your hand.",
+    "NameES": "Jalató chafer",
+    "DescES": "<b>MONTÓN DE HUESOS</b>\n<b>APARICIÓN:</b>\nColoca en tu mano\r\nel próximo chafer de\r\ntu mazo.",
+    "NameFR": "Bouftou Chafer",
+    "DescFR": "<b>TAS D'OS</b>\n<b>APPARITION :</b>\nPlace dans votre main\r\nle prochain Chafer de\r\nvotre pioche.",
+    "NameRU": "Бараглот-чафер",
+    "DescRU": "<b>КУЧА КОСТЕЙ</b>\n<b>ПОЯВЛЕНИЕ:</b>\nвы берете\r\nпервого чафера\r\nиз своей колоды."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "Id": 238,
+  "Name": "chafer_lancier",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    28
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    1801
+  ],
+  "Texts": {
+    "NameBR": "Chafer Lanceiro",
+    "DescBR": "<b>MONTE DE OSSOS</b>\n<b>APARIÇÃO:</b> Adiciona\r\num <b>Monte de Ossos</b> à sua mão.",
+    "NameEN": "Chafer Lancer",
+    "DescEN": "<b>PILE OF BONES</b>\n<b>APPEARANCE:</b> Add\r\na <b>Pile of Bones</b> to your hand.",
+    "NameES": "Chafer lancero",
+    "DescES": "<b>MONTÓN DE HUESOS</b>\n<b>APARICIÓN:</b> Añade\r\nun <b>montón de huesos</b> a tu mano.",
+    "NameFR": "Chafer Lancier",
+    "DescFR": "<b>TAS D'OS</b>\n<b>APPARITION :</b> Ajoute\r\nun <b>tas d'os</b> à votre main.",
+    "NameRU": "Чафер-копейщик",
+    "DescRU": "<b>КУЧА КОСТЕЙ</b>\n<b>ПОЯВЛЕНИЕ:</b> дает вам \r\n<b>кучу костей</b>."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 95,
+  "Name": "tofu_ventripotent",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 4,
+  "Attack": 4,
+  "MovementPoint": 2,
+  "Families": [
+    13
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Tofu Pânceps",
+    "DescBR": "Ganha +1 <b>AR</b> quando um\r\nde seus Tofus é invocado.",
+    "NameEN": "Tofurby",
+    "DescEN": "Gains +1 <b>AR</b> whenever\r\none of your Tofus is summoned.",
+    "NameES": "Tofu gordinflón",
+    "DescES": "Gana +1 <b>AR</b> cuando\r\ninvocas un tofu.",
+    "NameFR": "Tofu Ventripotent",
+    "DescFR": "Gagne +1 <b>AR</b> quand un\r\nde vos Tofus est invoqué.",
+    "NameRU": "Пузатый тофу",
+    "DescRU": "Получает +1 <b>БР</b>, когда один из ваших тофу выходит на поле."
+  }
+}

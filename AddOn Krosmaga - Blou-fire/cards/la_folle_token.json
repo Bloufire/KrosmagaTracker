@@ -1,0 +1,32 @@
+{
+  "Id": 22,
+  "Name": "la_folle_token",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 1,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    32,
+    43
+  ],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 10,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "A Louca",
+    "DescBR": "Enquanto ela está em jogo,\r\no custo dos seus feitiços é reduzido em 1 <b>PA</b>.",
+    "NameEN": "The Madoll",
+    "DescEN": "As long as it is in play,\r\nthe cost of your spells is reduced by 1 <b>AP</b>.",
+    "NameES": "La loca",
+    "DescES": "Mientras esté en juego,\r\nel coste de tus hechizos se reduce 1 <b>PA</b>.",
+    "NameFR": "La Folle",
+    "DescFR": "Tant qu'elle est en jeu,\r\nle coût de vos sorts est réduit de 1 <b>PA</b>.",
+    "NameRU": "Буйнокукла",
+    "DescRU": "Находясь в игре,\r\nуменьшает стоимость ваших заклинаний на 1 <b>ОД</b>."
+  }
+}

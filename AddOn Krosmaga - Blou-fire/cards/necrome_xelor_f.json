@@ -1,0 +1,32 @@
+{
+  "Id": 739,
+  "Name": "necrome_xelor_f",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 4,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    9,
+    78
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 7,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Relojoeira de Bolso",
+    "DescBR": "<b>NECROMO</b>\n<b>MORTE:</b> Destrói um flagelo da mão do adversário.",
+    "NameEN": "Pocket Watch Maker",
+    "DescEN": "<b>NECRO</b>\n<b>DEATH:</b>Destroys a curse in the opponent's hand.",
+    "NameES": "Relojera Debolsillo",
+    "DescES": "<b>NÉCROMO</b>\n<b>MUERTE:</b> Destruye una plaga de la mano del contrincante.",
+    "NameFR": "Horlogère Gousset",
+    "DescFR": "<b>NÉCROME</b>\n<b>MORT :</b> Détruit un fléau dans la main adverse.",
+    "NameRU": "Карманная часовщица",
+    "DescRU": "<b>НЕКРОМАН</b>\n<b>СМЕРТЬ:</b> уничтожает карту «Порча» в руке противника."
+  }
+}

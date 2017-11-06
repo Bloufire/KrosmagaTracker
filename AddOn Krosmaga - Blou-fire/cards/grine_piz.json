@@ -1,0 +1,33 @@
+{
+  "Id": 359,
+  "Name": "grine_piz",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 4,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 10,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    537
+  ],
+  "Texts": {
+    "NameBR": "Grin Pis",
+    "DescBR": "<b>CONTRAGOLPE:</b>\nAdiciona uma <b>Semente</b>\r\nà sua mão.",
+    "NameEN": "Grean Piece",
+    "DescEN": "<b>COUNTERATTACK:</b>\nAdd 1 <b>Seed</b>\r\n to your hand.",
+    "NameES": "Grin Piz",
+    "DescES": "<b>VENGANZA:</b>\nAñade una <b>semilla</b>\r\na tu mano.",
+    "NameFR": "Grine Piz",
+    "DescFR": "<b>CONTRE COUP :</b>\nAjoute une <b>Graine</b>\r\nà votre main.",
+    "NameRU": "Грин Пиз",
+    "DescRU": "<b>КОНТРАТАКА:</b>\nдает вам в руку одно <b>семя</b>."
+  }
+}

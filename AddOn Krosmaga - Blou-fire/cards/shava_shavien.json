@@ -1,0 +1,31 @@
+{
+  "Id": 192,
+  "Name": "shava_shavien",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 4,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Miavai Yvem",
+    "DescBR": "<b>MORTE:</b> Volta para\r\na sua mão <b>OU</b> para a de seu\r\nadversário.",
+    "NameEN": "Comen Goe",
+    "DescEN": "<b>DEATH:</b> Returns to\r\nyour hand, <b>OR</b> to your\r\nopponent's hand.",
+    "NameES": "Gaty Sakky",
+    "DescES": "<b>MUERTE:</b> Sube a\r\ntu mano <b>O</b> a la del contrincante.",
+    "NameFR": "Shava Shavien",
+    "DescFR": "<b>MORT :</b> Remonte dans\r\nvotre main <b>OU</b> dans celle\r\nde votre adversaire.",
+    "NameRU": "Тотак Тосяк",
+    "DescRU": "<b>СМЕРТЬ:</b>\r\nВозвращается вам в руку <b>ИЛИ</b> в руку\r\n противника."
+  }
+}

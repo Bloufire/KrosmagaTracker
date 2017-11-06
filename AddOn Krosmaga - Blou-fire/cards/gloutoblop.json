@@ -1,0 +1,27 @@
+{
+  "Id": 301,
+  "Name": "gloutoblop",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    65
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameFR": "Gloutoblop",
+    "DescFR": "<b>APPARITION :</b>\nDonne +2 <b>AR</b> à une invocation.",
+    "NameEN": "Greedoblop",
+    "DescEN": "<b>APPEARANCE:</b>\nGives +2 <b>AR</b> to a Minion.",
+    "NameES": "Bloponcio",
+    "DescES": "<b>APARICIÓN:</b>\nDa +2 <b>AR</b> a una invocación."
+  }
+}

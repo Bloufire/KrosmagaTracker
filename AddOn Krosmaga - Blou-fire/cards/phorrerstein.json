@@ -1,0 +1,31 @@
+{
+  "Id": 1502,
+  "Name": "phorrerstein",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 5,
+  "Attack": 5,
+  "MovementPoint": 2,
+  "Families": [
+    20
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Perfurenstein",
+    "DescBR": "<b>APARIÇÃO:</b>\nO adversário recupera a última carta enviada para a lixeira dele. Ela custará 3 <b>PA</b> a mais.",
+    "NameEN": "Drhellerstein",
+    "DescEN": "<b>APPEARANCE:</b>\nYour opponent returns the last card that went to their discard pile to their hand. It costs 3 <b>AP</b> more.",
+    "NameES": "Perforarstein",
+    "DescES": "<b>APARICIÓN:</b>\nTu adversario recupera la última carta enviada a su descarte. Cuesta 3 <b>PA</b> más.",
+    "NameFR": "Phorrerstein",
+    "DescFR": "<b>APPARITION :</b>\nVotre adversaire récupère la dernière carte partie dans sa défausse. Elle coûte 3 <b>PA</b> de plus.",
+    "NameRU": "Хоррорштейн",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nдает противнику последнюю карту из его сброса. Ее стоимость увеличивается на 3 <b>ОД</b>."
+  }
+}

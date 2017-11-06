@@ -1,0 +1,31 @@
+{
+  "Id": 1246,
+  "Name": "chronophagie",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 7,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Cronofagia",
+    "DescBR": "Confere <b>vulnerabilidade:</b> 1 às invocações adversárias.",
+    "NameEN": "Time Waster",
+    "DescEN": "Confers <b>vulnerability:</b> 1 on enemy Minions.",
+    "NameES": "Cronofagia",
+    "DescES": "Da <b>vulnerabilidad:</b> 1 a las invocaciones enemigas.",
+    "NameFR": "Chronophagie",
+    "DescFR": "Confère <b>vulnérabilité :</b> 1 aux invocations adverses.",
+    "NameRU": "Кража времени",
+    "DescRU": "Дает всем существам противника <b>уязвимость</b> 1."
+  }
+}

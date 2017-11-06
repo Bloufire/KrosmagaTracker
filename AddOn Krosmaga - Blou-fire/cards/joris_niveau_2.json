@@ -1,0 +1,31 @@
+{
+  "Id": 480,
+  "Name": "joris_niveau_2",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    34
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 6,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Joris",
+    "DescBR": "Reduz em 2 os danos dos feitiços adversários.",
+    "NameEN": "Joris",
+    "DescEN": "Reduces enemy spell damage by 2.",
+    "NameES": "Joris",
+    "DescES": "Reduce en 2 los daños de los hechizos enemigos.",
+    "NameFR": "Joris",
+    "DescFR": "Réduit de 2 les dégâts des sorts adverses.",
+    "NameRU": "Жорис",
+    "DescRU": "Уменьшает на 2 урон от заклинаний противника."
+  }
+}

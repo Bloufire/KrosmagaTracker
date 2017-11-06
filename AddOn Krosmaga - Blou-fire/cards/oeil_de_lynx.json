@@ -1,0 +1,31 @@
+{
+  "Id": 51,
+  "Name": "oeil_de_lynx",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    2
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 2,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Olho de Lince",
+    "DescBR": "Aumenta em 2 o <b>alcance</b> existente de uma invocação.",
+    "NameEN": "Lynx Eye",
+    "DescEN": "Increases a Minion's current <b>range</b> by 2.",
+    "NameES": "Ojo de Lince",
+    "DescES": "Aumenta en 2 el <b>alcance</b> de una invocación existente.",
+    "NameFR": "Oeil de lynx",
+    "DescFR": "Augmente de 2 la <b>portée</b> existante d’une invocation.",
+    "NameRU": "Орлиный взор",
+    "DescRU": "Увеличивает на 2 имеющуюся <b>дальность атаки</b> существа."
+  }
+}

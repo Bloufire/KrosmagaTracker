@@ -1,0 +1,31 @@
+{
+  "Id": 349,
+  "Name": "maluss",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 1,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    47
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Bondenaldo",
+    "DescBR": "Inflige 1 dano ao Dofus adversário presente na fileira dele quando você rouba ou destrói um prisma adversário.",
+    "NameEN": "Badenalty",
+    "DescEN": "Inflicts 1 damage on the enemy Dofus on its line whenever you steal or destroy an enemy prism.",
+    "NameES": "Maltrahzero",
+    "DescES": "Inflige 1 de daño a un dofus enemigo de su hilera cuando robas o destruyes un prisma enemigo.",
+    "NameFR": "Maluss",
+    "DescFR": "Inflige 1 dégât au Dofus adverse de sa ligne quand vous volez ou détruisez un prisme adverse.",
+    "NameRU": "Злыднефус",
+    "DescRU": "Наносит 1 единицу урона дофусу противника на своей линии, когда вы крадете или уничтожаете призму противника."
+  }
+}

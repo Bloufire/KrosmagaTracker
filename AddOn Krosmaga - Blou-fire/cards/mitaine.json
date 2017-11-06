@@ -1,0 +1,31 @@
+{
+  "Id": 96,
+  "Name": "mitaine",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 5,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 4,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Luvata",
+    "DescBR": "<b>APARIÇÃO:</b>\nGanha uma quantidade de <b>AT</b> equivalente ao número de cartas que você tem na mão.",
+    "NameEN": "Meethaine",
+    "DescEN": "<b>APPEARANCE:</b>\nFor each card in your hand, gains +1 <b>AT</b>.",
+    "NameES": "Mitania",
+    "DescES": "<b>APARICIÓN:</b>\nGana tanto <b>AT</b> como cartas tengas en tu mano.",
+    "NameFR": "Mitaine",
+    "DescFR": "<b>APPARITION :</b>\nGagne autant d'<b>AT</b> que vous avez de cartes en main.",
+    "NameRU": "Митен",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b> ее показатель <b>AT</b> увеличивается на число, равное количеству карт у вас в руке."
+  }
+}

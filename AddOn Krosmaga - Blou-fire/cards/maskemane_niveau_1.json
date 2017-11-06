@@ -1,0 +1,31 @@
+{
+  "Id": 378,
+  "Name": "maskemane_niveau_1",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 4,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    45
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 20,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Maskeman Covarde",
+    "DescBR": "<b>ALCANCE:</b> 1-3\nRecua por 2 células quando uma invocação adversária aparece na mesma fileira.",
+    "NameEN": "Cowardly Maskemane",
+    "DescEN": "<b>RANGE:</b> 1-3\nMoves back 2 cells whenever an enemy Minion appears on its row.",
+    "NameES": "Maskeman - Eskérdikat",
+    "DescES": "<b>ALCANCE:</b> 1-3\nRetrocede 2 casillas cuando una invocación enemiga aparece en su hilera.",
+    "NameFR": "Maskemane Pleutre",
+    "DescFR": "<b>PORTÉE :</b> 1-3\nRecule de 2 cases quand une invocation adverse apparaît sur sa ligne.",
+    "NameRU": "Маскеман-трус",
+    "DescRU": "<b>ДАЛЬНОСТЬ АТАКИ:</b> 1-3\nОтступает на 2 клетки, когда на его линии появляется существо противника."
+  }
+}

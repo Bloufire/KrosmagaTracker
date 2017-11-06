@@ -1,0 +1,33 @@
+{
+  "Id": 224,
+  "Name": "razortemps",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 7,
+  "Attack": 4,
+  "MovementPoint": 2,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 4,
+    "ParentCard": 285,
+    "ParentLevel": 8
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Cortatempo",
+    "DescBR": "<b>APARIÇÃO:</b>\nSuas demais invocações ganham uma quantidade de <b>AT</b> equivalente à de <b>AR</b> que possuem.",
+    "NameEN": "Razetime",
+    "DescEN": "<b>APPEARANCE:</b>\nYour other Minions gain as many <b>AT</b> as they have <b>AR</b>.",
+    "NameES": "Cortatiempos",
+    "DescES": "<b>APARICIÓN:</b>\nTus demás invocaciones ganan tanto <b>AT</b> como <b>AR</b> tengan.",
+    "NameFR": "Razortemps",
+    "DescFR": "<b>APPARITION :</b>\nVos autres invocations gagnent autant d'<b>AT</b> qu'elles ont d'<b>AR</b>.",
+    "NameRU": "Времярез",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nдает другим вашим существам столько <b>AT</b>, сколько у них <b>БР</b>."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 668,
+  "Name": "chafer_hache",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 5,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    28
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Chafer Alabardeiro",
+    "DescBR": "<b>MONTE DE OSSOS</b>\n<b>APARIÇÃO:</b>\nDestrua um <b>Monte de Ossos</b> aliado para dar +1 <b>AT</b> e +1 <b>AR</b> aos seus outros Chaferes.",
+    "NameEN": "Chafer Halberdier",
+    "DescEN": "<b>PILE OF BONES</b>\n<b>APPEARANCE:</b>\nDestroy an allied <b>Pile of Bones</b> to give +1 <b>AT</b> and +1 <b>AR</b> to your other Chafers.",
+    "NameES": "Chafer alabardero",
+    "DescES": "<b>MONTÓN DE HUESOS</b>\n<b>APARICIÓN:</b>\nDestruye un <b>montón de huesos</b> aliado para dar +1 <b>AT</b> y +1 <b>AR</b> a tus demás chafers.",
+    "NameFR": "Chafer Hallebardier",
+    "DescFR": "<b>TAS D'OS</b>\n<b>APPARITION :</b>\nDétruisez un <b>tas d'os</b> allié pour donner +1 <b>AT</b> et +1 <b>AR</b> à vos autres Chafers.",
+    "NameRU": "Чафер с алебардой",
+    "DescRU": "<b>КУЧА КОСТЕЙ</b>\n<b>ПОЯВЛЕНИЕ:</b>\n уничтожьте союзную <b>кучу костей</b>, чтобы дать +1 <b>AT</b> и +1 <b>БР</b> другим своим чаферам."
+  }
+}

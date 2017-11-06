@@ -1,0 +1,31 @@
+{
+  "Id": 323,
+  "Name": "renisurrection",
+  "CardType": 1,
+  "CostAP": 4,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    3
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 3,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Renissurreição",
+    "DescBR": "A invocação visada por este feitiço volta para a mão de seu proprietário ao morrer.",
+    "NameEN": "Eniraser",
+    "DescEN": "The Minion targeted by this spell returns to its owner's hand when it dies.",
+    "NameES": "Anisurrección",
+    "DescES": "La invocación seleccionada por este hechizo sube a la mano de su propietario cuando muere.",
+    "NameFR": "Renisurrection",
+    "DescFR": "L'invocation ciblée par ce sort remonte dans la main de son propriétaire quand elle meurt.",
+    "NameRU": "Воскрешение",
+    "DescRU": "Выбранное существо возвращается в руку хозяина после гибели."
+  }
+}

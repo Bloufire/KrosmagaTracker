@@ -1,0 +1,31 @@
+{
+  "Id": 941,
+  "Name": "scaraboss",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 1,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    23
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Scarachefe",
+    "DescBR": "<b>APARIÇÃO:</b>\nGanha +4 <b>AR</b>.\n<b>CHEFE:</b> Seus outros Scaras ganham\r\n+1 <b>AT</b>.",
+    "NameEN": "Scaraboss",
+    "DescEN": "<b>APPEARANCE:</b>\nGains +4 <b>AR</b>.\n<b>LEADER:</b> +1 <b>AT</b> to\r\nyour other Scaras.",
+    "NameES": "Escaraboss",
+    "DescES": "<b>APARICIÓN:</b>\nGana +4 <b>AR</b>.\n<b>LÍDER:</b> +1 <b>AT</b> a tus\r\ndemás escaras.",
+    "NameFR": "Scaraboss",
+    "DescFR": "<b>APPARITION :</b>\nGagne +4 <b>AR</b>.\n<b>CHEF :</b> +1 <b>AT</b> à vos\r\nautres Scaras.",
+    "NameRU": "Скарабосс",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b> получает +4 <b>БР</b>.\n<b>ВОЖАК:</b> дает другим вашим скара +1 <b>AT</b>."
+  }
+}

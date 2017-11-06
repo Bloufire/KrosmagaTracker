@@ -1,0 +1,31 @@
+{
+  "Id": 1053,
+  "Name": "boufballe",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    1053
+  ],
+  "Texts": {
+    "NameBR": "Papabola",
+    "DescBR": "Você tem 2 turnos para enviá-la para a mão do adversário, senão as invocações adversárias ganharão +2 <b>AT</b> e +1 <b>AR</b>.",
+    "NameEN": "Gobbowl Ball",
+    "DescEN": "You have 2 turns to return it to the opponent's hand or enemy Minions will gain +2 <b>AT</b> and +1 <b>AR</b>.",
+    "NameES": "Jalabola",
+    "DescES": "Tienes 2 turnos para enviarla a la mano del contrincante o las invocaciones enemigas ganarán +2 <b>AT</b> y +1 <b>AR</b>.",
+    "NameFR": "Boufballe",
+    "DescFR": "Vous avez 2 tours pour la renvoyer dans la main adverse ou les invocations adverses gagneront +2 <b>AT</b> et +1 <b>AR</b>.",
+    "NameRU": "Барабольный мяч",
+    "DescRU": "У вас есть 2 хода, чтобы вернуть его в руку противника, иначе его существа получат +2 <b>AT</b> и +1 <b>БР</b>."
+  }
+}

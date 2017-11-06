@@ -1,0 +1,31 @@
+{
+  "Id": 520,
+  "Name": "justice_niveau_3",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    60
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 2,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Justiça",
+    "DescBR": "<b>APARIÇÃO:</b>\nPassa para 3 o <b>AT</b> de uma invocação e faz com que ela <b>dê uma investida</b>\r\nao longo de 2 células.",
+    "NameEN": "Justice",
+    "DescEN": "<b>APPEARANCE:</b>\nSets a Minion's <b>AT</b> at 3;\r\nit <b>charges</b> 2 cells.",
+    "NameES": "Justicia",
+    "DescES": "<b>APARICIÓN:</b>\nCambias a 3 el <b>AT</b> de una invocación, y esta <b>carga</b>\r\n2 casillas.",
+    "NameFR": "Justice",
+    "DescFR": "<b>APPARITION :</b>\nPassez à 3 l'<b>AT</b> d'une invocation, elle <b>charge</b>\r\nde 2 cases.",
+    "NameRU": "Рыцарь Справедливость",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b> показатель <b>AT</b> выбранного существа становится равным 3, и оно делает <b>рывок</b>на 2 клетки."
+  }
+}

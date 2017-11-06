@@ -1,0 +1,32 @@
+{
+  "Id": 1302,
+  "Name": "necrome_sram_f",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    5,
+    78
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 6,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Iniciada Fúnebre",
+    "DescBR": "<b>NECROMO</b>\n<b>APARIÇÃO:</b>\nColoca na sua mão\r\na primeira armadilha do seu bolo.",
+    "NameEN": "Funereal Initiate",
+    "DescEN": "<b>NECRO</b>\n<b>APPEARANCE:</b>\nPut the first trap\r\nfrom your deck in your hand.",
+    "NameES": "Iniciada fúnebre",
+    "DescES": "<b>NÉCROMO</b>\n<b>APARICIÓN:</b>\nColoca en tu mano\r\nla primera trampa de tu mazo.",
+    "NameFR": "Initiée Funèbre",
+    "DescFR": "<b>NÉCROME</b>\n<b>APPARITION :</b>\nPlace dans votre main\r\nle premier piège de votre pioche.",
+    "NameRU": "Мрачная послушница",
+    "DescRU": "<b>НЕКРОМАН</b>\n<b>ПОЯВЛЕНИЕ_:</b>\nвы берете\r\nпервую ловушку из своей колоды."
+  }
+}

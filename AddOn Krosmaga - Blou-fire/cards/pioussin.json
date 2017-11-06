@@ -1,0 +1,31 @@
+{
+  "Id": 235,
+  "Name": "pioussin",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 1,
+  "Attack": 1,
+  "MovementPoint": 5,
+  "Families": [
+    24
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Piutinho",
+    "DescBR": "",
+    "NameEN": "Lilpiwi",
+    "DescEN": "",
+    "NameES": "Piollito",
+    "DescES": "",
+    "NameFR": "Pioussin",
+    "DescFR": "",
+    "NameRU": "Пивенок",
+    "DescRU": ""
+  }
+}

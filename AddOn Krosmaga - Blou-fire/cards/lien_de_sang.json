@@ -1,0 +1,31 @@
+{
+  "Id": 1369,
+  "Name": "lien_de_sang",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 8,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Elo de Sangue",
+    "DescBR": "Escolha uma invocação aliada para proteger um Dofus. Ela sofrerá danos no lugar dele.",
+    "NameEN": "Blood Tie",
+    "DescEN": "Choose an allied Minion for it to protect a Dofus. It suffers damage in its place.",
+    "NameES": "Vínculo de Sangre",
+    "DescES": "Eliges una invocación aliada para que proteja un dofus. Sufrirá los daños en su lugar.",
+    "NameFR": "Lien de Sang",
+    "DescFR": "Choisissez une invocation alliée pour qu'elle protège un Dofus. Elle subira les dégâts à sa place.",
+    "NameRU": "Кровные узы",
+    "DescRU": "Выбранное союзное существо будет защищать дофус, получая урон вместо него."
+  }
+}

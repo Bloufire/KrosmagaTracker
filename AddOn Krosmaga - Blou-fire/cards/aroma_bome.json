@@ -1,0 +1,31 @@
+{
+  "Id": 184,
+  "Name": "aroma_bome",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    3
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 3,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Gell Ol",
+    "DescBR": "<b>APARIÇÃO:</b>\nCompre 1 carta.",
+    "NameEN": "Malb Aroma",
+    "DescEN": "<b>APPEARANCE:</b>\nDraw 1 card.",
+    "NameES": "Aroma Boma",
+    "DescES": "<b>APARICIÓN:</b>\nRobas 1 carta.",
+    "NameFR": "Aroma Bome",
+    "DescFR": "<b>APPARITION :</b>\nPiochez 1 carte.",
+    "NameRU": "Арома Панацея",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nвозьмите 1 карту."
+  }
+}

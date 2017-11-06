@@ -1,0 +1,32 @@
+{
+  "Id": 721,
+  "Name": "paladir_sram_h",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 5,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    5,
+    77
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 6,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Carrasco de Luto",
+    "DescBR": "Ganha +2 <b>AT</b> enquanto ele estiver no seu <b>lado do tabuleiro</b>.",
+    "NameEN": "Grieving Executor",
+    "DescEN": "Gains +2 <b>AT</b> while on your <b>side.</b>",
+    "NameES": "Ejecutor enlutado",
+    "DescES": "Gana +2 <b>AT</b> cuando está en tu <b>lado del tablero</b>.",
+    "NameFR": "Exécuteur Endeuillé",
+    "DescFR": "Gagne +2 <b>AT</b> tant qu'il est dans votre <b>camp</b>.",
+    "NameRU": "Печальный исполнитель",
+    "DescRU": "Получает +2 <b>AT</b>, пока находится на вашей <b>половине поля</b>."
+  }
+}

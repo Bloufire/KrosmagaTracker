@@ -1,0 +1,31 @@
+{
+  "Id": 1095,
+  "Name": "cogneur_nimbo",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 2,
+  "Families": [
+    74
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Lindanão Golpeador",
+    "DescBR": "<b>APARIÇÃO:</b>\nGanha <b>escudo</b> se houver uma invocação adversária diante dele.",
+    "NameEN": "Midgin Bruiser",
+    "DescEN": "<b>APPEARANCE:</b>\nGains <b>shield</b> if an enemy Minion is in front of it.",
+    "NameES": "Golpeador taponano",
+    "DescES": "<b>APARICIÓN:</b>\nGana <b>escudo</b> si una invocación enemiga se encuentra delante de él.",
+    "NameFR": "Cogneur Nimbos",
+    "DescFR": "<b>APPARITION :</b>\nGagne <b>bouclier</b> si une invocation adverse se trouve devant lui.",
+    "NameRU": "Гномище-боец",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nполучает <b>щит</b>, если перед ним находится существо противника."
+  }
+}

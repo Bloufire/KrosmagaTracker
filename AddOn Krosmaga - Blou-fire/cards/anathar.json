@@ -1,0 +1,35 @@
+{
+  "Id": 89,
+  "Name": "anathar",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 7,
+  "Attack": 4,
+  "MovementPoint": 2,
+  "Families": [
+    70
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 2,
+    "ParentCard": 520,
+    "ParentLevel": 9
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Anathar",
+    "DescBR": "<b>CONTRAGOLPE:</b>\nEnquanto está vivo, Anathar controla seu adversário.",
+    "NameEN": "Anathar",
+    "DescEN": "<b>COUNTERATTACK:</b>\nSo long as he is alive, Anathar takes control of his opponent.",
+    "NameES": "Anathar",
+    "DescES": "<b>VENGANZA:</b>\nMientras esté vivo, Anathar toma el control de su contrincante.",
+    "NameFR": "Anathar",
+    "DescFR": "<b>CONTRE COUP :</b>\nTant qu'il est en vie, Anathar prend le contrôle de son adversaire.",
+    "NameRU": "Анатар",
+    "DescRU": "<b>КОНТРАТАКА:</b>\nпока Анатар жив, он контролирует своего противника."
+  }
+}

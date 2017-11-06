@@ -1,0 +1,31 @@
+{
+  "Id": 404,
+  "Name": "arakne_majeure",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 5,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    12
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Arakne Maior",
+    "DescBR": "<b>APARIÇÃO:</b>\nUma invocação situada\r\nno seu <b>lado do tabuleiro</b> volta para a mão de seu proprietário.",
+    "NameEN": "Major Arachnee",
+    "DescEN": "<b>APPEARANCE:</b>\nReturn a Minion on\r\nyour <b>side</b> to its owner's hand.",
+    "NameES": "Arakna mayor",
+    "DescES": "<b>APARICIÓN:</b>\nSubes una invocación\r\nsituada en tu <b>lado del tablero</b> a la mano de su propietario.",
+    "NameFR": "Arakne Majeure",
+    "DescFR": "<b>APPARITION :</b>\nRemontez dans la main\r\nde son propriétaire une invocation située dans votre <b>camp</b>.",
+    "NameRU": "Взрослый арахни",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nвозвращает в руку хозяина\r\nсущество, стоящее на вашей <b>половине поля</b>."
+  }
+}

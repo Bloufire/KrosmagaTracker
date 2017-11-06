@@ -1,0 +1,29 @@
+{
+  "Id": 17,
+  "Name": "lait_bambou",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Leite de Bambu",
+    "DescBR": "A invocação visada \r\n<b>dá uma investida</b> ao longo de 2 células.",
+    "NameEN": "Bamboo Milk",
+    "DescEN": "The targeted Minion\r\n<b>charges</b> 2 cells.",
+    "NameES": "Leche de bambú",
+    "DescES": "La invocación seleccionada\r\n<b>carga</b> 2 casillas.",
+    "NameFR": "Lait de Bambou",
+    "DescFR": "L'invocation ciblée\r\n<b>charge</b> de 2 cases.",
+    "NameRU": "Бамбуковое молоко",
+    "DescRU": "Выбранное существо делает <b>рывок</b> на 2 клетки."
+  }
+}

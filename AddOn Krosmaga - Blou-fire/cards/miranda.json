@@ -1,0 +1,35 @@
+{
+  "Id": 153,
+  "Name": "miranda",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 17,
+    "ParentCard": 111,
+    "ParentLevel": 9
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Miranda",
+    "DescBR": "<b>APARIÇÃO:</b>\nAssume o controle das invocações adversárias ao redor dela até morrer.",
+    "NameEN": "Miranda",
+    "DescEN": "<b>APPEARANCE:</b>\nTakes control of enemy Minions on adjacent cells until its death.",
+    "NameES": "Miranda",
+    "DescES": "<b>APARICIÓN: </b>\nToma el control de las invocaciones enemigas que estén a su alrededor hasta su muerte.",
+    "NameFR": "Miranda",
+    "DescFR": "<b>APPARITION :</b>\nPrend le contrôle des invocations adverses autour d'elle jusqu'à sa mort.",
+    "NameRU": "Миранда",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nполучает контроль над существами противника вокруг себя до своей гибели."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 859,
+  "Name": "phorzerker_enu",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 5,
+  "Attack": 5,
+  "MovementPoint": 2,
+  "Families": [
+    81
+  ],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Perforzerker",
+    "DescBR": "Invocação resultante\r\nda fusão entre um Perfuratroz e um Enutrof.",
+    "NameEN": "Drhellzerker",
+    "DescEN": "Minion resulting\r\nfrom a Drheller and Enutrof merging.",
+    "NameES": "Perfórserker",
+    "DescES": "Invocación originada\r\nde la fusión entre un perforatroz y un anutrof.",
+    "NameFR": "Phorzerker",
+    "DescFR": "Invocation issue\r\nde la fusion entre un Phorreur et un Enutrof.",
+    "NameRU": "Хоррсерк",
+    "DescRU": "Существо создается\r\nслиянием хорроройки и энутрофа."
+  }
+}

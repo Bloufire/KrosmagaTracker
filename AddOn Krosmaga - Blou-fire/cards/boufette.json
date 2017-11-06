@@ -1,0 +1,31 @@
+{
+  "Id": 29,
+  "Name": "boufette",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    14
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Papatudette",
+    "DescBR": "<b>APARIÇÃO:</b>\nCura 2 <b>PV</b> de seus outros Papatudos.",
+    "NameEN": "Gobbette",
+    "DescEN": "<b>APPEARANCE:</b>\nHeals your other Gobballs by 2 <b>HP</b>.",
+    "NameES": "Jalalínea",
+    "DescES": "<b>APARICIÓN:</b>\nCura 2 <b>PdV</b> a tus demás jalatós.",
+    "NameFR": "Boufette",
+    "DescFR": "<b>APPARITION :</b>\nSoigne vos autres Bouftous de 2 <b>PV</b>.",
+    "NameRU": "Жручка",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nвосстанавливает другим вашим бараглотам по 2 <b>ОЗ</b>."
+  }
+}

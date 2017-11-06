@@ -1,0 +1,32 @@
+{
+  "Id": 1425,
+  "Name": "paladir_iop_f",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 4,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    1,
+    77
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 1,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Guardiã Inflexível",
+    "DescBR": "<b>APARIÇÃO:</b>\nInflige 2 danos às invocações adversárias que tiverem pelo menos 4 <b>AT</b>.",
+    "NameEN": "Unyielding Guardian",
+    "DescEN": "<b>APPEARANCE:</b>\nInflicts 2 damage on enemy Minions with at least 4 <b>AT</b>.",
+    "NameES": "Guardiana inflexible",
+    "DescES": "<b>APARICIÓN:</b>\nInflige 2 de daño a las invocaciones enemigas que tengan al menos 4 <b>AT</b>.",
+    "NameFR": "Gardienne Inflexible",
+    "DescFR": "<b>APPARITION :</b>\nInflige 2 dégâts aux invocations adverses ayant au moins 4 <b>AT</b>.",
+    "NameRU": "Непреклонная стражница",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nнаносит 2 ед. урона существам противника, имеющим хотя бы 4 <b>AT</b>."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 41,
+  "Name": "de_rebondissant",
+  "CardType": 1,
+  "CostAP": 10,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 4,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Dado Saltador",
+    "DescBR": "Inflige <b>1d6</b> dano(s) às invocações adversárias.\n(Custa 1 <b>PA</b> a menos por cada Miaw aliado presente no jogo.)",
+    "NameEN": "Die Alright",
+    "DescEN": "Inflicts <b>1d6</b> damage on enemy Minions.\n(Costs 1 <b>AP</b> less per allied Bow Meow in play.)",
+    "NameES": "Dado Rebotado",
+    "DescES": "Inflige <b>1d6</b> de daño a las invocaciones enemigas.\n(Cuesta 1 <b>PA</b> menos por cada miaumiau aliado en juego.)",
+    "NameFR": "Dé Rebondissant",
+    "DescFR": "Inflige <b>1d6</b> dégât(s) aux invocations adverses.\n(Coûte 1 <b>PA</b> de moins par Chacha allié en jeu.)",
+    "NameRU": "Прыгающая кость",
+    "DescRU": "Наносит существам противника <b>1d6</b> ед. урона.\nСтоит на 1 <b>ОД</b> меньше за каждого союзного котокота в игре."
+  }
+}

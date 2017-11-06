@@ -1,0 +1,29 @@
+{
+  "Id": 679,
+  "Name": "pelle",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Pá",
+    "DescBR": "Inflige 2 danos.",
+    "NameEN": "Shovel",
+    "DescEN": "Inflicts 2 damage.",
+    "NameES": "Pala",
+    "DescES": "Inflige 2 de daño.",
+    "NameFR": "Pelle",
+    "DescFR": "Inflige 2 dégâts.",
+    "NameRU": "Лопата",
+    "DescRU": "Наносит 2 ед. урона."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "Id": 395,
+  "Name": "alibert_niveau_1",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    4
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 11,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    220
+  ],
+  "Texts": {
+    "NameBR": "Aliberto",
+    "DescBR": "<b>APARIÇÃO:</b>\nAdiciona um Cozido\r\nà sua mão.",
+    "NameEN": "Alibert",
+    "DescEN": "<b>APPEARANCE:</b>\nAdd a Blanquette\r\nto your hand.",
+    "NameES": "Álibert",
+    "DescES": "<b>APARICIÓN:</b>\nAñade una chuleta\r\na tu mano.",
+    "NameFR": "Alibert",
+    "DescFR": "<b>APPARITION :</b>\nAjoute une Blanquette\r\nà votre main.",
+    "NameRU": "Алибер",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nдает вам в руку\r\nжаркое."
+  }
+}

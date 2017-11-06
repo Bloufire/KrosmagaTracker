@@ -1,0 +1,31 @@
+{
+  "Id": 176,
+  "Name": "craqueboule",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 2,
+  "Families": [
+    22
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Smagabola",
+    "DescBR": "<b>RESISTÊNCIA:</b> 1",
+    "NameEN": "Crackrock",
+    "DescEN": "<b>RESISTANCE:</b> 1",
+    "NameES": "Crujibola",
+    "DescES": "<b>RESISTENCIA:</b> 1",
+    "NameFR": "Craqueboule",
+    "DescFR": "<b>RÉSISTANCE :</b> 1",
+    "NameRU": "Дробикамень",
+    "DescRU": "<b>СОПРОТИВЛЕНИЕ:</b> 1"
+  }
+}

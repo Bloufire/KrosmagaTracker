@@ -1,0 +1,33 @@
+{
+  "Id": 829,
+  "Name": "piege_explosif_ext1",
+  "CardType": 1,
+  "CostAP": 4,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    5
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 6,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    837
+  ],
+  "Texts": {
+    "NameBR": "Armadilha Explosiva",
+    "DescBR": "Coloca uma Armadilha Explosiva Ativada na mão do adversário.",
+    "NameEN": "Explosive Trap",
+    "DescEN": "Puts an Activated Explosive Trap in your opponent's hand.",
+    "NameES": "Trampa Explosiva",
+    "DescES": "Coloca una trampa explosiva activada en la mano de tu adversario.",
+    "NameFR": "Piège Explosif",
+    "DescFR": "Place un Piège Explosif Activé dans la main de votre adversaire.",
+    "NameRU": "Взрывная ловушка",
+    "DescRU": "Дает взведенную взрывную ловушку в руку противнику."
+  }
+}

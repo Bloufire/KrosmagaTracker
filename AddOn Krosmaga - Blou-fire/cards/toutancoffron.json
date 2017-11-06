@@ -1,0 +1,31 @@
+{
+  "Id": 1560,
+  "Name": "toutancoffron",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 3,
+  "Attack": 6,
+  "MovementPoint": 2,
+  "Families": [
+    76
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Tutarricão",
+    "DescBR": "<b>RESISTÊNCIA:</b> 2\nTransforma em <b>Espólio</b> as invocações que destrói.",
+    "NameEN": "Chestankhamun",
+    "DescEN": "<b>RESISTANCE:</b> 2\nTransforms the Minions it destroys into <b>Loot</b>.",
+    "NameES": "Tutancofrón",
+    "DescES": "<b>RESISTENCIA:</b> 2\nTransforma en <b>botín</b> las invocaciones que destruye.",
+    "NameFR": "Toutancoffron",
+    "DescFR": "<b>RÉSISTANCE :</b> 2\nTransforme en <b>Butin</b> les invocations qu'il détruit.",
+    "NameRU": "Тутансхорон",
+    "DescRU": "<b>СОПРОТИВЛЕНИЕ:</b> 2\nПревращает уничтоженных им существ в <b>добычу</b>."
+  }
+}

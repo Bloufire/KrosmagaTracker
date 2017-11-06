@@ -1,0 +1,31 @@
+{
+  "Id": 366,
+  "Name": "malobouc",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    47
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Maloscudo",
+    "DescBR": "<b>MORTE:</b>\nDestrói todos os prismas adversários.",
+    "NameEN": "Badgoat",
+    "DescEN": "<b>DEATH:</b>\nDestroys all enemy Prisms.",
+    "NameES": "Malajeta",
+    "DescES": "<b>MUERTE:</b>\nDestruye todos los prismas enemigos.",
+    "NameFR": "Malobouc",
+    "DescFR": "<b>MORT :</b>\nDétruit tous les prismes adverses.",
+    "NameRU": "Злыднещит",
+    "DescRU": "<b>СМЕРТЬ:</b>\nуничтожает все призмы противника."
+  }
+}

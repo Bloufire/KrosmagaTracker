@@ -1,0 +1,31 @@
+{
+  "Id": 128,
+  "Name": "mot_reconstituant",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    3
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 3,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Palavra Reconstituinte",
+    "DescBR": "Cura 2 <b>PV</b> de uma invocação ou Dofus.",
+    "NameEN": "Fortifying Word",
+    "DescEN": "Heals a Minion or a Dofus by 2 <b>HP</b>.",
+    "NameES": "Palabra Reconstituyente",
+    "DescES": "Cura 2 <b>PdV</b> a una invocación o un dofus.",
+    "NameFR": "Mot Reconstituant",
+    "DescFR": "Soigne une invocation ou un Dofus de 2 <b>PV</b>.",
+    "NameRU": "Слово врачевания",
+    "DescRU": "Восстанавливает выбранному существу или дофусу 2 <b>ОЗ</b>."
+  }
+}

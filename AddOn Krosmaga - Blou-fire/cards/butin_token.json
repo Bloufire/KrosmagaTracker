@@ -1,0 +1,29 @@
+{
+  "Id": 687,
+  "Name": "butin_token",
+  "CardType": 2,
+  "CostAP": 1,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Espólio",
+    "DescBR": "Acrescenta à sua mão uma Pá, uma Picareta Antiga ou um Elixir da Juventude se uma das suas invocações recolhê-lo.",
+    "NameEN": "Loot",
+    "DescEN": "Add a Spade, an Antique Pick, or an Elixir of Life to your hand if one of your Minions picks it up.",
+    "NameES": "Botín",
+    "DescES": "Añade a tu mano una pala, un pico antiguo o un elixir de juventud si una de tus invocaciones se hace con él.",
+    "NameFR": "Butin",
+    "DescFR": "Ajoute à votre main une Pelle, une Pioche Antique ou un Elixir de Jouvence si une de vos invocations le ramasse.",
+    "NameRU": "Добыча",
+    "DescRU": "Если одно из ваших существ подбирает добычу, вы получаете лопату, древнюю кирку или эликсир молодости."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "Id": 738,
+  "Name": "necrome_enu_f",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 4,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    4,
+    78
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 5,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Campeã Obsoleta",
+    "DescBR": "<b>NECROMO</b>\n<b>APARIÇÃO:</b>\nPassa para 2 os <b>PM</b> das invocações adversárias.",
+    "NameEN": "Outdated Champion",
+    "DescEN": "<b>NECRO</b>\n<b>APPEARANCE:</b>\nSets the <b>MP</b> of enemy Minions to 2.",
+    "NameES": "Campeona caduca",
+    "DescES": "<b>NÉCROMO</b>\n<b>APARICIÓN:</b>\nCambia a 2 los <b>PM</b> de las invocaciones enemigas.",
+    "NameFR": "Championne Périmée",
+    "DescFR": "<b>NÉCROME</b>\n<b>APPARITION :</b>\nPasse à 2 les <b>PM</b> des invocations adverses.",
+    "NameRU": "Просроченная чемпионка",
+    "DescRU": "<b>НЕКРОМАН</b>\n<b>ПОЯВЛЕНИЕ:</b>\nпоказатель <b>ОП</b> существ противника становится равным 2."
+  }
+}

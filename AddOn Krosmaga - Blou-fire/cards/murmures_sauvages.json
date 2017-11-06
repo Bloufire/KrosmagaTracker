@@ -1,0 +1,31 @@
+{
+  "Id": 354,
+  "Name": "murmures_sauvages",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 10,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Murmúrios Selvagens",
+    "DescBR": "Confere +1 <b>AT</b> às suas invocações ou +1<b>AT</b> e +1 <b>AR</b> se você tiver uma <b>Semente</b> no jogo.",
+    "NameEN": "Wild Whispers",
+    "DescEN": "Confers +1 <b>AT</b> on your Minions or +1 <b>AT</b> and +1 <b>AR</b> if you have a <b>Seed</b> in play.",
+    "NameES": "Murmullos Salvajes",
+    "DescES": "Da +1 <b>AT</b> a tus invocaciones o +1 <b>AT</b> y +1 <b>AR</b> si tienes una <b>semilla</b> en juego.",
+    "NameFR": "Murmures Sauvages",
+    "DescFR": "Confère +1 <b>AT</b> à vos invocations ou +1<b>AT</b> et +1 <b>AR</b> si vous avez une <b>Graine</b> en jeu.",
+    "NameRU": "Дикий шепот",
+    "DescRU": "Дает вашим существам +1 <b>AT</b>. Дает +1 <b>AT</b> и +1 <b>БР</b>, если у вас в игре есть <b>семя</b>."
+  }
+}

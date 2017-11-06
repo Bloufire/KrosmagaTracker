@@ -1,0 +1,31 @@
+{
+  "Id": 369,
+  "Name": "katar_niveau_2",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 3,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 19,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Katar",
+    "DescBR": "<b>INICIATIVA</b>\n<b>COMEÇO DO TURNO:</b>\n<b>Atrai</b> a primeira invocação adversária situada diante dele.",
+    "NameEN": "Katar",
+    "DescEN": "<b>FIRST STRIKE</b>\n<b>START OF TURN:</b>\n<b> Attracts</b> the first enemy Minion in front of it.",
+    "NameES": "Katar",
+    "DescES": "<b>INICIATIVA</b>\n<b>INICIO DEL TURNO:</b>\n<b>Atrae</b> hasta él la primera invocación enemiga de su hilera.",
+    "NameFR": "Katar",
+    "DescFR": "<b>INITIATIVE</b>\n<b>DÉBUT DU TOUR :</b>\n<b>Attire</b> la première invocation adverse située devant lui.",
+    "NameRU": "Катар",
+    "DescRU": "<b>ПЕРВЫЙ УДАР</b>\n<b>НАЧАЛО ХОДА:</b>\n<b>притягивает</b> первое существо противника, стоящее перед ним."
+  }
+}

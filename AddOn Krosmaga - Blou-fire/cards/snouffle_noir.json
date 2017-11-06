@@ -1,0 +1,31 @@
+{
+  "Id": 946,
+  "Name": "snouffle_noir",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 2,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    80
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Snufle Preto",
+    "DescBR": "Ganha +2 <b>PM</b> e <b>não visável</b> enquanto um Baú está em jogo.",
+    "NameEN": "Black Snoofle",
+    "DescEN": "Gains +2 <b>MP</b> and <b>untargetable</b> as long as a Chest is in play.",
+    "NameES": "Snoofle negro",
+    "DescES": "Gana +2 <b>PM</b> y <b>escurridizo</b> mientras haya un cofre en juego.",
+    "NameFR": "Snouffle Noir",
+    "DescFR": "Gagne +2 <b>PM</b> et <b>inciblable</b> tant qu'un Coffre est en jeu.",
+    "NameRU": "Черный нюхач",
+    "DescRU": "Получает +2 <b>ОП</b> и свойство <b>«невыцеливаемый»</b>, пока в игре находится сундук."
+  }
+}

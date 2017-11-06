@@ -1,0 +1,35 @@
+{
+  "Id": 576,
+  "Name": "sir_comte_flex",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 4,
+  "Attack": 4,
+  "MovementPoint": 2,
+  "Families": [
+    71
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 11,
+    "ParentCard": 221,
+    "ParentLevel": 8
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Sir Kun Flex",
+    "DescBR": "Quando um dos seus Dofus sofre danos,\r\no Dofus adversário da fileira dele sofre a mesma quantidade de danos.",
+    "NameEN": "Sire Flexington",
+    "DescEN": "Whenever one of your Dofus suffers damage,\r\nthe enemy Dofus on its row suffers an equal amount of damage.",
+    "NameES": "Sir Kurn Flex",
+    "DescES": "Cuando uno de tus dofus sufre daños,\r\nel dofus enemigos de su hilera también los sufre.",
+    "NameFR": "Sir Comte Flex",
+    "DescFR": "Quand un de vos Dofus subit des dégâts,\r\nle Dofus adverse de sa ligne en subit autant.",
+    "NameRU": "Циркум Флекс",
+    "DescRU": "Когда один из ваших дофусов получает урон,\r\nдофус противника на той же линии получает аналогичный урон."
+  }
+}

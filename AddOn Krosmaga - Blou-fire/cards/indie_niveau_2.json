@@ -1,0 +1,31 @@
+{
+  "Id": 440,
+  "Name": "indie_niveau_2",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 1,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    44
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 30,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Indy",
+    "DescBR": "<b>MORTE:</b> Recupera uma carta Infinita aleatória da sua lixeira. Ela custa 1 <b>PA</b> a menos.",
+    "NameEN": "Indie",
+    "DescEN": "<b>DEATH:</b> Return a random Infinite card from your discard pile to your hand. It costs 1 <b>AP</b> less.",
+    "NameES": "Indi",
+    "DescES": "<b>MUERTE:</b> Recupera una carta infinita aleatoria de tu descarte. Cuesta 1 <b>PA</b> menos.",
+    "NameFR": "Indie",
+    "DescFR": "<b>MORT :</b> Récupère une carte Infinite aléatoire de votre défausse. Elle coûte 1 <b>PA</b> de moins.",
+    "NameRU": "Инди",
+    "DescRU": "<b>СМЕРТЬ:</b> возвращает 1 случайную запредельную карту из вашего сброса. Ее стоимость уменьшается на 1 <b>ОД</b>."
+  }
+}

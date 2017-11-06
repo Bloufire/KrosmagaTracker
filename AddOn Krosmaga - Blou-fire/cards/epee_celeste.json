@@ -1,0 +1,31 @@
+{
+  "Id": 832,
+  "Name": "epee_celeste",
+  "CardType": 1,
+  "CostAP": 7,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 1,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Espada Celestial",
+    "DescBR": "Inflige 3 danos\r\nna fileira e na linha\r\nda célula visada.",
+    "NameEN": "Celestial Sword",
+    "DescEN": "Inflicts 3 damage\r\non the row and line\r\nof the targeted cell.",
+    "NameES": "Espada Celeste",
+    "DescES": "Inflige 3 de daño\r\nen la hilera y en la fila\r\nde la casilla seleccionada.",
+    "NameFR": "Epée Céleste",
+    "DescFR": "Inflige 3 dégâts\r\nsur la ligne et la rangée\r\nde la case ciblée. ",
+    "NameRU": "Небесный меч",
+    "DescRU": "Наносит 3 ед. урона\r\nна линии и в ряду\r\nвыбранной клетки."
+  }
+}

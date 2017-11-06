@@ -1,0 +1,32 @@
+{
+  "Id": 591,
+  "Name": "necrome_cra_f",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    2,
+    78
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 2,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Campeã Perfuradora",
+    "DescBR": "<b>NECROMO</b>\n<b>ALCANCE:</b> 1-2\n<b>APARIÇÃO:</b> <b>Empurra</b> as invocações adversárias da fileira dela ao longo de 7 células.",
+    "NameEN": "Champion Skewerer",
+    "DescEN": "<b>NECRO</b>\n<b>RANGE:</b> 1-2\n<b>APPEARANCE:</b> <b>Repels</b> enemy Minions on its row by 7 cells.",
+    "NameES": "Campeona ensartadora",
+    "DescES": "<b>NÉCROMO</b>\n<b>ALCANCE:</b> 1-2\n<b>APARICIÓN:</b> <b>Empuja</b> las invocaciones enemigas de su hilera 7 casillas.",
+    "NameFR": "Championne Embrocheuse",
+    "DescFR": "<b>NÉCROME</b>\n<b>PORTÉE :</b> 1-2\n<b>APPARITION :</b> <b>Repousse</b> les invocations adverses de sa ligne de 7 cases.",
+    "NameRU": "Чемпионка-наниндзя",
+    "DescRU": "<b>НЕКРОМАН</b>\n<b>ДАЛЬНОСТЬ АТАКИ:</b> 1-2\n<b>ПОЯВЛЕНИЕ:</b><b> отталкивает</b> существ противника на своей линии на 7 клеток."
+  }
+}

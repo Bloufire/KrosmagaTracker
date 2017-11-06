@@ -1,0 +1,31 @@
+{
+  "Id": 365,
+  "Name": "tireur_d_elite",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    2
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 2,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Atirador de Elite",
+    "DescBR": "Reduz em 1 o <b>alcance</b> de uma invocação e aumenta em 2 seu <b>AT</b>.",
+    "NameEN": "Elite Archer",
+    "DescEN": "Reduces a Minion's <b>range</b> by 1 and increases its <b>AT</b> by 2.",
+    "NameES": "Tirador de élite",
+    "DescES": "Reduce en 1 el <b>alcance</b> de 1 invocación y aumenta su <b>AT</b> en 2.",
+    "NameFR": "Tireur d'élite",
+    "DescFR": "Diminue de 1 la <b>portée</b> d'une invocation et augmente son <b>AT</b> de 2.",
+    "NameRU": "Элитный стрелок",
+    "DescRU": "Сокращает на 1 <b>дальность атаки</b> выбранного существа и увеличивает его <b>AT</b> на 2."
+  }
+}

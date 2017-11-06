@@ -1,0 +1,31 @@
+{
+  "Id": 63,
+  "Name": "corbacassin",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 1,
+  "Attack": 1,
+  "MovementPoint": 4,
+  "Families": [
+    42
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Corvali",
+    "DescBR": "<b>MORTE:</b> Inflige 1 dano às invocações ao redor dele.",
+    "NameEN": "Croboar",
+    "DescEN": "<b>DEATH:</b> Inflicts 1 damage on Minions on adjacent cells.",
+    "NameES": "Cuerbakesino",
+    "DescES": "<b>MUERTE:</b> Inflige 1 de daño a las invocaciones a su alrededor.",
+    "NameFR": "Corbacassin",
+    "DescFR": "<b>MORT :</b> Inflige 1 dégât aux invocations autour de lui.",
+    "NameRU": "Карбачонок",
+    "DescRU": "<b>СМЕРТЬ:</b> наносит 1 единицу урона существам вокруг себя."
+  }
+}

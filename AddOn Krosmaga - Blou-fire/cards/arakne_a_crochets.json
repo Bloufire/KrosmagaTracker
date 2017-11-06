@@ -1,0 +1,31 @@
+{
+  "Id": 1714,
+  "Name": "arakne_a_crochets",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 5,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    12
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Arakne-Gancho",
+    "DescBR": "<b>INAMOVÍVEL</b>\nEnquanto ela está em jogo,\r\nas outras invocações\r\nficam <b>inamovíveis</b>.",
+    "NameEN": "Toothy Arachnee",
+    "DescEN": "<b>IRREMOVABLE</b>\nAs long as it is in play,\r\nthe other Minions\r\nare <b>irremovable</b>.",
+    "NameES": "Arakna con ganchos",
+    "DescES": "<b>INAMOVIBLE</b>\nMientras esté en juego,\r\nlas demás invocaciones\r\nson <b>inamovibles</b>.",
+    "NameFR": "Arakne à Crochets",
+    "DescFR": "<b>INAMOVIBLE</b>\nTant qu’elle est en jeu\r\nles autres invocations\r\nsont <b>inamovibles</b>.",
+    "NameRU": "Арахни-крючкотворец",
+    "DescRU": "<b>НЕЛЬЗЯ СДВИНУТЬ</b>\nПока он находится в игре,\r\nдругие существа получают\r\nсвойство <b>«нельзя сдвинуть»</b>."
+  }
+}

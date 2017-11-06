@@ -1,0 +1,31 @@
+{
+  "Id": 334,
+  "Name": "lebolas",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 2,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    2
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 2,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Lebolas",
+    "DescBR": "<b>ALCANCE:</b> 1-3",
+    "NameEN": "Lebolas",
+    "DescEN": "<b>RANGE:</b> 1-3",
+    "NameES": "Lebolas",
+    "DescES": "<b>ALCANCE:</b> 1-3",
+    "NameFR": "Lebolas",
+    "DescFR": "<b>PORTÉE :</b> 1-3",
+    "NameRU": "Леболас",
+    "DescRU": "<b>ДАЛЬНОСТЬ АТАКИ:</b> 1-3"
+  }
+}

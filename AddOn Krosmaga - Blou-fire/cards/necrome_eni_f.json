@@ -1,0 +1,32 @@
+{
+  "Id": 849,
+  "Name": "necrome_eni_f",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 8,
+  "Attack": 4,
+  "MovementPoint": 2,
+  "Families": [
+    3,
+    78
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 3,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Curadora Corrompida",
+    "DescBR": "<b>NECROMO</b>\n<b>APARIÇÃO:</b>\nInflige 3 danos a si mesma.",
+    "NameEN": "Corrupted Healer",
+    "DescEN": "<b>NECRO</b>\n<b>APPEARANCE:</b>\nSuffers 3 damage.",
+    "NameES": "Sanadora corrupta",
+    "DescES": "<b>NÉCROMO</b>\n<b>APARICIÓN:</b>\nSe inflige 3 de daño.",
+    "NameFR": "Soigneuse Corrompue",
+    "DescFR": "<b>NÉCROME</b>\n<b>APPARITION :</b>\nS'inflige 3 dégâts.",
+    "NameRU": "Развращенная сиделка",
+    "DescRU": "<b>НЕКРОМАН</b>\n<b>ПОЯВЛЕНИЕ:</b>\nнаносит себе 3 единицы урона."
+  }
+}

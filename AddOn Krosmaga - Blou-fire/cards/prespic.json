@@ -1,0 +1,31 @@
+{
+  "Id": 180,
+  "Name": "prespic",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 4,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    64
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Prespic",
+    "DescBR": "<b>CONTRAGOLPE:</b>\nInflige 1 dano às invocações ao redor dele.",
+    "NameEN": "Prespic",
+    "DescEN": "<b>COUNTERATTACK:</b>\nInflicts 1 damage on Minions on adjacent cells.",
+    "NameES": "Prespic",
+    "DescES": "<b>VENGANZA:</b>\nInflige 1 de daño a las invocaciones a su alrededor.",
+    "NameFR": "Prespic",
+    "DescFR": "<b> CONTRE COUP :</b>\nInflige 1 dégât aux invocations autour de lui.",
+    "NameRU": "Дикоеж",
+    "DescRU": "<b>КОНТРАТАКА:</b>\nнаносит 1 единицу урона существам вокруг себя."
+  }
+}

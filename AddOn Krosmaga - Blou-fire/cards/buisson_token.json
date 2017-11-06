@@ -1,0 +1,29 @@
+{
+  "Id": 507,
+  "Name": "buisson_token",
+  "CardType": 2,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 10,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Arbusto",
+    "DescBR": "Você pode invocar um aliado sobre um Arbusto.",
+    "NameEN": "Bush",
+    "DescEN": "You can summon an ally on a bush.",
+    "NameES": "Arbusto",
+    "DescES": "Puedes invocar un aliado sobre un <b>arbusto</b>.",
+    "NameFR": "Buisson",
+    "DescFR": "Vous pouvez invoquer un allié sur un buisson.",
+    "NameRU": "Куст",
+    "DescRU": "Вы можете призвать существо на куст."
+  }
+}

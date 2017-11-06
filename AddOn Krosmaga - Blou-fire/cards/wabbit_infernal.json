@@ -1,0 +1,31 @@
+{
+  "Id": 230,
+  "Name": "wabbit_infernal",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 4,
+  "Attack": 2,
+  "MovementPoint": 2,
+  "Families": [
+    18
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Wabbit Infernal",
+    "DescBR": "<b>MORTE:</b>\nInflige 1 dano às invocações.",
+    "NameEN": "Infernal Wabbit",
+    "DescEN": "<b>DEATH:</b>\nInflicts 1 damage on Minions.",
+    "NameES": "Wabbit infernal",
+    "DescES": "<b>MUERTE:</b>\nInflige 1 de daño a las invocaciones.",
+    "NameFR": "Wabbit Infernal",
+    "DescFR": "<b>MORT :</b>\nInflige 1 dégât aux invocations. ",
+    "NameRU": "Атский кволик",
+    "DescRU": "<b>СМЕРТЬ:</b>\nнаносит 1 единицу урона всем существам."
+  }
+}

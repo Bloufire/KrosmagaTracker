@@ -1,0 +1,31 @@
+{
+  "Id": 1514,
+  "Name": "pissenlit_malefique",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 2,
+  "Attack": 3,
+  "MovementPoint": 2,
+  "Families": [
+    65
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Dente-de-Leão Maléfico",
+    "DescBR": "<b>APARIÇÃO:</b>\nColoque um <b>escudo</b>\r\nsobre um Dofus aliado.",
+    "NameEN": "Dastardly Dandelion",
+    "DescEN": "<b>APPEARANCE:</b>\nPuts a <b>shield</b>\r\non an allied Dofus.",
+    "NameES": "Diente de león maléfico",
+    "DescES": "<b>APARICIÓN:</b>\nColocas un <b>escudo</b>\r\nen un dofus aliado.",
+    "NameFR": "Pissenlit Maléfique",
+    "DescFR": "<b>APPARITION :</b>\nPlacez un <b>bouclier</b>\r\nsur un Dofus allié.",
+    "NameRU": "Зловредный льводуванчик",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nставит <b>щит</b>\r\nна выбранный союзный дофус."
+  }
+}

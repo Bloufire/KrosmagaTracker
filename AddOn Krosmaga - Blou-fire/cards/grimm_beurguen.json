@@ -1,0 +1,31 @@
+{
+  "Id": 495,
+  "Name": "grimm_beurguen",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 5,
+  "Attack": 4,
+  "MovementPoint": 2,
+  "Families": [
+    27
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Jean Bev",
+    "DescBR": "<b>CHEFE:</b> Suas outras invocações recebem +1 <b>AT</b>.",
+    "NameEN": "Skidmonk",
+    "DescEN": "<b>LEADER:</b>+1 <b>AT</b> to your other Minions.",
+    "NameES": "Grimm Berruguen",
+    "DescES": "<b>LÍDER:</b>Da +1 <b>AT</b> a tus demás invocaciones.",
+    "NameFR": "Grimm Beurguen",
+    "DescFR": "<b>CHEF :</b> +1 <b>AT</b> à vos autres invocations.",
+    "NameRU": "Брат Каток",
+    "DescRU": "<b>ВОЖАК:</b> дает другим вашим существам +1 <b>AT</b>."
+  }
+}

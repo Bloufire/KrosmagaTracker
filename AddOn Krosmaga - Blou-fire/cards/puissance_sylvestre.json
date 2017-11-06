@@ -1,0 +1,31 @@
+{
+  "Id": 217,
+  "Name": "puissance_sylvestre",
+  "CardType": 1,
+  "CostAP": 7,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 10,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Poder Silvestre",
+    "DescBR": "Suas invocações ganham +2 <b>AT</b> e +2 <b>AR</b>.",
+    "NameEN": "Sylvan Power",
+    "DescEN": "Your Minions gain +2 <b>AT</b> and +2 <b>AR</b>.",
+    "NameES": "Potencia Silvestre",
+    "DescES": "Tus invocaciones ganan +2 <b>AT</b> y +2 <b>AR</b>.",
+    "NameFR": "Puissance Sylvestre",
+    "DescFR": "Vos invocations gagnent +2 <b>AT</b> et +2 <b>AR</b>.",
+    "NameRU": "Лесная сила",
+    "DescRU": "Ваши существа получают +2 <b>AT</b> и +2 <b>БР</b>."
+  }
+}

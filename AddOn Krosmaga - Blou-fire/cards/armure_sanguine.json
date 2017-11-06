@@ -1,0 +1,31 @@
+{
+  "Id": 225,
+  "Name": "armure_sanguine",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 8,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Armadura Sanguínea",
+    "DescBR": "Confere +4 <b>AR</b>\r\na uma invocação.",
+    "NameEN": "Sanguine Armor",
+    "DescEN": "Confers +4 <b>AR</b>\r\non a Minion.",
+    "NameES": "Armadura Sanguínea",
+    "DescES": "Da +4 <b>AR</b>\r\n a una invocación.",
+    "NameFR": "Armure Sanguine",
+    "DescFR": "Confère +4 <b>AR</b>\r\nà une invocation.",
+    "NameRU": "Кровавые доспехи",
+    "DescRU": "Дает выбранному существу +4 <b>БР</b>."
+  }
+}

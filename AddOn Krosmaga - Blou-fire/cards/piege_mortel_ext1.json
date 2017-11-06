@@ -1,0 +1,33 @@
+{
+  "Id": 905,
+  "Name": "piege_mortel_ext1",
+  "CardType": 1,
+  "CostAP": 4,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    5
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 6,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    696
+  ],
+  "Texts": {
+    "NameBR": "Armadilha Mortal",
+    "DescBR": "Coloca uma Armadilha Mortal Ativada na mão do adversário.",
+    "NameEN": "Lethal Trap",
+    "DescEN": "Puts an Activated Lethal Trap in your opponent's hand.",
+    "NameES": "Trampa Mortal",
+    "DescES": "Coloca una trampa mortal activada en la mano de tu adversario.",
+    "NameFR": "Piège Mortel",
+    "DescFR": "Place un Piège Mortel Activé dans la main de votre adversaire.",
+    "NameRU": "Смертельная ловушка",
+    "DescRU": "Дает взведенную смертельную ловушку в руку противника."
+  }
+}

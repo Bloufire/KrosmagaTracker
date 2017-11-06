@@ -1,0 +1,29 @@
+{
+  "Id": 771,
+  "Name": "gredin",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 5,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Patife",
+    "DescBR": "Cada jogador descarta uma quantidade de cartas do bolo equivalente à de suas invocações no jogo.",
+    "NameEN": "Rascal",
+    "DescEN": "Each player discards as many cards from their deck as they have Minions in play.",
+    "NameES": "Bribón",
+    "DescES": "Cada jugador descarta tantas cartas de su mazo como invocaciones tenga en juego.",
+    "NameFR": "Gredin",
+    "DescFR": "Chaque joueur défausse autant de cartes de sa pioche qu'il a d'invocations en jeu.",
+    "NameRU": "Прохвост",
+    "DescRU": "Каждый игрок сбрасывает из своей колоды столько карт, сколько у него существ в игре."
+  }
+}

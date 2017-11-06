@@ -1,0 +1,31 @@
+{
+  "Id": 343,
+  "Name": "lou_niveau_2",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 2,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    44
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 26,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Lou",
+    "DescBR": "<b>APARIÇÃO:</b>\nPegue um prisma.",
+    "NameEN": "Lou",
+    "DescEN": "<b>APPEARANCE:</b>\nRetrieve a prism.",
+    "NameES": "Lu",
+    "DescES": "<b>APARICIÓN:</b>\nConsigues un prisma.",
+    "NameFR": "Lou",
+    "DescFR": "<b>APPARITION :</b>\nRécupérez un prisme.",
+    "NameRU": "Лу",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nвозьмите одну призму."
+  }
+}

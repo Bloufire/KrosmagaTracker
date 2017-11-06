@@ -1,0 +1,31 @@
+{
+  "Id": 1082,
+  "Name": "necro_phorreur",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 5,
+  "Attack": 4,
+  "MovementPoint": 2,
+  "Families": [
+    20
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Necro Perfuratroz",
+    "DescBR": "Enquanto ele está em jogo, as cartas descartadas ficam banidas.",
+    "NameEN": "Necro Drheller",
+    "DescEN": "As long as it is in play, discarded cards are banished instead.",
+    "NameES": "Necro perforatroz",
+    "DescES": "Mientras esté en juego, las cartas descartadas, en vez de descartarse, se eliminan.",
+    "NameFR": "Nécro Phorreur",
+    "DescFR": "Tant qu'il est en jeu, les cartes défaussées sont bannies à la place.",
+    "NameRU": "Некрохорроройка",
+    "DescRU": "Пока она находится в игре, карты не уходят в сброс, а уничтожаются."
+  }
+}

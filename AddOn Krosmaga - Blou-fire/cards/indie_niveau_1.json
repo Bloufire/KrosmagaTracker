@@ -1,0 +1,31 @@
+{
+  "Id": 580,
+  "Name": "indie_niveau_1",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 1,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    44
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 30,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Indy",
+    "DescBR": "<b>MORTE:</b> Coloca na sua mão a primeira carta Infinita do seu bolo.\nEla custará 1 <b>PA</b> a menos.",
+    "NameEN": "Indie",
+    "DescEN": "<b>DEATH:</b> Put the first Infinite card from your deck to your hand.\nIt costs 1 <b>AP</b> less.",
+    "NameES": "Indi",
+    "DescES": "<b>MUERTE:</b> Coloca en tu mano la primera carta infinita de tu mazo.\nCuesta 1 <b>PA</b> menos.",
+    "NameFR": "Indie",
+    "DescFR": "<b>MORT :</b> Place dans votre main la première carte Infinite de votre pioche.\nElle coûte 1 <b>PA</b> de moins.",
+    "NameRU": "Инди",
+    "DescRU": "<b>СМЕРТЬ:</b> вы берете первую запредельную карту из своей колоды.\nЕе стоимость уменьшается на 1 <b>ОД</b>."
+  }
+}

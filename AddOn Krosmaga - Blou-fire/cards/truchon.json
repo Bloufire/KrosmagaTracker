@@ -1,0 +1,31 @@
+{
+  "Id": 208,
+  "Name": "truchon",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 1,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    26
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Nenetruz",
+    "DescBR": "Troca de fileira\r\nquando uma invocação\r\nadversária entra no jogo.",
+    "NameEN": "Strichon",
+    "DescEN": "Switches row\r\nwhenever an enemy Minion\r\nenters into play.",
+    "NameES": "Pestruzillo",
+    "DescES": "Cambia de hilera\r\ncuando una invocación\r\nenemiga entra en juego.",
+    "NameFR": "Truchon ",
+    "DescFR": "Change de ligne\r\nquand une invocation\r\nadverse entre en jeu.",
+    "NameRU": "Страшусенок",
+    "DescRU": "Переходит на другую линию, когда существо противника вступает в игру."
+  }
+}

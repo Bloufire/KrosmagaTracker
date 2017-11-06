@@ -1,0 +1,31 @@
+{
+  "Id": 501,
+  "Name": "craqueleur_royal",
+  "CardType": 0,
+  "CostAP": 8,
+  "Life": 6,
+  "Attack": 5,
+  "MovementPoint": 2,
+  "Families": [
+    22
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Smagador Real",
+    "DescBR": "<b>RESISTÊNCIA:</b> 1\n<b>CHEFE:</b> Seus outros Smagadores ganham +1 <b>AT</b>.",
+    "NameEN": "Royal Crackler",
+    "DescEN": "<b>RESISTANCE:</b>1\n<b>LEADER:</b>+1 <b>AT</b> to your other Cracklers.",
+    "NameES": "Crujidor Real",
+    "DescES": "<b>RESISTENCIA:</b> 1\n<b> LÍDER:</b> +1 <b>AT</b> a tus demás crujidores.",
+    "NameFR": "Craqueleur Royal",
+    "DescFR": "<b>RÉSISTANCE :</b> 1\n<b>CHEF :</b> +1 <b>AT</b> à vos autres Craqueleurs.",
+    "NameRU": "Королевский дробитель",
+    "DescRU": "<b>СОПРОТИВЛЕНИЕ:</b> 1\n<b>ВОЖАК:</b> дает другим вашим дробителям +1 <b>AT</b>."
+  }
+}

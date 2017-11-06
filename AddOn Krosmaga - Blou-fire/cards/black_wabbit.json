@@ -1,0 +1,31 @@
+{
+  "Id": 110,
+  "Name": "black_wabbit",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 4,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    18
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Black Wabbit",
+    "DescBR": "<b>APARIÇÃO:</b>\nInflige 2 danos.",
+    "NameEN": "Black Wabbit",
+    "DescEN": "<b>APPEARANCE:</b>\nInflicts 2 damage.",
+    "NameES": "Black wabbit",
+    "DescES": "<b>APARICIÓN:</b>\nInfliges 2 de daño.",
+    "NameFR": "Black Wabbit",
+    "DescFR": "<b>APPARITION :</b>\nInfligez 2 dégâts.",
+    "NameRU": "Черный кволик",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nнаносит 2 единицы урона."
+  }
+}

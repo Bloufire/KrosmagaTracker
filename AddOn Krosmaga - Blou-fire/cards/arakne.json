@@ -1,0 +1,31 @@
+{
+  "Id": 165,
+  "Name": "arakne",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 2,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    12
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Arakne",
+    "DescBR": "<b>FERIDA</b>:\nGanha +1 <b>PM</b>.",
+    "NameEN": "Arachnee",
+    "DescEN": "<b>INJURED</b>:\nGains +1 <b>MP</b>.",
+    "NameES": "Arakna",
+    "DescES": "<b>SANGRANTE</b>:\nGana +1 <b>PM</b>.",
+    "NameFR": "Arakne",
+    "DescFR": "<b>BLESSÉ</b> :\nGagne +1 <b>PM</b>.",
+    "NameRU": "Арахни",
+    "DescRU": "<b>РАНЕН:</b>\nполучает +1 <b>ОП</b>."
+  }
+}

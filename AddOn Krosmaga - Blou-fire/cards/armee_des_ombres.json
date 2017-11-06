@@ -1,0 +1,31 @@
+{
+  "Id": 512,
+  "Name": "armee_des_ombres",
+  "CardType": 1,
+  "CostAP": 8,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    5
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 6,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Exército das Sombras",
+    "DescBR": "Recupera os Srams da sua lixeira.",
+    "NameEN": "Army of Shadows",
+    "DescEN": "Return the Srams from your discard pile to your hand.",
+    "NameES": "Ejército de las Sombras",
+    "DescES": "Recupera los srams de tu descarte.",
+    "NameFR": "Armée des Ombres",
+    "DescFR": "Récupère les Srams de votre défausse.",
+    "NameRU": "Армия тьмы",
+    "DescRU": "Возвращает срамов из вашего сброса."
+  }
+}

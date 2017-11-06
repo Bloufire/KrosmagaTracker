@@ -1,0 +1,31 @@
+{
+  "Id": 489,
+  "Name": "ben_debouche",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 4,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    3
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 3,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Garg Arejo",
+    "DescBR": "Cura 2 <b>PV</b> de suas outras invocações ao final de todos os deslocamentos aliados.",
+    "NameEN": "Matthew Osh",
+    "DescEN": "Heals your other Minions by 2 <b>HP</b>after all allied movements.",
+    "NameES": "Den Frítico",
+    "DescES": "Cura 2 <b>PdV</b> a tus demás invocaciones al final de todos los desplazamientos aliados.",
+    "NameFR": "Ben Debouche",
+    "DescFR": "Soigne de 2 <b>PV</b> vos autres invocations à la fin de tous les déplacements alliés.",
+    "NameRU": "Бен Дебуш",
+    "DescRU": "После перемещения всех союзников восстанавливает другим вашим существам 2 <b>ОЗ</b>."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 1205,
+  "Name": "phorreur_elite",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 4,
+  "Attack": 2,
+  "MovementPoint": 2,
+  "Families": [
+    20
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Perfuratroz de Elite",
+    "DescBR": "<b>COMEÇO DO TURNO:</b>\nCompre 1 carta.",
+    "NameEN": "Elite Drheller",
+    "DescEN": "<b>START OF TURN:</b>\nDraw 1 card.",
+    "NameES": "Perforatroz de élite",
+    "DescES": "<b>INICIO DEL TURNO:</b>\nRobas 1 carta.",
+    "NameFR": "Phorreur d'Elite",
+    "DescFR": "<b>DEBUT DU TOUR :</b>\nPiochez 1 carte.",
+    "NameRU": "Элитная хорроройка",
+    "DescRU": "<b>НАЧАЛО ХОДА:</b>\nвы берете 1 карту."
+  }
+}

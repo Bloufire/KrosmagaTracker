@@ -1,0 +1,31 @@
+{
+  "Id": 117,
+  "Name": "rat_tiboiseur",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 2,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    19
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Rato Sada",
+    "DescBR": "Volta da lixeira para a sua mão quando um dos seus Ratos morre.",
+    "NameEN": "Pruned Rat",
+    "DescEN": "Returns to your hand from your discard pile whenever one of your Rats dies.",
+    "NameES": "Rata surada",
+    "DescES": "Vuelve de tu descarte a tu mano cuando una de tus ratas muere.",
+    "NameFR": "Rat Tiboiseur",
+    "DescFR": "Revient de votre défausse dans votre main quand un de vos Rats meurt.",
+    "NameRU": "Крыс-воришка",
+    "DescRU": "Возвращается к вам в руку из вашего сброса, когда погибает одна из ваших крыс."
+  }
+}

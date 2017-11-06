@@ -1,0 +1,31 @@
+{
+  "Id": 5,
+  "Name": "will_skass",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 1,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 4,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Will Skass",
+    "DescBR": "<b>APARIÇÃO:</b>\nSeus Miaws e outros Ecaflips ganham +2 <b>AT</b>.",
+    "NameEN": "Will Skass",
+    "DescEN": "<b>APPEARANCE:</b>\nYour Bow Meows and other Ecaflips gain +2 <b>AT</b>.",
+    "NameES": "Will Skass",
+    "DescES": "<b>APARICIÓN:</b>\nTus miaumiaus y tus demás zurcaráks ganan +2 <b>AT</b>.",
+    "NameFR": "Will Skass",
+    "DescFR": "<b>APPARITION :</b>\nVos Chachas et vos autres Ecaflips gagnent +2 <b>AT</b>.",
+    "NameRU": "Уилл Скасс",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nваши котокоты и другие ваши экафлипы получают +2 <b>AT</b>."
+  }
+}

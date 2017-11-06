@@ -1,0 +1,31 @@
+{
+  "Id": 251,
+  "Name": "bakara_niveau_3",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 4,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    35
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 3,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Bakara",
+    "DescBR": "<b>APARIÇÃO:</b>\nRecupera os 2 últimos feitiços enviados para a sua lixeira.",
+    "NameEN": "Bakara",
+    "DescEN": "<b>APPEARANCE:</b>\nRetrieve the last 2 spells that went to your discard pile.",
+    "NameES": "Bakara",
+    "DescES": "<b>APARICIÓN:</b>\nRecupera los 2 últimos hechizos enviados a tu descarte.",
+    "NameFR": "Bakara",
+    "DescFR": "<b>APPARITION :</b>\nRécupère les 2 derniers sorts partis dans votre défausse.",
+    "NameRU": "Бакара",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nвозвращает 2 последних заклинания из вашего сброса."
+  }
+}

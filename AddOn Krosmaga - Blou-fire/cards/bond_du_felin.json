@@ -1,0 +1,31 @@
+{
+  "Id": 245,
+  "Name": "bond_du_felin",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 4,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Salto do Felino",
+    "DescBR": "<b>Teletransporta</b> uma invocação\r\npor <b>1d6</b> células.",
+    "NameEN": "Feline Leap",
+    "DescEN": "<b>Teleports</b> a Minion\r\n<b>1d6</b> cell(s).",
+    "NameES": "Salto del Felino",
+    "DescES": "<b>Teletransporta</b> una invocación\r\n<b>1d6</b> casilla(s).",
+    "NameFR": "Bond du Félin",
+    "DescFR": "<b>Téléporte</b> une invocation\r\nde <b>1d6</b> case(s).",
+    "NameRU": "Кошачий скачок",
+    "DescRU": "<b>Телепортирует</b> выбранное существо на количество клеток, выпавшее на <b>1d6</b>."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 381,
+  "Name": "saizan_zen",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    3
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 3,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Sonri Zal",
+    "DescBR": "<b>APARIÇÃO:</b>\nConfere +1 <b>AR</b> a uma invocação ou +3 <b>AR</b> se\r\nela estiver ferida.",
+    "NameEN": "Saizan Zen",
+    "DescEN": "<b>APPEARANCE:</b>\nGives +1 <b>AR</b> to a Minion or +3 <b>AR</b> if\r\nit is injured.",
+    "NameES": "Saizan Zen",
+    "DescES": "<b>APARICIÓN:</b>\nDas +1 <b>AR</b> a una invocación o +3 <b>AR</b> si\r\nestá herida.",
+    "NameFR": "Saizan Zen",
+    "DescFR": "<b>APPARITION :</b>\nDonnez +1 <b>AR</b> à une invocation ou +3 <b>AR</b> si\r\nelle est blessée.",
+    "NameRU": "Сайзен Дзен",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b> дает выбранному существу +1 <b>БР</b>\r\nили +3 <b>БР</b>, если оно ранено."
+  }
+}

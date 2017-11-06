@@ -1,0 +1,31 @@
+{
+  "Id": 280,
+  "Name": "rose_demoniaque",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 1,
+  "MovementPoint": 2,
+  "Families": [
+    65
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Rosa Demoníaca",
+    "DescBR": "<b>APARIÇÃO:</b>\n<b>Atordoa</b> uma invocação por 1 turno.",
+    "NameEN": "Demonic Rose",
+    "DescEN": "<b>APPEARANCE:</b>\n<b> Stuns</b> a Minion for 1 turn.",
+    "NameES": "Rosa demoníaca",
+    "DescES": "<b>APARICIÓN:</b>\n<b>Aturdes</b> una invocación durante 1 turno.",
+    "NameFR": "Rose Démoniaque",
+    "DescFR": "<b>APPARITION :</b>\n<b>Assommez</b> une invocation pour 1 tour.",
+    "NameRU": "Демоническая роза",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\n<b>оглушает</b> выбранное существо на 1 ход."
+  }
+}

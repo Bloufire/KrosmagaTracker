@@ -1,0 +1,31 @@
+{
+  "Id": 561,
+  "Name": "pied_du_sacrieur",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 8,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Pé do Sacrier",
+    "DescBR": "Inflige 3 danos a uma invocação e 1 dano às outras.",
+    "NameEN": "Sacrier's Foot",
+    "DescEN": "Inflicts 3 damage on one Minion and 1 damage on the others.",
+    "NameES": "Pie de Sacrógrito",
+    "DescES": "Inflige 3 de daño a una invocación y 1 de daño a los demás.",
+    "NameFR": "Pied du Sacrieur",
+    "DescFR": "Inflige 3 dégâts à une invocation et 1 dégât aux autres.",
+    "NameRU": "Ступня Сакриер",
+    "DescRU": "Наносит 3 ед. урона одному существу и 1 ед. урона остальным."
+  }
+}

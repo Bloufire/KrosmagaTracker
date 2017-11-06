@@ -1,0 +1,31 @@
+{
+  "Id": 708,
+  "Name": "kibri",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    4
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 5,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Kibri",
+    "DescBR": "<b>APARIÇÃO:</b> \nSacrifique um dos seus primas para dar <b>+1 AT</b> e <b>+1 AR</b> às suas outras invocações.",
+    "NameEN": "Kibri",
+    "DescEN": "<b>APPEARANCE:</b> \nSacrifice one of your prisms to give your other Minions <b>+1 AT</b> and <b>+1 AR</b>.",
+    "NameES": "Kebrillo",
+    "DescES": "<b>APARICIÓN:</b> \nSacrificas uno de tus prismas para dar <b>+1 AT</b> y <b>+1 AR</b> a tus demás invocaciones.",
+    "NameFR": "Kibri",
+    "DescFR": "<b>APPARITION :</b> \nSacrifiez un de vos prismes pour donner <b>+1 AT</b> et <b>+1 AR</b> à vos autres invocations.",
+    "NameRU": "Хтосият",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b> \nПожертвуйте одной из своих призм, чтобы дать другим вашим существам +1 <b>AT</b> и +1 <b>БР</b>."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "Id": 212,
+  "Name": "klore_ofil",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 1,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 10,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    537
+  ],
+  "Texts": {
+    "NameBR": "Klor Ofila",
+    "DescBR": "<b>APARIÇÃO:</b>\nAdiciona uma <b>Semente</b> à sua mão.",
+    "NameEN": "Klor Ofil",
+    "DescEN": "<b>APPEARANCE:</b>\nAdd one <b>Seed</b> to your hand.",
+    "NameES": "Klor Ofila",
+    "DescES": "<b>APARICIÓN:</b>\nAñade una <b>semilla</b> a tu mano.",
+    "NameFR": "Klore Ofil",
+    "DescFR": "<b>APPARITION :</b>\nAjoute une <b>Graine</b> à votre main.",
+    "NameRU": "Хлор Офилл",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nдает вам в руку одно <b>семя</b>."
+  }
+}

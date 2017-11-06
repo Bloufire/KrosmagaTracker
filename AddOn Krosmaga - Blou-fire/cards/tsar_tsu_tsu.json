@@ -1,0 +1,31 @@
+{
+  "Id": 255,
+  "Name": "tsar_tsu_tsu",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    62
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Czar Csé Csé",
+    "DescBR": "<b>GOLPE DE MISERICÓRDIA:</b>\nGanha +2 <b>AT</b> e +<b>2 AR</b>.",
+    "NameEN": "Tsu Tsu Tsar",
+    "DescEN": "<b>FINAL BLOW:</b>\nGains +2 <b>AT</b> and +<b>2 AR</b>.",
+    "NameES": "Zar Tsu Tsu",
+    "DescES": "<b>GOLPE DE GRACIA:</b>\nGana +2 <b>AT</b> y +2 <b>AR</b>.",
+    "NameFR": "Tsar Tsu Tsu",
+    "DescFR": "<b>COUP DE GRÂCE :</b>\nGagne +2 <b>AT</b> et +<b>2 AR</b>.",
+    "NameRU": "Царь Цуцу",
+    "DescRU": "<b>СМЕРТЕЛЬНЫЙ УДАР:</b> получает +2 <b>AT</b> и +2 <b>БР</b>."
+  }
+}

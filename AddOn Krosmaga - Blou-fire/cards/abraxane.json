@@ -1,0 +1,31 @@
+{
+  "Id": 529,
+  "Name": "abraxane",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 2,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    3
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 3,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Abraxane",
+    "DescBR": "<b>APARIÇÃO:</b>\nCura 2 <b>PV</b>\r\nde uma invocação.",
+    "NameEN": "Abraxane",
+    "DescEN": "<b>APPEARANCE:</b>\nHeal a Minion\r\nby 2 <b>HP</b>.",
+    "NameES": "Abraxana",
+    "DescES": "<b>APARICIÓN:</b>\nCuras 2 <b>PdV</b>\r\na una invocación.",
+    "NameFR": "Abraxane",
+    "DescFR": "<b>APPARITION :</b>\nSoignez une invocation\r\nde 2 <b>PV</b>.",
+    "NameRU": "Абраксана",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nвосстанавливает выбранному\r\nсуществу 2 <b>ОЗ</b>."
+  }
+}

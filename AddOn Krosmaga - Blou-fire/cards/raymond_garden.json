@@ -1,0 +1,31 @@
+{
+  "Id": 14,
+  "Name": "raymond_garden",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 6,
+  "Attack": 5,
+  "MovementPoint": 2,
+  "Families": [
+    27
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Ray Niken",
+    "DescBR": "<b>APARIÇÃO:</b>\nConfere +1 <b>AR</b> às suas outras invocações.",
+    "NameEN": "Grim Preacher",
+    "DescEN": "<b>APPEARANCE:</b>\nGives +1 <b>AR</b> to your other Minions.",
+    "NameES": "Juanpi Ylsen",
+    "DescES": "<b>APARICIÓN:</b>\nDa +1 <b>AR</b> a tus demás invocaciones.",
+    "NameFR": "Raymond Garden",
+    "DescFR": "<b>APPARITION :</b>\nDonne +1 <b>AR</b> à vos autres invocations.",
+    "NameRU": "Мрачный чтец",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nдает другим вашим существам +1 <b>БР</b>."
+  }
+}

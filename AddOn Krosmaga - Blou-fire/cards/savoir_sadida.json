@@ -1,0 +1,31 @@
+{
+  "Id": 166,
+  "Name": "savoir_sadida",
+  "CardType": 1,
+  "CostAP": 7,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 10,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Conhecimento Sadida",
+    "DescBR": "Transforma uma invocação em <b>Semente</b> aliada.",
+    "NameEN": "Knowledge of Dolls",
+    "DescEN": "Transforms a Minion into an allied <b>Seed</b> .",
+    "NameES": "Conocimiento Sadida",
+    "DescES": "Transforma una invocación en <b>semilla</b> aliada.",
+    "NameFR": "Savoir Sadida",
+    "DescFR": "Transforme une invocation en <b>Graine</b> alliée.",
+    "NameRU": "Знание Садиды",
+    "DescRU": "Превращает выбранное существо в союзное <b>семя</b>."
+  }
+}

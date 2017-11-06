@@ -1,0 +1,31 @@
+{
+  "Id": 505,
+  "Name": "aiguille",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 7,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Ponteiro",
+    "DescBR": "Inflige 2 danos\r\nou 5 danos se você tiver\r\nao menos 5 <b>PA</b> em\r\nsua <b>reserva</b>.",
+    "NameEN": "Hand",
+    "DescEN": "Inflict 2 damage\r\nor 5 damage if you have\r\nat least 5 <b>AP</b> in\r\nyour <b>reserve</b>.",
+    "NameES": "Aguja",
+    "DescES": "Inflige 2 de daño\r\no 5 de dañosi tienes al menos 5 <b>PA</b> en tu <b>reserva</b>.",
+    "NameFR": "Aiguille",
+    "DescFR": "Inflige 2 dégâts\r\nou 5 dégâts si vous avez\r\nau moins 5 <b>PA</b> dans\r\nvotre <b>réserve</b>.",
+    "NameRU": "Стрелка",
+    "DescRU": "Наносит 2 ед. урона.\r\nЕсли у вас в <b>резерве</b>\r\nне менее 5 <b>ОД</b>,\r\n наносит 5 ед. урона."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 530,
+  "Name": "momie_de_quartz_token",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    9
+  ],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 7,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Múmia",
+    "DescBR": "Adiciona 1 <b>PA</b> à sua <b>reserva</b> quando ela sofre danos.",
+    "NameEN": "Mummy",
+    "DescEN": "Adds 1 <b>AP</b> to your <b>reserve</b> whenever it suffers damage.",
+    "NameES": "Momia",
+    "DescES": "Cuando sufre daño, añade 1 <b>PA</b> a tu <b>reserva</b>.",
+    "NameFR": "Momie",
+    "DescFR": "Ajoute 1 <b>PA</b> à votre <b>réserve</b> quand il subit des dégâts.",
+    "NameRU": "Мумия",
+    "DescRU": "Добавляет в ваш <b>резерв</b> 1 <b>ОД</b>, когда получает урон."
+  }
+}

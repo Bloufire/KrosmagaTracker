@@ -1,0 +1,31 @@
+{
+  "Id": 445,
+  "Name": "corbac_chef",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 4,
+  "Attack": 2,
+  "MovementPoint": 2,
+  "Families": [
+    42
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Chefe Corvoc",
+    "DescBR": "<b>CHEFE:</b> Seus outros Corvocs\r\nganham +1 <b>PM</b>.",
+    "NameEN": "Crobak Chief",
+    "DescEN": "<b>LEADER:</b> +1 <b>MP</b> to your\r\nother Crobaks.",
+    "NameES": "Jefe cuerbok",
+    "DescES": "<b>LÍDER:</b> Da +1 <b>PM</b> a tus\r\ndemás cuerboks.",
+    "NameFR": "Corbac Chef",
+    "DescFR": "<b>CHEF :</b> +1 <b>PM</b> à vos\r\nautres Corbacs.",
+    "NameRU": "Главный карбак",
+    "DescRU": "<b>ВОЖАК:</b> дает другим вашим карбакам +1 <b>ОП</b>."
+  }
+}

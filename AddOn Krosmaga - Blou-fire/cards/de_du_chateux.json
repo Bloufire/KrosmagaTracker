@@ -1,0 +1,31 @@
+{
+  "Id": 278,
+  "Name": "de_du_chateux",
+  "CardType": 1,
+  "CostAP": 4,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 4,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Dado Gatuno",
+    "DescBR": "Inflige <b>1d6</b> dano(s).\nRevela o Dofus adversário que estiver na mesma fileira se tirar 3 ou menos.",
+    "NameEN": "Loaded Die",
+    "DescEN": "Inflicts <b>1d6</b> damage.\nReveals the enemy Dofus on that row if 3 or less is thrown.",
+    "NameES": "Dado Gatuno",
+    "DescES": "Inflige <b>1d6</b> de daño.\nDescubre el dofus enemigo de la hilera con un 3 o menos.",
+    "NameFR": "Dé du Chateux",
+    "DescFR": "Inflige <b>1d6</b> dégât(s).\nDévoile le Dofus adverse de la ligne sur 3 ou moins.",
+    "NameRU": "Кошачья игральная кость",
+    "DescRU": "Наносит <b>1d6</b> ед. урона.\nРаскрывает дофус противника на линии, если выпало 3 или меньше."
+  }
+}

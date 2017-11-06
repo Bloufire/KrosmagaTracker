@@ -1,0 +1,31 @@
+{
+  "Id": 82,
+  "Name": "lumino",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 4,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    60
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Lumino",
+    "DescBR": "<b>FIM DO TURNO:</b>\nInflige 1 dano ao Dofus adversário que estiver na mesma fileira se você tiver outro Justiceiro no jogo.",
+    "NameEN": "Lumino",
+    "DescEN": "<b>END OF TURN:</b>\nInflicts 1 damage on the enemy Dofus on the same row if you have another Vigilante in play.",
+    "NameES": "Lúmino",
+    "DescES": "<b>FIN DEL TURNO:</b>\nInflige 1 de daño al dofus enemigo de su hilera si tienes otro justiciero en juego.",
+    "NameFR": "Lumino",
+    "DescFR": "<b>FIN DU TOUR :</b>\nInflige 1 dégât au Dofus adverse de sa ligne si vous avez un autre Justicier en jeu.",
+    "NameRU": "Люмино",
+    "DescRU": "<b>КОНЕЦ ХОДА:</b>\nнаносит 1 единицу урона дофусу противника на своей линии, если у вас в игре есть еще один мститель."
+  }
+}

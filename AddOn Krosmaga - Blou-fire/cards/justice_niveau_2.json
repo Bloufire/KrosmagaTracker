@@ -1,0 +1,31 @@
+{
+  "Id": 345,
+  "Name": "justice_niveau_2",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    60
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 2,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Justiça",
+    "DescBR": "<b>APARIÇÃO:</b>\nInflige <b>silêncio</b> a uma invocação\r\ne faz com que seu <b>AT</b>\r\npasse para 3.",
+    "NameEN": "Justice",
+    "DescEN": "<b>APPEARANCE:</b>\n<b>Silences</b>a Minion;\r\nits <b>AT</b> is set at 3.",
+    "NameES": "Justicia",
+    "DescES": "<b>APARICIÓN:</b>\nInfliges <b>silencio</b>\r\na una invocación, y su <b>AT</b>\r\npasa a 3.",
+    "NameFR": "Justice",
+    "DescFR": "<b>APPARITION :</b>\nRéduisez une invocation\r\nau <b>silence</b>, son <b>AT</b>\r\npasse à 3.",
+    "NameRU": "Рыцарь Справедливость",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b> налагает <b>немоту</b> на выбранное существо, а его показатель <b>AT</b> становится равным 3."
+  }
+}

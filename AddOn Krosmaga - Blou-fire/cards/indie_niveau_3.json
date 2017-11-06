@@ -1,0 +1,31 @@
+{
+  "Id": 557,
+  "Name": "indie_niveau_3",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 1,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    44
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 30,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Indy",
+    "DescBR": "<b>MORTE:</b>Recupera as cartas Infinitas da sua lixeira e as transfere para o seu bolo.",
+    "NameEN": "Indie",
+    "DescEN": "<b>DEATH:</b>Take the Infinite cards from your discard pile and put them on your deck.",
+    "NameES": "Indi",
+    "DescES": "<b>MUERTE:</b> Recupera las cartas infinitas de tu descarte y las pone encima de tu mazo.",
+    "NameFR": "Indie",
+    "DescFR": "<b>MORT :</b> Récupère les cartes Infinite de votre défausse et les place sur votre pioche.",
+    "NameRU": "Инди",
+    "DescRU": "<b>СМЕРТЬ:СМЕРТЬ:</b>возвращает на верх вашей колоды запредельные карты из вашего сброса."
+  }
+}

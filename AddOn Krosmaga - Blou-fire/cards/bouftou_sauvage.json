@@ -1,0 +1,31 @@
+{
+  "Id": 486,
+  "Name": "bouftou_sauvage",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 4,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    14
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Papatudo Selvagem",
+    "DescBR": "",
+    "NameEN": "Wild Gobball",
+    "DescEN": "",
+    "NameES": "Jalató salvaje",
+    "DescES": "",
+    "NameFR": "Bouftou Sauvage",
+    "DescFR": "",
+    "NameRU": "Дикий бараглот",
+    "DescRU": ""
+  }
+}

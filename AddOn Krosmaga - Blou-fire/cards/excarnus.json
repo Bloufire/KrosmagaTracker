@@ -1,0 +1,31 @@
+{
+  "Id": 517,
+  "Name": "excarnus",
+  "CardType": 0,
+  "CostAP": 10,
+  "Life": 8,
+  "Attack": 6,
+  "MovementPoint": 2,
+  "Families": [
+    14
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Excarnus",
+    "DescBR": "Seus outros Papatudos voltam para a sua mão quando morrem.",
+    "NameEN": "Excarnus",
+    "DescEN": "Your other Gobballs return to your hand whenever they die.",
+    "NameES": "Excarnus",
+    "DescES": "Tus demás jalatós suben a tu mano cuando mueren.",
+    "NameFR": "Excarnus",
+    "DescFR": "Vos autres Bouftous remontent dans votre main quand ils meurent. ",
+    "NameRU": "Экскарнус",
+    "DescRU": "Когда другие ваши бараглоты погибают, они возвращаются в руку."
+  }
+}

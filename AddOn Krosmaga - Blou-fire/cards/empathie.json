@@ -1,0 +1,31 @@
+{
+  "Id": 1296,
+  "Name": "empathie",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    3
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 3,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Empatia",
+    "DescBR": "Confere <b>escudo</b> a uma invocação ferida e depois a cura em 2 <b>PV</b>.",
+    "NameEN": "Empathy",
+    "DescEN": "Confers <b>shield</b> on an injured Minion, then heals it by 2 <b>HP</b>.",
+    "NameES": "Empatía",
+    "DescES": "Otorga <b>escudo</b> a una invocación herida y le cura 2 <b>PdV</b>.",
+    "NameFR": "Empathie",
+    "DescFR": "Confère <b>bouclier</b> à une invocation blessée puis la soigne de 2 <b>PV</b>.",
+    "NameRU": "Эмпатия",
+    "DescRU": "Дает <b>щит</b> выбранному раненому существу и восстанавливает ему 2 <b>ОЗ</b>."
+  }
+}

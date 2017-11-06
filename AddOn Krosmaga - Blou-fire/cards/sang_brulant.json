@@ -1,0 +1,31 @@
+{
+  "Id": 527,
+  "Name": "sang_brulant",
+  "CardType": 1,
+  "CostAP": 1,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 8,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Sangue Fervente",
+    "DescBR": "Inflige 1 dano\r\nàs invocações.",
+    "NameEN": "Burning Blood",
+    "DescEN": "Inflicts 1 damage\r\non Minions.",
+    "NameES": "Sangre Ardiente",
+    "DescES": "Inflige 1 de daño\r\na las invocaciones.",
+    "NameFR": "Sang Brûlant",
+    "DescFR": "Inflige 1 dégât\r\naux invocations.",
+    "NameRU": "Кипящая кровь",
+    "DescRU": "Наносит всем существам 1 ед. урона."
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "Id": 577,
+  "Name": "transformatose",
+  "CardType": 1,
+  "CostAP": 8,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    3
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 3,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 3,
+    "ParentCard": 251,
+    "ParentLevel": 9
+  },
+  "LinkedCards": [
+    536
+  ],
+  "Texts": {
+    "NameBR": "Transformatose",
+    "DescBR": "Transforma uma invocação em Toelho aliado.",
+    "NameEN": "Transformatosis",
+    "DescEN": "Transforms a Minion into an allied Coney.",
+    "NameES": "Transformatosis",
+    "DescES": "Transforma una invocación en cunejo aliado.",
+    "NameFR": "Transformatose",
+    "DescFR": "Transforme une invocation en Lapino allié.",
+    "NameRU": "Трансфорзайция",
+    "DescRU": "Превращает выбранное существо в союзного зайчонка."
+  }
+}

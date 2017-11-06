@@ -1,0 +1,31 @@
+{
+  "Id": 234,
+  "Name": "kerubim_niveau_1",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 8,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Kerubim Aventureiro",
+    "DescBR": "<b>APARIÇÃO:</b>\nRevela um Dofus adversário.",
+    "NameEN": "Kerub the Adventurer",
+    "DescEN": "<b>APPEARANCE:</b>\nReveals an enemy Dofus.",
+    "NameES": "Kerubim Aventurero",
+    "DescES": "<b>APARICIÓN:</b>\nDescubres un dofus enemigo.",
+    "NameFR": "Kerubim l'Aventurier",
+    "DescFR": "<b>APPARITION :</b>\nDévoilez un Dofus adverse.",
+    "NameRU": "Керубим Пройдоха",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nраскрывает выбранный дофус противника."
+  }
+}

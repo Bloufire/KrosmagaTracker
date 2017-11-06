@@ -1,0 +1,31 @@
+{
+  "Id": 458,
+  "Name": "gelee_menthe",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 2,
+  "Families": [
+    30
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Gelatina de Menta",
+    "DescBR": "<b>APARIÇÃO:</b>\nSuas outras gelatinas\r\nganham +1 <b>PM</b>.",
+    "NameEN": "Mint Jelly",
+    "DescEN": "<b>APPEARANCE:</b>\nGives +1 <b>MP</b> to your\r\nother Jellies.",
+    "NameES": "Gelatina de menta",
+    "DescES": "<b>APARICIÓN:</b>\nDa +1 <b>PM</b> a tus\r\ndemás gelatinas.",
+    "NameFR": "Gelée Menthe",
+    "DescFR": "<b>APPARITION :</b>\nDonne +1 <b>PM</b> à vos\r\nautres Gelées.",
+    "NameRU": "Мятное желе",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nдает другим вашим\r\nжеле +1 <b>ОП</b>."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 364,
+  "Name": "salbatroce",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 1,
+  "Attack": 3,
+  "MovementPoint": 4,
+  "Families": [
+    69
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Feralbatroz",
+    "DescBR": "<b>APARIÇÃO:</b>\nRevela os Dofus de sua fileira.",
+    "NameEN": "Albatrocious",
+    "DescEN": "<b>APPEARANCE:</b>\nReveals the Dofus on its row.",
+    "NameES": "Albatroz",
+    "DescES": "<b>APARICIÓN:</b>\nDescubre los dofus de su hilera.",
+    "NameFR": "Salbatroce",
+    "DescFR": "<b>APPARITION :</b>\nDévoile les Dofus de sa ligne.",
+    "NameRU": "Швальбатрос",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nраскрывает дофусы на своей линии."
+  }
+}

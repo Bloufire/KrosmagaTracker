@@ -1,0 +1,31 @@
+{
+  "Id": 69,
+  "Name": "bebe_phorreur",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 1,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    20
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Bebê Perfuratroz",
+    "DescBR": "<b>MORTE:</b> Compre 1 carta.",
+    "NameEN": "Young Drheller",
+    "DescEN": "<b>DEATH:</b> Draw 1 card.",
+    "NameES": "Bebé perforatroz",
+    "DescES": "<b>MUERTE:</b> Robas 1 carta.",
+    "NameFR": "Bébé Phorreur",
+    "DescFR": "<b>MORT :</b> Piochez 1 carte.",
+    "NameRU": "Малыш хорроройка",
+    "DescRU": "<b>СМЕРТЬ:</b> вы берете 1 карту."
+  }
+}

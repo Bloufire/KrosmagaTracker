@@ -1,0 +1,33 @@
+{
+  "Id": 297,
+  "Name": "wabbit_gm",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 2,
+  "Attack": 3,
+  "MovementPoint": 2,
+  "Families": [
+    18
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    500
+  ],
+  "Texts": {
+    "NameBR": "Wabbit GM",
+    "DescBR": "Adiciona um Pekewabbit Mondiosso\r\nà sua mão quando um de seus Wabbits morre.",
+    "NameEN": "GM Wabbit",
+    "DescEN": "Adds a Boney Tiwabbit\r\nto your hand whenever one of your Wabbits dies.",
+    "NameES": "Wabbit GM",
+    "DescES": "Cuando uno de tus wabbits muere, añade un pekewabbit huesudo\r\na tu mano.",
+    "NameFR": "Wabbit GM",
+    "DescFR": "Ajoute un Tiwabbit Tados\r\nà votre main quand un de vos Wabbit meurt.",
+    "NameRU": "Кволик GM",
+    "DescRU": "Дает вам в руку тыкволика-кучакоста, когда один из ваших кволиков погибает."
+  }
+}

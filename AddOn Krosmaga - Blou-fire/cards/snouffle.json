@@ -1,0 +1,31 @@
+{
+  "Id": 333,
+  "Name": "snouffle",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    80
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Snufle",
+    "DescBR": "<b>APARIÇÃO:</b>\nRecolha um <b>Espólio</b>.",
+    "NameEN": "Snoofle",
+    "DescEN": "<b>APPEARANCE:</b>\nPick up an item of <b>Loot</b>.",
+    "NameES": "Snoofle",
+    "DescES": "<b>APARICIÓN:</b>\nConsigues un <b>botín</b>.",
+    "NameFR": "Snouffle",
+    "DescFR": "<b>APPARITION :</b>\nRamassez un <b>Butin</b>.",
+    "NameRU": "Нюхач",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nподбирает одну <b>добычу</b>."
+  }
+}

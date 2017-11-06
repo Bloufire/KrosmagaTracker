@@ -1,0 +1,29 @@
+{
+  "Id": 23,
+  "Name": "fan_token",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 2,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Fã",
+    "DescBR": "<b>APARIÇÃO:</b>\n<b>Dá uma investida</b> se o Khan Karkass estiver presente no jogo.",
+    "NameEN": "Fan",
+    "DescEN": "<b>APPEARANCE:</b>\n<b>Charges</b> if Khan Karkass is in play.",
+    "NameES": "Fan",
+    "DescES": "<b>APARICIÓN:</b>\n<b>Carga</b> si Khan Karkasa está en juego.",
+    "NameFR": "Fan",
+    "DescFR": "<b>APPARITION :</b>\n<b>Charge</b> si Khan Karkass est en jeu.",
+    "NameRU": "Фанатка",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b> делает <b>рывок</b>, если Хан Каркасс находится в игре."
+  }
+}

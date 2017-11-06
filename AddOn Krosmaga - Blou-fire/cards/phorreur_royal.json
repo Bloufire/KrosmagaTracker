@@ -1,0 +1,31 @@
+{
+  "Id": 593,
+  "Name": "phorreur_royal",
+  "CardType": 0,
+  "CostAP": 8,
+  "Life": 6,
+  "Attack": 5,
+  "MovementPoint": 2,
+  "Families": [
+    20
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Perfuratroz Real",
+    "DescBR": "Tire uma carta aleatória da sua lixeira quando uma invocação aliada for destruída.",
+    "NameEN": "Royal Drheller",
+    "DescEN": "Return a random card from your discard pile to your hand whenever an allied Minion is destroyed.",
+    "NameES": "Perforatroz Real",
+    "DescES": "Recuperas una carta aleatoria de tu descarte cuando muere una invocación aliada.",
+    "NameFR": "Phorreur Royal",
+    "DescFR": "Récupérez une carte aléatoire de votre défausse quand une invocation alliée est détruite.",
+    "NameRU": "Королевская хорроройка",
+    "DescRU": "Возвращает случайно выбранную карту из вашего сброса при уничтожении союзного существа."
+  }
+}

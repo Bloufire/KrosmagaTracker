@@ -1,0 +1,31 @@
+{
+  "Id": 391,
+  "Name": "grainaille",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 10,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Sementralha",
+    "DescBR": "Inflige 1 dano por cada <b>Semente</b> aliada presente no jogo. As <b>Sementes</b> são destruídas.",
+    "NameEN": "Grainule",
+    "DescEN": "Inflicts 1 damage per allied <b>Seed</b> in play. The <b>Seeds</b> are destroyed.",
+    "NameES": "Granolla",
+    "DescES": "Inflige 1 de daño por <b>semilla</b> aliada en juego. Las <b>semillas</b> se destruyen.",
+    "NameFR": "Grainaille",
+    "DescFR": "Inflige 1 dégât par <b>Graine</b> alliée en jeu. Les <b>Graines</b> sont détruites. ",
+    "NameRU": "Семястрел",
+    "DescRU": "Наносит 1 единицу урона за каждое союзное <b>семя</b> в игре. <b>Семена</b> уничтожаются."
+  }
+}

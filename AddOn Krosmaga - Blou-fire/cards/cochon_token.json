@@ -1,0 +1,27 @@
+{
+  "Id": 60,
+  "Name": "cochon_token",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 1,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    51
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameFR": "Cochon",
+    "DescFR": "<b>MORT :</b> Vos invocations récupèrent 1 <b>PV</b>.",
+    "NameEN": "Pig",
+    "DescEN": "<b>DEATH:</b> Your Minions recover 1 <b>HP</b>.",
+    "NameES": "Cerdo",
+    "DescES": "<b>MUERTE:</b> Tus invocaciones recuperan 1 <b>PdV</b>."
+  }
+}

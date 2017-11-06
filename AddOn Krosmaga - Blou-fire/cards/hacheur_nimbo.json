@@ -1,0 +1,31 @@
+{
+  "Id": 1081,
+  "Name": "hacheur_nimbo",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 2,
+  "Families": [
+    74
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Lindanão Fatiador",
+    "DescBR": "<b>PERFURA-ARMADURA</b>\n<b>MORTE: </b>Compre 1 carta.",
+    "NameEN": "Midgin Chopper",
+    "DescEN": "<b>ARMOR-PIERCING</b>\n<b>DEATH: </b>Draw 1 card.",
+    "NameES": "Hachero taponano",
+    "DescES": "<b>PERFORA-ARMADURA</b>\n<b>MUERTE: </b> Robas 1 carta.",
+    "NameFR": "Hacheur Nimbos",
+    "DescFR": "<b>PERCE-ARMURE</b>\n<b>MORT : </b>Piochez 1 carte.",
+    "NameRU": "Гномище-рубака",
+    "DescRU": "<b>ПРОБИВАНИЕ БРОНИ</b>\n<b>СМЕРТЬ: </b> вы берете 1 карту."
+  }
+}

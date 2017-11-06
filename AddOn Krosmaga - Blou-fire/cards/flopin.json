@@ -1,0 +1,36 @@
+{
+  "Id": 146,
+  "Name": "flopin",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    2,
+    33
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 22,
+    "ParentCard": 340,
+    "ParentLevel": 9
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Flopan",
+    "DescBR": "<b>ALCANCE:</b> 1-2\n<b>APARIÇÃO:</b>\nInflige 2 danos.",
+    "NameEN": "Flopin",
+    "DescEN": "<b>RANGE:</b> 1-2\n<b>APPEARANCE:</b>\nInflicts 2 damage.",
+    "NameES": "Flopin",
+    "DescES": "<b>ALCANCE:</b> 1-2\n<b>APARICIÓN:</b>\nInfliges 2 de daño.",
+    "NameFR": "Flopin",
+    "DescFR": "<b>PORTÉE :</b> 1-2\n<b>APPARITION :</b>\nInfligez 2 dégâts.",
+    "NameRU": "Флопин",
+    "DescRU": "<b>ДАЛЬНОСТЬ АТАКИ:</b>1-2\n<b>ПОЯВЛЕНИЕ</b>\nНаносит 2 единицы урона."
+  }
+}

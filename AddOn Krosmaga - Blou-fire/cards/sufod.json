@@ -1,0 +1,31 @@
+{
+  "Id": 160,
+  "Name": "sufod",
+  "CardType": 0,
+  "CostAP": 0,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    5
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 6,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Sufod",
+    "DescBR": "Elimina a última carta enviada para a sua lixeira a fim de ser invocado.",
+    "NameEN": "Sufod",
+    "DescEN": "Banishes the last card that went to your discard pile to be summoned.",
+    "NameES": "Sufod",
+    "DescES": "Elimina la última carta enviada a tu descarte para ser invocado.",
+    "NameFR": "Sufod",
+    "DescFR": "Bannit la dernière carte partie dans votre défausse pour être invoqué.",
+    "NameRU": "Суфод",
+    "DescRU": "Для призыва требуется уничтожить последнюю карту в вашем сбросе."
+  }
+}

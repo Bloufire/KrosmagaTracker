@@ -1,0 +1,33 @@
+{
+  "Id": 26,
+  "Name": "transchamation",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 4,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    151
+  ],
+  "Texts": {
+    "NameBR": "Transformiawção",
+    "DescBR": "Transforma\r\nsuas invocações em\r\nMiaws Negros.",
+    "NameEN": "Transcatmation",
+    "DescEN": "Transforms\r\nyour Minions into\r\nBlack Bow Meows.",
+    "NameES": "Transcharmación",
+    "DescES": "Transforma\r\ntus invocaciones en\r\nmiaumiaus negros.",
+    "NameFR": "Transchamation",
+    "DescFR": "Transforme\r\nvos invocations en\r\nChachas Noirs.",
+    "NameRU": "Транскотация",
+    "DescRU": "Превращает\r\nваших существ\r\nв черных котокотов."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 10,
+  "Name": "fleche_criblante",
+  "CardType": 1,
+  "CostAP": 5,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    2
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 2,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Flecha Crivante",
+    "DescBR": "Inflige 3 danos a uma invocação e 1 dano ao Dofus adversário.",
+    "NameEN": "Riddling Arrow",
+    "DescEN": "Inflicts 3 damage on a Minion and 1 damage on an enemy Dofus.",
+    "NameES": "Flecha Perforante",
+    "DescES": "Inflige 3 de daño a una invocación y 1 de daño al dofus enemigo.",
+    "NameFR": "Flèche Criblante",
+    "DescFR": "Inflige 3 dégâts à une invocation et 1 dégât au Dofus adverse.",
+    "NameRU": "Грохочущая стрела",
+    "DescRU": "Наносит 3 ед. урона выбранному существу и 1 ед. урона дофусу противника."
+  }
+}

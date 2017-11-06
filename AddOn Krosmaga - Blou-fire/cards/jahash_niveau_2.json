@@ -1,0 +1,31 @@
+{
+  "Id": 919,
+  "Name": "jahash_niveau_2",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 5,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    35
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 466,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Jahash",
+    "DescBR": "<b>APARIÇÃO:</b>\nColoca na sua mão\r\no primeiro feitiço do seu bolo. Ele custará 3 <b>PA</b>\r\na menos.",
+    "NameEN": "Jahash",
+    "DescEN": "<b>APPEARANCE:</b>\nPut the first spell\r\nfrom your deck in your hand; it costs 3 <b>AP</b>\r\nless.",
+    "NameES": "Jahash",
+    "DescES": "<b>APARICIÓN:</b>\nColoca en tu mano\r\nel primer hechizo de tu mazo, que cuesta 3 <b>PA</b>\r\nmenos.",
+    "NameFR": "Jahash",
+    "DescFR": "<b>APPARITION :</b>\nPlace dans votre main\r\nle premier sort de votre pioche, il coûte 3 <b>PA</b>\r\nde moins.",
+    "NameRU": "Джахаш",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nвы берете первое\r\nзаклинание из своей\r\nколоды. Его стоимость уменьшается на 3 <b>ОД</b>."
+  }
+}

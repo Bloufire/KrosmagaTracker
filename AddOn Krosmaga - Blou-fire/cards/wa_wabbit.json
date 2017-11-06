@@ -1,0 +1,33 @@
+{
+  "Id": 524,
+  "Name": "wa_wabbit",
+  "CardType": 0,
+  "CostAP": 8,
+  "Life": 5,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    18
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    265
+  ],
+  "Texts": {
+    "NameBR": "Wei Wabbit",
+    "DescBR": "<b>APARIÇÃO:</b>\nTransforma um de seus Wabbits em Wobot 02.",
+    "NameEN": "Wa Wabbit",
+    "DescEN": "<b>APPEARANCE:</b>\nTransforms one of your Wabbits into a Wobot 02.",
+    "NameES": "Wey Wabbit",
+    "DescES": "<b>APARICIÓN:</b>\nTransformas uno de tus wabbits en wobot 02.",
+    "NameFR": "Wa Wabbit",
+    "DescFR": "<b>APPARITION :</b>\nTransformez un de vos Wabbits en Wobot 02.",
+    "NameRU": "Коволь кволиков",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b> превращает одного из ваших кволиков в вобота 02."
+  }
+}

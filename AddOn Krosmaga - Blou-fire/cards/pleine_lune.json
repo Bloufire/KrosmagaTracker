@@ -1,0 +1,31 @@
+{
+  "Id": 671,
+  "Name": "pleine_lune",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 4,
+  "Attack": 2,
+  "MovementPoint": 0,
+  "Families": [
+    15
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Lua Cheia",
+    "DescBR": "<b>MURO</b>\n<B>CHEFE:</b> +1 <b>AT</b> para seus outros Milobos. Enquanto houver uma Lua no jogo, seus Milobos sofrem 1 dano a menos.",
+    "NameEN": "Full Moon",
+    "DescEN": "<b>WALL</b>\n<B>LEADER:</b>+1 <b>AT</b> to your other Boowolves. As long as a Moon is in play, your Boowolves suffer 1 damage less.",
+    "NameES": "Luna Llena",
+    "DescES": "<b>MURO</b>\n<B>LÍDER:</b> Da +1 <b>AT</b> a tus demás milubos. Cuando la luna esté en juego, los milubos reciben 1 daño menos.",
+    "NameFR": "Pleine Lune",
+    "DescFR": "<b>MUR</b>\n<B>CHEF :</b> +1 <b>AT</b> à vos autres Mulous. Tant qu'une lune est en jeu, les dégâts subis par vos Mulous sont réduits de 1.",
+    "NameRU": "Полная луна",
+    "DescRU": "<b>СТЕНА</b>\n<B>ВОЖАК:</b> дает +1 <b>AT</b> другим вашим боеволкам. Пока она в игре, ваши боеволки получают на 1 ед. урона меньше."
+  }
+}

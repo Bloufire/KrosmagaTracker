@@ -1,0 +1,31 @@
+{
+  "Id": 1061,
+  "Name": "purge",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    3
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 3,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Purgação",
+    "DescBR": "Inflige 1 dano às invocações adversárias.",
+    "NameEN": "Purge",
+    "DescEN": "Inflicts 1 damage on enemy Minions.",
+    "NameES": "Purga",
+    "DescES": "Inflige 1 de daño a las invocaciones enemigas.",
+    "NameFR": "Purge",
+    "DescFR": "Inflige 1 dégât aux invocations adverses.",
+    "NameRU": "Чистка",
+    "DescRU": "Наносит 1 ед. урона существам противника."
+  }
+}

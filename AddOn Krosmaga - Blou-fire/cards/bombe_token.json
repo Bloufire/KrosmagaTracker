@@ -1,0 +1,29 @@
+{
+  "Id": 407,
+  "Name": "bombe_token",
+  "CardType": 2,
+  "CostAP": 1,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 6,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Bomba",
+    "DescBR": "Inflige 2 danos.",
+    "NameEN": "Bomb",
+    "DescEN": "Inflicts 2 damage.",
+    "NameES": "Bomba",
+    "DescES": "Inflige 2 de daño.",
+    "NameFR": "Bombe",
+    "DescFR": "Inflige 2 dégâts.",
+    "NameRU": "Бомба",
+    "DescRU": "Наносит 2 ед. урона."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 1373,
+  "Name": "bebe_phorreur_elite",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    20
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Bebê Perfuratroz de Elite",
+    "DescBR": "<b>MORTE:</b>\nTire um Perfuratroz aleatório da sua lixeira.",
+    "NameEN": "Elite Young Drheller",
+    "DescEN": "<b>DEATH:</b>\nRecover a random Drheller from your discard pile.",
+    "NameES": "Bebé perforatroz de élite",
+    "DescES": "<b>MUERTE:</b>\nRecuperas un perforatroz aleatorio de tu descarte.",
+    "NameFR": "Bébé Phorreur d'Elite",
+    "DescFR": "<b>MORT :</b>\nRécupérez un Phorreur aléatoire de votre défausse.",
+    "NameRU": "Элитный малыш хорроройка",
+    "DescRU": "<b>СМЕРТЬ:</b>\nвозвращает одну случайно выбранную хорроройку из вашего сброса."
+  }
+}

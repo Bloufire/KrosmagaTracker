@@ -1,0 +1,31 @@
+{
+  "Id": 92,
+  "Name": "la_gerbouille",
+  "CardType": 1,
+  "CostAP": 5,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 8,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Gerbela",
+    "DescBR": "Confere +2 <b>AT</b> às suas invocações feridas. Depois, elas <b>dão uma investida</b> ao longo de 2 células.",
+    "NameEN": "Gerbean",
+    "DescEN": "Confers +2 <b>AT</b> on your injured Minions and they <b>charge</b> 2 cells.",
+    "NameES": "Gerbilinda",
+    "DescES": "Da +2 <b>AT</b> a tus invocaciones heridas y estas <b>cargan</b> 2 casillas.",
+    "NameFR": "La Gerbouille",
+    "DescFR": "Confère +2 <b>AT</b> à vos invocations blessées puis elles <b>chargent</b> de 2 cases.",
+    "NameRU": "Гербария",
+    "DescRU": "Дает вашим раненым существам +2 <b>AT</b>. Затем они делают <b>рывок</b> на 2 клетки."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 123,
+  "Name": "moogrr",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 4,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    39
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Mugrr",
+    "DescBR": "<b>APARIÇÃO:</b>\n<b>Dá uma investida</b> ao longo de 2 células se você tiver uma Mugrr no jogo.",
+    "NameEN": "Moogrr",
+    "DescEN": "<b>APPEARANCE:</b>\n<b>Charges</b> 2 cells if you have a Moogrr in play.",
+    "NameES": "Muuugresa",
+    "DescES": "<b>APARICIÓN:</b>\n<b>Carga</b> 2 casillas si tienes una muuugresa en juego.",
+    "NameFR": "Moogrr",
+    "DescFR": "<b>APPARITION :</b>\n<b>Charge</b> de 2 cases si vous avez une Moogrr en jeu.",
+    "NameRU": "Муйвол",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nделает <b>рывок</b> на 2 клетки, если у вас в игре есть муйвол."
+  }
+}

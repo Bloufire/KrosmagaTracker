@@ -1,0 +1,31 @@
+{
+  "Id": 526,
+  "Name": "gligli_agressif",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 4,
+  "Attack": 3,
+  "MovementPoint": 4,
+  "Families": [
+    25
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Valili Agressivo",
+    "DescBR": "<b>CHEFE:</b>\nSeus outros Valilis ganham +1 <b>PM</b>.",
+    "NameEN": "Aggressive Blibli",
+    "DescEN": "<b>LEADER:</b>\n+1 <b>MP</b> to your other Bliblis.",
+    "NameES": "Balí agresivo",
+    "DescES": "<b>LÍDER:</b>\nDa +1 <b>PM</b> a tus demás balíes.",
+    "NameFR": "Gligli Agressif",
+    "DescFR": "<b>CHEF :</b>\n+1 <b>PM</b> à vos autres Gliglis.",
+    "NameRU": "Агрессивный нафнаф",
+    "DescRU": "<b>ВОЖАК</b>\nДает другим вашим нафнафам +1 <b>ОП</b>."
+  }
+}

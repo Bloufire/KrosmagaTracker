@@ -1,0 +1,31 @@
+{
+  "Id": 15,
+  "Name": "empereur_gelax",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 5,
+  "Attack": 3,
+  "MovementPoint": 2,
+  "Families": [
+    30
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Imperador Gelax",
+    "DescBR": "Invoca outra Gelatina aleatória ao redor dele se sobreviver aos danos.",
+    "NameEN": "Emperor Jellix",
+    "DescEN": "Summons another random Jelly on an adjacent cell if it survives damage.",
+    "NameES": "Emperador Gelax",
+    "DescES": "Invoca 1 gelatina aleatoria a su alrededor si sobrevive a algún daño.",
+    "NameFR": "Empereur Gelax",
+    "DescFR": "Invoque une autre Gelée aléatoire autour de lui s'il survit à des dégâts.",
+    "NameRU": "Император Желакс",
+    "DescRU": "Призывает еще одно случайное желе на одну из прилегающих клеток, если выживает после нанесения урона."
+  }
+}

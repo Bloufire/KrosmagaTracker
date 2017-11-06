@@ -1,0 +1,31 @@
+{
+  "Id": 348,
+  "Name": "fiole_de_torpeur",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    3
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 3,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Frasco de Torpor",
+    "DescBR": "Destrói a <b>AR</b> de uma invocação e a <b>atordoa</b> por 1 turno.",
+    "NameEN": "Lethargy Flask",
+    "DescEN": "Destroys a Minion's <b>AR</b> and <b>stuns</b> it for 1 turn.",
+    "NameES": "Matraz de Aletargamiento",
+    "DescES": "Destruye la <b>AR</b> de una invocación y la <b>aturde</b> durante 1 turno.",
+    "NameFR": "Fiole de Torpeur",
+    "DescFR": "Détruit l'<b>AR</b> d'une invocation et l'<b>assomme</b> pour 1 tour.",
+    "NameRU": "Зелье оцепенения",
+    "DescRU": "Разрушает <b>БР</b> выбранного существа и <b>оглушает</b> его на 1 ход."
+  }
+}

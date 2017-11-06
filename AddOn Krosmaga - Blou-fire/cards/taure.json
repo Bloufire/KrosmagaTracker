@@ -1,0 +1,31 @@
+{
+  "Id": 546,
+  "Name": "taure",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 6,
+  "Attack": 5,
+  "MovementPoint": 2,
+  "Families": [
+    72
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Tauro",
+    "DescBR": "",
+    "NameEN": "Taur",
+    "DescEN": "",
+    "NameES": "Toro",
+    "DescES": "",
+    "NameFR": "Taure",
+    "DescFR": "",
+    "NameRU": "Тавр",
+    "DescRU": ""
+  }
+}

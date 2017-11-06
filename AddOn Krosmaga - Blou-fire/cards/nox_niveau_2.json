@@ -1,0 +1,31 @@
+{
+  "Id": 141,
+  "Name": "nox_niveau_2",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 5,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 4,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Nox",
+    "DescBR": "<b>MORTE:</b> Inflige às invocações adversárias uma quantidade de danos equivalente à de <b>PA</b> da sua <b>reserva</b>. Gasta todos os <b>PA</b> da sua <b>reserva</b>.",
+    "NameEN": "Nox",
+    "DescEN": "<b>DEATH:</b> Inflicts as much damage on enemy Minions as you have <b>AP</b> in your <b>reserve.</b> Spends all <b>AP</b> in your <b>reserve.</b>",
+    "NameES": "Nox",
+    "DescES": "<b>MUERTE:</b> Inflige a las invocaciones enemigas tantos daños como <b>PA</b> tengas en tu <b>reserva</b>. Gasta todos los <b>PA</b>de tu <b>reserva</b>.",
+    "NameFR": "Nox",
+    "DescFR": "<b>MORT :</b> Inflige aux invocations adverses autant de dégâts que vous avez de <b>PA</b> dans votre <b>réserve</b>. Dépense tous les <b>PA</b> de votre <b>réserve</b>.",
+    "NameRU": "Нокс",
+    "DescRU": "<b>СМЕРТЬ:</b> наносит существам противника столько единиц урона, сколько у вас <b>ОД</b> в <b>резерве</b>. Использует все <b>ОД</b> из вашего <b>резерва</b>."
+  }
+}

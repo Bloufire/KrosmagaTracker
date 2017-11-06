@@ -1,0 +1,31 @@
+{
+  "Id": 473,
+  "Name": "necrom_l_ancien",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 7,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 10,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Necro Mantigo",
+    "DescBR": "Ganha +1 <b>AT</b> e\r\nvocê compra 1 carta quando um de seus Sadidas morre.",
+    "NameEN": "Necrom Answer",
+    "DescEN": "Gains +1 <b>AT</b> and\r\nyou draw 1 card whenever one of your Sadidas dies.",
+    "NameES": "Nigro Mantesalén",
+    "DescES": "Gana +1 <b>AT</b> y\r\nrobas 1 carta cuando uno de tus sadidas muere.",
+    "NameFR": "Necrom l'Ancien",
+    "DescFR": "Gagne +1 <b>AT</b> et\r\npiochez 1 carte quand un de vos Sadidas meurt.",
+    "NameRU": "Нек Романт",
+    "DescRU": "Получает +1 <b>AT</b>,\r\nа вы берете 1 карту, когда один из ваших садид погибает."
+  }
+}

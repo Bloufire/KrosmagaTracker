@@ -1,0 +1,31 @@
+{
+  "Id": 3,
+  "Name": "maitre_des_ombres",
+  "CardType": 1,
+  "CostAP": 5,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    5
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 6,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Mestre das Sombras",
+    "DescBR": "Confere +2 <b>AT</b> e <b>não visável</b> às suas invocações.",
+    "NameEN": "Master of Shadows",
+    "DescEN": "Confers +2 <b>AT</b> and <b>untargetable</b> on your Minion.",
+    "NameES": "Maestro de las Sombras",
+    "DescES": "Da a tus invocaciones +2 <b>AT</b> y otorga <b>escurridizo</b>.",
+    "NameFR": "Maître des Ombres",
+    "DescFR": "Confère à vos invocations +2 <b>AT</b> et <b>inciblable</b>.",
+    "NameRU": "Мастер тени",
+    "DescRU": "Дает вашим существам +2 <b>AT</b> и свойство <b>«невыцеливаемый»</b>."
+  }
+}

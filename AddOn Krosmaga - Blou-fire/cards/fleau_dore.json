@@ -1,0 +1,31 @@
+{
+  "Id": 605,
+  "Name": "fleau_dore",
+  "CardType": 1,
+  "CostAP": 4,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    659
+  ],
+  "Texts": {
+    "NameBR": "Orbe Dourado",
+    "DescBR": "Confere o estado <b>invulnerável</b>\r\naos seus Dofus por 1 turno.\nSe você tiver 2 Orbes Dourados na mão, eles se fundirão para criar o Necronorror.",
+    "NameEN": "Golden Orb",
+    "DescEN": "Confers <b>invulnerable</b>\r\non your Dofus for 1 turn.\nIf you have 2 Golden Orbs in your hand, they merge to create the Necronomigore.",
+    "NameES": "Orbe dorado",
+    "DescES": "Otorga <b>invulnerable</b>\r\na tus dofus durante 1 turno.\nSi tienes 2 orbes dorados en tu mano, se fusionan y crean el Necronomigor.",
+    "NameFR": "Orbe Doré",
+    "DescFR": "Confère <b>invulnérable</b>\r\nà vos Dofus pour 1 tour.\nSi vous avez 2 Orbes Dorés en main, ils fusionnent pour créer le Nécronomigore.",
+    "NameRU": "Золотая сфера",
+    "DescRU": "Дает вашим дофусам <b>неуязвимость</b>на 1 ход.\nДве золотые сферы сливаются и образуют некрономигор."
+  }
+}

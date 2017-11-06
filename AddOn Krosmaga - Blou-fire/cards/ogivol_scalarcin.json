@@ -1,0 +1,31 @@
+{
+  "Id": 306,
+  "Name": "ogivol_scalarcin",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 5,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    5
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 6,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Ogivol Scafurtado",
+    "DescBR": "Elimina as 3 últimas cartas enviadas para a sua lixeira a fim de ser invocado.",
+    "NameEN": "Ogivol Scalarcin",
+    "DescEN": "Banishes the last 3 cards that went to your discard pile to be summoned.",
+    "NameES": "Ogivol Scarratero",
+    "DescES": "Elimina las 3 últimas cartas enviadas a tu descarte para ser invocado.",
+    "NameFR": "Ogivol Scalarcin",
+    "DescFR": "Bannit les 3 dernières cartes parties dans votre défausse pour être invoqué.",
+    "NameRU": "Огиволь Скаларцин",
+    "DescRU": "Для призыва требуется уничтожить 3 последние карты в вашем сбросе."
+  }
+}

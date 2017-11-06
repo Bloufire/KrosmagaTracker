@@ -1,0 +1,29 @@
+{
+  "Id": 1640,
+  "Name": "rattrapage",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 5,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Recuperação",
+    "DescBR": "Cada jogador vai comprando cartas até ficar com 5\r\nna mão.",
+    "NameEN": "Catch-up",
+    "DescEN": "Each player draws until they each have 5 cards\r\nin their hand.",
+    "NameES": "Recuperación",
+    "DescES": "Cada jugador roba hasta tener 5 cartas\r\nen mano.",
+    "NameFR": "Rattrapage",
+    "DescFR": "Chaque joueur pioche jusqu'à avoir 5 cartes\r\nen main.",
+    "NameRU": "Пополнение",
+    "DescRU": "Каждый игрок берет карты, пока у него в руке не окажется \r\n5 карт."
+  }
+}

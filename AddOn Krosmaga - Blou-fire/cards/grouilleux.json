@@ -1,0 +1,31 @@
+{
+  "Id": 179,
+  "Name": "grouilleux",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 2,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    59
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Grambo",
+    "DescBR": "<b>FERIDA:</b>\nGanha +1 <b>AT</b> e <b>iniciativa</b>.",
+    "NameEN": "Grambo",
+    "DescEN": "<b>INJURED:</b>\nGains +1 <b>AT</b> and <b>first strike</b>.",
+    "NameES": "Esbirrios",
+    "DescES": "<b>SANGRANTE:</b>\nGana +1 <b>AT</b> e <b>iniciativa</b>.",
+    "NameFR": "Grouilleux",
+    "DescFR": "<b>BLESSÉ :</b>\nGagne +1 <b>AT</b> et <b>initiative</b>.",
+    "NameRU": "Суетун",
+    "DescRU": "<b>РАНЕН:</b>\nполучает +1 <b>AT</b> и свойство <b>«первый удар»</b>."
+  }
+}

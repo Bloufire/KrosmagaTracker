@@ -1,0 +1,31 @@
+{
+  "Id": 626,
+  "Name": "trucage",
+  "CardType": 1,
+  "CostAP": 0,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 4,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Trapaça",
+    "DescBR": "Durante este turno, seus\r\narremessos de moeda sempre darão <b>Coroa</b>.",
+    "NameEN": "Cheating",
+    "DescEN": "During this turn, whenever you\r\nthrow a coin, it always lands on <b>Tails.</b>",
+    "NameES": "Amaño",
+    "DescES": "Durante este turno, tus\r\nlanzamientos de moneda son siempre <b>positivos</b>.",
+    "NameFR": "Trucage",
+    "DescFR": "Durant ce tour vos\r\nlancers de pièce tombent toujours sur <b>Pile</b>.",
+    "NameRU": "Ловкость рук",
+    "DescRU": "Во время этого хода\r\nвсе ваши броски монеты будут давать <b>положительный результат</b>."
+  }
+}

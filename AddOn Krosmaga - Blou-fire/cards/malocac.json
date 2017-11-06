@@ -1,0 +1,31 @@
+{
+  "Id": 560,
+  "Name": "malocac",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    47
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Malocac",
+    "DescBR": "<b>APARIÇÃO:</b>\nPegue um prisma adversário.",
+    "NameEN": "Badaclocom",
+    "DescEN": "<b>APPEARANCE:</b>\nPick up an enemy prism.",
+    "NameES": "Malcac",
+    "DescES": "<b>APARICIÓN:</b>\nConsigues un prisma enemigo.",
+    "NameFR": "Malocac",
+    "DescFR": "<b>APPARITION :</b>\nRécupérez un prisme adverse.",
+    "NameRU": "Злыднебой",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nвозьмите призму противника."
+  }
+}

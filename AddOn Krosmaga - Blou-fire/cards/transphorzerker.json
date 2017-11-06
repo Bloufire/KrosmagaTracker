@@ -1,0 +1,31 @@
+{
+  "Id": 1016,
+  "Name": "transphorzerker",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 5,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    859
+  ],
+  "Texts": {
+    "NameBR": "Transperforzerker",
+    "DescBR": "Transforma um dos seus Enutrofs em Perforzerker 5/5.",
+    "NameEN": "Transdrhellzerker",
+    "DescEN": "Transforms one of your Enutrofs into a 5/5 Drhellzerker.",
+    "NameES": "Transfórserker",
+    "DescES": "Transforma a uno de tus anutrofs en perfórserker 5/5.",
+    "NameFR": "Transphorzerker",
+    "DescFR": "Transforme un de vos Enutrofs en Phorzerker 5/5.",
+    "NameRU": "Трансхоррсерк",
+    "DescRU": "Превращает одного из ваших энутрофов в хоррсерка 5/5."
+  }
+}

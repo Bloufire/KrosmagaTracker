@@ -1,0 +1,31 @@
+{
+  "Id": 515,
+  "Name": "defhi_croquets",
+  "CardType": 0,
+  "CostAP": 8,
+  "Life": 3,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 4,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Deivi Croquete",
+    "DescBR": "<b>INICIATIVA</b>\n<b>APARIÇÃO:</b>\n<b>Dá uma investida</b> ao longo de <b>1d6</b> célula(s).",
+    "NameEN": "Davy Contest",
+    "DescEN": "<b>FIRST STRIKE</b>\n<b>APPEARANCE:</b>\n<b>Charges</b> by <b>1d6</b> cell(s).",
+    "NameES": "Dephi Croquets",
+    "DescES": "<b>INICIATIVA</b>\n<b>APARICIÓN:</b>\n<b>Carga 1d6</b> casilla(s).",
+    "NameFR": "Defhi Croquets",
+    "DescFR": "<b>INITIATIVE</b>\n<b>APPARITION :</b>\n<b>Charge</b> de <b>1d6</b> case(s).",
+    "NameRU": "Дави Крокетт",
+    "DescRU": "<b>ПЕРВЫЙ УДАР</b>\n<b>ПОЯВЛЕНИЕ</b>\nДелает <b>рывок</b> на количество клеток, выпавшее на <b>1d6</b>."
+  }
+}

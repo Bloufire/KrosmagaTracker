@@ -1,0 +1,31 @@
+{
+  "Id": 294,
+  "Name": "jems_blond",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 4,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    2
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 2,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Jems Blond",
+    "DescBR": "<b>ALCANCE:</b> 1-3\n<b>GOLPE DE MISERICÓRDIA:</b> Inflige 1 dano ao Dofus adversário.",
+    "NameEN": "Jems Blond",
+    "DescEN": "<b>RANGE:</b> 1-3\n<b>FINAL BLOW:</b> Inflicts 1 damage on an enemy Dofus.",
+    "NameES": "Jeins Bon",
+    "DescES": "<b>ALCANCE:</b> 1-3\n<b>GOLPE DE GRACIA:</b> Inflige 1 de daño a un dofus enemigo.",
+    "NameFR": "Jèms Blond",
+    "DescFR": "<b>PORTÉE :</b> 1-3\n<b>COUP DE GRÂCE :</b> Inflige 1 dégât au Dofus adverse.",
+    "NameRU": "Джеймс Блонд",
+    "DescRU": "<b>ДАЛЬНОСТЬ АТАКИ:</b> 1-3\n<b>СМЕРТЕЛЬНЫЙ УДАР:</b> наносит 1 единицу урона дофусу противника."
+  }
+}

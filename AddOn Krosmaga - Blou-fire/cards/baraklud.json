@@ -1,0 +1,31 @@
+{
+  "Id": 361,
+  "Name": "baraklud",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 4,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    3
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 3,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Ritrovil",
+    "DescBR": "<b>APARIÇÃO:</b>\nCura 3 <b>PV</b>\r\nde uma invocação.",
+    "NameEN": "Baraklud",
+    "DescEN": "<b>APPEARANCE:</b>\nHeals a Minion\r\nby 3 <b>HP</b>.",
+    "NameES": "Baraklud",
+    "DescES": "<b>APARICIÓN:</b>\nCuras 3 <b>PdV</b>\r\na una invocación.",
+    "NameFR": "Baraklud",
+    "DescFR": "<b>APPARITION :</b>\nSoignez une invocation\r\nde 3 <b>PV</b>.",
+    "NameRU": "Бараклюд",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nвосстанавливает выбранному существу\r\n 3 <b>ОЗ</b>."
+  }
+}

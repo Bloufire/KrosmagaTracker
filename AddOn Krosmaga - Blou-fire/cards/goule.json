@@ -1,0 +1,31 @@
+{
+  "Id": 158,
+  "Name": "goule",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    82
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Carniçal",
+    "DescBR": "<b>APARIÇÃO:</b>\nColoca na sua mão o\r\no primeiro Carniçal\r\ndo seu bolo.",
+    "NameEN": "Ghoul",
+    "DescEN": "<b>APPEARANCE:</b>\nPut the first Ghoul\r\nfrom your deck\r\nin your hand.",
+    "NameES": "Ghul",
+    "DescES": "<b>APARICIÓN:</b>\nColoca en tu mano\r\nla primera ghul de\r\ntu mazo.",
+    "NameFR": "Goule",
+    "DescFR": "<b>APPARITION:</b>\nPlace dans votre main\r\nla première Goule de\r\nvotre pioche.",
+    "NameRU": "Гуль",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nвы берете первого\r\nгуля из своей\r\nколоды."
+  }
+}

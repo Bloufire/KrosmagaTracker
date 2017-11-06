@@ -1,0 +1,25 @@
+{
+  "Id": 347,
+  "Name": "magislek",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 2,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameFR": "Magislek",
+    "DescFR": "Inflige 1 dégât aux invocations adverses quand votre adversaire joue un sort.",
+    "NameEN": "Magischnek",
+    "DescEN": "Inflicts 1 damage on enemy Minions when your opponent plays a spell.",
+    "NameES": "Brizlón mágico",
+    "DescES": "Inflige 1 de daño a las invocaciones enemigas cuando un contrincante utiliza una carta de hechizo."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 448,
+  "Name": "phorreur_domestique",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 2,
+  "Families": [
+    20
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Perfuratroz de Estimação",
+    "DescBR": "<b>APARIÇÃO:</b>\nRecupera 1 carta aleatória da sua lixeira.",
+    "NameEN": "Pet Drheller",
+    "DescEN": "<b>APPEARANCE:</b>\nReturn 1 random card from your discard pile to your hand.",
+    "NameES": "Perforatroz doméstico",
+    "DescES": "<b>APARICIÓN:</b>\nRecupera 1 carta aleatoria de tu descarte.",
+    "NameFR": "Phorreur Domestique",
+    "DescFR": "<b>APPARITION :</b>\nRécupère 1 carte aléatoire de votre défausse.",
+    "NameRU": "Домашняя хорроройка",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nвозвращает 1 случайную карту из вашего сброса."
+  }
+}

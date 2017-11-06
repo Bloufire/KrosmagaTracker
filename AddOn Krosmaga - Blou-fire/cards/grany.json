@@ -1,0 +1,35 @@
+{
+  "Id": 374,
+  "Name": "grany",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 2,
+  "Attack": 1,
+  "MovementPoint": 2,
+  "Families": [
+    36
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 14,
+    "ParentCard": 74,
+    "ParentLevel": 8
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Grany",
+    "DescBR": "Seus outros Miaws ganham +1 <b>AR</b> quando entram no jogo.",
+    "NameEN": "Grany",
+    "DescEN": "Your other Bow Meows gain +1 <b>AR</b> whenever they enter into play.",
+    "NameES": "Grany",
+    "DescES": "Tus demás miaumiaus ganan +1 <b>AR</b> cuando entran en juego.",
+    "NameFR": "Grany",
+    "DescFR": "Vos autres Chachas gagnent +1 <b>AR</b> quand ils entrent en jeu.",
+    "NameRU": "Гранни",
+    "DescRU": "Другие ваши котокоты получают +1 <b>БР</b>, когда вступают в игру."
+  }
+}

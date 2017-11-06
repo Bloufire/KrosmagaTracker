@@ -1,0 +1,31 @@
+{
+  "Id": 34,
+  "Name": "phorreur",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 5,
+  "Attack": 5,
+  "MovementPoint": 2,
+  "Families": [
+    20
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Perfuratroz",
+    "DescBR": "<b>MORTE:</b> Seu adversário compra 1 carta.",
+    "NameEN": "Drheller",
+    "DescEN": "<b>DEATH:</b> Your opponent draws 1 card.",
+    "NameES": "Perforatroz",
+    "DescES": "<b>MUERTE:</b> Tu contrincante roba 1 carta.",
+    "NameFR": "Phorreur",
+    "DescFR": "<b>MORT :</b> Votre adversaire pioche 1 carte.",
+    "NameRU": "Хорроройка",
+    "DescRU": "<b>СМЕРТЬ:</b> противник берет 1 карту."
+  }
+}

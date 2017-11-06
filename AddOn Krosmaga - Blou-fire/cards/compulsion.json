@@ -1,0 +1,31 @@
+{
+  "Id": 247,
+  "Name": "compulsion",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 1,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Compulsão",
+    "DescBR": "Confere +2 <b>AT</b> e +2 <b>AR</b>\r\na uma invocação.",
+    "NameEN": "Compulsion",
+    "DescEN": "Confers +2 <b>AT</b> and +2 <b>AR</b>\r\non a Minion.",
+    "NameES": "Compulsión",
+    "DescES": "Da +2 <b>AT</b> y +2 <b>AR</b>\r\na una invocación.",
+    "NameFR": "Compulsion",
+    "DescFR": "Confère +2 <b>AT</b> et +2 <b>AR</b>\r\nà une invocation.",
+    "NameRU": "Мания",
+    "DescRU": "Дает выбранному существу\r\n+2 <b>AT</b> и +2 <b>БР</b>."
+  }
+}

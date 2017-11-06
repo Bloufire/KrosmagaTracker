@@ -1,0 +1,31 @@
+{
+  "Id": 90,
+  "Name": "uppercut",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 1,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Uppercut",
+    "DescBR": "Inflige 2 danos e \r\n<b>empurra</b> ao longo de 1 célula.",
+    "NameEN": "Uppercut",
+    "DescEN": "Inflicts 2 damage and\r\n<b>repels</b> a Minion by 1 cell.",
+    "NameES": "Uppercut",
+    "DescES": "Inflige 2 de daño y\r\n<b>empuja</b> 1 casilla.",
+    "NameFR": "Uppercut",
+    "DescFR": "Inflige 2 dégâts et\r\n<b>repousse</b> de 1 case.",
+    "NameRU": "Апперкот",
+    "DescRU": "Наносит существу 2 ед. урона и <b>отталкивает</b> его на 1 клетку."
+  }
+}

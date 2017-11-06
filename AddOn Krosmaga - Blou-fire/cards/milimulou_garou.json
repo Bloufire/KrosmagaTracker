@@ -1,0 +1,33 @@
+{
+  "Id": 274,
+  "Name": "milimulou_garou",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    15
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    129
+  ],
+  "Texts": {
+    "NameBR": "Milimilobisomem",
+    "DescBR": "<b>GOLPE DE MISERICÓRDIA:</b>\nTransforma-se em Milobo.",
+    "NameEN": "Miliboowerewolf",
+    "DescEN": "<b>FINAL BLOW:</b>\nTransforms into a Boowolf.",
+    "NameES": "Hombre minilubo",
+    "DescES": "<b>GOLPE DE GRACIA:</b>\nSe transforma en milubo.",
+    "NameFR": "Milimulou Garou",
+    "DescFR": "<b>COUP DE GRÂCE :</b>\nSe transforme en Mulou.",
+    "NameRU": "Минибоеволк-оборотень",
+    "DescRU": "<b>СМЕРТЕЛЬНЫЙ УДАР:</b>\nпревращается в боеволка."
+  }
+}

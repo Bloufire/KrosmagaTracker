@@ -1,0 +1,31 @@
+{
+  "Id": 380,
+  "Name": "piou_violet",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 2,
+  "Attack": 1,
+  "MovementPoint": 4,
+  "Families": [
+    24
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Piu Violeta",
+    "DescBR": "<b>APARIÇÃO:</b>\nConfere +1 <b>AT</b> e +1 <b>AR</b>\r\naos seus outros Pius.",
+    "NameEN": "Purple Piwi",
+    "DescEN": "<b>APPEARANCE:</b>\nGives +1 <b>AT</b> and +1 <b>AR</b>\r\nto your other Piwis.",
+    "NameES": "Pío violeta",
+    "DescES": "<b>APARICIÓN:</b>\nDa +1 <b>AT</b> y +1 <b>AR</b>\r\na tus demás píos.",
+    "NameFR": "Piou Violet",
+    "DescFR": "<b>APPARITION :</b>\nDonne +1 <b>AT</b> et +1 <b>AR</b>\r\nà vos autres Pious.",
+    "NameRU": "Фиолетовая пиви",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nдает другим вашим пиви +1 <b>AT</b> и +1 <b>БР</b>."
+  }
+}

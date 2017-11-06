@@ -1,0 +1,31 @@
+{
+  "Id": 1583,
+  "Name": "marteleur_nimbo",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 4,
+  "Attack": 2,
+  "MovementPoint": 2,
+  "Families": [
+    74
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Lindanão Martelador",
+    "DescBR": "<b>NÃO VISÁVEL</b>\nInflige danos\r\nna célula à frente dele\r\ne nas 2 células ao lado\r\ndesta.",
+    "NameEN": "Midgin Hammerer",
+    "DescEN": "<b>UNTARGETABLE</b>\nInflicts its damage\r\non the cell opposite,\r\nand on the 2 cells\r\nnext to that cell.",
+    "NameES": "Martillador taponano",
+    "DescES": "<b>ESCURRIDIZO:</b>\nInflige sus daños\r\nen la casilla delante de él\r\ny en las 2 casillas al lado\r\nde esta.",
+    "NameFR": "Marteleur Nimbos",
+    "DescFR": "<b>INCIBLABLE</b>\nInflige ses dégâts\r\nsur la case en face de lui\r\net sur les 2 cases à côté\r\nde celle-ci.",
+    "NameRU": "Гномище-кузнец",
+    "DescRU": "<b>НЕВЫЦЕЛИВАЕМЫЙ</b>\nНаносит урон по клетке перед собой и по 2 клеткам рядом с ней."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 938,
+  "Name": "chacha_lait",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    36
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Miaw Leite",
+    "DescBR": "Seus Miaws custam\n1 <b>PA</b> a menos.",
+    "NameEN": "Milk Bow Meow",
+    "DescEN": "Your Bow Meows cost\n1 <b>AP</b> less.",
+    "NameES": "Miaumiau leche",
+    "DescES": "Tus miaumiaus cuestan\n1 <b>PA</b> menos.",
+    "NameFR": "Chacha Lait",
+    "DescFR": "Vos Chachas coûtent\n1 <b>PA</b> de moins.",
+    "NameRU": "Молочный котокот",
+    "DescRU": "Стоимость ваших котокотов уменьшается на 1 <b>ОД</b>."
+  }
+}

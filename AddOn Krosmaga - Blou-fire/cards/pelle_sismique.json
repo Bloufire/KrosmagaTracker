@@ -1,0 +1,29 @@
+{
+  "Id": 756,
+  "Name": "pelle_sismique",
+  "CardType": 1,
+  "CostAP": 4,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 5,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Pá Sísmica",
+    "DescBR": "Vise uma célula para desenterrar um <b>Espólio</b> após infligir 3 danos às invocações adversárias na mesma fileira.",
+    "NameEN": "Shovel Shaker",
+    "DescEN": "Target a cell to unearth an item of <b>Loot</b> after inflicting 3 damage on enemy Minions on that row.",
+    "NameES": "Pala Sísmica",
+    "DescES": "Seleccionas una casilla para desenterrar un <b>botín</b> después de haber infligido 3 de daño a las invocaciones enemigas de la hilera.",
+    "NameFR": "Pelle Sismique",
+    "DescFR": "Ciblez une case pour déterrer un <b>Butin</b> après avoir infligé 3 dégâts aux invocations adverses de la ligne.",
+    "NameRU": "Сейсмическая лопата",
+    "DescRU": "Выберите клетку. Если существа противника на линии получат 3 ед. урона, на этой клетке появится <b>добыча</b>."
+  }
+}

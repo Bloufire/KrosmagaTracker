@@ -1,0 +1,31 @@
+{
+  "Id": 1027,
+  "Name": "enracine",
+  "CardType": 1,
+  "CostAP": 1,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 10,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Enraizado",
+    "DescBR": "Confere <b>inamovível</b> às invocações adversárias.",
+    "NameEN": "Rooted",
+    "DescEN": "Confers <b>irremovable</b> to enemy Minions.",
+    "NameES": "Enraizado",
+    "DescES": "Otorga <b>inamovible</b> a las invocaciones enemigas.",
+    "NameFR": "Enraciné",
+    "DescFR": "Confère <b>inamovible</b> aux invocations adverses.",
+    "NameRU": "Укоренение",
+    "DescRU": "Существа противника получают свойство <b>«нельзя сдвинуть»</b>."
+  }
+}

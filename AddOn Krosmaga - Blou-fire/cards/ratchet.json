@@ -1,0 +1,31 @@
+{
+  "Id": 633,
+  "Name": "ratchet",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 5,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    4
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 5,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Ratchet",
+    "DescBR": "Inflige 1 dano ao Dofus adversário na mesma fileira quando você obtém\r\num <b>Espólio</b>.",
+    "NameEN": "Ratchet",
+    "DescEN": "Inflicts 1 damage on the enemy Dofus on its row whenever you pick up\r\nan item of <b>Loot</b>.",
+    "NameES": "Ratchet",
+    "DescES": "Inflige 1 de daño al dofus enemigo de su hilera cuando consigues\r\nun <b>botín</b>.",
+    "NameFR": "Ratchet",
+    "DescFR": "Inflige 1 dégât au Dofus adverse de sa ligne quand vous ramassez\r\nun <b>Butin</b>.",
+    "NameRU": "Ратчет",
+    "DescRU": "Наносит 1 ед. урона дофусу противника на своей линии, когда вы\r\nподбираете <b>добычу</b>."
+  }
+}

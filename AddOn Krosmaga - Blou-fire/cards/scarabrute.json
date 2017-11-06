@@ -1,0 +1,31 @@
+{
+  "Id": 641,
+  "Name": "scarabrute",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 1,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    23
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Scarabruta",
+    "DescBR": "<b>APARIÇÃO:</b>\nGanha +2 <b>AR</b>.",
+    "NameEN": "Scarabrute",
+    "DescEN": "<b>APPEARANCE:</b>\nGains +2 <b>AR</b>.",
+    "NameES": "Escarabestia",
+    "DescES": "<b>APARICIÓN:</b>\nGana +2 <b>AR</b>.",
+    "NameFR": "Scarabrute",
+    "DescFR": "<b>APPARITION :</b>\nGagne +2 <b>AR</b>.",
+    "NameRU": "Скаразверь",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nполучает +2 <b>БР</b>."
+  }
+}

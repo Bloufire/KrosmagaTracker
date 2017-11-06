@@ -1,0 +1,31 @@
+{
+  "Id": 575,
+  "Name": "ebranler",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 1,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Sacudida",
+    "DescBR": "<b>Atordoa</b> uma\r\ninvocação por 1 turno.",
+    "NameEN": "Shake",
+    "DescEN": "<b>Stuns</b> a\r\nMinion for 1 turn.",
+    "NameES": "Sacudida",
+    "DescES": "<b>Aturde</b> una\r\ninvocación durante 1 turno.",
+    "NameFR": "Ebranler",
+    "DescFR": "<b>Assomme</b> une\r\ninvocation pour 1 tour.",
+    "NameRU": "Оглушение",
+    "DescRU": "<b>Оглушает</b>\r\nсущество на 1 ход."
+  }
+}

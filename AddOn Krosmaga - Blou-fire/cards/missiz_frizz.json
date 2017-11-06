@@ -1,0 +1,31 @@
+{
+  "Id": 484,
+  "Name": "missiz_frizz",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 4,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 7,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Missiz Frizz",
+    "DescBR": "<b>MORTE:</b> Gasta 1 <b>PA</b>\r\nda sua <b>reserva</b> para voltar para a sua mão.",
+    "NameEN": "Missiz Freezz",
+    "DescEN": "<b>DEATH:</b> Spends 1 <b>AP</b>\r\n from your <b>reserve</b> and returns to your hand.",
+    "NameES": "Mizz Frizz",
+    "DescES": "<b>MUERTE:</b> Gasta 1 <b>PA</b>\r\n de tu <b>reserva</b> para subir a tu mano.",
+    "NameFR": "Missiz Frizz",
+    "DescFR": "<b>MORT :</b> Dépense 1 <b>PA</b>\r\nde votre <b>réserve</b> pour remonter dans votre main.",
+    "NameRU": "Миссиз Стужжа",
+    "DescRU": "<b>СМЕРТЬ:</b> возвращается к вам\r\nв руку, потратив 1 <b>ОД</b> из вашего <b>резерва</b>."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 279,
+  "Name": "chuchoteurs_arbaletriers",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    31
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Sussurradores com Balestra",
+    "DescBR": "<b>ALCANCE:</b> 1-2",
+    "NameEN": "Crossbow Whisperers",
+    "DescEN": "<b>RANGE:</b> 1-2",
+    "NameES": "Susurradores ballesteros",
+    "DescES": "<b>ALCANCE:</b> 1-2",
+    "NameFR": "Chuchoteurs Arbaletriers",
+    "DescFR": "<b>PORTÉE :</b> 1-2",
+    "NameRU": "Шептуны-арбалетчики",
+    "DescRU": "<b>ДАЛЬНОСТЬ АТАКИ:</b> 1-2"
+  }
+}

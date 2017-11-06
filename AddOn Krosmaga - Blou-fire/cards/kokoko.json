@@ -1,0 +1,35 @@
+{
+  "Id": 243,
+  "Name": "kokoko",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 2,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    38
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 473,
+    "ParentCard": 1768,
+    "ParentLevel": 9
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Kokoko",
+    "DescBR": "<b>ALCANCE:</b> 1-3\n<b>APARIÇÃO:</b>\n<b>Empurra</b> ao longo de 1 célula as invocações adversárias.",
+    "NameEN": "Kokoko",
+    "DescEN": "<b>RANGE:</b> 1-3\n<b>APPEARANCE:</b>\n<b>Repels</b> enemy Minions by 1 cell.",
+    "NameES": "Kokoko",
+    "DescES": "<b>ALCANCE:</b> 1-3\n<b>APARICIÓN:</b>\n<b>Empuja</b> las invocaciones enemigas 1 casilla.",
+    "NameFR": "Kokoko",
+    "DescFR": "<b>PORTÉE :</b> 1-3\n<b>APPARITION :</b>\n<b>Repousse</b> de 1 case les invocations adverses.",
+    "NameRU": "Кококо",
+    "DescRU": "<b>ДАЛЬНОСТЬ АТАКИ:</b> 1-3\n<b>ПОЯВЛЕНИЕ:</b>\n<b>отталкивает</b> существ противника на 1 клетку."
+  }
+}

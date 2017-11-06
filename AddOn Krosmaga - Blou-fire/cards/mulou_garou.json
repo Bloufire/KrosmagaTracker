@@ -1,0 +1,31 @@
+{
+  "Id": 30,
+  "Name": "mulou_garou",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 6,
+  "Attack": 6,
+  "MovementPoint": 3,
+  "Families": [
+    15
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Milobisomem",
+    "DescBR": "<b>GOLPE DE MISERICÓRDIA:</b>\nCura-se de 2 <b>PV</b>.",
+    "NameEN": "Boowerewolf",
+    "DescEN": "<b>FINAL BLOW:</b>\nIs healed by 2 <b>HP.</b>",
+    "NameES": "Hombre mediulubo",
+    "DescES": "<b>GOLPE DE GRACIA:</b>\nSe cura 2 <b>PdV</b>.",
+    "NameFR": "Mulou Garou",
+    "DescFR": "<b>COUP DE GRÂCE :</b>\nSe soigne de 2 <b>PV</b>.",
+    "NameRU": "Боеволк-оборотень",
+    "DescRU": "<b>СМЕРТЕЛЬНЫЙ УДАР:</b>\nвосстанавливает себе 2 <b>ОЗ</b>."
+  }
+}

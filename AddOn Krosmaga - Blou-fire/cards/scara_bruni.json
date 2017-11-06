@@ -1,0 +1,31 @@
+{
+  "Id": 91,
+  "Name": "scara_bruni",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 1,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    23
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Scaraperez",
+    "DescBR": "<b>FIM DO TURNO:</b>\nGanha uma quantidade de <b>AR</b> equivalente\r\nà de Scaras aliados em jogo.",
+    "NameEN": "Scaralady",
+    "DescEN": "<b>END OF TURN:</b>\nGains as much <b>AR</b> as\r\nthere are allied Scaras in play.",
+    "NameES": "Escarabela",
+    "DescES": "<b>FIN DEL TURNO:</b>\nGana tanta <b>AR</b> como\r\nescaras aliados haya en juego.",
+    "NameFR": "Scarabruni",
+    "DescFR": "<b>FIN DU TOUR :</b>\nGagne autant d'<b>AR</b> que\r\nde Scaras alliés en jeu.",
+    "NameRU": "Скарабрюни",
+    "DescRU": "<b>КОНЕЦ ХОДА:</b> получает столько <b>БР</b>, сколько у вас скара в игре."
+  }
+}

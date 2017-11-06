@@ -1,0 +1,31 @@
+{
+  "Id": 19,
+  "Name": "chasseur",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 4,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Caçador",
+    "DescBR": "Compre 1 carta.\nEla custará 0 <b>PA</b> se for\r\numa invocação. Se não for, descarte-a.",
+    "NameEN": "Hunter",
+    "DescEN": "Draw 1 card.\nIt costs 0 <b>AP</b> if it is\r\na Minion, otherwise, discard it.",
+    "NameES": "Cazador",
+    "DescES": "Robas 1 carta.\nCuesta 0 <b>PA</b> si es\r\nuna invocación. Si no lo es, descártala.",
+    "NameFR": "Chasseur",
+    "DescFR": "Piochez 1 carte.\nElle coûte 0 <b>PA</b> si c'est\r\nune invocation, sinon défaussez-la.",
+    "NameRU": "Охотник",
+    "DescRU": "Возьмите 1 карту.\nОна стоит 0 <b>ОД</b>, если это\r\nсущество. Если это не существо, сбросьте ее."
+  }
+}

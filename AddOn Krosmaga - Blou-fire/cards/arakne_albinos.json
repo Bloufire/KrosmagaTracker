@@ -1,0 +1,31 @@
+{
+  "Id": 496,
+  "Name": "arakne_albinos",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    12
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Arakne Albina",
+    "DescBR": "<b>APARIÇÃO:</b>\nUma das suas invocações volta para a sua mão.",
+    "NameEN": "Albinarachnee",
+    "DescEN": "<b>APPEARANCE:</b>\nReturn one of your Minions to your hand.",
+    "NameES": "Arakna albina",
+    "DescES": "<b>APARICIÓN:</b>\nSubes una de tus invocaciones a tu mano.",
+    "NameFR": "Arakne Albinos",
+    "DescFR": "<b>APPARITION :</b>\nRemontez une de vos invocations dans votre main.",
+    "NameRU": "Арахни-альбинос",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nвозвращает вам в руку одно из ваших существ."
+  }
+}

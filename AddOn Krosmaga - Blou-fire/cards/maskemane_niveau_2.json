@@ -1,0 +1,31 @@
+{
+  "Id": 214,
+  "Name": "maskemane_niveau_2",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 4,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    45
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 20,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Maskeman Classe",
+    "DescBR": "<b>INICIATIVA</b>\n<b>GOLPE DE MISERICÓRDIA:</b>\nGanha +2 <b>AT</b>.",
+    "NameEN": "Classy Maskemane",
+    "DescEN": "<b>FIRST STRIKE</b>\n<b>FINAL BLOW:</b>\nGains +2 <b>AT</b>.",
+    "NameES": "Maskeman - Zobal",
+    "DescES": "<b>INICIATIVA</b>\n<b>GOLPE DE GRACIA:</b>\nGana +2 <b>AT</b>.",
+    "NameFR": "Maskemane Classe",
+    "DescFR": "<b>INITIATIVE</b>\n<b>COUP DE GRÂCE :</b>\nGagne +2 <b>AT</b>.",
+    "NameRU": "Классный Маскеман",
+    "DescRU": "<b>ПЕРВЫЙ УДАР</b>\n<b>СМЕРТЕЛЬНЫЙ УДАР:</b>\nполучает +2 <b>AT</b>."
+  }
+}

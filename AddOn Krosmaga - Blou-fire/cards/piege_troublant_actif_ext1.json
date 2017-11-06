@@ -1,0 +1,31 @@
+{
+  "Id": 689,
+  "Name": "piege_troublant_actif_ext1",
+  "CardType": 1,
+  "CostAP": 0,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    5
+  ],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 6,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Armadilha Inquietante Ativada",
+    "DescBR": "Compre 2 cartas.\r\nVocê tem 3 turnos para jogá-las, ou seus Dofus sofrerão 2 danos.",
+    "NameEN": "Activated Unsettling Trap",
+    "DescEN": "Draw 2 cards.\r\nYou have 3 turns to play it, or all your Dofus will suffer 2 damage.",
+    "NameES": "Trampa perturbadora activada",
+    "DescES": "Robas 2 cartas.\r\nTienes 3 turnos para jugarla o tus dofus sufrirán 2 de daño.",
+    "NameFR": "Piège Troublant Activé",
+    "DescFR": "Piochez 2 cartes.\r\nVous avez 3 tours pour le jouer ou vos Dofus subiront 2 dégâts.",
+    "NameRU": "Взведенная замутная ловушка",
+    "DescRU": "Возьмите 2 карты.\r\nСыграйте ловушку за 3 ходов, иначе ваши дофусы получат 2 ед. урона."
+  }
+}

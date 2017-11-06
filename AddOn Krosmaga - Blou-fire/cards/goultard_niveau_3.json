@@ -1,0 +1,31 @@
+{
+  "Id": 139,
+  "Name": "goultard_niveau_3",
+  "CardType": 0,
+  "CostAP": 9,
+  "Life": 4,
+  "Attack": 6,
+  "MovementPoint": 3,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 10,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Gultar, o Bárbaro",
+    "DescBR": "<b>INICIATIVA</b>\n<b>CHEFE:</b> Suas outras invocações ganham +2 <b>AT</b> e +1 <b>PM</b>.",
+    "NameEN": "Goultard the Barbarian",
+    "DescEN": "<b>FIRST STRIKE</b>\n<b>LEADER:</b> +2 <b>AT</b> and +1 <b>MP</b> to your other Minions.",
+    "NameES": "Gúltar, el Bárbaro",
+    "DescES": "<b>INICIATIVA</b>\n<b>LÍDER:</b> Da +2 <b>AT</b> y +1 <b>PM</b> a tus demás invocaciones.",
+    "NameFR": "Goultard le Barbare",
+    "DescFR": "<b>INITIATIVE</b>\n<b>CHEF :</b> +2 <b>AT</b> et +1 <b>PM</b> à vos autres invocations.",
+    "NameRU": "Гултар-варвар",
+    "DescRU": "<b>ПЕРВЫЙ УДАР</b>\n<b>ВОЖАК:</b> дает другим вашим существам +2 <b>AT</b> и +1 <b>ОП</b>."
+  }
+}

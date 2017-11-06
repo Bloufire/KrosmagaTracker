@@ -1,0 +1,31 @@
+{
+  "Id": 113,
+  "Name": "amsrad_cepaisset",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 7,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    5
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 6,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Amsrad Cepecê",
+    "DescBR": "Elimina as 5 últimas cartas enviadas para a sua lixeira para ser invocado.",
+    "NameEN": "Amsrad Cipici",
+    "DescEN": "Banishes the last 5  cards that went to your discard pile to be summoned.",
+    "NameES": "Amstrad Cepecé",
+    "DescES": "Elimina las 5 últimas cartas enviadas a tu descarte para ser invocado.",
+    "NameFR": "Amsrad Cépaisset",
+    "DescFR": "Bannit les 5 dernières cartes parties dans votre défausse pour être invoqué.",
+    "NameRU": "Пэка Амстрад",
+    "DescRU": "Для призыва требуется уничтожить 5 последних карт в вашем сбросе."
+  }
+}

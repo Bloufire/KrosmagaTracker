@@ -1,0 +1,31 @@
+{
+  "Id": 1545,
+  "Name": "demasquer",
+  "CardType": 1,
+  "CostAP": 4,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    5
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 6,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Desmascarado",
+    "DescBR": "Revela um Dofus.",
+    "NameEN": "Unmasked",
+    "DescEN": "Reveal a Dofus.",
+    "NameES": "Desenmascarado",
+    "DescES": "Descubre un dofus.",
+    "NameFR": "Démasqué",
+    "DescFR": "Dévoilez un Dofus.",
+    "NameRU": "Сброс маскировки",
+    "DescRU": "Раскрывает один дофус."
+  }
+}

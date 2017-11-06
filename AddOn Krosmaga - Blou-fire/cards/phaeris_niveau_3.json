@@ -1,0 +1,31 @@
+{
+  "Id": 785,
+  "Name": "phaeris_niveau_3",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 5,
+  "Attack": 6,
+  "MovementPoint": 3,
+  "Families": [
+    55
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 737,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Faeris",
+    "DescBR": "<b>FIM DO TURNO:</b>\nReduz ao <b>silêncio</b>\r\n as outras invocações.",
+    "NameEN": "Phaerys",
+    "DescEN": "<b>END OF TURN:</b>\n<b>Silences</b>\r\nthe other Minions.",
+    "NameES": "Faeris",
+    "DescES": "<b>FIN DEL TURNO:</b>\nInflige <b>silencio</b>\r\na las demás invocaciones.",
+    "NameFR": "Phaeris",
+    "DescFR": "<b>FIN DU TOUR :</b>\nRéduit au <b>silence</b>\r\nles autres invocations.",
+    "NameRU": "Фаэрис",
+    "DescRU": "<b>КОНЕЦ ХОДА:</b>\nналагает <b>немоту</b>\r\nна других существ."
+  }
+}

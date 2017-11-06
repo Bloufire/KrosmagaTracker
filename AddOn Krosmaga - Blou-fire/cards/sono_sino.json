@@ -1,0 +1,31 @@
+{
+  "Id": 263,
+  "Name": "sono_sino",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 4,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 1,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Sono Sino",
+    "DescBR": "<b>APARIÇÃO:</b> Ganha +1 <b>AR</b> se você tiver\r\noutro Iop no jogo.",
+    "NameEN": "Sono Sino",
+    "DescEN": "<b>APPEARANCE:</b> Gains +1 <b>AR</b> if you have\r\nanother Iop in play.",
+    "NameES": "Sono Sino",
+    "DescES": "<b>APARICIÓN:</b> Gana +1 <b>AR</b> si tienes\r\notro yopuka en juego.",
+    "NameFR": "Sono Sino",
+    "DescFR": "<b>APPARITION :</b> Gagne +1 <b>AR</b> si vous avez\r\nun autre Iop en jeu.",
+    "NameRU": "Соно Сино",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b> получает +1 <b>БР</b>, если у вас есть\r\nдругой иоп в игре."
+  }
+}

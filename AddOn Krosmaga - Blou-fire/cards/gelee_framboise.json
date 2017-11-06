@@ -1,0 +1,31 @@
+{
+  "Id": 418,
+  "Name": "gelee_framboise",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 1,
+  "Attack": 1,
+  "MovementPoint": 2,
+  "Families": [
+    30
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Gelatina de Framboesa",
+    "DescBR": "Ganha +1 <b>AT</b> e +1 <b>AR</b> quando uma Gelatina aliada entra em jogo.",
+    "NameEN": "Blue Raspberry Jelly",
+    "DescEN": "Gains +1 <b>AT</b> and +1 <b>AR</b> whenever an allied Jelly enters into play.",
+    "NameES": "Gelatina de frambuesa",
+    "DescES": "Gana +1 <b>AT</b> y +1 <b>AR</b> cuando una gelatina aliada entra en juego.",
+    "NameFR": "Gelée Framboise",
+    "DescFR": "Gagne +1 <b>AT</b> et +1 <b>AR</b> quand une Gelée alliée entre en jeu.",
+    "NameRU": "Малиновое желе",
+    "DescRU": "Получает +1 <b>AT</b> и +1 <b>БР</b>, когда союзное желе вступает в игру."
+  }
+}

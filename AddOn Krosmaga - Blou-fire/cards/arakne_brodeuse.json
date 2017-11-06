@@ -1,0 +1,31 @@
+{
+  "Id": 497,
+  "Name": "arakne_brodeuse",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 4,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    12
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Arakne Bordadeira",
+    "DescBR": "<b>APARIÇÃO:</b>\nUma invocação com 2 <b>AT</b> ou menos situada no seu <b>lado do tabuleiro</b> volta para a mão do adversário.",
+    "NameEN": "Arachnee Embroiderer",
+    "DescEN": "<b>APPEARANCE:</b>\nReturn a Minion with 2 <b>AT</b> or less on your <b>side</b> to your opponent's hand.",
+    "NameES": "Arakna tejedora",
+    "DescES": "<b>APARICIÓN:</b>\nSube una invocación situada en tu <b>lado del tablero</b> que tenga 2 <b>AT</b> o menos a la mano enemiga.",
+    "NameFR": "Arakne Brodeuse",
+    "DescFR": "<b>APPARITION :</b>\nRemonte dans la main adverse une invocation située dans votre <b>camp</b> ayant 2 <b>AT</b> ou moins.",
+    "NameRU": "Арахни-шелкопряд",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nвозвращает в руку противника существо с показателем <b>AT</b> не более 2, стоящее на вашей <b>половине поля<b>."
+  }
+}

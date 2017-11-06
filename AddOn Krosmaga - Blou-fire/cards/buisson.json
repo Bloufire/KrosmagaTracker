@@ -1,0 +1,31 @@
+{
+  "Id": 152,
+  "Name": "buisson",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 10,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Arbusto",
+    "DescBR": "Transforma uma <b>Semente</b> aliada em <b>Arbusto</b>.",
+    "NameEN": "Bush",
+    "DescEN": "Transforms an allied <b>Seed</b> into a <b>Bush</b>.",
+    "NameES": "Arbusto",
+    "DescES": "Transforma una <b>semilla</b> aliada en <b>arbusto</b>.",
+    "NameFR": "Buisson",
+    "DescFR": "Transforme une <b>Graine</b> alliée en <b>Buisson</b>.",
+    "NameRU": "Куст",
+    "DescRU": "Превращает союзное <b>семя</b> в <b>куст</b>."
+  }
+}

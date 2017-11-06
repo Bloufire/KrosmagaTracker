@@ -1,0 +1,32 @@
+{
+  "Id": 346,
+  "Name": "polter_tofu",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 2,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    66,
+    13
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Esporo Tofu",
+    "DescBR": "<b>MORTE:</b>\nVolta para a sua mão.\r\nCusta 1 <b>PA</b> a mais.",
+    "NameEN": "Tofu Polter",
+    "DescEN": "<b>DEATH:</b>\nReturns to your hand.\r\nIt costs 1 <b>AP</b> more.",
+    "NameES": "Polter tofu",
+    "DescES": "<b>MUERTE:</b>\nVuelve a tu mano.\r\nCuesta 1 <b>PA</b> más.",
+    "NameFR": "Polter Tofu",
+    "DescFR": "<b>MORT :</b>\nRetourne dans votre main.\r\nIl coûte 1 <b>PA</b> de plus.",
+    "NameRU": "Полтер тофу",
+    "DescRU": "<b>СМЕРТЬ:</b> возвращается к вам в руку. Его стоимость увеличивается на 1 <b>ОД</b>."
+  }
+}

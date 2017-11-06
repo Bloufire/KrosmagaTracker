@@ -1,0 +1,31 @@
+{
+  "Id": 632,
+  "Name": "puissance",
+  "CardType": 1,
+  "CostAP": 1,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 1,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Potência",
+    "DescBR": "Confere +1 <b>AT</b> às invocações presentes\r\nno seu <b>lado do tabuleiro</b>.",
+    "NameEN": "Power",
+    "DescEN": "Confers +1 <b>AT</b> on Minions\r\non your <b>side.</b>",
+    "NameES": "Potencia",
+    "DescES": "Da +1 <b>AT</b> a las invocaciones presentes\r\nen tu <b>lado del tablero</b>.",
+    "NameFR": "Puissance",
+    "DescFR": "Confère +1 <b>AT</b> aux invocations présentes\r\ndans votre <b>camp</b>.",
+    "NameRU": "Мощь",
+    "DescRU": "Дает +1 <b>AT</b> существам\r\nна вашей <b>половине поля</b>."
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "Id": 456,
+  "Name": "bellaphone",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 2,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    48
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 27,
+    "ParentCard": 205,
+    "ParentLevel": 9
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Beléfone",
+    "DescBR": "<b>MORTE:</b>\nA invocação que destruiu a Beléfone vai para a sua mão.",
+    "NameEN": "Bellaphone",
+    "DescEN": "<b>DEATH:</b>\nReturns the Minion which destroyed the Bellaphone to your hand.",
+    "NameES": "Belíade",
+    "DescES": "<b>MUERTE:</b>\nSube a tu mano la invocación que ha eliminado a la belíade.",
+    "NameFR": "Bellaphone",
+    "DescFR": "<b>MORT :</b>\nRemonte dans votre main l'invocation qui a détruit la Bellaphone.",
+    "NameRU": "Беллафона",
+    "DescRU": "<b>СМЕРТЬ:</b>\nкладет вам в руку существо, уничтожившее Беллафону."
+  }
+}

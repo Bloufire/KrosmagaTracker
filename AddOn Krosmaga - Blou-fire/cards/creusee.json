@@ -1,0 +1,29 @@
+{
+  "Id": 1620,
+  "Name": "creusee",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 5,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Cavada",
+    "DescBR": "Inflige 2 danos às invocações adversárias da linha visada.",
+    "NameEN": "Hollowed",
+    "DescEN": "Inflicts 2 damage on enemy Minions on the targeted line.",
+    "NameES": "Cavada",
+    "DescES": "Inflige 2 de daño a las invocaciones enemigas de la fila seleccionada.",
+    "NameFR": "Creusée",
+    "DescFR": "Inflige 2 dégâts aux invocations adverses de la rangée ciblée.",
+    "NameRU": "Подкоп",
+    "DescRU": "Наносит 2 ед. урона существам противника в выбранном ряду."
+  }
+}

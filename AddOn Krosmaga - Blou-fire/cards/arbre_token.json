@@ -1,0 +1,33 @@
+{
+  "Id": 885,
+  "Name": "arbre_token",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 8,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    32
+  ],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    537
+  ],
+  "Texts": {
+    "NameBR": "Árvore",
+    "DescBR": "<b>MURO</b>\n<b>COMEÇO DO TURNO:</b> Adiciona uma <b>Semente</b> à sua mão.",
+    "NameEN": "Tree",
+    "DescEN": "<b>WALL</b>\n<b>START OF TURN:</b> Add 1 <b>Seed</b> to your hand.",
+    "NameES": "Árbol",
+    "DescES": "<b>MURO</b>\n<b>INICIO DEL TURNO:</b> Añade una <b>semilla</b> a tu mano.",
+    "NameFR": "Arbre",
+    "DescFR": "<b>MUR</b>\n<b>DÉBUT DU TOUR :</b> Ajoute une <b>Graine</b> à votre main.",
+    "NameRU": "Дерево",
+    "DescRU": "<b>СТЕНА</b>\n<b>НАЧАЛО ХОДА:</b> добавляет вам в руку одно <b>семя</b>."
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "Id": 215,
+  "Name": "amalia_niveau_2",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    32,
+    33
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 23,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    22
+  ],
+  "Texts": {
+    "NameBR": "Amália",
+    "DescBR": "<b>APARIÇÃO:</b>\nInvoca uma Boneca Louca.",
+    "NameEN": "Amalia",
+    "DescEN": "<b>APPEARANCE:</b>\nSummons a Madoll.",
+    "NameES": "Amalia",
+    "DescES": "<b>APARICIÓN:</b>\nInvoca 1 muñeca loca.",
+    "NameFR": "Amalia",
+    "DescFR": "<b>APPARITION :</b>\nInvoquez une Poupée Folle.",
+    "NameRU": "Амалия",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nпризывает буйнокуклу."
+  }
+}

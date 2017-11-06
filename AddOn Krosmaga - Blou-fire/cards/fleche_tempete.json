@@ -1,0 +1,31 @@
+{
+  "Id": 508,
+  "Name": "fleche_tempete",
+  "CardType": 1,
+  "CostAP": 7,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    2
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 2,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Flecha Tempestuosa",
+    "DescBR": "Inflige 2 danos e <b>empurra</b> as invocações adversárias ao longo de 2 células.",
+    "NameEN": "Storm Arrow",
+    "DescEN": "Inflicts 2 damage and <b>repels</b> enemy Minions by 2 cells.",
+    "NameES": "Flecha de Tempestad",
+    "DescES": "Inflige 2 de daño y <b>empuja</b> 2 casillas las invocaciones enemigas.",
+    "NameFR": "Flèche Tempête",
+    "DescFR": "Inflige 2 dégâts et <b>repousse</b> de 2 cases les invocations adverses.",
+    "NameRU": "Стрела-смерч",
+    "DescRU": "Наносит существам противника 2 ед. урона и заставляет их <b> отступить</b> на 2 клетки."
+  }
+}

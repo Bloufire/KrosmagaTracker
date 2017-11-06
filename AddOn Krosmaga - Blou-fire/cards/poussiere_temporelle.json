@@ -1,0 +1,31 @@
+{
+  "Id": 393,
+  "Name": "poussiere_temporelle",
+  "CardType": 1,
+  "CostAP": 5,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 7,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Poeira Temporal",
+    "DescBR": "Inflige 2 danos.\r\nAdiciona 5 <b>PA</b> à sua <b>reserva</b> se a invocação morrer.",
+    "NameEN": "Temporal Dust",
+    "DescEN": "Inflicts 2 damage.\r\nAdds 5 <b>AP</b> to your <b>reserve</b> if the Minion dies.",
+    "NameES": "Polvo Temporal",
+    "DescES": "Inflige 2 de daño.\r\nAñade 5 <b>PA</b> a tu <b>reserva</b> si la invocación muere.",
+    "NameFR": "Poussière Temporelle",
+    "DescFR": "Inflige 2 dégâts.\r\nAjoute 5 <b>PA</b> à votre <b>réserve</b> si l'invocation meurt.",
+    "NameRU": "Пыль времени",
+    "DescRU": "Наносит 2 ед. урона.\r\nЕсли существо погибает, добавляет в ваш <b>резерв</b> 5 <b>ОД</b>."
+  }
+}

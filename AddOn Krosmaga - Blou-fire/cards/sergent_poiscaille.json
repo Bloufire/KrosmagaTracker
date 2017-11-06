@@ -1,0 +1,31 @@
+{
+  "Id": 164,
+  "Name": "sergent_poiscaille",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 6,
+  "Attack": 4,
+  "MovementPoint": 2,
+  "Families": [
+    40
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Sargento Pércio",
+    "DescBR": "",
+    "NameEN": "Sergeant Izungry",
+    "DescEN": "",
+    "NameES": "Pez muertambre",
+    "DescES": "",
+    "NameFR": "Sergent Poiscaille",
+    "DescFR": "",
+    "NameRU": "Сержант Ледорыба",
+    "DescRU": ""
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 427,
+  "Name": "maloboss",
+  "CardType": 0,
+  "CostAP": 9,
+  "Life": 5,
+  "Attack": 3,
+  "MovementPoint": 2,
+  "Families": [
+    47
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Maloboss",
+    "DescBR": "<b>MORTE:</b> Adiciona 3 outros Bandidos à sua mão.",
+    "NameEN": "Baddoboss",
+    "DescEN": "<b>DEATH:</b> Add 3 other Bandits to your hand.",
+    "NameES": "Maloboss",
+    "DescES": "<b>MUERTE:</b> Añade 3 bandidos a tu mano.",
+    "NameFR": "Maloboss",
+    "DescFR": "<b>MORT :</b> Ajoute 3 autres Bandits à votre main.",
+    "NameRU": "Злыднебосс",
+    "DescRU": "<b>СМЕРТЬ:</b> дает вам в руку 3 других бандитов."
+  }
+}

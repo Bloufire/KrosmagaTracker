@@ -1,0 +1,31 @@
+{
+  "Id": 338,
+  "Name": "edass_le_trouble_fete",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 5,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 8,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Edass, o Estraga-Prazeres",
+    "DescBR": "<b>FERIDA:</b>\nGanha +2 <b>AT</b> e <b>iniciativa</b>.",
+    "NameEN": "Edass the Killjoy",
+    "DescEN": "<b>INJURED:</b>\nGains +2 <b>AT</b> and <b>first strike</b>.",
+    "NameES": "Edass, el Aguafiestas",
+    "DescES": "<b>SANGRANTE:</b>\nGana +2 <b>AT</b> e <b>iniciativa</b>.",
+    "NameFR": "Edass le Trouble Fête",
+    "DescFR": "<b>BLESSÉ :</b>\nGagne +2 <b>AT</b> et <b>initiative</b>.",
+    "NameRU": "Эдас Радокрад",
+    "DescRU": "<b>РАНЕН:</b>\nполучает +2 <b>AT</b> и свойство <b>«первый удар»</b>."
+  }
+}

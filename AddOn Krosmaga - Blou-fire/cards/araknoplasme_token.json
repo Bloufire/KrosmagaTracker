@@ -1,0 +1,31 @@
+{
+  "Id": 175,
+  "Name": "araknoplasme_token",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    12
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Araknoplasma",
+    "DescBR": "Confere +1 <b>AT</b> e +1 <b>AR</b> às suas outras Araknes quando uma invocação volta para a mão de seu proprietário.",
+    "NameEN": "Arachnoplasm",
+    "DescEN": "Gives +1 <b>AT</b> and +1 <b>AR</b> to your other Arachnees whenever a Minion returns to its owner's hand.",
+    "NameES": "Araknoplasma",
+    "DescES": "Da +1 <b>AT</b> y +1 <b>AR</b> a tus demás araknas cuando una invocación sube a la mano de su propietario.",
+    "NameFR": "Araknoplasme",
+    "DescFR": "Donne +1 <b>AT</b> et +1 <b>AR</b> à vos autres Araknes quand une invocation remonte dans la main de son propriétaire.",
+    "NameRU": "Арахноплазм",
+    "DescRU": "Дает другим вашим арахни +1 <b>AT</b> и +1 <b>БР</b>, когда одно из существ возвращается в руку хозяина."
+  }
+}

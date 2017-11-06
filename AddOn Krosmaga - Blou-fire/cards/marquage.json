@@ -1,0 +1,31 @@
+{
+  "Id": 1525,
+  "Name": "marquage",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    2
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 2,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Marcação",
+    "DescBR": "Confere a uma invocação +1 <b>AT</b> por cada invocação aliada com <b>alcance</b> presente no jogo.",
+    "NameEN": "Marking",
+    "DescEN": "Confers +1 <b>AT</b> on a Minion per <b>ranged</b> allied Minion in play.",
+    "NameES": "Marcaje",
+    "DescES": "Da a una invocación +1 <b>AT</b> por cada invocación aliada con <b>alcance</b> en juego.",
+    "NameFR": "Marquage",
+    "DescFR": "Confère à une invocation +1 <b>AT</b> par invocation alliée avec <b>portée</b> en jeu.",
+    "NameRU": "Клеймение",
+    "DescRU": "Дает выбранному существу +1 <b>AT</b> за каждое союзное существо со свойством <b>«дальность атаки»</b> в игре."
+  }
+}

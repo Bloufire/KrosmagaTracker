@@ -1,0 +1,31 @@
+{
+  "Id": 219,
+  "Name": "rabet",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    47
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Berê",
+    "DescBR": "<b>CONTRAGOLPE:</b>\nCompre 1 carta.",
+    "NameEN": "Barry",
+    "DescEN": "<b>COUNTERATTACK:</b>\nDraw 1 card.",
+    "NameES": "Rabet",
+    "DescES": "<b>VENGANZA:</b>\nRobas 1 carta.",
+    "NameFR": "Rabet",
+    "DescFR": "<b>CONTRE COUP :</b>\nPiochez 1 carte.",
+    "NameRU": "Ипат Копат",
+    "DescRU": "<b>КОНТРАТАКА:</b>\nвы берете1 карту."
+  }
+}

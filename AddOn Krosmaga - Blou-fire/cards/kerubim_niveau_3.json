@@ -1,0 +1,31 @@
+{
+  "Id": 453,
+  "Name": "kerubim_niveau_3",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 4,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 8,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Kerubim Marcial",
+    "DescBR": "Ganha +1 <b>AT</b> e + 1 <b>AR</b> quando uma invocação aliada morre.",
+    "NameEN": "Kerub the Nunchakuer",
+    "DescEN": "Gains +1 <b>AT</b> and + 1 <b>AR</b> whenever an allied Minion dies.",
+    "NameES": "Kerubim",
+    "DescES": "Gana +1 <b>AT</b> y +1 <b>AR</b> cuando una invocación aliada muere.",
+    "NameFR": "Kerubim le Nunchakeur",
+    "DescFR": "Gagne +1 <b>AT</b> et + 1 <b>AR</b> quand une invocation alliée meurt.",
+    "NameRU": "Керубим Нунчак",
+    "DescRU": "Получает +1 <b>АТ</b> и +1 <b>БР</b> при гибели союзного существа."
+  }
+}

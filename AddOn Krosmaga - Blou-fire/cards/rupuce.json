@@ -1,0 +1,35 @@
+{
+  "Id": 462,
+  "Name": "rupuce",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    67
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 30,
+    "ParentCard": 557,
+    "ParentLevel": 9
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Rupulga",
+    "DescBR": "Nunca sofre mais\r\nde 1 dano por vez.",
+    "NameEN": "Rouflee",
+    "DescEN": "Never suffers more\r\nthan 1 damage at once.",
+    "NameES": "Rupulguita",
+    "DescES": "No sufre nunca más\r\nde 1 de daño a la vez.",
+    "NameFR": "Rupuce",
+    "DescFR": "Ne subit jamais plus\r\nde 1 dégât à la fois.",
+    "NameRU": "Хитроблошек",
+    "DescRU": "Получает не больше\r\n1 единицы урона за раз."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 518,
+  "Name": "fiole_de_psykoz",
+  "CardType": 1,
+  "CostAP": 6,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    3
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 3,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Frasco de Psikose",
+    "DescBR": "Assuma o controle de uma invocação adversária que tenha 3 <b>AT</b> ou menos até o turno do seu adversário.",
+    "NameEN": "Psykosis Flask",
+    "DescEN": "Take control of an enemy Minion with 3 <b>AT</b> or less, until the end of your turn.",
+    "NameES": "Matraz de Sáikoz",
+    "DescES": "Tomas el control de una invocación enemiga que tenga 3 <b>AT</b> o menos hasta el turno de tu contrincante.",
+    "NameFR": "Fiole de Psykoz",
+    "DescFR": "Prenez le contrôle d'une invocation adverse ayant 3 <b>AT</b> ou moins jusqu'au tour de votre adversaire.",
+    "NameRU": "Зелье гипноза",
+    "DescRU": "Дает контроль над существом противника, имеющим не более 3 <b>AT</b>, до хода противника."
+  }
+}

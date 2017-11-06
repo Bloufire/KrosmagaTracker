@@ -1,0 +1,31 @@
+{
+  "Id": 552,
+  "Name": "maitre_chuchoku",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    31
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Mestre Shiudoku",
+    "DescBR": "<b>APARIÇÃO:</b>\nConfere <b>escudo</b> a uma invocação.",
+    "NameEN": "Master Shhhudoku",
+    "DescEN": "<b>APPEARANCE:</b>\nGives a Minion <b>shield</b>.",
+    "NameES": "Susurrón I",
+    "DescES": "<b>APARICIÓN:</b>\nDas <b>escudo</b> a una invocación.",
+    "NameFR": "Maître Chuchoku",
+    "DescFR": "<b>APPARITION :</b>\nDonnez <b>bouclier</b> à une invocation.",
+    "NameRU": "Мастер Шепчоку",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nдает выбранному существу <b>щит</b>."
+  }
+}

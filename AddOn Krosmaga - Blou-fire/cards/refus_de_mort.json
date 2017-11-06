@@ -1,0 +1,31 @@
+{
+  "Id": 328,
+  "Name": "refus_de_mort",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 8,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Agarrado à Vida",
+    "DescBR": "Sacrifique um de seus Dofus para comprar 3 cartas.",
+    "NameEN": "Clinging to Life",
+    "DescEN": "Sacrifice one of your Dofus to draw 3 cards.",
+    "NameES": "Rechazo a la Muerte",
+    "DescES": "Sacrificas uno de tus dofus para robar 3 cartas.",
+    "NameFR": "Refus de Mort",
+    "DescFR": "Sacrifiez un de vos Dofus pour piocher 3 cartes.",
+    "NameRU": "Отрицание смерти",
+    "DescRU": "Пожертвуйте одним из своих дофусов, чтобы взять 3 карты."
+  }
+}

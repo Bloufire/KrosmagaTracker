@@ -1,0 +1,32 @@
+{
+  "Id": 134,
+  "Name": "yugo_niveau_1",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    56,
+    33
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 12,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Yugo",
+    "DescBR": "<b>CONTRAGOLPE:</b>\nColoca na sua mão um membro da Confraria do Tofu do seu bolo.",
+    "NameEN": "Yugo",
+    "DescEN": "<b>COUNTERATTACK:</b>\nPut a member of the Brotherhood of the Tofu from your deck in your hand.",
+    "NameES": "Yugo",
+    "DescES": "<b>VENGANZA:</b>\nColoca en tu mano a un miembro de la Hermandad del Tofu de tu mazo.",
+    "NameFR": "Yugo",
+    "DescFR": "<b>CONTRE COUP :</b>\nPlace dans votre main un membre de la Confrérie du Tofu de votre pioche.",
+    "NameRU": "Юго",
+    "DescRU": "<b>КОНТРАТАКА:</b>\nдает вам в руку члена Братства тофу из вашей колоды."
+  }
+}

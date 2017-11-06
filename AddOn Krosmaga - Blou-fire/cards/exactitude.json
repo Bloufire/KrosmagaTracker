@@ -1,0 +1,31 @@
+{
+  "Id": 1481,
+  "Name": "exactitude",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 7,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Exatidão",
+    "DescBR": "Adiciona 5 <b>PA</b> à sua\r\n<b>reserva</b> e 3 <b>PA</b> à <b>reserva</b> do adversário.",
+    "NameEN": "Exactitude",
+    "DescEN": "Adds 5 <b>AP</b> to your\r\n<b>reserve</b> and 3 <b>AP</b> to your opponent's <b>reserve.</b>",
+    "NameES": "Exactitud",
+    "DescES": "Añade 5 <b>PA</b> a tu\r\n<b>reserva</b> y 3 <b>PA</b> a la <b>reserva</b> enemiga.",
+    "NameFR": "Exactitude",
+    "DescFR": "Ajoute 5 <b>PA</b> à votre\r\n<b>réserve</b> et 3 <b>PA</b> à la <b>réserve</b> adverse.",
+    "NameRU": "Точность",
+    "DescRU": "Добавляет 5 <b>ОД</b> в ваш\r\n<b>резерв</b> и 3 <b>ОД</b> в <b>резерв</b> противника."
+  }
+}

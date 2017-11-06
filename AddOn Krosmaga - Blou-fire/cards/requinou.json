@@ -1,0 +1,31 @@
+{
+  "Id": 260,
+  "Name": "requinou",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 1,
+  "Attack": 3,
+  "MovementPoint": 2,
+  "Families": [
+    68
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Tubarino",
+    "DescBR": "Ganha +1 <b>AT</b> desde que haja ao menos uma outra invocação ferida.",
+    "NameEN": "Sharkie",
+    "DescEN": "Gains +1 <b>AT</b> as long as at least one other Minion is injured.",
+    "NameES": "Tim burón",
+    "DescES": "Gana +1 <b>AT</b> mientras al menos otra invocación está herida.",
+    "NameFR": "Requinou",
+    "DescFR": "Gagne +1 <b>AT</b> tant qu'au moins une autre invocation est blessée.",
+    "NameRU": "Акуленок",
+    "DescRU": "Получает +1 <b>AT</b>, если хотя бы одно другое существо ранено."
+  }
+}

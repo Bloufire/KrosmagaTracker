@@ -1,0 +1,31 @@
+{
+  "Id": 1073,
+  "Name": "prince_belimberbe",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 4,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    74
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Príncipe Belimberbe",
+    "DescBR": "<b>CONTRAGOLPE:</b>\nColoca no seu bolo a última invocação enviada para a sua lixeira.",
+    "NameEN": "Prince Lackbeard",
+    "DescEN": "<b>COUNTERATTACK:</b>\nPut the last Minion that went to your discard pile on your deck.",
+    "NameES": "Príncipe Belimberbe",
+    "DescES": "<b>VENGANZA:</b>\nColoca en tu mazo la última invocación enviada a tu descarte.",
+    "NameFR": "Prince Belimberbe",
+    "DescFR": "<b>CONTRE COUP :</b>\nPlace sur votre pioche la dernière invocation partie dans votre défausse.",
+    "NameRU": "Принц Недобород",
+    "DescRU": "<b>КОНТРАТАКА:</b>\nкладет на верх вашей колоды последнее существо из вашего сброса."
+  }
+}

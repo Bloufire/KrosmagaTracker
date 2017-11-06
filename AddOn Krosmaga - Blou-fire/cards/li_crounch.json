@@ -1,0 +1,33 @@
+{
+  "Id": 188,
+  "Name": "li_crounch",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 10,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    522
+  ],
+  "Texts": {
+    "NameBR": "Li Crunch",
+    "DescBR": "<b>APARIÇÃO:</b>\nTransforma uma de suas <b>Sementes</b> em Boneca Sacrificada.",
+    "NameEN": "Li Crounch",
+    "DescEN": "<b>APPEARANCE:</b>\nTransforms one of your <b>Seeds</b> into a Sacrificial Doll.",
+    "NameES": "Li Crounch",
+    "DescES": "<b>APARICIÓN:</b>\nTransformas una de tus <b>semillas</b> en muñeca sacrificada.",
+    "NameFR": "Li Crounch",
+    "DescFR": "<b>APPARITION :</b>\nTransformez une de vos <b>Graines</b> en Poupée Sacrifiée.",
+    "NameRU": "Ли Краунч",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nпревращает одно из ваших <b>семян</b> в жертвокуклу."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 130,
+  "Name": "sablier_de_xelor",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 7,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Ampulheta de Xelor",
+    "DescBR": "Gasta todos os <b>PA</b>da sua <b>reserva</b> para ganhar o dobro\r\nneste turno.",
+    "NameEN": "Xelor's Sandglass",
+    "DescEN": "Spends all <b>AP</b> in your <b>reserve</b> to gain twice as much\r\nfor this turn.",
+    "NameES": "Reloj de Arena de Xelor",
+    "DescES": "Gasta todos los <b>PA</b>de tu <b>reserva</b> para ganar el doble\r\ndurante este turno.",
+    "NameFR": "Sablier de Xélor",
+    "DescFR": "Dépense tous les <b>PA</b> de votre <b>réserve</b> pour en gagner le double\r\npour ce tour.",
+    "NameRU": "Песочные часы Кселора",
+    "DescRU": "Использует все <b>ОД</b> из вашего <b>резерва</b> и дает вам их в два раза\r\nбольше на этот ход."
+  }
+}

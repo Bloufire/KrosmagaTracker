@@ -1,0 +1,31 @@
+{
+  "Id": 207,
+  "Name": "katar_niveau_1",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 19,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Katar",
+    "DescBR": "<b>APARIÇÃO:</b>\n<b>Atrai</b> a primeira invocação adversária situada diante dele. Depois, <b>dá uma investida</b>.",
+    "NameEN": "Katar",
+    "DescEN": "<b>APPEARANCE:</b>\n<b>Attracts</b> the first enemy Minion in front of it, then <b>charges</b>.",
+    "NameES": "Katar",
+    "DescES": "<b>APARICIÓN:</b>\n<b>Atrae</b> la primera invocación enemiga situada delante de él y <b>carga</b>.",
+    "NameFR": "Katar",
+    "DescFR": "<b>APPARITION :</b>\n<b>Attire</b> la première invocation adverse située devant lui puis <b>charge</b>.",
+    "NameRU": "Катар",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\n<b>притягивает</b> к себе первое существо противника, стоящее перед ним, а затем делает <b>рывок</b>."
+  }
+}

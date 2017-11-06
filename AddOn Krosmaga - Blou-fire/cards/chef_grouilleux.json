@@ -1,0 +1,31 @@
+{
+  "Id": 133,
+  "Name": "chef_grouilleux",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 3,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    59
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Chefe Grambo",
+    "DescBR": "<b>CHEFE:</b>\nSuas outras invocações ganham +1 <b>PM</b>.",
+    "NameEN": "Grambo Chief",
+    "DescEN": "<b>LEADER:</b>\n+1 <b>MP</b> to your other Minions.",
+    "NameES": "Jefe esbirrio",
+    "DescES": "<b>LÍDER:</b>\nDa +1 <b>PM</b> a tus demás invocaciones.",
+    "NameFR": "Chef Grouilleux",
+    "DescFR": "<b>CHEF :</b>\n+1 <b>PM</b> à vos autres invocations.",
+    "NameRU": "Суетливый предводитель",
+    "DescRU": "<b>ВОЖАК</b>\nДает другим вашим существам +1 <b>ОП</b>."
+  }
+}

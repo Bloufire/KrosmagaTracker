@@ -1,0 +1,31 @@
+{
+  "Id": 229,
+  "Name": "bernardo_de_la_carpett",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 2,
+  "Families": [
+    40
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Bernardo di Arreia",
+    "DescBR": "<b>NÃO VISÁVEL</b>",
+    "NameEN": "Bernardo della Carppet",
+    "DescEN": "<b>UNTARGETABLE</b>",
+    "NameES": "Pez alfombra",
+    "DescES": "<b>ESCURRIDIZO</b>",
+    "NameFR": "Bernardo de la Carpett",
+    "DescFR": "<b>INCIBLABLE</b>",
+    "NameRU": "Бернардо де ла Коверр",
+    "DescRU": "<b>НЕВЫЦЕЛИВАЕМЫЙ</b>"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 556,
+  "Name": "boufton_noir",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 2,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    14
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Paparneiro Negro",
+    "DescBR": "Ganha +1 <b>AR</b> desde que você tenha\r\noutro Papatudo no jogo.",
+    "NameEN": "Black Gobbly",
+    "DescEN": "Gains +1 <b>AR</b> as long as\r\nyou have another Gobball in play.",
+    "NameES": "Jalatín negro",
+    "DescES": "Gana +1 <b>AR</b> mientras\r\ntengas otro jalató en juego.",
+    "NameFR": "Boufton Noir",
+    "DescFR": "Gagne +1 <b>AR</b> tant\r\nque vous avez un autre Bouftou en jeu.",
+    "NameRU": "Черный бараглотик",
+    "DescRU": "Получает +1 <b>БР</b>, пока\r\nу вас есть другой бараглот в игре."
+  }
+}

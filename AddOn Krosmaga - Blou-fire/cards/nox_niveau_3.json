@@ -1,0 +1,31 @@
+{
+  "Id": 285,
+  "Name": "nox_niveau_3",
+  "CardType": 0,
+  "CostAP": 9,
+  "Life": 7,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 4,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Nox",
+    "DescBR": "Enquanto Nox estiver no jogo,\r\nsuas invocações custarão 4 <b>PA</b>.",
+    "NameEN": "Nox",
+    "DescEN": "As long as Nox is in play,\r\nthe cost of your Minions is 4 <b>AP</b>.",
+    "NameES": "Nox",
+    "DescES": "Mientras Nox esté en juego,\r\nel coste de tus invocaciones es de 4 <b>PA</b>.",
+    "NameFR": "Nox",
+    "DescFR": "Tant que Nox est en jeu,\r\nle coût de vos invocations est de 4 <b>PA</b>.",
+    "NameRU": "Нокс",
+    "DescRU": "Пока Нокс находится в игре, все ваши заклинания стоят 4 <b>ОД</b>."
+  }
+}

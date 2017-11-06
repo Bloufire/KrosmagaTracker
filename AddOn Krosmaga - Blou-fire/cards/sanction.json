@@ -1,0 +1,31 @@
+{
+  "Id": 400,
+  "Name": "sanction",
+  "CardType": 1,
+  "CostAP": 10,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    5
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 6,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Sanção",
+    "DescBR": "Elimina as 10 últimas cartas enviadas para a sua lixeira a fim de reduzir a 1 os <b>PV</b> de um Dofus.",
+    "NameEN": "Sanction",
+    "DescEN": "Banishes the last 10 cards that went to your discard pile to make a Dofus's <b>HP</b> drop to 1.",
+    "NameES": "Sanción",
+    "DescES": "Elimina las 10 últimas cartas de tu descarte para reducir a 1 los <b>PdV</b> de un dofus.",
+    "NameFR": "Sanction",
+    "DescFR": "Bannit les 10 dernières cartes parties dans votre défausse pour faire chuter les <b>PV</b> d'un Dofus à 1.",
+    "NameRU": "Санкция",
+    "DescRU": "Уничтожает 10 последних карт в вашем сбросе и снижает <b>ОЗ</b> одного из дофусов до 1."
+  }
+}

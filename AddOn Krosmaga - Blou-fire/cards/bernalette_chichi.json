@@ -1,0 +1,31 @@
+{
+  "Id": 1608,
+  "Name": "bernalette_chichi",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 6,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    4
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 5,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Cebe Hamargo",
+    "DescBR": "<b>APARIÇÃO:</b>\nRecolhe todos os <b>Espólios</b> em jogo e ganha +1 <b>AT</b> por <b>espólio</b> recolhido.",
+    "NameEN": "Bernadetta Racci",
+    "DescEN": "<b>APPEARANCE:</b>\nPick up all the <b>Loot</b> in play and gain +1 <b>AT</b> per item of <b>Loot</b> picked up.",
+    "NameES": "Marta Palasola",
+    "DescES": "<b>APARICIÓN:</b>\nConsigue todos los <b>botines</b> en juego y gana +1 <b>AT</b> por <b>botín</b> conseguido.",
+    "NameFR": "Bernalette Chichi",
+    "DescFR": "<b>APPARITION :</b>\nRamasse tous les <b>Butins</b> en jeu et gagne +1 <b>AT</b> par <b>Butin</b> ramassé.",
+    "NameRU": "Берналетт Шиши",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nподбирает всю <b>добычу</b> в игре и получает +1 <b>AT</b> за каждую взятую <b>добычу</b>."
+  }
+}

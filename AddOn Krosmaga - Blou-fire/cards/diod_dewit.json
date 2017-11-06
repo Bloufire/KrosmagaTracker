@@ -1,0 +1,31 @@
+{
+  "Id": 248,
+  "Name": "diod_dewit",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 4,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 7,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Diodo Dioito",
+    "DescBR": "<b>APARIÇÃO:</b>\nColoca um <b>Sinistro</b>\r\nsobre um Dofus.",
+    "NameEN": "Ayt Diod",
+    "DescEN": "<b>APPEARANCE:</b>\nPuts a <b>Sinistro</b>\r\non a Dofus.",
+    "NameES": "Diodo Docho",
+    "DescES": "<b>APARICIÓN:</b>\nColocas un <b>siniestro</b>\r\nen un dofus.",
+    "NameFR": "Diod Dewit",
+    "DescFR": "<b>APPARITION :</b>\nPlacez un <b>Sinistro</b>\r\nsur un Dofus.",
+    "NameRU": "Диод Девит",
+    "DescRU": "<b>ПОЯВЛЕНИЕ</b>\nСтавит на дофус \r\n<b>часовище</b>."
+  }
+}

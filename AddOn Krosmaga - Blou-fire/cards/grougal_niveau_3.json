@@ -1,0 +1,31 @@
+{
+  "Id": 104,
+  "Name": "grougal_niveau_3",
+  "CardType": 0,
+  "CostAP": 9,
+  "Life": 6,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    55
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 25,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Grugaloragran",
+    "DescBR": "Enquanto ele está no jogo, seus Dofus ficam <b>invulneráveis</b>.",
+    "NameEN": "Grougaloragran",
+    "DescEN": "As long as it is in play, your Dofus are <b>invulnerable</b>.",
+    "NameES": "Grugaloragrán",
+    "DescES": "Mientras esté en juego, tus dofus son <b>invulnerables</b>.",
+    "NameFR": "Grougaloragran",
+    "DescFR": "Tant qu'il est en jeu, vos Dofus sont <b>invulnérables</b>.",
+    "NameRU": "Гругалорагран",
+    "DescRU": "Пока он в игре, ваши дофусы получают <b>неуязвимость</b>."
+  }
+}

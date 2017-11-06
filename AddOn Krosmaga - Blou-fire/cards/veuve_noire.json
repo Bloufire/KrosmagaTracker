@@ -1,0 +1,31 @@
+{
+  "Id": 64,
+  "Name": "veuve_noire",
+  "CardType": 0,
+  "CostAP": 8,
+  "Life": 5,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    12
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Viúva Negra",
+    "DescBR": "<b>APARIÇÃO:</b>\nAs demais invocações situadas no seu <b>lado do tabuleiro</b> voltam para a mão de seu proprietário.",
+    "NameEN": "Black Widow",
+    "DescEN": "<b>APPEARANCE:</b>\nReturns the other Minions on your <b>side</b> to their owner's hand.",
+    "NameES": "Viuda Negra",
+    "DescES": "<b>APARICIÓN:</b>\nSube las demás invocaciones situadas en tu <b>lado del tablero</b> a la mano de su propietario.",
+    "NameFR": "Veuve Noire",
+    "DescFR": "<b>APPARITION :</b>\nRemonte les autres invocations situées dans votre <b>camp</b> dans la main de leur propriétaire. ",
+    "NameRU": "Черная вдова",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nвозвращает в руку хозяина других существ, стоящих на вашей <b>половине поля</b>."
+  }
+}

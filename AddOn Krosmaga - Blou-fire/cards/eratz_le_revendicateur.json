@@ -1,0 +1,31 @@
+{
+  "Id": 439,
+  "Name": "eratz_le_revendicateur",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 1,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Eratz, o Reivindicador",
+    "DescBR": "<b>APARIÇÃO:</b>\nConfere <b>iniciativa</b> a uma invocação.",
+    "NameEN": "Eratz the Protester",
+    "DescEN": "<b>APPEARANCE:</b>\nGives a Minion <b>first strike</b>.",
+    "NameES": "Eratz, el Reivindicador",
+    "DescES": "<b>APARICIÓN:</b>\nDas <b>iniciativa</b> a una invocación.",
+    "NameFR": "Eratz le Revendicateur",
+    "DescFR": "<b>APPARITION :</b>\nDonnez <b>initiative</b> à une invocation.",
+    "NameRU": "Эрац Жалобщик",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nдает выбранному существу свойство <b>«первый удар»</b>."
+  }
+}

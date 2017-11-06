@@ -1,0 +1,31 @@
+{
+  "Id": 420,
+  "Name": "julith_jurgen_niveau_1",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    35
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 15,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Julith Jurgen",
+    "DescBR": "Inflige 1 dano às invocações adversárias que entram no jogo.",
+    "NameEN": "Julith Jurgen",
+    "DescEN": "Inflicts 1 damage on enemy Minions that enter into play.",
+    "NameES": "Julith Jurgen",
+    "DescES": "Inflige 1 de daño a las invocaciones enemigas que entren en juego.",
+    "NameFR": "Julith Jurgen",
+    "DescFR": "Inflige 1 dégât aux invocations adverses qui entrent en jeu.",
+    "NameRU": "Джулит Журген",
+    "DescRU": "Наносит 1 единицу урона существам противника, вступающим в игру."
+  }
+}

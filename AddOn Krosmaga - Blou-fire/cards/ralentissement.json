@@ -1,0 +1,31 @@
+{
+  "Id": 271,
+  "Name": "ralentissement",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 7,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Desaceleração",
+    "DescBR": "Aumenta em 2 <b>PA</b> o custo das cartas da mão atual do adversário durante 1 turno.",
+    "NameEN": "Slow Down",
+    "DescEN": "Increases the cost of the cards in the opponent's hand by 2 <b>AP</b> for 1 turn.",
+    "NameES": "Ralentización",
+    "DescES": "Las cartas de la mano de tu contrincante cuestan 2 <b>PA</b> más durante 1 turno.",
+    "NameFR": "Ralentissement",
+    "DescFR": "Augmente de 2 <b>PA</b> le coût des cartes de la main adverse courante pendant 1 tour. ",
+    "NameRU": "Замедление",
+    "DescRU": "Увеличивает на 2 <b>ОД</b> стоимость карт в руке противника на 1 ход."
+  }
+}

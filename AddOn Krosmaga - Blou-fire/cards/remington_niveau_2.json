@@ -1,0 +1,31 @@
+{
+  "Id": 396,
+  "Name": "remington_niveau_2",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 2,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    46
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 14,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Remington Smif",
+    "DescBR": "<b>ALCANCE:</b> 1-3\n<b>MORTE:</b> Coloca 2 Bombas ao redor dele.",
+    "NameEN": "Remington Smisse",
+    "DescEN": "<b>RANGE:</b> 1-3\n<b>DEATH:</b> Places 2 Bombs on adjacent cells.",
+    "NameES": "Remington Smis",
+    "DescES": "<b>ALCANCE:</b> 1-3\n<b>MUERTE:</b> Coloca 2 bombas a su alrededor.",
+    "NameFR": "Remington Smisse",
+    "DescFR": "<b>PORTÉE :</b> 1-3\n<b>MORT :</b> Dépose 2 Bombes autour de lui.",
+    "NameRU": "Ремингтон Смисс",
+    "DescRU": "<b>ДАЛЬНОСТЬ АТАКИ:</b> 1-3\n<b>СМЕРТЬ:</b> оставляет на соседних клетках 2 бомбы."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 142,
+  "Name": "lou_niveau_3",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 2,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    44
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 26,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Lou",
+    "DescBR": "<b>APARIÇÃO:</b>\nFaz com que todos os prismas reapareçam.",
+    "NameEN": "Lou",
+    "DescEN": "<b>APPEARANCE:</b>\nMakes the prisms reappear.",
+    "NameES": "Lu",
+    "DescES": "<b>APARICIÓN:</b>\nHace que aparezcan de nuevo todos los prismas.",
+    "NameFR": "Lou",
+    "DescFR": "<b>APPARITION :</b>\nFait à nouveau apparaitre tous les prismes.",
+    "NameRU": "Лу",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nвсе призмы появляются вновь."
+  }
+}

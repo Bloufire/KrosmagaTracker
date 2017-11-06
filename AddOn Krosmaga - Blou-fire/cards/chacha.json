@@ -1,0 +1,33 @@
+{
+  "Id": 6,
+  "Name": "chacha",
+  "CardType": 1,
+  "CostAP": 8,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 4,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    151
+  ],
+  "Texts": {
+    "NameBR": "Miaw",
+    "DescBR": "Transforma uma invocação em Miaw Negro aliado.",
+    "NameEN": "Bow Meow",
+    "DescEN": "Transforms a Minion into an allied Black Bow Meow.",
+    "NameES": "Miaumiau",
+    "DescES": "Transforma una invocación en miaumiau negro aliado.",
+    "NameFR": "Chacha",
+    "DescFR": "Transforme une invocation en Chacha Noir allié.",
+    "NameRU": "Котокот",
+    "DescRU": "Превращает выбранное существо в союзного черного котокота."
+  }
+}

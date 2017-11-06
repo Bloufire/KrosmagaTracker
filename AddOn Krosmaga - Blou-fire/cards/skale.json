@@ -1,0 +1,31 @@
+{
+  "Id": 72,
+  "Name": "skale",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 5,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    60
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Skalo",
+    "DescBR": "Ganha +3 <b>PM</b> desde que\r\nvocê tenha outro Justiceiro no jogo.",
+    "NameEN": "Skale",
+    "DescEN": "Gains +3 <b>MP</b> as long\r\nas you have another Vigilante in play.",
+    "NameES": "Skalo",
+    "DescES": "Gana +3 <b>PM</b> mientras tengas otro justiciero en juego.",
+    "NameFR": "Skale",
+    "DescFR": "Gagne +3 <b>PM</b> tant\r\nque vous avez un autre Justicier en jeu.",
+    "NameRU": "Чешуй",
+    "DescRU": "Получает +3 <b>ОП</b>, пока\r\nу вас есть еще один мститель в игре."
+  }
+}

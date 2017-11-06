@@ -1,0 +1,31 @@
+{
+  "Id": 222,
+  "Name": "tremblement_de_terre",
+  "CardType": 1,
+  "CostAP": 7,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 10,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Tremor de Terra",
+    "DescBR": "Inflige 4 danos\r\na uma invocação e também\r\nàs que estão ao redor.",
+    "NameEN": "Earthquake",
+    "DescEN": "Inflicts 4 damage\r\non a Minion as well as\r\non those on surrounding cells.",
+    "NameES": "Terremoto",
+    "DescES": "Inflige 4 de daño\r\n a una invocación y\r\na las que estén a su alrededor.",
+    "NameFR": "Tremblement de Terre",
+    "DescFR": "Inflige 4 dégâts\r\nà une invocation ainsi\r\nqu'à celles autour.",
+    "NameRU": "Землетрясение",
+    "DescRU": "Наносит 4 ед. урона\r\n выбранному существу и тем, кто находится вокруг него."
+  }
+}

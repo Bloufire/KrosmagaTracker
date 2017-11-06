@@ -1,0 +1,31 @@
+{
+  "Id": 784,
+  "Name": "belgodass",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 3,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    4
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 5,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Botiniss",
+    "DescBR": "<b>CONTRAGOLPE:</b>\nReduz ao <b>silêncio</b> a invocação que lhe\r\ninfligir danos.",
+    "NameEN": "Belgodass",
+    "DescEN": "<b>COUNTERATTACK:</b>\n<b>Silences</b> the Minion that\r\ninflicted damage on it.",
+    "NameES": "Kezapas",
+    "DescES": "<b>VENGANZA:</b>\nInflige <b>silencio</b> a la invocación que le\r\ncause daños.",
+    "NameFR": "Belgodass",
+    "DescFR": "<b>CONTRE COUP :</b>\nRéduit au <b>silence</b> l'invocation qui lui\r\ninflige des dégâts.",
+    "NameRU": "Суперчуни",
+    "DescRU": "<b>КОНТРАТАКА:</b> налагает <b>немоту</b> на существо, которое наносит ему урон."
+  }
+}

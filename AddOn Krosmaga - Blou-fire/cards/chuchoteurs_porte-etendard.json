@@ -1,0 +1,31 @@
+{
+  "Id": 324,
+  "Name": "chuchoteurs_porte-etendard",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 2,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    31
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Sussurradores Porta-Estandarte",
+    "DescBR": "<b>CHEFE:</b>\nSuas outras invocações ganham +1 <b>AT</b>.",
+    "NameEN": "Standard-Bearing Whisperers",
+    "DescEN": "<b>LEADER:</b>\n+1 <b>AT</b> to your other Minions.",
+    "NameES": "Susurradores abanderados",
+    "DescES": "<b>LÍDER:</b>\nDa +1 <b>AT</b> a tus demás invocaciones.",
+    "NameFR": "Chuchoteurs Porte-Etendard",
+    "DescFR": "<b>CHEF :</b>\n+1 <b>AT</b> à vos autres invocations.",
+    "NameRU": "Шептуны-знаменосцы",
+    "DescRU": "<b>ВОЖАК</b>\nДает другим вашим существам +1 <b>AT</b>."
+  }
+}

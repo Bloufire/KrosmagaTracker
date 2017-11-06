@@ -1,0 +1,31 @@
+{
+  "Id": 551,
+  "Name": "do",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 7,
+  "Attack": 7,
+  "MovementPoint": 3,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 1,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Do",
+    "DescBR": "",
+    "NameEN": "Do",
+    "DescEN": "",
+    "NameES": "Do",
+    "DescES": "",
+    "NameFR": "Do",
+    "DescFR": "",
+    "NameRU": "До",
+    "DescRU": ""
+  }
+}

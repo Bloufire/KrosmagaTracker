@@ -1,0 +1,31 @@
+{
+  "Id": 1077,
+  "Name": "pesanteur",
+  "CardType": 1,
+  "CostAP": 1,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 7,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Gravidade",
+    "DescBR": "Reduz a 1 os <b>PM</b>\r\nde uma invocação.",
+    "NameEN": "Gravity",
+    "DescEN": "Sets a Minion's\r\n<b>MP</b> at 1.",
+    "NameES": "Pesado",
+    "DescES": "Reduce a 1 los <b>PM</b>\r\nde una invocación.",
+    "NameFR": "Pesanteur",
+    "DescFR": "Passe à 1 les <b>PM</b>\r\nd'une invocaiton.",
+    "NameRU": "Сила тяжести",
+    "DescRU": "Показатель <b>ОП</b> выбранного существа\r\nстановится равным 1."
+  }
+}

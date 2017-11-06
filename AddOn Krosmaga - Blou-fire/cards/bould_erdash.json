@@ -1,0 +1,31 @@
+{
+  "Id": 470,
+  "Name": "bould_erdash",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 7,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 8,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Doulder Bash",
+    "DescBR": "<b>GUARDA-COSTAS</b>",
+    "NameEN": "Bould Erdash",
+    "DescEN": "<b>BODYGUARD</b>",
+    "NameES": "Doulder Bash",
+    "DescES": "<b>GUARDAESPALDAS</b>",
+    "NameFR": "Bould Erdash",
+    "DescFR": "<b>GARDE DU CORPS</b>",
+    "NameRU": "Галли Матья",
+    "DescRU": "<b>ТЕЛОХРАНИТЕЛЬ</b>"
+  }
+}

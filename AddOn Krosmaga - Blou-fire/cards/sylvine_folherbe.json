@@ -1,0 +1,35 @@
+{
+  "Id": 309,
+  "Name": "sylvine_folherbe",
+  "CardType": 0,
+  "CostAP": 8,
+  "Life": 7,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 10,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    22,
+    71,
+    152
+  ],
+  "Texts": {
+    "NameBR": "Sylvina Ervaloca",
+    "DescBR": "<b>APARIÇÃO:</b>\nAdiciona à sua mão 1 Boneca Louca, 1 <b>Saco de Sementes</b> e 1 <b>Arbusto</b>.",
+    "NameEN": "Sylvine Graswyld",
+    "DescEN": "<b>APPEARANCE:</b>\nAdd 1 Madoll, 1 <b>Bag of Seeds</b>, and 1 <b>Bush</b> to your hand.",
+    "NameES": "Sylvina Hierbaloca",
+    "DescES": "<b>APARICIÓN:</b>\nAñade 1 muñeca loca, 1 <b>bolsa de semillas</b> y 1 <b>arbusto</b> a tu mano.",
+    "NameFR": "Sylvine Folherbe",
+    "DescFR": "<b>APPARITION :</b>\nAjoute à votre main 1 Poupée Folle, 1 <b>Sac de Graine</b> et 1 <b>Buisson</b>.",
+    "NameRU": "Сильвин Трын-Трава",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nдает вам в руку 1 буйнокуклу, 1 <b>мешочек семян</b> и 1 <b>куст</b>."
+  }
+}

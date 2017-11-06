@@ -1,0 +1,31 @@
+{
+  "Id": 429,
+  "Name": "moogrron",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 2,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    39
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Mugrron",
+    "DescBR": "<b>APARIÇÃO:</b>\n<b>Dá uma investida</b> ao longo de 2 células.",
+    "NameEN": "Moogrroon",
+    "DescEN": "<b>APPEARANCE:</b>\n<b>Charge</b> 2 cells.",
+    "NameES": "Muuugritón",
+    "DescES": "<b>APARICIÓN:</b>\n<b>Carga</b> 2 casillas.",
+    "NameFR": "Moogrron",
+    "DescFR": "<b>APPARITION :</b>\n<b>Charge</b> de 2 cases.",
+    "NameRU": "Муйволенок",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nделает <b>рывок</b> на 2 клетки."
+  }
+}

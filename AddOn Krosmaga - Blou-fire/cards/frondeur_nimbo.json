@@ -1,0 +1,32 @@
+{
+  "Id": 892,
+  "Name": "frondeur_nimbo",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 4,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    74,
+    14
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Lindanão Estilingueiro",
+    "DescBR": "<b>ALCANCE: </b>1-2\n<b>APARIÇÃO:</b> Inflige <b>silêncio</b> às outras invocações que estiverem na mesma fileira.",
+    "NameEN": "Midgin Slinger",
+    "DescEN": "<b>RANGE: </b>1-2\n<b>APPEARANCE:</b> <b>Silences</b> the other Minions on its row.",
+    "NameES": "Tirador taponano",
+    "DescES": "<b>ALCANCE: </b>1-2\n<b>APARICIÓN:</b> Inflige <b>silencio</b> a las demás invocaciones de su hilera.",
+    "NameFR": "Frondeur Nimbos",
+    "DescFR": "<b>PORTÉE : </b>1-2\n<b>APPARITION :</b> Réduit au <b>silence</b> les autres invocations de sa ligne.",
+    "NameRU": "Воинственный гномище",
+    "DescRU": "<b>ДАЛЬНОСТЬ АТАКИ: </b>1-2\n<b>ПОЯВЛЕНИЕ:</b> налагает <b>немоту</b> на других существ на своей линии."
+  }
+}

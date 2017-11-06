@@ -1,0 +1,31 @@
+{
+  "Id": 94,
+  "Name": "initiative",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 1,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Iniciativa",
+    "DescBR": "Confere <b>iniciativa</b>\r\na uma invocação.",
+    "NameEN": "First Strike",
+    "DescEN": "Confers <b>first strike</b>\r\non a Minion.",
+    "NameES": "Iniciativa",
+    "DescES": "Otorga <b>iniciativa</b>\r\na una invocación.",
+    "NameFR": "Initiative",
+    "DescFR": "Confère <b>initiative</b>\r\nà une invocation.",
+    "NameRU": "Первый удар",
+    "DescRU": "Дает выбранному существу свойство <b>«первый удар»</b>."
+  }
+}

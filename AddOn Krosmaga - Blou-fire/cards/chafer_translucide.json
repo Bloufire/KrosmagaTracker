@@ -1,0 +1,31 @@
+{
+  "Id": 360,
+  "Name": "chafer_translucide",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 6,
+  "Attack": 4,
+  "MovementPoint": 2,
+  "Families": [
+    28
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Chafer Translúcido",
+    "DescBR": "<b>MONTE DE OSSOS</b>\n<b>NÃO VISÁVEL</b>",
+    "NameEN": "Translucent Chafer",
+    "DescEN": "<b>PILE OF BONES</b>\n<b>UNTARGETABLE</b>",
+    "NameES": "Chafer translúcido",
+    "DescES": "<b>MONTÓN DE HUESOS</b>\n<b>ESCURRIDIZO</b>",
+    "NameFR": "Chafer Translucide",
+    "DescFR": "<b>TAS D'OS</b>\n<b>INCIBLABLE</b>",
+    "NameRU": "Прозрачный чафер",
+    "DescRU": "<b>КУЧА КОСТЕЙ</b>\n<b>НЕВЫЦЕЛИВАЕМЫЙ</b>"
+  }
+}

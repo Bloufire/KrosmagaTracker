@@ -1,0 +1,35 @@
+{
+  "Id": 223,
+  "Name": "purpuce",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 1,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    67
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 24,
+    "ParentCard": 239,
+    "ParentLevel": 8
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Purpulga",
+    "DescBR": "<b>APARIÇÃO:</b>\n<b>Dá uma investida</b> até o Dofus adversário e depois morre.",
+    "NameEN": "Ferflee",
+    "DescEN": "<b>APPEARANCE:</b>\n<b> Charges</b> to the opponent's Dofus, then dies.",
+    "NameES": "Purpulguita",
+    "DescES": "<b>APARICIÓN:</b>\n<b>Carga</b> hasta el dofus enemigo y luego muere.",
+    "NameFR": "Purpuce",
+    "DescFR": "<b>APPARITION :</b>\n<b>Charge</b> jusqu'au Dofus adverse puis meurt.",
+    "NameRU": "Чистоблошик",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nделает <b>рывок</b> до дофуса противника, а затем умирает."
+  }
+}

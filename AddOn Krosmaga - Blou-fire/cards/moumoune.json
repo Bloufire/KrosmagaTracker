@@ -1,0 +1,33 @@
+{
+  "Id": 640,
+  "Name": "moumoune",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 3,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    4
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 5,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    1199
+  ],
+  "Texts": {
+    "NameBR": "Vovura",
+    "DescBR": "<b>CONTRAGOLPE:</b>\nTransforma-se em Perforzerker 7/7.",
+    "NameEN": "Moumoune",
+    "DescEN": "<b>COUNTERATTACK:</b>\nTransforms into a 7/7 Drhellzerker.",
+    "NameES": "Minina",
+    "DescES": "<b>VENGANZA:</b>\nSe transforma en perfórserker 7/7.",
+    "NameFR": "Moumoune",
+    "DescFR": "<b>CONTRE COUP :</b>\nSe transforme en Phorzerker 7/7.",
+    "NameRU": "Мумун",
+    "DescRU": "<b>КОНТРАТАКА:</b>\nпревращается в хоррсерка 7/7."
+  }
+}

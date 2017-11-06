@@ -1,0 +1,31 @@
+{
+  "Id": 936,
+  "Name": "gargoule",
+  "CardType": 0,
+  "CostAP": 12,
+  "Life": 8,
+  "Attack": 7,
+  "MovementPoint": 2,
+  "Families": [
+    82
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Carniçauro",
+    "DescBR": "<b>HORDA</b>\n<b>APARIÇÃO:</b>\nInflige danos equivalentes ao seu custo em <b>PA</b> às invocações da fileira.",
+    "NameEN": "Garghoul",
+    "DescEN": "<b>HORDE</b>\n<b>APPEARANCE:</b>\nInflicts as much damage as its <b>AP</b> cost on other Minions on its row.",
+    "NameES": "Gárghula",
+    "DescES": "<b>HORDA</b>\n<b>APARICIÓN:</b>\nInflige tantos daños como su coste en <b>PA</b> a las demás invocaciones de su hilera.",
+    "NameFR": "Gargoule",
+    "DescFR": "<b>HORDE</b>\n<b>APPARITION :</b>\nInflige autant de dégâts que son coût en <b>PA</b> aux autres invocations de sa ligne.",
+    "NameRU": "Гаргуль",
+    "DescRU": "<b>ОРДА</b>\n<b>ПОЯВЛЕНИЕ:</b>\nнаносит другим существам на своей линии урон, равный его стоимости в <b>ОД</b>."
+  }
+}

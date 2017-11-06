@@ -1,0 +1,31 @@
+{
+  "Id": 145,
+  "Name": "piou_rouge",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 2,
+  "Attack": 3,
+  "MovementPoint": 4,
+  "Families": [
+    24
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Piu Vermelho",
+    "DescBR": "<b>APARIÇÃO:</b>\nDê +1 <b>AT</b> a uma invocação.",
+    "NameEN": "Red Piwi",
+    "DescEN": "<b>APPEARANCE:</b>\nGives +1 <b>AT</b> to a Minion.",
+    "NameES": "Pío rojo",
+    "DescES": "<b>APARICIÓN:</b>\nDas +1 <b>AT</b> a una invocación.",
+    "NameFR": "Piou Rouge",
+    "DescFR": "<b>APPARITION :</b>\nDonnez +1 <b>AT</b> à une invocation.",
+    "NameRU": "Красная пиви",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nдает выбранному существу +1 <b>AT</b>."
+  }
+}

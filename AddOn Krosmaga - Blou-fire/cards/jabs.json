@@ -1,0 +1,31 @@
+{
+  "Id": 353,
+  "Name": "jabs",
+  "CardType": 1,
+  "CostAP": 1,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 1,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Jabs",
+    "DescBR": "Confere +2 <b>AT</b>\r\n a uma invocação.",
+    "NameEN": "Jabs",
+    "DescEN": "Confers +2 <b>AT</b>\r\non a Minion.",
+    "NameES": "Jabs",
+    "DescES": "Da +2 <b>AT</b>\r\na una invocación.",
+    "NameFR": "Jabs",
+    "DescFR": "Confère +2 <b>AT</b>\r\nà une invocation.",
+    "NameRU": "Бумс",
+    "DescRU": "Дает выбранному существу +2 <b>AT</b>."
+  }
+}

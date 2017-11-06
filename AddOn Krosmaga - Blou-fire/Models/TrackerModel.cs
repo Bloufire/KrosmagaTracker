@@ -10,304 +10,304 @@ using JsonCardsParser;
 
 namespace AddOn_Krosmaga___Blou_fire.Models
 {
-	/// <summary>
-	/// Model contenant toutes les informations que le tracker/lecture en base peuvent remonter. Et qui seront utilisable pour les vues.
-	/// </summary>
-	public class TrackerModel : ObservableObject
-	{
-		public TrackerModel()
-		{
-			
-		}
+    /// <summary>
+    /// Model contenant toutes les informations que le tracker/lecture en base peuvent remonter. Et qui seront utilisable pour les vues.
+    /// </summary>
+    public class TrackerModel : ObservableObject
+    {
+        public TrackerModel()
+        {
 
-		#region Own Profile Data
+        }
 
-		#region OwnPseudo
+        #region Own Profile Data
 
-		private string _ownPseudo;
+        #region OwnPseudo
 
-		public string OwnPseudo
-		{
-			get => _ownPseudo;
+        private string _ownPseudo;
 
-			set
-			{
-				if (_ownPseudo == value) _ownPseudo = "default first";
-				_ownPseudo = value;
-				OnPropertyChanged("OwnPseudo");
-			}
-		}
+        public string OwnPseudo
+        {
+            get => _ownPseudo;
 
-		#endregion
+            set
+            {
+                if (_ownPseudo == value) _ownPseudo = "default first";
+                _ownPseudo = value;
+                OnPropertyChanged("OwnPseudo");
+            }
+        }
 
-		#region OwnWinsNb
+        #endregion
 
-		private int _ownWinsNb;
+        #region OwnWinsNb
 
-		public int OwnWinsNb
-		{
-			get => _ownWinsNb;
+        private int _ownWinsNb;
 
-			set
-			{
-				if (_ownWinsNb == null)
-				{
-					_ownWinsNb = -1;
-				}
+        public int OwnWinsNb
+        {
+            get => _ownWinsNb;
 
-				_ownWinsNb = value;
-				OnPropertyChanged("OwnWinsNb");
-			}
-		}
+            set
+            {
+                if (_ownWinsNb == 0)
+                {
+                    _ownWinsNb = -1;
+                }
 
-		#endregion
+                _ownWinsNb = value;
+                OnPropertyChanged("OwnWinsNb");
+            }
+        }
 
-		#region OwnLosesNb
+        #endregion
 
-		private int _ownLosesNb;
+        #region OwnLosesNb
 
-		public int OwnLosesNb
-		{
-			get => _ownLosesNb;
+        private int _ownLosesNb;
 
-			set
-			{
-				if (_ownLosesNb == null)
-				{
-					_ownLosesNb = -1;
-				}
+        public int OwnLosesNb
+        {
+            get => _ownLosesNb;
 
-				_ownLosesNb = value;
-				OnPropertyChanged("OwnLosesNb");
-			}
-		}
+            set
+            {
+                if (_ownLosesNb == 0)
+                {
+                    _ownLosesNb = -1;
+                }
 
-		#endregion
+                _ownLosesNb = value;
+                OnPropertyChanged("OwnLosesNb");
+            }
+        }
 
-		#region OwnLevel
+        #endregion
 
-		private int _ownLevel;
+        #region OwnLevel
 
-		public int OwnLevel
-		{
-			get { return _ownLevel; }
-			set
-			{
-				_ownLevel = value;
-				OnPropertyChanged("OwnLevel");
-			}
-		}
+        private int _ownLevel;
 
-		#endregion
+        public int OwnLevel
+        {
+            get { return _ownLevel; }
+            set
+            {
+                _ownLevel = value;
+                OnPropertyChanged("OwnLevel");
+            }
+        }
 
-		#region OwnClasse
+        #endregion
 
-		private string _ownClasse;
+        #region OwnClasse
 
-		public string OwnClasse
-		{
-			get { return _ownClasse; }
-			set
-			{
-				_ownClasse = value;
-				OnPropertyChanged("OwnClasse");
-			}
-		}
+        private string _ownClasse;
 
-		#endregion
+        public string OwnClasse
+        {
+            get { return _ownClasse; }
+            set
+            {
+                _ownClasse = value;
+                OnPropertyChanged("OwnClasse");
+            }
+        }
 
-		#endregion
+        #endregion
 
-		#region Vs Profile Data
+        #endregion
 
-		#region VsPseudo
+        #region Vs Profile Data
 
-		private string _vsPseudo;
+        #region VsPseudo
 
-		public string VsPseudo
-		{
-			get { return _vsPseudo; }
-			set
-			{
-				_vsPseudo = value;
-				OnPropertyChanged("VsPseudo");
-			}
-		}
+        private string _vsPseudo;
 
-		#endregion
+        public string VsPseudo
+        {
+            get { return _vsPseudo; }
+            set
+            {
+                _vsPseudo = value;
+                OnPropertyChanged("VsPseudo");
+            }
+        }
 
+        #endregion
 
-		#region VsWinsNb
 
-		private int _vsWinsNb;
+        #region VsWinsNb
 
-		public int VsWinsNb
-		{
-			get { return _vsWinsNb; }
-			set
-			{
-				_vsWinsNb = value;
-				OnPropertyChanged("VsWinsNb");
-			}
-		}
+        private int _vsWinsNb;
 
-		#endregion
-
-		#region VsLosesNb
+        public int VsWinsNb
+        {
+            get { return _vsWinsNb; }
+            set
+            {
+                _vsWinsNb = value;
+                OnPropertyChanged("VsWinsNb");
+            }
+        }
 
-		private int _vsLosesNb;
+        #endregion
+
+        #region VsLosesNb
 
-		public int VsLosesNb
-		{
-			get { return _vsLosesNb; }
-			set
-			{
-				_vsLosesNb = value;
-				OnPropertyChanged("VsLosesNb");
-			}
-		}
+        private int _vsLosesNb;
 
-		#endregion
+        public int VsLosesNb
+        {
+            get { return _vsLosesNb; }
+            set
+            {
+                _vsLosesNb = value;
+                OnPropertyChanged("VsLosesNb");
+            }
+        }
 
-		#region OpponentLevel
+        #endregion
 
-		private int _opponentLevel;
+        #region OpponentLevel
 
-		public int OpponentLevel
-		{
-			get { return _opponentLevel; }
-			set
-			{
-				_opponentLevel = value;
-				OnPropertyChanged("OpponentLevel");
-			}
-		}
+        private int _opponentLevel;
 
-		#endregion
+        public int OpponentLevel
+        {
+            get { return _opponentLevel; }
+            set
+            {
+                _opponentLevel = value;
+                OnPropertyChanged("OpponentLevel");
+            }
+        }
 
-		#region OpponentClasse
+        #endregion
 
-		private string _opponentClasse;
+        #region OpponentClasse
 
-		public string OpponentClasse
-		{
-			get { return _opponentClasse; }
-			set
-			{
-				_opponentClasse = value;
-				OnPropertyChanged("OpponentClasse");
-			}
-		}
+        private string _opponentClasse;
 
-		#endregion
+        public string OpponentClasse
+        {
+            get { return _opponentClasse; }
+            set
+            {
+                _opponentClasse = value;
+                OnPropertyChanged("OpponentClasse");
+            }
+        }
 
-		#endregion
+        #endregion
 
+        #endregion
 
-		#region HistoMatches
 
-		private List<Match> _filteredGames;
+        #region HistoMatches
 
+        private List<Match> _filteredGames;
 
-		public List<Match> FilteredGames
-		{
-			get
-			{
-				if (_filteredGames != null) return _filteredGames;
-				return new List<Match>();
-			}
-			set
-			{
-				_filteredGames = value;
-				OnPropertyChanged("FilteredGames");
-			}
-		}
 
-		private GameType _gameType;
+        public List<Match> FilteredGames
+        {
+            get
+            {
+                if (_filteredGames != null) return _filteredGames;
+                return new List<Match>();
+            }
+            set
+            {
+                _filteredGames = value;
+                OnPropertyChanged("FilteredGames");
+            }
+        }
 
-		public GameType GameType
-		{
-			get { return _gameType; }
-			set
-			{
-				_gameType = value;
-				OnPropertyChanged("GameType");
-			}
-		}
+        private GameType _gameType;
 
+        public GameType GameType
+        {
+            get { return _gameType; }
+            set
+            {
+                _gameType = value;
+                OnPropertyChanged("GameType");
+            }
+        }
 
-		private int _myIndex;
 
-		/// <summary>
-		/// MyIndex c'est un chiffre qui indique quel joueur tu es
-		/// Joueur 0 : commence en premier
-		///	Joueur 1 : commence en 2
-		/// </summary>
-		public int MyIndex
-		{
-			get { return _myIndex; }
-			set
-			{
-				_myIndex = value;
-				OnPropertyChanged("MyIndex");
-			}
-		}
+        private int _myIndex;
 
-		#endregion
+        /// <summary>
+        /// MyIndex c'est un chiffre qui indique quel joueur tu es
+        /// Joueur 0 : commence en premier
+        ///	Joueur 1 : commence en 2
+        /// </summary>
+        public int MyIndex
+        {
+            get { return _myIndex; }
+            set
+            {
+                _myIndex = value;
+                OnPropertyChanged("MyIndex");
+            }
+        }
 
-		#region CardsInHands
+        #endregion
 
-		private Queue<int> _actualFleauxIds;
+        #region CardsInHands
 
-		private int _ownCardsInHand;
-		private int _opponentCardsInHand;
-		private int _currentTurn;
-		private int _nbFleau;
-		private List<DeckUI> _deck;
+        private Queue<int> _actualFleauxIds;
 
-		private List<Card> _opponentPlayedCards;
-		private List<DeckUI> _cardAlreadyPlayed;
-		private List<DeckUI> _cardsInHand;
-		private List<DeckUI> _deckInfinites;
-		private List<DeckUI> _deckKrosmiques;
+        private int _ownCardsInHand;
+        private int _opponentCardsInHand;
+        private int _currentTurn;
+        private int _nbFleau;
+        private List<DeckUI> _deck;
+
+        private List<Card> _opponentPlayedCards;
+        private List<DeckUI> _cardAlreadyPlayed;
+        private List<DeckUI> _cardsInHand;
+        private List<DeckUI> _deckInfinites;
+        private List<DeckUI> _deckKrosmiques;
 
         private List<KeyValuePair<int, int>> _cardIdsByTurn;
 
 
         public Queue<int> ActualFleauxIds
-		{
-			get
+        {
+            get
             {
                 if (_actualFleauxIds != null) return _actualFleauxIds;
                 _actualFleauxIds = new Queue<int>();
                 return _actualFleauxIds;
             }
 
-			set
-			{
-				_actualFleauxIds = value;
-				OnPropertyChanged("ActualFleauxIds");
-			}
-		}
-		public int OwnCardsInHand
-		{
-			get { return _ownCardsInHand; }
-			set
-			{
-				_ownCardsInHand = value;
-				OnPropertyChanged("OwnCardsInHand");
-			}
-		}
+            set
+            {
+                _actualFleauxIds = value;
+                OnPropertyChanged("ActualFleauxIds");
+            }
+        }
+        public int OwnCardsInHand
+        {
+            get { return _ownCardsInHand; }
+            set
+            {
+                _ownCardsInHand = value;
+                OnPropertyChanged("OwnCardsInHand");
+            }
+        }
 
-		public int OpponentCardsInHand
-		{
-			get { return _opponentCardsInHand; }
-			set
-			{
-				_opponentCardsInHand = value;
-				OnPropertyChanged("OpponentCardsInHand");
-			}
-		}
+        public int OpponentCardsInHand
+        {
+            get { return _opponentCardsInHand; }
+            set
+            {
+                _opponentCardsInHand = value;
+                OnPropertyChanged("OpponentCardsInHand");
+            }
+        }
 
         public List<KeyValuePair<int, int>> CardIdsByTurn
         {
@@ -325,137 +325,137 @@ namespace AddOn_Krosmaga___Blou_fire.Models
             }
         }
 
-		public int CurrentTurn
-		{
-			get { return _currentTurn; }
-			set
-			{
-				_currentTurn = value;
-				OnPropertyChanged("CurrentTurn");
-			}
-		}
-		public int NbFleau
-		{
-			get { return _nbFleau; }
-			set
-			{
-				_nbFleau = value;
-				OnPropertyChanged("NbFleau");
-			}
-		}
-		public List<JsonCardsParser.Card> OpponentPlayedCards
-		{
-			get
-			{
-				if (_opponentPlayedCards != null) return _opponentPlayedCards;
-				_opponentPlayedCards = new List<Card>();
-				return _opponentPlayedCards;
-			}
+        public int CurrentTurn
+        {
+            get { return _currentTurn; }
+            set
+            {
+                _currentTurn = value;
+                OnPropertyChanged("CurrentTurn");
+            }
+        }
+        public int NbFleau
+        {
+            get { return _nbFleau; }
+            set
+            {
+                _nbFleau = value;
+                OnPropertyChanged("NbFleau");
+            }
+        }
+        public List<JsonCardsParser.Card> OpponentPlayedCards
+        {
+            get
+            {
+                if (_opponentPlayedCards != null) return _opponentPlayedCards;
+                _opponentPlayedCards = new List<Card>();
+                return _opponentPlayedCards;
+            }
 
-			set
-			{
-				_opponentPlayedCards = value;
-				OnPropertyChanged("OpponentPlayedCards");
-			}
-		}
+            set
+            {
+                _opponentPlayedCards = value;
+                OnPropertyChanged("OpponentPlayedCards");
+            }
+        }
 
-		public List<DeckUI> CardAlreadyPlayed
-		{
-			get
-			{
-				if (_cardAlreadyPlayed != null) return _cardAlreadyPlayed;
-				_cardAlreadyPlayed = new List<DeckUI>();
-				return _cardAlreadyPlayed;
-			}
-			set
-			{
-				_cardAlreadyPlayed = value;
-				OnPropertyChanged("CardAlreadyPlayed");
+        public List<DeckUI> CardAlreadyPlayed
+        {
+            get
+            {
+                if (_cardAlreadyPlayed != null) return _cardAlreadyPlayed;
+                _cardAlreadyPlayed = new List<DeckUI>();
+                return _cardAlreadyPlayed;
+            }
+            set
+            {
+                _cardAlreadyPlayed = value;
+                OnPropertyChanged("CardAlreadyPlayed");
 
-			}
-		}
+            }
+        }
 
-		public List<DeckUI> Deck
-		{
-			get
-			{
-				if (_deck != null) return _deck;
-				_deck = new List<DeckUI>();
-				return _deck;
-			}
-			set
-			{
-				_deck = value;
-				OnPropertyChanged("Deck");
-			}
-		}
+        public List<DeckUI> Deck
+        {
+            get
+            {
+                if (_deck != null) return _deck;
+                _deck = new List<DeckUI>();
+                return _deck;
+            }
+            set
+            {
+                _deck = value;
+                OnPropertyChanged("Deck");
+            }
+        }
 
 
-		public List<DeckUI> CardsInHand
-		{
-			get
-			{
-				if (_cardsInHand != null) return _cardsInHand;
-				_cardsInHand = new List<DeckUI>();
-				return _cardsInHand;
-			}
-			set
-			{
-				_cardsInHand = value;
-				OnPropertyChanged("CardsInHand");
-			}
-		}
+        public List<DeckUI> CardsInHand
+        {
+            get
+            {
+                if (_cardsInHand != null) return _cardsInHand;
+                _cardsInHand = new List<DeckUI>();
+                return _cardsInHand;
+            }
+            set
+            {
+                _cardsInHand = value;
+                OnPropertyChanged("CardsInHand");
+            }
+        }
 
-		public List<DeckUI> DeckInfinites
-		{
-			get
-			{
-				if (_deckInfinites != null) return _deck.Where(x => x.Card.Rarity == 4).ToList();
+        public List<DeckUI> DeckInfinites
+        {
+            get
+            {
+                if (_deckInfinites != null) return _deck.Where(x => x.Card.Rarity == 4).ToList();
                 _deckInfinites = new List<DeckUI>();
-				return _deckInfinites;
-			}
-			set
-			{
-				_deckInfinites = value;
-				OnPropertyChanged("DeckInfinites");
-			}
-		}
+                return _deckInfinites;
+            }
+            set
+            {
+                _deckInfinites = value;
+                OnPropertyChanged("DeckInfinites");
+            }
+        }
 
-		public List<DeckUI> DeckKrosmiques
-		{
-			get
-			{
-				if (_deckKrosmiques != null) return _deck.Where(x => x.Card.Rarity == 3).ToList();
+        public List<DeckUI> DeckKrosmiques
+        {
+            get
+            {
+                if (_deckKrosmiques != null) return _deck.Where(x => x.Card.Rarity == 3).ToList();
                 _deckKrosmiques = new List<DeckUI>();
-				return _deckKrosmiques;
-			}
-			set
-			{
-				_deckKrosmiques = value;
-				OnPropertyChanged("DeckKrosmiques");
-			}
-		}
+                return _deckKrosmiques;
+            }
+            set
+            {
+                _deckKrosmiques = value;
+                OnPropertyChanged("DeckKrosmiques");
+            }
+        }
 
-		#endregion
+        #endregion
 
-		protected override void OnPropertyChanged(string propertyName)
-		{
-			base.OnPropertyChanged(propertyName);
-		}
+        protected override void OnPropertyChanged(string propertyName)
+        {
+            base.OnPropertyChanged(propertyName);
+        }
 
-		public void AddCardToDeck(DeckUI card)
-		{
-			Deck.Add(card);
-		}
+        public void AddCardToDeck(DeckUI card)
+        {
+            Deck.Add(card);
+        }
 
-		public void RemoveCardFromCardInHand(DeckUI card)
-		{
-			CardsInHand.Remove(card);
-		}
+        public void RemoveCardFromCardInHand(DeckUI card)
+        {
+            CardsInHand.Remove(card);
+        }
 
-		public void AddCardToCardInHand(DeckUI card)
-		{
-			CardsInHand.Add(card);
-		}
-	}
+        public void AddCardToCardInHand(DeckUI card)
+        {
+            CardsInHand.Add(card);
+        }
+    }
 }

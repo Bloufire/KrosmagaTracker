@@ -1,0 +1,32 @@
+{
+  "Id": 1674,
+  "Name": "paladir_xelor_h",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 5,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    9,
+    77
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 7,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Sincronizador Minucioso",
+    "DescBR": "<b>APARIÇÃO:</b> Gasta 1 <b>PA</b> da sua <b>reserva</b> para dar +1 <b>AT</b> e +1 <b>AR</b> aos seus outros Xelors.",
+    "NameEN": "Meticulous Synchronizer",
+    "DescEN": "<b>APPEARANCE:</b> Spends 1 <b>AP</b> from your <b>reserve</b> and gives +1 <b>AT</b> and +1 <b>AR</b> to your other Xelors.",
+    "NameES": "Sincronizador minucioso",
+    "DescES": "<b>APARICIÓN:</b> Gasta 1 <b>PA</b> de tu <b>reserva</b> para dar +1 <b>AT</b> y +1 <b>AR</b> a tus demás xelors.",
+    "NameFR": "Synchroniseur Minutieux",
+    "DescFR": "<b>APPARITION :</b> Dépense 1 <b>PA</b> de votre <b>réserve</b> pour donner +1 <b>AT</b> et +1 <b>AR</b> à vos autres Xélors.",
+    "NameRU": "Синхронизатор-педант",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>использует 1 <b>ОД</b> из вашего <b>резерва</b> и дает другим вашим кселорам +1 <b>AT</b> и +1 <b>БР</b>."
+  }
+}

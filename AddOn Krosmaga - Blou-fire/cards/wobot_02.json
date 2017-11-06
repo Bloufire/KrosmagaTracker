@@ -1,0 +1,33 @@
+{
+  "Id": 265,
+  "Name": "wobot_02",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 4,
+  "Attack": 5,
+  "MovementPoint": 2,
+  "Families": [
+    18
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    195
+  ],
+  "Texts": {
+    "NameBR": "Wobot 02",
+    "DescBR": "<b>MORTE:</b>\nInvoca um Wabbit.",
+    "NameEN": "Wobot 02",
+    "DescEN": "<b>DEATH:</b>\nSummons a Wabbit.",
+    "NameES": "Wobot 02",
+    "DescES": "<b>MUERTE:</b>\nInvoca 1 wabbit.",
+    "NameFR": "Wobot 02",
+    "DescFR": "<b>MORT :</b>\nInvoque un Wabbit.",
+    "NameRU": "Вобот 02",
+    "DescRU": "<b>СМЕРТЬ:</b>\nпризывает кволика."
+  }
+}

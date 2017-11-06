@@ -1,0 +1,31 @@
+{
+  "Id": 79,
+  "Name": "requin_lancier",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 6,
+  "Attack": 1,
+  "MovementPoint": 2,
+  "Families": [
+    68
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Tubarão Lanceiro",
+    "DescBR": "Ganha +1 <b>AT</b> quando\r\noutra invocação é ferida.",
+    "NameEN": "Spear Shark",
+    "DescEN": "Gains +1 <b>AT</b> whenever\r\nanother Minion is injured.",
+    "NameES": "Tiburón lancero",
+    "DescES": "Gana +1 <b>AT</b> cuando\r\notra invocación está herida.",
+    "NameFR": "Requin Lancier",
+    "DescFR": "Gagne +1 <b>AT</b> quand\r\nune autre invocation est blessée.",
+    "NameRU": "Акула-копейщица",
+    "DescRU": "Получает +1 <b>AT</b>, когда\r\nдругое существо получает урон."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "Id": 559,
+  "Name": "lapinos",
+  "CardType": 1,
+  "CostAP": 7,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    3
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 3,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    536
+  ],
+  "Texts": {
+    "NameBR": "Toelhos",
+    "DescBR": "Invoca Toelhos em suas células de início.",
+    "NameEN": "Coneys",
+    "DescEN": "Summons Coneys on your starting cells.",
+    "NameES": "Cunejos",
+    "DescES": "Invoca cunejos en todas tus casillas de inicio.",
+    "NameFR": "Lapinos",
+    "DescFR": "Invoque des Lapinos sur vos cases de départ.",
+    "NameRU": "Зайчата",
+    "DescRU": "Призывает зайчат на ваши начальные клетки."
+  }
+}

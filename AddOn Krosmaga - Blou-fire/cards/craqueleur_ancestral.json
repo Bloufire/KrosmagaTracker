@@ -1,0 +1,33 @@
+{
+  "Id": 290,
+  "Name": "craqueleur_ancestral",
+  "CardType": 0,
+  "CostAP": 8,
+  "Life": 6,
+  "Attack": 4,
+  "MovementPoint": 2,
+  "Families": [
+    22
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    176
+  ],
+  "Texts": {
+    "NameBR": "Smagador Ancestral",
+    "DescBR": "<b>RESISTÊNCIA:</b> 1\n<b>MORTE:</b> Invoca um Smagabola.",
+    "NameEN": "Ancestral Crackler",
+    "DescEN": "<b>RESISTANCE:</b> 1\n<b>DEATH:</b> Summons a Crackrock.",
+    "NameES": "Crujidor ancestral",
+    "DescES": "<b>RESISTENCIA:</b> 1\n<b>MUERTE:</b> Invoca 1 crujibola.",
+    "NameFR": "Craqueleur Ancestral",
+    "DescFR": "<b>RÉSISTANCE :</b> 1\n<b>MORT :</b> Invoque un Craqueboule.",
+    "NameRU": "Древний дробитель",
+    "DescRU": "<b>СОПРОТИВЛЕНИЕ:</b> 1\n<b>СМЕРТЬ:</b> призывает дробикамень."
+  }
+}

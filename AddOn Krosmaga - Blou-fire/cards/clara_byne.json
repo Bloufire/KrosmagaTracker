@@ -1,0 +1,31 @@
+{
+  "Id": 35,
+  "Name": "clara_byne",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 1,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    2
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 2,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Clara Bina",
+    "DescBR": "<b>ALCANCE:</b> 1-2\n<b>APARIÇÃO:</b>\nInflige 1 dano.",
+    "NameEN": "Cara Byne",
+    "DescEN": "<b>RANGE:</b> 1-2\n<b>APPEARANCE:</b>\nInflicts 1 damage.",
+    "NameES": "Clara Byne",
+    "DescES": "<b>ALCANCE:</b> 1-2\n<b>APARICIÓN:</b>\nInfliges 1 de daño.",
+    "NameFR": "Clara Byne",
+    "DescFR": "<b>PORTÉE :</b> 1-2\n<b>APPARITION :</b>\nInfligez 1 dégât.",
+    "NameRU": "Клара Бин",
+    "DescRU": "<b>ДАЛЬНОСТЬ АТАКИ:</b> 1-2\n<b>ПОЯВЛЕНИЕ</b>\nНаносит 1 единицу урона."
+  }
+}

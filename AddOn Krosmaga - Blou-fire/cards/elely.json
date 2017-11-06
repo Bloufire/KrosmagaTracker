@@ -1,0 +1,36 @@
+{
+  "Id": 417,
+  "Name": "elely",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 2,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    1,
+    33
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 18,
+    "ParentCard": 109,
+    "ParentLevel": 9
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Elely",
+    "DescBR": "<b>APARIÇÃO:</b>\n<b>Dá uma investida</b> ao longo da quantidade de células\r\nequivalente ao número de invocações adversárias no jogo.",
+    "NameEN": "Elely",
+    "DescEN": "<b>APPEARANCE:</b>\n<b>Charges</b> as many cells\r\nas there are enemy Minions in play.",
+    "NameES": "Elely",
+    "DescES": "<b>APARICIÓN:</b>\n<b>Carga</b> tantas casillas\r\ncomo invocaciones enemigas haya en juego.",
+    "NameFR": "Elely",
+    "DescFR": "<b>APPARITION :</b>\n<b>Charge</b> d'autant de cases\r\nqu'il y a d'invocations adverses en jeu.",
+    "NameRU": "Элили",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nделает <b>рывок</b> на количество клеток,\r\nравное количеству существ противника в игре."
+  }
+}

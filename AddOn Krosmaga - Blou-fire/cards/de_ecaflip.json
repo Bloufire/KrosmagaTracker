@@ -1,0 +1,31 @@
+{
+  "Id": 414,
+  "Name": "de_ecaflip",
+  "CardType": 1,
+  "CostAP": 4,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 4,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Dado Ecaflip",
+    "DescBR": "Inflige <b>1d6</b> dano(s). Recupere este feitiço se tirar 3 ou menos.",
+    "NameEN": "Ecaflip Die",
+    "DescEN": "Inflicts <b>1d6</b> damage. Recover this spell if 3 or less.",
+    "NameES": "Dado de Zurcarák",
+    "DescES": "Inflige <b>1d6</b> de daño. Recuperas este hechizo con un 3 o menos.",
+    "NameFR": "Dé Ecaflip",
+    "DescFR": "Inflige <b>1d6</b> dégât(s). Récupérez ce sort sur 3 ou moins.",
+    "NameRU": "Игральная кость Экафлипа",
+    "DescRU": "Наносит <b>1d6</b> ед. урона. Если выпадет 3 или меньше, заклинание вернется к вам."
+  }
+}

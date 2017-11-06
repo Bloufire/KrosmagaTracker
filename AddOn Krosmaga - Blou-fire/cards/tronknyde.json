@@ -1,0 +1,31 @@
+{
+  "Id": 433,
+  "Name": "tronknyde",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 2,
+  "Families": [
+    17
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Tronknídeo",
+    "DescBR": "",
+    "NameEN": "Trunknid",
+    "DescEN": "",
+    "NameES": "Tronkónido",
+    "DescES": "",
+    "NameFR": "Tronknyde ",
+    "DescFR": "",
+    "NameRU": "Трухляк",
+    "DescRU": ""
+  }
+}

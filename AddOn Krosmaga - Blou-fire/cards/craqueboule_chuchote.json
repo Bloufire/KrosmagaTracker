@@ -1,0 +1,34 @@
+{
+  "Id": 262,
+  "Name": "craqueboule_chuchote",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 4,
+  "Attack": 3,
+  "MovementPoint": 2,
+  "Families": [
+    22,
+    31
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    324
+  ],
+  "Texts": {
+    "NameBR": "Smagabola Sussurrado",
+    "DescBR": "<b>RESISTÊNCIA:</b> 1\n<b>MORTE:</b> Invoca um Sussurrador Porta-Estandarte.",
+    "NameEN": "Whispered Crackrock",
+    "DescEN": "<b>RESISTANCE:</b> 1\n<b>DEATH:</b> Summons a Standard-Bearing Whisperer.",
+    "NameES": "Crujibola susurrado",
+    "DescES": "<b>RESISTENCIA:</b> 1\n<b>MUERTE:</b> Invoca 1 susurrador abanderado.",
+    "NameFR": "Craqueboule Chuchoté",
+    "DescFR": "<b>RÉSISTANCE :</b> 1\n<b>MORT :</b> Invoque un Chuchoteur Porte-Etendard.",
+    "NameRU": "Шептунный дробикамень",
+    "DescRU": "<b>СОПРОТИВЛЕНИЕ:</b> 1\n<b>СМЕРТЬ:</b> призывает шептуна-знаменосца."
+  }
+}

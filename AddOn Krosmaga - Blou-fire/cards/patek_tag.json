@@ -1,0 +1,31 @@
+{
+  "Id": 276,
+  "Name": "patek_tag",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 2,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 7,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Patek Tag",
+    "DescBR": "<b>APARIÇÃO:</b>\nDestrua um prisma.",
+    "NameEN": "Patek Tag",
+    "DescEN": "<b>APPEARANCE:</b>\nDestroy a prism.",
+    "NameES": "Patek Tag",
+    "DescES": "<b>APARICIÓN:</b>\nDestruyes un prisma.",
+    "NameFR": "Patek Tag ",
+    "DescFR": "<b>APPARITION :</b>\nDétruisez un prisme.",
+    "NameRU": "Патек Тег",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nуничтожает одну призму."
+  }
+}

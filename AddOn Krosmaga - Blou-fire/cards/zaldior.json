@@ -1,0 +1,31 @@
+{
+  "Id": 48,
+  "Name": "zaldior",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 5,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    3
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 3,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Zaldior",
+    "DescBR": "<b>APARIÇÃO:</b>\nUma invocação que tenha 4 <b>AT</b> ou menos volta para a sua mão.",
+    "NameEN": "Zaldior",
+    "DescEN": "<b>APPEARANCE:</b>\nReturn a Minion with 4 <b>AT</b> or less to your hand.",
+    "NameES": "Zaldior",
+    "DescES": "<b>APARICIÓN:</b>\nSubes una invocación que tenga 4 <b>AT</b> o menos a tu mano.",
+    "NameFR": "Zaldior",
+    "DescFR": "<b>APPARITION :</b>\nRemontez dans votre main une invocation ayant 4 <b>AT</b> ou moins.",
+    "NameRU": "Зальдиор",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nпозволяет забрать с поля любое существо с показателем<b>AT</b> не более 4."
+  }
+}

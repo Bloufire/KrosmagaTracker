@@ -1,0 +1,31 @@
+{
+  "Id": 228,
+  "Name": "nomekop_le_crapoteur",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 5,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 4,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Nomekop, o Escandaloso",
+    "DescBR": "<b>APARIÇÃO:</b>\nInvoca 2 Miaws ao lado dele.",
+    "NameEN": "Nomekop Wodly",
+    "DescEN": "<b>APPEARANCE:</b>\nSummons 2 Bow Meows on adjacent cells.",
+    "NameES": "Nomekop, el Crío",
+    "DescES": "<b>APARICIÓN:</b>\nInvoca 2 miaumiaus a su lado.",
+    "NameFR": "Nomekop le Crapoteur",
+    "DescFR": "<b>APPARITION :</b>\nInvoque 2 Chachas à côté de lui.",
+    "NameRU": "Водли Номекоп",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nпризывает 2 котокотов рядом с собой."
+  }
+}

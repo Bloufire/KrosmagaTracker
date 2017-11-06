@@ -1,0 +1,32 @@
+{
+  "Id": 1700,
+  "Name": "paladir_xelor_f",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 4,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    9,
+    77
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 7,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Heroína Eterna",
+    "DescBR": "As invocações adversárias custam 2 <b>PA</b> a mais se você tiver pelo menos 5 <b>PA</b> na sua <b>reserva</b>.",
+    "NameEN": "Eternal Heroine",
+    "DescEN": "Enemy Minions cost 2 <b>AP</b> more if you have at least 5 <b>AP</b> in your <b>reserve</b>.",
+    "NameES": "Heroína eterna",
+    "DescES": "Las invocaciones enemigas cuestan 2 <b>PA</b> más si tienes al menos 5 <b>PA</b> en tu <b>reserva</b>.",
+    "NameFR": "Héroïne Eternelle",
+    "DescFR": "Les invocations adverses coûtent 2 <b>PA</b> de plus si vous avez au moins 5 <b>PA</b> dans votre <b>réserve</b>.",
+    "NameRU": "Вечная героиня",
+    "DescRU": "Стоимость существ противника увеличивается на 2 <b>ОД</b>, если у вас в <b>резерве</b> есть не менее 5 <b>ОД</b>."
+  }
+}

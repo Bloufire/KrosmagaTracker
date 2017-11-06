@@ -1,0 +1,31 @@
+{
+  "Id": 422,
+  "Name": "fiole_de_douleur",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    3
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 3,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Frasco de Dor",
+    "DescBR": "Inflige 2 danos.",
+    "NameEN": "Pain Flask",
+    "DescEN": "Inflicts 2 damage.",
+    "NameES": "Matraz de Dolor",
+    "DescES": "Inflige 2 de daño.",
+    "NameFR": "Fiole de Douleur",
+    "DescFR": "Inflige 2 dégâts.",
+    "NameRU": "Зелье боли",
+    "DescRU": "Наносит 2 ед. урона."
+  }
+}

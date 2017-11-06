@@ -1,0 +1,31 @@
+{
+  "Id": 993,
+  "Name": "phorreur_furieux",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 4,
+  "Attack": 3,
+  "MovementPoint": 2,
+  "Families": [
+    20
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Perfuratroz Furioso",
+    "DescBR": "Ganha +1 <b>AT</b> quando você compra uma carta.",
+    "NameEN": "Raging Drheller",
+    "DescEN": "Gains +1 <b>AT</b> whenever you draw 1 card.",
+    "NameES": "Perforatroz furioso",
+    "DescES": "Gana +1 <b>AT</b> cuando robas una carta.",
+    "NameFR": "Phorreur Furieux",
+    "DescFR": "Gagne +1 <b>AT</b> quand vous piochez une carte.",
+    "NameRU": "Яростная хорроройка",
+    "DescRU": "Получает +1 <b>AT</b>, когда вы берете карту."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 269,
+  "Name": "gligli_ancestral",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 5,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    25
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Valili Ancestral",
+    "DescBR": "<b>COMEÇO DO TURNO:</b>\nSuas outras invocações <b>dão uma investida</b> ao longo de 2 células.",
+    "NameEN": "Ancestral Blibli",
+    "DescEN": "<b>START OF TURN:</b>\nYour other Minions <b>charge</b> 2 cells.",
+    "NameES": "Balí Ancestral",
+    "DescES": "<b>INICIO DEL TURNO:</b>\nTus demás invocaciones <b>cargan</b> 2 casillas.",
+    "NameFR": "Gligli Ancestral",
+    "DescFR": "<b>DÉBUT DU TOUR :</b>\nVos autres invocations <b>chargent</b> de 2 cases.",
+    "NameRU": "Древний нафнаф",
+    "DescRU": "<b>НАЧАЛО ХОДА:</b>\nдругие ваши существа делают <b>рывок</b> на 2 клетки."
+  }
+}

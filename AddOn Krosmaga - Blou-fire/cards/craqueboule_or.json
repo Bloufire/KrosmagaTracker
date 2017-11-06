@@ -1,0 +1,35 @@
+{
+  "Id": 412,
+  "Name": "craqueboule_or",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 2,
+  "Families": [
+    22
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 9,
+    "ParentCard": 61,
+    "ParentLevel": 8
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Smagabola Dourado",
+    "DescBR": "<b>CHEFE:</b> Aumenta em 1 a <b>resistência</b> dos seus outros Smagadores.",
+    "NameEN": "Golden Crackrock",
+    "DescEN": "<b>LEADER:</b> Increases your other Cracklers' <b>resistance</b> by 1.",
+    "NameES": "Crujibola dorado",
+    "DescES": "<b>LÍDER:</b> Aumenta en 1 la <b>resistencia</b> de tus demás crujidores.",
+    "NameFR": "Craqueboule Or",
+    "DescFR": "<b>CHEF :</b> Augmente de 1 la <b>résistance</b> de vos autres Craqueleurs.",
+    "NameRU": "Золотой дробикамень",
+    "DescRU": "<b>ВОЖАК:</b> увеличивает <b>сопротивление</b> других ваших дробителей на 1."
+  }
+}

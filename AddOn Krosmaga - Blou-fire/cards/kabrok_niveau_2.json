@@ -1,0 +1,33 @@
+{
+  "Id": 310,
+  "Name": "kabrok_niveau_2",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 4,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    10
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 17,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    144
+  ],
+  "Texts": {
+    "NameBR": "Kabrok",
+    "DescBR": "<b>APARIÇÃO:</b> Enche de Corvocs a mão dos dois jogadores. Enquanto ele estiver no\r\njogo, os Corvocs adversários custam 1 <b>PA</b> a mais.",
+    "NameEN": "Kabrok",
+    "DescEN": "<b>APPEARANCE:</b> Fills both players' hands with Crobaks. As long as he is in play,\r\nenemy Crobaks cost 1 <b>AP</b> more.",
+    "NameES": "Kabrok",
+    "DescES": "<b>APARICIÓN:</b> Llena de cuerboks la mano de los dos jugadores. Mientras esté en\r\njuego, los cuerboks enemigos cuestan 1 <b>PA</b> más.",
+    "NameFR": "Kabrok",
+    "DescFR": "<b>APPARITION :</b> Remplit de Corbacs la main des deux joueurs. Tant qu'il est en\r\njeu les Corbacs adverses coûtent 1 <b>PA</b> de plus.",
+    "NameRU": "Каброк",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b> наполняет карбаками руку обоих игроков. Пока он находится\r\nв игре, стоимость карбаков противника увеличивается на 1 <b>ОД</b>."
+  }
+}

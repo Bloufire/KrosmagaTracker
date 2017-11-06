@@ -1,0 +1,31 @@
+{
+  "Id": 372,
+  "Name": "bouftou_royal",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 5,
+  "Attack": 4,
+  "MovementPoint": 2,
+  "Families": [
+    14
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Papatudo Real",
+    "DescBR": "<b>APARIÇÃO:</b>\nInflige 2 danos às invocações que estiverem na mesma fileira.",
+    "NameEN": "Royal Gobball",
+    "DescEN": "<b>APPEARANCE:</b>\nInflicts 2 damage on Minions on its row.",
+    "NameES": "Jalató Real",
+    "DescES": "<b>APARICIÓN:</b>\nInflige 2 de daño a todas las invocaciones de su hilera.",
+    "NameFR": "Bouftou Royal",
+    "DescFR": "<b>APPARITION :</b>\nInflige 2 dégâts aux invocations de sa ligne.",
+    "NameRU": "Королевский бараглот",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nнаносит 2 единицы урона существам на своей линии."
+  }
+}

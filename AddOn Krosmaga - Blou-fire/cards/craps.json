@@ -1,0 +1,35 @@
+{
+  "Id": 482,
+  "Name": "craps",
+  "CardType": 1,
+  "CostAP": 7,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 4,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 24,
+    "ParentCard": 239,
+    "ParentLevel": 9
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Craps",
+    "DescBR": "Inflige 6 <b>OU</b> 3 danos divididos entre os Dofus adversários.",
+    "NameEN": "Craps",
+    "DescEN": "Inflicts 6 damage <b>OR</b> 3 damage shared among the enemy Dofus.",
+    "NameES": "Craps",
+    "DescES": "Inflige 6 <b>O</b> 3 de daño repartido entre los dofus enemigos.",
+    "NameFR": "Craps",
+    "DescFR": "Inflige 6 <b>OU</b> 3 dégâts répartis entre les Dofus adverses.",
+    "NameRU": "Крэпс",
+    "DescRU": "Наносит 6 <b>ИЛИ</b> 3 ед. урона, распределяя их между дофусами противника."
+  }
+}

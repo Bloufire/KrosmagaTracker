@@ -1,0 +1,31 @@
+{
+  "Id": 441,
+  "Name": "gzenah",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 1,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 1,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Gzenah",
+    "DescBR": "Ganha +1 <b>AT</b> e +1 <b>AR</b> quando um iop aliado\r\nentra em jogo.",
+    "NameEN": "Gzenah",
+    "DescEN": "Gains +1 <b>AT</b> and +1 <b>AR</b> whenever an allied Iop\r\nenters into play.",
+    "NameES": "Gzenah",
+    "DescES": "Gana +1 <b>AT</b> y +1 <b>AR</b> cuando un yopuka aliado\r\nentra en juego.",
+    "NameFR": "Gzenah",
+    "DescFR": "Gagne +1 <b>AT</b> et +1 <b>AR</b> quand un Iop allié\r\nentre en jeu.",
+    "NameRU": "Гзена",
+    "DescRU": "Получает +1 <b>AT</b> и +1 <b>БР</b>, когда союзный иоп\r\nвступает в игру."
+  }
+}

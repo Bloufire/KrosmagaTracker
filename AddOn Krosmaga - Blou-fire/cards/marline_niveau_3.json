@@ -1,0 +1,31 @@
+{
+  "Id": 308,
+  "Name": "marline_niveau_3",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    10
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 28,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Marline",
+    "DescBR": "<b>APARIÇÃO: </b>\nTroca de corpo com uma invocação adversária que tenha 5 <b>AT</b> ou menos.",
+    "NameEN": "Marline",
+    "DescEN": "<b>APPEARANCE: </b>\nSwitches bodies with an enemy Minion with 5 <b>AT</b> or less.",
+    "NameES": "Marline",
+    "DescES": "<b>APARICIÓN: </b>\nIntercambias su cuerpo con una invocación enemiga que tenga 5 <b>AT</b> o menos.",
+    "NameFR": "Marline",
+    "DescFR": "<b>APPARITION : </b>\nÉchangez son corps avec une invocation adverse ayant 5 <b>AT</b> ou moins.",
+    "NameRU": "Марлин",
+    "DescRU": "<b>ПОЯВЛЕНИЕ: </b>\nМеняется телами с существом противника, имеющим не более 5 <b>AT</b>."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 521,
+  "Name": "mot_soignant",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    3
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 3,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Palavra Curativa",
+    "DescBR": "Cura 5 <b>PV</b>\r\nde uma invocação.",
+    "NameEN": "Healing Word",
+    "DescEN": "Heals a Minion\r\nby 5 <b>HP</b>.",
+    "NameES": "Palabra Sanadora",
+    "DescES": "Cura 5 <b>PdV</b>\r\na una invocación.",
+    "NameFR": "Mot Soignant",
+    "DescFR": "Soigne une invocation\r\nde 5 <b>PV</b>.",
+    "NameRU": "Слово исцеления",
+    "DescRU": "Восстанавливает выбранному существу 5 <b>ОЗ</b>."
+  }
+}

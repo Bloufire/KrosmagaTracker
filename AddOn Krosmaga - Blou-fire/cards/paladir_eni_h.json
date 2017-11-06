@@ -1,0 +1,32 @@
+{
+  "Id": 1191,
+  "Name": "paladir_eni_h",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 5,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    3,
+    77
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 3,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Herói Calmante",
+    "DescBR": "<b>APARIÇÃO:</b>\nReduz a 1 o <b>AT</b>\r\nde uma invocação.",
+    "NameEN": "Soothing Hero",
+    "DescEN": "<b>APPEARANCE:</b>\nMakes a Minion's <b>AT</b>\r\ndrop to 1.",
+    "NameES": "Héroe tranquilizador",
+    "DescES": "<b>APARICIÓN:</b>\nReduce a 1 el <b>AT</b>\r\nde una invocación.",
+    "NameFR": "Héros Apaisant",
+    "DescFR": "<b>APPARITION :</b>\nFait chuter à 1 l'<b>AT</b>\r\nd'une invocation.",
+    "NameRU": "Герой-миротворец",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b> снижает показатель <b>AT</b> выбранного существа до 1."
+  }
+}

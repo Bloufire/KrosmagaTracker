@@ -1,0 +1,33 @@
+{
+  "Id": 509,
+  "Name": "de_du_chacha",
+  "CardType": 1,
+  "CostAP": 4,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 4,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    151
+  ],
+  "Texts": {
+    "NameBR": "Dado do Miaw",
+    "DescBR": "Adiciona <b>1d6</b> Miaw(s) Negro(s)\r\nà sua mão.",
+    "NameEN": "Bow Meow Die",
+    "DescEN": "Add <b>1d6</b> Black Bow Meows\r\nto your hand.",
+    "NameES": "Dado del Miaumiau",
+    "DescES": "Añades <b>1d6</b> miaumiau(s) negro(s)\r\na tu mano.",
+    "NameFR": "Dé du Chacha",
+    "DescFR": "Ajoutez <b>1d6</b> Chacha(s) Noirs(s)\r\nà votre main.",
+    "NameRU": "Игральная кость котокота",
+    "DescRU": "Бросает <b>1d6</b> и дает вам в руку выпавшее количество черных котокотов."
+  }
+}

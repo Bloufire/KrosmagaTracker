@@ -1,0 +1,31 @@
+{
+  "Id": 314,
+  "Name": "phorzerker",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 7,
+  "Attack": 7,
+  "MovementPoint": 2,
+  "Families": [
+    81
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Perforzerker",
+    "DescBR": "<b>APARIÇÃO:</b>\nDescarta 1 carta aleatória da sua mão.",
+    "NameEN": "Drhellzerker",
+    "DescEN": "<b>APPEARANCE:</b>\nDiscards 1 card at random from your hand.",
+    "NameES": "Perfórserker",
+    "DescES": "<b>APARICIÓN:</b>\nDescarta 1 carta aleatoria de tu mano.",
+    "NameFR": "Phorzerker",
+    "DescFR": "<b>APPARITION :</b>\nDéfausse 1 carte aléatoire de votre main.",
+    "NameRU": "Хоррсерк",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nсбрасывает 1 случайно выбранную карту из вашей руки."
+  }
+}

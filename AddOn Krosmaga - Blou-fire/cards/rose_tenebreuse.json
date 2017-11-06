@@ -1,0 +1,31 @@
+{
+  "Id": 1323,
+  "Name": "rose_tenebreuse",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 2,
+  "Families": [
+    65
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Rosa Tenebrosa",
+    "DescBR": "<b>APARIÇÃO:</b>\nDê <b>inamovível</b>\r\na uma invocação.",
+    "NameEN": "Dark Rose",
+    "DescEN": "<b>APPEARANCE:</b>\nGives a Minion \r\n<b>irremovable</b>.",
+    "NameES": "Rosa tenebrosa",
+    "DescES": "<b>APARICIÓN:</b>\nDas <b>inamovible</b>\r\na una invocación.",
+    "NameFR": "Rose Ténèbreuse",
+    "DescFR": "<b>APPARITION :</b>\nDonnez <b>inamovible</b>\r\nà une invocation.",
+    "NameRU": "Сумрачная роза",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b> дает выбранному существу свойство <b>«нельзя сдвинуть»</b>."
+  }
+}

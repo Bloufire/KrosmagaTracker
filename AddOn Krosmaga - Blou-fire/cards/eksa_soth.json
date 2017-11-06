@@ -1,0 +1,31 @@
+{
+  "Id": 55,
+  "Name": "eksa_soth",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 4,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    2
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 2,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Mand Aballa",
+    "DescBR": "<b>ALCANCE:</b> 1-3\n<b>GOLPE DE MISERICÓRDIA:</b>\nCompre 1 carta.",
+    "NameEN": "Letit Bloe",
+    "DescEN": "<b>RANGE:</b> 1-3\n<b>FINAL BLOW:</b>\nDraw 1 card.",
+    "NameES": "Data Vid",
+    "DescES": "<b>ALCANCE:</b> 1-3\n<b>GOLPE DE GRACIA:</b>\nRobas 1 carta.",
+    "NameFR": "Eksa Soth",
+    "DescFR": "<b>PORTÉE :</b> 1-3\n<b>COUP DE GRÂCE :</b>\nPiochez 1 carte.",
+    "NameRU": "Отс Трели",
+    "DescRU": "<b>ДАЛЬНОСТЬ АТАКИ:</b> 1-3\n<b>СМЕРТЕЛЬНЫЙ УДАР</b>\nвы берете 1 карту."
+  }
+}

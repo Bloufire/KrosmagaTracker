@@ -1,0 +1,29 @@
+{
+  "Id": 528,
+  "Name": "poele",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Frigideira",
+    "DescBR": "Inflige 3 danos.",
+    "NameEN": "Frying Pan",
+    "DescEN": "Inflicts 3 damage.",
+    "NameES": "Sartén",
+    "DescES": "Inflige 3 de daño.",
+    "NameFR": "Poêle",
+    "DescFR": "Inflige 3 dégâts.",
+    "NameRU": "Сковорода",
+    "DescRU": "Наносит 3 ед. урона."
+  }
+}

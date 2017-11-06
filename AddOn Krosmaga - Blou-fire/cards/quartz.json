@@ -1,0 +1,33 @@
+{
+  "Id": 118,
+  "Name": "quartz",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 7,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    530
+  ],
+  "Texts": {
+    "NameBR": "Quartz",
+    "DescBR": "<b>MORTE:</b>\nInvoca uma Múmia.",
+    "NameEN": "Quartz",
+    "DescEN": "<b>DEATH:</b>\nSummons a Mummy.",
+    "NameES": "Quartz",
+    "DescES": "<b>MUERTE:</b>\nInvoca una momia.",
+    "NameFR": "Quartz",
+    "DescFR": "<b>MORT :</b>\nInvoque une Momie.",
+    "NameRU": "Кварц",
+    "DescRU": "<b>СМЕРТЬ:</b>\nпризывает мумию."
+  }
+}

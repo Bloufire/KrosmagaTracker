@@ -1,0 +1,31 @@
+{
+  "Id": 917,
+  "Name": "petit_ogrest_niveau_1",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    34
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 185,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Pequeno Ogrest",
+    "DescBR": "Inflige 2 danos às invocações adversárias ao redor dele ao final de todos os deslocamentos aliados.",
+    "NameEN": "Little Ogrest",
+    "DescEN": "Inflicts 2 damage on enemy Minions on adjacent cells at the end of all allied movements.",
+    "NameES": "Pequeño Ogrest",
+    "DescES": "Inflige 2 de daño a las invocaciones enemigas a su alrededor al final de todos los desplazamientos aliados.",
+    "NameFR": "Petit Ogrest",
+    "DescFR": "Inflige 2 dégâts aux invocations adverses autour de lui à la fin de tous les déplacements alliés.",
+    "NameRU": "Малыш Огрест",
+    "DescRU": "После перемещения всех союзников наносит 2 ед. урона существам противника вокруг себя."
+  }
+}

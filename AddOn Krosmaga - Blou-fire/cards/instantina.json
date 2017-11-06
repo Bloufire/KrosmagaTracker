@@ -1,0 +1,31 @@
+{
+  "Id": 209,
+  "Name": "instantina",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 6,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 7,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Instantina",
+    "DescBR": "<b>APARIÇÃO:</b>\nInflige 2 danos ou 5 danos se você tiver ao menos 5 <b>PA</b> em sua <b>reserva</b>.",
+    "NameEN": "Instantina",
+    "DescEN": "<b>APPEARANCE:</b>\nInflicts 2 damage or 5 damage if you have at least 5 <b>AP</b> in your <b>reserve</b>.",
+    "NameES": "Instantina",
+    "DescES": "<b>APARICIÓN:</b>\nInfliges 2 de daño o 5 de daño si tienes al menos 5 <b>PA</b> en tu <b>reserva</b>.",
+    "NameFR": "Instantina",
+    "DescFR": "<b>APPARITION :</b>\nInfligez 2 dégâts ou 5 dégâts si vous avez au moins 5 <b>PA</b> dans votre <b>réserve</b>.",
+    "NameRU": "Моментина",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b> наносит 2 единицы урона. Если у вас в <b>резерве</b> не менее 5 <b>ОД</b>, наносит 5 единиц урона."
+  }
+}

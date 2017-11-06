@@ -1,0 +1,31 @@
+{
+  "Id": 1288,
+  "Name": "second_souffle",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    5
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 6,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Segundo Sopro",
+    "DescBR": "Recupera as 2 últimas cartas enviadas para a sua lixeira e descarta as 4 primeiras cartas\r\ndo seu bolo.",
+    "NameEN": "Second Wind",
+    "DescEN": "Retrieve the last 2 cards that went to your discard pile and discard the first 4 cards\r\nof your deck.",
+    "NameES": "Segundo Soplido",
+    "DescES": "Recupera las 2 últimas cartas enviadas a tu descarte y descarta las 4 primeras cartas\r\nde tu mazo.",
+    "NameFR": "Second Souffle",
+    "DescFR": "Récupère les 2 dernières cartes parties dans votre défausse et défausse les 4 premières cartes\r\nde votre pioche.",
+    "NameRU": "Второе дыхание",
+    "DescRU": "Возвращает 2 последние карты из вашего сброса и сбрасывает 4 первые карты из вашей колоды."
+  }
+}

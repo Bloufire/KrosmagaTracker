@@ -1,0 +1,31 @@
+{
+  "Id": 337,
+  "Name": "fleche_d_immolation",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    2
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 2,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Flecha de Imolação",
+    "DescBR": "Inflige 2 danos.\r\nSe a invocação morrer, compre uma carta.",
+    "NameEN": "Burning Arrow",
+    "DescEN": "Inflicts 2 damage;\r\nif the Minion dies, draw 1 card.",
+    "NameES": "Flecha de Inmolación",
+    "DescES": "Inflige 2 de daño,\r\nsi la invocación muere, robas 1 carta.",
+    "NameFR": "Flèche d'Immolation",
+    "DescFR": "Inflige 2 dégâts,\r\nsi l’invocation meurt piochez une carte.",
+    "NameRU": "Жертвенная стрела",
+    "DescRU": "Наносит 2 ед. урона.\r\nЕсли существо погибает, вы берете карту."
+  }
+}

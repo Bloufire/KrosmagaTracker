@@ -1,0 +1,31 @@
+{
+  "Id": 431,
+  "Name": "julith_jurgen_niveau_3",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 6,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    35
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 15,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Julith Jurgen",
+    "DescBR": "Inflige 1 dano às invocações adversárias quando um Dofus aliado sofre danos.",
+    "NameEN": "Julith Jurgen",
+    "DescEN": "Inflicts 1 damage on enemy Minions whenever an allied Dofus suffers damage.",
+    "NameES": "Julith Jurgen",
+    "DescES": "Inflige 1 de daño a las invocaciones enemigas cuando un dofus aliado sufre daños.",
+    "NameFR": "Julith Jurgen",
+    "DescFR": "Inflige 1 dégât aux invocations adverses quand un Dofus allié subit des dégâts.",
+    "NameRU": "Джулит Журген",
+    "DescRU": "Наносит 1 единицу урона существам противника, когда ваш дофус получает урон."
+  }
+}

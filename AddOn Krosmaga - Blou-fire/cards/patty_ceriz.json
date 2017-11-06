@@ -1,0 +1,31 @@
+{
+  "Id": 270,
+  "Name": "patty_ceriz",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    2
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 2,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Pasty Laria",
+    "DescBR": "<b>ALCANCE:</b> 1-3\n<b>Empurra</b> seu adversário\r\nao longo de 1 célula quando ela ataca.",
+    "NameEN": "Pace Trese",
+    "DescEN": "<b>RANGE:</b> 1-3\n<b>Repels</b> the opponent by 1 cell\r\nwhenever it attacks.",
+    "NameES": "Pasty Leria",
+    "DescES": "<b>ALCANCE:</b> 1-3\n<b>Empuja</b> 1 casilla\r\na su contrincante cuando ataca.",
+    "NameFR": "Patty Ceriz",
+    "DescFR": "<b>PORTÉE :</b> 1-3\n<b>Repousse</b> de 1 case\r\nson adversaire quand elle attaque.",
+    "NameRU": "Конди Терия",
+    "DescRU": "<b>ДАЛЬНОСТЬ АТАКИ:</b> 1-3\nАтакуя, вынуждает противника <b>отступить</b> на 1 клетку."
+  }
+}

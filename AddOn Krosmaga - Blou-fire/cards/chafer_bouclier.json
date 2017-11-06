@@ -1,0 +1,33 @@
+{
+  "Id": 677,
+  "Name": "chafer_bouclier",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 4,
+  "Attack": 5,
+  "MovementPoint": 2,
+  "Families": [
+    28
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    533
+  ],
+  "Texts": {
+    "NameBR": "Chafer de Infantaria",
+    "DescBR": "<b>MONTE DE OSSOS</b>\n<b>APARIÇÃO:</b>\nTransforme um <b>Monte de Ossos</b> aliado em Chafer Decrépito.",
+    "NameEN": "Chafer Foot Soldier",
+    "DescEN": "<b>PILE OF BONES</b>\n<b>APPEARANCE:</b>\nTransform an allied <b>Pile of Bones</b> into a Decrepit Chafer.",
+    "NameES": "Chafer de infantería",
+    "DescES": "<b>MONTÓN DE HUESOS</b>\n<b>APARICIÓN:</b>\nTransforma un <b>montón de huesos</b> aliado en chafer decrépito.",
+    "NameFR": "Chafer Fantassin",
+    "DescFR": "<b>TAS D'OS</b>\n<b>APPARITION :</b>\nTransformez un <b>tas d'os</b> allié en Chafer décrépit.",
+    "NameRU": "Чафер-пехотинец",
+    "DescRU": "<b>КУЧА КОСТЕЙ</b>\n<b>ПОЯВЛЕНИЕ:</b>\nпревратите союзную <b>кучу костей</b> в чахлого чафера."
+  }
+}

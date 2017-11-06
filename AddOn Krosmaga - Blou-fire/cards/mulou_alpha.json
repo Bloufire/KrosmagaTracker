@@ -1,0 +1,33 @@
+{
+  "Id": 940,
+  "Name": "mulou_alpha",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 5,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    15
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    30
+  ],
+  "Texts": {
+    "NameBR": "Milobo Alfa",
+    "DescBR": "<b>GOLPE DE MISERICÓRDIA:</b>\nTransforma-se em\r\nMilobisomem.",
+    "NameEN": "Alpha Boowolf",
+    "DescEN": "<b>FINAL BLOW:</b>\nTransforms into a \r\nBoowerewolf.",
+    "NameES": "Milubo alfa",
+    "DescES": "<b>GOLPE DE GRACIA:</b>\nSe transforma en\r\nhombre mediulubo.",
+    "NameFR": "Mulou Alpha",
+    "DescFR": "<b>COUP DE GRÂCE :</b>\nSe transforme en\r\nMulou Garou.",
+    "NameRU": "Альфа-боеволк",
+    "DescRU": "<b>СМЕРТЕЛЬНЫЙ УДАР:</b>\nпревращается в\r\nбоеволка-оборотня."
+  }
+}

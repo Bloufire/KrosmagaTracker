@@ -1,0 +1,31 @@
+{
+  "Id": 189,
+  "Name": "bas_les_pattes",
+  "CardType": 1,
+  "CostAP": 6,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 4,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Tira a Pata",
+    "DescBR": "Coloque uma invocação no bolo de seu proprietário.",
+    "NameEN": "Paws Off",
+    "DescEN": "Put a Minion on its owner's deck.",
+    "NameES": "Zarpas Quietas",
+    "DescES": "Añades una invocación al mazo de su propietario.",
+    "NameFR": "Bas les Pattes",
+    "DescFR": "Placez une invocation sur la pioche de son propriétaire.",
+    "NameRU": "Лапы прочь",
+    "DescRU": "Кладет выбранное существо на верх колоды хозяина."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 124,
+  "Name": "julith_jurgen_niveau_2",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 4,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    35
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 15,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Julith Jurgen",
+    "DescBR": "<b>MORTE:</b> Volta para a sua mão se nenhum dos seus Dofus (verdadeiros ou falsos) tiver sido destruído.",
+    "NameEN": "Julith Jurgen",
+    "DescEN": "<b>DEATH:</b> Returns to your hand as long as none of your Dofus (real or fake) have been destroyed.",
+    "NameES": "Julith Jurgen",
+    "DescES": "<b>MUERTE:</b> Sube a tu mano si ninguno de tus dofus (verdadero o falso) ha sido destruido.",
+    "NameFR": "Julith Jurgen",
+    "DescFR": "<b>MORT :</b> Remonte dans votre main tant qu'aucun de vos Dofus (vrai ou faux) n'a été détruit.",
+    "NameRU": "Джулит Журген",
+    "DescRU": "<b>СМЕРТЬ:</b> возвращается к вам в руку, если ни один из ваших дофусов (настоящих или ложных) не уничтожен."
+  }
+}

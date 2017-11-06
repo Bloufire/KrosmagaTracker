@@ -1,0 +1,29 @@
+{
+  "Id": 584,
+  "Name": "cupidite",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 5,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Cupidez",
+    "DescBR": "Reduz em 1 <b>PA</b> o custo\r\ndas cartas na sua mão.",
+    "NameEN": "Greed",
+    "DescEN": "Reduces the cost of cards\r\nin your hand by 1 <b>AP</b>.",
+    "NameES": "Codicia",
+    "DescES": "Reduce 1 <b>PA</b> el coste\r\nde las cartas de tu mano.",
+    "NameFR": "Cupidité",
+    "DescFR": "Réduit de 1 <b>PA</b> le coût\r\ndes cartes de votre main.",
+    "NameRU": "Алчность",
+    "DescRU": "Снижает стоимость карт\r\nв вашей руке на 1 <b>ОД</b>."
+  }
+}

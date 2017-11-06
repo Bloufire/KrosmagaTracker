@@ -1,0 +1,29 @@
+{
+  "Id": 1565,
+  "Name": "prisme_fleau",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Flagelo",
+    "DescBR": "Inflige 1 dano a um Dofus.",
+    "NameEN": "Curse",
+    "DescEN": "Inflicts 1 damage on a Dofus.",
+    "NameES": "Plaga",
+    "DescES": "Inflige 1 de daño a un dofus.",
+    "NameFR": "Fléau",
+    "DescFR": "Inflige 1 dégât à un Dofus.",
+    "NameRU": "Порча",
+    "DescRU": "Наносит выбранному дофусу 1 ед. урона."
+  }
+}

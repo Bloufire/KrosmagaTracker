@@ -1,0 +1,33 @@
+{
+  "Id": 373,
+  "Name": "guy",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 28,
+    "ParentCard": 308,
+    "ParentLevel": 9
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Guy",
+    "DescBR": "<b>MORTE:</b>\nTroca aleatoriamente as posições dos Dofus de todos os jogadores.",
+    "NameEN": "Guy",
+    "DescEN": "<b>DEATH:</b>\nRandomly switches the positions of both players' Dofus.",
+    "NameES": "Guiller",
+    "DescES": "<b>MUERTE:</b>\nLos dofus de cada jugador intercambian sus posiciones aleatoriamente.",
+    "NameFR": "Guy",
+    "DescFR": "<b>MORT :</b>\nÉchange aléatoirement les positions des Dofus pour chaque joueur.",
+    "NameRU": "Гай",
+    "DescRU": "<b>СМЕРТЬ:</b>\nслучайным образом меняет местами дофусы каждого игрока."
+  }
+}

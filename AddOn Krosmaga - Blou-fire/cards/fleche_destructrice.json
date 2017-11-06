@@ -1,0 +1,31 @@
+{
+  "Id": 242,
+  "Name": "fleche_destructrice",
+  "CardType": 1,
+  "CostAP": 5,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    2
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 2,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Flecha Destrutiva",
+    "DescBR": "Destrói uma invocação.",
+    "NameEN": "Destructive Arrow",
+    "DescEN": "Destroys a Minion.",
+    "NameES": "Flecha Destructiva",
+    "DescES": "Elimina una invocación.",
+    "NameFR": "Flèche Destructrice",
+    "DescFR": "Détruit une invocation.",
+    "NameRU": "Разрушительная стрела",
+    "DescRU": "Уничтожает выбранное существо."
+  }
+}

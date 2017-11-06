@@ -1,0 +1,33 @@
+{
+  "Id": 266,
+  "Name": "roi_chafer",
+  "CardType": 0,
+  "CostAP": 8,
+  "Life": 7,
+  "Attack": 7,
+  "MovementPoint": 2,
+  "Families": [
+    28
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    533
+  ],
+  "Texts": {
+    "NameBR": "Rei Chafer",
+    "DescBR": "<b>MONTE DE OSSOS</b>\n<b>APARIÇÃO:</b> Transforma todos os <b>Montes de Ossos</b> aliados\r\nem Chaferes Decrépitos.",
+    "NameEN": "Chafer King",
+    "DescEN": "<b>PILE OF BONES</b>\n<b>APPEARANCE:</b> Transforms all allied <b>Piles of Bones</b>\r\n into Decrepit Chafers.",
+    "NameES": "Rey Chafer",
+    "DescES": "<b>MONTÓN DE HUESOS</b>\n<b>APARICIÓN:</b> Transforma todos los <b>montones de huesos</b> aliados\r\nen chafers decrépitos.",
+    "NameFR": "Roi Chafer",
+    "DescFR": "<b>TAS D'OS</b>\n<b>APPARITION :</b> Transforme tous les <b>tas d'os</b> alliés\r\nen Chafers décrépits.",
+    "NameRU": "Король чаферов",
+    "DescRU": "<b>КУЧА КОСТЕЙ</b>\n<b>ПОЯВЛЕНИЕ:</b> превращает все союзные <b>кучи костей</b>\r\nв чахлых чаферов."
+  }
+}

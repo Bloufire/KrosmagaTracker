@@ -1,0 +1,31 @@
+{
+  "Id": 286,
+  "Name": "tofu_mutant",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 5,
+  "Attack": 1,
+  "MovementPoint": 1,
+  "Families": [
+    13
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Tofu Mutante",
+    "DescBR": "<b>APARIÇÃO:</b>\nSacrifique um Tofu aliado para ganhar o <b>AT</b> e os <b>PM</b> dele.",
+    "NameEN": "Mutant Tofu",
+    "DescEN": "<b>APPEARANCE:</b>\nSacrifices an allied Tofu to gain its <b>AT</b> and <b>MP</b>.",
+    "NameES": "Tofu mutante",
+    "DescES": "<b>APARICIÓN:</b>\nSacrificas a un tofu aliado para ganar su <b>AT</b> y sus <b>PM</b>.",
+    "NameFR": "Tofu Mutant",
+    "DescFR": "<b>APPARITION :</b>\nSacrifiez un Tofu allié pour gagner son <b>AT</b> et ses <b>PM</b>.",
+    "NameRU": "Тофу-мутант",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nпожертвуйте союзным тофу, чтобы получить его <b>AT</b> и <b>ОП</b>."
+  }
+}

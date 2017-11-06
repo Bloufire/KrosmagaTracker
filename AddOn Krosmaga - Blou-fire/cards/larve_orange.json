@@ -1,0 +1,31 @@
+{
+  "Id": 415,
+  "Name": "larve_orange",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 4,
+  "Attack": 1,
+  "MovementPoint": 2,
+  "Families": [
+    16
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Larva Laranja",
+    "DescBR": "<b>APARIÇÃO:</b>\nDestrói a <b>AR</b> de uma invocação.",
+    "NameEN": "Orange Larva",
+    "DescEN": "<b>APPEARANCE:</b>\nDestroys a Minion's <b>AR</b>.",
+    "NameES": "Larva naranja",
+    "DescES": "<b>APARICIÓN:</b>\nDestruyes la <b>AR</b> de una invocación.",
+    "NameFR": "Larve Orange",
+    "DescFR": "<b>APPARITION :</b>\nDétruisez l'<b>AR</b> d'une invocation.",
+    "NameRU": "Рыжая личинка",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nобнуляет <b>БР</b> выбранного существа."
+  }
+}

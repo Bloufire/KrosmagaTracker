@@ -1,0 +1,31 @@
+{
+  "Id": 233,
+  "Name": "katsou_mee",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 6,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 1,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Katsou Mee",
+    "DescBR": "<b>APARIÇÃO:</b>\nConfere +3 <b>AT</b> a uma invocação.",
+    "NameEN": "Katsu Mi",
+    "DescEN": "<b>APPEARANCE:</b>\nGives a Minion +3 <b>AT</b>.",
+    "NameES": "Katsou Mee",
+    "DescES": "<b>APARICIÓN:</b>\nDas +3 <b>AT</b> a una invocación.",
+    "NameFR": "Katsou Mee",
+    "DescFR": "<b>APPARITION :</b>\nDonnez +3 <b>AT</b> à une invocation.",
+    "NameRU": "Кацу Ми",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nдает выбранному существу +3 <b>AT</b>."
+  }
+}

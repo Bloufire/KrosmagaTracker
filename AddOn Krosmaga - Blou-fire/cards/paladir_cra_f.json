@@ -1,0 +1,32 @@
+{
+  "Id": 1309,
+  "Name": "paladir_cra_f",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 4,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    2,
+    77
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 2,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Heroína Estridente",
+    "DescBR": "<b>ALCANCE:</b>1-3\n<b>CHEFE:</b>Suas outras invocações ganham +1 <b>AT</b> e +1 de <b>alcance</b>.",
+    "NameEN": "Stridulous Heroine",
+    "DescEN": "<b>RANGE:</b> 1-3\n<b>LEADER:</b> +1 <b>AT</b> and +1 <b>range</b> to your other Minions.",
+    "NameES": "Heroína aguda",
+    "DescES": "<b>ALCANCE:</b> 1-3\n<b>LÍDER:</b> +1 <b>AT</b> y +1 de <b>alcance</b> a tus demás invocaciones.",
+    "NameFR": "Héroïne Stridulante",
+    "DescFR": "<b>PORTÉE :</b> 1-3\n<b>CHEF :</b> +1 <b>AT</b> et +1 <b>portée</b> à vos autres invocations.",
+    "NameRU": "Стрекочущая героиня",
+    "DescRU": "<b>ДАЛЬНОСТЬ АТАКИ:</b> 1-3\n<b>ВОЖАК:</b> дает другим вашим существам +1 к <b>дальности атаки</b>."
+  }
+}

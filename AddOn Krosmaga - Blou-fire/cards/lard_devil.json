@@ -1,0 +1,32 @@
+{
+  "Id": 725,
+  "Name": "lard_devil",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 4,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    60,
+    51
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Torresmo Lidor",
+    "DescBR": "<b>APARIÇÃO:</b>\nColoca na sua mão\r\no primeiro Justiceiro do\r\nseu bolo.",
+    "NameEN": "Lard Devil",
+    "DescEN": "<b>APPEARANCE:</b>\nPut the first Vigilante\r\nfrom your deck\r\nin your hand.",
+    "NameES": "Puerkevil",
+    "DescES": "<b>APARICIÓN:</b>\nColoca en tu mano\r\nel primer justiciero de\r\ntu mazo.",
+    "NameFR": "Lard Devil",
+    "DescFR": "<b>APPARITION :</b>\nPlace dans votre main\r\nle premier Justicier de\r\nvotre pioche. ",
+    "NameRU": "Салвиголова",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nвы берете\r\n первого мстителя\r\nиз своей колоды."
+  }
+}

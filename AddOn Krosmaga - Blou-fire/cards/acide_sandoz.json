@@ -1,0 +1,31 @@
+{
+  "Id": 73,
+  "Name": "acide_sandoz",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 6,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    3
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 3,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Ácida Ocilicilas",
+    "DescBR": "<b>APARIÇÃO:</b>\nMuda o <b>AT</b> de seu alvo para que ele seja igual\r\na seus <b>PV</b> restantes.",
+    "NameEN": "Dozeless Acid",
+    "DescEN": "<b>APPEARANCE:</b>\nChanges its target's <b>AT</b> so that it is equal\r\nto its remaining <b>HP</b>.",
+    "NameES": "Acida Licílica",
+    "DescES": "<b>APARICIÓN:</b>\nCambia el <b>AT</b> de su objetivo para que sea igual\r\na sus <b>PdV</b> restantes.",
+    "NameFR": "Acide Sandoz",
+    "DescFR": "<b>APPARITION :</b>\nChange l'<b>AT</b> de sa cible pour qu'elle soit égale\r\nà ses <b>PV</b> restants.",
+    "NameRU": "Кисла Сандоз",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nпоказатель <b>AT</b> выбранного существа становится равен\r\nчислу оставшихся у него <b>ОЗ</b>."
+  }
+}

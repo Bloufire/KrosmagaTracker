@@ -1,0 +1,31 @@
+{
+  "Id": 226,
+  "Name": "dente_le_remonteur",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 7,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Kuko, o Despertador",
+    "DescBR": "Pode ser usado gratuitamente se você tiver ao menos 5 <b>PA</b> em sua <b>reserva</b>.",
+    "NameEN": "Dente Letyme",
+    "DescEN": "Can be played for free if you have at least 5 <b>AP</b> in your <b>reserve</b>.",
+    "NameES": "Dente, el Remontador",
+    "DescES": "Entra en juego gratuitamente si tienes al menos 5 <b>PA</b> de tu <b>reserva</b>.",
+    "NameFR": "Dente le Remonteur",
+    "DescFR": "Se pose gratuitement si vous avez au moins 5 <b>PA</b> dans votre <b>réserve</b>.",
+    "NameRU": "Зубчик Заводила",
+    "DescRU": "Разыгрывается бесплатно, если у вас в <b>резерве</b> не менее 5 <b>ОД</b>."
+  }
+}

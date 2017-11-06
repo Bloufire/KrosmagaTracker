@@ -1,0 +1,31 @@
+{
+  "Id": 854,
+  "Name": "moon_niveau_2",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 4,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    34
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 518,
+  "InfiniteFamily": 473,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Darkli Moon",
+    "DescBR": "<b>FIM DO TURNO</b>:\nMuda o <b>AT</b> das outras invocações para deixá-lo equivalente aos <b>PV</b> delas.",
+    "NameEN": "Darkli Moon",
+    "DescEN": "<b>END OF TURN</b>:\nMakes other Minions' <b>AT</b> equal to their <b>HP</b>.",
+    "NameES": "Darkli Moon",
+    "DescES": "<b>FIN DEL TURNO</b>:\nCambia el <b>AT</b> de las demás invocaciones para que este sea igual a los <b>PdV</b> de estas.",
+    "NameFR": "Darkli Moon",
+    "DescFR": "<b>FIN DU TOUR</b> :\nChange l'<b>AT</b> des autres invocations pour qu'elle soit égale à leurs <b>PV</b>.",
+    "NameRU": "Темный Луна",
+    "DescRU": "<b>КОНЕЦ ХОДА:</b>\nприравнивает показатель <b>AT</b> других существ к их показателю ОЗ."
+  }
+}

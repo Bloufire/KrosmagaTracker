@@ -1,0 +1,31 @@
+{
+  "Id": 163,
+  "Name": "globule_la_crapule",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 5,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 8,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Globina, a Crápula",
+    "DescBR": "<b>APARIÇÃO:</b>\nColoca na sua mão o primeiro Sacrier do seu bolo.",
+    "NameEN": "Clot the Crapulous",
+    "DescEN": "<b>APPEARANCE:</b>\nPut the first Sacrier from your deck in your hand.",
+    "NameES": "Glóbulo, la Crápula",
+    "DescES": "<b>APARICIÓN:</b>\nColoca en tu mano el primer sacrógrito de tu mazo.",
+    "NameFR": "Globule la Crapule",
+    "DescFR": "<b>APPARITION :</b>\nPlace dans votre main le premier Sacrieur de votre pioche.",
+    "NameRU": "Кро Вопийца",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nвы берете первого сакриера из своей колоды."
+  }
+}

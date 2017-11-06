@@ -1,0 +1,31 @@
+{
+  "Id": 54,
+  "Name": "shin_larve",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 6,
+  "Attack": 5,
+  "MovementPoint": 2,
+  "Families": [
+    16
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 1,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Shin Larva",
+    "DescBR": "Suas larvas ganham\r\n+1 <b>AT</b> e <b>dão uma investida</b> quando entram no jogo.",
+    "NameEN": "Shin Larva",
+    "DescEN": "Your larvae gain\r\n+1 <b>AT</b> and <b>charge</b> whenever they enter into play.",
+    "NameES": "Shin Larva",
+    "DescES": "Tus larvas ganan\r\n+1 <b>AT</b> y <b>cargan</b> cuando entran en juego.",
+    "NameFR": "Shin Larve",
+    "DescFR": "Vos larves gagnent\r\n+1 <b>AT</b> et <b>chargent</b> quand elles entrent en jeu.",
+    "NameRU": "Личинка-сенсей",
+    "DescRU": "Вступая в игру, ваши личинки получают +1 <b>AT</b> и делают <b>рывок</b>."
+  }
+}
