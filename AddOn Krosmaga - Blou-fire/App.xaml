@@ -134,6 +134,7 @@
             </LinearGradientBrush>
             <uiElements:IntToCardCountStringConverter x:Key="IntToCardCountStringConverter" />
             <converter:BoolToVisibiltyConverter x:Key="BoolToVisConverter" />
+            <uiElements:IntToCardTurnStringConverter x:Key="IntToCardTurnStringConverter" />
         </ResourceDictionary>
     </Application.Resources>
 </Application>

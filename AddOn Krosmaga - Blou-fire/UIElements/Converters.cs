@@ -26,7 +26,23 @@ namespace AddOn_Krosmaga___Blou_fire.UIElements
 			return null;
 		}
 	}
+	public class IntToCardTurnStringConverter : IValueConverter
+	{
+		public object Convert(object value, Type targetType,
+			object parameter, CultureInfo culture)
+		{
+			if ((int)value > 1)
+				return "t" + (int)value;
+			else
+				return string.Empty;
+		}
 
+		public object ConvertBack(object value, Type targetType,
+			object parameter, CultureInfo culture)
+		{
+			return null;
+		}
+	}
 	public class IntToMatchResultStringConverter : IValueConverter
 	{
 		public object Convert(object value, Type targetType,

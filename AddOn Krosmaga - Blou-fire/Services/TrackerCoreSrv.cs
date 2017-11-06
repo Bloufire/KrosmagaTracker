@@ -329,7 +329,9 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                             {
                                 deckUI.DrawTurn = 0;
                             }
-                            TrackerModel.AddCardToDeck(deckUI);
+							deckUI.PlayedTurn = TrackerModel.CurrentTurn;
+
+							TrackerModel.AddCardToDeck(deckUI);
 						}
 						
                         //if(!TrackerModel.CardIdsByTurn.Any(x => x.Key == cardMoved.Card))

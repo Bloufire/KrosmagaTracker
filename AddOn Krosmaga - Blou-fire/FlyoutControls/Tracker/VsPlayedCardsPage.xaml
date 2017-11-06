@@ -29,7 +29,8 @@
                       Background="{Binding Card, Converter={StaticResource GodToColor}}">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="46" />
-                        <ColumnDefinition Width="120" />
+                        <ColumnDefinition Width="95" />
+                        <ColumnDefinition Width="25" />
                         <ColumnDefinition Width="25" />
                     </Grid.ColumnDefinitions>
                     <Grid.ToolTip>
@@ -46,6 +47,9 @@
                            VerticalAlignment="Center" HorizontalAlignment="Left" />
                     <Label Grid.Column="2" Foreground="White" FontWeight="Bold"
                            Content="{Binding CardCount, Converter={StaticResource IntToCardCountStringConverter}}"
+                           VerticalAlignment="Center" HorizontalAlignment="Right" />
+                    <Label Grid.Column="3" Foreground="White" FontWeight="Bold"
+                           Content="{Binding PlayedTurn, Converter={StaticResource IntToCardTurnStringConverter}}"
                            VerticalAlignment="Center" HorizontalAlignment="Right" />
                 </Grid>
             </DataTemplate>
