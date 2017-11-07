@@ -4,14 +4,42 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
              mc:Ignorable="d" 
              
              d:DesignHeight="300" d:DesignWidth="300">
-    <GroupBox Header="{Binding HeaderName}">
-        <ListView  Background="#66000000" ItemsSource="{Binding CardList}"
+    <GroupBox >
+
+        <GroupBox.Header>
+            <Grid>
+                <TextBlock Text="{Binding HeaderName}"  Foreground="White" VerticalAlignment="Center" />
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" >
+
+                    <StackPanel.Style>
+                        <Style>
+                            <Setter Property="StackPanel.Opacity" Value="0.7"/>
+                            <Style.Triggers>
+                                <Trigger Property="StackPanel.IsMouseOver" Value="True">
+                                    <Setter Property="StackPanel.Opacity" Value="0.9"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </StackPanel.Style>
+                    <CheckBox x:Name="ShowDeckPerTurnCheckBox"
+                              Margin="5 2"
+                              Content="Show Per Turn"
+                              IsChecked="{Binding IsShowPerTurn}" />
+                </StackPanel>
+            </Grid>
+        </GroupBox.Header>
+<Grid>
+    <!--Deck List Normale-->
+        <ListView  Background="#000000" ItemsSource="{Binding CardList}"
                           ScrollViewer.HorizontalScrollBarVisibility="Hidden"
                           ScrollViewer.VerticalScrollBarVisibility="Hidden"
-                   ScrollViewer.CanContentScroll="False">
+                   ScrollViewer.CanContentScroll="False"
+                   Visibility="{Binding IsShowPerTurn, Converter={StaticResource BoolToVis}}">
             <ListView.ItemContainerStyle>
                 <Style TargetType="ListViewItem">
                     <Setter Property="HorizontalContentAlignment" Value="Stretch" />
@@ -45,5 +73,48 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+    <!--Deck List Par Tour-->
+           
+            <ListView  Background="#000000" ItemsSource="{Binding CardList}"
+                          ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                          ScrollViewer.VerticalScrollBarVisibility="Hidden"
+                   ScrollViewer.CanContentScroll="False"
+                   Visibility="{Binding IsShowPerTurn, Converter={StaticResource BoolAndNegatToVisibiltyConverter}}">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                </Style>
+            </ListView.ItemContainerStyle>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Height="25" Opacity="0.8"
+                                  Background="{Binding Card, Converter={StaticResource GodToColor}}">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="46" />
+                                <ColumnDefinition Width="120" />
+                            <ColumnDefinition Width="25" />
+                            <ColumnDefinition Width="25"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                        <Grid.ToolTip>
+                            <ToolTip Background="Transparent" BorderBrush="Transparent">
+                                <Image Width="204" Height="256" Source="{Binding Card.ImagePath}" />
+                            </ToolTip>
+                        </Grid.ToolTip>
+                        <Image Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <Image.Source>
+                                <CroppedBitmap Source="{Binding Card.ImagePath}" SourceRect="48, 68, 124, 58" />
+                            </Image.Source>
+                        </Image>
+                        <Label Grid.Column="1" Foreground="White" Content="{Binding Card.UIName}"
+                                       VerticalAlignment="Center" HorizontalAlignment="Left" />
+                        <Label Grid.Column="2" Foreground="White" FontWeight="Bold"
+                               Content="{Binding CardCount, Converter={StaticResource IntToCardCountStringConverter}}"
+                               VerticalAlignment="Center" HorizontalAlignment="Right" />
+                        <Label Grid.Column="3" >agegaeg</Label>
+                        </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+</Grid>
     </GroupBox>
 </UserControl>

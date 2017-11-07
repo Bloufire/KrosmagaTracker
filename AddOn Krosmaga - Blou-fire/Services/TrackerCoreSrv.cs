@@ -16,9 +16,11 @@ using AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel;
 using AddOn_Krosmaga___Blou_fire.Helpers;
 using AddOn_Krosmaga___Blou_fire.Models;
 using AddOn_Krosmaga___Blou_fire.ProducerConsumer;
+using AddOn_Krosmaga___Blou_fire.UIElements;
 using AddOn_Krosmaga___Blou_fire.Utility;
 using JsonCardsParser;
 using NetFwTypeLib;
+using Newtonsoft.Json;
 using SQLiteConnector;
 using Match = AddOn_Krosmaga___Blou_fire.UIElements.Match;
 using NLog;
@@ -37,6 +39,7 @@ namespace AddOn_Krosmaga___Blou_fire.Services
         public TrackerModel
         TrackerModel { get; set; } //Model qui sera à découper par page. Peut contenir toutes les données actuellement.
 
+	    private Logger _gameLogger;
         public FiltersStatModel CurrentFiltersStatModel { get; set; }
 
         private static Logger logger = LogManager.GetCurrentClassLogger();
@@ -119,14 +122,16 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                             gamestarted.Decode(send);
                             logger.Info("Game is starting - Type : " + gamestarted.GameType);
                             UIActionGameEventStarted(gamestarted);
-                            break;
+	                      
+							break;
                         case "1B4FF61A6FBC09E611F2CBA7E5FB5391BA": // GameFinishedEvent
                             Builders.GameFinished gamefinished = new Builders.GameFinished();
                             send = _binaryReader.ReadBytes((int)size);
                             gamefinished.Decode(send);
                             logger.Info("Game Finished - Winner : " + gamefinished.WinnerPlayer);
                             UIActionGameFinishedEvent(gamefinished);
-                            break;
+	                       
+							break;
                         case "98400741B1CB5A4A110FC4D2D51E2D4CA9": // GameEventsEvent
                             Builders.GameEvents gameevents = new Builders.GameEvents();
                             send = _binaryReader.ReadBytes((int)size);
@@ -307,7 +312,8 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                     {
                         logger.Trace("Moved 1.1");
                         deckUI = TrackerModel.Deck.FirstOrDefault(x => x.Card == card);
-                        if (deckUI != null)
+	                   
+						if (deckUI != null)
                         {
                             logger.Trace("Moved 1.1.1");
                             deckUI.CardCount++;
@@ -316,6 +322,7 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                         else
                         {
                             logger.Trace("Moved 1.1.2");
+
                             deckUI = new UIElements.DeckUI(card, 1);
                             try
                             {
@@ -326,47 +333,53 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                                 deckUI.DrawTurn = 99; //Je met 99 pour que ça saute aux yeux de l'utilisateurs qu'il y'a un problème.
                                 logger.Error("Error: deckUI.DrawTurn : " + e);
                             }
-							deckUI.PlayedTurn = TrackerModel.CurrentTurn;
+							deckUI.PlayedTurn.Add(TrackerModel.CurrentTurn);
+
+							logger.Info($"Contenu du TrackerModel.Deck {string.Join($"{Environment.NewLine}", TrackerModel.Deck)}");
 
 							TrackerModel.AddCardToDeck(deckUI);
 						}
-						
-                        //if(!TrackerModel.CardIdsByTurn.Any(x => x.Key == cardMoved.Card))
-                        //{
-                        //    var cardToRemove = TrackerModel.CardsInHand.FirstOrDefault(x => x.DrawTurn == 0);
-                        //    if(cardToRemove != null)
-                        //    {
-                        //        TrackerModel.RemoveCardFromCardInHand(cardToRemove);
-                        //    }
-                        //}
-                        //else
-                        //{
-                        //    var cardInList = TrackerModel.CardIdsByTurn.First(x => x.Key == cardMoved.Card);
-                        //    var cardToRemove = TrackerModel.CardsInHand.FirstOrDefault(x => x.Card.Id == -1 && x.DrawTurn == cardInList.Value);
-                        //    if (cardToRemove != null)
-                        //    {
-                        //        TrackerModel.RemoveCardFromCardInHand(cardToRemove);
-                        //    }
-                        //}
-                    }
+
+						#region TODO Blou , à remove ? 
+						//if(!TrackerModel.CardIdsByTurn.Any(x => x.Key == cardMoved.Card))
+						//{
+						//    var cardToRemove = TrackerModel.CardsInHand.FirstOrDefault(x => x.DrawTurn == 0);
+						//    if(cardToRemove != null)
+						//    {
+						//        TrackerModel.RemoveCardFromCardInHand(cardToRemove);
+						//    }
+						//}
+						//else
+						//{
+						//    var cardInList = TrackerModel.CardIdsByTurn.First(x => x.Key == cardMoved.Card);
+						//    var cardToRemove = TrackerModel.CardsInHand.FirstOrDefault(x => x.Card.Id == -1 && x.DrawTurn == cardInList.Value);
+						//    if (cardToRemove != null)
+						//    {
+						//        TrackerModel.RemoveCardFromCardInHand(cardToRemove);
+						//    }
+						//} 
+						#endregion
+					}
                     else
                         logger.Trace("Moved 1.2");
-                    //{
-                    //	deckUI = TrackerModel.CardsInHand.FirstOrDefault(x => x.Card == card);
-                    //	if (deckUI != null)
-                    //	{
-                    //		if (deckUI.CardCount > 1)
-                    //		{
-                    //			deckUI.CardCount--;
-                    //		}
-                    //		else
-                    //		{
-                    //			TrackerModel.RemoveCardFromCardInHand(deckUI);
-                    //		}
-                    //	}
-                    //}
-                }
-                if (cardMoved.CardLocationTo == Enums.CardLocation.Playground ||
+					#region TODO Blou , à remove ? 
+					//{
+					//	deckUI = TrackerModel.CardsInHand.FirstOrDefault(x => x.Card == card);
+					//	if (deckUI != null)
+					//	{
+					//		if (deckUI.CardCount > 1)
+					//		{
+					//			deckUI.CardCount--;
+					//		}
+					//		else
+					//		{
+					//			TrackerModel.RemoveCardFromCardInHand(deckUI);
+					//		}
+					//	}
+					//} 
+					#endregion
+				}
+				if (cardMoved.CardLocationTo == Enums.CardLocation.Playground ||
                     cardMoved.CardLocationTo == Enums.CardLocation.OwnGraveyard ||
                     cardMoved.CardLocationTo == Enums.CardLocation.OpponentGraveyard ||
                     cardMoved.CardLocationTo == Enums.CardLocation.OpponentHand ||

@@ -12,11 +12,20 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 	public class DeckListPageModel : ObservableObject
 	{
 		private List<DeckUI> _cardList;
-
+		
 		public List<DeckUI> CardList
 		{
-			get { return _cardList; }
-			set { _cardList = value;
+			get
+			{
+				if (_cardList != null) return _cardList.OrderByDescending(x => x.Card.GodType).ThenBy(x => x.Card.CostAP).ToList();
+				_cardList = new List<DeckUI>();
+				return _cardList;
+
+
+
+			}
+			set {
+				_cardList = value;
 				OnPropertyChanged("CardList"); }
 		}
 		private string _headerName;
@@ -31,9 +40,22 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 			}
 		}
 
+		private bool _isShowPerTurn;
+
+		public bool IsShowPerTurn
+		{
+			get { return _isShowPerTurn; }
+			set
+			{
+				_isShowPerTurn = value;
+				OnPropertyChanged("IsShowPerTurn");
+			}
+		}
+
+
 		public DeckListPageModel()
 		{
-			CardList = new List<DeckUI>();
+			
 		}
 	}
 }

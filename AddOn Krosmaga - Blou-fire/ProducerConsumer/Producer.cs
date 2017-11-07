@@ -16,7 +16,7 @@ namespace AddOn_Krosmaga___Blou_fire.ProducerConsumer
     {
         private Socket mainSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
         private byte[] byteData = new byte[2048];
-
+		
         private Queue<byte[]> _queue;
         private SyncEvents _syncEvents;
 

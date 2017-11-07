@@ -31,7 +31,7 @@
                         <ColumnDefinition Width="46" />
                         <ColumnDefinition Width="95" />
                         <ColumnDefinition Width="25" />
-                        <ColumnDefinition Width="25" />
+                        <!--<ColumnDefinition Width="25" />-->
                     </Grid.ColumnDefinitions>
                     <Grid.ToolTip>
                         <ToolTip Background="Transparent" BorderBrush="Transparent">
@@ -48,9 +48,9 @@
                     <Label Grid.Column="2" Foreground="White" FontWeight="Bold"
                            Content="{Binding CardCount, Converter={StaticResource IntToCardCountStringConverter}}"
                            VerticalAlignment="Center" HorizontalAlignment="Right" />
-                    <Label Grid.Column="3" Foreground="White" FontWeight="Bold"
+                    <!--<Label Grid.Column="3" Foreground="White" FontWeight="Bold"
                            Content="{Binding PlayedTurn, Converter={StaticResource IntToCardTurnStringConverter}}"
-                           VerticalAlignment="Center" HorizontalAlignment="Right" />
+                           VerticalAlignment="Center" HorizontalAlignment="Right" />-->
                 </Grid>
             </DataTemplate>
         </ListView.ItemTemplate>

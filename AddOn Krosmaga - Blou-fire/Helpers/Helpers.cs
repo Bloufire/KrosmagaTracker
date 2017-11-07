@@ -13,6 +13,8 @@ using AddOn_Krosmaga___Blou_fire.UIElements;
 using JsonCardsParser;
 using NetFwTypeLib;
 using NLog;
+using NLog.Config;
+using NLog.Targets;
 using Card = SQLiteConnector.Card;
 
 namespace AddOn_Krosmaga___Blou_fire.Helpers
@@ -250,5 +252,9 @@ namespace AddOn_Krosmaga___Blou_fire.Helpers
 
             return valueToReturn;
         }
-    }
+	
+
+	}
+
+
 }

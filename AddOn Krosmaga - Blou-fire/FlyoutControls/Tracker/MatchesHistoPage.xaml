@@ -49,44 +49,7 @@
                 </Style.Triggers>
             </Style>
         </DataGrid.CellStyle>
-        <!--<DataGrid.RowDetailsTemplate>
-           <DataTemplate>
-           <ListView Height="200" Width="150" Background="#66000000" ItemsSource="{Binding Deck}"
-                     ScrollViewer.HorizontalScrollBarVisibility="Hidden"
-                     ScrollViewer.VerticalScrollBarVisibility="Hidden">
-               <ListView.ItemContainerStyle>
-                   <Style TargetType="ListViewItem">
-                       <Setter Property="HorizontalContentAlignment" Value="Stretch" />
-                   </Style>
-               </ListView.ItemContainerStyle>
-               <ListView.ItemTemplate>
-                   <DataTemplate>
-                       <Grid Height="25" Opacity="0.8"
-                             Background="{Binding Card, Converter={StaticResource GodToColor}}">
-                           <Grid.ColumnDefinitions>
-                               <ColumnDefinition Width="46" />
-                               <ColumnDefinition Width="100" />
-                               <ColumnDefinition Width="25" />
-                           </Grid.ColumnDefinitions>
-                           <Grid.ToolTip>
-                               <ToolTip Background="Transparent" BorderBrush="Transparent">
-                                   <Image Width="204" Height="256" Source="{Binding Card.ImagePath}" />
-                               </ToolTip>
-                           </Grid.ToolTip>
-                           <Image Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center">
-                               <Image.Source>
-                                   <CroppedBitmap Source="{Binding Card.ImagePath}" SourceRect="48, 68, 124, 58" />
-                               </Image.Source>
-                           </Image>
-                           <Label Grid.Column="1" Foreground="White" Content="{Binding Card.UIName}"
-                                  VerticalAlignment="Center" HorizontalAlignment="Left" />
-
-                       </Grid>
-                   </DataTemplate>
-               </ListView.ItemTemplate>
-           </ListView>
-           </DataTemplate>
-        </DataGrid.RowDetailsTemplate>-->
+      
         <DataGrid.Columns>
             <DataGridTemplateColumn Header="Class" SortMemberPath="PlayerClassName" Width="auto">
                 <DataGridTemplateColumn.CellTemplate>
@@ -142,4 +105,3 @@
 
 </UserControl>
 
-<!---->
