@@ -184,6 +184,9 @@
     <Compile Include="FlyoutControls\Tracker\CardPage.xaml.cs">
       <DependentUpon>CardPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FlyoutControls\Tracker\DeckListComparerPage.xaml.cs">
+      <DependentUpon>DeckListComparerPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FlyoutControls\Tracker\DeckListPage.xaml.cs">
       <DependentUpon>DeckListPage.xaml</DependentUpon>
     </Compile>
@@ -318,6 +321,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="FlyoutControls\Tracker\CardPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FlyoutControls\Tracker\DeckListComparerPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

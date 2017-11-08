@@ -20,7 +20,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 	public class MatchesHistoPageModel : ObservableObject
 	{
 		private List<UIElements.Match> _filteredGames;
-
+		public bool IsOpen { get; set; }
 		#region CTOR
 
 		public MatchesHistoPageModel() : base()
@@ -96,8 +96,66 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 		}
 
 
+		#region Add Deck To Compare
+		private ICommand _addDeckToCompareList;
+		public ICommand AddDeckToCompareList
+		{
+			get
+			{
+
+				if (_addDeckToCompareList == null)
+					_addDeckToCompareList = new RelayCommand(OpenAdvancedStats);
+
+				return _addDeckToCompareList;
+			}
+		}
+
+		private void OpenAdvancedStats(object args)
+		{
+
+		
+			//if (!IsOpen)
+			//{
+				////Get the clicked MenuItem
+				//var menuItem = (MenuItem)sender;
+
+				////Get the ContextMenu to which the menuItem belongs
+				//var contextMenu = (ContextMenu)menuItem.Parent;
+
+				////Find the placementTarget
+				//var item = (DataGrid)contextMenu.PlacementTarget;
+
+				//Get the underlying item, that you cast to your object that is bound
+				//to the DataGrid (and has subject and state as property)
+				var matchClicked = (Match)args;
+
+				//On met à jour la propert CardList du Match
+				matchClicked.Deck.UpdateCardList();
+
+				//On prépare le Context
+				var deckListPageModel = new DeckListPageModel();
+				deckListPageModel.CardList.AddRange(matchClicked.Deck.CardsList);
+				deckListPageModel.HeaderName = matchClicked.OpponentName;
+				//On attache le context à la page
+				DeckListPage ui = new DeckListPage { DataContext = deckListPageModel };
 
 
+				MetroWindow newWindow = new MetroWindow
+				{
+					Height = 410,
+					Width = 220,
+					Title = $"Deck",
+					Content = ui
+				};
+				newWindow.Show();
+				newWindow.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+				newWindow.Topmost = true;
+			//}
+		}
+
+	
+
+		#endregion
 
 	}
 }

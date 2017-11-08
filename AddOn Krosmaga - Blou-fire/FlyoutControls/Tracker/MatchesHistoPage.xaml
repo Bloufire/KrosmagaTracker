@@ -92,8 +92,11 @@
 
         </DataGrid.Columns>
         <DataGrid.ContextMenu>
-            <ContextMenu>
-                <MenuItem Header="ShowDeck" Click="MenuItem_OnClick" >
+            <ContextMenu >
+                <MenuItem Header="ShowDeck"  
+                          Command="{Binding AddDeckToCompareList}"
+                          CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=ContextMenu}, Path=PlacementTarget.SelectedItem}"
+                          >
                     <MenuItem.Icon>
                         <Image Width="12" Height="12" Source="../../Images/card.png" />
                     </MenuItem.Icon>

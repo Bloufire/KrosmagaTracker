@@ -12,25 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel;
-using JsonCardsParser;
-using MahApps.Metro.Controls;
-using SQLiteConnector;
-using Match = AddOn_Krosmaga___Blou_fire.UIElements.Match;
 
 namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker
 {
-	/// <summary>
-	/// Logique d'interaction pour MatchesHistoPage.xaml
-	/// </summary>
-	public partial class MatchesHistoPage
-	{
-		public MatchesHistoPage()
-		{
-			InitializeComponent();
-		}
-
-
-	
-	}
+    /// <summary>
+    /// Logique d'interaction pour DeckListComparerPage.xaml
+    /// </summary>
+    public partial class DeckListComparerPage : UserControl
+    {
+        public DeckListComparerPage()
+        {
+            InitializeComponent();
+        }
+    }
 }
