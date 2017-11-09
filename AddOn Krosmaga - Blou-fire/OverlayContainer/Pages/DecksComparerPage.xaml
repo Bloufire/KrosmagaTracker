@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="AddOn_Krosmaga___Blou_fire.OverlayContainer.Pages.DecksComparerPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AddOn_Krosmaga___Blou_fire.OverlayContainer.Pages"
+             xmlns:pageModel="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel"
+             xmlns:tracker="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <tracker:DeckListPage Grid.Column="0" DataContext="{Binding DeckAModel}"></tracker:DeckListPage>
+        <tracker:DeckListPage Grid.Column="1" DataContext="{Binding DeckBModel}"></tracker:DeckListPage>
+    </Grid>
+</UserControl>
+
+
+

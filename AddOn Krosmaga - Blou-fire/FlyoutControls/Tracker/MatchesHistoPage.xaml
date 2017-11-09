@@ -92,15 +92,28 @@
 
         </DataGrid.Columns>
         <DataGrid.ContextMenu>
-            <ContextMenu >
-                <MenuItem Header="ShowDeck"  
-                          Command="{Binding AddDeckToCompareList}"
+            <ContextMenu>
+               <MenuItem Header="ShowDeck"  
+                          Command="{Binding ShowDeckCommand}"
                           CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=ContextMenu}, Path=PlacementTarget.SelectedItem}"
-                          >
-                    <MenuItem.Icon>
-                        <Image Width="12" Height="12" Source="../../Images/card.png" />
-                    </MenuItem.Icon>
-                </MenuItem>
+                          Visibility="{Binding IsOpen,Converter={StaticResource BoolAndNegatToVisibiltyConverter}}"
+                         />
+        
+
+                <MenuItem Name="ReplaceDeckOne"
+                          Header="Replace Left Deck"       
+                          Command="{Binding ReplaceDeckACommand}"
+                          CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=ContextMenu}, Path=PlacementTarget.SelectedItem}"
+                          Visibility="{Binding IsOpen,Converter={StaticResource BoolToVisConverter}}"
+                />
+            
+                <MenuItem Name="ReplaceDeckTwo"
+                          Header="Replace Right Deck"        
+                          Command="{Binding ReplaceDeckBCommand}"
+                          CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=ContextMenu}, Path=PlacementTarget.SelectedItem}"
+                          Visibility="{Binding IsOpen,Converter={StaticResource BoolToVisConverter}}"
+                        />
+
             </ContextMenu>
         </DataGrid.ContextMenu>
 

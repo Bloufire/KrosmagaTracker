@@ -15,7 +15,7 @@ namespace AddOn_Krosmaga___Blou_fire.Converter
 	    {
 		    if (value != null)
 		    {
-			    if ((bool)value) return Visibility.Hidden;
+			    if ((bool)value) return Visibility.Collapsed;
 			    if (!(bool)value) return Visibility.Visible;
 		    }
 		    return null;

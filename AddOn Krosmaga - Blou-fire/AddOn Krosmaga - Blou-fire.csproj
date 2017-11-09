@@ -274,8 +274,12 @@
     <Compile Include="Models\SettingsModel.cs" />
     <Compile Include="Models\TrackerModel.cs" />
     <Compile Include="OverlayContainer\PageModels\ContactUsContentPageModel.cs" />
+    <Compile Include="OverlayContainer\PageModels\DecksComparerPageModel.cs" />
     <Compile Include="OverlayContainer\Pages\ContactUsContentPage.xaml.cs">
       <DependentUpon>ContactUsContentPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OverlayContainer\Pages\DecksComparerPage.xaml.cs">
+      <DependentUpon>DecksComparerPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="OverlayContainer\Pages\EmptyOverlayPage.xaml.cs">
       <DependentUpon>EmptyOverlayPage.xaml</DependentUpon>
@@ -413,6 +417,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="OverlayContainer\Pages\ContactUsContentPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OverlayContainer\Pages\DecksComparerPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
