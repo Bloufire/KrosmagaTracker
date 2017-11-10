@@ -37,8 +37,8 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 	
 		private SeriesCollection GetSeriesCollectionFromDeck(List<DeckUI> cardList)
 		{
-			var CreaValues  = GetCreatureValues(cardList);
-			var SpellValues = GetSpellValues(cardList);
+			var CreaValues  = GetDeckValues(cardList,0);
+			var SpellValues = GetDeckValues(cardList,1);
 			var returnSeries = new SeriesCollection
 			{
 				new StackedColumnSeries
@@ -61,27 +61,29 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 			return returnSeries;
 		}
 
-		private ChartValues<double> GetSpellValues(List<DeckUI> cardList)
+		private ChartValues<double> GetDeckValues(List<DeckUI> cardList,int InvocOrSpell)
 		{
 			var values = new ChartValues<double>();
-			for (int i = 0; i < 6; i++)
+			for (var i = 0; i <= 6; i++)
 			{
-				values.Add(cardList.Count(x=> x.Card.CostAP == i && x.Card.CardType == 1));
+				var value = 0;
+				foreach (var card in cardList.FindAll(x => x.Card.CostAP == i && x.Card.CardType == InvocOrSpell))
+				{
+					value += card.CardCount;
+				}
+				values.Add(value);
 			}
-			values.Add(cardList.Count(x => x.Card.CostAP >=7 && x.Card.CardType == 1));
+
+			var valueMore = 0;
+			foreach (var card in cardList.FindAll(x => x.Card.CostAP >= 7 && x.Card.CardType == InvocOrSpell))
+			{
+				valueMore += card.CardCount;
+			}
+			values.Add(valueMore);
 			return values;
 		}
 
-		private ChartValues<double> GetCreatureValues(List<DeckUI> cardList)
-		{
-			var values = new ChartValues<double>();
-			for (int i = 0; i < 6; i++)
-			{
-				values.Add(cardList.Count(x => x.Card.CostAP == i && x.Card.CardType == 0));
-			}
-			values.Add(cardList.Count(x => x.Card.CostAP >= 7 && x.Card.CardType == 0));
-			return values;
-		}
+		
 
 
 		#region MyRegion
@@ -119,9 +121,9 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 
 		public DeckListPageModel()
 		{
-			
+			Labels = new[] { "0", "1", "2", "3", "4", "5", "6", "7+" };
 		}
 
-		
+		public string[] Labels { get; set; }
 	}
 }

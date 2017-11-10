@@ -492,6 +492,7 @@
     <Resource Include="Images\CardImages\vampyro_niveau_1.png" />
     <Resource Include="Images\CardImages\vampyro_niveau_2.png" />
     <Resource Include="Images\CardImages\vampyro_niveau_3.png" />
+    <Resource Include="Images\etoile.png" />
     <Content Include="NLog.config">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

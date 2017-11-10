@@ -10,7 +10,23 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        <Grid.RowDefinitions>
+        <Grid.Resources>
+            <Style x:Key="SpellLineSeries" TargetType="wpf:LineSeries">
+                <Setter Property="StrokeThickness" Value="3"></Setter>
+                <Setter Property="Stroke" Value="White"></Setter>
+                <Setter Property="Fill" Value="#4EFFFFFF"></Setter>
+                <Setter Property="PointGeometrySize" Value="0"></Setter>
+                <Setter Property="LineSmoothness" Value="0"></Setter>
+            </Style>
+            <Style x:Key="InvocLineSeries" TargetType="wpf:LineSeries">
+                <Setter Property="StrokeThickness" Value="3"></Setter>
+                <Setter Property="Stroke" Value="White"></Setter>
+                <Setter Property="Fill" Value="#4EFFFFFF"></Setter>
+                <Setter Property="PointGeometrySize" Value="0"></Setter>
+                <Setter Property="LineSmoothness" Value="0"></Setter>
+            </Style>
+        </Grid.Resources>
+            <Grid.RowDefinitions>
             <RowDefinition Height="7*" />
             <RowDefinition Height="2*" />
         </Grid.RowDefinitions>
@@ -61,7 +77,14 @@
                 </ListView>
         </GroupBox>
 
-        <wpf:CartesianChart Grid.Row="1" Series="{Binding SeriesCollection}" Margin="10, 10, 10, 20" Hoverable="False" DataTooltip="{x:Null}" LegendLocation="None">
-           </wpf:CartesianChart>
+        <wpf:CartesianChart Grid.Row="1" Series="{Binding SeriesCollection}" Margin="5, 5, 5, 10" Hoverable="False" DataTooltip="{x:Null}" LegendLocation="None">
+            <wpf:CartesianChart.AxisX >
+                <wpf:Axis Labels="{Binding Labels}" LabelsRotation="-15">
+                    <wpf:Axis.Separator>
+                        <wpf:Separator Step="1"></wpf:Separator>
+                    </wpf:Axis.Separator>
+                </wpf:Axis>
+            </wpf:CartesianChart.AxisX>
+        </wpf:CartesianChart>
     </Grid>
 </UserControl>
