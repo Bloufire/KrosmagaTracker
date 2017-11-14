@@ -17,6 +17,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 		private string _vsCurrentTurn;
 		private int _vsRank;
 		private bool _isRankVisible;
+		private string _vsClass;
 
 		#region CTOR
 		public VsProfileDataPageModel()
@@ -34,6 +35,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 			VsNbCardsInHand = TrackerSrv.TrackerModel.OpponentCardsInHand;
 			VsRank = TrackerSrv.TrackerModel.OpponentLevel;
 			VsCurrentTurn = "Turn " + TrackerSrv.TrackerModel.CurrentTurn.ToString();
+			VsClass = TrackerSrv.TrackerModel.OpponentClasse;
 
 		}
 
@@ -138,7 +140,15 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 				OnPropertyChanged(nameof(VsCurrentTurn));
 			}
 		}
-
+		public string VsClass
+		{
+			get { return _vsClass; }
+			set
+			{
+				_vsClass = value;
+				OnPropertyChanged(nameof(VsClass));
+			}
+		}
 		#endregion
 	}
 }

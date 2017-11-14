@@ -136,10 +136,12 @@
     <Compile Include="Converter\BoolAndNegatToVisibiltyConverter.cs" />
     <Compile Include="Converter\BoolToVisibiltyConverter.cs" />
     <Compile Include="Converter\BrushToColorConverter.cs" />
+    <Compile Include="Converter\ClassStringToClassBannerConverter.cs" />
     <Compile Include="Converter\CombiningConverter.cs" />
     <Compile Include="Converter\GameResultToBrushConverter.cs" />
     <Compile Include="Converter\GameResultToStringConverter.cs" />
     <Compile Include="Converter\NegatedBooleanConverter.cs" />
+    <Compile Include="Converter\RankToImageRankConverter.cs" />
     <Compile Include="Converter\SelectedToVisibilityConverter.cs" />
     <Compile Include="DataModel\KrosClass.cs" />
     <Compile Include="Data\CellCoord.Builder.cs" />
@@ -493,6 +495,15 @@
     <Resource Include="Images\CardImages\vampyro_niveau_2.png" />
     <Resource Include="Images\CardImages\vampyro_niveau_3.png" />
     <Resource Include="Images\etoile.png" />
+    <Resource Include="Images\bg_gods\banners_cra.png" />
+    <Resource Include="Images\bg_gods\banners_enu.png" />
+    <Resource Include="Images\bg_gods\banners_iop.png" />
+    <Resource Include="Images\bg_gods\banners_sram.png" />
+    <Resource Include="Images\bg_gods\banners_xel.png" />
+    <Resource Include="Images\bg_gods\banner_eca.png" />
+    <Resource Include="Images\bg_gods\banner_eni.png" />
+    <Resource Include="Images\bg_gods\banner_sacri.png" />
+    <Resource Include="Images\bg_gods\banner_sadi.png" />
     <Content Include="NLog.config">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -2717,6 +2728,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controls\" />
+    <Folder Include="Images\Gods\bg_gods\" />
+    <Folder Include="Resources\ClassBanner\bg_gods\" />
     <Folder Include="Services\Interfaces\" />
   </ItemGroup>
   <ItemGroup>

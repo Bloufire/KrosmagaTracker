@@ -6,8 +6,9 @@
              xmlns:local="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker"
              xmlns:pageModel="clr-namespace:AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel"
              xmlns:system="clr-namespace:System;assembly=mscorlib"
+             xmlns:converter="clr-namespace:AddOn_Krosmaga___Blou_fire.Converter"
              mc:Ignorable="d"
-             d:DesignHeight="300" d:DesignWidth="200">
+             d:DesignHeight="100" d:DesignWidth="200">
     <UserControl.Resources>
         <system:Double x:Key="WinLoseIconSize">20</system:Double>
         <GridLength x:Key="WinLoseColumn">20</GridLength>
@@ -15,15 +16,24 @@
     <UserControl.DataContext>
         <pageModel:VsProfileDataPageModel />
     </UserControl.DataContext>
-    <StackPanel>
+    
+    <Grid>
+
+        <Grid.Resources>
+            <converter:ClassStringToClassBannerConverter x:Key="ClassStringToClassBannerConverter" />
+        </Grid.Resources>
+        <Image Margin="8,5,5,5" Name="Receiver"
+                                   Source="{Binding VsClass,Converter={StaticResource ClassStringToClassBannerConverter}}" />
+                 
+        <StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <TextBlock Margin="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"
+                <TextBlock  Margin="150,20,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"
                    Text="{Binding VsPseudo}" TextWrapping="NoWrap"  />
-            <TextBlock Margin="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"
-                   Text="{Binding VsRank,StringFormat='Rank :{0}'}" Visibility="{Binding IsRankVisible, Converter={StaticResource BoolToVisConverter}}" TextWrapping="NoWrap"  />
+                <TextBlock  Margin="10,20,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"
+                   Text="{Binding VsRank,StringFormat='{0}'}" Visibility="{Binding IsRankVisible, Converter={StaticResource BoolToVisConverter}}" TextWrapping="NoWrap"  />
         </StackPanel>
 
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+        <StackPanel Margin="90,0,0,0" Orientation="Horizontal" HorizontalAlignment="Center">
 
             <!--Bloc de données adversaire-->
             <Grid Margin="5,0">
@@ -37,9 +47,7 @@
                     <Image Grid.Column="0" Width="{StaticResource WinLoseIconSize}"
                            Height="{StaticResource WinLoseIconSize}" ToolTip="Win·s·"
                            Source="../../Images/DesignImagesKindry/icon_victoire_mini.png" >
-                        <Image.OpacityMask>
-                            <SolidColorBrush   Color="#ffff00ff" />
-                        </Image.OpacityMask>
+                   
                     </Image>
                     <Label Grid.Column="1" Margin="5" HorizontalAlignment="Center" VerticalAlignment="Center" Content="{Binding VsWinsNb}" />
                 </StackPanel>
@@ -51,7 +59,7 @@
                 </StackPanel>
             </Grid>
         </StackPanel>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <StackPanel Margin="90,0,0,0" Orientation="Horizontal" HorizontalAlignment="Center">
             <Label Margin="5,0,5,0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="13"
                    Content="{Binding VsCurrentTurn}" />
 
@@ -80,4 +88,5 @@
             </Grid>
         </StackPanel>
     </StackPanel>
+    </Grid>
 </UserControl>
