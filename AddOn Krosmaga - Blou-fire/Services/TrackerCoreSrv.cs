@@ -19,6 +19,7 @@ using AddOn_Krosmaga___Blou_fire.ProducerConsumer;
 using AddOn_Krosmaga___Blou_fire.UIElements;
 using AddOn_Krosmaga___Blou_fire.Utility;
 using JsonCardsParser;
+
 using NetFwTypeLib;
 using Newtonsoft.Json;
 using SQLiteConnector;
@@ -46,11 +47,7 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 
         #endregion
 
-        protected override void OnPropertyChanged(string propertyName)
-        {
-            base.OnPropertyChanged(propertyName);
-        }
-
+   
         #region Core
 
         public TrackerCoreSrv()
@@ -251,6 +248,8 @@ namespace AddOn_Krosmaga___Blou_fire.Services
             TrackerModel.VsWinsNb = 0;
             TrackerModel.VsLosesNb = 0;
             TrackerModel.VsPseudo = "";
+			TrackerModel.OpponentClasse = String.Empty;
+	        
             TrackerModel.CurrentTurn = 0;
             TrackerModel.OpponentLevel = 0;
             UpdateMatchsWithFilterList();

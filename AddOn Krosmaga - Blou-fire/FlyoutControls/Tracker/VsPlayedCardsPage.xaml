@@ -15,7 +15,7 @@
         <pageModel:VsPlayedCardsPageModel />
     </UserControl.DataContext>
 
-    <ListView Grid.Row="3"  Background="#66000000" ItemsSource="{Binding VsDeck}"
+    <ListView  Background="#66000000" ItemsSource="{Binding VsDeck}"
               ScrollViewer.HorizontalScrollBarVisibility="Hidden"
               ScrollViewer.VerticalScrollBarVisibility="Hidden">
         <ListView.ItemContainerStyle>
@@ -29,7 +29,7 @@
                       Background="{Binding Card, Converter={StaticResource GodToColor}}">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="46" />
-                        <ColumnDefinition Width="95" />
+                        <ColumnDefinition Width="120" />
                         <ColumnDefinition Width="25" />
                         <!--<ColumnDefinition Width="25" />-->
                     </Grid.ColumnDefinitions>

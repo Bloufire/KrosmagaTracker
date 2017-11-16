@@ -11,7 +11,7 @@
              xmlns:converter="clr-namespace:AddOn_Krosmaga___Blou_fire.Converter"
              xmlns:wpf="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf">
     <Application.Resources>
-        <ResourceDictionary>
+               <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <!-- MahApps.Metro resource dictionaries. Make sure that all file names are Case Sensitive! -->
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
@@ -26,8 +26,7 @@
 
             </ResourceDictionary.MergedDictionaries>
             <uiElements:GodClassToColor x:Key="GodToColor" />
-
-        
+           
             <!--Converter-->
             <converter:SelectedToVisibilityConverter x:Key="SelectedToVisibilityConverter" />
             <Style x:Key="CenterHeaderColumStyle" 
@@ -80,7 +79,8 @@
             <system:Double x:Key="OverlayWidth" >350</system:Double>
             <system:Double x:Key="IconDefaultSize">20</system:Double>
 
-     
+            <FontFamily x:Key="BernardFont">pack://application:,,,/Resources/Fonts/#bernard mt</FontFamily>
+
             <Style TargetType="TextBlock" x:Key="WinrateGaugeTextStyle">
                 <Setter Property="FontWeight" Value="SemiBold"/>
                 <Setter Property="TextAlignment" Value="Center"/>
@@ -104,6 +104,7 @@
                     </Setter.Value>
                 </Setter>
             </Style>
+            
             <converter:BoolToVisibiltyConverter x:Key="BoolToVis" />
             <converter:BoolAndNegatToVisibiltyConverter x:Key="BoolAndNegatToVisibiltyConverter" />
              <Brush x:Key="SideMenuColorBrush" >#005666</Brush>

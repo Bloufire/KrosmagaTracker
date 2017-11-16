@@ -16,7 +16,7 @@ namespace AddOn_Krosmaga___Blou_fire.Helpers
 
 		protected ObservableObject()
 		{
-			App myApplication = ((App) Application.Current);
+			App myApplication = ((App)Application.Current);
 			TrackerSrv = myApplication.TrackerCoreService;
 		}
 
@@ -35,8 +35,8 @@ namespace AddOn_Krosmaga___Blou_fire.Helpers
 		protected virtual void OnPropertyChanged(string propertyName)
 		{
 			this.VerifyPropertyName(propertyName);
-			
-				if (this.PropertyChanged != null)
+
+			if (this.PropertyChanged != null)
 			{
 				var e = new PropertyChangedEventArgs(propertyName);
 				this.PropertyChanged(this, e);

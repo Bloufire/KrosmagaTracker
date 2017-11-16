@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using AddOn_Krosmaga___Blou_fire.Helpers;
 
 namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
@@ -25,6 +26,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 			TrackerSrv.TrackerModel.PropertyChanged += TrackerModel_PropertyChanged; ;
 			UpdateScreen();
 		}
+		public ICommand BtnRefreshData => new RelayCommand(UpdateScreen);
 
 		private void UpdateScreen()
 		{

@@ -201,12 +201,6 @@
     <Compile Include="FlyoutControls\Tracker\GlobalStatsPage.xaml.cs">
       <DependentUpon>GlobalStatsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="FlyoutControls\Tracker\InGameTrackerPage.xaml.cs">
-      <DependentUpon>InGameTrackerPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="FlyoutControls\Tracker\MainUserControlPage.xaml.cs">
-      <DependentUpon>MainUserControlPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="FlyoutControls\Tracker\MatchesHistoPage.xaml.cs">
       <DependentUpon>MatchesHistoPage.xaml</DependentUpon>
     </Compile>
@@ -216,26 +210,17 @@
     <Compile Include="FlyoutControls\Tracker\PageModel\DeckListPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\DofusTrackerControlPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\GlobalStatsPageModel.cs" />
-    <Compile Include="FlyoutControls\Tracker\PageModel\MainUserControlPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\MatchesHistoPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\PickAClassControlPageModel.cs" />
-    <Compile Include="FlyoutControls\Tracker\PageModel\ProfileDataPageModel.cs" />
-    <Compile Include="FlyoutControls\Tracker\PageModel\SettingsFlyoutPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\SettingsOverlayParamPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\SettingsTrackerParamPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\TrackerStatsPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\VsCardsInHandPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\VsPlayedCardsPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PageModel\VsProfileDataPageModel.cs" />
-    <Compile Include="FlyoutControls\Tracker\OwnProfileDataPage.xaml.cs">
-      <DependentUpon>OwnProfileDataPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="FlyoutControls\Tracker\PageModel\VsSpecialCardsUsedPageModel.cs" />
     <Compile Include="FlyoutControls\Tracker\PickAClassControlPage.xaml.cs">
       <DependentUpon>PickAClassControlPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="FlyoutControls\Tracker\SettingsFlyoutPage.xaml.cs">
-      <DependentUpon>SettingsFlyoutPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="FlyoutControls\Tracker\SettingsOverlayParamPage.xaml.cs">
       <DependentUpon>SettingsOverlayParamPage.xaml</DependentUpon>
@@ -298,11 +283,7 @@
     <Compile Include="OverlayContainer\Pages\TrackerContentPage.xaml.cs">
       <DependentUpon>TrackerContentPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageModels\MainPageModel.cs" />
     <Compile Include="PageModels\OverlayPageModel.cs" />
-    <Compile Include="Pages\MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\OverlayPage.xaml.cs">
       <DependentUpon>OverlayPage.xaml</DependentUpon>
     </Compile>
@@ -350,27 +331,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="FlyoutControls\Tracker\InGameTrackerPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="FlyoutControls\Tracker\MainUserControlPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="FlyoutControls\Tracker\MatchesHistoPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="FlyoutControls\Tracker\OwnProfileDataPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="FlyoutControls\Tracker\PickAClassControlPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="FlyoutControls\Tracker\SettingsFlyoutPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -446,10 +411,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\MainPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Pages\OverlayPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -479,6 +440,7 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="app.manifest" />
+    <Resource Include="Resources\Fonts\bernard-mt-condensed.ttf" />
     <Resource Include="Images\CardImages\bouftou_citrouille.png" />
     <Resource Include="Images\CardImages\bouftou_squelette.png" />
     <Resource Include="Images\CardImages\chafer_arc.png" />
@@ -504,6 +466,11 @@
     <Resource Include="Images\bg_gods\banner_eni.png" />
     <Resource Include="Images\bg_gods\banner_sacri.png" />
     <Resource Include="Images\bg_gods\banner_sadi.png" />
+    <Resource Include="Images\rank\rank_bronze.png" />
+    <Resource Include="Images\rank\rank_gold.png" />
+    <Resource Include="Images\rank\rank_platine.png" />
+    <Resource Include="Images\rank\rank_silver.png" />
+    <Resource Include="Images\rank\rank_vet.png" />
     <Content Include="NLog.config">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -2659,7 +2626,9 @@
     <Content Include="cards\zespadon_noir.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
