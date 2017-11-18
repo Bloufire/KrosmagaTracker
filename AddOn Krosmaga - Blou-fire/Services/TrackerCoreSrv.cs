@@ -245,6 +245,7 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                 TrackerModel.OwnClasse, value.WinnerPlayer == TrackerModel.MyIndex ? 1 : 0, TrackerModel.CurrentTurn, (int)TrackerModel.GameType,
                 DateTime.Now);
             TrackerModel.OpponentPlayedCards.Clear();
+            TrackerModel.CardAlreadyPlayed.Clear();
             TrackerModel.NbFleau = 0;
             TrackerModel.CardIdsByTurn.Clear();
             TrackerModel.OpponentCardsInHand = 0;
@@ -317,7 +318,6 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                         {
                             logger.Trace("Moved 1.1.1");
                             deckUI.CardCount++;
-                            logger.Info("deckUI.CardCount : " + deckUI.CardCount);
                         }
                         else
                         {
@@ -330,15 +330,14 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                             }
                             catch (Exception e)
                             {
-                                deckUI.DrawTurn = 99; //Je met 99 pour que ça saute aux yeux de l'utilisateurs qu'il y'a un problème.
-                                logger.Error("Error: deckUI.DrawTurn : " + e);
+                                deckUI.DrawTurn = 0;
+                                //logger.Error("Error: deckUI.DrawTurn : " + e);
                             }
 							deckUI.PlayedTurn.Add(TrackerModel.CurrentTurn);
 
-							logger.Info($"Contenu du TrackerModel.Deck {string.Join($"{Environment.NewLine}", TrackerModel.Deck)}");
-
+                            //logger.Info($"Contenu du TrackerModel.Deck {string.Join($"{Environment.NewLine}", TrackerModel.Deck)}");
 							TrackerModel.AddCardToDeck(deckUI);
-						}
+                        }
 
 						#region TODO Blou , à remove ? 
 						//if(!TrackerModel.CardIdsByTurn.Any(x => x.Key == cardMoved.Card))
@@ -594,21 +593,21 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                         (cardMoved.CardLocationFrom == Enums.CardLocation.Nowhere &&
                          cardMoved.CardLocationTo == Enums.CardLocation.OpponentHand))
                     {
-                        logger.Info("Moved 7.1");
+                        logger.Trace("Moved 7.1");
                         JsonCardsParser.Card card = card = CardsCollection.getCardById((int)cardMoved.TradingCard);
                         if (card == null)
                         {
-                            logger.Info("Moved 7.1.1");
+                            logger.Trace("Moved 7.1.1");
                             if (cardMoved.TriggeredEvents.Any(x => x.EventType == Enums.EventType.PLAYER_CARD_COST_MODIFIED))
                             {
-                                logger.Info("Moved 7.1.1.1");
+                                logger.Trace("Moved 7.1.1.1");
                                 card = CardsCollection.getCardById(cardMoved.TriggeredEvents
                                     .First(x => x.EventType == Enums.EventType.PLAYER_CARD_COST_MODIFIED).RelatedTradingCardId);
                             }
                         }
                         if (card != null)
                         {
-                            logger.Info("Moved 7.1.2");
+                            logger.Trace("Moved 7.1.2");
                             //var carte = TrackerModel.CardsInHand.FirstOrDefault(x => x.IdObject == cardMoved.Card);
                             //if (carte != null)
                             //    TrackerModel.RemoveCardFromCardInHand(carte);
@@ -636,18 +635,18 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                         if (cardMoved.CardLocationFrom == Enums.CardLocation.OpponentGraveyard &&
                             cardMoved.CardLocationTo == Enums.CardLocation.OwnHand)
                         {
-                            logger.Info("Moved 8.1.1");
+                            logger.Trace("Moved 8.1.1");
                             UIElements.DeckUI deckUi = TrackerModel.CardAlreadyPlayed.FirstOrDefault(x => x.CardCount == cardMoved.Card);
                             card = deckUi.Card;
                         }
                         else
                         {
-                            logger.Info("Moved 8.1.2");
+                            logger.Trace("Moved 8.1.2");
                             card = CardsCollection.getCardById((int)cardMoved.TradingCard);
                         }
                         if (card != null)
                         {
-                            logger.Info("Moved 8.1.3");
+                            logger.Trace("Moved 8.1.3");
                             //UIElements.DeckUI deckUI = new UIElements.DeckUI(card, 1)
                             //{
                             //    DrawTurn = TrackerModel.CurrentTurn,
@@ -719,7 +718,7 @@ namespace AddOn_Krosmaga___Blou_fire.Services
             }
             else if (value.EventType == Enums.EventType.NEW_A_O_E)
             {
-                logger.Info("Enums.EventType.NEW_A_O_E");
+                logger.Trace("Enums.EventType.NEW_A_O_E");
                 Builders.EventsManager.NewAOEEvent newAOE = new Builders.EventsManager.NewAOEEvent(value);
                 /*if (UIDatas.ActualFleauxIds.Count >= 4)
 				    UIDatas.ActualFleauxIds.Dequeue();*/

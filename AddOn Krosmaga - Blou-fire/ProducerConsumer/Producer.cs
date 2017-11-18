@@ -15,7 +15,7 @@ namespace AddOn_Krosmaga___Blou_fire.ProducerConsumer
     public class Producer
     {
         private Socket mainSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-        private byte[] byteData = new byte[2048];
+        private byte[] byteData = new byte[63999];
 		
         private Queue<byte[]> _queue;
         private SyncEvents _syncEvents;
@@ -23,7 +23,7 @@ namespace AddOn_Krosmaga___Blou_fire.ProducerConsumer
         private BlockingCollection<byte[]> bQueue;
 
         private static Logger logger = LogManager.GetCurrentClassLogger();
-
+        
         public Producer(Queue<byte[]> q, SyncEvents e)
         {
             _queue = q;
@@ -45,7 +45,7 @@ namespace AddOn_Krosmaga___Blou_fire.ProducerConsumer
             {
                 foreach (IPAddress ip in HosyEntry.AddressList)
                 {
-                    logger.Info("ip.AddressFamily = " + ip.AddressFamily + " / AddressFamily.InterNetwork = " + AddressFamily.InterNetwork + " / ipadd = " + ip.ToString());
+                    logger.Trace("ip.AddressFamily = " + ip.AddressFamily + " / AddressFamily.InterNetwork = " + AddressFamily.InterNetwork + " / ipadd = " + ip.ToString());
                     if (ip.AddressFamily == AddressFamily.InterNetwork)
                     {
                         ipadd = ip.ToString();
@@ -68,7 +68,9 @@ namespace AddOn_Krosmaga___Blou_fire.ProducerConsumer
             }
             try
             {
-                mainSocket.Bind(new IPEndPoint(IPAddress.Parse(ipadd), 4988));
+                Int32 portEP = 4988;
+                IPEndPoint gameEP = new IPEndPoint(IPAddress.Parse(ipadd), portEP);
+                mainSocket.Bind(gameEP);
             }
             catch (Exception e)
             {
@@ -94,6 +96,8 @@ namespace AddOn_Krosmaga___Blou_fire.ProducerConsumer
             }
             try
             {
+                mainSocket.DontFragment = false;
+                mainSocket.MulticastLoopback = false;
                 mainSocket.BeginReceive(byteData, 0, byteData.Length, SocketFlags.None, new AsyncCallback(OnReceive), null);
             }
             catch (Exception e)
@@ -107,18 +111,16 @@ namespace AddOn_Krosmaga___Blou_fire.ProducerConsumer
             try
             {
                 int nReceived = mainSocket.EndReceive(ar);
-
                 //Analyze the bytes received...
-
-                ParseData(byteData, nReceived);
-
-                byteData = new byte[4096];
+                if(nReceived > 39 && nReceived < 2401)
+                    ParseData(byteData, nReceived);
+                byteData = new byte[63999];
                 mainSocket.BeginReceive(byteData, 0, byteData.Length, SocketFlags.None, new AsyncCallback(OnReceive), null);
             }
             catch (Exception e)
             {
                 logger.Error("Error : private void OnReceive " + e);
-                byteData = new byte[4096];
+                byteData = new byte[63999];
                 ThreadRun();
             }
         }
@@ -128,7 +130,6 @@ namespace AddOn_Krosmaga___Blou_fire.ProducerConsumer
             try
             {
                 IPHeader ipHeader = new IPHeader(byteData, nReceived);
-
                 switch (ipHeader.ProtocolType)
                 {
                     case Protocol.TCP:
@@ -154,7 +155,7 @@ namespace AddOn_Krosmaga___Blou_fire.ProducerConsumer
             catch (Exception e)
             {
                 logger.Error("Error : private void ParseData " + e);
-                byteData = new byte[4096];
+                byteData = new byte[63999];
                 ThreadRun();
             }
         }
