@@ -11,7 +11,7 @@
              xmlns:converter="clr-namespace:AddOn_Krosmaga___Blou_fire.Converter"
              xmlns:wpf="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf">
     <Application.Resources>
-        <ResourceDictionary>
+               <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <!-- MahApps.Metro resource dictionaries. Make sure that all file names are Case Sensitive! -->
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
@@ -22,31 +22,11 @@
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/blue.xaml" />
                 <ResourceDictionary
                     Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/basedark.xaml" />
-                <ResourceDictionary>
-                    <!--<ImageSource x:Key="AppIcon">pack://siteoforigin:,,,/Images/HearthstoneDeckTracker.ico</ImageSource>
-                    <ImageSource x:Key="JoustScreenshot">Resources/joust-screenshot.jpg</ImageSource>
-                    <ImageSource x:Key="HsReplayInfo1">Resources/hsreplay_info_1.png</ImageSource>
-                    <ImageSource x:Key="HsReplayInfo2">Resources/hsreplay_info_2.png</ImageSource>
-                    <ImageSource x:Key="HsReplayInfo3">Resources/hsreplay_info_3.png</ImageSource>
-                    <ImageSource x:Key="HsReplayIcon">Resources/hsreplay_logo_blue.png</ImageSource>
-                    <ImageSource x:Key="HsReplayIconBlue">Resources/hsreplay_logo_blue.png</ImageSource>
-                    <ImageSource x:Key="HsReplayIconWhite">Resources/hsreplay_logo_white.png</ImageSource>-->
-                    <!--<ImageSource x:Key="ClassIconIopRound">Resources/ClassIcons/Round/druid.png</ImageSource>
-                    <ImageSource x:Key="ClassIconCraRound">Resources/ClassIcons/Round/hunter.png</ImageSource>
-                    <ImageSource x:Key="ClassIconMRound">Resources/ClassIcons/Round/mage.png</ImageSource>
-                    <ImageSource x:Key="ClassIconPaladinRound">Resources/ClassIcons/Round/paladin.png</ImageSource>
-                    <ImageSource x:Key="ClassIconPriestRound">Resources/ClassIcons/Round/priest.png</ImageSource>
-                    <ImageSource x:Key="ClassIconRogueRound">Resources/ClassIcons/Round/rogue.png</ImageSource>
-                    <ImageSource x:Key="ClassIconShamanRound">Resources/ClassIcons/Round/shaman.png</ImageSource>
-                    <ImageSource x:Key="ClassIconWarlockRound">Resources/ClassIcons/Round/warlock.png</ImageSource>
-                    <ImageSource x:Key="ClassIconWarriorRound">Resources/ClassIcons/Round/warrior.png</ImageSource>-->
-                </ResourceDictionary>
-
+              
 
             </ResourceDictionary.MergedDictionaries>
             <uiElements:GodClassToColor x:Key="GodToColor" />
-
-        
+           
             <!--Converter-->
             <converter:SelectedToVisibilityConverter x:Key="SelectedToVisibilityConverter" />
             <Style x:Key="CenterHeaderColumStyle" 
@@ -99,7 +79,8 @@
             <system:Double x:Key="OverlayWidth" >350</system:Double>
             <system:Double x:Key="IconDefaultSize">20</system:Double>
 
-     
+            <FontFamily x:Key="BernardFont">pack://application:,,,/Resources/Fonts/#bernard mt</FontFamily>
+
             <Style TargetType="TextBlock" x:Key="WinrateGaugeTextStyle">
                 <Setter Property="FontWeight" Value="SemiBold"/>
                 <Setter Property="TextAlignment" Value="Center"/>
@@ -123,9 +104,10 @@
                     </Setter.Value>
                 </Setter>
             </Style>
+            
             <converter:BoolToVisibiltyConverter x:Key="BoolToVis" />
             <converter:BoolAndNegatToVisibiltyConverter x:Key="BoolAndNegatToVisibiltyConverter" />
-            <Brush x:Key="SideMenuColorBrush" >#005666</Brush>
+             <Brush x:Key="SideMenuColorBrush" >#005666</Brush>
             <Brush x:Key="SideMenuButtonBackground">#005666</Brush>
             <LinearGradientBrush x:Key="FlyoutGradientBackground" StartPoint="0,0" EndPoint="1,0">
                 <GradientStop Color="#005666" Offset="0" />
@@ -135,6 +117,7 @@
             <uiElements:IntToCardCountStringConverter x:Key="IntToCardCountStringConverter" />
             <converter:BoolToVisibiltyConverter x:Key="BoolToVisConverter" />
             <uiElements:IntToCardTurnStringConverter x:Key="IntToCardTurnStringConverter" />
+           
         </ResourceDictionary>
     </Application.Resources>
 </Application>

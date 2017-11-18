@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using AddOn_Krosmaga___Blou_fire.Helpers;
 
 namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
@@ -17,6 +18,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 		private string _vsCurrentTurn;
 		private int _vsRank;
 		private bool _isRankVisible;
+		private string _vsClass;
 
 		#region CTOR
 		public VsProfileDataPageModel()
@@ -24,6 +26,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 			TrackerSrv.TrackerModel.PropertyChanged += TrackerModel_PropertyChanged; ;
 			UpdateScreen();
 		}
+		public ICommand BtnRefreshData => new RelayCommand(UpdateScreen);
 
 		private void UpdateScreen()
 		{
@@ -34,6 +37,7 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 			VsNbCardsInHand = TrackerSrv.TrackerModel.OpponentCardsInHand;
 			VsRank = TrackerSrv.TrackerModel.OpponentLevel;
 			VsCurrentTurn = "Turn " + TrackerSrv.TrackerModel.CurrentTurn.ToString();
+			VsClass = TrackerSrv.TrackerModel.OpponentClasse;
 
 		}
 
@@ -138,7 +142,15 @@ namespace AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel
 				OnPropertyChanged(nameof(VsCurrentTurn));
 			}
 		}
-
+		public string VsClass
+		{
+			get { return _vsClass; }
+			set
+			{
+				_vsClass = value;
+				OnPropertyChanged(nameof(VsClass));
+			}
+		}
 		#endregion
 	}
 }
