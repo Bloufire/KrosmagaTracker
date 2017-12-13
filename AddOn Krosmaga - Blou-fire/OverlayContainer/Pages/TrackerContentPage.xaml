@@ -45,7 +45,7 @@
                                 </Button>
                             </StackPanel>
                         </GroupBox.Header>-->
-                        <ScrollViewer VerticalScrollBarVisibility="Hidden" Margin="5">
+                        <ScrollViewer Margin="5">
                             <tracker:VsCardsInHandPage />
                         </ScrollViewer>
                    
@@ -59,7 +59,7 @@
                 </controls:MetroTabItem>
                 <controls:MetroTabItem Header="Deck" controls:ControlsHelper.HeaderFontSize="{StaticResource AnimatedTabControlHeaderMediumSize}">
 
-                    <ScrollViewer VerticalScrollBarVisibility="Hidden" Margin="5">
+                    <ScrollViewer Margin="5">
                             <tracker:VsPlayedCardsPage />
                         </ScrollViewer>
                 

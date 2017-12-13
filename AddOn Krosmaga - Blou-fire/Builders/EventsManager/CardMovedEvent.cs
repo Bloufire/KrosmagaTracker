@@ -17,7 +17,7 @@ namespace AddOn_Krosmaga___Blou_fire.Builders.EventsManager
 		private Enums.CardLocation _cardLocationTo;
 		private int _sequenceIdx;
 		private int? _relatedCardInstance;
-		private int? _relatedTradingCard;
+		private int _relatedTradingCard;
 		private int? _triggerer;
 		private List<Data.GameEvent> _triggeredEvents;
 
@@ -92,7 +92,7 @@ namespace AddOn_Krosmaga___Blou_fire.Builders.EventsManager
 			set { _relatedCardInstance = value; }
 		}
 
-		public int? RelatedTradingCard
+		public int RelatedTradingCard
 		{
 			get { return _relatedTradingCard; }
 

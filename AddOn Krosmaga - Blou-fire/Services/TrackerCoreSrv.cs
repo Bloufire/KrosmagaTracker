@@ -42,12 +42,20 @@ namespace AddOn_Krosmaga___Blou_fire.Services
 
 	    private Logger _gameLogger;
         public FiltersStatModel CurrentFiltersStatModel { get; set; }
-
+        //Spécifiques orbes/orbes dorés/nécronomigore
+        public int LastTurnOrb = 0;
+        public string DateTimeOrb = "";
+        public int LastTurnOrbGold = 0;
+        public string DateTimeOrbGold = "";
+        // Spécifique de multiple token (la Sadida Sylvine)
+        public string TimeMultiLinked = "";
+        public int NBMultiLinked = 0;
+        //Log
         private static Logger logger = LogManager.GetCurrentClassLogger();
 
         #endregion
 
-   
+
         #region Core
 
         public TrackerCoreSrv()
@@ -205,7 +213,8 @@ namespace AddOn_Krosmaga___Blou_fire.Services
             JsonCardsParser.Card unknown = CardsCollection.getCardById(-1);
             UIElements.DeckUI deckui = new UIElements.DeckUI(unknown, 1)
             {
-                DrawTurn = 0
+                DrawTurn = 0,
+                CardRelated = ""
             };
 
             if (value.MyIndex == 0)
@@ -276,23 +285,131 @@ namespace AddOn_Krosmaga___Blou_fire.Services
         private void IterateEvents(GameEvent value)
         {
             List<Builders.EventsManager.CardMovedEvent> list = new List<Builders.EventsManager.CardMovedEvent>();
+            JsonCardsParser.Card card = CardsCollection.getCardById(-1); //'unknown
+            JsonCardsParser.Card cardRelated = CardsCollection.getCardById(-1); //'unknown
             if (value.EventType == Enums.EventType.CARD_MOVED)
             {
                 logger.Trace("Enums.EventType.CARD_MOVED");
                 Builders.EventsManager.CardMovedEvent cardMoved = new Builders.EventsManager.CardMovedEvent(value);
-                if (cardMoved.ConcernedFighter < 2)
+                if (cardMoved.ConcernedFighter < 2) // Bizarement, il y'a d'autres combattants que le premier et le deuxième -_-
                 {
-                    if (cardMoved.TradingCard > 0)
+                    // Si on connait la carte, on récupère les infos
+                    // 45 = prisme pioche / 589 = prisme fléau / 190 = prisme PA
+                    if (cardMoved.TradingCard > 0 && cardMoved.TradingCard != 45 && cardMoved.TradingCard != 589 && cardMoved.TradingCard != 190)
+                        card = CardsCollection.getCardById((int)cardMoved.TradingCard);
+                    // Fléaux
+                    if (cardMoved.RelatedTradingCard == 589)
+                        card = CardsCollection.getCardById((int)1565);
+                    // Sinon, on la considère unknown
+                    if (card == null)
+                        card = CardsCollection.getCardById(-1);
+                    logger.Info("Player : " + cardMoved.ConcernedFighter + " => Card Name : " + card.Name + " From : " + cardMoved.CardLocationFrom + " To : " + cardMoved.CardLocationTo + " / Related to : " + cardMoved.RelatedTradingCard);
+                    //*************************************************************************************************
+                    //*************************************************************************************************
+                    // Quand une carte arrive dans la main adverse
+                    //*************************************************************************************************
+                    //*************************************************************************************************
+                    if ((cardMoved.ConcernedFighter != TrackerModel.MyIndex && cardMoved.CardLocationTo == Enums.CardLocation.OwnHand) ||
+                        (cardMoved.ConcernedFighter == TrackerModel.MyIndex && cardMoved.CardLocationTo == Enums.CardLocation.OpponentHand))
                     {
-                        JsonCardsParser.Card card = CardsCollection.getCardById((int)cardMoved.TradingCard);
-                        if (card != null)
-                            logger.Info("Player : " + cardMoved.ConcernedFighter + " => Card Name : " + card.Name + " From : " + cardMoved.CardLocationFrom + " To : " + cardMoved.CardLocationTo + " / Related to : " + cardMoved.RelatedTradingCard);
-                        else
-                            logger.Info("Player : " + cardMoved.ConcernedFighter + " => Card Name : unknown From : " + cardMoved.CardLocationFrom + " To : " + cardMoved.CardLocationTo + " / Related to : " + cardMoved.RelatedTradingCard);
+                        TrackerModel.OpponentCardsInHand += 1;
+                        logger.Info("Opponent Hand : " + TrackerModel.OpponentCardsInHand);
+                        if (card.Id == -1)  // Si la carte est inconnu, on essaye de la deviner (token, ...)
+                        {
+                            // Si on connait la carte qui a fait piocher la nouvelle carte
+                            if (cardMoved.RelatedTradingCard > 0 && cardMoved.RelatedTradingCard != 45 && cardMoved.RelatedTradingCard != 589) // 45 = prisme pioche / 589 =  fléau
+                            {
+                                cardRelated = CardsCollection.getCardById((int)cardMoved.RelatedTradingCard);
+                                if (cardRelated.LinkedCards.Count() == 1) //Si une seul carte est lié, on peut supposer que c'est cette carte
+                                    card = CardsCollection.getCardById((int)cardRelated.LinkedCards[0]);
+                                else if(cardRelated.LinkedCards.Count() > 1) // Si plusieurs cartes sont liés (sylevine forherbe)
+                                {
+                                    if (NBMultiLinked == 0)
+                                        TimeMultiLinked = DateTime.Now.Hour.ToString() + DateTime.Now.Minute.ToString() + DateTime.Now.Second.ToString();
+                                    if (TimeMultiLinked == DateTime.Now.Hour.ToString() + DateTime.Now.Minute.ToString() + DateTime.Now.Second.ToString())
+                                    {
+                                        card = CardsCollection.getCardById((int)cardRelated.LinkedCards[NBMultiLinked]);
+                                        NBMultiLinked = NBMultiLinked + 1;
+                                    }
+                                    else
+                                    {
+                                        TimeMultiLinked = "";
+                                        NBMultiLinked = 0;
+                                    }
+                                }
+                                //Orbe
+                                if (cardRelated.Name.LongCount() > 0 && cardRelated.Name.IndexOf("necrome") >= 0)
+                                {
+                                    card = CardsCollection.getCardById((int)870);
+                                    LastTurnOrb = TrackerModel.OpponentCardsInHand;
+                                    DateTimeOrb = DateTime.Now.Hour.ToString() + DateTime.Now.Minute.ToString() + DateTime.Now.Second.ToString();
+                                }
+                            }
+                            // Orbe doré
+                            if (LastTurnOrb > 0)
+                            {
+                                if (DateTimeOrb == DateTime.Now.Hour.ToString() + DateTime.Now.Minute.ToString() + DateTime.Now.Second.ToString())
+                                {
+                                    if (cardMoved.RelatedTradingCard == 0 && LastTurnOrb == (TrackerModel.OpponentCardsInHand + 2))
+                                    {
+                                        card = CardsCollection.getCardById((int)605);
+                                        LastTurnOrbGold = TrackerModel.OpponentCardsInHand;
+                                        DateTimeOrbGold = DateTime.Now.Hour.ToString() + DateTime.Now.Minute.ToString() + DateTime.Now.Second.ToString();
+                                    }
+                                }
+                                else
+                                {
+                                    LastTurnOrb = 0;
+                                    DateTimeOrb = "";
+                                }
+                            }
+                            // Nécronomigore
+                            if (LastTurnOrbGold > 0)
+                            {
+                                if (DateTimeOrbGold == DateTime.Now.Hour.ToString() + DateTime.Now.Minute.ToString() + DateTime.Now.Second.ToString())
+                                {
+                                    if (cardMoved.RelatedTradingCard == 0 && LastTurnOrbGold == (TrackerModel.OpponentCardsInHand + 1))
+                                    {
+                                        card = CardsCollection.getCardById((int)659);
+                                    }
+                                }
+                                else
+                                {
+                                    LastTurnOrbGold = 0;
+                                    DateTimeOrbGold = "";
+                                }
+                            }
+                        } // Fin Si la carte est inconnu, on essaye de la deviner (token, ...)
+                        // On envoi les éléments à la vue
+                        string _cardrelated = "";
+                        if (cardRelated.Id != -1 && card.Id == -1)
+                            _cardrelated = cardRelated.UIName;
+                        UIElements.DeckUI deckui = new UIElements.DeckUI(card, 1)
+                        {
+                            DrawTurn = TrackerModel.CurrentTurn,
+                            IdObject = cardMoved.Card,
+                            CardRelated = _cardrelated
+                        };
+                        TrackerModel.AddCardToCardInHand(deckui);
                     }
-                    else
+
+                    //*************************************************************************************************
+                    //*************************************************************************************************
+                    // Quand une carte quitte la main adverse
+                    //*************************************************************************************************
+                    //*************************************************************************************************
+                    if ((cardMoved.ConcernedFighter != TrackerModel.MyIndex && cardMoved.CardLocationFrom == Enums.CardLocation.OwnHand) ||
+                        (cardMoved.ConcernedFighter == TrackerModel.MyIndex && cardMoved.CardLocationFrom == Enums.CardLocation.OpponentHand))
                     {
-                        logger.Info("Player : " + cardMoved.ConcernedFighter + " => Card Name : unknown From : " + cardMoved.CardLocationFrom + " To : " + cardMoved.CardLocationTo + " / Related to : " + cardMoved.RelatedTradingCard);
+                        TrackerModel.OpponentCardsInHand -= 1;
+                        logger.Info("Opponent Hand : " + TrackerModel.OpponentCardsInHand);
+                        var cardInHandToRemove = TrackerModel.CardsInHand.FirstOrDefault(x => x.IdObject == cardMoved.Card);
+                        if (cardInHandToRemove == null) // Si on ne retrouve pas la carte, c'est probablement l'une des cartes du mulligan
+                            cardInHandToRemove = TrackerModel.CardsInHand.FirstOrDefault(x => x.Card.Id == -1 && x.DrawTurn == 0);
+                        if (cardInHandToRemove != null)
+                            TrackerModel.RemoveCardFromCardInHand(cardInHandToRemove);
+                        else
+                            logger.Info("Error Card in hand not found : cardInHandToRemove == null / card : " + card.Name);
                     }
                 }
                 else
@@ -306,7 +423,7 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                 {
                     logger.Trace("Moved 1");
                     TrackerModel.OpponentPlayedCards.Add(CardsCollection.getCardById((int)cardMoved.TradingCard));
-                    JsonCardsParser.Card card = CardsCollection.getCardById((int)cardMoved.TradingCard);
+                    card = CardsCollection.getCardById((int)cardMoved.TradingCard);
                     UIElements.DeckUI deckUI;
                     if (!TrackerModel.CardAlreadyPlayed.Any(x => x.CardCount == cardMoved.Card))
                     {
@@ -337,45 +454,9 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                             //logger.Info($"Contenu du TrackerModel.Deck {string.Join($"{Environment.NewLine}", TrackerModel.Deck)}");
 							TrackerModel.AddCardToDeck(deckUI);
                         }
-
-						#region TODO Blou , à remove ? 
-						//if(!TrackerModel.CardIdsByTurn.Any(x => x.Key == cardMoved.Card))
-						//{
-						//    var cardToRemove = TrackerModel.CardsInHand.FirstOrDefault(x => x.DrawTurn == 0);
-						//    if(cardToRemove != null)
-						//    {
-						//        TrackerModel.RemoveCardFromCardInHand(cardToRemove);
-						//    }
-						//}
-						//else
-						//{
-						//    var cardInList = TrackerModel.CardIdsByTurn.First(x => x.Key == cardMoved.Card);
-						//    var cardToRemove = TrackerModel.CardsInHand.FirstOrDefault(x => x.Card.Id == -1 && x.DrawTurn == cardInList.Value);
-						//    if (cardToRemove != null)
-						//    {
-						//        TrackerModel.RemoveCardFromCardInHand(cardToRemove);
-						//    }
-						//} 
-						#endregion
 					}
                     else
                         logger.Trace("Moved 1.2");
-					#region TODO Blou , à remove ? 
-					//{
-					//	deckUI = TrackerModel.CardsInHand.FirstOrDefault(x => x.Card == card);
-					//	if (deckUI != null)
-					//	{
-					//		if (deckUI.CardCount > 1)
-					//		{
-					//			deckUI.CardCount--;
-					//		}
-					//		else
-					//		{
-					//			TrackerModel.RemoveCardFromCardInHand(deckUI);
-					//		}
-					//	}
-					//} 
-					#endregion
 				}
 				if (cardMoved.CardLocationTo == Enums.CardLocation.Playground ||
                     cardMoved.CardLocationTo == Enums.CardLocation.OwnGraveyard ||
@@ -392,7 +473,7 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                     if (!TrackerModel.CardAlreadyPlayed.Any(x => x.CardCount == cardMoved.Card))
                     {
                         logger.Trace("Moved 2.2");
-                        JsonCardsParser.Card card = null;
+                        card = null;
                         if (cardMoved.CardLocationFrom == Enums.CardLocation.Nowhere &&
                             cardMoved.CardLocationTo == Enums.CardLocation.OwnHand && cardMoved.ConcernedFighter != TrackerModel.MyIndex)
                         {
@@ -424,155 +505,12 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                         }
                     }
                 }
-                if ((cardMoved.CardLocationTo == Enums.CardLocation.OwnHand && cardMoved.ConcernedFighter != TrackerModel.MyIndex) ||
-                    (cardMoved.CardLocationTo == Enums.CardLocation.OpponentHand && cardMoved.ConcernedFighter == TrackerModel.MyIndex))
-                {
-                    logger.Trace("Moved 3");
-                    TrackerModel.OpponentCardsInHand += 1;
-                    logger.Info("Opponent Hand : " + TrackerModel.OpponentCardsInHand);
-                    JsonCardsParser.Card unknown = null;
-                    UIElements.DeckUI deckui = null;
-                    switch (cardMoved.RelatedTradingCard)
-                    {
-                        case 589:
-                            logger.Trace("Moved 3.1");
-                            deckui = new UIElements.DeckUI(CardsCollection.getCardById(1565), 1)
-                            {
-                                DrawTurn = TrackerModel.CurrentTurn,
-                                IdObject = cardMoved.Card
-                            };
-                            //if (!TrackerModel.CardsInHand.Any(x => x.IdObject == deckui.IdObject))
-                            TrackerModel.AddCardToCardInHand(deckui);
-                            break;
-                        default:
-                            logger.Trace("Moved 3.2");
-                            if (cardMoved.ConcernedFighter == TrackerModel.MyIndex)
-                            {
-                                logger.Trace("Moved 3.2.1");
-                                if ((cardMoved.CardLocationFrom == Enums.CardLocation.OpponentGraveyard &&
-                                     cardMoved.CardLocationTo == Enums.CardLocation.OpponentHand) ||
-                                    (cardMoved.CardLocationFrom == Enums.CardLocation.Playground &&
-                                     cardMoved.CardLocationTo == Enums.CardLocation.OpponentHand) ||
-                                    (cardMoved.CardLocationFrom == Enums.CardLocation.Nowhere &&
-                                     cardMoved.CardLocationTo == Enums.CardLocation.OpponentHand))
-                                {
-                                    logger.Trace("Moved 3.2.1.1");
-                                    JsonCardsParser.Card card = card = CardsCollection.getCardById((int)cardMoved.TradingCard);
-                                    if (card == null)
-                                    {
-                                        logger.Trace("Moved 3.2.1.1.1");
-                                        if (cardMoved.TriggeredEvents.Any(x => x.EventType == Enums.EventType.PLAYER_CARD_COST_MODIFIED))
-                                        {
-                                            logger.Trace("Moved 3.2.1.1.1");
-                                            card = CardsCollection.getCardById(cardMoved.TriggeredEvents
-                                                .First(x => x.EventType == Enums.EventType.PLAYER_CARD_COST_MODIFIED).RelatedTradingCardId);
-                                        }
-                                    }
-                                    if (card != null)
-                                    {
-                                        logger.Trace("Moved 3.2.1.1.2");
-                                        UIElements.DeckUI deckUI = new UIElements.DeckUI(card, 1)
-                                        {
-                                            DrawTurn = TrackerModel.CurrentTurn,
-                                            IdObject = cardMoved.Card
-                                        };
-                                        TrackerModel.AddCardToCardInHand(deckUI);
-                                    }
-                                }
-                                else
-                                {
-                                    logger.Trace("Moved 3.2.1.2");
-                                    unknown = CardsCollection.getCardById(-1);
-                                    deckui = new UIElements.DeckUI(unknown, 1)
-                                    {
-                                        DrawTurn = TrackerModel.CurrentTurn,
-                                        IdObject = cardMoved.Card
-                                    };
-                                    //if (!TrackerModel.CardsInHand.Any(x => x.IdObject == deckui.IdObject))
-                                    TrackerModel.AddCardToCardInHand(deckui);
-                                }
-                            }
-                            else
-                            {
-                                logger.Trace("Moved 3.2.2");
-                                if ((cardMoved.CardLocationFrom == Enums.CardLocation.Playground &&
-                                     cardMoved.CardLocationTo == Enums.CardLocation.OwnHand) ||
-                                    (cardMoved.CardLocationFrom == Enums.CardLocation.OwnGraveyard &&
-                                     cardMoved.CardLocationTo == Enums.CardLocation.OwnHand) ||
-                                    (cardMoved.CardLocationFrom == Enums.CardLocation.OpponentGraveyard &&
-                                     cardMoved.CardLocationTo == Enums.CardLocation.OwnHand))
-                                {
-                                    logger.Trace("Moved 3.2.2.1");
-                                    JsonCardsParser.Card card;
-                                    if (cardMoved.CardLocationFrom == Enums.CardLocation.OpponentGraveyard &&
-                                        cardMoved.CardLocationTo == Enums.CardLocation.OwnHand)
-                                    {
-                                        logger.Trace("Moved 3.2.2.1.1");
-                                        UIElements.DeckUI deckUi = TrackerModel.CardAlreadyPlayed.FirstOrDefault(x => x.CardCount == cardMoved.Card);
-                                        card = deckUi.Card;
-                                    }
-                                    else
-                                    {
-                                        logger.Trace("Moved 3.2.2.1.2");
-                                        card = CardsCollection.getCardById((int)cardMoved.TradingCard);
-                                    }
-                                    if (card != null)
-                                    {
-                                        logger.Trace("Moved 3.2.2.1.3");
-                                        UIElements.DeckUI deckUI = new UIElements.DeckUI(card, 1)
-                                        {
-                                            DrawTurn = TrackerModel.CurrentTurn,
-                                            IdObject = cardMoved.Card
-                                        };
-                                        TrackerModel.AddCardToCardInHand(deckUI);
-                                    }
-                                }
-                                else
-                                {
-                                    logger.Trace("Moved 3.2.2.2");
-                                    unknown = CardsCollection.getCardById(-1);
-                                    deckui = new UIElements.DeckUI(unknown, 1)
-                                    {
-                                        DrawTurn = TrackerModel.CurrentTurn,
-                                        IdObject = cardMoved.Card
-                                    };
-                                    //if (!TrackerModel.CardsInHand.Any(x => x.IdObject == deckui.IdObject))
-                                    TrackerModel.AddCardToCardInHand(deckui);
-                                }
-                            }
-                            break;
-                    }
-                }
                 if ((cardMoved.CardLocationTo == Enums.CardLocation.OwnHand && cardMoved.ConcernedFighter == TrackerModel.MyIndex) ||
                     (cardMoved.CardLocationTo == Enums.CardLocation.OpponentHand && cardMoved.ConcernedFighter != TrackerModel.MyIndex))
                 {
                     logger.Trace("Moved 4");
                     TrackerModel.OwnCardsInHand += 1;
                     logger.Info("Own Hand : " + TrackerModel.OwnCardsInHand);
-                }
-                if ((cardMoved.CardLocationFrom == Enums.CardLocation.OwnHand && cardMoved.ConcernedFighter != TrackerModel.MyIndex) ||
-                    (cardMoved.CardLocationFrom == Enums.CardLocation.OpponentHand &&
-                     cardMoved.ConcernedFighter == TrackerModel.MyIndex))
-                {
-                    logger.Trace("Moved 5");
-                    TrackerModel.OpponentCardsInHand -= 1;
-                    logger.Info("Opponent Hand : " + TrackerModel.OpponentCardsInHand);
-                    var carte = TrackerModel.CardsInHand.FirstOrDefault(x => x.IdObject == cardMoved.Card);
-                    if (carte != null)
-                    {
-                        logger.Trace("Moved 5.1");
-                        TrackerModel.RemoveCardFromCardInHand(carte);
-                    }
-                    else
-                    {
-                        logger.Trace("Moved 5.2");
-                        var cardToRemove = TrackerModel.CardsInHand.FirstOrDefault(x => x.Card.Id == -1 && x.DrawTurn == 0);
-                        if (cardToRemove != null)
-                        {
-                            logger.Trace("Moved 5.2.1");
-                            TrackerModel.RemoveCardFromCardInHand(cardToRemove);
-                        }
-                    }
                 }
                 if ((cardMoved.CardLocationFrom == Enums.CardLocation.OwnHand && cardMoved.ConcernedFighter == TrackerModel.MyIndex) ||
                     (cardMoved.CardLocationFrom == Enums.CardLocation.OpponentHand &&
@@ -593,7 +531,7 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                          cardMoved.CardLocationTo == Enums.CardLocation.OpponentHand))
                     {
                         logger.Trace("Moved 7.1");
-                        JsonCardsParser.Card card = card = CardsCollection.getCardById((int)cardMoved.TradingCard);
+                        card = card = CardsCollection.getCardById((int)cardMoved.TradingCard);
                         if (card == null)
                         {
                             logger.Trace("Moved 7.1.1");
@@ -630,7 +568,6 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                          cardMoved.CardLocationTo == Enums.CardLocation.OwnHand))
                     {
                         logger.Trace("Moved 8.1");
-                        JsonCardsParser.Card card;
                         if (cardMoved.CardLocationFrom == Enums.CardLocation.OpponentGraveyard &&
                             cardMoved.CardLocationTo == Enums.CardLocation.OwnHand)
                         {

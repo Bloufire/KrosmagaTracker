@@ -14,8 +14,8 @@ namespace AddOn_Krosmaga___Blou_fire.UIElements
 		private int _cardCount;
         private ObservableCollection<int> _playedTurn;
 		private int _drawTurn;
-
 		private int idObject;
+        private string cardRelated;
 
 		public DeckUI(Card card, int count)
 		{
@@ -45,6 +45,17 @@ namespace AddOn_Krosmaga___Blou_fire.UIElements
 
 		public int DrawTurn { get => _drawTurn; set => _drawTurn = value; }
 		public ObservableCollection<int> PlayedTurn { get => _playedTurn; set => _playedTurn = value; }
-		public int IdObject { get => idObject; set => idObject = value; }
+        public int IdObject { get => idObject; set => idObject = value; }
+        public string CardRelated
+        {
+            get
+            {
+                if(String.IsNullOrEmpty(cardRelated))
+                    return Card.UIName;
+                else
+                    return cardRelated + " (" + Card.UIName + ")";
+            }
+            set => cardRelated = value;
+        }
     }
 }
