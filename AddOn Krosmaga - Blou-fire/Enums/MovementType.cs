@@ -8,9 +8,10 @@ namespace AddOn_Krosmaga___Blou_fire.Enums
 {
 	public enum MovementType
 	{
-		WALK = 1,
-		RUN,
-		TELEPORT,
-		SLIDE
-	}
+        WALK = 1,
+        RUN,
+        TELEPORT,
+        SLIDE,
+        RALLY
+    }
 }

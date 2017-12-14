@@ -13,7 +13,11 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 
 		private bool _hasEventType;
 		private Enums.EventType _eventType;
-		private List<GameEvent> _triggeredEvents;
+        private bool _hasId;
+        private uint _id;
+        private bool _hasParentId;
+        private uint _parentId;
+        private List<GameEvent> _triggeredEvents;
 		private int _triggeredEventsCount;
 		private bool _hasRelatedCardInstance;
 		private int _relatedCardInstance;
@@ -380,7 +384,12 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 			set { _TriggerableCapacityType1 = value; }
 		}
 
-		public GameEvent()
+        public bool HasId { get => _hasId; set => _hasId = value; }
+        public bool HasParentId { get => _hasParentId; set => _hasParentId = value; }
+        public uint Id { get => _id; set => _id = value; }
+        public uint ParentId { get => _parentId; set => _parentId = value; }
+
+        public GameEvent()
 		{
 			TriggeredEvents = new List<GameEvent>();
 		}
@@ -397,18 +406,23 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 				{
 					if (tag <= 40)
 					{
-						if (tag <= 18)
+						if (tag <= 16)
 						{
 							if (tag != 8)
 							{
-								if (tag == 18)
+								/*if (tag == 18)
 								{
 									Data.GameEvent gameEvent = new Data.GameEvent();
 									int size = (int) reader.ReadRawVarint32();
 									gameEvent.Decode(reader.ReadMessage(size));
 									TriggeredEvents.Add(gameEvent);
 									continue;
-								}
+								}*/
+                                if(tag == 16)
+                                {
+                                    Id = reader.ReadRawVarint32();
+                                    continue;
+                                }
 							}
 							else
 							{
@@ -420,18 +434,18 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 						{
 							if (tag == 24)
 							{
-								RelatedCardInstance = (int) reader.ReadRawVarint32();
-								continue;
+                                ParentId = reader.ReadRawVarint32();
+                                continue;
 							}
 							if (tag == 32)
 							{
-								RelatedTradingCardId = (int) reader.ReadRawVarint32();
-								continue;
-							}
+                                RelatedCardInstance = (int)reader.ReadRawVarint32();
+                                continue;
+                            }
 							if (tag == 40)
 							{
-								Triggerer = (int) reader.ReadRawVarint32();
-								continue;
+                                RelatedTradingCardId = (int)reader.ReadRawVarint32();
+                                continue;
 							}
 						}
 					}
@@ -439,132 +453,143 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 					{
 						if (tag == 48)
 						{
-							Int1 = (int) reader.ReadRawVarint32();
-							continue;
+                            Triggerer = (int)reader.ReadRawVarint32();
+                            continue;
 						}
 						if (tag == 56)
 						{
-							Int2 = (int) reader.ReadRawVarint32();
-							continue;
+                            Int1 = (int)reader.ReadRawVarint32();
+                            continue;
 						}
 						if (tag == 64)
 						{
-							Int3 = (int) reader.ReadRawVarint32();
-							continue;
+                            Int2 = (int)reader.ReadRawVarint32();
+                            continue;
 						}
 					}
 					else
 					{
 						if (tag == 72)
 						{
-							Int4 = (int) reader.ReadRawVarint32();
-							continue;
-						}
+                            Int3 = (int)reader.ReadRawVarint32();
+                            continue;
+                        }
 						if (tag == 80)
 						{
-							Int5 = (int) reader.ReadRawVarint32();
-							continue;
+                            Int4 = (int)reader.ReadRawVarint32();
+                            continue;
 						}
 						if (tag == 88)
 						{
-							Bool1 = reader.ReadBool();
-							continue;
+                            Int5 = (int)reader.ReadRawVarint32();
+                            continue;
 						}
 					}
 				}
 				else if (tag <= 138)
 				{
-					if (tag <= 114)
+					if (tag <= 112)
 					{
 						if (tag == 96)
 						{
-							Bool2 = reader.ReadBool();
-							continue;
+                            Bool1 = reader.ReadBool();
+                            continue;
 						}
 						if (tag == 104)
 						{
-							UInt1 = reader.ReadRawVarint32();
-							continue;
+                            Bool2 = reader.ReadBool();
+                            continue;
 						}
-						if (tag == 114)
+						if (tag == 112)
 						{
-							Data.Location location = new Data.Location();
-							int size = (int) reader.ReadRawVarint32();
-							location.Decode(reader.ReadMessage(size));
-							Location1 = location;
-							continue;
+                            UInt1 = reader.ReadRawVarint32();
+                            continue;
 						}
 					}
 					else
 					{
 						if (tag == 122)
 						{
-							Data.Location location = new Data.Location();
-							int size = (int) reader.ReadRawVarint32();
-							location.Decode(reader.ReadMessage(size));
-							Location2 = location;
-							continue;
+                            Data.Location location = new Data.Location();
+                            int size = (int)reader.ReadRawVarint32();
+                            location.Decode(reader.ReadMessage(size));
+                            Location1 = location;
+                            continue;
 						}
 						if (tag == 130)
 						{
-							Data.ValueModification valueModification = new Data.ValueModification();
-							int size = (int) reader.ReadRawVarint32();
-							valueModification.Decode(reader.ReadMessage(size));
-							ValueModification1 = valueModification;
-							continue;
+                            Data.Location location = new Data.Location();
+                            int size = (int)reader.ReadRawVarint32();
+                            location.Decode(reader.ReadMessage(size));
+                            Location2 = location;
+                            continue;
 						}
 						if (tag == 138)
 						{
-							Data.ValueModification valueModification = new Data.ValueModification();
-							int size = (int) reader.ReadRawVarint32();
-							valueModification.Decode(reader.ReadMessage(size));
-							ValueModification2 = valueModification;
-							continue;
+                            Data.ValueModification valueModification = new Data.ValueModification();
+                            int size = (int)reader.ReadRawVarint32();
+                            valueModification.Decode(reader.ReadMessage(size));
+                            ValueModification1 = valueModification;
+                            continue;
 						}
 					}
 				}
-				else if (tag <= 160)
+				else if (tag <= 162)
 				{
 					if (tag == 146)
 					{
-						Data.CellCoord cellCoord = new Data.CellCoord();
-						int size = (int) reader.ReadRawVarint32();
-						cellCoord.Decode(reader.ReadMessage(size));
-						CellCoord1 = cellCoord;
-						continue;
+                        Data.ValueModification valueModification = new Data.ValueModification();
+                        int size = (int)reader.ReadRawVarint32();
+                        valueModification.Decode(reader.ReadMessage(size));
+                        ValueModification2 = valueModification;
+                        continue;
 					}
 					if (tag == 154)
 					{
-						Data.CellCoord cellCoord = new Data.CellCoord();
-						int size = (int) reader.ReadRawVarint32();
-						cellCoord.Decode(reader.ReadMessage(size));
-						CellCoord2 = cellCoord;
-						continue;
+                        Data.CellCoord cellCoord = new Data.CellCoord();
+                        int size = (int)reader.ReadRawVarint32();
+                        cellCoord.Decode(reader.ReadMessage(size));
+                        CellCoord1 = cellCoord;
+                        continue;
 					}
-					if (tag == 160)
+					if (tag == 162)
 					{
-						MovementType = (Enums.MovementType) Enum.Parse(typeof(Enums.MovementType), reader.ReadRawVarint32().ToString());
-						continue;
+                        Data.CellCoord cellCoord = new Data.CellCoord();
+                        int size = (int)reader.ReadRawVarint32();
+                        cellCoord.Decode(reader.ReadMessage(size));
+                        CellCoord2 = cellCoord;
+                        continue;
 					}
 				}
+                else if (tag <= 176)
+                {
+                    if (tag != 168)
+                    {
+                        if (tag == 176)
+                        {
+                            SInt1 = reader.DecodeZigZag32(reader.ReadRawVarint32());
+                            continue;
+                        }
+                    }
+                    else
+                    {
+                        MovementType = (Enums.MovementType)Enum.Parse(typeof(Enums.MovementType), reader.ReadRawVarint32().ToString());
+                        continue;
+                    }
+                }
 				else
 				{
-					if (tag == 168)
+					if (tag == 186)
 					{
-						SInt1 = reader.DecodeZigZag32(reader.ReadRawVarint32());
-						continue;
-					}
-					if (tag == 178)
+                        String1 = reader.ReadString();
+                        continue;
+                    }
+					if (tag == 192)
 					{
-						String1 = reader.ReadString();
-						continue;
-					}
-					if (tag == 184)
-					{
-						TriggerableCapacityType1 = (Enums.TriggerableCapacityType) Enum.Parse(typeof(Enums.TriggerableCapacityType),
-							reader.ReadRawVarint32().ToString());
-						continue;
-					}
+                        TriggerableCapacityType1 = (Enums.TriggerableCapacityType)Enum.Parse(typeof(Enums.TriggerableCapacityType),
+                            reader.ReadRawVarint32().ToString());
+                        continue;
+                    }
 				}
 			}
 		}
