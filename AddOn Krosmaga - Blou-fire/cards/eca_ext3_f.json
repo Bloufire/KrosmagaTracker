@@ -1,0 +1,31 @@
+{
+  "Id": 894,
+  "Name": "eca_ext3_f",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 4,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 4,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Dodá Divah",
+    "DescBR": "<b>APARIÇÃO:</b>\nContinua no jogo <b>OU</b> volta para a sua mão.",
+    "NameEN": "Wendy Fall",
+    "DescEN": "<b>APPEARANCE:</b>\nStays in play <b>OR</b> returns to your hand.",
+    "NameES": "Uma Dedós",
+    "DescES": "<b>APARICIÓN:</b>\nSe queda en juego <b>O</b> sube a tu mano.",
+    "NameFR": "Elo Baine",
+    "DescFR": "<b>APPARITION :</b>\nReste en jeu <b>OU</b> remonte dans votre main. ",
+    "NameRU": "Эло Бень",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nостается в игре <b>ИЛИ</b> возвращается в вашу руку."
+  }
+}

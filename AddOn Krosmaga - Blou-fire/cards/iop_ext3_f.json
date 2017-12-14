@@ -1,0 +1,31 @@
+{
+  "Id": 703,
+  "Name": "iop_ext3_f",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 4,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 1,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Tama Rok",
+    "DescBR": "Morre se você lançar um feitiço.",
+    "NameEN": "Tamma Hok",
+    "DescEN": "Dies if you play a spell.",
+    "NameES": "Tama Hok",
+    "DescES": "Muere si utilizas un hechizo.",
+    "NameFR": "Tama Hok",
+    "DescFR": "Meurt si vous jouez un sort.",
+    "NameRU": "Тама Хок",
+    "DescRU": "Умирает, если вы используете заклинание."
+  }
+}

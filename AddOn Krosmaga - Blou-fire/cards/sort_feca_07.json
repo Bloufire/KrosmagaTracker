@@ -1,0 +1,29 @@
+{
+  "Id": 1463,
+  "Name": "sort_feca_07",
+  "CardType": 1,
+  "CostAP": 1,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Troca Equivalente",
+    "DescBR": "Troque a <b>AR</b>\r\nde 2 invocações.",
+    "NameEN": "Even Trade",
+    "DescEN": "Swaps the <b>AR</b>\r\nof 2 Minions.",
+    "NameES": "Intercambio Equivalente",
+    "DescES": "Intercambias la <b>AR</b>\r\nde 2 invocaciones.",
+    "NameFR": "Échange Équivalent",
+    "DescFR": "Échangez l'<b>AR</b>\r\nde 2 invocations.",
+    "NameRU": "Равноценный обмен",
+    "DescRU": "Два существа обмениваются\r\nпоказателями <b>БР</b>."
+  }
+}

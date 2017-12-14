@@ -16,14 +16,14 @@
   "LinkedCards": [],
   "Texts": {
     "NameBR": "Necronorror",
-    "DescBR": "É colocado sobre um Dofus\r\naliado até ser destruído.\nDepois de 5 turnos, ele infligirá 5 danos aos Dofus adversários em todos os turnos.",
+    "DescBR": "É colocado sobre um Dofus\r\naliado até ser destruído.\nDepois de 6 turnos, ele infligirá 5 danos aos Dofus adversários em todos os turnos.",
     "NameEN": "Necronomigore",
-    "DescEN": "Puts itself on an allied\r\nDofus until it is destroyed.\nAfter 5 turns, it will inflict 5 damage each turn on every enemy Dofus.",
+    "DescEN": "Puts itself on an allied\r\nDofus until it is destroyed.\nAfter 6 turns, it will inflict 5 damage each turn on every enemy Dofus.",
     "NameES": "Necronomigor",
-    "DescES": "Se coloca en un dofus\r\naliado hasta su destrucción.\nAl cabo de 5 turnos causará cada turno 5 de daño a los dofus enemigos.",
+    "DescES": "Se coloca en un dofus\r\naliado hasta su destrucción.\nAl cabo de 6 turnos causará cada turno 5 de daño a los dofus enemigos.",
     "NameFR": "Nécronomigore",
-    "DescFR": "Se place sur un Dofus\r\nallié jusqu'à sa destruction.\nAu bout de 5 tours il infligera tous les tours 5 dégâts aux Dofus adverses.",
+    "DescFR": "Se place sur un Dofus\r\nallié jusqu'à sa destruction.\nAu bout de 6 tours il infligera tous les tours 5 dégâts aux Dofus adverses.",
     "NameRU": "Некрономигор",
-    "DescRU": "Стоит на вашем дофусе,\r\nпока его не разобьют.\nЧерез 5 ходов каждый ход наносит 5 ед. урона дофусам противника."
+    "DescRU": "Стоит на вашем дофусе,\r\nпока его не разобьют.\nЧерез 6 ходов каждый ход наносит 5 ед. урона дофусам противника."
   }
 }

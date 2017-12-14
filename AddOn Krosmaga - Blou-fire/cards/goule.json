@@ -18,14 +18,14 @@
   "LinkedCards": [],
   "Texts": {
     "NameBR": "Carniçal",
-    "DescBR": "<b>APARIÇÃO:</b>\nColoca na sua mão o\r\no primeiro Carniçal\r\ndo seu bolo.",
+    "DescBR": "<b>HORDA</b>\n<b>APARIÇÃO:</b>\nColoca na sua mão\r\no primeiro Carniçal\r\ndo seu bolo.",
     "NameEN": "Ghoul",
-    "DescEN": "<b>APPEARANCE:</b>\nPut the first Ghoul\r\nfrom your deck\r\nin your hand.",
+    "DescEN": "<b>HORDE</b>\n<b>APPEARANCE:</b>\nPut the first Ghoul\r\nfrom your deck\r\nin your hand.",
     "NameES": "Ghul",
-    "DescES": "<b>APARICIÓN:</b>\nColoca en tu mano\r\nla primera ghul de\r\ntu mazo.",
+    "DescES": "<b>HORDA</b>\n<b>APARICIÓN:</b>\nColoca en tu mano\r\nel primer ghul de\r\ntu mazo.",
     "NameFR": "Goule",
-    "DescFR": "<b>APPARITION:</b>\nPlace dans votre main\r\nla première Goule de\r\nvotre pioche.",
+    "DescFR": "<b>HORDE</b>\n<b>APPARITION:</b>\nPlace dans votre main\r\nla première Goule de\r\nvotre pioche.",
     "NameRU": "Гуль",
-    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nвы берете первого\r\nгуля из своей\r\nколоды."
+    "DescRU": "<b>ОРДА</b>\n<b>ПОЯВЛЕНИЕ:</b>\nвы берете первого\r\nгуля из своей\r\nколоды."
   }
 }

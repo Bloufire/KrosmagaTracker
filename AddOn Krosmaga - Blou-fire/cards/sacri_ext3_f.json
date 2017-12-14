@@ -1,0 +1,31 @@
+{
+  "Id": 964,
+  "Name": "sacri_ext3_f",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 4,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 8,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Sigrun",
+    "DescBR": "Compre uma carta krósmica quando o seu adversário jogar uma.",
+    "NameEN": "Sigrun",
+    "DescEN": "Draw 1 Krosmic card whenever your opponent plays a Krosmic card.",
+    "NameES": "Sigrun",
+    "DescES": "Robas una carta krósmica cuando tu contrincante juega una carta krósmica.",
+    "NameFR": "Sigrun",
+    "DescFR": "Piochez une carte Krosmique quand votre adversaire joue une carte Krosmique. ",
+    "NameRU": "Сигрун",
+    "DescRU": "Вы получаете кросмическую карту из своей колоды, когда противник разыгрывает кросмическую карту."
+  }
+}

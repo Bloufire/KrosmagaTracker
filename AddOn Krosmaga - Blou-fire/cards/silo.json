@@ -1,0 +1,35 @@
+{
+  "Id": 1874,
+  "Name": "silo",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 2,
+  "Attack": 3,
+  "MovementPoint": 0,
+  "Families": [
+    83
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 963,
+    "ParentCard": 744,
+    "ParentLevel": 9
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Silo",
+    "DescBR": "<b>IRMANDADE</b>\n<b>MURO</b>\nJogue seus Flagelos gratuitamente.",
+    "NameEN": "Silo",
+    "DescEN": "<b>BROTHERHOOD</b>\n<b>WALL</b>\nPlay your Curses for free.",
+    "NameES": "Silo",
+    "DescES": "<b>HERMANDAD</b>\n<b>MURO</b>\nJuegas gratuitamente tus plagas.",
+    "NameFR": "Silo",
+    "DescFR": "<b>FRATRIE</b>\n<b>MUR</b>\nJouez gratuitement vos Fléaux.",
+    "NameRU": "Хранилище",
+    "DescRU": "<b>ФРАТРИЯ</b>\n<b>СТЕНА</b>\nБесплатно разыграйте свои карты порчи."
+  }
+}

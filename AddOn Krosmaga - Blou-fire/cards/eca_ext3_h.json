@@ -1,0 +1,31 @@
+{
+  "Id": 979,
+  "Name": "eca_ext3_h",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 4,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 4,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Arty Romi",
+    "DescBR": "<b>FIM DO TURNO:</b>\nCompre uma carta <b>OU</b> compre uma carta do adversário.",
+    "NameEN": "Arty Romi",
+    "DescEN": "<b>END OF TURN:</b>\nDraw 1 card <b>OR</b> draw 1 enemy card.",
+    "NameES": "Arty Romi",
+    "DescES": "<b>FIN DEL TURNO:</b>\nRobas una carta <b>O</b> robas una carta enemiga.",
+    "NameFR": "Arty Romi",
+    "DescFR": "<b>FIN DU TOUR :</b>\nPiochez une carte <b>OU</b> piochez une carte adverse.",
+    "NameRU": "Арти Роми",
+    "DescRU": "<b>КОНЕЦ ХОДА:</b>\nвозьмите одну карту из своей колоды <b>ИЛИ</b> из колоды противника."
+  }
+}

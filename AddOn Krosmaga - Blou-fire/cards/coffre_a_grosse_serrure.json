@@ -18,14 +18,14 @@
   "LinkedCards": [],
   "Texts": {
     "NameBR": "Baú com Tranca Enorme",
-    "DescBR": "<b>RESISTÊNCIA:</b> 1\n<b>MORTE:</b> Coloca um <b>Espólio</b> na primeira célula\r\nda fileira dele.",
+    "DescBR": "<b>RESISTÊNCIA:</b> 1\n<b>MORTE:</b> Coloca um <b>Espólio</b> aliado na primeira célula da fileira dele.",
     "NameEN": "Big-Locked Chest",
-    "DescEN": "<b>RESISTANCE:</b> 1\n<b>DEATH:</b> Places <b>Loot</b> on the first cell\r\non its row.",
+    "DescEN": "<b>RESISTANCE:</b> 1\n<b>DEATH:</b> Puts an item of <b>Loot</b> on the first cell on its row.",
     "NameES": "Cofre bien cerrado",
-    "DescES": "<b>RESISTENCIA:</b> 1\n<b>MUERTE:</b> Coloca un <b>botín</b> en la primera casilla\r\nde su hilera.",
+    "DescES": "<b>RESISTENCIA:</b> 1\n<b>MUERTE:</b> Coloca un <b>botín</b> en la primera casilla de su hilera.",
     "NameFR": "Coffre à Grosse Serrure",
-    "DescFR": "<b>RÉSISTANCE :</b> 1\n<b>MORT :</b> Dépose un <b>Butin</b> sur la première case\r\nde sa ligne.",
+    "DescFR": "<b>RÉSISTANCE :</b> 1\n<b>MORT :</b> Dépose un <b>Butin</b> allié sur la première case de sa ligne.",
     "NameRU": "Сундук с большим замком",
-    "DescRU": "<b>СОПРОТИВЛЕНИЕ:</b> 1\n<b>СМЕРТЬ:</b> помещает на первую клетку\r\nсвоей линии <b>добычу</b>."
+    "DescRU": "<b>СОПРОТИВЛЕНИЕ:</b> 1\n<b>СМЕРТЬ:</b> помещает на первую клетку своей линии союзную <b>добычу</b>."
   }
 }

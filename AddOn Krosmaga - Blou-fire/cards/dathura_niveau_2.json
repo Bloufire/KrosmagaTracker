@@ -1,0 +1,32 @@
+{
+  "Id": 822,
+  "Name": "dathura_niveau_2",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 5,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    32,
+    83
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 281,
+  "InfiniteFamily": 458,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Dathura",
+    "DescBR": "<b>IRMANDADE</b>\n<b>APARIÇÃO:</b> Inflige às invocações inimigas no seu <b>lado</b> tantos danos quanto invocações inimigas no jogo.",
+    "NameEN": "Dathura",
+    "DescEN": "<b>BROTHERHOOD</b>\n<b>APPEARANCE:</b> Inflicts as much damage on enemy Minions on your <b>side</b> as there are enemy Minions in play.",
+    "NameES": "Dathura",
+    "DescES": "<b>HERMANDAD</b>\n<b>APARICIÓN:</b> Inflige a las invocaciones enemigas de tu <b>lado</b> tantos daños como invocaciones enemigas haya en juego.",
+    "NameFR": "Dathura",
+    "DescFR": "<b>FRATRIE</b>\n<b>APPARITION :</b> Inflige aux invocations adverses dans votre <b>camp</b> autant de dégâts que d’invocations adverses en jeu.",
+    "NameRU": "Датура",
+    "DescRU": "<b>ФРАТРИЯ</b>\n<b>ПОЯВЛЕНИЕ:</b> урон существам противника на вашей <b>половине поля</b>, равный кол-ву его существ в игре."
+  }
+}

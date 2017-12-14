@@ -26,6 +26,6 @@
     "NameFR": "Radoris Montrouge",
     "DescFR": "Dépense 1 <b>PA</b> de votre\r\nréserve pour être invoqué.\n<b>APPARITION :</b> Dépense\r\nvos <b>PA</b>. Gagne +1 <b>AT</b> et\r\n+1 <b>AR</b> par <b>PA</b> utilisé.",
     "NameRU": "Радорис Красногор",
-    "DescRU": "При его призыве тратится 1 <b>ОД</b>\r\nиз вашего резерва.\n<b>ПОЯВЛЕНИЕ:</b> тратит\r\nваши <b>ОД</b>. Получает +1 <b>AT</b> и\r\n+1 <b>БР</b> за каждое использованное <b>ОД</b>."
+    "DescRU": "При его призыве тратится 1 <b>ОД</b>\r\nиз вашего резерва.\n<b>ПОЯВЛЕНИЕ:</b> Тратит\r\nваши <b>ОД</b>. Получает +1 <b>AT</b> и\r\n+1 <b>БР</b> за каждое использованное <b>ОД</b>."
   }
 }

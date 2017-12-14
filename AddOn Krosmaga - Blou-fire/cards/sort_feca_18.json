@@ -1,0 +1,29 @@
+{
+  "Id": 1375,
+  "Name": "sort_feca_18",
+  "CardType": 1,
+  "CostAP": 8,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Lâmina Profunda",
+    "DescBR": "Inflige às invocações adversárias uma quantidade de danos equivalente à de <b>Glifos</b> aliados no jogo.",
+    "NameEN": "Crashing Wave",
+    "DescEN": "Inflicts as many damage on enemy Minions as there are allied <b>Glyphs</b> in play.",
+    "NameES": "Filo Abisal",
+    "DescES": "Inflige a las invocaciones enemigas tantos daños como <b>glifos</b> aliados haya en juego.",
+    "NameFR": "Lame de Fond",
+    "DescFR": "Inflige aux invocations adverses autant de dégâts que de <b>Glyphes</b> alliés en jeu.",
+    "NameRU": "Гигантская волна",
+    "DescRU": "Наносит существам противника урон, равный количеству союзных <b>глифов</b> в игре."
+  }
+}

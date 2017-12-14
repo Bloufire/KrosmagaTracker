@@ -1,0 +1,29 @@
+{
+  "Id": 1558,
+  "Name": "sort_feca_12",
+  "CardType": 1,
+  "CostAP": 20,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Retrocesso",
+    "DescBR": "Custa 3 <b>PA</b> a menos por <b>Glifo</b> aliado no jogo. Destrói um Dofus e seus <b>Glifos</b>.",
+    "NameEN": "Backlash",
+    "DescEN": "Costs 3 <b>AP</b> less per allied <b>Glyph</b> in play. Destroys a Dofus and your <b>Glyphs.</b>",
+    "NameES": "Puñalada",
+    "DescES": "Cuesta 3 <b>PA</b> menos por <b>glifo</b> aliado en juego. Destruye un dofus y tus <b>glifos</b>.",
+    "NameFR": "Retour Du Bâton",
+    "DescFR": "Coûte 3 <b>PA</b> de moins par <b>Glyphe</b> allié en jeu. Détruit un Dofus et vos <b>Glyphes</b>.",
+    "NameRU": "Хитропрофит",
+    "DescRU": "Стоит на 3 <b>ОД</b> меньше за каждый союзный <b>глиф</b> в игре. Разрушает один дофус и ваши <b>глифы</b>."
+  }
+}

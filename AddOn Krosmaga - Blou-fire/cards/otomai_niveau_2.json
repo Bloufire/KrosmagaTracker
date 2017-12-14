@@ -18,14 +18,14 @@
   "LinkedCards": [],
   "Texts": {
     "NameBR": "Otomai",
-    "DescBR": "Transforma-se em uma invocação aleatória que custará 6 <b>PA</b> se ele sobreviver a um ataque.",
+    "DescBR": "<b>CONVOCAÇÃO</b>\nTransforma-se em uma invocação aleatória que custará 6 <b>PA</b> se ele sobreviver a danos.",
     "NameEN": "Otomai",
-    "DescEN": "Transforms into a random Minion costing 6 <b>AP</b> if it survives damage.",
+    "DescEN": "<b>RALLYING</b>\nTransforms into a random Minion costing 6 <b>AP</b> if he survives damage.",
     "NameES": "Otomai",
-    "DescES": "Se transforma en invocación aleatoria que cueste 6 <b>PA</b> si sobrevive a algún daño.",
+    "DescES": "<b>CONCENTRACIÓN</b>\nSe transforma en invocación aleatoria que cueste 6 <b>PA</b> si sobrevive a algún daño.",
     "NameFR": "Otomaï",
-    "DescFR": "Se transforme en invocation aléatoire coûtant 6 <b>PA</b> s'il survit à des dégâts.",
+    "DescFR": "<b>RALLIEMENT</b>\nSe transforme en invocation aléatoire coûtant 6 <b>PA</b> s'il survit à des dégâts.",
     "NameRU": "Отомай",
-    "DescRU": "Превращается в случайное существо стоимостью 6 <b>ОД</b>, если выживает после получения урона."
+    "DescRU": "<b>СБОР</b>\nПревращается в случайное существо стоимостью 6 <b>ОД</b>, если выживает после получения урона."
   }
 }

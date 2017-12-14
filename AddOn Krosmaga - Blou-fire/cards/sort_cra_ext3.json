@@ -1,0 +1,31 @@
+{
+  "Id": 842,
+  "Name": "sort_cra_ext3",
+  "CardType": 1,
+  "CostAP": 1,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    2
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 2,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Aljava",
+    "DescBR": "Compre 2 cartas\ne seu turno termina.",
+    "NameEN": "Quiver",
+    "DescEN": "Draw 2 cards;\nyour turn is over.",
+    "NameES": "Carcaj",
+    "DescES": "Robas 2 cartas;\ntu turno se termina.",
+    "NameFR": "Carquois",
+    "DescFR": "Piochez 2 cartes,\nvotre tour se termine.",
+    "NameRU": "Колчан",
+    "DescRU": "Вы берете 2 карты,\nваш ход заканчивается."
+  }
+}

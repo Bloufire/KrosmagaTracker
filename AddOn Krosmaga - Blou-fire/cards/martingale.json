@@ -18,13 +18,13 @@
   "LinkedCards": [],
   "Texts": {
     "NameBR": "Martingale",
-    "DescBR": "Devolve a sua mão ao bolo. Compre a mesma quantidade de cartas.",
+    "DescBR": "Coloca a sua mão debaixo do seu bolo. Compre a mesma quantidade de cartas.",
     "NameEN": "Martingale",
-    "DescEN": "Put the cards from your hand at the bottom of your deck. Draw the same number of cards.",
+    "DescEN": "Puts the cards from your hand at the bottom of your deck. Draw the same number of cards.",
     "NameES": "Martingala",
     "DescES": "Coloca tu mano bajo tu mazo. Robas un número igual de cartas.",
     "NameFR": "Martingale",
-    "DescFR": "Replace votre main sous votre pioche. Piochez autant de cartes.",
+    "DescFR": "Place votre main sous votre pioche. Piochez autant de cartes.",
     "NameRU": "Перерасчет",
     "DescRU": "Помещает карты из вашей руки в низ вашей колоды. Вы берете столько же карт."
   }

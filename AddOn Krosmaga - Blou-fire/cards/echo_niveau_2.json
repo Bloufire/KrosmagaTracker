@@ -1,0 +1,32 @@
+{
+  "Id": 1856,
+  "Name": "echo_niveau_2",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 5,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    3,
+    83
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 281,
+  "InfiniteFamily": 82,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Eco",
+    "DescBR": "<b>IRMANDADE</b>\nEnquanto ela está no jogo, o <b>AT</b> das invocações adversárias é reduzido em 1.",
+    "NameEN": "Echo",
+    "DescEN": "<b>BROTHERHOOD:</b>\nWhile she is in play, enemy Minions' <b>AT</b> is reduced by 1.",
+    "NameES": "Eco",
+    "DescES": "<b>HERMANDAD</b>\nMientras esté en juego, el <b>AT</b> de las invocaciones enemigas se reduce 1 punto.",
+    "NameFR": "Echo",
+    "DescFR": "<b>FRATRIE</b>\nTant qu'elle est en jeu, l'<b>AT</b> des invocations adverses est réduite de 1.",
+    "NameRU": "Эхо",
+    "DescRU": "<b>БРАТСТВО</b>\nПока она находится в игре, показатель <b>AT</b>существ противника уменьшается на 1."
+  }
+}

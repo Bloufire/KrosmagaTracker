@@ -18,14 +18,14 @@
   "LinkedCards": [],
   "Texts": {
     "NameBR": "Mugrr Real",
-    "DescBR": "<b>INVESTIDA</b>",
+    "DescBR": "<b>APARIÇÃO:</b> <b>Investida</b>",
     "NameEN": "Royal Moogrr",
-    "DescEN": "<b>CHARGE</b>",
+    "DescEN": "<b>APPEARANCE:</b> <b>Charges</b>",
     "NameES": "Muuugresa Real",
-    "DescES": "<b>CARGA</b>",
+    "DescES": "<b>APARICIÓN:</b> <b>Carga</b>",
     "NameFR": "Moogrr Royale",
-    "DescFR": "<b>CHARGE</b>",
+    "DescFR": "<b>APPARITION :</b> <b>Charge</b>",
     "NameRU": "Королевский муйвол",
-    "DescRU": "<b>РЫВОК</b>"
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b><b>Рывок</b>"
   }
 }

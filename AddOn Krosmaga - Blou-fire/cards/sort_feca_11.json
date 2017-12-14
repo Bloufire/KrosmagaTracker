@@ -1,0 +1,29 @@
+{
+  "Id": 1474,
+  "Name": "sort_feca_11",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Convocação",
+    "DescBR": "Permite que uma invocação\r\nvisada <b>convoque</b> outra que tenha a habilidade <b>convocação</b>.",
+    "NameEN": "Rallying",
+    "DescEN": "Allows the targeted\r\nMinion to <b>rally</b> another Minion that has the <b>rallying</b> skill.",
+    "NameES": "Concentración",
+    "DescES": "Permite a la invocación\r\nseleccionada <b>concentrarse</b> con otra invocación que posea la habilidad <b>Concentración</b>.",
+    "NameFR": "Ralliement",
+    "DescFR": "Permet à l'invocation\r\nciblée de <b>rallier</b> une autre invocation possédant la compétence <b>ralliement</b>.",
+    "NameRU": "Сбор",
+    "DescRU": "Позволяет выбранному \r\nсуществу <b>присоединиться</b> к другому существу, обладающему способностью <b>«сбор»</b>."
+  }
+}

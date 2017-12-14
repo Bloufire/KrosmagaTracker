@@ -20,14 +20,14 @@
   ],
   "Texts": {
     "NameBR": "Mugrr Celestial",
-    "DescBR": "<b>APARIÇÃO:</b>\nInvoca 2 Mugrrons para o lado dele, depois <b>dá uma investida</b> ao longo de 2 células.",
+    "DescBR": "<b>APARIÇÃO:</b>\nInvoca 2 Mugrrons para o lado dele, depois <b>dá uma investida</b> ao longo de 2 células. Seus Mugrrons <b>dão uma investida</b> ao longo de 2 células.",
     "NameEN": "Celestial Moogrr",
-    "DescEN": "<b>APPEARANCE:</b>\nSummons 2 Moogrroons on adjacent cells, then <b>charges</b> 2 cells.",
+    "DescEN": "<b>APPEARANCE:</b>\nSummons 2 Moogrroons on adjacent cells, then <b>charges</b> 2 cells. Your Moogrroons <b>charge</b> 2 cells.",
     "NameES": "Muuugresa Celestial",
-    "DescES": "<b>APARICIÓN:</b>\nInvoca 2 muuugritones a su lado y <b>carga</b> 2 casillas.",
+    "DescES": "<b>APARICIÓN:</b>\nInvoca 2 muuugritones a su lado y <b>carga</b> 2 casillas. Tus muuugritones <b>cargan</b> 2 casillas.",
     "NameFR": "Moogrr Céleste",
-    "DescFR": "<b>APPARITION :</b>\nInvoque 2 Moogrrons à côté de lui, puis <b>charge</b> de 2 cases.",
+    "DescFR": "<b>APPARITION :</b>\nInvoque 2 Moogrrons à côté de lui, puis <b>charge</b> de 2 cases. Vos Moogrrons <b>chargent</b> de 2 cases.",
     "NameRU": "Небесный муйвол",
-    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nпризывает 2 муйволят рядом с собой, а затем делает <b>рывок</b> на 2 клетки."
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nпризывает 2 муйволят рядом с собой, а затем делает <b>рывок</b> на 2 клетки. Ваши муйволята <b>делают рывок</b> на 2 клетки."
   }
 }

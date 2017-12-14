@@ -1,0 +1,29 @@
+{
+  "Id": 1331,
+  "Name": "sort_feca_14",
+  "CardType": 1,
+  "CostAP": 5,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Glifo de Revitalização",
+    "DescBR": "<b>GLIFO</b>\nQuando é jogado, esse feitiço faz comprar 1 carta por invocação ao redor do <b>Glifo</b>.",
+    "NameEN": "Renewal Glyph",
+    "DescEN": "<b>GLYPH</b>\nWhen played, this spell draws 1 card per Minion around the <b>Glyph.</b>",
+    "NameES": "Glifo de Renovación",
+    "DescES": "<b>GLIFO</b>\nCuando se utiliza, este hechizo hace robar 1 carta por invocación que haya alrededor del <b>glifo</b>.",
+    "NameFR": "Glyphe de Renouveau",
+    "DescFR": "<b>GLYPHE</b>\nQuand il est joué, ce sort fait piocher 1 carte par invocation autour du <b>Glyphe</b>.",
+    "NameRU": "Глиф возрождения",
+    "DescRU": "<b>ГЛИФ</b>\nПри использовании это заклинание позволяет вам взять по 1 карте за каждое существо вокруг <b>глифа</b>."
+  }
+}

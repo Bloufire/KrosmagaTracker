@@ -1,0 +1,29 @@
+{
+  "Id": 877,
+  "Name": "sort_feca_02",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Chuva de Meteoritos",
+    "DescBR": "Destrua a <b>AR</b> de uma invocação aliada para infligir a mesma quantidade de danos a outra invocação. Compre uma carta.",
+    "NameEN": "Meteorite Shower",
+    "DescEN": "Destroys the <b>AR</b> of an allied Minion to inflict that amount in damage on another Minion. Draw 1 card.",
+    "NameES": "Lluvia de Meteoritos",
+    "DescES": "Destruyes la <b>AR</b> de una invocación aliada para infligir el equivalente en daños a otra invocación. Robas 1 carta.",
+    "NameFR": "Pluie de Météorites",
+    "DescFR": "Détruisez l'<b>AR</b> d'une invocation alliée pour infliger autant de dégâts à une autre invocation. Piochez une carte.",
+    "NameRU": "Метеоритный дождь",
+    "DescRU": "Уничтожает <b>БР</b> выбранного союзного существа и наносит столько же урона другому существу. Возьмите 1 карту. Возьмите 1 карту."
+  }
+}

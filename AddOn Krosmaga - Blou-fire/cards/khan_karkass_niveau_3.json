@@ -20,14 +20,14 @@
   ],
   "Texts": {
     "NameBR": "Khan Karkass",
-    "DescBR": "<b>APARIÇÃO:</b>\nInvoca 3 Fãs\r\nao redor dele.",
+    "DescBR": "<b>APARIÇÃO:</b>\nInvoca 3 Fãs\r\nao redor dele. Seus Fãs <b>investem</b>.",
     "NameEN": "Khan Karkass",
-    "DescEN": "<b>APPEARANCE:</b>\nSummons 3 Fans\r\non adjacent cells.",
+    "DescEN": "<b>APPEARANCE:</b>\nSummons 3 Fans\r\non adjacent cells. Your Fans <b>charge</b>.",
     "NameES": "Khan Karkasa",
-    "DescES": "<b>APARICIÓN:</b>\nInvoca 3 fans\r\na su alrededor.",
+    "DescES": "<b>APARICIÓN:</b>\nInvoca 3 fans\r\na su alrededor. Tus fans <b>cargan</b>.",
     "NameFR": "Khan Karkass",
-    "DescFR": "<b>APPARITION :</b>\nInvoque 3 Fans\r\nautour de lui.",
+    "DescFR": "<b>APPARITION :</b>\nInvoque 3 Fans\r\nautour de lui. Vos Fans <b>chargent</b>.",
     "NameRU": "Хан Каркасс",
-    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nпризывает вокруг себя\r\n3 фанаток."
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nпризывает вокруг себя\r\n3 фанаток. Ваши фанатки делают <b>рывок</b>."
   }
 }

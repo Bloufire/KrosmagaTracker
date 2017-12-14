@@ -1,0 +1,31 @@
+{
+  "Id": 1107,
+  "Name": "sort_eni_ext3",
+  "CardType": 1,
+  "CostAP": 1,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    3
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 3,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Palavra Protetora",
+    "DescBR": "Cura 3 <b>PV</b> das invocações na célula visada e ao redor dela.",
+    "NameEN": "Protective Word",
+    "DescEN": "Heals Minions located on the targeted and surrounding cells by 3 <b>HP.</b>",
+    "NameES": "Palabra Protectora",
+    "DescES": "Cura 3 <b>PdV</b> a las invocaciones situadas en la casilla seleccionada y en las de alrededor.",
+    "NameFR": "Mot Protecteur",
+    "DescFR": "Soigne de 3 <b>PV</b> les invocations situées sur la case ciblée ainsi que sur celles autour.",
+    "NameRU": "Защитное слово",
+    "DescRU": "Восстанавливает 3 <b>ОЗ</b> существам на выбранной клетке и вокруг нее."
+  }
+}

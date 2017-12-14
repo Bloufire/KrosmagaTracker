@@ -1,0 +1,31 @@
+{
+  "Id": 895,
+  "Name": "chauchane",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 5,
+  "Attack": 3,
+  "MovementPoint": 2,
+  "Families": [
+    7
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Suzana",
+    "DescBR": "<b>CONVOCAÇÃO</b>\nGanha +1 <b>AT</b> quando uma invocação a <b>convoca</b>.",
+    "NameEN": "Shosanne",
+    "DescEN": "<b>RALLYING</b>\nGains +1 <b>AT</b> whenever a Minion <b>rallies</b> her.",
+    "NameES": "Shushana",
+    "DescES": "<b>CONCENTRACIÓN</b>\nGana +1 <b>AT</b> cuando una invocación <b>se concentra</b> con ella.",
+    "NameFR": "Chauchane",
+    "DescFR": "<b>RALLIEMENT</b>\nGagne +1 <b>AT</b> quand une invocation la <b>rallie</b>.",
+    "NameRU": "Шошана",
+    "DescRU": "<b>СБОР</b>\nПолучает +1 <b>AT</b>, когда к ней <b>присоединяется</b> существо."
+  }
+}

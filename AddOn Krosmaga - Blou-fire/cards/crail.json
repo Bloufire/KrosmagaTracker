@@ -1,0 +1,31 @@
+{
+  "Id": 1812,
+  "Name": "crail",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 7,
+  "Attack": 5,
+  "MovementPoint": 2,
+  "Families": [
+    7
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Crail",
+    "DescBR": "<b>CONVOCAÇÃO</b>\n<b>APARIÇÃO:</b>\nSeus <b>Glifos</b> infligem 2 danos às invocações adversárias na fileira deles.",
+    "NameEN": "Crail",
+    "DescEN": "<b>RALLYING</b>\n<b>APPEARANCE:</b>\nYour <b>Glyphs</b> inflict 2 damage on enemy Minions on their row.",
+    "NameES": "Crail",
+    "DescES": "<b>CONCENTRACIÓN</b>\n<b>APARICIÓN:</b>\nTus <b>glifos</b> infligen 2 de daño a las invocaciones enemigas de su hilera.",
+    "NameFR": "Crail",
+    "DescFR": "<b>RALLIEMENT</b>\n<b>APPARITION :</b>\nVos <b>Glyphes</b> infligent 2 dégâts aux invocations adverses de leur ligne.",
+    "NameRU": "Краль",
+    "DescRU": "<b>СБОР</b>\n<b>ПОЯВЛЕНИЕ:</b>\nваши <b>глифы</b> наносят 2 единицы урона существам противника на своей линии."
+  }
+}

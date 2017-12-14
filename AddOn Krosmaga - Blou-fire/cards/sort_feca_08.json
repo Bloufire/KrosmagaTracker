@@ -1,0 +1,29 @@
+{
+  "Id": 1553,
+  "Name": "sort_feca_08",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Remanejamento",
+    "DescBR": "Seus <b>Glifos</b> voltam à sua mão.",
+    "NameEN": "Rearrangement",
+    "DescEN": "Your <b>Glyphs</b> return to your hand.",
+    "NameES": "Remodelación",
+    "DescES": "Tus <b>glifos</b> suben a tu mano.",
+    "NameFR": "Remaniement",
+    "DescFR": "Vos <b>Glyphes</b> remontent dans votre main.",
+    "NameRU": "Перегруппировка",
+    "DescRU": "Ваши <b>глифы</b> возвращаются в вашу в руку."
+  }
+}

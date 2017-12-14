@@ -1,0 +1,31 @@
+{
+  "Id": 814,
+  "Name": "sram_ext3_f",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 5,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    5
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 6,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Emma Cabro",
+    "DescBR": "<b>APARIÇÃO:</b>\nBane 1 carta da sua lixeira. Reduz em 1 <b>PA</b> o custo da próxima carta que você jogar.",
+    "NameEN": "Emma Sacker",
+    "DescEN": "<b>APPEARANCE:</b>\nBanishes 1 card from your discard pile. Reduces the cost of the next card you play by 1 <b>AP.</b>",
+    "NameES": "Emma Cabra",
+    "DescES": "<b>APARICIÓN:</b>\nElimina 1 carta de tu descarte. Reduce 1 <b>PA</b> el coste de la próxima carta que juegues.",
+    "NameFR": "Emma Cabre",
+    "DescFR": "<b>APPARITION :</b>\nBannit 1 carte de votre défausse. Réduit de 1 <b>PA</b> le coût de la prochaine carte que vous jouez.",
+    "NameRU": "Сумра Кно Чи",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nуничтожает 1 карту в вашем сбросе. Следующая разыгранная вами карта будет стоить на 1 <b>ОД</b> меньше."
+  }
+}

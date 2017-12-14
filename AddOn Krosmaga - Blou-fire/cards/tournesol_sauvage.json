@@ -18,14 +18,14 @@
   "LinkedCards": [],
   "Texts": {
     "NameBR": "Girassol Selvagem",
-    "DescBR": "<b>APARIÇÃO:</b>\nDestrua uma <b>Semente</b>,\r\numa Bomba, um Prisma, um <b>Espólio</b> ou um <b>Monte de Ossos</b> no jogo.",
+    "DescBR": "<b>APARIÇÃO:</b>\nDestrua uma <b>Semente</b>,\r\numa Bomba, um Prisma, um <b>Espólio</b>, um <b>Glifo</b> ou um <b>Monte de Ossos</b> no jogo.",
     "NameEN": "Wild Sunflower",
-    "DescEN": "<b>APPEARANCE:</b>\nDestroys a <b>Seed,</b>\r\n a Bomb, a Prism, an item of <b>Loot,</b> or a <b>Pile of Bones</b> in play.",
+    "DescEN": "<b>APPEARANCE:</b>\nDestroys a <b>Seed,</b>\r\na Bomb, a Prism, an item of <b>Loot,</b> a <b>Glyph,</b> or a <b>Pile of Bones</b> in play.",
     "NameES": "Girasol salvaje",
-    "DescES": "<b>APARICIÓN:</b>\nDestruyes una <b>semilla</b>,\r\nuna bomba, un prisma, <b>un botín</b> o un <b>montón de huesos</b> en juego.",
+    "DescES": "<b>APARICIÓN:</b>\nDestruyes una <b>semilla</b>, una bomba, un prisma, un <b>botín</b>, un <b>glifo</b> o un <b>montón de huesos</b> en juego.",
     "NameFR": "Tournesol Sauvage",
-    "DescFR": "<b>APPARITION :</b>\nDétruisez une <b>Graine</b>,\r\nune Bombe, un Prisme, un <b>Butin</b> ou un <b>Tas d'Os</b> en jeu.",
+    "DescFR": "<b>APPARITION :</b>\nDétruisez une <b>Graine</b>,\r\nune Bombe, un Prisme, un <b>Butin</b>, un <b>Glyphe</b> ou un <b>Tas d'Os</b> en jeu.",
     "NameRU": "Дикий подсолнух",
-    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nуничтожает <b>семя</b>,\r\n<b>бомбу</b>, <b>призму</b>, <b>добычу</b> или <b>кучу костей</b> в игре."
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nуничтожает <b>семя</b>,\r\nбомбу, призму, <b>добычу</b>, <b>глиф</b> или <b>кучу костей</b> в игре."
   }
 }

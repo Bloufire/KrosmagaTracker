@@ -1,0 +1,34 @@
+{
+  "Id": 961,
+  "Name": "necrome_feca_h",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 5,
+  "Attack": 5,
+  "MovementPoint": 2,
+  "Families": [
+    7,
+    78
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    870
+  ],
+  "Texts": {
+    "NameBR": "Carrasco Anônimo",
+    "DescBR": "<b>CONVOCAÇÃO</b>\n<b>NECROMO</b>\n<b>APARIÇÃO:</b> Acrescenta 1 <b>Orbe</b> à sua mão se você tiver pelo menos 3 <b>Glifos</b> no jogo.",
+    "NameEN": "Anonymous Executioner",
+    "DescEN": "<b>RALLYING</b>\n<b>NECRO</b>\n<b>APPEARANCE:</b> Adds 1 <b>Orb</b> to your hand if you have at least 3 <b>Glyphs</b> in play.",
+    "NameES": "Verdugo anónimo",
+    "DescES": "<b>CONCENTRACIÓN</b>\n<b>NÉCROMO</b>\n<b>APARICIÓN:</b> Añade 1 <b>orbe</b> a tu mano si tienes al menos 3 <b>glifos</b> en juego.",
+    "NameFR": "Bourreau Anonyme",
+    "DescFR": "<b>RALLIEMENT</b>\n<b>NÉCROME</b>\n<b>APPARITION :</b> Ajoute 1 <b>Orbe</b> à votre main si vous avez au moins 3 <b>Glyphes</b> en jeu.",
+    "NameRU": "Безымянный палач",
+    "DescRU": "<b>СБОР</b>\n<b>НЕКРОМАН</b>\n<b>ПОЯВЛЕНИЕ:</b> дает вам 1 <b>сферу</b>, если у вас в игре есть хотя бы 3 <b>глифа</b>."
+  }
+}

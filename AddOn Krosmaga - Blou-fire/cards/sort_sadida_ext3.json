@@ -1,0 +1,31 @@
+{
+  "Id": 793,
+  "Name": "sort_sadida_ext3",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 10,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Grãogrena",
+    "DescBR": "A invocação visada sofre 1 dano por célula percorrida quando ela se desloca ou <b>investe</b>.",
+    "NameEN": "Gangreed",
+    "DescEN": "The targeted Minion suffers 1 damage per cell traveled when it moves or <b>charges.</b>",
+    "NameES": "Gangrano",
+    "DescES": "La invocación seleccionada sufre 1 de daño por casilla recorrida cuando se desplaza o <b>carga</b>.",
+    "NameFR": "Gangraîne",
+    "DescFR": "L'invocation ciblée subit 1 dégât par case parcourue quand elle se déplace ou qu'elle <b>charge</b>.",
+    "NameRU": "Гангрена",
+    "DescRU": "Когда выбранное существо перемещается или делает <b>рывок</b>, оно получает 1 единицу урона за каждую пройденную клетку."
+  }
+}

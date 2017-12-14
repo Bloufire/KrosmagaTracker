@@ -18,14 +18,14 @@
   "LinkedCards": [],
   "Texts": {
     "NameBR": "Protoflex",
-    "DescBR": "<b>INVESTIDA</b>",
+    "DescBR": "<b>APARIÇÃO:</b> <b>Investida</b>",
     "NameEN": "Protoflex",
-    "DescEN": "<b>CHARGE</b>",
+    "DescEN": "<b>APPEARANCE:</b> <b>Charges</b>",
     "NameES": "Protoflex",
-    "DescES": "<b>CARGA</b>",
+    "DescES": "<b>APARICIÓN:</b> <b>Carga</b>",
     "NameFR": "Protoflex",
-    "DescFR": "<b>CHARGE</b>",
+    "DescFR": "<b>APPARITION :</b> <b>Charge</b>",
     "NameRU": "Протофлекс",
-    "DescRU": "<b>РЫВОК</b>"
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b><b>Рывок</b>"
   }
 }

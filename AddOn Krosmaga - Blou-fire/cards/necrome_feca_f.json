@@ -1,0 +1,32 @@
+{
+  "Id": 868,
+  "Name": "necrome_feca_f",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 4,
+  "Attack": 3,
+  "MovementPoint": 2,
+  "Families": [
+    7,
+    78
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Campeã Doutrinada",
+    "DescBR": "<b>CONVOCAÇÃO</b>\n<b>NECROMO</b>\n<b>APARIÇÃO:</b> Coloca um <b>escudo</b> no Dofus aliado na fileira dela se você estiver em <b>desvantagem numérica</b>.",
+    "NameEN": "Indoctrinated Champion",
+    "DescEN": "<b>RALLYING</b>\n<b>NECRO</b>\n<b>APPEARANCE:</b> Puts a <b>shield</b> on the allied Dofus on its row if you are <b>outnumbered</b>.",
+    "NameES": "Campeona adoctrinada",
+    "DescES": "<b>CONCENTRACIÓN</b> <b>NÉCROMO</b>\n<b>APARICIÓN:</b> Pone un <b>escudo</b> en el dofus aliado de su hilera si estás en <b>inferioridad numérica</b>.",
+    "NameFR": "Championne Endoctrinée",
+    "DescFR": "<b>RALLIEMENT</b>\n<b>NÉCROME</b>\n<b>APPARITION :</b> Place un <b>bouclier</b> sur le Dofus allié de sa ligne si vous êtes en <b>sous nombre</b>.",
+    "NameRU": "Агитика-чемпионка",
+    "DescRU": "<b>СБОР</b>\n<b>НЕКРОМАН</b>\n<b>ПОЯВЛЕНИЕ:</b> если вы <b>в меньшинстве</b>, накладывает <b>щит</b> на союзн. дофус за ней."
+  }
+}

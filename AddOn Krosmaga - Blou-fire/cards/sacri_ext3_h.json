@@ -1,0 +1,31 @@
+{
+  "Id": 616,
+  "Name": "sacri_ext3_h",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 8,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Raku Kapi",
+    "DescBR": "Custa 1 <b>PA</b> a menos\r\npor invocação aliada ferida no jogo.",
+    "NameEN": "Raku Kapi",
+    "DescEN": "Costs 1 <b>AP</b> less\r\nper injured allied Minion in play.",
+    "NameES": "Raku Kapi",
+    "DescES": "Cuesta 1 <b>PA</b> menos por invocación aliada herida en juego.",
+    "NameFR": "Raku Kapi",
+    "DescFR": "Coûte 1 <b>PA</b> de moins\r\npar invocation alliée blessée en jeu.",
+    "NameRU": "Раку Капи",
+    "DescRU": "Стоит на 1 <b>ОД</b> меньше за каждое раненное союзное существо в игре."
+  }
+}

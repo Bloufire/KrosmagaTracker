@@ -1,0 +1,31 @@
+{
+  "Id": 956,
+  "Name": "sram_ext3_h",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    5
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 6,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Paco Vah",
+    "DescBR": "<b>PERFURA-ARMADURA</b>",
+    "NameEN": "Gaston Bo",
+    "DescEN": "<b>ARMOR-PIERCING</b>",
+    "NameES": "Fer Etró",
+    "DescES": "<b>PERFORA-ARMADURA</b>",
+    "NameFR": "Gaston Bo",
+    "DescFR": "<b>PERCE ARMURE</b>",
+    "NameRU": "Гастон Бо",
+    "DescRU": "<b>ПРОБИВАНИЕ БРОНИ</b>"
+  }
+}

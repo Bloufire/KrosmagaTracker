@@ -1,0 +1,31 @@
+{
+  "Id": 594,
+  "Name": "duc_rex",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 5,
+  "Attack": 3,
+  "MovementPoint": 2,
+  "Families": [
+    7
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Duque Rex",
+    "DescBR": "<b>CONVOCAÇÃO</b>\nGanha um <b>escudo</b> quando uma invocação o <b>convoca</b>.",
+    "NameEN": "Doo Rex",
+    "DescEN": "<b>RALLYING</b>\nGains a <b>shield</b> when a Minion <b>rallies</b> it.",
+    "NameES": "Duque Rex",
+    "DescES": "<b>CONCENTRACIÓN</b>\nGana un <b>escudo</b> cuando una invocación <b>se concentra</b> con él.",
+    "NameFR": "Duc Rex",
+    "DescFR": "<b>RALLIEMENT</b>\nGagne un <b>bouclier</b> quand une invocation le <b>rallie</b>.",
+    "NameRU": "Герцог Рекс",
+    "DescRU": "<b>СБОР</b>\nПолучает <b>щит</b>, когда к нему <b>присоединяется</b> существо."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "Id": 697,
+  "Name": "sort_feca_15",
+  "CardType": 1,
+  "CostAP": 8,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Trégua",
+    "DescBR": "Devolve todas as invocações de uma linha à mão do dono.",
+    "NameEN": "Truce",
+    "DescEN": "Returns all Minions on a line to their owner's hand.",
+    "NameES": "Tregua",
+    "DescES": "Sube las invocaciones de una fila a la mano de su propietario.",
+    "NameFR": "Trêve",
+    "DescFR": "Remonte les invocations d'une rangée dans la main de leur propriétaire.",
+    "NameRU": "Перемирие",
+    "DescRU": "Возвращает всех существ с одного ряда в руку хозяина."
+  }
+}

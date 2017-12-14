@@ -7,7 +7,8 @@
   "Attack": 2,
   "MovementPoint": 3,
   "Families": [
-    9
+    9,
+    83
   ],
   "IsToken": false,
   "Rarity": 4,
@@ -18,14 +19,14 @@
   "LinkedCards": [],
   "Texts": {
     "NameBR": "Conde Traspafrent",
-    "DescBR": "<b>APARIÇÃO:</b>\nRecupera todos os\r\nprismas <b>PA</b> no jogo.",
+    "DescBR": "<b>IRMANDADE</b>\n<b>APARIÇÃO:</b>\nRecupera todos os\r\nprismas <b>PA</b> no jogo.",
     "NameEN": "Count Harebourg",
-    "DescEN": "<b>APPEARANCE:</b>\nCollect all the\r\n<b>AP</b> prisms in play.",
+    "DescEN": "<b>BROTHERHOOD</b>\n<b>APPEARANCE:</b>\nCollect all\r\nthe <b>AP</b> prisms in play.",
     "NameES": "Conde Kontatrás",
-    "DescES": "<b>APARICIÓN:</b>\nConsigue todos los \r\nprismas de <b>PA</b> en juego.",
+    "DescES": "<b>HERMANDAD</b>\n<b>APARICIÓN:</b>\nConsigue todos los\r\nprismas de <b>PA</b> en juego.",
     "NameFR": "Comte Harebourg",
-    "DescFR": "<b>APPARITION :</b>\nRécupère tous les\r\nprismes <b>PA</b> en jeu.",
+    "DescFR": "<b>FRATRIE</b>\n<b>APPARITION :</b>\nRécupère tous les\r\nprismes <b>PA</b> en jeu.",
     "NameRU": "Граф Хронограф",
-    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nсобирает все \r\nпризмы <b>ОД</b>, находящиеся в игре."
+    "DescRU": "<b>ФРАТРИЯ</b>\n<b>ПОЯВЛЕНИЕ:</b>\nсобирает все \r\nпризмы <b>ОД</b>, находящиеся в игре."
   }
 }

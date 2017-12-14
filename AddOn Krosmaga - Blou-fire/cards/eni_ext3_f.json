@@ -1,0 +1,31 @@
+{
+  "Id": 713,
+  "Name": "eni_ext3_f",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    3
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 3,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Nova Ugina",
+    "DescBR": "<b>APARIÇÃO:</b>\nCura um Dofus em 1 <b>PV</b>.",
+    "NameEN": "Buffy Rynn",
+    "DescEN": "<b>APPEARANCE:</b>\nHeals a Dofus by 1 <b>HP</b>.",
+    "NameES": "Gelo Catil",
+    "DescES": "<b>APARICIÓN:</b>\nCuras 1 <b>PdV</b> a un dofus.",
+    "NameFR": "Dollie Praan",
+    "DescFR": "<b>APPARITION :</b>\nSoignez un Dofus de 1 <b>PV</b>.",
+    "NameRU": "Долли Праан",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nвосстанавливает одному дофусу 1 <b>ОЗ</b>."
+  }
+}

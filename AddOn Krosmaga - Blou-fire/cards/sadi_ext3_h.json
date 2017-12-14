@@ -1,0 +1,31 @@
+{
+  "Id": 663,
+  "Name": "sadi_ext3_h",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 4,
+  "Attack": 5,
+  "MovementPoint": 3,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 10,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Pist Hília",
+    "DescBR": "<b>APARIÇÃO:</b>\nInflige danos equivalentes ao seu <b>AT</b> na célula diante dele.",
+    "NameEN": "Lynn Denn",
+    "DescEN": "<b>APPEARANCE:</b>\nInflicts damage equivalent to its <b>AT</b> on the cell in front of it.",
+    "NameES": "Donco Tilo",
+    "DescES": "<b>APARICIÓN:</b>\nInflige daños equivalentes a su <b>AT</b> en la casilla de delante de él.",
+    "NameFR": "Pisti Yeul",
+    "DescFR": "<b>APPARITION :</b>\nInflige des dégâts équivalents à son <b>AT</b> sur la case devant lui.",
+    "NameRU": "Апил-ликвидатор",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nнаносит существу на клетке перед собой урон, равный его показателю <b>AT</b>."
+  }
+}

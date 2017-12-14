@@ -1,0 +1,31 @@
+{
+  "Id": 931,
+  "Name": "iop_ext3_h",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 8,
+  "Attack": 3,
+  "MovementPoint": 2,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 1,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Zertan Kpanz",
+    "DescBR": "Inflige-se 1 dano quando você joga uma carta.",
+    "NameEN": "Ertan Knapz",
+    "DescEN": "Suffers 1 damage whenever you play a card.",
+    "NameES": "Ertan Knapz",
+    "DescES": "Se inflige 1 de daño cuando juegas una carta.",
+    "NameFR": "Ertan Knapz",
+    "DescFR": "S’inflige 1 dégât quand vous jouez une carte. ",
+    "NameRU": "Кнат Энорб",
+    "DescRU": "Наносит себе 1 единицу урона, когда вы разыгрываете карту."
+  }
+}

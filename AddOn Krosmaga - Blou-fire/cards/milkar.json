@@ -18,14 +18,14 @@
   "LinkedCards": [],
   "Texts": {
     "NameBR": "Amilkar",
-    "DescBR": "<b>INVESTIDA</b>\n<b>GOLPE DE MISERICÓRDIA:</b>\n<b>Dá uma investida</b>.",
+    "DescBR": "<b>APARIÇÃO:</b> <b>Investida</b>\n<b>GOLPE DE MISERICÓRDIA:</b> <b>Investida</b>",
     "NameEN": "Milkar",
-    "DescEN": "<b>CHARGE</b>\n<b>FINAL BLOW:</b>\n<b>Charges</b>.",
+    "DescEN": "<b>APPEARANCE:</b> <b>Charges</b>\n<b>FINAL BLOW:</b> <b>Charges</b>",
     "NameES": "Milkar",
-    "DescES": "<b>CARGA</b>\n<b>GOLPE DE GRACIA:</b>\n<b>Carga</b>.",
+    "DescES": "<b>APARICIÓN:</b> <b>Carga</b>\n<b>GOLPE DE GRACIA:</b> <b>Carga</b>",
     "NameFR": "Milkar",
-    "DescFR": "<b>CHARGE</b>\n<b>COUP DE GRÂCE :</b>\n<b>Charge</b>.",
+    "DescFR": "<b>APPARITION :</b> <b>Charge</b>\n<b>COUP DE GRÂCE :</b> <b>Charge</b>",
     "NameRU": "Милкар",
-    "DescRU": "<b>РЫВОК</b>\n<b>СМЕРТЕЛЬНЫЙ УДАР:</b>\nделает <b>рывок</b>."
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>делает <b>рывок</b>.\n<b>СМЕРТЕЛЬНЫЙ УДАР:</b> делает <b>рывок</b>."
   }
 }

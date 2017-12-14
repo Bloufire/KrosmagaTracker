@@ -1,0 +1,32 @@
+{
+  "Id": 864,
+  "Name": "dathura_niveau_1",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 4,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    32,
+    83
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 281,
+  "InfiniteFamily": 458,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Dathura",
+    "DescBR": "<b>IRMANDADE</b>\n<b>APARIÇÃO:</b> Inflige à primeira invocação diante dela tantos danos quanto invocações inimigas no jogo.",
+    "NameEN": "Dathura",
+    "DescEN": "<b>BROTHERHOOD</b>\n<b>APPEARANCE:</b> Inflicts as much damage on the first Minion in front of her as there are enemy Minions in play.",
+    "NameES": "Dathura",
+    "DescES": "<b>HERMANDAD</b>\n<b>APARICIÓN:</b> Inflige a la primera invocación de delante tantos daños como invocaciones enemigas haya en juego.",
+    "NameFR": "Dathura",
+    "DescFR": "<b>FRATRIE</b>\n<b>APPARITION :</b> Inflige à la première invocation devant elle autant de dégâts que d’invocations adverses en jeu.",
+    "NameRU": "Датура",
+    "DescRU": "<b>ФРАТРИЯ</b>\n<b>ПОЯВЛЕНИЕ:</b> наносит первому существу перед собой урон, равный кол-ву существ противника в игре."
+  }
+}

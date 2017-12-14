@@ -1,0 +1,29 @@
+{
+  "Id": 1200,
+  "Name": "sort_feca_03",
+  "CardType": 1,
+  "CostAP": 4,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Ataque Natural",
+    "DescBR": "Suas invocações com <b>AR</b> infligem 1 dano ao Dofus adversário na fileira delas.",
+    "NameEN": "Natural Attack",
+    "DescEN": "Your Minions with <b>AR</b> inflict 1 damage on the enemy Dofus on their row.",
+    "NameES": "Ataque Natural",
+    "DescES": "Tus invocaciones con <b>AR</b> infligen 1 de daño al dofus enemigo de su hilera.",
+    "NameFR": "Attaque Naturelle",
+    "DescFR": "Vos invocations avec de l'<b>AR</b> infligent 1 dégât au Dofus adverse de leur ligne.",
+    "NameRU": "Атака а-ля натюрель",
+    "DescRU": "Ваши существа с <b>БР</b> наносят 1 ед. урона дофусу противника на своей линии."
+  }
+}

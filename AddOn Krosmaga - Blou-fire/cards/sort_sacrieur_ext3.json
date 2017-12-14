@@ -1,0 +1,31 @@
+{
+  "Id": 1289,
+  "Name": "sort_sacrieur_ext3",
+  "CardType": 1,
+  "CostAP": 4,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    6
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 8,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Lâmina Cega",
+    "DescBR": "Inflige 2 danos a uma invocação aliada e 5 danos a uma invocação adversária.",
+    "NameEN": "Blunt Blade",
+    "DescEN": "Inflicts 2 damage on an allied Minion and 5 damage on an enemy Minion.",
+    "NameES": "Hoja Desafilada",
+    "DescES": "Inflige 2 de daño a una invocación aliada y 5 de daño a una invocación enemiga.",
+    "NameFR": "Lame Emoussée",
+    "DescFR": "Inflige 2 dégâts à une invocation alliée et 5 dégâts à une invocation adverse.",
+    "NameRU": "Затупленный клинок",
+    "DescRU": "Наносит 2 единицы урона союзному существу и 5 единиц урона существу противника."
+  }
+}

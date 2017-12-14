@@ -1,0 +1,29 @@
+{
+  "Id": 607,
+  "Name": "sort_feca_06",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Quebra",
+    "DescBR": "Destrói a <b>AR</b> do alvo e, em seguida, inflige 2 danos a ele.",
+    "NameEN": "Break",
+    "DescEN": "Destroys the target's <b>AR</b> and inflicts 2 damage on it.",
+    "NameES": "Rotura",
+    "DescES": "Destruye la <b>AR</b> del objetivo y le inflige 2 de daño.",
+    "NameFR": "Brisure",
+    "DescFR": "Détruit l'<b>AR</b> de la cible puis lui inflige 2 dégâts.",
+    "NameRU": "Трещина",
+    "DescRU": "Разрушает <b>БР</b> цели и наносит ей урон 2 ед. урона."
+  }
+}

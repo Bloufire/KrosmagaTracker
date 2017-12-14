@@ -7,7 +7,8 @@
   "Attack": 4,
   "MovementPoint": 3,
   "Families": [
-    9
+    9,
+    83
   ],
   "IsToken": false,
   "Rarity": 4,
@@ -18,14 +19,14 @@
   "LinkedCards": [],
   "Texts": {
     "NameBR": "Conde Traspafrent",
-    "DescBR": "<b>APARIÇÃO:</b>\nDestrói todos os prismas adversários.",
+    "DescBR": "<b>IRMANDADE</b>\n<b>APARIÇÃO:</b>\nDestrói todos os prismas adversários.",
     "NameEN": "Count Harebourg",
-    "DescEN": "<b>APPEARANCE:</b>\nDestroys all enemy Prisms.",
+    "DescEN": "<b>BROTHERHOOD</b>\n<b>APPEARANCE:</b>\nDestroys all enemy Prisms.",
     "NameES": "Conde Kontatrás",
-    "DescES": "<b>APARICIÓN:</b>\nDestruye todos los prismas enemigos.",
+    "DescES": "<b>HERMANDAD</b>\n<b>APARICIÓN:</b>\nDestruye todos los prismas enemigos.",
     "NameFR": "Comte Harebourg",
-    "DescFR": "<b>APPARITION :</b>\nDétruit tous les prismes adverses.",
+    "DescFR": "<b>FRATRIE</b>\n<b>APPARITION :</b>\nDétruit tous les prismes adverses.",
     "NameRU": "Граф Хронограф",
-    "DescRU": "<b>ПОЯВЛЕНИЕ</b>\nуничтожает все призмы противника."
+    "DescRU": "<b>ФРАТРИЯ</b>\n<b>ПОЯВЛЕНИЕ:</b>\nуничтожает все призмы противника."
   }
 }

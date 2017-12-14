@@ -1,0 +1,31 @@
+{
+  "Id": 624,
+  "Name": "cra_ext3_h",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 4,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    2
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 2,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Nam Oska",
+    "DescBR": "<b>ALCANCE:</b> 1-3\nEnquanto está no jogo,\r\nconcede <b>perfura-armadura</b> às suas outras invocações.",
+    "NameEN": "Bill Zye",
+    "DescEN": "<b>RANGE:</b> 1-3\nAs long as he is in play,\r\nhe gives <b>Armor-Piercing</b> to your other Minions.",
+    "NameES": "Dan Diana",
+    "DescES": "<b>ALCANCE:</b> 1-3\nMientras esté en juego,\r\nda <b>perfora-armadura</b> a tus demás invocaciones.",
+    "NameFR": "Dan Lemil",
+    "DescFR": "<b>PORTÉE :</b> 1-3\nTant qu’il est en jeu,\r\ndonne <b>perce armure</b> à vos autres invocations.",
+    "NameRU": "Дан Лемиль",
+    "DescRU": "<b>ДАЛЬНОСТЬ АТАКИ:</b> 1-3\nНаходясь в игре,\r\nдает свойство <b>«пробивание брони»</b> другим вашим существам."
+  }
+}

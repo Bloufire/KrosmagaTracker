@@ -18,14 +18,14 @@
   "LinkedCards": [],
   "Texts": {
     "NameBR": "Carniçal Doso",
-    "DescBR": "<b>HORDA</b>\n<b>APARIÇÃO:</b>\nSubstitui os Carniçais\r\nda sua mão pelos\r\nCarniçais do seu bolo.",
+    "DescBR": "<b>HORDA</b>\n<b>APARIÇÃO:</b>\nColoca os Carniçais da sua mão debaixo do seu bolo. Compre a mesma quantidade de Carniçais.",
     "NameEN": "Ghoul Taka",
-    "DescEN": "<b>HORDE</b>\n<b>APPEARANCE:</b>\nReplaces the Ghouls\r\nin your hand with\r\nGhouls from your deck.",
+    "DescEN": "<b>HORDE</b>\n<b>APPEARANCE:</b>\nPuts the Ghouls in your hand at the bottom of your deck. Draw the same number of Ghouls.",
     "NameES": "Ghul Taka",
-    "DescES": "<b>HORDA</b>\n<b>APARICIÓN:</b>\nSustituye los ghuls\r\nde tu mano por\r\nghuls de tu mazo.",
+    "DescES": "<b>HORDA</b>\n<b>APARICIÓN:</b>\nColoca a los ghuls de tu mano bajo tu mazo. Robas un número igual de ghuls.",
     "NameFR": "Goule Taka",
-    "DescFR": "<b>HORDE</b>\n<b>APPARITION :</b>\nRemplace les Goules\r\nde votre main par des\r\nGoules de votre pioche.",
+    "DescFR": "<b>HORDE</b>\n<b>APPARITION :</b>\nPlace les Goules de votre main sous votre pioche. Piochez autant de Goules.",
     "NameRU": "Гуль Така",
-    "DescRU": "<b>ОРДА</b>\n<b>ПОЯВЛЕНИЕ:</b>\nзаменяет гулей\r\nв вашей руке на гулей\r\nиз вашей колоды."
+    "DescRU": "<b>ОРДА</b>\n<b>ПОЯВЛЕНИЕ:</b>\nперемещает гулей из вашей руки в вашу колоду. Вы берете столько же гулей."
   }
 }

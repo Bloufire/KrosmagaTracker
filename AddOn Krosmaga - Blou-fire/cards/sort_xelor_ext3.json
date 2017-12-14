@@ -1,0 +1,31 @@
+{
+  "Id": 1747,
+  "Name": "sort_xelor_ext3",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 7,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Eternidade",
+    "DescBR": "Troca os outros feitiços da sua mão pela mesma quantidade de invocações do seu bolo.",
+    "NameEN": "Eternity",
+    "DescEN": "Replaces the other spells in your hand with the same number of Minions from your deck.",
+    "NameES": "Eternidad",
+    "DescES": "Sustituye los demás hechizos de tu mano por un número igual de invocaciones de tu mazo.",
+    "NameFR": "Eternité",
+    "DescFR": "Remplace les autres sorts de votre main par autant d'invocations de votre pioche.",
+    "NameRU": "Вечность",
+    "DescRU": "Заменяет другие заклинания в вашей руке на существ из вашей колоды."
+  }
+}

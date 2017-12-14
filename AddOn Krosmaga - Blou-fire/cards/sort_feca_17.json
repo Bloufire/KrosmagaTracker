@@ -1,0 +1,29 @@
+{
+  "Id": 1115,
+  "Name": "sort_feca_17",
+  "CardType": 1,
+  "CostAP": 4,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Teleglifo",
+    "DescBR": "Teletransporte uma invocação para um <b>Glifo</b> aliado.",
+    "NameEN": "Teleglyph",
+    "DescEN": "Teleports a Minion to an allied <b>Glyph.</b>",
+    "NameES": "Teleglifo",
+    "DescES": "Teletransporta una invocación a un <b>glifo</b> aliado.",
+    "NameFR": "Téléglyphe",
+    "DescFR": "Téléportez une invocation sur un <b>Glyphe</b> allié.",
+    "NameRU": "Телеглиф",
+    "DescRU": "Телепортирует существо на союзный <b>глиф</b>."
+  }
+}

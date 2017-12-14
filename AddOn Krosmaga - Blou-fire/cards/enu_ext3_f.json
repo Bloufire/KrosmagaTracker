@@ -1,0 +1,31 @@
+{
+  "Id": 753,
+  "Name": "enu_ext3_f",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 5,
+  "Attack": 5,
+  "MovementPoint": 2,
+  "Families": [
+    4
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 5,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Matusa Lenha",
+    "DescBR": "Ganha +1 <b>PM</b> enquanto\r\nhouver uma invocação adversária diante dela.",
+    "NameEN": "Canne Jalman",
+    "DescEN": "Gains +1 <b>MP</b> as long as\r\nan enemy Minion is in front of her.",
+    "NameES": "Eva Long",
+    "DescES": "Gana +1 <b>PM</b> mientras haya\r\nuna invocación enemiga delante de ella.",
+    "NameFR": "Canne Jalman",
+    "DescFR": "Gagne +1 <b>PM</b> tant\r\nqu’une invocation adverse est devant elle. ",
+    "NameRU": "Канна Жальман",
+    "DescRU": "Получает +1 <b>ОП</b>, пока\r\nперед ней находится существо противника."
+  }
+}

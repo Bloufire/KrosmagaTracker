@@ -1,0 +1,29 @@
+{
+  "Id": 957,
+  "Name": "sort_feca_05",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Advertência",
+    "DescBR": "Confere +3 <b>AT</b> às invocações aliadas de uma linha.",
+    "NameEN": "Warning",
+    "DescEN": "Confers +3 <b>AT</b> on allied Minions on a line.",
+    "NameES": "Posición Defensiva",
+    "DescES": "Confiere +3 <b>AT</b> a las invocaciones aliadas\r\nde una fila.",
+    "NameFR": "Mise en Garde",
+    "DescFR": "Confère +3 <b>AT</b> aux invocations alliées d'une rangée.",
+    "NameRU": "Укокошник",
+    "DescRU": "Дает +3 <b>AT</b> союзным существам на одном ряду."
+  }
+}

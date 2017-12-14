@@ -1,0 +1,33 @@
+{
+  "Id": 1887,
+  "Name": "xel_ext3_h",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 1,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 7,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    530
+  ],
+  "Texts": {
+    "NameBR": "Gary Buhl",
+    "DescBR": "<b>APARIÇÃO:</b> Invoca 2 Múmias ao lado dele.",
+    "NameEN": "Gary Boole",
+    "DescEN": "<b>APPEARANCE:</b> Summons 2 Mummies on adjacent cells.",
+    "NameES": "Gary Buhl",
+    "DescES": "<b>APARICIÓN:</b> Invoca 2 momias a su lado.",
+    "NameFR": "Gary Bûhl",
+    "DescFR": "<b>APPARITION :</b> Invoque 2 Momies à côté de lui.",
+    "NameRU": "Гари Бул",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>призывает 2 мумий рядом с собой."
+  }
+}

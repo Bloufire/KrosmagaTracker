@@ -1,0 +1,29 @@
+{
+  "Id": 816,
+  "Name": "sort_feca_01",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Escudo Feca",
+    "DescBR": "Confere +3 <b>AR</b> a uma invocação.",
+    "NameEN": "Feca Shield",
+    "DescEN": "Confers +3 <b>AR</b> on a Minion.",
+    "NameES": "Escudo Feca",
+    "DescES": "Da +3 <b>AR</b> a una invocación.",
+    "NameFR": "Bouclier Féca",
+    "DescFR": "Confère +3 <b>AR</b> à une invocation.",
+    "NameRU": "Щит Феки",
+    "DescRU": "Дает выбранному существу +3 <b>БР</b>."
+  }
+}

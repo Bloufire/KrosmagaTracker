@@ -1,0 +1,33 @@
+{
+  "Id": 1156,
+  "Name": "sort_feca_04",
+  "CardType": 1,
+  "CostAP": 8,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 723,
+    "ParentCard": 769,
+    "ParentLevel": 9
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Mestre Feca",
+    "DescBR": "Confere <b>escudo</b> às suas invocações e aos seus Dofus.",
+    "NameEN": "Feca Master",
+    "DescEN": "Confers <b>shield</b> on your Minions and your Dofus.",
+    "NameES": "Maestro Feca",
+    "DescES": "Confiere <b>escudo</b> a tus invocaciones y a tus dofus.",
+    "NameFR": "Maître Féca",
+    "DescFR": "Confère <b>bouclier</b> à vos invocations et à vos Dofus.",
+    "NameRU": "Фека-мастер",
+    "DescRU": "Дает <b>щит</b> вашим существам и вашим дофусам."
+  }
+}

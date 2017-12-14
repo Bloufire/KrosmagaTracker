@@ -18,14 +18,14 @@
   "LinkedCards": [],
   "Texts": {
     "NameBR": "Chafer de Elite",
-    "DescBR": "<b>MONTE DE OSSOS</b>\n<b>APARIÇÃO:</b> Destrua\r\num <b>Monte de Ossos</b> para ganhar\r\n+1 <b>AT</b>, +1 <b>AR</b> e +1 <b>PM</b>.",
+    "DescBR": "<b>MONTE DE OSSOS</b>\n<b>APARIÇÃO:</b> Destrua um <b>Monte de Ossos</b> aliado para ganhar +1 <b>AT</b>, +1 <b>AR</b> e +1 <b>PM</b>.",
     "NameEN": "Elite Chafer",
-    "DescEN": "<b>PILE OF BONES</b>\n<b>APPEARANCE:</b> Destroy\r\n a <b>Pile of Bones</b> to gain\r\n+1 <b>AT</b>, +1 <b>AR</b>, and +1 <b>MP.</b>",
+    "DescEN": "<b>PILE OF BONES</b>\n<b>APPEARANCE:</b> Destroys an allied <b>Pile of Bones</b> to gain +1 <b>AT,</b> +1 <b>AR,</b> and +1 <b>MP.</b>",
     "NameES": "Chafer de élite",
-    "DescES": "<b>MONTÓN DE HUESOS</b>\n<b>APARICIÓN:</b> Destruye\r\nun <b>montón de huesos</b> para ganar\r\n+1 <b>AT</b>, +1 <b>AR</b> y +1 <b>PM</b>.",
+    "DescES": "<b>MONTÓN DE HUESOS</b>\n<b>APARICIÓN:</b> Destruyes un <b>montón de huesos</b> aliado para ganar +1 <b>AT</b>, +1 <b>AR</b> y +1 <b>PM</b>.",
     "NameFR": "Chafer d'Elite ",
-    "DescFR": "<b>TAS D'OS</b>\n<b>APPARITION :</b> Détruisez\r\nun <b>tas d'os</b> pour gagner\r\n+1 <b>AT</b>, +1 <b>AR</b> et +1 <b>PM</b>.",
+    "DescFR": "<b>TAS D'OS</b>\n<b>APPARITION :</b> Détruisez un <b>tas d'os</b> allié pour gagner +1 <b>AT</b>, +1 <b>AR</b> et +1 <b>PM</b>.",
     "NameRU": "Элитный чафер",
-    "DescRU": "<b>КУЧА КОСТЕЙ</b>\n<b>ПОЯВЛЕНИЕ:</b> уничтожьте\r\n<b>кучу костей</b>, чтобы дать ему\r\n+1 <b>AT</b>, +1 <b>БР</b> и +1 <b>ОП</b>."
+    "DescRU": "<b>КУЧА КОСТЕЙ</b>\n<b>ПОЯВЛЕНИЕ:</b> уничтожьте союзную <b>кучу костей</b>, чтобы дать ему +1 <b>AT</b>, +1 <b>БР</b> и +1 <b>ОП</b>."
   }
 }

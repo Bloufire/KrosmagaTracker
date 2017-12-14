@@ -1,0 +1,32 @@
+{
+  "Id": 811,
+  "Name": "oropo_niveau_1",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 2,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    85,
+    83
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 281,
+  "InfiniteFamily": 963,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Oropo",
+    "DescBR": "<b>IRMANDADE</b>\n<b>MORTE:</b> Coloca na sua mão o último membro da Irmandade dos Esquecidos no seu bolo.",
+    "NameEN": "Oropo",
+    "DescEN": "<b>BROTHERHOOD</b>\n<b>DEATH:</b> Puts the last member of the Brotherhood of the Forgotten from your deck in your hand.",
+    "NameES": "Oropo",
+    "DescES": "<b>HERMANDAD</b>\n<b>MUERTE:</b> Coloca en tu mano el último miembro de la Hermandad de los Olvidados de tu mazo.",
+    "NameFR": "Oropo",
+    "DescFR": "<b>FRATRIE</b>\n<b>MORT :</b> Place dans votre main le dernier membre de la Fratrie des Oubliés de votre pioche.",
+    "NameRU": "Оропо",
+    "DescRU": "<b>ФРАТРИЯ</b>\n<b>СМЕРТЬ:</b>вы берете последнего члена Фратрии Забытых из своей колоды."
+  }
+}

@@ -22,13 +22,13 @@
   "LinkedCards": [],
   "Texts": {
     "NameBR": "Miranda",
-    "DescBR": "<b>APARIÇÃO:</b>\nAssume o controle das invocações adversárias ao redor dela até morrer.",
+    "DescBR": "<b>APARIÇÃO:</b>\nAssuma o controle das invocações adversárias ao redor dela até ela morrer.",
     "NameEN": "Miranda",
-    "DescEN": "<b>APPEARANCE:</b>\nTakes control of enemy Minions on adjacent cells until its death.",
+    "DescEN": "<b>APPEARANCE:</b>\nTake control of enemy Minions on adjacent cells until her death.",
     "NameES": "Miranda",
-    "DescES": "<b>APARICIÓN: </b>\nToma el control de las invocaciones enemigas que estén a su alrededor hasta su muerte.",
+    "DescES": "<b>APARICIÓN:</b>\nTomas el control de las invocaciones enemigas que estén a su alrededor hasta su muerte.",
     "NameFR": "Miranda",
-    "DescFR": "<b>APPARITION :</b>\nPrend le contrôle des invocations adverses autour d'elle jusqu'à sa mort.",
+    "DescFR": "<b>APPARITION :</b>\nPrenez le contrôle des invocations adverses autour d'elle jusqu'à sa mort.",
     "NameRU": "Миранда",
     "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nполучает контроль над существами противника вокруг себя до своей гибели."
   }

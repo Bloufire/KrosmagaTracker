@@ -1,0 +1,31 @@
+{
+  "Id": 339,
+  "Name": "feca_ext3_f",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 2,
+  "Families": [
+    7
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Juju Elheira",
+    "DescBR": "<b>CONVOCAÇÃO</b>\n<b>APARIÇÃO:</b> Confere <b>escudo</b> a uma invocação.",
+    "NameEN": "Jeanne Kholmine",
+    "DescEN": "<b>RALLYING</b>\n<b>APPEARANCE:</b> Gives <b>shield</b> to a Minion.",
+    "NameES": "Rody Yera",
+    "DescES": "<b>CONCENTRACIÓN</b>\n<b>APARICIÓN:</b> Das <b>escudo</b> a una invocación.",
+    "NameFR": "Jeanne Houillère",
+    "DescFR": "<b>RALLIEMENT</b>\n<b>APPARITION :</b> Donnez <b>bouclier</b> à une invocation.",
+    "NameRU": "Жанна Угольер",
+    "DescRU": "<b>СБОР</b>\n<b>ПОЯВЛЕНИЕ:</b>дает <b>щит</b> выбранному существу."
+  }
+}

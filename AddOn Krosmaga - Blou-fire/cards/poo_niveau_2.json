@@ -1,0 +1,32 @@
+{
+  "Id": 669,
+  "Name": "poo_niveau_2",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    84,
+    83
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 281,
+  "InfiniteFamily": 66,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Poo",
+    "DescBR": "<b>IRMANDADE</b>\n<b>APARIÇÃO:</b> <b>Investida</b>\nGanha <b>resistência</b> 2 se um membro aliado da Irmandade dos Esquecidos estiver no jogo.",
+    "NameEN": "Poo",
+    "DescEN": "<b>BROTHERHOOD</b>\n<b>APPEARANCE:</b> <b>Charges</b>\nGains <b>resistance</b> 2 if an allied member of the Brotherhood of the Forgotten is in play.",
+    "NameES": "Poo",
+    "DescES": "<b>HERMANDAD</b>\n<b>APARICIÓN:</b> <b>Carga</b>\nGana <b>resistencia</b> 2 si un miembro de la Hermandad de los Olvidados está en juego.",
+    "NameFR": "Poo",
+    "DescFR": "<b>FRATRIE</b>\n<b>APPARITION :</b> <b>Charge</b>\nGagne <b>résistance</b> 2 si un membre allié de la Fratrie des Oubliés est en jeu.",
+    "NameRU": "Пу",
+    "DescRU": "<b>ФРАТРИЯ</b>\n<b>ПОЯВЛЕНИЕ:</b> делает <b>рывок</b>.\nПолучает 2 ед. <b>«сопротивления»</b>, если в игре есть член Фратрии Забытых."
+  }
+}

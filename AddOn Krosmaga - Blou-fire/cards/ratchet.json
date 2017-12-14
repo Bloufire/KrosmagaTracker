@@ -18,14 +18,14 @@
   "LinkedCards": [],
   "Texts": {
     "NameBR": "Ratchet",
-    "DescBR": "Inflige 1 dano ao Dofus adversário na mesma fileira quando você obtém\r\num <b>Espólio</b>.",
+    "DescBR": "Inflige 1 dano ao Dofus adversário na mesma fileira quando você obtém um <b>Espólio</b>.",
     "NameEN": "Ratchet",
-    "DescEN": "Inflicts 1 damage on the enemy Dofus on its row whenever you pick up\r\nan item of <b>Loot</b>.",
+    "DescEN": "Inflicts 1 damage on the enemy Dofus on its row whenever you pick up an item of <b>Loot.</b>",
     "NameES": "Ratchet",
-    "DescES": "Inflige 1 de daño al dofus enemigo de su hilera cuando consigues\r\nun <b>botín</b>.",
+    "DescES": "Inflige 1 de daño al dofus enemigo de su hilera cuando consigues un <b>botín</b>.",
     "NameFR": "Ratchet",
-    "DescFR": "Inflige 1 dégât au Dofus adverse de sa ligne quand vous ramassez\r\nun <b>Butin</b>.",
+    "DescFR": "Inflige 1 dégât au Dofus adverse de sa ligne quand vous ramassez un <b>Butin</b>.",
     "NameRU": "Ратчет",
-    "DescRU": "Наносит 1 ед. урона дофусу противника на своей линии, когда вы\r\nподбираете <b>добычу</b>."
+    "DescRU": "Наносит 1 ед. урона дофусу противника на своей линии, когда вы подбираете <b>добычу</b>."
   }
 }

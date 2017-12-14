@@ -18,14 +18,14 @@
   "LinkedCards": [],
   "Texts": {
     "NameBR": "Nobols",
-    "DescBR": "<b>APARIÇÃO:</b>\nFaz surgir um <b>Espólio</b> nas suas células de início. Ganha +1 <b>AT</b> e +1 <b>AR</b> por cada prima substituído.",
+    "DescBR": "<b>APARIÇÃO:</b>\nFaz surgir um <b>Espólio</b> aliado nas suas células de início. Ganha +1 <b>AT</b> e +1 <b>AR</b> por cada prima substituído.",
     "NameEN": "In The Bag",
-    "DescEN": "<b>APPEARANCE:</b>\nMakes an item of <b>Loot</b> appear on your starting cells. Gains +1 <b>AT</b> and +1 <b>AR</b> for each prism replaced.",
+    "DescEN": "<b>APPEARANCE:</b>\nMakes an allied item of <b>Loot</b> appear on your starting cells. Gains +1 <b>AT</b> and +1 <b>AR</b> for each prism replaced.",
     "NameES": "Palsaco",
-    "DescES": "<b>APARICIÓN:</b>\nDesentierra un <b>botín</b> en tus casillas de inicio. Gana +1 <b>AT</b> y +1 <b>AR</b> por cada prisma sustituido.",
+    "DescES": "<b>APARICIÓN:</b>\nDesentierra un <b>botín</b> aliado en tus casillas de inicio. Gana +1 <b>AT</b> y +1 <b>AR</b> por cada prisma sustituido.",
     "NameFR": "Dwanlaposh",
-    "DescFR": "<b>APPARITION :</b>\nFait apparaitre un <b>Butin</b> sur vos cases de départ. Gagne +1 <b>AT</b> et +1 <b>AR</b> pour chaque prisme remplacé.",
+    "DescFR": "<b>APPARITION :</b>\nFait apparaitre un <b>Butin</b> allié sur vos cases de départ. Gagne +1 <b>AT</b> et +1 <b>AR</b> pour chaque prisme remplacé.",
     "NameRU": "Пол Ныйбак",
-    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nна клетках вашего первого ряда появляется <b>добыча</b>. Получает +1 <b>AT</b> и +1 <b>БР</b> за каждую призму, замененную добычей."
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nна клетках вашего первого ряда появляется союзная <b>добыча</b>. Получает +1 <b>AT</b> и +1 <b>БР</b> за каждую призму, замененную добычей."
   }
 }

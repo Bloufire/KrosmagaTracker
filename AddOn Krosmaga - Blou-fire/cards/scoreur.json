@@ -18,14 +18,14 @@
   "LinkedCards": [],
   "Texts": {
     "NameBR": "Skoria",
-    "DescBR": "<b>APARIÇÃO:</b>\nAdiciona 5 <b>PA</b> à sua <b>reserva</b> se você tiver outro Justiceiro no jogo.",
+    "DescBR": "<b>APARIÇÃO:</b>\nAdiciona 3 <b>PA</b> à sua <b>reserva</b> se você tiver outro Justiceiro no jogo.",
     "NameEN": "Beelzebug",
-    "DescEN": "<b>APPEARANCE:</b>\nAdds 5 <b>AP</b> to your <b>reserve</b> if you have another Vigilante in play.",
+    "DescEN": "<b>APPEARANCE:</b>\nAdds 3 <b>AP</b> to your <b>reserve</b> if you have another Vigilante in play.",
     "NameES": "Escario",
-    "DescES": "<b>APARICIÓN:</b>\nAñade 5 <b>PA</b> a tu <b>reserva</b> si tienes otro justiciero en juego.",
+    "DescES": "<b>APARICIÓN:</b>\nAñade 3 <b>PA</b> a tu <b>reserva</b> si tienes otro justiciero en juego.",
     "NameFR": "Scoreur",
-    "DescFR": "<b>APPARITION :</b>\nAjoute 5 <b>PA</b> à votre <b>réserve</b> si vous avez un autre Justicier en jeu.",
+    "DescFR": "<b>APPARITION :</b>\nAjoute 3 <b>PA</b> à votre <b>réserve</b> si vous avez un autre Justicier en jeu.",
     "NameRU": "Вельзежук",
-    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nесли у вас в игре есть еще один мститель, добавляет в ваш <b>резерв</b> 5 <b>ОД</b>."
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nесли у вас в игре есть еще один мститель, добавляет в ваш <b>резерв</b> 3 <b>ОД</b>."
   }
 }

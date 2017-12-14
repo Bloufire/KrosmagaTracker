@@ -1,0 +1,29 @@
+{
+  "Id": 1182,
+  "Name": "sort_enu_ext3",
+  "CardType": 1,
+  "CostAP": 1,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 5,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Achado",
+    "DescBR": "Coloque 2 <b>Espólios</b> aliados no seu <b>lado do tabuleiro</b>.",
+    "NameEN": "Lucky Find",
+    "DescEN": "Puts 2 allied items of <b>Loot</b> on your <b>side.</b>",
+    "NameES": "Hallazgo",
+    "DescES": "Colocas 2 <b>botines</b> aliados en tu <b>lado del tablero</b>.",
+    "NameFR": "Trouvaille",
+    "DescFR": "Posez 2 <b>Butins</b> alliés dans votre <b>camp</b>.",
+    "NameRU": "Находка",
+    "DescRU": "Разместите 2 союзные <b>добычи</b> на своей <b>половине поля</b>."
+  }
+}

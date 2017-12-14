@@ -1,0 +1,31 @@
+{
+  "Id": 880,
+  "Name": "lagoyave",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 4,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    7
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Mulher Goiaba",
+    "DescBR": "<b>CONVOCAÇÃO</b>\n<b>PERFURA-ARMADURA</b>",
+    "NameEN": "Gwavah",
+    "DescEN": "<b>RALLYING</b>\n<b>ARMOR-PIERCING</b>",
+    "NameES": "Laguayaba",
+    "DescES": "<b>CONCENTRACIÓN</b>\n<b>PERFORA-ARMADURA</b>",
+    "NameFR": "Lagoyave",
+    "DescFR": "<b>RALLIEMENT</b>\n<b>PERCE ARMURE</b>",
+    "NameRU": "Лагуава",
+    "DescRU": "<b>СБОР</b>\n<b>ПРОБИВАНИЕ БРОНИ</b>"
+  }
+}

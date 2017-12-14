@@ -18,14 +18,14 @@
   "LinkedCards": [],
   "Texts": {
     "NameBR": "Tutarricão",
-    "DescBR": "<b>RESISTÊNCIA:</b> 2\nTransforma em <b>Espólio</b> as invocações que destrói.",
+    "DescBR": "<b>RESISTÊNCIA:</b> 2\nTransforma em <b>Espólio</b> aliado as invocações que destrói.",
     "NameEN": "Chestankhamun",
-    "DescEN": "<b>RESISTANCE:</b> 2\nTransforms the Minions it destroys into <b>Loot</b>.",
+    "DescEN": "<b>RESISTANCE:</b> 2\nTransforms the Minions it destroys into allied items of <b>Loot.</b>",
     "NameES": "Tutancofrón",
-    "DescES": "<b>RESISTENCIA:</b> 2\nTransforma en <b>botín</b> las invocaciones que destruye.",
+    "DescES": "<b>RESISTENCIA:</b> 2\nTransforma en <b>botín</b> aliado las invocaciones que destruye.",
     "NameFR": "Toutancoffron",
-    "DescFR": "<b>RÉSISTANCE :</b> 2\nTransforme en <b>Butin</b> les invocations qu'il détruit.",
+    "DescFR": "<b>RÉSISTANCE :</b> 2\nTransforme en <b>Butin</b> allié les invocations qu'il détruit.",
     "NameRU": "Тутансхорон",
-    "DescRU": "<b>СОПРОТИВЛЕНИЕ:</b> 2\nПревращает уничтоженных им существ в <b>добычу</b>."
+    "DescRU": "<b>СОПРОТИВЛЕНИЕ:</b> 2\nПревращает уничтоженных им существ в союзную <b>добычу</b>."
   }
 }

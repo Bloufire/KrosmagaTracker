@@ -16,14 +16,14 @@
   "LinkedCards": [],
   "Texts": {
     "NameBR": "Cavada",
-    "DescBR": "Inflige 2 danos às invocações adversárias da linha visada.",
+    "DescBR": "Inflige 2 danos às invocações adversárias de uma linha.",
     "NameEN": "Hollowed",
-    "DescEN": "Inflicts 2 damage on enemy Minions on the targeted line.",
+    "DescEN": "Inflicts 2 damage on enemy Minions on a line.",
     "NameES": "Cavada",
-    "DescES": "Inflige 2 de daño a las invocaciones enemigas de la fila seleccionada.",
+    "DescES": "Inflige 2 de dañoa las invocaciones enemigas de una fila.",
     "NameFR": "Creusée",
-    "DescFR": "Inflige 2 dégâts aux invocations adverses de la rangée ciblée.",
+    "DescFR": "Inflige 2 dégâts aux invocations adverses d'une rangée.",
     "NameRU": "Подкоп",
-    "DescRU": "Наносит 2 ед. урона существам противника в выбранном ряду."
+    "DescRU": "Наносит 2 ед. урона существам противника в одном ряду."
   }
 }

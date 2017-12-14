@@ -1,0 +1,29 @@
+{
+  "Id": 841,
+  "Name": "glyphe_token",
+  "CardType": 2,
+  "CostAP": 0,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": true,
+  "Rarity": 0,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Glifo",
+    "DescBR": "Dá ao Feca que pisar nele tantos <b>AR</b> quanto fileiras com ao menos um <b>Glifo</b> aliado. As invocações inimigas destroem os glifos em que pisam.",
+    "NameEN": "Glyph",
+    "DescEN": "Confers as many <b>AR</b> as there are rows containing at least one allied <b>Glyph</b> on Fecas that walk over it. Enemy Minions destroy Glyphs when they walk over them.",
+    "NameES": "Glifo",
+    "DescES": "Confiere al feca que lo pisa tanta <b>AR</b> como hileras con al menos un <b>glifo</b> aliado haya. Las invocaciones enemigas destruyen los glifos que pisen.",
+    "NameFR": "Glyphe",
+    "DescFR": "Confère au Féca qui marche dessus autant d'<b>AR</b> que de lignes comprenant au moins un <b>Glyphe</b> allié. Les invocations adverses détruisent les glyphes sur lesquels elles marchent.",
+    "NameRU": "Глиф",
+    "DescRU": "Пройдя по нему фека получает кол-во <b>AR</b>, равное кол-ву линий с одним или несколькими вашими <b>глифами</b>. Сущ-ва противника разрушают глиф, наступив на него."
+  }
+}

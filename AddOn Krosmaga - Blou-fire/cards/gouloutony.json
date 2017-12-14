@@ -18,14 +18,14 @@
   "LinkedCards": [],
   "Texts": {
     "NameBR": "Gurmã",
-    "DescBR": "<b>HORDA</b>\n<b>APARIÇÃO</b>: \nGanha +3 <b>AT</b> se você não tiver Carniçais no terreno.",
+    "DescBR": "<b>HORDA</b>\n<b>APARIÇÃO</b>: \nGanha +3 <b>AT</b> se você não tiver Carniçais no jogo.",
     "NameEN": "Ghourmand",
-    "DescEN": "<b>HORDE</b>\n<b>APPEARANCE:</b> \nGains +3 <b>AT</b> if you have no Ghouls on the board.",
+    "DescEN": "<b>HORDE</b>\n<b>APPEARANCE:</b> \nGains +3 <b>AT</b> if you have no Ghouls in play.",
     "NameES": "Ghulotony",
-    "DescES": "<b>HORDA</b>\n<b>APARICIÓN</b>: \nGana +3 <b>AT</b> si aún no tienes ghuls en el tablero.",
+    "DescES": "<b>HORDA</b>\n<b>APARICIÓN</b>: \nGana +3 <b>AT</b> si aún no tienes ghuls en juego.",
     "NameFR": "Gouloutony",
-    "DescFR": "<b>HORDE</b>\n<b>APPARITION</b> : \nGagne +3 <b>AT</b> si vous n'avez pas de goules sur le terrain.",
-    "NameRU": "Чревоугод",
-    "DescRU": "<b>ОРДА</b>\n<b>ПОЯВЛЕНИЕ</b>: \nПолучает +3 <b>AT</b>, если у вас нет гулей на поле."
+    "DescFR": "<b>HORDE</b>\n<b>APPARITION</b> : \nGagne +3 <b>AT</b> si vous n'avez pas de goules en jeu.",
+    "NameRU": "Чревоугуль",
+    "DescRU": "<b>ОРДА</b>\n<b>ПОЯВЛЕНИЕ</b>: \nПолучает +3 <b>AT</b>, если у вас нет гулей в игре."
   }
 }

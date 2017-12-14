@@ -1,0 +1,31 @@
+{
+  "Id": 903,
+  "Name": "enu_ext3_h",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 4,
+  "Families": [
+    4
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 5,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Samson Dah",
+    "DescBR": "Pode ser invocado em\r\num <b>Espólio</b> aliado.",
+    "NameEN": "Samson Deur",
+    "DescEN": "May be summoned on\r\nan allied item of <b>Loot.</b>",
+    "NameES": "Barren Hero",
+    "DescES": "Puede invocarse\r\nsobre un <b>botín</b> aliado.",
+    "NameFR": "Samson Deur",
+    "DescFR": "Peut être invoqué sur\r\nun <b>Butin</b> allié.",
+    "NameRU": "Самсон Дэур",
+    "DescRU": "При вводе в игру\r\nего можно поставить на союзную <b>добычу</b>."
+  }
+}

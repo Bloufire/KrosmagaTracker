@@ -1,0 +1,29 @@
+{
+  "Id": 597,
+  "Name": "sort_feca_10",
+  "CardType": 1,
+  "CostAP": 4,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Nova Onda",
+    "DescBR": "Todas as cartas Fecas do seu jogo custam 1 <b>PA</b> a menos.",
+    "NameEN": "New Wave",
+    "DescEN": "Your Feca cards cost1 <b>AP</b> less.",
+    "NameES": "Nueva Ola",
+    "DescES": "Las cartas fecas de tu juego cuestan 1 <b>PA</b> menos.",
+    "NameFR": "Nouvelle Vague",
+    "DescFR": "Les cartes Fécas de votre jeu coûtent 1 <b>PA</b> de moins.",
+    "NameRU": "Новая волна",
+    "DescRU": "Карты существ фека у вас в руке стоят на 1 <b>ОД</b> меньше."
+  }
+}

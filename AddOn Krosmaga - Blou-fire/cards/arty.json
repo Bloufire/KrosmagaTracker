@@ -1,0 +1,31 @@
+{
+  "Id": 653,
+  "Name": "arty",
+  "CardType": 0,
+  "CostAP": 6,
+  "Life": 6,
+  "Attack": 4,
+  "MovementPoint": 2,
+  "Families": [
+    7
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Arty",
+    "DescBR": "<b>CONVOCAÇÃO</b>\nAnula o mal de invocação das invocações que o <b>convocam</b>.",
+    "NameEN": "Arty",
+    "DescEN": "<b>RALLYING</b>\nCancels the summoning sickness of Minions that <b>rally</b> it.",
+    "NameES": "Arty",
+    "DescES": "<b>CONCENTRACIÓN</b>\nAnula el mareo de invocación de las invocaciones que <b>se concentran</b> con él.",
+    "NameFR": "Arty",
+    "DescFR": "<b>RALLIEMENT</b>\nAnnule le mal d'invocation des invocations qui le <b>rallient</b>.",
+    "NameRU": "Арти",
+    "DescRU": "<b>СБОР</b>\nОтменяет болезнь призыва для существ, которые к нему <b>присоединяются</b>."
+  }
+}

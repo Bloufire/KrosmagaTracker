@@ -1,0 +1,32 @@
+{
+  "Id": 764,
+  "Name": "toxine_niveau_2",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    5,
+    83
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 281,
+  "InfiniteFamily": 190,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Toxina",
+    "DescBR": "<b>IRMANDADE</b>\n<b>APARIÇÃO:</b>\nDestrói as invocações\r\nincomuns no jogo.",
+    "NameEN": "Toxine",
+    "DescEN": "<b>BROTHERHOOD</b>\n<b>APPEARANCE:</b>\nDestroys uncommon\r\nMinions in play.",
+    "NameES": "Toxina",
+    "DescES": "<b>HERMANDAD</b>\n<b>APARICIÓN:</b>\nDestruye las invocaciones\r\npoco comunes en juego.",
+    "NameFR": "Toxine",
+    "DescFR": "<b>FRATRIE</b>\n<b>APPARITION :</b>\nDétruit les invocations\r\npeu communes en jeu.",
+    "NameRU": "Токсин",
+    "DescRU": "<b>ФРАТРИЯ</b>\n<b>ПОЯВЛЕНИЕ:</b>\nуничтожает всех необычных\r\nсуществ в игре."
+  }
+}

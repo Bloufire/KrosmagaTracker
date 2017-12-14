@@ -1,0 +1,29 @@
+{
+  "Id": 920,
+  "Name": "sort_feca_16",
+  "CardType": 1,
+  "CostAP": 5,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Glifo Flamejante",
+    "DescBR": "<b>GLIFO</b>\nQuando é jogado, esse feitiço inflige 3 danos às invocações ao redor do <b>Glifo</b>.",
+    "NameEN": "Burning Glyph",
+    "DescEN": "<b>GLYPH</b>\nWhen played, this spell inflicts 3 damage on Minions around the <b>Glyph.</b>",
+    "NameES": "Glifo Flamígero",
+    "DescES": "<b>GLIFO</b>\nCuando se utiliza, este hechizo inflige 3 de daño a las invocaciones de alrededor del <b>glifo</b>.",
+    "NameFR": "Glyphe Enflammé",
+    "DescFR": "<b>GLYPHE</b>\nQuand il est joué, ce sort inflige 3 dégâts aux invocations autour du <b>Glyphe</b>.",
+    "NameRU": "Пламенный глиф",
+    "DescRU": "<b>ГЛИФ</b>\nПри использовании это заклинание позволяет вам взять по 1 карте за каждое существо вокруг <b>глифа</b>."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 1058,
+  "Name": "sort_eca_ext3",
+  "CardType": 1,
+  "CostAP": 6,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    8
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 4,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Bancarrota",
+    "DescBR": "Todas as invocações\r\nda mesma família que a invocação visada sofrem 3 danos.",
+    "NameEN": "Bankruptcy",
+    "DescEN": "All Minions\r\nof the same family as the targeted Minion suffer 3 damage.",
+    "NameES": "Bancarrota",
+    "DescES": "Todas las invocaciones\r\nde la misma familia que la invocación seleccionada sufren 3 de daño.",
+    "NameFR": "Banqueroute",
+    "DescFR": "Toutes les invocations\r\nde la même famille que l’invocation ciblée subissent 3 dégâts.",
+    "NameRU": "Банкрот",
+    "DescRU": "Все существа\r\nтого же класса, что и выбранное существо, получают 3 ед. урона."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Id": 1026,
+  "Name": "sort_sram_ext3",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    5
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 6,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Desconto",
+    "DescBR": "Coloca as cartas Srams da sua mão no seu bolo, inclusive esta. Compre a mesma quantidade de cartas.",
+    "NameEN": "Rebate",
+    "DescEN": "Puts the Sram cards in your hand in your deck, including this one. Draw the same number of cards.",
+    "NameES": "Descuento",
+    "DescES": "Coloca las cartas srams de tu mano en tu mazo, incluida esta. Robas un número igual de cartas.",
+    "NameFR": "Escompte",
+    "DescFR": "Place les cartes Srams de votre main dans votre pioche, celle-ci comprise. Piochez autant de cartes.",
+    "NameRU": "Скидка",
+    "DescRU": "Возвращает в вашу колоду карты срамов из вашей руки, включая эту карту. Вы берете столько же карт. Вы берете столько же карт."
+  }
+}

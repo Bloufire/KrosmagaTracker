@@ -18,14 +18,14 @@
   "LinkedCards": [],
   "Texts": {
     "NameBR": "Vampyro",
-    "DescBR": "<b>HORDA</b>\n<b>APARIÇÃO:</b>\nTodas as invocações do seu jogo custam\r\n1 <b>PA</b> a menos.",
+    "DescBR": "<b>HORDA</b>\n<b>APARIÇÃO:</b> Todas as invocações do seu jogo custam 1 <b>PA</b> a menos até irem para a lixeira.",
     "NameEN": "Vampyro",
-    "DescEN": "<b>HORDE</b>\n<b>APPEARANCE:</b>\nAll your Minions cost\r\n1 <b>AP</b> less.",
+    "DescEN": "<b>HORDE</b>\n<b>APPEARANCE:</b> All Minions in your deck cost 1 <b>AP</b> less until they go to your discard pile.",
     "NameES": "Vampyro",
-    "DescES": "<b>HORDA</b>\n<b>APARICIÓN:</b>\nTodas las invocaciones de tu juego cuestan\r\n1 <b>PA</b> menos.",
+    "DescES": "<b>HORDA</b>\n<b>APARICIÓN:</b> Todas las invocaciones de tu juego cuestan 1 <b>PA</b> menos hasta que vayan a tu descarte.",
     "NameFR": "Vampyro",
-    "DescFR": "<b>HORDE</b>\n<b>APPARITION :</b>\nToutes les invocations de votre jeu coûtent\r\n1 <b>PA</b> de moins.",
+    "DescFR": "<b>HORDE</b>\n<b>APPARITION :</b> Toutes les invocations de votre jeu coûtent 1 <b>PA</b> de moins jusqu'à ce qu'elles rejoignent votre défausse.",
     "NameRU": "Вампиро",
-    "DescRU": "<b>ОРДА</b>\n<b>ПОЯВЛЕНИЕ:</b>\n уменьшает стоимость всех ваших\r\nсуществ на 1 <b>ОД</b>."
+    "DescRU": "<b>ОРДА</b>\n<b>ПОЯВЛЕНИЕ:</b>уменьшает на 1 <b>ОД</b> стоимость всех ваших существ до тех пор, пока они не уйдут в ваш сброс."
   }
 }

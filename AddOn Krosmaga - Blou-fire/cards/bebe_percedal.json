@@ -1,0 +1,36 @@
+{
+  "Id": 762,
+  "Name": "bebe_percedal",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    1,
+    33
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 190,
+    "ParentCard": 800,
+    "ParentLevel": 8
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Bebê Percedal",
+    "DescBR": "<b>APARIÇÃO:</b>\n<b>Atordoa</b> as invocações que não fazem parte da Confraria do Tofu.",
+    "NameEN": "Baby Sadlygrove",
+    "DescEN": "<b>APPEARANCE:</b>\n<b>Stuns</b> Minions that are not part of the Brotherhood of the Tofu.",
+    "NameES": "Bebé Pércedal",
+    "DescES": "<b>APARICIÓN:</b>\n<b>Aturde</b> las invocaciones que no forman parte de la Hermandad del Tofu.",
+    "NameFR": "Bébé Percedal",
+    "DescFR": "<b>APPARITION :</b>\n<b>Assomme</b>  les invocations qui ne font pas partie de la Confrérie du Tofu.",
+    "NameRU": "Малыш Персидаль",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\n<b>оглушает</b> существ, которые не входят в Братство Тофу."
+  }
+}

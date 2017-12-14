@@ -1,0 +1,32 @@
+{
+  "Id": 1837,
+  "Name": "coqueline_niveau_3",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 4,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    10,
+    83
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 281,
+  "InfiniteFamily": 275,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Conchita",
+    "DescBR": "<b>IRMANDADE</b>\n<b>APARIÇÃO:</b> Coloca na sua mão a próxima invocação do seu bolo que custe 4 <b>PA</b>.",
+    "NameEN": "Mishell",
+    "DescEN": "<b>BROTHERHOOD</b>\n<b>APPEARANCE:</b> Puts the next Minion from your deck costing 4 <b>AP</b> in your hand.",
+    "NameES": "Kaskarina",
+    "DescES": "<b>HERMANDAD</b>\n<b>APARICIÓN:</b> Coloca en tu mano la próxima invocación de tu mazo que cueste 4 <b>PA</b>.",
+    "NameFR": "Coqueline",
+    "DescFR": "<b>FRATRIE</b>\n<b>APPARITION :</b> Place dans votre main la prochaine invocation de votre pioche coûtant 4 <b>PA</b>.",
+    "NameRU": "Коклин",
+    "DescRU": "<b>ФРАТРИЯ</b>\n<b>ПОЯВЛЕНИЕ:</b>вы берете из своей колоды следующее существо стоимостью 4 <b>ОД</b>."
+  }
+}

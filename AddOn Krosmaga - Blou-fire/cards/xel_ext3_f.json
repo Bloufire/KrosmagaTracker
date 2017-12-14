@@ -1,0 +1,31 @@
+{
+  "Id": 755,
+  "Name": "xel_ext3_f",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 5,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    9
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 7,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Casey Io",
+    "DescBR": "<b>APARIÇÃO:</b>\nGanha a mesma quantidade de <b>AT</b> que de <b>PA</b> na sua <b>reserva</b>.",
+    "NameEN": "Casey Yoh",
+    "DescEN": "<b>APPEARANCE:</b>\nGains as many <b>AT</b> as there are <b>AP</b> in your <b>reserve.</b>",
+    "NameES": "Casey Io",
+    "DescES": "<b>APARICIÓN:</b>\nGana tanto <b>AT</b> como <b>PA</b> tengas en tu <b>reserva</b>.",
+    "NameFR": "Casey Io",
+    "DescFR": "<b>APPARITION :</b>\nGagne autant d'<b>AT</b> que de <b>PA</b> dans votre <b>réserve</b>.",
+    "NameRU": "Касс Ио",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nполучает количество <b>AT</b>, равное количеству <b>ОД</b> в вашем <b>резерве</b>."
+  }
+}

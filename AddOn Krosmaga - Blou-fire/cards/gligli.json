@@ -18,14 +18,14 @@
   "LinkedCards": [],
   "Texts": {
     "NameBR": "Valili",
-    "DescBR": "<b>INVESTIDA</b>",
+    "DescBR": "<b>APARIÇÃO:</b> <b>Investida</b>",
     "NameEN": "Blibli",
-    "DescEN": "<b>CHARGE</b>",
+    "DescEN": "<b>APPEARANCE:</b> <b>Charges</b>",
     "NameES": "Balí",
-    "DescES": "<b>CARGA</b>",
+    "DescES": "<b>APARICIÓN:</b> <b>Carga</b>",
     "NameFR": "Gligli",
-    "DescFR": "<b>CHARGE</b>",
+    "DescFR": "<b>APPARITION :</b> <b>Charge</b>",
     "NameRU": "Нафнаф",
-    "DescRU": "<b>РЫВОК</b>"
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b> делает <b>рывок</b>."
   }
 }

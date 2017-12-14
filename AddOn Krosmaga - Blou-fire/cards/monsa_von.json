@@ -1,0 +1,31 @@
+{
+  "Id": 614,
+  "Name": "monsa_von",
+  "CardType": 0,
+  "CostAP": 1,
+  "Life": 1,
+  "Attack": 1,
+  "MovementPoint": 3,
+  "Families": [
+    7
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Gran Ado",
+    "DescBR": "<b>CONVOCAÇÃO</b>\n<b>ESCUDO</b>",
+    "NameEN": "Dieter Gent",
+    "DescEN": "<b>RALLYING</b>\n<b>SHIELD</b>",
+    "NameES": "Mig Abón",
+    "DescES": "<b>CONCENTRACIÓN</b>\n<b>ESCUDO</b>",
+    "NameFR": "Monsa Von",
+    "DescFR": "<b>RALLIEMENT</b>\n<b>BOUCLIER</b>",
+    "NameRU": "Монса Вон",
+    "DescRU": "<b>СБОР</b>\n<b>ЩИТ</b>"
+  }
+}

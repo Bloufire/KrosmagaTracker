@@ -20,11 +20,11 @@
     "NameBR": "Gravidade",
     "DescBR": "Reduz a 1 os <b>PM</b>\r\nde uma invocação.",
     "NameEN": "Gravity",
-    "DescEN": "Sets a Minion's\r\n<b>MP</b> at 1.",
+    "DescEN": "Sets a Minion's\r\n<b>MP</b> to 1.",
     "NameES": "Pesado",
-    "DescES": "Reduce a 1 los <b>PM</b>\r\nde una invocación.",
+    "DescES": "Cambia a 1 los <b>PM</b>\r\nde una invocación.",
     "NameFR": "Pesanteur",
-    "DescFR": "Passe à 1 les <b>PM</b>\r\nd'une invocaiton.",
+    "DescFR": "Passe à 1 les <b>PM</b>\r\nd'une invocation.",
     "NameRU": "Сила тяжести",
     "DescRU": "Показатель <b>ОП</b> выбранного существа\r\nстановится равным 1."
   }

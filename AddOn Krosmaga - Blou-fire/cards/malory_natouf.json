@@ -1,0 +1,31 @@
+{
+  "Id": 791,
+  "Name": "malory_natouf",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 1,
+  "Attack": 2,
+  "MovementPoint": 2,
+  "Families": [
+    7
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Kláudia Rodrigs",
+    "DescBR": "<b>CONVOCAÇÃO</b>\n<b>APARIÇÃO:</b> Coloca na sua mão o próximo <b>Glifo</b> do seu bolo.",
+    "NameEN": "Lynn Dakartta",
+    "DescEN": "<b>RALLYING</b>\n<b>APPEARANCE:</b> Puts the first <b>Glyph</b> from your deck in your hand.",
+    "NameES": "Fara Misuster",
+    "DescES": "<b>CONCENTRACIÓN</b>\n<b>APARICIÓN:</b> Coloca en tu mano el próximo <b>glifo</b> de tu mazo.",
+    "NameFR": "Malory Natouf",
+    "DescFR": "<b>RALLIEMENT</b>\n<b>APPARITION :</b> Place dans votre main le prochain <b>Glyphe</b> de votre pioche.",
+    "NameRU": "Малори Натуф",
+    "DescRU": "<b>СБОР</b>\n<b>ПОЯВЛЕНИЕ:</b>вы берете следующий <b>глиф</b> из своей колоды."
+  }
+}

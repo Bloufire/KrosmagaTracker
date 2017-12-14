@@ -1,0 +1,32 @@
+{
+  "Id": 804,
+  "Name": "bump_niveau_1",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 4,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    7,
+    83
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 281,
+  "InfiniteFamily": 723,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Bump",
+    "DescBR": "<b>IRMANDADE</b>\n<b>CONVOCAÇÃO</b>\n<b>APARIÇÃO:</b> Conceda +2 <b>AR</b> às outras invocações aliadas da linha dele.",
+    "NameEN": "Bump",
+    "DescEN": "<b>BROTHERHOOD</b>\n<b>RALLYING</b>\n<b>APPEARANCE:</b> Gives +2 <b>AR</b> to other allied Minions in its line.",
+    "NameES": "Bump",
+    "DescES": "<b>HERMANDAD</b>\n<b>CONCENTRACIÓN</b>\n<b>APARICIÓN:</b> Das +2 <b>AR</b> a las demás invocaciones aliadas de su fila.",
+    "NameFR": "Bump",
+    "DescFR": "<b>FRATRIE</b>\n<b>RALLIEMENT</b>\n<b>APPARITION :</b> Donnez +2 <b>AR</b> aux autres invocations alliées de sa rangée.",
+    "NameRU": "Бамп",
+    "DescRU": "<b>ФРАТРИЯ</b>\n<b>СБОР</b>\n<b>ПОЯВЛЕНИЕ:</b> дает +2 <b>БР</b> другим союзным существам в своем ряду."
+  }
+}

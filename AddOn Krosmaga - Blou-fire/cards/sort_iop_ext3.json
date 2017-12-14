@@ -1,0 +1,31 @@
+{
+  "Id": 869,
+  "Name": "sort_iop_ext3",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [
+    1
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 1,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Sopro",
+    "DescBR": "Compre 1 carta\r\nou 2 cartas se você estiver em <b>desvantagem numérica</b>.",
+    "NameEN": "Breath",
+    "DescEN": "Draw 1 card\r\nor 2 cards if you are <b>outnumbered.</b>",
+    "NameES": "Soplido",
+    "DescES": "Robas 1 carta,\r\no 2 si estás en <b>inferioridad numérica</b>.",
+    "NameFR": "Souffle",
+    "DescFR": "Piochez 1 carte\r\nou 2 cartes si vous êtes en <b>sous-nombre</b>",
+    "NameRU": "Дыхание",
+    "DescRU": "Возьмите 1 карту\r\nили 2 карты, если вы <b>в меньшинстве</b>."
+  }
+}

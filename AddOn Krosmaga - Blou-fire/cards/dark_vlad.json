@@ -7,7 +7,8 @@
   "Attack": 2,
   "MovementPoint": 3,
   "Families": [
-    1
+    1,
+    83
   ],
   "IsToken": false,
   "Rarity": 3,
@@ -22,14 +23,14 @@
   "LinkedCards": [],
   "Texts": {
     "NameBR": "Dark Vlad",
-    "DescBR": "Os ataques dele\r\ninfligem danos a todas as invocações ou\r\nDofus que estiverem ao redor dele.",
+    "DescBR": "<b>IRMANDADE</b>\nOs ataques dele\r\ninfligem danos a todas as invocações ou\r\nDofus que estiverem ao redor dele.",
     "NameEN": "Dark Vlad",
-    "DescEN": "His attacks\r\ninflict damage on each surrounding\r\nMinion or Dofus.",
+    "DescEN": "<b>BROTHERHOOD</b>\nHis attacks\r\ninflict damage on each surrounding\r\nMinion or Dofus.",
     "NameES": "Dark Vlad",
-    "DescES": "Sus ataques\r\ninfligen daños a cada invocación o\r\ndofus a su alrededor.",
+    "DescES": "<b>HERMANDAD</b>\nSus ataques\r\ninfligen daños a cada invocación o\r\ndofus a su alrededor.",
     "NameFR": "Dark Vlad",
-    "DescFR": "Ses attaques\r\ninfligent des dégâts sur chaque invocation ou\r\nDofus autour de lui.",
+    "DescFR": "<b>FRATRIE</b>\nSes attaques\r\ninfligent des dégâts sur chaque invocation ou\r\nDofus autour de lui.",
     "NameRU": "Темный Влад",
-    "DescRU": "При атаке\r\nнаносит урон каждому существу вокруг себя или\r\nкаждому дофусу, находящемуся рядом."
+    "DescRU": "<b>ФРАТРИЯ</b>\nЕго атаки\r\nнаносят урон каждому существу\r\nили дофусу рядом с ним."
   }
 }

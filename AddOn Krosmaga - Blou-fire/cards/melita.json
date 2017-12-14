@@ -1,0 +1,31 @@
+{
+  "Id": 933,
+  "Name": "melita",
+  "CardType": 0,
+  "CostAP": 4,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 2,
+  "Families": [
+    7
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Melita",
+    "DescBR": "<b>CONVOCAÇÃO</b>\n<b>APARIÇÃO:</b> Invoque um <b>Glifo</b> no seu <b>lado do tabuleiro</b>.",
+    "NameEN": "Melita",
+    "DescEN": "<b>RALLYING</b>\n<b>APPEARANCE:</b> Summons a <b>Glyph</b> on your <b>side</b>.",
+    "NameES": "Melita",
+    "DescES": "<b>CONCENTRACIÓN</b>\n<b>APARICIÓN:</b> Invocas un <b>glifo</b> en tu <b>lado del tablero</b>.",
+    "NameFR": "Melita",
+    "DescFR": "<b>RALLIEMENT</b>\n<b>APPARITION :</b> Invoquez un <b>Glyphe</b> dans votre <b>camp</b>.",
+    "NameRU": "Мелита",
+    "DescRU": "<b>СБОР</b>\n<b>ПОЯВЛЕНИЕ:</b> призывает <b>глифа</b> на вашу <b>половину поля</b>."
+  }
+}

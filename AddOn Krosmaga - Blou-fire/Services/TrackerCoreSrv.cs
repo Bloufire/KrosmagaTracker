@@ -1,27 +1,15 @@
 ﻿using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Reflection;
-using System.Runtime.InteropServices;
-using System.Text;
 using System.Threading.Tasks;
-using System.Windows;
 using AddOn_Krosmaga___Blou_fire.Builders;
 using AddOn_Krosmaga___Blou_fire.Data;
-using AddOn_Krosmaga___Blou_fire.Enums;
-using AddOn_Krosmaga___Blou_fire.FlyoutControls.Tracker.PageModel;
 using AddOn_Krosmaga___Blou_fire.Helpers;
 using AddOn_Krosmaga___Blou_fire.Models;
 using AddOn_Krosmaga___Blou_fire.ProducerConsumer;
-using AddOn_Krosmaga___Blou_fire.UIElements;
-using AddOn_Krosmaga___Blou_fire.Utility;
 using JsonCardsParser;
-
-using NetFwTypeLib;
-using Newtonsoft.Json;
 using SQLiteConnector;
 using Match = AddOn_Krosmaga___Blou_fire.UIElements.Match;
 using NLog;
@@ -31,16 +19,12 @@ namespace AddOn_Krosmaga___Blou_fire.Services
     public class TrackerCoreSrv : ObservableObject
     {
         #region Properties
-
         BlockingCollection<byte[]> _workQueue = new BlockingCollection<byte[]>(new ConcurrentQueue<byte[]>());
         private BinaryReader _binaryReader;
         private byte[] _lastMessage = new byte[1];
-        private List<Match> _filteredGames;
         public CardCollection CardsCollection { get; set; }
         public TrackerModel
         TrackerModel { get; set; } //Model qui sera à découper par page. Peut contenir toutes les données actuellement.
-
-	    private Logger _gameLogger;
         public FiltersStatModel CurrentFiltersStatModel { get; set; }
         //Spécifiques orbes/orbes dorés/nécronomigore
         public int LastTurnOrb = 0;
@@ -50,8 +34,7 @@ namespace AddOn_Krosmaga___Blou_fire.Services
         // Spécifique de multiple token (la Sadida Sylvine)
         public string TimeMultiLinked = "";
         public int NBMultiLinked = 0;
-        //Log
-        private static Logger logger = LogManager.GetCurrentClassLogger();
+        private static Logger logger = LogManager.GetCurrentClassLogger(); // Logs
 
         #endregion
 
@@ -89,28 +72,20 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                 if (data.Length > 40 && _lastMessage.SequenceEqual(data.Skip(40)))
                     return;
                 _lastMessage = data.Skip(40).ToArray();
-
-                //bool passTest = false;
                 Stream f = new MemoryStream(data);
                 _binaryReader = new BinaryReader(f);
-
                 if (_binaryReader.BaseStream.Length >= 41)
                     _binaryReader.BaseStream.Position = 40;
                 else
                     return;
-
                 _binaryReader.ReadBytes(3);
                 while (_binaryReader.BaseStream.Position < _binaryReader.BaseStream.Length && _binaryReader.ReadByte() != 0)
                 {
-                    //logger.Trace("Reading...");
-
                     _binaryReader.ReadBytes(3);
                     string messageId = Helpers.Helpers.ConcatHeader(_binaryReader);
                     _binaryReader.ReadByte();
                     uint size = Helpers.Helpers.ReadRawVarint32(_binaryReader);
-
                     byte[] send;
-
                     switch (messageId)
                     {
                         //case "104BE831BFC1F6EB11C8B453B7F257C499": // LeaderboardPersonnalEntryEvent
@@ -140,6 +115,12 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                         case "98400741B1CB5A4A110FC4D2D51E2D4CA9": // GameEventsEvent
                             Builders.GameEvents gameevents = new Builders.GameEvents();
                             send = _binaryReader.ReadBytes((int)size);
+                            /*string msgdata = "";
+                            foreach (var item in send)
+                            {
+                                msgdata = msgdata + item;
+                            }
+                            logger.Info("send : " + msgdata);*/
                             gameevents.Decode(send);
                             logger.Trace("Game Event");
                             UIActionGameEventsEvent(gameevents);
@@ -183,11 +164,16 @@ namespace AddOn_Krosmaga___Blou_fire.Services
         private void UIActionGameEventStarted(GameStarted value)
         {
             logger.Trace("UIActionGameEventStarted");
+            /*logger.Info("Game Type : " + value.GameType + " / MyCardsCount : " + value.MyCardsCount + " / OpponentCardsCount : " + value.OpponentCardsCount + " / MyIndex : " + value.MyIndex + " / PlayersCount : " + value.PlayersCount);
+            foreach (var item in value.PlayersList)
+            {
+                logger.Info("Nickname : " + item.Profile.Nickname + " / GodId : " + item.GodId + " / Index : " + item.Index);
+            }*/
             //On initialise le "Own" positionnement.
             TrackerModel.MyIndex = value.MyIndex;
             //On charge les données du player selon mon index
             Data.Player player = value.PlayersList.FirstOrDefault(x => x.Index == TrackerModel.MyIndex);
-            logger.Info(player.Profile.Nickname + " : Player " + player.Index);
+            logger.Info(player.Profile.Nickname + " : Player " + player.Index + " / GodId : " + player.GodId);
             //On met à jour les données du model
             if (player != null)
             {
@@ -199,8 +185,7 @@ namespace AddOn_Krosmaga___Blou_fire.Services
             }
             //On refait de 
             player = value.PlayersList.FirstOrDefault(x => x.Index != TrackerModel.MyIndex);
-            logger.Info(player.Profile.Nickname + " : Player " + player.Index);
-
+            logger.Info(player.Profile.Nickname + " : Player " + player.Index + " / GodId : " + player.GodId);
             if (player != null)
             {
                 TrackerModel.VsPseudo = player.Profile.Nickname ?? "";
@@ -277,7 +262,6 @@ namespace AddOn_Krosmaga___Blou_fire.Services
             {
                 if (item.EventType == Enums.EventType.TURN_ENDED)
                     logger.Info("Turn Ended");
-                logger.Trace("Event Type : Didn't use " + item.EventType);
                 IterateEvents(item);
             }
         }
@@ -291,6 +275,7 @@ namespace AddOn_Krosmaga___Blou_fire.Services
             {
                 logger.Trace("Enums.EventType.CARD_MOVED");
                 Builders.EventsManager.CardMovedEvent cardMoved = new Builders.EventsManager.CardMovedEvent(value);
+                //logger.Info("card : " + cardMoved.Card + " / TradingCard : " + cardMoved.TradingCard + " / RelatedTradingCard : " + cardMoved.RelatedTradingCard + " / CardLocationFrom : " + cardMoved.CardLocationFrom + " / CardLocationTo : " + cardMoved.CardLocationTo + " / ConcernedFighter : " + cardMoved.ConcernedFighter);
                 if (cardMoved.ConcernedFighter < 2) // Bizarement, il y'a d'autres combattants que le premier et le deuxième -_-
                 {
                     // Si on connait la carte, on récupère les infos

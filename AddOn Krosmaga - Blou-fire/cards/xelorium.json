@@ -2,7 +2,7 @@
   "Id": 282,
   "Name": "xelorium",
   "CardType": 1,
-  "CostAP": 0,
+  "CostAP": 2,
   "Life": 0,
   "Attack": 0,
   "MovementPoint": 0,

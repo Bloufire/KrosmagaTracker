@@ -1,0 +1,32 @@
+{
+  "Id": 719,
+  "Name": "paladir_feca_f",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 4,
+  "Attack": 5,
+  "MovementPoint": 2,
+  "Families": [
+    7,
+    77
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Alquimista Blindada",
+    "DescBR": "<b>CONVOCAÇÃO</b>\nEnquanto ela está no jogo, seus <b>Glifos</b> custam 1 <b>PA</b> a menos.",
+    "NameEN": "Armored Alchemist",
+    "DescEN": "<b>RALLYING</b>\nAs long as she is in play, your <b>Glyphs</b> cost 1 <b>AP</b> less.",
+    "NameES": "Alquimista acorazada",
+    "DescES": "<b>CONCENTRACIÓN</b>\nMientras esté en juego, tus <b>glifos</b> cuestan 1 <b>PA</b> menos.",
+    "NameFR": "Alchimiste Armurée",
+    "DescFR": "<b>RALLIEMENT</b>\nTant qu'elle est en jeu, vos <b>Glyphes</b> coûtent 1 <b>PA</b> de moins.",
+    "NameRU": "Алхимичка в доспехах",
+    "DescRU": "<b>СБОР</b>\nПока она в игре, ваши <b>глифы</b> стоят на 1 <b>ОД</b> меньше."
+  }
+}

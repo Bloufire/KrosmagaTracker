@@ -1,0 +1,31 @@
+{
+  "Id": 694,
+  "Name": "mylisse_lossair",
+  "CardType": 0,
+  "CostAP": 2,
+  "Life": 2,
+  "Attack": 2,
+  "MovementPoint": 2,
+  "Families": [
+    7
+  ],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Myliss Lossar",
+    "DescBR": "<b>CONVOCAÇÃO</b>\n<b>APARIÇÃO:</b>\nConfere +2 <b>AR</b> a outra invocação.",
+    "NameEN": "Saul Armissyl",
+    "DescEN": "<b>RALLYING</b>\n<b>APPEARANCE:</b>\nGives +2 <b>AR</b> to another Minion.",
+    "NameES": "Milys Lossar",
+    "DescES": "<b>CONCENTRACIÓN</b>\n<b>APARICIÓN:</b>\nDas +2 <b>AR</b> a otra invocación.",
+    "NameFR": "Mylisse Lossair",
+    "DescFR": "<b>RALLIEMENT</b>\n<b>APPARITION :</b>\nDonnez +2 <b>AR</b> à une autre invocation. ",
+    "NameRU": "Ная Тинез-Атекар",
+    "DescRU": "<b>СБОР</b>\n<b>ПОЯВЛЕНИЕ:</b>\nдает +2 <b>БР</b> другому существу."
+  }
+}

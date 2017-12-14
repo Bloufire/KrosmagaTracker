@@ -19,14 +19,14 @@
   "LinkedCards": [],
   "Texts": {
     "NameBR": "Tristepan",
-    "DescBR": "<b>INVESTIDA:</b>\nGanha <b>iniciativa</b> se houver outro membro aliado da Confraria do Tofu em jogo.",
+    "DescBR": "<b>APARIÇÃO:</b><b>Investida</b>\nGanha <b>iniciativa</b> se houver\r\noutro membro aliado da Confraria do Tofu no jogo.",
     "NameEN": "Percedal",
-    "DescEN": "<b>CHARGE</b>\nGains <b>first strike</b> if another allied member of the Brotherhood of the Tofu is in play.",
+    "DescEN": "<b>APPEARANCE:</b> <b>Charge</b>\nGains <b>first strike</b> if another\r\nallied member of the Brotherhood of the Tofu is in play.",
     "NameES": "Tristepin",
-    "DescES": "<b>CARGA</b>\nGana <b>iniciativa</b> si tienes otro miembro de la Hermandad del Tofu en juego.",
+    "DescES": "<b>APARICIÓN:</b> <b>Carga</b>\nGana <b>iniciativa</b> si tienes otro miembro de la Hermandad del Tofu en juego.",
     "NameFR": "Tristepin",
-    "DescFR": "<b>CHARGE</b>\nGagne <b>initiative</b> si un autre membre allié de la Confrérie du Tofu est en jeu.",
+    "DescFR": "<b>APPARITION :</b> <b>Charge</b>\nGagne <b>initiative</b> si un\r\nautre membre allié de la Confrérie du Tofu est en jeu.",
     "NameRU": "Персидаль",
-    "DescRU": "<b>РЫВОК</b>\nПолучает свойство <b>«первый удар»</b>, если в игре есть союзник из Братства тофу."
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b><b>Рывок</b>\nПолучает свойство <b>«первый удар»</b>, если в игре есть союзник из Братства тофу."
   }
 }

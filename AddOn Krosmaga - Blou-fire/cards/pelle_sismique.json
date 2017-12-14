@@ -16,14 +16,14 @@
   "LinkedCards": [],
   "Texts": {
     "NameBR": "Pá Sísmica",
-    "DescBR": "Vise uma célula para desenterrar um <b>Espólio</b> após infligir 3 danos às invocações adversárias na mesma fileira.",
+    "DescBR": "Vise uma célula para desenterrar um <b>Espólio</b> aliado após infligir 3 danos às invocações adversárias na mesma fileira.",
     "NameEN": "Shovel Shaker",
-    "DescEN": "Target a cell to unearth an item of <b>Loot</b> after inflicting 3 damage on enemy Minions on that row.",
+    "DescEN": "Target a cell to unearth an allied item of <b>Loot</b> after inflicting 3 damage on enemy Minions on that row.",
     "NameES": "Pala Sísmica",
-    "DescES": "Seleccionas una casilla para desenterrar un <b>botín</b> después de haber infligido 3 de daño a las invocaciones enemigas de la hilera.",
+    "DescES": "Seleccionas una casilla para desenterrar un <b>botín</b> aliado después de haber infligido 3 de daño a las invocaciones enemigas de la hilera.",
     "NameFR": "Pelle Sismique",
-    "DescFR": "Ciblez une case pour déterrer un <b>Butin</b> après avoir infligé 3 dégâts aux invocations adverses de la ligne.",
+    "DescFR": "Ciblez une case pour déterrer un <b>Butin</b> allié après avoir infligé 3 dégâts aux invocations adverses de la ligne.",
     "NameRU": "Сейсмическая лопата",
-    "DescRU": "Выберите клетку. Если существа противника на линии получат 3 ед. урона, на этой клетке появится <b>добыча</b>."
+    "DescRU": "Выберите клетку. Существа противника на этой линии получат 3 ед. урона, и на этой клетке появится союзная<b>добыча</b>."
   }
 }

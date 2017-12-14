@@ -1,0 +1,37 @@
+{
+  "Id": 952,
+  "Name": "sipho",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    83
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 82,
+    "ParentCard": 914,
+    "ParentLevel": 8
+  },
+  "LinkedCards": [
+    971
+  ],
+  "Texts": {
+    "NameBR": "Sifo",
+    "DescBR": "<b>IRMANDADE</b>\nQuando um membro da Irmandade dos Esquecidos é jogado, ele <b>se transforma</b>.",
+    "NameEN": "Sipho",
+    "DescEN": "<b>BROTHERHOOD</b>\n<b>Transforms</b> whenever a member of the Brotherhood of the Forgotten is played.",
+    "NameES": "Sifo",
+    "DescES": "<b>HERMANDAD</b>\nCuando se juega un miembro de la Hermandad de los Olvidados, <b>se transforma</b>.",
+    "NameFR": "Sipho",
+    "DescFR": "<b>FRATRIE</b>\nQuand un membre de la Fratrie des Oubliés est joué, il <b>se transforme</b>.",
+    "NameRU": "Сифо",
+    "DescRU": "<b>ФРАТРИЯ</b>\n\nТрансформируется</b>, когда в игру вступает член Фратрии Забытых."
+  }
+}

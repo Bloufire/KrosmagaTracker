@@ -1,0 +1,29 @@
+{
+  "Id": 1805,
+  "Name": "sort_feca_13",
+  "CardType": 1,
+  "CostAP": 2,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Glifo Agressivo",
+    "DescBR": "<b>GLIFO</b>\nQuando é jogado, esse feitiço confere às invocações ao redor do <b>Glifo</b> uma quantidade de <b>AT</b> equivalente à de <b>AR</b> delas.",
+    "NameEN": "Aggressive Glyph",
+    "DescEN": "<b>GLYPH</b>\nWhen played, this spell confers as many <b>AT</b> as they have <b>AR</b> on Minions around the <b>Glyph.</b>",
+    "NameES": "Glifo Agresivo",
+    "DescES": "<b>GLIFO</b>\nCuando se utiliza, este hechizo da a las invocaciones de alrededor del <b>glifo</b> tanto <b>AT</b> como <b>AR</b> tengan.",
+    "NameFR": "Glyphe Agressif",
+    "DescFR": "<b>GLYPHE</b>\nQuand il est joué, ce sort confère aux invocations autour du <b>Glyphe</b> autant d'<b>AT</b> qu'elles ont d'<b>AR</b>.",
+    "NameRU": "Агрессивный глиф",
+    "DescRU": "<b>ГЛИФ</b>\nПри использовании это заклинание дает существам вокруг <b>глифа</b> количество <b>AT</b>, равное их показателю <b>БР</b>."
+  }
+}

@@ -18,14 +18,14 @@
   "LinkedCards": [],
   "Texts": {
     "NameBR": "Corsaque",
-    "DescBR": "Desenterra um <b>Espólio</b>\r\nna célula diante dele após o deslocamento das suas invocações.",
+    "DescBR": "Desenterra um <b>Espólio</b> aliado\r\nna célula diante dele após os deslocamentos das suas invocações.",
     "NameEN": "Forbank",
-    "DescEN": "Unearths an item of <b>Loot</b>\r\non the cell in front of it after your Minions have moved.",
+    "DescEN": "Unearths an allied item of <b>Loot</b>\r\non the cell in front of it after your Minions have moved.",
     "NameES": "Forbank",
-    "DescES": "Desentierra un <b>botín</b>\r\nen la casilla de delante de él al final de los desplazamientos de tus invocaciones.",
+    "DescES": "Desentierra un <b>botín</b> aliado\r\nen la casilla de delante de él al final de los desplazamientos de tus invocaciones.",
     "NameFR": "Forbank",
-    "DescFR": "Déterre un <b>Butin</b>\r\nsur la case devant lui à la fin des déplacements de vos invocations.",
+    "DescFR": "Déterre un <b>Butin</b> allié\r\nsur la case devant lui à la fin des déplacements de vos invocations.",
     "NameRU": "Грабанк",
-    "DescRU": "После перемещения всех союзников откапывает <b>добычу</b> на клетке перед собой."
+    "DescRU": "После перемещения ваших существ откапывает союзную <b>добычу</b> на клетке перед собой."
   }
 }

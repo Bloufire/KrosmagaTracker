@@ -1,0 +1,31 @@
+{
+  "Id": 807,
+  "Name": "feca_ext3_h",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 2,
+  "Families": [
+    7
+  ],
+  "IsToken": false,
+  "Rarity": 1,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Luka Brigo",
+    "DescBR": "<b>CONVOCAÇÃO</b>\nConcede +1 <b>PM</b> às outras invocações que <b>convoca</b>.",
+    "NameEN": "Igor Tex",
+    "DescEN": "<b>RALLYING:</b>\nGives +1 <b>MP</b> to Minions that he <b>rallies</b>.",
+    "NameES": "Igor Tex",
+    "DescES": "<b>CONCENTRACIÓN</b>\nDa +1 <b>PM</b> a las invocaciones con las que <b>se concentra</b>.",
+    "NameFR": "Igor Tex",
+    "DescFR": "<b>RALLIEMENT</b>\nDonne +1 <b>PM</b> aux invocations qu'il <b>rallie</b>.",
+    "NameRU": "Игорь Текс",
+    "DescRU": "<b>СБОР</b>\nДает +1 <b>ОП</b> существам, к которым он <b>присоединяется</b>."
+  }
+}

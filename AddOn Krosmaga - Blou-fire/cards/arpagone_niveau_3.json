@@ -1,0 +1,32 @@
+{
+  "Id": 747,
+  "Name": "arpagone_niveau_3",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 6,
+  "Attack": 6,
+  "MovementPoint": 3,
+  "Families": [
+    4,
+    83
+  ],
+  "IsToken": false,
+  "Rarity": 4,
+  "GodType": 0,
+  "Extension": 281,
+  "InfiniteFamily": 663,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Arpagona",
+    "DescBR": "<b>IRMANDADE</b>\nCusta 1 <b>PA</b> a menos por invocação inimiga no jogo.",
+    "NameEN": "Arpagone",
+    "DescEN": "<b>BROTHERHOOD</b>\nCosts 1 <b>AP</b> less per enemy Minion in play.",
+    "NameES": "Arpagona",
+    "DescES": "<b>HERMANDAD</b>\nCuesta 1 <b>PA</b> menos por invocación enemiga en juego.",
+    "NameFR": "Arpagone",
+    "DescFR": "<b>FRATRIE</b>\nCoûte 1 <b>PA</b> de moins par invocation ennemie en jeu.",
+    "NameRU": "Арпагона",
+    "DescRU": "<b>ФРАТРИЯ</b>\nСтоит на 1 <b>ОД</b> меньше за каждое существо противника в игре."
+  }
+}

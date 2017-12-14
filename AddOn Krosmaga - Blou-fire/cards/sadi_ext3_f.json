@@ -1,0 +1,31 @@
+{
+  "Id": 662,
+  "Name": "sadi_ext3_f",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 3,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    32
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 10,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Cami Case",
+    "DescBR": "Inflige 5 danos à próxima invocação adversária que entrar no jogo e, em seguida, inflige-se 2 danos.",
+    "NameEN": "Cammy Kazzy",
+    "DescEN": "Inflicts 5 damage on the next enemy Minion that enters into play, then suffers 2 damage.",
+    "NameES": "Camy Kaze",
+    "DescES": "Inflige 5 de daño a la próxima invocación enemiga que entre en juego y se inflige 2 de daño.",
+    "NameFR": "Camille Kaz",
+    "DescFR": "Inflige 5 dégâts à la prochaine invocation adverse qui entre en jeu, puis s'inflige 2 dégâts.",
+    "NameRU": "Камилла Кадзе",
+    "DescRU": "Наносит 5 единиц урона существу противника, которое следующим входит в игру, а затем наносит 2 единицы урона себе."
+  }
+}

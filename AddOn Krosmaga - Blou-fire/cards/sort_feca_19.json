@@ -1,0 +1,29 @@
+{
+  "Id": 1645,
+  "Name": "sort_feca_19",
+  "CardType": 1,
+  "CostAP": 3,
+  "Life": 0,
+  "Attack": 0,
+  "MovementPoint": 0,
+  "Families": [],
+  "IsToken": false,
+  "Rarity": 0,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Glifo de Letargia",
+    "DescBR": "<b>GLIFO</b>\nQuando é jogado, esse feitiço <b>atordoa</b> as invocações ao redor do <b>Glifo</b>.",
+    "NameEN": "Lethargy Glyph",
+    "DescEN": "<b>GLYPH</b>\nWhen played, this spell <b>stuns</b> Minions around the <b>Glyph.</b>",
+    "NameES": "Glifo de Letargo",
+    "DescES": "<b>GLIFO</b>\nCuando se utiliza, este hechizo <b>aturde</b> a las invocaciones de alrededor del <b>glifo</b>.",
+    "NameFR": "Glyphe de Léthargie",
+    "DescFR": "<b>GLYPHE</b>\nQuand il est joué, ce sort <b>assomme</b> les invocations autour du <b>Glyphe</b>.",
+    "NameRU": "Глиф летаргии",
+    "DescRU": "<b>ГЛИФ</b>\nПри использовании это заклинание <b>оглушает</b> существ вокруг <b>глифа</b>."
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "Id": 867,
+  "Name": "gob_gob",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 3,
+  "Attack": 2,
+  "MovementPoint": 3,
+  "Families": [
+    83
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": {
+    "ParentInfiniteFamily": 275,
+    "ParentCard": 1837,
+    "ParentLevel": 9
+  },
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Cancão",
+    "DescBR": "<b>IRMANDADE</b>\n<b>APARIÇÃO:</b> Inflige 1 dano à primeira invocação diante dele. Se a invocação morrer, ela voltará para a sua mão.",
+    "NameEN": "Cancane",
+    "DescEN": "<b>BROTHERHOOD</b>\n<b>APPEARANCE:</b> Inflicts 1 damage on the first Minion in front of him; if the Minion dies, it returns to your hand.",
+    "NameES": "Cancán",
+    "DescES": "<b>HERMANDAD</b>\n<b>APARICIÓN:</b> Inflige 1 de daño a la primera invocación delante de él, si la invocación muere, sube a tu mano.",
+    "NameFR": "Cancane",
+    "DescFR": "<b>FRATRIE</b>\n<b>APPARITION :</b> Inflige 1 dégât à la première invocation devant lui, si l'invocation meurt elle remonte dans votre main.",
+    "NameRU": "Канкан",
+    "DescRU": "<b>ФРАТРИЯ</b>\n<b>ПОЯВЛЕНИЕ:</b> наносит 1 ед. урона первому сущ-ву перед собой. Если оно умирает, то попадает в вашу руку."
+  }
+}

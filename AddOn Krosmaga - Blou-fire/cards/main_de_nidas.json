@@ -16,14 +16,14 @@
   "LinkedCards": [],
   "Texts": {
     "NameBR": "Mão de Nidas",
-    "DescBR": "Transforma uma\r\ninvocação em <b>Espólio</b>.",
+    "DescBR": "Transforma uma\r\ninvocação em <b>Espólio</b> aliado.",
     "NameEN": "Nidas's Hand",
-    "DescEN": "Transforms a\r\nMinion into <b>Loot</b>.",
+    "DescEN": "Transforms a\r\nMinion into an allied item of <b>Loot.</b>",
     "NameES": "Mano de Nidas",
-    "DescES": "Transforma una\r\ninvocación en <b>botín</b>.",
+    "DescES": "Transforma una\r\ninvocación en <b>botín</b> aliado.",
     "NameFR": "Main de Nidas",
-    "DescFR": "Transforme une\r\ninvocation en <b>Butin</b>.",
+    "DescFR": "Transforme une\r\ninvocation en <b>Butin</b> allié.",
     "NameRU": "Касание Ниддаса",
-    "DescRU": "Превращает выбранное\r\nсущество в <b>добычу</b>."
+    "DescRU": "Превращает выбранное\r\nсущество в союзную <b>добычу</b>."
   }
 }

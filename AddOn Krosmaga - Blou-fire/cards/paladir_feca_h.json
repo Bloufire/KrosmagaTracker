@@ -1,0 +1,32 @@
+{
+  "Id": 965,
+  "Name": "paladir_feca_h",
+  "CardType": 0,
+  "CostAP": 5,
+  "Life": 4,
+  "Attack": 5,
+  "MovementPoint": 2,
+  "Families": [
+    7,
+    77
+  ],
+  "IsToken": false,
+  "Rarity": 3,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Herói Veterano",
+    "DescBR": "<b>CONVOCAÇÃO</b>\nGanha +1 <b>AR</b> quando uma invocação aliada sofre danos.",
+    "NameEN": "Hardened Hero",
+    "DescEN": "<b>RALLYING</b>\nGains +1 <b>AR</b> whenever an allied Minion suffers damage.",
+    "NameES": "Héroe endurecido",
+    "DescES": "<b>CONCENTRACIÓN</b>\nGana +1 <b>AR</b> cuando una invocación aliada sufre daños.",
+    "NameFR": "Héros Endurci",
+    "DescFR": "<b>RALLIEMENT</b>\nGagne +1 <b>AR</b> quand une invocation alliée subit des dégâts.",
+    "NameRU": "Закаленный герой",
+    "DescRU": "<b>СБОР</b>\nПолучает +1 <b>БР</b>, когда союзное существо получает урон."
+  }
+}

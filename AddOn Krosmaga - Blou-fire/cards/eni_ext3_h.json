@@ -1,0 +1,31 @@
+{
+  "Id": 975,
+  "Name": "eni_ext3_h",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 5,
+  "Attack": 3,
+  "MovementPoint": 3,
+  "Families": [
+    3
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 3,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Léo Cócito",
+    "DescBR": "<b>APARIÇÃO:</b>\nInflige-se 3 danos.\n<b>FIM DO TURNO:</b>\nCura-se em 1 <b>PV</b>.",
+    "NameEN": "Luke O'Cyte",
+    "DescEN": "<b>APPEARANCE:</b>\nInflicts 3 damage on himself.\n<b>END OF TURN:</b>\nIs healed by 1 <b>HP.</b>",
+    "NameES": "Luc Ocito",
+    "DescES": "<b>APARICIÓN:</b>\nSe inflige 3 de daño.\n<b>FIN DEL TURNO:</b>\nSe cura 1 <b>PdV</b>.",
+    "NameFR": "Luc Ossit",
+    "DescFR": "<b>APPARITION :</b>\nS'inflige 3 dégâts.\n<b>FIN DU TOUR :</b>\nSe soigne de 1 <b>PV</b>.",
+    "NameRU": "Люк Оцит",
+    "DescRU": "<b>ПОЯВЛЕНИЕ:</b>\nнаносит себе 3 единцы урона.\n<b>КОНЕЦ ХОДА:</b>\nвосстанавливает себе 1 <b>ОЗ</b>."
+  }
+}

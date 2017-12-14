@@ -1,0 +1,31 @@
+{
+  "Id": 921,
+  "Name": "cra_ext3_f",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 5,
+  "Attack": 4,
+  "MovementPoint": 3,
+  "Families": [
+    2
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 2,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Emma Zona",
+    "DescBR": "<b>ALCANCE:</b> 1-3\nInflige 1 dano à primeira invocação ou Dofus adversário na fileira dela quando você joga um feitiço.",
+    "NameEN": "Emma Zone",
+    "DescEN": "<b>RANGE:</b> 1-3\nInflicts 1 damage on the first Minion or enemy Dofus on her row when you play a spell.",
+    "NameES": "Emma Zona",
+    "DescES": "<b>ALCANCE:</b> 1-3\nInflige 1 de daño a la primera invocación o dofus enemigo de su hilera cuando utilizas un hechizo.",
+    "NameFR": "Emma Zone",
+    "DescFR": "<b>PORTÉE :</b> 1-3\nInflige 1 dégât à la première invocation ou Dofus adverse de sa ligne quand vous jouez un sort.",
+    "NameRU": "Эмма Зона",
+    "DescRU": "<b>ДАЛЬНОСТЬ АТАКИ:</b> 1-3\nНаносит 1 ед. урона первому сущ. или дофусу противника перед собой, когда вы используете заклинание."
+  }
+}

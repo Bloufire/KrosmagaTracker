@@ -7,7 +7,8 @@
   "Attack": 4,
   "MovementPoint": 3,
   "Families": [
-    9
+    9,
+    83
   ],
   "IsToken": false,
   "Rarity": 4,
@@ -18,14 +19,14 @@
   "LinkedCards": [],
   "Texts": {
     "NameBR": "Conde Traspafrent",
-    "DescBR": "Enquanto ele estiver no jogo,\r\nas invocações aliadas coletam duas vezes\r\nos prismas.",
+    "DescBR": "<b>IRMANDADE</b>\nEnquanto ele estiver no jogo,\r\nas invocações aliadas coletam duas vezes\r\nos prismas.",
     "NameEN": "Count Harebourg",
-    "DescEN": "As long as he is in play,\r\nallied Minions pick up\r\ntwice as many prisms.",
+    "DescEN": "<b>BROTHERHOOD</b>\nAs long as he is in play,\r\nallied Minions pick up twice as many\r\nprisms.",
     "NameES": "Conde Kontatrás",
-    "DescES": "Mientras esté en juego,\r\nlas invocaciones aliadas consiguen dos veces\r\nlos prismas.",
+    "DescES": "<b>HERMANDAD</b>\nMientras esté en juego,\r\nlas invocaciones aliadas consiguen dos veces\r\nlos prismas.",
     "NameFR": "Comte Harebourg",
-    "DescFR": "Tant qu'il est en jeu,\r\nles invocations alliées ramassent deux fois\r\nles prismes.",
+    "DescFR": "<b>FRATRIE</b>\nTant qu'il est en jeu,\r\nles invocations alliées ramassent deux fois\r\nles prismes.",
     "NameRU": "Граф Хронограф",
-    "DescRU": "Пока он находится в игре,\r\nсоюзные существа собирают\r\nв два раза больше призм."
+    "DescRU": "<b>ФРАТРИЯ</b>\nПока он находится в игре,\r\nсоюзные существа собирают\r\nв два раза больше призм."
   }
 }

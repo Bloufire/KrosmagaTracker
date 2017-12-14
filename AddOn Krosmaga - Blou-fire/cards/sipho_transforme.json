@@ -1,0 +1,33 @@
+{
+  "Id": 971,
+  "Name": "sipho_transforme",
+  "CardType": 0,
+  "CostAP": 3,
+  "Life": 5,
+  "Attack": 5,
+  "MovementPoint": 2,
+  "Families": [
+    83
+  ],
+  "IsToken": true,
+  "Rarity": 3,
+  "GodType": 0,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [
+    952
+  ],
+  "Texts": {
+    "NameBR": "Sifo Transformado",
+    "DescBR": "<b>IRMANDADE</b>\nQuando um membro da Irmandade dos Esquecidos é jogado, ele volta à sua <b>forma original</b>.",
+    "NameEN": "Transformed Sipho",
+    "DescEN": "<b>BROTHERHOOD</b>\nReturns to his <b>original form</b> whenever a member of the Brotherhood of the Forgotten is played.",
+    "NameES": "Sifo transformado",
+    "DescES": "<b>HERMANDAD</b>\nCuando se juega un miembro de la Hermandad de los Olvidados, vuelve a su <b>forma original</b>.",
+    "NameFR": "Sipho Transformé",
+    "DescFR": "<b>FRATRIE</b>\nQuand un membre de la Fratrie des Oubliés est joué, il retrouve sa <b>forme originelle</b>.",
+    "NameRU": "Трансформированный Сифо",
+    "DescRU": "<b>ФРАТРИЯ</b>\nВозвращается в <b>исходный облик</b>, когда в игру вступает член Фратрии Забытых."
+  }
+}

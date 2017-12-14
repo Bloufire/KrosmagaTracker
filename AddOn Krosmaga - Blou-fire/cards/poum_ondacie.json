@@ -1,0 +1,31 @@
+{
+  "Id": 598,
+  "Name": "poum_ondacie",
+  "CardType": 0,
+  "CostAP": 7,
+  "Life": 8,
+  "Attack": 4,
+  "MovementPoint": 2,
+  "Families": [
+    7
+  ],
+  "IsToken": false,
+  "Rarity": 2,
+  "GodType": 9,
+  "Extension": 281,
+  "InfiniteFamily": 0,
+  "KrosfiniteData": null,
+  "LinkedCards": [],
+  "Texts": {
+    "NameBR": "Pul Mandiaço",
+    "DescBR": "<b>CONVOCAÇÃO</b>\n<b>APARIÇÃO:</b> Ganha +1 <b>AT</b> por invocação no jogo com <b>AR</b> ou <b>escudo</b>.",
+    "NameEN": "Byron Llyoung",
+    "DescEN": "<b>RALLYING</b>\n<b>APPEARANCE:</b> Gains +1 <b>AT</b> per Minion in play that has <b>AR</b> or a <b>shield.</b>",
+    "NameES": "Bronky Osdacero",
+    "DescES": "<b>CONCENTRACIÓN</b>\n<b>APARICIÓN:</b> Gana +1 <b>AT</b> por invocación en juego que posea <b>AR</b> o un <b>escudo</b>.",
+    "NameFR": "Poum Ondacié",
+    "DescFR": "<b>RALLIEMENT</b>\n<b>APPARITION :</b> Gagne +1 <b>AT</b> par invocation en jeu qui possède de l'<b>AR</b> ou un <b>bouclier</b>.",
+    "NameRU": "Аппар Ативл",
+    "DescRU": "<b>СБОР</b>\n<b>ПОЯВЛЕНИЕ:</b>Получает +1 <b>AT</b> за каждое существо в игре, у которого есть <b>БР</b> или <b>щит</b>."
+  }
+}
