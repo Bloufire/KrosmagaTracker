@@ -20,6 +20,8 @@ namespace AddOn_Krosmaga___Blou_fire.Enums
 
 		[LocDescription("S6")] S6,
 
-		[LocDescription("S7")] S7
-	}
+		[LocDescription("S7")] S7,
+
+        [LocDescription("S7")] S8
+    }
 }

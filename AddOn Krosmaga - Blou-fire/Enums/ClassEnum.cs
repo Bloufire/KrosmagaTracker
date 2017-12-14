@@ -26,8 +26,11 @@ namespace AddOn_Krosmaga___Blou_fire.Enums
 
 		[LocDescription("Sacrieur")] Sacrieur,
 
-		[LocDescription("Sadida")] Sadida,
+        [LocDescription("Sacrieur")] Feca,
 
-	
-	}
+        [LocDescription("Sadida")] Sadida,
+
+        [LocDescription("Sacrieur")] Rushu = 17
+
+    }
 }

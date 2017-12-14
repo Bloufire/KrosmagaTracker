@@ -17,7 +17,8 @@ namespace AddOn_Krosmaga___Blou_fire.Enums
 		Sram,
 		Xelor,
 		Sacrieur,
-		Sadida = 10,
+        Feca,
+		Sadida,
 		Rushu = 17
 	}
 }

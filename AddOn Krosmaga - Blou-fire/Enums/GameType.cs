@@ -26,9 +26,10 @@ namespace AddOn_Krosmaga___Blou_fire.Enums
 		[Description("Unlock Sadi")] UNLOCK_SADIDA = 15,
 		[Description("Unlock Cra")] UNLOCK_CRA = 16,
 		[Description("Unlock Enu")] UNLOCK_ENUTROF = 17,
-		[Description("Random Ranked vs Hidden IA")] RANDOM_RANKED_VS_HIDDEN_AI = 97,
+        [Description("Tournament")] TOURNAMENT = 18,
+        [Description("Unlock Feca")] UNLOCK_FECA = 19,
+        [Description("Random Ranked vs Hidden IA")] RANDOM_RANKED_VS_HIDDEN_AI = 97,
 		[Description("Random Unranked vs Hidden IA")] RANDOM_UNRANKED_VS_HIDDEN_AI = 98,
 		[Description("IA vs IA")] IA_VS_IA = 99,
-		[Description("2 vs 2")] Deux_VS_Deux = 101
 	}
 }
