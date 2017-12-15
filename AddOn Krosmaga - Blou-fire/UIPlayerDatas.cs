@@ -146,7 +146,7 @@ namespace AddOn_Krosmaga___Blou_fire
 			WinrateParClasse = new SeriesCollection();
 			ToursParClasse = new SeriesCollection();
 
-			Labels = new[] {"Iop", "Ecaflip", "Cra", "Eniripsa", "Sacrieur", "Sadida", "Sram", "Xelor", "Enutrof"};
+			Labels = new[] {"Iop", "Ecaflip", "Cra", "Eniripsa", "Sacrieur", "Feca", "Sadida", "Sram", "Xelor", "Enutrof"};
 			Separator = new Separator() {Step = 1, IsEnabled = false};
 			Formatter = value => value.ToString("N");
 		}
@@ -205,14 +205,14 @@ namespace AddOn_Krosmaga___Blou_fire
 		public void RemoveCardFromCardInHand(DeckUI card)
 		{
 			_cardsInHand.Remove(card);
-		}
+        }
 
-		public void ClearCardInHand(DeckUI card)
-		{
-			_cardsInHand.Clear();
-		}
+        public void ClearCardInHand(DeckUI card)
+        {
+            _cardsInHand.Clear();
+        }
 
-		public int CurrentTurn
+        public int CurrentTurn
 		{
 			get { return _currentTurn; }
 

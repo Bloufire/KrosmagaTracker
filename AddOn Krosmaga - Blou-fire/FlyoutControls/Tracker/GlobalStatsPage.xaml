@@ -102,14 +102,20 @@
                     <TextBlock>
                                 <Run Text="{Binding MUData.IopWinrateDisplay, Mode=OneWay}"/>
                         </TextBlock>
-                </StackPanel>
-                <StackPanel>
-                    <Image Source="../../Images/Gods/Sacri.png"  Width="{StaticResource IconDefaultSize}" Height="{StaticResource IconDefaultSize}"/>
-                    <TextBlock>
+                    </StackPanel>
+                    <StackPanel>
+                        <Image Source="../../Images/Gods/Sacri.png"  Width="{StaticResource IconDefaultSize}" Height="{StaticResource IconDefaultSize}"/>
+                        <TextBlock>
                                 <Run Text="{Binding MUData.SacriWinrateDisplay, Mode=OneWay}"/>
                         </TextBlock>
-                </StackPanel>
-                <StackPanel>
+                    </StackPanel>
+                    <StackPanel>
+                        <Image Source="../../Images/Gods/Feca.png"  Width="{StaticResource IconDefaultSize}" Height="{StaticResource IconDefaultSize}"/>
+                        <TextBlock>
+                                <Run Text="{Binding MUData.FecaWinrateDisplay, Mode=OneWay}"/>
+                        </TextBlock>
+                    </StackPanel>
+                    <StackPanel>
                     <Image Source="../../Images/Gods/Sadi.png"  Width="{StaticResource IconDefaultSize}" Height="{StaticResource IconDefaultSize}"/>
                     <TextBlock>
                                 <Run Text="{Binding MUData.SadiWinrateDisplay, Mode=OneWay}"/>
@@ -130,7 +136,7 @@
             </UniformGrid>
         </StackPanel>
             <StackPanel>
-                <TextBlock Margin="0,20,0,10" Text="Global Winrate" FontWeight="SemiBold" TextAlignment="Center"/>
+                <TextBlock Margin="0,0,0,10" Text="Global Winrate" FontWeight="SemiBold" TextAlignment="Center"/>
          
             <Grid VerticalAlignment="Top">
                 <TextBlock Style="{StaticResource WinrateGaugeTextStyle}">

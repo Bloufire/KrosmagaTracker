@@ -93,6 +93,20 @@
                                 </Style>
                             </DataGridTextColumn.ElementStyle>
                         </DataGridTextColumn>
+                        <DataGridTextColumn Binding="{Binding FecaWinrateMU, StringFormat='\{0\}%'}" MinWidth="47">
+                            <DataGridTextColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <Image RenderOptions.BitmapScalingMode="Fant" Source="../../Images/Gods/Feca.png"
+                                           Width="24" Height="24" />
+                                </DataTemplate>
+                            </DataGridTextColumn.HeaderTemplate>
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="HorizontalAlignment" Value="Center" />
+                                    <!--<Setter Property="Foreground" Value="{Binding Rogue.WinRateTextBrush}" />-->
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
                         <DataGridTextColumn Binding="{Binding IopWinrateMU, StringFormat='\{0\}%'}" MinWidth="47">
                             <DataGridTextColumn.HeaderTemplate>
                                 <DataTemplate>
@@ -249,6 +263,20 @@
                                 <Style TargetType="TextBlock">
                                     <Setter Property="HorizontalAlignment" Value="Center" />
                                     <!--<Setter Property="Foreground" Value="{Binding Paladin.WinRateTextBrush}" />-->
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Binding="{Binding FecaWinrateDisplay}" MinWidth="47">
+                            <DataGridTextColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <Image RenderOptions.BitmapScalingMode="Fant" Source="../../Images/Gods/Feca.png"
+                                           Width="24" Height="24" />
+                                </DataTemplate>
+                            </DataGridTextColumn.HeaderTemplate>
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="HorizontalAlignment" Value="Center" />
+                                    <!--<Setter Property="Foreground" Value="{Binding Rogue.WinRateTextBrush}" />-->
                                 </Style>
                             </DataGridTextColumn.ElementStyle>
                         </DataGridTextColumn>

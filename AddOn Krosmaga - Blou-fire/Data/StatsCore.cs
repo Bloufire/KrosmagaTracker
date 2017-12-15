@@ -33,8 +33,9 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 			    listToReturn.Add(new KrosClass("Cra", "../../Images/Gods/Cra.png"));
 			    listToReturn.Add(new KrosClass("Eniripsa", "../../Images/Gods/Eni.png"));
 			    listToReturn.Add(new KrosClass("Enutrof", "../../Images/Gods/Enu.png"));
-			    listToReturn.Add(new KrosClass("Sacrieur", "../../Images/Gods/Sacri.png"));
-			    listToReturn.Add(new KrosClass("Sram", "../../Images/Gods/Sram.png"));
+                listToReturn.Add(new KrosClass("Sacrieur", "../../Images/Gods/Sacri.png"));
+                listToReturn.Add(new KrosClass("Feca", "../../Images/Gods/Feca.png"));
+                listToReturn.Add(new KrosClass("Sram", "../../Images/Gods/Sram.png"));
 			    listToReturn.Add(new KrosClass("Xelor", "../../Images/Gods/Xel.png"));
 			    listToReturn.Add(new KrosClass("Sadida", "../../Images/Gods/Sadi.png"));
 			    listToReturn.Add(new KrosClass("Ecaflip", "../../Images/Gods/Eca.png"));

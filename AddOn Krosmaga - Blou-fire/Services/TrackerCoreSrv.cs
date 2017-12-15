@@ -250,8 +250,8 @@ namespace AddOn_Krosmaga___Blou_fire.Services
             UpdateMatchsWithFilterList();
             //On efface le deck du model
             TrackerModel.Deck.Clear();
-            TrackerModel.DeckInfinites.Clear();
-            TrackerModel.DeckKrosmiques.Clear();
+            TrackerModel.DeckInfinites = null;
+            TrackerModel.DeckKrosmiques = null;
             TrackerModel.CardsInHand.Clear();
         }
 
@@ -299,6 +299,11 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                     {
                         TrackerModel.OpponentCardsInHand += 1;
                         logger.Info("Opponent Hand : " + TrackerModel.OpponentCardsInHand);
+                        if (card.Id == 1565) // Si c'est un fléaux, on le compte
+                        {
+                            TrackerModel.NbFleau += 1;
+                            logger.Info("Curse + 1 / Total : " + TrackerModel.NbFleau);
+                        }
                         if (card.Id == -1)  // Si la carte est inconnu, on essaye de la deviner (token, ...)
                         {
                             // Si on connait la carte qui a fait piocher la nouvelle carte
@@ -388,6 +393,11 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                     {
                         TrackerModel.OpponentCardsInHand -= 1;
                         logger.Info("Opponent Hand : " + TrackerModel.OpponentCardsInHand);
+                        if (card.Id == 1565) // Si c'est un fléaux, on le décompte
+                        {
+                            TrackerModel.NbFleau -= 1;
+                            logger.Info("Curse - 1 / Total : " + TrackerModel.NbFleau);
+                        }
                         var cardInHandToRemove = TrackerModel.CardsInHand.FirstOrDefault(x => x.IdObject == cardMoved.Card);
                         if (cardInHandToRemove == null) // Si on ne retrouve pas la carte, c'est probablement l'une des cartes du mulligan
                             cardInHandToRemove = TrackerModel.CardsInHand.FirstOrDefault(x => x.Card.Id == -1 && x.DrawTurn == 0);
@@ -576,7 +586,7 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                             //TrackerModel.AddCardToCardInHand(deckUI);
                         }
                     }
-                }
+                }/*
                 if (cardMoved.CardLocationFrom == Enums.CardLocation.OpponentHand &&
                     cardMoved.CardLocationTo == Enums.CardLocation.Nowhere && cardMoved.ConcernedFighter == TrackerModel.MyIndex)
                 {
@@ -588,7 +598,7 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                         TrackerModel.NbFleau -= 1;
                         logger.Info("Curse - 1 / Total : " + TrackerModel.NbFleau);
                     }
-                }
+                }*/
             }
             else if (value.EventType == Enums.EventType.CARD_TO_BE_PLAYED)
             {
@@ -597,7 +607,7 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                 if (eventCardMoved != null)
                 {
                     Builders.EventsManager.CardMovedEvent cardMoved = new Builders.EventsManager.CardMovedEvent(eventCardMoved);
-                    if (cardMoved.CardLocationFrom == Enums.CardLocation.OwnHand &&
+                    /*if (cardMoved.CardLocationFrom == Enums.CardLocation.OwnHand &&
                         cardMoved.CardLocationTo == Enums.CardLocation.Nowhere && cardMoved.ConcernedFighter != TrackerModel.MyIndex)
                     {
                         if (value.UInt1 == 1565)
@@ -605,18 +615,18 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                             TrackerModel.NbFleau -= 1;
                             logger.Info("Curse - 1 / Total : " + TrackerModel.NbFleau);
                         }
-                    }
+                    }*/
                 }
             }
             else if (value.EventType == Enums.EventType.A_O_E_ACTIVATED)
             {
                 logger.Trace("Enums.EventType.A_O_E_ACTIVATED");
                 var eventCardMoved = value.TriggeredEvents.FirstOrDefault(x => x.EventType == Enums.EventType.CARD_MOVED);
-                if (eventCardMoved != null && TrackerModel.ActualFleauxIds.Contains(value.Int1) && eventCardMoved.Int1 != TrackerModel.MyIndex)
+                /*if (eventCardMoved != null && TrackerModel.ActualFleauxIds.Contains(value.Int1) && eventCardMoved.Int1 != TrackerModel.MyIndex)
                 {
                     TrackerModel.NbFleau += 1;
                     logger.Info("Curse + 1 / Total : " + TrackerModel.NbFleau);
-                }
+                }*/
             }
             else if (value.EventType == Enums.EventType.TURN_STARTED)
             {

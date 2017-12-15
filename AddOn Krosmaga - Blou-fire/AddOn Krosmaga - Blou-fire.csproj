@@ -563,6 +563,8 @@
     <Resource Include="Images\CardImages\toxine_niveau_3.png" />
     <Resource Include="Images\CardImages\xel_ext3_f.png" />
     <Resource Include="Images\CardImages\xel_ext3_h.png" />
+    <Resource Include="Images\Gods\Feca.png" />
+    <Resource Include="Images\bg_gods\banner_feca.png" />
     <Content Include="NLog.config">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

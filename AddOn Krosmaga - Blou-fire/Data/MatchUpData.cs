@@ -23,8 +23,9 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 		private double _enuWinrateMu;
 		private double _sramWinrateMu;
 		private double _xelWinrateMu;
-		private double _sacriWinrateMu;
-		private double _sadiWinrateMu;
+        private double _sacriWinrateMu;
+        private double _fecaWinrateMu;
+        private double _sadiWinrateMu;
 
 		private double _iopWinrateWin;
 		private double _craWinrateWin;
@@ -33,8 +34,9 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 		private double _enuWinrateWin;
 		private double _sramWinrateWin;
 		private double _xelWinrateWin;
-		private double _sacriWinrateWin;
-		private double _sadiWinrateWin;
+        private double _sacriWinrateWin;
+        private double _fecaWinrateWin;
+        private double _sadiWinrateWin;
 
 		private double _iopWinrateLose;
 		private double _craWinrateLose;
@@ -43,8 +45,9 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 		private double _enuWinrateLose;
 		private double _sramWinrateLose;
 		private double _xelWinrateLose;
-		private double _sacriWinrateLose;
-		private double _sadiWinrateLose;
+        private double _sacriWinrateLose;
+        private double _fecaWinrateLose;
+        private double _sadiWinrateLose;
 		private ClassEnum myClassPick;
 
 		public List<KrosClass> ComboClasseValues { get; set; }
@@ -146,19 +149,29 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 				_xelWinrateMu = value;
 				OnPropertyChanged("XelWinrateMU");
 			}
-		}
+        }
 
-		public double SacriWinrateMU
-		{
-			get { return _sacriWinrateMu; }
-			set
-			{
-				_sacriWinrateMu = value;
-				OnPropertyChanged("SacriWinrateMU");
-			}
-		}
+        public double SacriWinrateMU
+        {
+            get { return _sacriWinrateMu; }
+            set
+            {
+                _sacriWinrateMu = value;
+                OnPropertyChanged("SacriWinrateMU");
+            }
+        }
 
-		public double SadiWinrateMU
+        public double FecaWinrateMU
+        {
+            get { return _fecaWinrateMu; }
+            set
+            {
+                _fecaWinrateMu = value;
+                OnPropertyChanged("FecaWinrateMU");
+            }
+        }
+
+        public double SadiWinrateMU
 		{
 			get { return _sadiWinrateMu; }
 			set
@@ -244,20 +257,31 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 				OnPropertyChanged("XelWinrateWin");
 				OnPropertyChanged("XelWinrateDisplay");
 			}
-		}
+        }
 
-		public double SacriWinrateWin
-		{
-			get { return _sacriWinrateWin; }
-			set
-			{
-				_sacriWinrateWin = value;
-				OnPropertyChanged("SacriWinrateWin");
-				OnPropertyChanged("SacriWinrateDisplay");
-			}
-		}
+        public double SacriWinrateWin
+        {
+            get { return _sacriWinrateWin; }
+            set
+            {
+                _sacriWinrateWin = value;
+                OnPropertyChanged("SacriWinrateWin");
+                OnPropertyChanged("SacriWinrateDisplay");
+            }
+        }
 
-		public double SadiWinrateWin
+        public double FecaWinrateWin
+        {
+            get { return _fecaWinrateWin; }
+            set
+            {
+                _fecaWinrateWin = value;
+                OnPropertyChanged("FecaWinrateWin");
+                OnPropertyChanged("FecaWinrateDisplay");
+            }
+        }
+
+        public double SadiWinrateWin
 		{
 			get { return _sadiWinrateWin; }
 			set
@@ -341,20 +365,31 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 				OnPropertyChanged("XelWinrateLose");
 				OnPropertyChanged("XelWinrateDisplay");
 			}
-		}
+        }
 
-		public double SacriWinrateLose
-		{
-			get { return _sacriWinrateLose; }
-			set
-			{
-				_sacriWinrateLose = value;
-				OnPropertyChanged("SacriWinrateLose");
-				OnPropertyChanged("SacriWinrateDisplay");
-			}
-		}
+        public double SacriWinrateLose
+        {
+            get { return _sacriWinrateLose; }
+            set
+            {
+                _sacriWinrateLose = value;
+                OnPropertyChanged("SacriWinrateLose");
+                OnPropertyChanged("SacriWinrateDisplay");
+            }
+        }
 
-		public double SadiWinrateLose
+        public double FecaWinrateLose
+        {
+            get { return _fecaWinrateLose; }
+            set
+            {
+                _fecaWinrateLose = value;
+                OnPropertyChanged("FecaWinrateLose");
+                OnPropertyChanged("FecaWinrateDisplay");
+            }
+        }
+
+        public double SadiWinrateLose
 		{
 			get { return _sadiWinrateLose; }
 			set
@@ -406,16 +441,22 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 		public string XelWinrateDisplay
 		{
 			get { return $"{XelWinrateWin}-{XelWinrateLose}"; }
-		
-		}
 
-		public string SacriWinrateDisplay
-		{
-			get { return $"{SacriWinrateWin}-{SacriWinrateLose}"; }
-		
-		}
+        }
 
-		public string SadiWinrateDisplay
+        public string SacriWinrateDisplay
+        {
+            get { return $"{SacriWinrateWin}-{SacriWinrateLose}"; }
+
+        }
+
+        public string FecaWinrateDisplay
+        {
+            get { return $"{FecaWinrateWin}-{FecaWinrateLose}"; }
+
+        }
+
+        public string SadiWinrateDisplay
 		{
 			get { return $"{SadiWinrateWin}-{SadiWinrateLose}"; }
 		}
@@ -506,12 +547,17 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 							XelWinrateWin = stats.NbWin;
 							XelWinrateLose = stats.NbLose;
 							break;
-						case ClassEnum.Sacrieur:
-							SacriWinrateMU = stats.Value;
-							SacriWinrateWin = stats.NbWin;
-							SacriWinrateLose = stats.NbLose;
-							break;
-						case ClassEnum.Sadida:
+                        case ClassEnum.Sacrieur:
+                            SacriWinrateMU = stats.Value;
+                            SacriWinrateWin = stats.NbWin;
+                            SacriWinrateLose = stats.NbLose;
+                            break;
+                        case ClassEnum.Feca:
+                            FecaWinrateMU = stats.Value;
+                            FecaWinrateWin = stats.NbWin;
+                            FecaWinrateLose = stats.NbLose;
+                            break;
+                        case ClassEnum.Sadida:
 							SadiWinrateMU = stats.Value;
 							SadiWinrateWin = stats.NbWin;
 							SadiWinrateLose = stats.NbLose;
@@ -533,8 +579,9 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 			EniWinrateMU = 0;
 			EnuWinrateMU = 0;
 			SramWinrateMU = 0;
-			SacriWinrateMU = 0;
-			SadiWinrateMU = 0;
+            SacriWinrateMU = 0;
+            FecaWinrateMU = 0;
+            SadiWinrateMU = 0;
 			XelWinrateMU = 0;
 			EcaWinrateWin = 0;
 			IopWinrateWin = 0;
@@ -542,8 +589,9 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 			EniWinrateWin = 0;
 			EnuWinrateWin = 0;
 			SramWinrateWin = 0;
-			SacriWinrateWin = 0;
-			SadiWinrateWin = 0;
+            SacriWinrateWin = 0;
+            FecaWinrateWin = 0;
+            SadiWinrateWin = 0;
 			XelWinrateWin = 0;
 			EcaWinrateLose = 0;
 			IopWinrateLose = 0;
@@ -551,8 +599,9 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 			EniWinrateLose = 0;
 			EnuWinrateLose = 0;
 			SramWinrateLose = 0;
-			SacriWinrateLose = 0;
-			SadiWinrateLose = 0;
+            SacriWinrateLose = 0;
+            FecaWinrateLose = 0;
+            SadiWinrateLose = 0;
 			XelWinrateLose = 0;
 		}
 	}

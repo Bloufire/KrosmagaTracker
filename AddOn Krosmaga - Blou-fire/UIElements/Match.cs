@@ -60,10 +60,13 @@ namespace AddOn_Krosmaga___Blou_fire.UIElements
 				case "Eniripsa":
 					value = "/Images/Gods/Eni.png";
 					break;
-				case "Sacrieur":
-					value = "/Images/Gods/Sacri.png";
-					break;
-				case "Sadida":
+                case "Sacrieur":
+                    value = "/Images/Gods/Sacri.png";
+                    break;
+                case "Feca":
+                    value = "/Images/Gods/Feca.png";
+                    break;
+                case "Sadida":
 					value = "/Images/Gods/Sadi.png";
 					break;
 				case "Sram":
@@ -92,10 +95,13 @@ namespace AddOn_Krosmaga___Blou_fire.UIElements
 				case "Eniripsa":
 					value = "/Images/Gods/Eni.png";
 					break;
-				case "Sacrieur":
-					value = "/Images/Gods/Sacri.png";
-					break;
-				case "Sadida":
+                case "Sacrieur":
+                    value = "/Images/Gods/Sacri.png";
+                    break;
+                case "Feca":
+                    value = "/Images/Gods/Feca.png";
+                    break;
+                case "Sadida":
 					value = "/Images/Gods/Sadi.png";
 					break;
 				case "Sram":
