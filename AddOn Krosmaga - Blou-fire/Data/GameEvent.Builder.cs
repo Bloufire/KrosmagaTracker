@@ -519,6 +519,7 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 						if (tag == 130)
 						{
                             Data.Location location = new Data.Location();
+                            reader.B.ReadByte();
                             int size = (int)reader.ReadRawVarint32();
                             location.Decode(reader.ReadMessage(size));
                             Location2 = location;
@@ -527,6 +528,7 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 						if (tag == 138)
 						{
                             Data.ValueModification valueModification = new Data.ValueModification();
+                            reader.B.ReadByte();
                             int size = (int)reader.ReadRawVarint32();
                             valueModification.Decode(reader.ReadMessage(size));
                             ValueModification1 = valueModification;
@@ -539,6 +541,7 @@ namespace AddOn_Krosmaga___Blou_fire.Data
 					if (tag == 146)
 					{
                         Data.ValueModification valueModification = new Data.ValueModification();
+                        reader.B.ReadByte();
                         int size = (int)reader.ReadRawVarint32();
                         valueModification.Decode(reader.ReadMessage(size));
                         ValueModification2 = valueModification;
