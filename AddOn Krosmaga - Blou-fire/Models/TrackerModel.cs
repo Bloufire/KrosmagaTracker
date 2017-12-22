@@ -1,12 +1,10 @@
 ﻿using AddOn_Krosmaga___Blou_fire.Helpers;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using AddOn_Krosmaga___Blou_fire.Enums;
 using AddOn_Krosmaga___Blou_fire.UIElements;
 using JsonCardsParser;
+using NLog;
 
 namespace AddOn_Krosmaga___Blou_fire.Models
 {
@@ -15,21 +13,18 @@ namespace AddOn_Krosmaga___Blou_fire.Models
     /// </summary>
     public class TrackerModel : ObservableObject
     {
+        private static Logger logger = LogManager.GetCurrentClassLogger(); // Logs
         public TrackerModel()
         {
 
         }
 
         #region Own Profile Data
-
         #region OwnPseudo
-
         private string _ownPseudo;
-
         public string OwnPseudo
         {
             get => _ownPseudo;
-
             set
             {
                 if (_ownPseudo == value) _ownPseudo = "default first";
@@ -37,57 +32,41 @@ namespace AddOn_Krosmaga___Blou_fire.Models
                 OnPropertyChanged("OwnPseudo");
             }
         }
-
         #endregion
-
         #region OwnWinsNb
-
         private int _ownWinsNb;
-
         public int OwnWinsNb
         {
             get => _ownWinsNb;
-
             set
             {
                 if (_ownWinsNb == 0)
                 {
                     _ownWinsNb = -1;
                 }
-
                 _ownWinsNb = value;
                 OnPropertyChanged("OwnWinsNb");
             }
         }
-
         #endregion
-
         #region OwnLosesNb
-
         private int _ownLosesNb;
-
         public int OwnLosesNb
         {
             get => _ownLosesNb;
-
             set
             {
                 if (_ownLosesNb == 0)
                 {
                     _ownLosesNb = -1;
                 }
-
                 _ownLosesNb = value;
                 OnPropertyChanged("OwnLosesNb");
             }
         }
-
         #endregion
-
         #region OwnLevel
-
         private int _ownLevel;
-
         public int OwnLevel
         {
             get { return _ownLevel; }
@@ -97,13 +76,9 @@ namespace AddOn_Krosmaga___Blou_fire.Models
                 OnPropertyChanged("OwnLevel");
             }
         }
-
         #endregion
-
         #region OwnClasse
-
         private string _ownClasse;
-
         public string OwnClasse
         {
             get { return _ownClasse; }
@@ -113,17 +88,11 @@ namespace AddOn_Krosmaga___Blou_fire.Models
                 OnPropertyChanged("OwnClasse");
             }
         }
-
         #endregion
-
         #endregion
-
         #region Vs Profile Data
-
         #region VsPseudo
-
         private string _vsPseudo;
-
         public string VsPseudo
         {
             get { return _vsPseudo; }
@@ -133,14 +102,9 @@ namespace AddOn_Krosmaga___Blou_fire.Models
                 OnPropertyChanged("VsPseudo");
             }
         }
-
         #endregion
-
-
         #region VsWinsNb
-
         private int _vsWinsNb;
-
         public int VsWinsNb
         {
             get { return _vsWinsNb; }
@@ -150,13 +114,9 @@ namespace AddOn_Krosmaga___Blou_fire.Models
                 OnPropertyChanged("VsWinsNb");
             }
         }
-
         #endregion
-
         #region VsLosesNb
-
         private int _vsLosesNb;
-
         public int VsLosesNb
         {
             get { return _vsLosesNb; }
@@ -166,13 +126,9 @@ namespace AddOn_Krosmaga___Blou_fire.Models
                 OnPropertyChanged("VsLosesNb");
             }
         }
-
         #endregion
-
         #region OpponentLevel
-
         private int _opponentLevel;
-
         public int OpponentLevel
         {
             get { return _opponentLevel; }
@@ -182,13 +138,9 @@ namespace AddOn_Krosmaga___Blou_fire.Models
                 OnPropertyChanged("OpponentLevel");
             }
         }
-
         #endregion
-
         #region OpponentClasse
-
         private string _opponentClasse;
-
         public string OpponentClasse
         {
             get { return _opponentClasse; }
@@ -198,17 +150,10 @@ namespace AddOn_Krosmaga___Blou_fire.Models
                 OnPropertyChanged("OpponentClasse");
             }
         }
-
         #endregion
-
         #endregion
-
-
         #region HistoMatches
-
         private List<Match> _filteredGames;
-
-
         public List<Match> FilteredGames
         {
             get
@@ -222,9 +167,7 @@ namespace AddOn_Krosmaga___Blou_fire.Models
                 OnPropertyChanged("FilteredGames");
             }
         }
-
         private GameType _gameType;
-
         public GameType GameType
         {
             get { return _gameType; }
@@ -234,15 +177,10 @@ namespace AddOn_Krosmaga___Blou_fire.Models
                 OnPropertyChanged("GameType");
             }
         }
-
-
         private int _myIndex;
-
-        /// <summary>
         /// MyIndex c'est un chiffre qui indique quel joueur tu es
         /// Joueur 0 : commence en premier
         ///	Joueur 1 : commence en 2
-        /// </summary>
         public int MyIndex
         {
             get { return _myIndex; }
@@ -252,27 +190,20 @@ namespace AddOn_Krosmaga___Blou_fire.Models
                 OnPropertyChanged("MyIndex");
             }
         }
-
         #endregion
-
         #region CardsInHands
-
         private Queue<int> _actualFleauxIds;
-
         private int _ownCardsInHand;
         private int _opponentCardsInHand;
         private int _currentTurn;
         private int _nbFleau;
         private List<DeckUI> _deck;
-
         private List<Card> _opponentPlayedCards;
         private List<DeckUI> _cardAlreadyPlayed;
         private List<DeckUI> _cardsInHand;
         private List<DeckUI> _deckInfinites;
         private List<DeckUI> _deckKrosmiques;
-
         private List<KeyValuePair<int, int>> _cardIdsByTurn;
-
 
         public Queue<int> ActualFleauxIds
         {
@@ -282,7 +213,6 @@ namespace AddOn_Krosmaga___Blou_fire.Models
                 _actualFleauxIds = new Queue<int>();
                 return _actualFleauxIds;
             }
-
             set
             {
                 _actualFleauxIds = value;
@@ -298,7 +228,6 @@ namespace AddOn_Krosmaga___Blou_fire.Models
                 OnPropertyChanged("OwnCardsInHand");
             }
         }
-
         public int OpponentCardsInHand
         {
             get { return _opponentCardsInHand; }
@@ -308,7 +237,6 @@ namespace AddOn_Krosmaga___Blou_fire.Models
                 OnPropertyChanged("OpponentCardsInHand");
             }
         }
-
         public List<KeyValuePair<int, int>> CardIdsByTurn
         {
             get
@@ -317,14 +245,12 @@ namespace AddOn_Krosmaga___Blou_fire.Models
                 _cardIdsByTurn = new List<KeyValuePair<int,int>>();
                 return _cardIdsByTurn;
             }
-
             set
             {
                 _cardIdsByTurn = value;
                 OnPropertyChanged("CardIdsByTurn");
             }
         }
-
         public int CurrentTurn
         {
             get { return _currentTurn; }
@@ -351,14 +277,12 @@ namespace AddOn_Krosmaga___Blou_fire.Models
                 _opponentPlayedCards = new List<Card>();
                 return _opponentPlayedCards;
             }
-
             set
             {
                 _opponentPlayedCards = value;
                 OnPropertyChanged("OpponentPlayedCards");
             }
         }
-
         public List<DeckUI> CardAlreadyPlayed
         {
             get
@@ -371,16 +295,15 @@ namespace AddOn_Krosmaga___Blou_fire.Models
             {
                 _cardAlreadyPlayed = value;
                 OnPropertyChanged("CardAlreadyPlayed");
-
             }
         }
-
         public List<DeckUI> Deck
         {
             get
             {
                 if (_deck != null) return _deck;
                 _deck = new List<DeckUI>();
+                OnPropertyChanged("Deck");
                 return _deck;
             }
             set
@@ -389,14 +312,13 @@ namespace AddOn_Krosmaga___Blou_fire.Models
                 OnPropertyChanged("Deck");
             }
         }
-
-
         public List<DeckUI> CardsInHand
         {
             get
             {
                 if (_cardsInHand != null) return _cardsInHand;
                 _cardsInHand = new List<DeckUI>();
+                OnPropertyChanged("CardsInHand");
                 return _cardsInHand;
             }
             set
@@ -405,13 +327,13 @@ namespace AddOn_Krosmaga___Blou_fire.Models
                 OnPropertyChanged("CardsInHand");
             }
         }
-
         public List<DeckUI> DeckInfinites
         {
             get
             {
                 if (_deckInfinites != null) return _deck.Where(x => x.Card.Rarity == 4).ToList();
                 _deckInfinites = new List<DeckUI>();
+                OnPropertyChanged("DeckInfinites");
                 return _deckInfinites;
             }
             set
@@ -420,13 +342,13 @@ namespace AddOn_Krosmaga___Blou_fire.Models
                 OnPropertyChanged("DeckInfinites");
             }
         }
-
         public List<DeckUI> DeckKrosmiques
         {
             get
             {
                 if (_deckKrosmiques != null) return _deck.Where(x => x.Card.Rarity == 3).ToList();
                 _deckKrosmiques = new List<DeckUI>();
+                OnPropertyChanged("DeckKrosmiques");
                 return _deckKrosmiques;
             }
             set
@@ -435,27 +357,50 @@ namespace AddOn_Krosmaga___Blou_fire.Models
                 OnPropertyChanged("DeckKrosmiques");
             }
         }
-
         #endregion
-
         protected override void OnPropertyChanged(string propertyName)
         {
             base.OnPropertyChanged(propertyName);
         }
-
         public void AddCardToDeck(DeckUI card)
         {
             Deck.Add(card);
+            OnPropertyChanged("Deck");
         }
-
         public void RemoveCardFromCardInHand(DeckUI card)
         {
             CardsInHand.Remove(card);
+            OnPropertyChanged("CardsInHand");
         }
-
         public void AddCardToCardInHand(DeckUI card)
         {
             CardsInHand.Add(card);
+            OnPropertyChanged("CardsInHand");
+        }
+        public void ClearCardToDeck()
+        {
+            Deck.Clear();
+            OnPropertyChanged("Deck");
+        }
+        public void ClearCardInHand()
+        {
+            CardsInHand.Clear();
+            OnPropertyChanged("CardsInHand");
+        }
+        public void ClearDeckInfinites()
+        {
+            DeckInfinites.Clear();
+            OnPropertyChanged("DeckInfinites");
+        }
+        public void ClearDeckKrosmiques()
+        {
+            DeckKrosmiques.Clear();
+            OnPropertyChanged("DeckKrosmiques");
+        }
+        public void ClearOwnCardsInHand()
+        {
+            OwnCardsInHand = 0;
+            OnPropertyChanged("OwnCardsInHand");
         }
     }
 }

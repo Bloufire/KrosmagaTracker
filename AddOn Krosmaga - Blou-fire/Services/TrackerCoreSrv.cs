@@ -164,12 +164,18 @@ namespace AddOn_Krosmaga___Blou_fire.Services
         private void UIActionGameEventStarted(GameStarted value)
         {
             logger.Trace("UIActionGameEventStarted");
-            /*logger.Info("Game Type : " + value.GameType + " / MyCardsCount : " + value.MyCardsCount + " / OpponentCardsCount : " + value.OpponentCardsCount + " / MyIndex : " + value.MyIndex + " / PlayersCount : " + value.PlayersCount);
+            logger.Info("Game Type : " + value.GameType + " / MyCardsCount : " + value.MyCardsCount + " / OpponentCardsCount : " + value.OpponentCardsCount + " / MyIndex : " + value.MyIndex + " / PlayersCount : " + value.PlayersCount);
             foreach (var item in value.PlayersList)
             {
                 logger.Info("Nickname : " + item.Profile.Nickname + " / GodId : " + item.GodId + " / Index : " + item.Index);
-            }*/
+            }
             //On initialise le "Own" positionnement.
+            /* //Tracking inversé, pour debug
+            if (value.MyIndex == 0)
+                TrackerModel.MyIndex = 1;
+            else
+                TrackerModel.MyIndex = 0;
+            */
             TrackerModel.MyIndex = value.MyIndex;
             //On charge les données du player selon mon index
             Data.Player player = value.PlayersList.FirstOrDefault(x => x.Index == TrackerModel.MyIndex);
@@ -202,7 +208,7 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                 CardRelated = ""
             };
 
-            if (value.MyIndex == 0)
+            if (TrackerModel.MyIndex == 0)
             {
                 TrackerModel.OwnCardsInHand = 3;
                 TrackerModel.OpponentCardsInHand = 4;
@@ -244,15 +250,14 @@ namespace AddOn_Krosmaga___Blou_fire.Services
             TrackerModel.VsLosesNb = 0;
             TrackerModel.VsPseudo = "";
 			TrackerModel.OpponentClasse = String.Empty;
-	        
             TrackerModel.CurrentTurn = 0;
             TrackerModel.OpponentLevel = 0;
             UpdateMatchsWithFilterList();
-            //On efface le deck du model
-            TrackerModel.Deck.Clear();
-            TrackerModel.DeckInfinites = null;
-            TrackerModel.DeckKrosmiques = null;
-            TrackerModel.CardsInHand.Clear();
+            TrackerModel.ClearCardToDeck();
+            TrackerModel.ClearDeckInfinites();
+            TrackerModel.ClearDeckKrosmiques();
+            TrackerModel.ClearCardInHand();
+            TrackerModel.ClearOwnCardsInHand();
         }
 
         private void UIActionGameEventsEvent(Builders.GameEvents value)
@@ -276,7 +281,7 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                 logger.Trace("Enums.EventType.CARD_MOVED");
                 Builders.EventsManager.CardMovedEvent cardMoved = new Builders.EventsManager.CardMovedEvent(value);
                 //logger.Info("card : " + cardMoved.Card + " / TradingCard : " + cardMoved.TradingCard + " / RelatedTradingCard : " + cardMoved.RelatedTradingCard + " / CardLocationFrom : " + cardMoved.CardLocationFrom + " / CardLocationTo : " + cardMoved.CardLocationTo + " / ConcernedFighter : " + cardMoved.ConcernedFighter);
-                if (cardMoved.ConcernedFighter < 2) // Bizarement, il y'a d'autres combattants que le premier et le deuxième -_-
+                if (cardMoved.ConcernedFighter < 2) // Cette variable est utilisé pour stocker d'autres infos que les joueurs
                 {
                     // Si on connait la carte, on récupère les infos
                     // 45 = prisme pioche / 589 = prisme fléau / 190 = prisme PA
@@ -393,16 +398,18 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                     {
                         TrackerModel.OpponentCardsInHand -= 1;
                         logger.Info("Opponent Hand : " + TrackerModel.OpponentCardsInHand);
-                        if (card.Id == 1565) // Si c'est un fléaux, on le décompte
-                        {
-                            TrackerModel.NbFleau -= 1;
-                            logger.Info("Curse - 1 / Total : " + TrackerModel.NbFleau);
-                        }
                         var cardInHandToRemove = TrackerModel.CardsInHand.FirstOrDefault(x => x.IdObject == cardMoved.Card);
                         if (cardInHandToRemove == null) // Si on ne retrouve pas la carte, c'est probablement l'une des cartes du mulligan
                             cardInHandToRemove = TrackerModel.CardsInHand.FirstOrDefault(x => x.Card.Id == -1 && x.DrawTurn == 0);
                         if (cardInHandToRemove != null)
+                        {
+                            if (cardInHandToRemove.Card.Id == 1565) // Si c'est un fléaux, on le décompte
+                            {
+                                TrackerModel.NbFleau -= 1;
+                                logger.Info("Curse - 1 / Total : " + TrackerModel.NbFleau);
+                            }
                             TrackerModel.RemoveCardFromCardInHand(cardInHandToRemove);
+                        }
                         else
                             logger.Info("Error Card in hand not found : cardInHandToRemove == null / card : " + card.Name);
                     }
@@ -600,6 +607,7 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                     }
                 }*/
             }
+            /*
             else if (value.EventType == Enums.EventType.CARD_TO_BE_PLAYED)
             {
                 logger.Trace("Enums.EventType.CARD_TO_BE_PLAYED");
@@ -607,7 +615,7 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                 if (eventCardMoved != null)
                 {
                     Builders.EventsManager.CardMovedEvent cardMoved = new Builders.EventsManager.CardMovedEvent(eventCardMoved);
-                    /*if (cardMoved.CardLocationFrom == Enums.CardLocation.OwnHand &&
+                    if (cardMoved.CardLocationFrom == Enums.CardLocation.OwnHand &&
                         cardMoved.CardLocationTo == Enums.CardLocation.Nowhere && cardMoved.ConcernedFighter != TrackerModel.MyIndex)
                     {
                         if (value.UInt1 == 1565)
@@ -615,18 +623,18 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                             TrackerModel.NbFleau -= 1;
                             logger.Info("Curse - 1 / Total : " + TrackerModel.NbFleau);
                         }
-                    }*/
+                    }
                 }
             }
             else if (value.EventType == Enums.EventType.A_O_E_ACTIVATED)
             {
                 logger.Trace("Enums.EventType.A_O_E_ACTIVATED");
                 var eventCardMoved = value.TriggeredEvents.FirstOrDefault(x => x.EventType == Enums.EventType.CARD_MOVED);
-                /*if (eventCardMoved != null && TrackerModel.ActualFleauxIds.Contains(value.Int1) && eventCardMoved.Int1 != TrackerModel.MyIndex)
+                if (eventCardMoved != null && TrackerModel.ActualFleauxIds.Contains(value.Int1) && eventCardMoved.Int1 != TrackerModel.MyIndex)
                 {
                     TrackerModel.NbFleau += 1;
                     logger.Info("Curse + 1 / Total : " + TrackerModel.NbFleau);
-                }*/
+                }
             }
             else if (value.EventType == Enums.EventType.TURN_STARTED)
             {
@@ -637,12 +645,11 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                     foreach (var item in listOfEvents)
                     {
                         Builders.EventsManager.NewAOEEvent newAOE = new Builders.EventsManager.NewAOEEvent(item);
-                        /*if (UIDatas.ActualFleauxIds.Count >= 4)
-						    UIDatas.ActualFleauxIds.Dequeue();*/
+                        if (UIDatas.ActualFleauxIds.Count >= 4)
+						    UIDatas.ActualFleauxIds.Dequeue();
                         if (newAOE.TradingCardId == 589)
                         {
                             TrackerModel.ActualFleauxIds.Enqueue(newAOE.ConcernedFightObject);
-                            logger.Trace("What is it ? newAOE.TradingCardId == 589");
                         }
                     }
                 }
@@ -651,12 +658,11 @@ namespace AddOn_Krosmaga___Blou_fire.Services
             {
                 logger.Trace("Enums.EventType.NEW_A_O_E");
                 Builders.EventsManager.NewAOEEvent newAOE = new Builders.EventsManager.NewAOEEvent(value);
-                /*if (UIDatas.ActualFleauxIds.Count >= 4)
-				    UIDatas.ActualFleauxIds.Dequeue();*/
+                if (UIDatas.ActualFleauxIds.Count >= 4)
+				    UIDatas.ActualFleauxIds.Dequeue();
                 if (newAOE.TradingCardId == 589)
                 {
                     TrackerModel.ActualFleauxIds.Enqueue(newAOE.ConcernedFightObject);
-                    logger.Trace("What is it (2) ? newAOE.TradingCardId == 589");
                 }
             }
             else if (value.EventType == Enums.EventType.EFFECT_STOPPED)
@@ -666,7 +672,7 @@ namespace AddOn_Krosmaga___Blou_fire.Services
                 //{
                 //	UIDatas.ActualFleauxIds.Enqueue(value.Int1);
                 //}
-            }
+            }*/
             foreach (var item in value.TriggeredEvents)
             {
                 logger.Trace("Event Type Triggered : " + item.EventType);

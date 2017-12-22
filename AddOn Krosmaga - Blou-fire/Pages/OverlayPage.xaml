@@ -19,6 +19,7 @@
                       WindowStartupLocation="Manual"
                       Left="{Binding Left}"
                       d:DesignHeight="750"
+                      MinHeight="550"
                       WindowButtonCommandsOverlayBehavior="Flyouts"
                       Width="{StaticResource OverlayWidth}"
                       WindowTitleBrush="Transparent"

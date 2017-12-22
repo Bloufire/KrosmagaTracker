@@ -15,9 +15,7 @@
         <pageModel:VsPlayedCardsPageModel />
     </UserControl.DataContext>
 
-    <ListView  Background="#66000000" ItemsSource="{Binding VsDeck}"
-              ScrollViewer.HorizontalScrollBarVisibility="Hidden"
-              ScrollViewer.VerticalScrollBarVisibility="Hidden">
+    <ListView  Background="#66000000" ItemsSource="{Binding VsDeck}">
         <ListView.ItemContainerStyle>
             <Style TargetType="ListViewItem">
                 <Setter Property="HorizontalContentAlignment" Value="Stretch" />
